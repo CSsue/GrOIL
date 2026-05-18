@@ -1,0 +1,586 @@
+============================================================================
+  TBox + ABox Reasoner and Validation Report — 2026-05-17T04:23:56.850986+00:00
+  ✗  ISSUES FOUND
+============================================================================
+  TBox : out/ontology_construction/10_contracts_dataset/stage7_serialized_ontology/tbox.ttl
+  ABox : out/ontology_construction/10_contracts_dataset/abox/abox_C1_combined.ttl
+  TBox triples        : 6952
+  ABox triples        : 7206
+  TBox + ABox triples : 7523
+
+[1] TBox + ABox Consistency : FAIL
+    Consistent: No
+Reason: Literal value "50%"^^string does not belong to datatype decimal
+
+[2] TBox Satisfiability     : FAIL
+    Satisfiable classes     : 610
+    *** Unsatisfiable classes (146):
+        - ins:AccountValue
+        - ins:AccountValueVolatility
+        - ins:ActivitiesOfDailyLiving
+        - ins:ActuarialAssumption
+        - ins:ActuarialDiscount
+        - ins:AddressInformation
+        - ins:AllianceGroupBenefits
+        - ins:AnnualExclusionGiftPlanning
+        - ins:AuthorizedSignatory
+        - ins:Beneficiary
+        - ins:BeneficiaryDesignation
+        - ins:Benefit
+        - ins:BenefitStructure
+        - ins:BurialExpenseCoverage
+        - ins:CaliforniaJurisdiction
+        - ins:CapitalPreservation
+        - ins:CashValue
+        - ins:CertificateHolder
+        - ins:ChronicIllness
+        - ins:ClaimMailingAddress
+        - ins:ClaimSubmissionChannel
+        - ins:ClaimsDepartment
+        - ins:ClaimsHotline
+        - ins:CompanyHierarchy
+        - ins:ContactInformation
+        - ins:ContactNumber
+        - ins:ContingentBeneficiary
+        - ins:ContingentBeneficiaryTrust
+        - ins:CorporateHeadquartersLocation
+        - ins:Coverage
+        - ins:CriticalCondition
+        - ins:CurrentPortfolioMix
+        - ins:CustomerService
+        - ins:CustomerServiceHotline
+        - ins:DaughterBeneficiary
+        - ins:DeathBenefit
+        - ins:DeathBenefitRecipient
+        - ins:DeathBenefitTiming
+        - ins:DebtReducingDeathBenefit
+        - ins:DisabilityCoverage
+        - ins:DualPayout
+        - ins:EffectOfPartialWithdrawal
+        - ins:Eligibility
+        - ins:EligibilityRequirementWarning
+        - ins:EligibilityThreshold
+        - ins:EligibleInsuredChildUnderRider
+        - ins:EmployeeInformation
+        - ins:EndOfTermPayout
+        - ins:EquityIndexedUniversalLife
+        - ins:EstatePlanning
+        - ins:EstimatedCashValueAfterTenYears
+        - ins:ExecutionLocation
+        - ins:ExecutiveApproval
+        - ins:ExecutiveLeadershipPosition
+        - ins:ExecutiveOfficer
+        - ins:FaceAmount
+        - ins:FamilyRelationship
+        - ins:FinancialCommitment
+        - ins:FirstDeathBenefit
+        - ins:FirstToDie
+        - ins:FosterChildrensTrust
+        - ins:FullRefundRequirement
+        - ins:FuneralExpense
+        - ins:FutureResults
+        - ins:Gender
+        - ins:GeographicScope
+        - ins:GradedDeathBenefit
+        - ins:GroupCoverage
+        - ins:GroupOperationsLeadership
+        - ins:GuaranteedIssue
+        - ins:IncreasedCostTerm
+        - ins:InsuranceCompany
+        - ins:InsuranceCompanyLocation
+        - ins:InsuranceContract
+        - ins:InsurancePolicy
+        - ins:Insured
+        - ins:InsuredEntity
+        - ins:InsuredPerson
+        - ins:InvestmentAllocation
+        - ins:InvestmentExperience
+        - ins:IssuerLocation
+        - ins:IssuingInsurer
+        - ins:JointInsured
+        - ins:JointLifePolicy
+        - ins:JointSurvivorshipLifeInsurance
+        - ins:LegalJurisdiction
+        - ins:LevelDeathBenefit
+        - ins:LifeInsuranceBenefit
+        - ins:Location
+        - ins:LumpSumPayout
+        - ins:MailingAddress
+        - ins:MasterPolicy
+        - ins:MaterialMisrepresentation
+        - ins:MedicalUncertainty
+        - ins:MidTermDeathBenefit
+        - ins:MilitaryServiceDeath
+        - ins:MisstatementOfSex
+        - ins:MortalityExperience
+        - ins:NamedInsured
+        - ins:NaturalChild
+        - ins:NetPayoutAfterDebts
+        - ins:OfficialEmailForInquiries
+        - ins:ParticipatingPolicy
+        - ins:PastPerformance
+        - ins:Payout
+        - ins:PayoutRecipient
+        - ins:PilotCrewDeathCoverage
+        - ins:PlaceOfResidence
+        - ins:PlazaAddress
+        - ins:PolicyAuthorization
+        - ins:PolicyEntity
+        - ins:PolicyFunding
+        - ins:PolicyIssuanceJurisdiction
+        - ins:PolicyLapse
+        - ins:PolicyOwner
+        - ins:PolicyOwnership
+        - ins:PolicyPortability
+        - ins:PolicySigningOfficer
+        - ins:PolicyStructure
+        - ins:PolicyTerm
+        - ins:PolicyTermDuration
+        - ins:PolicyTransfer
+        - ins:PortfolioRebalancing
+        - ins:PrimaryBeneficiary
+        - ins:PrivatePilotActivity
+        - ins:ProjectedCashValue
+        - ins:ReducedAccessToFunds
+        - ins:ReducedPayoutDueToGuaranteedIssue
+        - ins:Reduction
+        - ins:RegularOccupation
+        - ins:Role
+        - ins:SignatoryPosition
+        - ins:SimultaneousDeath
+        - ins:SpecifiedAmount
+        - ins:Spouse
+        - ins:SubmissionLocation
+        - ins:TermInsurance
+        - ins:TerminalIllness
+        - ins:TerminationPointForDeathBenefit
+        - ins:Trust
+        - ins:TrusteeAuthority
+        - ins:TrusteeOfIrrevocableTrust
+        - ins:UniversalLifeInsurancePolicyContract
+        - ins:VisualLayout
+        - ins:Withdrawal
+        - ins:WithdrawalRule
+    Pellet stderr: Classifying 663 elements
+
+Classifying:  0% complete in 00:00
+Classifying:  1% complete in 00:00
+Classifying:  2% complete in 00:00
+Classifying:  3% complete in 00:00
+Classifying:  4% complete in 00:00
+Classifying:  5% complete in 00:00
+Classifying:  6% complete in 00:00
+Classifying:  7% complete in 00:00
+Classifying:  8% complete in 00:00
+Classifying:  9% complete in 00:00
+Classifying:  10% complete in 00:00
+Classifying:  11% complete in 00:00
+Classifying:  12% complete in 00:00
+Classifying:  13% complete in 00:00
+Classifying:  14% complete in 00:00
+Classifying:  15% complete in 00:00
+Classifying:  16% complete in 00:00
+Classifying:  17% complete in 00:00
+Classifying:  18% complete in 00:00
+Classifying:  19% complete in 00:00
+Classifying:  20% complete in 00:00
+Classifying:  21% complete in 00:00
+Classifying:  22% complete in 00:00
+Classifying:  23% complete in 00:00
+Classifying:  24% complete in 00:00
+Classifying:  25% complete in 00:00
+Classifying:  26% complete in 00:00
+Classifying:  27% complete in 00:00
+Classifying:  28% complete in 00:00
+Classifying:  29% complete in 00:00
+Classifying:  30% complete in 00:00
+Classifying:  31% complete in 00:00
+Classifying:  32% complete in 00:00
+Classifying:  33% complete in 00:00
+Classifying:  34% complete in 00:00
+Classifying:  35% complete in 00:00
+Classifying:  36% complete in 00:00
+Classifying:  37% complete in 00:00
+Classifying:  38% complete in 00:00
+Classifying:  39% complete in 00:00
+Classifying:  40% complete in 00:00
+Classifying:  41% complete in 00:00
+Classifying:  42% complete in 00:00
+Classifying:  43% complete in 00:00
+Classifying:  44% complete in 00:00
+Classifying:  45% complete in 00:00
+Classifying:  46% complete in 00:00
+Classifying:  47% complete in 00:00
+Classifying:  48% complete in 00:00
+Classifying:  49% complete in 00:00
+Classifying:  50% complete in 00:00
+Classifying:  51% complete in 00:00
+Classifying:  52% complete in 00:00
+Classifying:  53% complete in 00:00
+Classifying:  54% complete in 00:00
+Classifying:  55% complete in 00:00
+Classifying:  56% complete in 00:00
+Classifying:  57% complete in 00:00
+Classifying:  58% complete in 00:00
+Classifying:  59% complete in 00:00
+Classifying:  60% complete in 00:00
+Classifying:  61% complete in 00:00
+Classifying:  62% complete in 00:00
+Classifying:  63% complete in 00:00
+Classifying:  64% complete in 00:00
+Classifying:  65% complete in 00:00
+Classifying:  66% complete in 00:00
+Classifying:  67% complete in 00:00
+Classifying:  68% complete in 00:00
+Classifying:  69% complete in 00:00
+Classifying:  70% complete in 00:00
+Classifying:  71% complete in 00:00
+Classifying:  72% complete in 00:00
+Classifying:  73% complete in 00:00
+Classifying:  74% complete in 00:00
+Classifying:  75% complete in 00:00
+Classifying:  76% complete in 00:00
+Classifying:  77% complete in 00:00
+Classifying:  78% complete in 00:00
+Classifying:  79% complete in 00:00
+Classifying:  80% complete in 00:00
+Classifying:  81% complete in 00:00
+Classifying:  82% complete in 00:00
+Classifying:  83% complete in 00:00
+Classifying:  84% complete in 00:00
+Classifying:  85% complete in 00:00
+Classifying:  86% complete in 00:00
+Classifying:  87% complete in 00:00
+Classifying:  88% complete in 00:00
+Classifying:  89% complete in 00:00
+Classifying:  90% complete in 00:00
+Classifying:  91% complete in 00:00
+Classifying:  92% complete in 00:00
+Classifying:  93% complete in 00:00
+Classifying:  94% complete in 00:00
+Classifying:  95% complete in 00:00
+Classifying:  96% complete in 00:00
+Classifying:  97% complete in 00:00
+Classifying:  98% complete in 00:00
+Classifying:  99% complete in 00:00
+Classifying:  100% complete in 00:00
+Classifying finished in 00:00
+
+    Inferred hierarchy, top 20 classes:
+      http://org.semanticweb.owlapi/error#Error1
+      http://org.semanticweb.owlapi/error#Error2
+      ins:ClaimProcess
+      ins:ApplicationError
+      ins:ClaimSettlement
+      ins:ClaimsProcessingTime
+      ins:ConflictResolution
+      http://org.semanticweb.owlapi/error#Error3
+      ins:EnrollmentPeriod
+      ins:NotificationTimeline
+      ins:PolicyLoan
+      ins:TimePeriod
+      ins:AnnualAdjustmentDateForLoanInterest
+      ins:AnnualRecalculationTrigger
+      ins:ClaimProcessingWindow
+      ins:ConsecutiveMonths
+      ins:ContestabilityPeriodDuration
+      ins:ContestabilityPeriod
+      ins:ConversionApplicationWindow
+      ins:ConversionDeadline
+
+[3] Domain/Range Coherence  : WARN
+    *** 232 issue(s):
+        ins:administersMisstatementProvisionAffectingDeathBenefit -> domain unsatisfiable: ins:InsuranceCompany
+        ins:affectsResidualPremiumAvailableForAllocation -> domain unsatisfiable: ins:PolicyFunding
+        ins:affectsResidualPremiumAvailableForAllocation -> range unsatisfiable: ins:InvestmentAllocation
+        ins:allocationChangeFlexibility -> domain unsatisfiable: ins:InvestmentAllocation
+        ins:allocationChangeFlexibility -> range unsatisfiable: ins:PortfolioRebalancing
+        ins:appliesIfSurrenderedWithinFirst12Years -> domain unsatisfiable: ins:PolicyLapse
+        ins:appliesToInterestRateOrDividendRate -> domain unsatisfiable: ins:ActuarialAssumption
+        ins:appliesToInterestRateOrDividendRate -> range unsatisfiable: ins:InsuranceContract
+        ins:automates -> domain unsatisfiable: ins:InsuranceContract
+        ins:borneBy -> range unsatisfiable: ins:PolicyOwner
+        ins:canBePledged -> domain unsatisfiable: ins:InsurancePolicy
+        ins:ceoRepresents -> domain unsatisfiable: ins:ExecutiveOfficer
+        ins:ceoRepresents -> range unsatisfiable: ins:InsuranceCompany
+        ins:containsExceptionToIncontestabilityClause -> domain unsatisfiable: ins:InsuranceContract
+        ins:continuesAfterNoPayout -> domain unsatisfiable: ins:PolicyEntity
+        ins:continuesAfterNoPayout -> range unsatisfiable: ins:Coverage
+        ins:deduction -> range unsatisfiable: ins:AccountValue
+        ins:dependsOnSurvival -> domain unsatisfiable: ins:Benefit
+        ins:determinesInitialBasisForReducedPaidUpInsurance -> domain unsatisfiable: ins:InsuranceContract
+        ins:determinesInitialBasisForReducedPaidUpInsurance -> range unsatisfiable: ins:CashValue
+        ins:electionIncrements -> domain unsatisfiable: ins:InsuranceContract
+        ins:enablesComplianceWithAnnualGiftExclusion -> domain unsatisfiable: ins:InsuranceContract
+        ins:enablesComplianceWithAnnualGiftExclusion -> range unsatisfiable: ins:AnnualExclusionGiftPlanning
+        ins:enablesPortability -> domain unsatisfiable: ins:PolicyPortability
+        ins:enablesPortability -> range unsatisfiable: ins:Coverage
+        ins:enablesWaiver -> domain unsatisfiable: ins:InsuranceContract
+        ins:enablesWaiver -> range unsatisfiable: ins:DisabilityCoverage
+        ins:excludedFromDeathBenefitWhenOccurringInAviation -> range unsatisfiable: ins:DeathBenefit
+        ins:executedByPresident -> domain unsatisfiable: ins:InsurancePolicy
+        ins:executedByPresident -> range unsatisfiable: ins:ExecutiveOfficer
+        ins:forfeitsBenefit -> range unsatisfiable: ins:Benefit
+        ins:governingLawJurisdiction -> domain unsatisfiable: ins:InsuranceContract
+        ins:governingLawJurisdiction -> range unsatisfiable: ins:LegalJurisdiction
+        ins:governsOrRegulates -> domain unsatisfiable: ins:InsuranceContract
+        ins:grantsRightToChangeBeneficiary -> domain unsatisfiable: ins:PolicyOwner
+        ins:grantsRightToPortCoverage -> domain unsatisfiable: ins:PolicyOwnership
+        ins:growsWithAccount -> domain unsatisfiable: ins:Benefit
+        ins:growsWithAccount -> range unsatisfiable: ins:AccountValue
+        ins:hasAccidentalDeathDefinition -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasAccount -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasAccountValueDefinition -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasAccountValueDefinition -> range unsatisfiable: ins:AccountValue
+        ins:hasAccumulationUnitsDefinition -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasActivitiesOfDailyLivingDefinition -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasActivitiesOfDailyLivingDefinition -> range unsatisfiable: ins:ActivitiesOfDailyLiving
+        ins:hasActuarialDiscountAdjustment -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasActuarialDiscountAdjustment -> range unsatisfiable: ins:ActuarialDiscount
+        ins:hasAgeEligibilityRange -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasAllocation -> range unsatisfiable: ins:InvestmentAllocation
+        ins:hasAnnualExclusionGiftPlanning -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasAnnualExclusionGiftPlanning -> range unsatisfiable: ins:AnnualExclusionGiftPlanning
+        ins:hasAssignmentRight -> domain unsatisfiable: ins:PolicyOwnership
+        ins:hasAssignmentRight -> range unsatisfiable: ins:PolicyTransfer
+        ins:hasAviationExclusion -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasAviationExclusionWaiver -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasBackup -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasBackup -> range unsatisfiable: ins:InsuranceContract
+        ins:hasBalancedAllocationFundShare -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasBeneficiary -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasBeneficiary -> range unsatisfiable: ins:Beneficiary
+        ins:hasBeneficiaryRole -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasBeneficiaryRole -> range unsatisfiable: ins:Trust
+        ins:hasBorrowableCashValue -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasCashAccessMethod -> domain unsatisfiable: ins:CashValue
+        ins:hasCeoSignatory -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasCeoSignatory -> range unsatisfiable: ins:AuthorizedSignatory
+        ins:hasCeoSignatureConfirmation -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasChargesOption -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasChiefExecutiveOfficerRole -> domain unsatisfiable: ins:ExecutiveOfficer
+        ins:hasChiefExecutiveOfficerRole -> range unsatisfiable: ins:Role
+        ins:hasChunkFact -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasCoBeneficiary -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasCoBeneficiary -> range unsatisfiable: ins:Beneficiary
+        ins:hasConcept -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasContactInformation -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasContactInformation -> range unsatisfiable: ins:ContactInformation
+        ins:hasContestabilityPeriod -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasCoverageLimit -> domain unsatisfiable: ins:Coverage
+        ins:hasCoverageShare -> domain unsatisfiable: ins:Beneficiary
+        ins:hasCrummeyPowerRequirements -> domain unsatisfiable: ins:Trust
+        ins:hasDaughterOfInsured -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasDaughterOfInsured -> range unsatisfiable: ins:DaughterBeneficiary
+        ins:hasDeathBenefitShare -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasDeathBenefitShare -> range unsatisfiable: ins:Benefit
+        ins:hasDeductionImpactOnReturns -> range unsatisfiable: ins:InvestmentExperience
+        ins:hasDefinitionOfDisability -> domain unsatisfiable: ins:DisabilityCoverage
+        ins:hasDefinitionOfDisability -> range unsatisfiable: ins:BenefitStructure
+        ins:hasDepartment -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasDividendOption -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasEarningsContinuity -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasEarningsContinuity -> range unsatisfiable: ins:EligibilityRequirementWarning
+        ins:hasEmployeeIdVerification -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasEmployeeIdVerification -> range unsatisfiable: ins:EmployeeInformation
+        ins:hasEquityIndexedFormType -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasExclusion -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasFamilyRelationship -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasFamilyRelationship -> range unsatisfiable: ins:FamilyRelationship
+        ins:hasFixedAccountGuarantee -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasFlexiblePremiumPayment -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasFloorProtectionLevel -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasFreeLookPeriod -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasFuturePerformanceDisclaimer -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasGracePeriod -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasGradedBenefitSchedule -> domain unsatisfiable: ins:Benefit
+        ins:hasGradedDeathBenefit -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasGradedDeathBenefit -> range unsatisfiable: ins:GradedDeathBenefit
+        ins:hasGuaranteedCashValueGrowth -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasGuaranteedInsurabilityOption -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasHazardousActivityExclusion -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasInsured -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasInsured -> range unsatisfiable: ins:InsuredPerson
+        ins:hasInsuredGender -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasInsuredGender -> range unsatisfiable: ins:Gender
+        ins:hasInterestCalculationMethod -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasJointLifeCoverage -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasJointLifeCoverage -> range unsatisfiable: ins:JointLifePolicy
+        ins:hasLegalJurisdiction -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasLegalJurisdiction -> range unsatisfiable: ins:LegalJurisdiction
+        ins:hasLevelPremium -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasLineSeparator -> domain unsatisfiable: ins:VisualLayout
+        ins:hasMonthlyChargesComposition -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasMortalityExpenseRiskCharge -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasNoLapseGuarantee -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasNoLapseGuarantee -> range unsatisfiable: ins:PolicyLapse
+        ins:hasNoWarExclusion -> domain unsatisfiable: ins:Coverage
+        ins:hasNotificationRequirement -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPartialWithdrawalAccess -> domain unsatisfiable: ins:PolicyFunding
+        ins:hasPartialWithdrawalAccess -> range unsatisfiable: ins:WithdrawalRule
+        ins:hasPaymentFlexibility -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasPaymentMode -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPolicyExecutionLocation -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPolicyExecutionLocation -> range unsatisfiable: ins:Location
+        ins:hasPolicyType -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPolicyholder -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasPolicyholder -> range unsatisfiable: ins:PolicyOwner
+        ins:hasPreferredPlusClassification -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasPremiumLoadApplied -> domain unsatisfiable: ins:PolicyFunding
+        ins:hasPremiumPaymentCycle -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPrimaryBeneficiary -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasPrimaryBeneficiary -> range unsatisfiable: ins:PrimaryBeneficiary
+        ins:hasProtectionLevel -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasRegisteredUnitInvestmentTrust -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasRegulatoryOversight -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasReturnOfPremiumFeature -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasRider -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasRiskClassification -> domain unsatisfiable: ins:Insured
+        ins:hasRopFeature -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasSecondToDieStructure -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasSecondToDieStructure -> range unsatisfiable: ins:JointSurvivorshipLifeInsurance
+        ins:hasSelectedDividendOption -> domain unsatisfiable: ins:PolicyOwner
+        ins:hasShareOfEstate -> domain unsatisfiable: ins:Beneficiary
+        ins:hasSigningAuthority -> domain unsatisfiable: ins:PolicyEntity
+        ins:hasSigningAuthority -> range unsatisfiable: ins:AuthorizedSignatory
+        ins:hasSmokerStatus -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasSpouseBeneficiary -> domain unsatisfiable: ins:InsuredPerson
+        ins:hasSpouseBeneficiary -> range unsatisfiable: ins:Beneficiary
+        ins:hasSubAccount -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasSubmissionAddress -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasSubmissionAddress -> range unsatisfiable: ins:MailingAddress
+        ins:hasTaxExclusionViaIrrevocableTrust -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasTaxImplication -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasTollFreeNumberCorrespondenceWith -> domain unsatisfiable: ins:ContactInformation
+        ins:hasTollFreeNumberCorrespondenceWith -> range unsatisfiable: ins:ContactInformation
+        ins:hasTrust -> domain unsatisfiable: ins:InsurancePolicy
+        ins:hasTrust -> range unsatisfiable: ins:Trust
+        ins:hasTrusteeOrFiduciary -> domain unsatisfiable: ins:InsuranceContract
+        ins:hasTrusteeOrFiduciary -> range unsatisfiable: ins:TrusteeAuthority
+        ins:hasZeroDayNoticeRequirement -> domain unsatisfiable: ins:InsuranceCompany
+        ins:hasZeroDayNoticeRequirement -> range unsatisfiable: ins:InsurancePolicy
+        ins:holdsContingentInterest -> domain unsatisfiable: ins:InsuredPerson
+        ins:holdsContingentInterest -> range unsatisfiable: ins:PolicyOwnership
+        ins:holdsPosition -> domain unsatisfiable: ins:Role
+        ins:holdsPosition -> range unsatisfiable: ins:InsuredPerson
+        ins:incurredBy -> range unsatisfiable: ins:PolicyOwner
+        ins:investmentRiskBearer -> domain unsatisfiable: ins:InsuranceCompany
+        ins:isAffectedByMnECharge -> domain unsatisfiable: ins:InsuranceContract
+        ins:isBeneficiaryOfPolicyTransfer -> domain unsatisfiable: ins:Beneficiary
+        ins:isBeneficiaryOfPolicyTransfer -> range unsatisfiable: ins:PolicyTransfer
+        ins:isCoinsured -> domain unsatisfiable: ins:InsuredPerson
+        ins:isCoinsured -> range unsatisfiable: ins:InsuredPerson
+        ins:isCollateralForPolicyLoan -> domain unsatisfiable: ins:CashValue
+        ins:isExemptFrom -> domain unsatisfiable: ins:PolicyOwner
+        ins:isExercisableWithoutMedicalProof -> domain unsatisfiable: ins:Benefit
+        ins:isGuaranteedRenewableTo -> domain unsatisfiable: ins:InsurancePolicy
+        ins:isIndependentOfRopStabilityImpactFromAgeMisstatement -> domain unsatisfiable: ins:InsuranceCompany
+        ins:isIndependentOfRopStabilityImpactFromAgeMisstatement -> range unsatisfiable: ins:InsurancePolicy
+        ins:isInstanceOfWholeLifeInsurancePolicy -> domain unsatisfiable: ins:InsuranceContract
+        ins:isInstanceOfWholeLifeInsurancePolicy -> range unsatisfiable: ins:InsurancePolicy
+        ins:isNotSecuritiesProduct -> domain unsatisfiable: ins:InsurancePolicy
+        ins:isPartOfDistribution -> domain unsatisfiable: ins:Beneficiary
+        ins:isPartOfDistribution -> range unsatisfiable: ins:Beneficiary
+        ins:isPortableAcrossStates -> domain unsatisfiable: ins:InsuranceContract
+        ins:isPortableAcrossStates -> range unsatisfiable: ins:PolicyPortability
+        ins:isSecondInsured -> domain unsatisfiable: ins:InsuredPerson
+        ins:isSecondInsured -> range unsatisfiable: ins:JointSurvivorshipLifeInsurance
+        ins:isSubjectToConsultationByEstatePlanningAttorney -> domain unsatisfiable: ins:InsurancePolicy
+        ins:isSubjectToConsultationByEstatePlanningAttorney -> range unsatisfiable: ins:EstatePlanning
+        ins:isSubjectToSuicideExclusionClause -> domain unsatisfiable: ins:InsuranceContract
+        ins:isValidCoverageIncrement -> domain unsatisfiable: ins:Coverage
+        ins:isValidCoverageIncrement -> range unsatisfiable: ins:Coverage
+        ins:issuedWithoutMedicalExam -> domain unsatisfiable: ins:InsurancePolicy
+        ins:manages -> domain unsatisfiable: ins:InsuranceContract
+        ins:manages -> range unsatisfiable: ins:InsurancePolicy
+        ins:noMedicalExamRequired -> domain unsatisfiable: ins:InsuranceContract
+        ins:noMedicalExamRequired -> range unsatisfiable: ins:Eligibility
+        ins:offersGroupCoverageWithoutPreExistingConditionExclusions -> domain unsatisfiable: ins:GroupCoverage
+        ins:overseesPolicyLapse -> range unsatisfiable: ins:PolicyLapse
+        ins:paysClaimsWithinTimeline -> domain unsatisfiable: ins:InsuranceContract
+        ins:paysMonthlyAdministrativeFee -> domain unsatisfiable: ins:PolicyOwner
+        ins:premiumBasedOnPolicyClass -> domain unsatisfiable: ins:InsurancePolicy
+        ins:providesCoverageUntilAge25 -> domain unsatisfiable: ins:InsuranceContract
+        ins:providesLiquidityForEstateTaxes -> domain unsatisfiable: ins:InsurancePolicy
+        ins:providesLiquidityForEstateTaxes -> range unsatisfiable: ins:LifeInsuranceBenefit
+        ins:providesMarketDeclineProtection -> domain unsatisfiable: ins:InsurancePolicy
+        ins:receives -> domain unsatisfiable: ins:Beneficiary
+        ins:receives -> range unsatisfiable: ins:Payout
+        ins:replaces -> domain unsatisfiable: ins:InsuranceContract
+        ins:replaces -> range unsatisfiable: ins:InsuranceContract
+        ins:requiresAnnualProofOfDisability -> domain unsatisfiable: ins:InsuredPerson
+        ins:requiresAssessmentOfActivitiesOfDailyLiving -> domain unsatisfiable: ins:ActivitiesOfDailyLiving
+        ins:requiresAssessmentOfActivitiesOfDailyLiving -> range unsatisfiable: ins:ActivitiesOfDailyLiving
+        ins:requiresCertification -> domain unsatisfiable: ins:Benefit
+        ins:requiresChangeNotice -> domain unsatisfiable: ins:AccountValue
+        ins:requiresReinstatementWithInterest -> domain unsatisfiable: ins:PolicyTerm
+        ins:requiresTrusteeAuthorization -> domain unsatisfiable: ins:Trust
+        ins:requiresTrusteeAuthorization -> range unsatisfiable: ins:PolicyTransfer
+        ins:supportsAccountValueStabilityDuringOptionSwitches -> range unsatisfiable: ins:AccountValue
+        ins:survivorshipBasisTrigger -> domain unsatisfiable: ins:JointLifePolicy
+        ins:survivorshipBasisTrigger -> range unsatisfiable: ins:Benefit
+        ins:transitionToSingleLife -> domain unsatisfiable: ins:InsurancePolicy
+        ins:transitionToSingleLife -> range unsatisfiable: ins:InsurancePolicy
+        ins:waiverOfPremium -> domain unsatisfiable: ins:InsurancePolicy
+
+[4] Subclass Cycle Check     : PASS
+    No cycles detected.
+
+[5] Countable ABox Validation: WARN
+    Total detected validation issues: 2260
+
+    Issue summary:
+      - datatype_range_violations: 32
+      - object_property_literal_violations: 0
+      - datatype_property_resource_violations: 0
+      - undeclared_class_references: 0
+      - undeclared_predicate_references: 2184
+      - functional_property_violations: 0
+      - direct_disjoint_class_violations: 0
+      - domain_assertion_warnings: 44
+      - range_assertion_warnings: 0
+
+    Sample issues, up to 100 per category:
+
+    datatype_range_violations:
+      - {"subject": "https://example.org/ontology/insurance/abox#PrimaryBeneficiary_C1_SarahElizabethAnderson", "predicate": "ins:hasEstateShareAllocation", "value": "100%", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasDeathBenefitAmount", "value": "the amount payable to the beneficiary upon the death of the insured during the policy term", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson", "predicate": "ins:hasEffectiveDate", "value": "the same day and month as the issue date in each subsequent year", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasAmount", "value": "The amount of coverage converted", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasEffectiveDate", "value": "until they receive written notice at their home office", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit", "predicate": "ins:dateOfConfirmationOrDeathEvent", "value": "before the policy expiry date", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:hasDeathBenefitAmount", "value": "50%", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod", "predicate": "ins:gracePeriodDuration", "value": "the end of the grace period", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit", "predicate": "ins:hasEffectiveDate", "value": "two years from the issue date", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson", "predicate": "ins:hasAnnualPremium", "value": "monthly automatic deduction", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      ... 22 more shown in JSON report
+
+    undeclared_predicate_references:
+      - {"subject": "ins:FinalPaymentCondition", "predicate": "http://www.w3.org/2004/02/skos/core#definition", "object": "A condition that must be met for the final payment to be made under a life insurance policy.", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:WithdrawalRule", "predicate": "http://www.w3.org/2004/02/skos/core#altLabel", "object": "policy withdrawal fees", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:hasPreferredPlusClassification", "predicate": "http://www.w3.org/2004/02/skos/core#altLabel", "object": "Preferred Plus Rating", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:TransferOfPolicyRightsPermit", "predicate": "http://www.w3.org/2004/02/skos/core#definition", "object": "A permission allowing the transfer of rights associated with a life insurance policy.", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:PlaceOfResidence", "predicate": "http://www.w3.org/2004/02/skos/core#definition", "object": "A location where an individual resides, such as a city or state.", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:hasFixedLoanInterestRate", "predicate": "http://www.w3.org/2004/02/skos/core#altLabel", "object": "Loan Interest Payment Option", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:hasExpenseRatioDetailsInProspectus", "predicate": "http://www.w3.org/2004/02/skos/core#definition", "object": "Relates an insurance contract to its expense ratio details as specified in the prospectus.", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:CancellationGroundsAfterTwoYears", "predicate": "http://www.w3.org/2004/02/skos/core#definition", "object": "Conditions under which a policy may be canceled after the initial two-year period.", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:increasesDebt", "predicate": "http://www.w3.org/2004/02/skos/core#altLabel", "object": "contributes to total indebtedness", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "ins:ChildCoverage", "predicate": "http://www.w3.org/2004/02/skos/core#altLabel", "object": "insured's child", "problem": "predicate_not_declared_in_tbox"}
+      ... 90 more shown in JSON report
+
+    domain_assertion_warnings:
+      - {"subject": "https://example.org/ontology/insurance/abox#PrimaryBeneficiary_C1_SarahElizabethAnderson", "predicate": "ins:hasEstateShareAllocation", "actual_subject_types": ["ins:CertificateHolder", "ins:PrimaryBeneficiary"], "expected_domain_classes": ["ins:Beneficiary"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasDeathBenefitAmount", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:InsuranceContract"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ProofOfCoverageRequirement_C1_OriginalPolicyDocument", "predicate": "ins:claimSubmissionAddress", "actual_subject_types": ["ins:ProofOfCoverageRequirement", "ins:RegulatoryDisclosure"], "expected_domain_classes": ["ins:ClaimSubmissionProcess"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson", "predicate": "ins:hasEffectiveDate", "actual_subject_types": ["ins:CertificateHolder", "ins:ContingentBeneficiary"], "expected_domain_classes": ["ins:InsuranceContract"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasCertificateNumber", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:Certificate"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasEffectiveDate", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:InsuranceContract"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit", "predicate": "ins:dateOfConfirmationOrDeathEvent", "actual_subject_types": ["ins:LumpSumPayout", "ins:PolicyContinuationProtection"], "expected_domain_classes": ["ins:ClaimValidationDocument"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:hasDeathBenefitAmount", "actual_subject_types": ["ins:CertificateHolder", "ins:ContingentBeneficiary"], "expected_domain_classes": ["ins:InsuranceContract"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod", "predicate": "ins:gracePeriodDuration", "actual_subject_types": ["ins:LatePaymentWindow", "ins:PolicyContinuationProtection"], "expected_domain_classes": ["ins:InsuranceContract"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasCertificateNumber", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:Certificate"], "problem": "subject_has_no_declared_domain_type"}
+      ... 34 more shown in JSON report
+
+    Note: this is a count of detected validation issues, not an exact count of all OWL logical inconsistencies.
+
+============================================================================

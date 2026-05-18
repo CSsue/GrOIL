@@ -1,0 +1,356 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Apex Corporate Benefits Insurance Company                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: ACBIC-IUL-2024-0441
+Date of Issue: March 15, 2024
+Form: Corporate-Owned Indexed Universal Life (COIUL-7)
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Renfield Manufacturing Group, LLC (Illinois LLC)
+Tax ID: 36-4812097
+Insured: Daniel Arthur Renfield
+DOB: June 12, 1972 | Age: 51 | Gender: Male
+Underwriting Class: Preferred Non-Tobacco
+Relationship of Owner to Insured: Employer / Key Person
+
+Collateral Assignee: First Midwest Commercial Bank, N.A.
+(Split-Dollar Arrangement - See Endorsement COIUL-SD-01)
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $3,000,000
+Death Benefit Option: Option 2 (Increasing)
+Planned Annual Premium: $85,000
+Minimum Death Benefit Corridor: Per IRC §7702 Test B (CVAT)
+Tax Qualification Test: Cash Value Accumulation Test (CVAT)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Renfield Manufacturing Group, LLC - 100%
+   (Subject to Split-Dollar Endorsement SD-01)
+Contingent: Sandra Marie Renfield (Spouse) - 100%
+
+NOTE: See Endorsement SD-01 for split-dollar benefit allocation
+between employer and insured's personal beneficiary.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Index Account" - A sub-account where interest is credited
+    based on the measured performance of an external index, without
+    direct ownership of any securities.
+
+1.2 "Segment" - The designated allocation unit within an Index
+    Account, carrying its own start date, end date, and crediting
+    parameters.
+
+1.3 "High-Water Mark" - For applicable accounts: the highest
+    index value recorded on any monthly anniversary within the
+    crediting period.
+
+1.4 "Spread" - A deduction applied to index gains before crediting,
+    used in lieu of or in addition to a cap rate.
+
+1.5 "Buffer" - For Buffer Accounts: the percentage of index loss
+    absorbed by the company before losses affect the account value.
+
+1.6 "Crediting Period" - The duration of a Segment, either 1 year
+    or 2 years as specified per account.
+
+1.7 "CVAT" - Cash Value Accumulation Test; the IRC §7702 tax
+    qualification method elected for this policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE INDEX ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point with Cap
+       Current Cap: 11.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) S&P 500 Two-Year Point-to-Point with Cap
+       Current Cap: 20.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 2 years
+       (Interest credited only at end of 2-year segment)
+
+    C) S&P 500 Annual Point-to-Point with Spread (No Cap)
+       Cap: NONE | Spread: 3.50%
+       Participation Rate: 100% | Floor: 0%
+       Interest Credited = MAX(0%, Index Gain% - 3.50%)
+
+    D) Russell 2000 Annual Point-to-Point
+       Current Cap: 9.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    E) S&P 500 Buffer Account (10% Buffer)
+       Current Cap: 15.0% | Participation Rate: 100%
+       Buffer: 10% (first 10% of annual loss absorbed by company)
+       Maximum Loss to Policy: Index loss exceeding 10%
+       Crediting Period: 1 year
+
+    F) Fixed Account
+       Guaranteed Rate: 3.25% annually
+
+2.2 CURRENT ALLOCATION:
+    S&P 500 Annual Cap Account: 30%
+    S&P 500 Two-Year Account:   25%
+    S&P 500 Spread Account:     25%
+    Fixed Account:              20%
+
+2.3 BUFFER ACCOUNT EXPLANATION: Under Account E, if the S&P 500
+    declines 8%, the company absorbs all 8% - no loss to policy.
+    If the index declines 15%, the company absorbs 10% and the
+    policy sustains a 5% reduction in segment value. Upside is
+    capped at the stated cap rate.
+
+2.4 SEGMENT LOCK-IN: Once a crediting period has begun, premiums
+    allocated to that segment earn the rate in effect at the
+    segment start date. New premiums create new segments with
+    then-current rates.
+
+2.5 GUARANTEED MINIMUMS:
+    • Annual cap accounts: floor never below 4%
+    • Two-year cap: never below 7% cumulative
+    • Spread account: spread never exceeds 6.00%
+    • Fixed account: never below 2.50%
+    • Buffer account: buffer never below 5%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 ANNUAL CREDITING FORMULA:
+    Credit = MAX(Floor, MIN(Cap, Index% × Participation Rate))
+
+    For Spread Account:
+    Credit = MAX(0%, Index% - Spread)
+
+    For Buffer Account:
+    If Index% ≥ 0%: Credit = MIN(Cap, Index%)
+    If -Buffer ≤ Index% < 0%: Credit = 0%
+    If Index% < -Buffer: Credit = Index% + Buffer (negative result)
+
+3.2 TWO-YEAR SEGMENT EXAMPLE:
+    Year 1 Index: +12% → no crediting yet
+    Year 2 Index: +8% → cumulative performance evaluated
+    Two-year cumulative gain: 21.0% → capped at 20.0% → 20.0%
+    credited to segment at end of year 2.
+
+3.3 CREDITING DATE: Interest credits are applied to each segment
+    on its individual segment anniversary, not the policy
+    anniversary. This means different segments within the same
+    policy may credit on different calendar dates.
+
+3.4 INTRA-YEAR WITHDRAWALS FROM INDEXED SEGMENTS:
+    Withdrawals taken during an active crediting period are
+    assessed on a pro-rated basis. No partial-year index credit
+    is applied; the withdrawal reduces the segment principal only.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PREMIUM FLEXIBILITY: Premiums are flexible within IRS limits.
+    Minimum single payment: $5,000.
+    Maximum annual premium: Determined by CVAT corridor at time
+    of payment; illustrated maximum is $180,000 per year.
+
+4.2 PLANNED PREMIUM: $85,000 annually is the owner-selected
+    planned premium. We will send billing reminders but do not
+    require payment.
+
+4.3 PREMIUM LOADS:
+    Policy years 1-5:  5.0% of premium
+    Policy years 6-10: 3.0% of premium
+    Policy years 11+:  1.5% of premium
+    These loads fund state premium taxes and distribution costs.
+
+4.4 ADDITIONAL LUMP SUM CAPABILITY: Owner may pay up to the
+    CVAT maximum in any policy year as a single lump-sum deposit.
+    Apex will provide CVAT corridor calculations within 5 business
+    days of written request.
+
+4.5 SPLIT-DOLLAR PREMIUM SHARING: Under Endorsement SD-01, the
+    Employer (Owner) pays the full planned premium. The Insured's
+    imputed income equals the PS-58 cost or the company's
+    published term rates, whichever is lower, as required under
+    IRC Rev. Rul. 2003-105 (loan regime).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COST OF INSURANCE (COI): Charged monthly per $1,000 of
+    net amount at risk (NAR). NAR = Death Benefit - Account Value.
+    Under Option 2 (Increasing), NAR remains relatively stable
+    as account value growth increases total death benefit.
+    COI rates are guaranteed not to exceed Table D rates.
+
+5.2 POLICY FEE: $20 per month, guaranteed not to increase.
+
+5.3 FACE AMOUNT CHARGE: $0.04 per $1,000 of face amount per month
+    for years 1-10; waived thereafter.
+
+5.4 SEGMENT ADMINISTRATIVE FEE: $5.00 per active segment per
+    month, assessed to the fixed account.
+
+5.5 RIDER CHARGES: Assessed separately as specified in each rider
+    schedule.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 OPTION 2 - INCREASING DEATH BENEFIT (CURRENT):
+    Death Benefit = $3,000,000 + Account Value at time of claim
+    This design maximizes the net amount at risk efficiency for
+    tax-efficient corporate-owned life insurance (COLI) purposes
+    and ensures the death benefit always exceeds account value.
+
+6.2 IRC §7702 COMPLIANCE: Under CVAT, the death benefit must
+    always equal or exceed the account value multiplied by the
+    applicable corridor factor from IRS tables. We will
+    automatically increase the death benefit if account value
+    growth would otherwise cause a CVAT violation.
+
+6.3 AUTOMATIC FACE INCREASE: If CVAT corridor requirements
+    demand a higher death benefit, we increase coverage
+    automatically. No additional underwriting is required for
+    automatic corridor increases.
+
+6.4 SPLIT-DOLLAR DEATH BENEFIT ALLOCATION (per Endorsement SD-01):
+    Employer receives: Greater of total premiums paid or cash
+    surrender value at date of death.
+    Insured's beneficiary receives: Remaining proceeds, if any.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 POLICY LOANS:
+    Available after policy year 1.
+    Maximum: 95% of cash surrender value.
+    Standard Loan Rate: Prime + 1.0% (variable, reset annually)
+    Preferred Loan Rate: 3.5% fixed (available after year 10)
+    Loaned amounts: Credited at fixed account rate.
+
+7.2 OVERLOAN PROTECTION RIDER (Included):
+    If outstanding loans reach 95% of account value and the
+    policy would otherwise lapse, this rider prevents lapse by
+    converting the policy to a paid-up reduced face amount.
+    Minimum face required for activation: $250,000.
+    See Rider Schedule OLP-03.
+
+7.3 PARTIAL WITHDRAWALS:
+    Minimum per withdrawal: $2,500.
+    Available any time after year 1.
+    No explicit withdrawal fee; surrender charges may apply.
+    Withdrawals from indexed segments are credited at 0%
+    for the remaining partial crediting period.
+
+7.4 CORPORATE LOAN DOCUMENTATION: As a COLI policy, outstanding
+    loan balances may be reported on the Owner's financial
+    statements. Owner is responsible for maintaining appropriate
+    corporate records and COLI notices per IRC §264(f).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SURRENDER CHARGE SCHEDULE:
+    Applied as percentage of target premium ($85,000):
+
+    Year 1:  10%    Year 6:   6%    Year 11:  2%
+    Year 2:  10%    Year 7:   5%    Year 12:  1%
+    Year 3:   9%    Year 8:   4%    Year 13:  0.5%
+    Year 4:   8%    Year 9:   3%    Year 14+: 0%
+    Year 5:   7%    Year 10:  2.5%
+
+8.2 Surrender charges apply to total cumulative target premiums
+    paid, not account value.
+
+8.3 FREE WITHDRAWAL PROVISION: Owner may withdraw up to 15% of
+    account value per policy year without surrender charge,
+    beginning in year 2.
+
+8.4 COLI SURRENDER CONSIDERATION: Corporate owners should review
+    tax consequences of surrender under IRC §264 with qualified
+    tax counsel before surrendering this policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - RIDERS IN FORCE
+═══════════════════════════════════════════════════════════════════
+9.1 OVERLOAN PROTECTION RIDER (OLP-03) - No additional charge
+    Prevents lapse due to excessive loan balances after year 15.
+
+9.2 RETURN OF PREMIUM DEATH BENEFIT RIDER (ROPDB-01)
+    Monthly charge: $0.02 per $1,000 face amount, years 1-10.
+    Benefit: If insured dies during policy years 1-5, death
+    benefit is increased by total gross premiums paid.
+
+9.3 KEY PERSON DISABILITY WAIVER RIDER (KPD-02)
+    Monthly charge: Per separate rider schedule.
+    Waives planned premium if insured is totally disabled per
+    rider definition for more than 6 consecutive months.
+    Maximum waiver period: 3 years per disability event.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: If insured dies by suicide within 2 years of policy
+     issue or reinstatement, the death benefit equals total
+     premiums paid, less withdrawals, less outstanding loans.
+
+10.2 CONTESTABILITY: This policy may be contested for material
+     misrepresentation within 2 years of issue date. After 2
+     years, this policy is incontestable except for non-payment
+     of premium or fraud in the procurement of insurance.
+
+10.3 AVIATION EXCLUSION: No exclusion. Full death benefit is
+     payable regardless of aviation-related cause of death.
+
+10.4 WAR EXCLUSION: None. Coverage is worldwide.
+
+10.5 BUSINESS PURPOSE NOTICE (IRC §264): This is a corporate-
+     owned policy subject to interest deduction limitations.
+     Premium payments are generally not tax-deductible. Owner
+     should consult tax counsel annually.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - IMPORTANT DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 This policy is not a securities product and index
+     participation does not represent ownership of stocks.
+
+11.2 Index calculations exclude dividends paid by index components.
+
+11.3 The Buffer Account introduces a risk of principal loss
+     exceeding the buffer amount; this policy does not provide
+     a 0% floor for Buffer Account segments.
+
+11.4 Two-year segment values are not accessible for withdrawal
+     or crediting until the segment matures; early exit forfeits
+     accrued but uncredited index gains.
+
+11.5 COLI ANNUAL REPORTING: Policies with face amounts exceeding
+     $500,000 require annual reporting under IRC §6039I.
+
+═══════════════════════════════════════════════════════════════════
+
+Questions? Contact Apex Corporate Benefits:
+Phone: 1-800-APEX-CORP
+Email: corporatebenefits@apexcbi.com
+Web: www.apexcorporatebenefits.com
+
+Issued at: Schaumburg, Illinois
+
+[CORPORATE SEAL]
+
+__________________________________
+President & Chief Underwriting Officer
+Apex Corporate Benefits Insurance Company
+
+March 15, 2024
+
+═══════════════════════════════════════════════════════════════════

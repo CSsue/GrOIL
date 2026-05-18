@@ -1,0 +1,76 @@
+[
+  {
+    "axiom_id": "AX_0423",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Premium",
+    "property_name": null,
+    "filler": "Premium",
+    "cardinality": null,
+    "axiom_str": "Premium DisjointWith Premium",
+    "definition": "Health changes do not trigger premium adjustments.",
+    "confidence": "low",
+    "reasoning": "The property prohibits health-based adjustments, but the disjointness assertion is invalid because a class cannot be disjoint with itself. The correct interpretation is a restriction on premium behavior, not disjointness.",
+    "evidence_sentences": [
+      "If health metrics remain unchanged, the table rating remains as originally issued.",
+      "Changes in the insured\u2019s health do not affect premium increases.",
+      "Individual premium adjustments based on the insured's personal health changes are not permitted.",
+      "Individual premium adjustments based on the insured's personal health changes are not permitted under this policy."
+    ],
+    "source_cluster": "NoHealthBasedPremiumAdjustments",
+    "candidate_property_hint": "NoHealthBasedPremiumAdjustments",
+    "candidate_filler_hint": "Premium",
+    "dr_confidence": "high",
+    "member_strings": [
+      "No Health-Based Premium Adjustments",
+      "No Change in Health Metrics",
+      "Health Changes No Impact on Premiums"
+    ]
+  },
+  {
+    "axiom_id": "AX_0498",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "InvestmentVehicle",
+    "property_name": null,
+    "filler": "InvestmentVehicle",
+    "cardinality": null,
+    "axiom_str": "InvestmentVehicle DisjointWith InvestmentVehicle",
+    "definition": "Direct foreign securities investment is prohibited.",
+    "confidence": "low",
+    "reasoning": "The two classes are identical, violating the disjointness requirement. The property likely intends to restrict certain investment vehicles, so a restriction is more appropriate.",
+    "evidence_sentences": [
+      "No direct investment in foreign securities occurs within index accounts."
+    ],
+    "source_cluster": "ProhibitionOfDirectForeignSecuritiesInvestment",
+    "candidate_property_hint": "ProhibitionOfDirectForeignSecuritiesInvestment",
+    "candidate_filler_hint": "InvestmentVehicle",
+    "dr_confidence": "high",
+    "member_strings": [
+      "No Direct Foreign Securities Investment"
+    ]
+  },
+  {
+    "axiom_id": "AX_0509",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Exclusion",
+    "property_name": null,
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "Exclusion DisjointWith Exclusion",
+    "definition": "Professional athletics is excluded from coverage under the policy.",
+    "confidence": "low",
+    "reasoning": "The property defines a specific exclusion, but 'ExclusionOfProfessionalAthletics' is not disjoint from 'Exclusion'\u2014it is a subclass. The hierarchy shows that Exclusion is a superclass, so disjointness is invalid. The correct reading is a restriction, not disjointness.",
+    "evidence_sentences": [
+      "Professional athletics is excluded from coverage under the accidental death benefit rider."
+    ],
+    "source_cluster": "ExclusionOfProfessionalAthletics",
+    "candidate_property_hint": "ExclusionOfProfessionalAthletics",
+    "candidate_filler_hint": "Exclusion",
+    "dr_confidence": "high",
+    "member_strings": [
+      "Exclusion of Professional Athletics"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "total_axioms": 77,
+  "review_items": 0,
+  "flagged_disjoint_axioms": 3,
+  "candidates_built": 81,
+  "candidates_kept": 81,
+  "candidates_dropped": 0,
+  "confidence_distribution": {
+    "high": 71,
+    "medium": 6
+  },
+  "construct_distribution": {
+    "owl:someValuesFrom": 69,
+    "owl:maxCardinality": 3,
+    "owl:disjointWith": 3,
+    "owl:minCardinality": 1,
+    "owl:exactCardinality": 1
+  },
+  "axiom_family_distribution": {
+    "eligibility_condition": 55,
+    "cardinality_constraint": 5,
+    "prohibition_or_exclusion": 10,
+    "subclass_condition": 3,
+    "other": 4
+  }
+}

@@ -1,0 +1,209 @@
+============================================================================
+  TBox + ABox Reasoner and Validation Report — 2026-05-04T23:58:15.400426+00:00
+  ✗  ISSUES FOUND
+============================================================================
+  TBox : out/ontology_construction/10_contracts_dataset/stage7_serialized_ontology/tbox.ttl
+  ABox : out/ontology_construction/10_contracts_dataset/abox/abox_C1.ttl
+  TBox triples        : 6995
+  ABox triples        : 246
+  TBox + ABox triples : 7241
+
+[1] TBox + ABox Consistency : FAIL
+    Consistent: No
+Reason: Literal value "Emma Grace Anderson"^^string does not belong to datatype decimal
+
+[2] TBox Satisfiability     : FAIL
+    Satisfiable classes     : 709
+    *** Unsatisfiable classes (1):
+        - ins:PolicyWithdrawal
+    Pellet stderr: Classifying 668 elements
+
+Classifying:  0% complete in 00:00
+Classifying:  1% complete in 00:00
+Classifying:  2% complete in 00:00
+Classifying:  3% complete in 00:00
+Classifying:  4% complete in 00:00
+Classifying:  5% complete in 00:00
+Classifying:  6% complete in 00:00
+Classifying:  7% complete in 00:00
+Classifying:  8% complete in 00:00
+Classifying:  9% complete in 00:00
+Classifying:  10% complete in 00:00
+Classifying:  11% complete in 00:00
+Classifying:  12% complete in 00:00
+Classifying:  13% complete in 00:00
+Classifying:  14% complete in 00:00
+Classifying:  15% complete in 00:00
+Classifying:  16% complete in 00:00
+Classifying:  17% complete in 00:00
+Classifying:  18% complete in 00:00
+Classifying:  19% complete in 00:00
+Classifying:  20% complete in 00:00
+Classifying:  21% complete in 00:00
+Classifying:  22% complete in 00:00
+Classifying:  23% complete in 00:00
+Classifying:  24% complete in 00:00
+Classifying:  25% complete in 00:00
+Classifying:  26% complete in 00:00
+Classifying:  27% complete in 00:00
+Classifying:  28% complete in 00:00
+Classifying:  29% complete in 00:00
+Classifying:  30% complete in 00:00
+Classifying:  31% complete in 00:00
+Classifying:  32% complete in 00:00
+Classifying:  33% complete in 00:00
+Classifying:  34% complete in 00:00
+Classifying:  35% complete in 00:00
+Classifying:  36% complete in 00:00
+Classifying:  37% complete in 00:00
+Classifying:  38% complete in 00:00
+Classifying:  39% complete in 00:00
+Classifying:  40% complete in 00:00
+Classifying:  41% complete in 00:00
+Classifying:  42% complete in 00:00
+Classifying:  43% complete in 00:00
+Classifying:  44% complete in 00:00
+Classifying:  45% complete in 00:00
+Classifying:  46% complete in 00:00
+Classifying:  47% complete in 00:00
+Classifying:  48% complete in 00:00
+Classifying:  49% complete in 00:00
+Classifying:  50% complete in 00:00
+Classifying:  51% complete in 00:00
+Classifying:  52% complete in 00:00
+Classifying:  53% complete in 00:00
+Classifying:  54% complete in 00:00
+Classifying:  55% complete in 00:00
+Classifying:  56% complete in 00:00
+Classifying:  57% complete in 00:00
+Classifying:  58% complete in 00:00
+Classifying:  59% complete in 00:00
+Classifying:  60% complete in 00:00
+Classifying:  61% complete in 00:00
+Classifying:  62% complete in 00:00
+Classifying:  63% complete in 00:00
+Classifying:  64% complete in 00:00
+Classifying:  65% complete in 00:00
+Classifying:  66% complete in 00:00
+Classifying:  67% complete in 00:00
+Classifying:  68% complete in 00:00
+Classifying:  69% complete in 00:00
+Classifying:  70% complete in 00:00
+Classifying:  71% complete in 00:00
+Classifying:  72% complete in 00:00
+Classifying:  73% complete in 00:00
+Classifying:  74% complete in 00:00
+Classifying:  75% complete in 00:00
+Classifying:  76% complete in 00:00
+Classifying:  77% complete in 00:00
+Classifying:  78% complete in 00:00
+Classifying:  79% complete in 00:00
+Classifying:  80% complete in 00:00
+Classifying:  81% complete in 00:00
+Classifying:  82% complete in 00:00
+Classifying:  83% complete in 00:00
+Classifying:  84% complete in 00:00
+Classifying:  85% complete in 00:00
+Classifying:  86% complete in 00:00
+Classifying:  87% complete in 00:00
+Classifying:  88% complete in 00:00
+Classifying:  89% complete in 00:00
+Classifying:  90% complete in 00:00
+Classifying:  91% complete in 00:00
+Classifying:  92% complete in 00:01
+Classifying:  93% complete in 00:01
+Classifying:  94% complete in 00:01
+Classifying:  95% complete in 00:01
+Classifying:  96% complete in 00:01
+Classifying:  97% complete in 00:01
+Classifying:  98% complete in 00:01
+Classifying:  99% complete in 00:01
+Classifying:  100% complete in 00:01
+Classifying finished in 00:01
+
+    Inferred hierarchy, top 20 classes:
+      http://org.semanticweb.owlapi/error#Error1
+      ins:AccountValue
+      ins:AccountValueVolatility
+      http://org.semanticweb.owlapi/error#Error2
+      ins:PolicyEntity
+      ins:AuthorizedSignatory
+      ins:CertificateHolder
+      ins:DeathBenefitRecipient
+      ins:Beneficiary
+      ins:DaughterBeneficiary
+      ins:PayoutRecipient
+      ins:ContingentBeneficiary
+      ins:PrimaryBeneficiary
+      ins:DocumentAccessControl
+      ins:EligibleInsuredChildUnderRider
+      ins:FirstToDie
+      ins:GuaranteedIssue
+      ins:IncreasedCostTerm
+      ins:InsuredPerson
+      ins:Gender
+
+[3] Domain/Range Coherence  : PASS
+    No issues found.
+
+[4] Subclass Cycle Check     : PASS
+    No cycles detected.
+
+[5] Countable ABox Validation: WARN
+    Total detected validation issues: 212
+
+    Issue summary:
+      - datatype_range_violations: 38
+      - object_property_literal_violations: 0
+      - datatype_property_resource_violations: 0
+      - undeclared_class_references: 0
+      - undeclared_predicate_references: 124
+      - functional_property_violations: 0
+      - direct_disjoint_class_violations: 0
+      - domain_assertion_warnings: 50
+      - range_assertion_warnings: 0
+
+    Sample issues, up to 100 per category:
+
+    datatype_range_violations:
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasDeathBenefitAmount", "value": "corrected death benefit", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasAnnualPremium", "value": "20", "actual_datatype": "http://www.w3.org/2001/XMLSchema#integer", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#PolicyTerminationProtection_C1_ConversionPrivilege", "predicate": "ins:conversionDeadline", "value": "the earlier of the policy expiry date or the insured's 65th birthday", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod", "predicate": "ins:gracePeriodDuration", "value": "The grace period allows continued coverage even if the premium is not paid by the due date.", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#duration", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit", "predicate": "ins:hasAmount", "value": "the amount of coverage converted", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasAmount", "value": "20-Year Level Term Life Insurance", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:hasContingentInterestPercentage", "value": "Emma Grace Anderson", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit", "predicate": "ins:hasDeathBenefitAmount", "value": "lump sum", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#PrimaryBeneficiary_C1_SarahElizabethAnderson", "predicate": "ins:hasDeathBenefitShare", "value": "100%", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal", "problem": "literal_does_not_match_declared_datatype_range"}
+      - {"subject": "https://example.org/ontology/insurance/abox#InsurerChallengePeriodLimit_C1_Incontestability", "predicate": "ins:conversionDeadline", "value": "The insured's attained age at conversion", "actual_datatype": "http://www.w3.org/2001/XMLSchema#string", "expected_datatype": "http://www.w3.org/2001/XMLSchema#date", "problem": "literal_does_not_match_declared_datatype_range"}
+      ... 28 more shown in JSON report
+
+    undeclared_predicate_references:
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ClaimSubmissionProcess_C1_Section9ClaimsProcedure", "predicate": "ins:sourceContractSection", "object": "death benefit claim, required documentation, certified death certificate", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#PolicyTermDuration_C1_20Years", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#MandatoryClaimDocument_C1_CompletedClaimForm", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson", "predicate": "ins:sourceContractSection", "object": "contingent beneficiary, family relationship, insured's child", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#AdjustmentToDeathBenefit_C1_MisstatementOfAgeOrSex", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#PolicyTermDuration_C1_4500", "predicate": "ins:sourceContractID", "object": "C1", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:sourceContractSection", "object": "misstatement of age, death benefit adjustment, premiums vs. correct age", "problem": "predicate_not_declared_in_tbox"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ClaimMailingAddress_C1_POBox5000HartfordCt06102", "predicate": "ins:stateOfIssuance", "object": "P.O. Box 5000, Hartford, CT 06102", "problem": "predicate_not_declared_in_tbox"}
+      ... 90 more shown in JSON report
+
+    domain_assertion_warnings:
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:hasCertificateHolderName", "actual_subject_types": ["ins:CertificateHolder", "ins:ContingentBeneficiary"], "expected_domain_classes": ["ins:Certificate"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasDeathBenefitAmount", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:DeathBenefit"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasAnnualPremium", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:PolicyFunding"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#PolicyTerminationProtection_C1_ConversionPrivilege", "predicate": "ins:conversionDeadline", "actual_subject_types": ["ins:PolicyTerminationProtection", "ins:RightToSwitchPolicy"], "expected_domain_classes": ["ins:PolicyTerm"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod", "predicate": "ins:gracePeriodDuration", "actual_subject_types": ["ins:LatePaymentWindow", "ins:PolicyTerminationProtection"], "expected_domain_classes": ["ins:PolicyEntity"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson", "predicate": "ins:hasContingentInterestPercentage", "actual_subject_types": ["ins:CertificateHolder", "ins:ContingentBeneficiary"], "expected_domain_classes": ["ins:Percentage"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson", "predicate": "ins:hasAnnualPremium", "actual_subject_types": ["ins:CertificateHolder", "ins:Insured", "ins:PolicyOwner"], "expected_domain_classes": ["ins:PolicyFunding"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany", "predicate": "ins:hasCertificateHolderName", "actual_subject_types": ["ins:ClaimsProcessingAuthority", "ins:ContingentBeneficiary", "ins:IssuingInsurer"], "expected_domain_classes": ["ins:Certificate"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson", "predicate": "ins:effectiveDateOfNoPartialWithdrawalRule", "actual_subject_types": ["ins:CertificateHolder", "ins:Insured", "ins:PolicyOwner"], "expected_domain_classes": ["ins:WithdrawalRestrictionClause"], "problem": "subject_has_no_declared_domain_type"}
+      - {"subject": "https://example.org/ontology/insurance/abox#ProofOfCoverageRequirement_C1_OriginalPolicyDocument", "predicate": "ins:claimSubmissionAddress", "actual_subject_types": ["ins:ProofOfCoverageRequirement", "ins:RegulatoryDisclosure"], "expected_domain_classes": ["ins:ClaimSubmissionProcess"], "problem": "subject_has_no_declared_domain_type"}
+      ... 40 more shown in JSON report
+
+    Note: this is a count of detected validation issues, not an exact count of all OWL logical inconsistencies.
+
+============================================================================

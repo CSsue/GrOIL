@@ -1,0 +1,18 @@
+{
+  "total_classes": 199,
+  "corpus_classes": 196,
+  "abstract_classes": 8,
+  "flagged_for_review": 8,
+  "multi_parent_classes": 0,
+  "confidence_distribution": {
+    "high": 199
+  },
+  "placement_source": {
+    "llm": 191,
+    "abstract": 8
+  },
+  "thresholds": {
+    "edge_sim": 0.85,
+    "prop_jaccard": 0.6
+  }
+}

@@ -1,0 +1,209 @@
+═══════════════════════════════════════════════════════════════════
+         LADDERED TERM LIFE INSURANCE POLICY
+         Cornerstone Life & Annuity Insurance Company
+═══════════════════════════════════════════════════════════════════
+
+Policy Number: CL-LAD-2024-5503
+Policy Date: June 1, 2024
+Policy Type: Laddered Level Term – Multi-Duration Coverage Architecture
+
+═══════════════════════════════════════════════════════════════════
+INSURED INFORMATION
+═══════════════════════════════════════════════════════════════════
+Name: David Emmett Thornton
+Sex: Male
+Date of Birth: January 17, 1982
+Issue Age: 42
+Underwriting Class: Preferred Plus Non-Smoker
+
+═══════════════════════════════════════════════════════════════════
+OWNERSHIP
+═══════════════════════════════════════════════════════════════════
+Owner: David Emmett Thornton (Self)
+
+═══════════════════════════════════════════════════════════════════
+LADDERED COVERAGE STRUCTURE
+═══════════════════════════════════════════════════════════════════
+This policy provides coverage through three distinct, declining
+tranches of term insurance, all issued under a single policy number
+with a single application and one annual premium. Each tranche
+has its own coverage amount and expiration date. The total death
+benefit is the sum of all active tranches at the time of death.
+
+TRANCHE 1 – PRIMARY COVERAGE
+  Face Amount: $1,000,000
+  Coverage Period: 30 years (expires June 1, 2054)
+  Annual Premium: $1,890.00
+  Purpose: Long-term income replacement; retirement bridge
+
+TRANCHE 2 – MORTGAGE AND EDUCATION LAYER
+  Face Amount: $500,000
+  Coverage Period: 20 years (expires June 1, 2044)
+  Annual Premium: $620.00
+  Purpose: Mortgage payoff; college funding for dependents
+
+TRANCHE 3 – EARLY-YEARS INTENSIVE COVERAGE
+  Face Amount: $500,000
+  Coverage Period: 10 years (expires June 1, 2034)
+  Annual Premium: $280.00
+  Purpose: Maximum protection during peak financial obligation years
+
+TOTAL ANNUAL PREMIUM: $2,790.00 (including riders below)
+  Rider Premiums: $155.00/year (see Section 2)
+  Base Tranche Premiums: $2,790.00 total
+
+DEATH BENEFIT BY PERIOD:
+  Policy Years 1–10 (now–2034):    $2,000,000 (all 3 tranches active)
+  Policy Years 11–20 (2034–2044):  $1,500,000 (tranches 1 and 2)
+  Policy Years 21–30 (2044–2054):  $1,000,000 (tranche 1 only)
+
+RATIONALE: This laddered structure mirrors anticipated decreasing
+financial obligations as dependents mature, the mortgage is paid
+off, and retirement assets accumulate, while delivering higher
+death benefit in the early high-need period without purchasing
+a single expensive 30-year policy for the full $2,000,000.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARIES
+═══════════════════════════════════════════════════════════════════
+Primary:   Claire Renée Thornton (Wife) – 100%
+Contingent: Emma Rose Thornton (Daughter, Age 14) – 33.33%
+            Jackson Miles Thornton (Son, Age 11) – 33.33%
+            Oliver Grant Thornton (Son, Age 8) – 33.33%
+
+═══════════════════════════════════════════════════════════════════
+POLICY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+"Active Tranche" means any coverage tranche that has not yet reached
+its scheduled expiration date.
+
+"Total Death Benefit" means the sum of all active tranche face
+amounts at the time of the insured's death.
+
+"Tranche Conversion" means the exercise of the right to convert
+an individual tranche to a permanent policy.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 1: BASE POLICY COVERAGE
+═══════════════════════════════════════════════════════════════════
+1.1 We will pay the Total Death Benefit to the beneficiary upon
+    the insured's death while this policy is in force and all
+    premiums are current.
+
+1.2 Payment within 30 days of satisfactory proof of death.
+
+1.3 EXCLUSION – SUICIDE: Death by suicide within 2 years of the
+    policy date limits benefit to return of premiums paid without
+    interest. After 2 years, full Total Death Benefit is payable.
+
+1.4 EXCLUSION – AVIATION: Standard aviation exclusion applies only
+    to Tranche 3. Tranches 1 and 2 provide full coverage regardless
+    of aviation activity, including operation of private aircraft.
+    This differential exclusion structure is in consideration of
+    the insured's declared recreational pilot status and the
+    correspondingly lower premium for Tranche 3.
+
+1.5 CLAIM DOCUMENTATION: A single claim and proof of death applies
+    to all active tranches. Payment will be made in one combined
+    disbursement for all active tranches.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 2: ATTACHED RIDERS
+═══════════════════════════════════════════════════════════════════
+
+RIDER 1: WAIVER OF ALL TRANCHE PREMIUMS – DISABILITY
+Premium: $155/year
+
+If the insured becomes totally disabled (unable to engage in any
+gainful occupation for which suited by education, training, or
+experience) for 6+ continuous months before age 60:
+• All tranche premiums are waived during the disability period
+• Coverage in all active tranches continues in full
+• Waiver continues until recovery, return to work, or age 65
+• Upon recovery, regular premiums resume; waiver of premium rider
+  premium itself is also waived during disability
+• If disability begins before the expiration of Tranche 3 (2034),
+  the waiver covers premiums of all tranches then active
+
+ACCELERATED DEATH BENEFIT (no additional premium):
+• Terminal illness (life expectancy ≤ 12 months): up to 75% of the
+  Total Death Benefit at the time of acceleration ($1,500,000 max)
+• Benefit paid from Tranche 1 first, then Tranche 2
+• Actuarial discount: approximately 7% per year of remaining
+  life expectancy
+• Does not affect Tranche 3 unless explicitly requested
+
+═══════════════════════════════════════════════════════════════════
+SECTION 3: TRANCHE MANAGEMENT PROVISIONS
+═══════════════════════════════════════════════════════════════════
+3.1 INDIVIDUAL TRANCHE CONVERSION: Each tranche may be converted
+    independently to a permanent life insurance policy without
+    evidence of insurability. Conversion of a tranche terminates
+    that tranche under this policy. Remaining tranches continue.
+    Conversion must occur before the tranche's expiration date or
+    the insured's 70th birthday, whichever is earlier. Minimum
+    conversion: $100,000.
+
+3.2 TRANCHE REDUCTION: The insured may reduce the face amount of
+    any tranche on any policy anniversary by written request. A
+    reduction is irrevocable. Premium is adjusted downward
+    accordingly. Minimum remaining tranche face amount: $100,000.
+
+3.3 TRANCHE CANCELLATION: Any individual tranche may be cancelled
+    without affecting the remaining tranches. Cancellation is
+    irrevocable. Once cancelled, a tranche cannot be reinstated.
+
+3.4 LAPSE PREVENTION: If premiums are unpaid at the end of the
+    grace period, coverage lapses on the tranche(s) with the
+    shortest remaining coverage period first, in order, preserving
+    the longer-duration tranche(s) as long as possible. This
+    sequential lapse provision is intended to protect the insured's
+    long-term coverage in cases of financial hardship.
+
+3.5 TRANCHE ADDITION: The insured may not add new tranches to this
+    policy after the policy date. Additional term coverage requires
+    a new policy application.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 4: PREMIUM PAYMENT
+═══════════════════════════════════════════════════════════════════
+4.1 Total Annual Premium: $2,790.00
+    Due Date: June 1 each year
+    Payment Mode: Annual (quarterly available: $722.85/quarter)
+
+4.2 Premium is allocated among the tranches as follows:
+    Tranche 1: $1,890.00 | Tranche 2: $620.00 | Tranche 3: $280.00
+    Riders: $155.00 (allocated proportionally to Tranche 1)
+
+4.3 GRACE PERIOD: 31 days from due date.
+
+4.4 REINSTATEMENT: Policy may be reinstated within 2 years of lapse
+    upon payment of all back premiums plus 7% interest and evidence
+    of insurability. Reinstatement does not restore any tranche
+    previously cancelled; it only reinstates lapsed tranches.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 5: INCONTESTABILITY
+═══════════════════════════════════════════════════════════════════
+After 2 years from the policy date during the insured's lifetime,
+we will not contest this policy except for non-payment of premiums.
+Each tranche is subject to its own contestability period running
+from the policy date (not from the tranche's expiration date).
+
+═══════════════════════════════════════════════════════════════════
+SECTION 6: GOVERNING LAW
+═══════════════════════════════════════════════════════════════════
+This policy is governed by the laws of the State of Minnesota.
+
+═══════════════════════════════════════════════════════════════════
+
+Issued in Minneapolis, Minnesota
+
+[SIGNATURE]
+________________________
+President and Chief Actuary
+Cornerstone Life & Annuity Insurance Company
+
+Date: June 1, 2024
+
+═══════════════════════════════════════════════════════════════════

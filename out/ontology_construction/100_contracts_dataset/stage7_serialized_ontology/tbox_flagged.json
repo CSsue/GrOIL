@@ -1,0 +1,12 @@
+{
+  "flagged_classes": [
+    {
+      "owl_name": "PolicyMechanics",
+      "confidence": "low",
+      "reason": "low placement confidence",
+      "definition": "The operational and structural elements governing how a life insurance policy functions."
+    }
+  ],
+  "flagged_properties": [],
+  "flagged_axioms": []
+}

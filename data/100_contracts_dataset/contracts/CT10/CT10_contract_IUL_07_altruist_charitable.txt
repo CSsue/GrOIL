@@ -1,0 +1,317 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Altruist Life Insurance Company                            ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: ALIC-IUL-PHIL-2024-0019
+Date of Issue: February 28, 2024
+Form: Philanthropic Indexed Universal Life (PHIUL-2)
+Market Position: Charitable / Philanthropic Life Insurance;
+                 Nonprofit-Owned Life Insurance (NOLI)
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: The Waverly Foundation, Inc.
+       (501(c)(3) Public Charity, EIN 27-4391055)
+       777 Philanthropy Boulevard, Suite 400
+       San Francisco, CA 94105
+
+Insured: Margaret Elaine Waverly-Cole
+DOB: December 7, 1958 | Age: 65 | Gender: Female
+Underwriting Class: Preferred Non-Tobacco
+Relationship to Owner: Founder and Major Benefactor of
+The Waverly Foundation
+
+Consent: Insured has consented in writing to this coverage
+per applicable California and federal law.
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $2,000,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $35,000
+Charitable Endowment Design: Policy proceeds upon death of
+insured are intended to endow the Foundation's permanent
+scholarship fund.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: The Waverly Foundation, Inc. (Owner) - 100%
+         Designated Use: Waverly Scholarship Endowment Fund
+Contingent: San Francisco Community Foundation
+            (donor-advised fund to continue charitable purpose)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "NOLI" - Nonprofit-Owned Life Insurance; life insurance
+    owned by a 501(c)(3) organization on the life of a donor,
+    board member, key executive, or other insurable party.
+
+1.2 "Charitable Endowment" - The accumulation of policy
+    value intended to fund a permanent charitable purpose
+    upon maturity or insured's death.
+
+1.3 "Charitable Bequest Intent Letter" - A non-binding letter
+    from the insured expressing charitable intent, maintained
+    in the policy file.
+
+1.4 "Insurable Interest (Charitable)" - Under California law,
+    a 501(c)(3) charitable organization has an insurable
+    interest in the life of a major donor who has made a
+    documented pledge or gift to the organization.
+
+1.5 "Philanthropic Dividend" - An annual bonus interest credit
+    of 0.25% applied to account value, available under this
+    product series, in lieu of standard persistency bonuses.
+
+1.6 "Index Credit" - Non-guaranteed interest based on index
+    performance, subject to cap and floor.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 10.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) ESG-Oriented Blended Account
+       Index: MSCI KLD 400 Social Index (ESG-screened)
+       Current Cap: 9.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Excludes tobacco, weapons, and fossil fuel producers)
+
+    C) Fixed Account
+       Current Rate: 3.50% | Guaranteed Minimum: 2.25%
+
+    D) Philanthropic Fixed Account
+       Current Rate: 3.75% | Guaranteed Minimum: 2.50%
+       Available ONLY to 501(c)(3) policy owners.
+       Reflects Altruist's commitment to the charitable sector.
+
+2.2 CURRENT ALLOCATION:
+    ESG-Oriented Account:          40%
+    S&P 500 Account:               35%
+    Philanthropic Fixed Account:   25%
+
+2.3 ESG ACCOUNT NOTE: The MSCI KLD 400 Social Index excludes
+    companies deriving revenue from alcohol, tobacco, military
+    weapons, firearms, nuclear power, gambling, and adult
+    entertainment. The Waverly Foundation has elected this
+    account to align policy investments with its mission.
+
+2.4 PHILANTHROPIC DIVIDEND: Starting in policy year 3, an
+    additional 0.25% annual interest credit is applied to
+    the total account value each policy anniversary, as long
+    as the policy is owned by a qualifying 501(c)(3). This
+    bonus is not guaranteed and may be discontinued with
+    90 days' advance notice, but never below 0.10%.
+
+2.5 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 4.00%
+    • ESG cap: never below 3.50%
+    • Philanthropic Fixed: never below 2.50%
+    • Fixed Account: never below 2.25%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 Annual point-to-point crediting:
+    Credit = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 ESG ACCOUNT PERFORMANCE CONTEXT: ESG-screened indices
+    may perform differently from unscreened broad market
+    indices in any given year. Historical performance of
+    the MSCI KLD 400 has been broadly comparable to the
+    S&P 500 over long periods, though with some deviations
+    in specific market cycles.
+
+3.3 PHILANTHROPIC DIVIDEND APPLICATION: The 0.25% annual
+    bonus credit is applied to total account value after
+    standard index crediting on each policy anniversary.
+    This is separate from and additive to the index credit.
+
+3.4 ZERO FLOOR: No account value reduction from negative
+    index performance.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $35,000 per year represents the annual
+    charitable contribution budget allocated by the Foundation.
+
+4.2 VARIABLE PREMIUM FLEXIBILITY: Foundations often have
+    variable annual contribution capacity. Minimum premium
+    per year: $1,000 (as long as account value is sufficient
+    to cover charges). Maximum per year: $75,000.
+
+4.3 CHARITABLE CONTRIBUTION NATURE: Premiums are paid by
+    the Foundation from charitable assets. Per IRS guidance,
+    premiums paid by a 501(c)(3) on a NOLI policy are
+    generally not deductible as charitable contributions.
+    Altruist does not provide tax advice on this matter.
+
+4.4 PREMIUM LOAD: 4.0% years 1-7; 2.0% years 8+.
+
+4.5 PLANNED CESSATION: The policy is designed to continue
+    to endowment size without additional premium after year 20
+    (age 85 of insured), though this is not guaranteed.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Charged monthly based on net amount at risk per
+    $1,000. Uses 2017 CSO tables.
+    Approximate Year 1 COI at age 65, Preferred Female:
+    ~$4.50/month per $1,000 NAR × 2,000 units = ~$9,000/year.
+
+5.2 POLICY FEE: $18 per month (guaranteed not to increase).
+
+5.3 NONPROFIT ADMINISTRATIVE CREDIT: Altruist waives the
+    face amount charge (a $0.04/$1,000 charge standard on
+    this product) for qualifying 501(c)(3) policy owners.
+
+5.4 CHARGE DISCLOSURE: Total estimated monthly charges in
+    year 1 are approximately $780/month ($9,360/year),
+    primarily COI-driven due to the insured's age.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 LEVEL DEATH BENEFIT: $2,000,000 payable to The Waverly
+    Foundation upon insured's death.
+
+6.2 CHARITABLE PURPOSE OF PROCEEDS: While Altruist has no
+    obligation to enforce the intended charitable use of
+    proceeds, the insured's Charitable Bequest Intent Letter
+    (in policy file) expresses the intent that all proceeds
+    be allocated to the Waverly Scholarship Endowment Fund.
+
+6.3 ACCELERATED BENEFIT FOR TERMINAL ILLNESS: Up to 50%
+    of face amount ($1,000,000) available if insured has
+    terminal illness with life expectancy < 12 months.
+    Proceeds retained by Foundation for ongoing operations.
+    Minimum acceleration: $100,000.
+
+6.4 NO PERSONAL BENEFIT: Death benefit proceeds may not be
+    used to benefit any private individual in a manner
+    that violates IRC §4941 (self-dealing rules). Foundation
+    board members are advised to consult with legal counsel
+    before accessing policy funds for any purpose other
+    than the stated endowment.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 POLICY LOANS: Available to Owner (Foundation) after year 1.
+    Maximum: 90% of surrender value.
+    Loan rate: 4.75% fixed annually.
+    Loaned amounts earn fixed account rate.
+
+7.2 CHARITABLE OPERATIONS LOANS: The Foundation may borrow
+    against this policy for operating expenses or program
+    funding. Loans must be approved by the Foundation's
+    board per its governance policies.
+
+7.3 PARTIAL WITHDRAWALS: Minimum $5,000 (higher minimum
+    reflects institutional ownership). First 4 per year free;
+    $75 fee thereafter.
+
+7.4 CHARITABLE CAUTION: Excessive loans or withdrawals may
+    reduce the endowment capacity of this policy. The
+    Foundation's investment committee should review the
+    policy annually.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of cumulative target premiums):
+
+    Year 1:  10%   Year 5:  6%   Year 9:  2%   Year 13: 0%
+    Year 2:   9%   Year 6:  5%   Year 10: 1%
+    Year 3:   8%   Year 7:  4%   Year 11: 0.5%
+    Year 4:   7%   Year 8:  3%   Year 12: 0.25%
+
+8.2 Surrender of this policy would defeat its charitable purpose
+    and is not recommended unless extraordinary circumstances
+    require it.
+
+8.3 FREE WITHDRAWAL: 10% of account value annually, year 2+.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - OWNERSHIP CONTINUITY PROVISIONS
+═══════════════════════════════════════════════════════════════════
+9.1 SUCCESSOR OWNER: If The Waverly Foundation, Inc. ceases
+    to exist or loses its 501(c)(3) tax-exempt status, ownership
+    of this policy may be assigned to another qualifying
+    501(c)(3) organization designated by the Foundation's
+    board or successor in interest.
+
+9.2 IRS EXEMPTION LOSS: If the Foundation loses tax-exempt
+    status and no successor 501(c)(3) can be designated within
+    90 days, ownership reverts to the insured, and Altruist
+    will reissue the policy with appropriate beneficiary
+    designations. No surrender charge applies to this event.
+
+9.3 BOARD RESOLUTION REQUIRED: All policy transactions
+    (loans, withdrawals, beneficiary changes, surrenders)
+    require a copy of the applicable board resolution
+    authorizing the action.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: If insured dies by suicide within 2 years of
+     issue, death benefit equals premiums paid less charges.
+
+10.2 CONTESTABILITY: 2 years from issue.
+
+10.3 CONSENT WITHDRAWAL: If insured withdraws consent for
+     the NOLI coverage in writing at any time, Altruist will
+     notify the Owner (Foundation) and allow 90 days for
+     the Owner to surrender, reassign, or convert the policy.
+     Altruist is not obligated to continue coverage beyond
+     90 days after receipt of written consent withdrawal.
+
+10.4 NO WAR, AVIATION, OR OCCUPATION EXCLUSIONS.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 This policy is owned by a nonprofit. Policy cash values
+     are assets of the Foundation and may be subject to claims
+     of the Foundation's creditors.
+
+11.2 Federal and California law requires insured consent for
+     NOLI policies. Consent was obtained on the application.
+
+11.3 ESG and philanthropic index accounts may perform
+     differently from broad market indices.
+
+11.4 Index credits exclude dividends. 0% floor applies.
+
+11.5 Altruist Life Insurance Company is a mutual company
+     organized under Iowa law.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Altruist Life Insurance Company
+Nonprofit Markets Division
+1-800-ALTRUIST | nonprofit@altruistlife.com
+Des Moines, Iowa
+
+[SEAL]
+
+__________________________________
+President
+Altruist Life Insurance Company
+
+February 28, 2024
+
+═══════════════════════════════════════════════════════════════════

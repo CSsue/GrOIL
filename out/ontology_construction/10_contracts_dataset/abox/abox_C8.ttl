@@ -1,0 +1,488 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:Beneficiary_C8_TheDesignatedBeneficiary a li:Beneficiary,
+        li:DeathBenefitRecipient ;
+    li:labelValue "the designated beneficiary"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:BurialExpenseCoverage_C8_JointLifeInsurancePolicy a li:BurialExpenseCoverage,
+        li:JointLifePolicy ;
+    li:claimSubmissionAddress "Proof of both deaths must be submitted to initiate the claim process."^^xsd:string ;
+    li:dateOfConfirmationOrDeathEvent "written confirmation"^^xsd:string ;
+    li:definesCancellationRightTimeframe 30 ;
+    li:effectiveDateOfNoPartialWithdrawalRule "After the first insured’s death"^^xsd:string ;
+    li:hasAmount "Completed claim forms"^^xsd:string ;
+    li:hasAnnualPremium 32400.0,
+        "After Year 10, the premium may increase."^^xsd:string,
+        "The premium payment obligation continues after the first insured’s death."^^xsd:string ;
+    li:hasAnnualPremiumTaxCap 48600.0 ;
+    li:hasDeathBenefitAmount 0,
+        2500000.0,
+        "A death certificate of the second insured must be submitted."^^xsd:string,
+        "paid only after both insureds have died"^^xsd:string,
+        "payable only upon the death of the second insured to die"^^xsd:string,
+        "reduced"^^xsd:string,
+        "unchanged"^^xsd:string ;
+    li:hasEffectiveDate "2023-08-20"^^xsd:date,
+        10 ;
+    li:hasEstateShareAllocation "estate planning purposes"^^xsd:string ;
+    li:labelValue "joint life insurance policy"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Survivorship Basis, Policy Continuation, Unchanged Coverage Amount"^^xsd:string,
+        "Survivorship Basis, Post-First Death Continuity, Single-Life Transition"^^xsd:string,
+        "claim forms, death benefit trigger, documentation submission"^^xsd:string,
+        "death benefit payout, claims processing time, documentation requirements"^^xsd:string,
+        "death benefit reduction, outstanding loans, policy payouts"^^xsd:string,
+        "death benefit trigger, proof of death, claim documentation"^^xsd:string,
+        "death benefit trigger, proof of death, second insured"^^xsd:string,
+        "death benefit, second insured, payout amount"^^xsd:string,
+        "estate planning, policy purpose, death benefit trigger"^^xsd:string,
+        "first death, written confirmation, policy continuation"^^xsd:string,
+        "premium guarantee period, post-year 10 premium adjustment, annual premium continuation"^^xsd:string,
+        "premium guarantee, first 10 years, annual premium"^^xsd:string,
+        "premium guarantee, post-Year 10 pricing, maximum annual premium"^^xsd:string,
+        "premium obligation, first death, policy continuity"^^xsd:string,
+        "premium payment schedule, policy anniversary, annual premium deadline"^^xsd:string,
+        "survivorship basis, death benefit trigger, second death payout"^^xsd:string,
+        "survivorship basis, first death, no payout"^^xsd:string,
+        "survivorship basis, second death payout, death benefit timing"^^xsd:string .
+
+abox:CertificateHolder_C8_ElizabethAnneHartford a li:CertificateHolder,
+        li:Insured ;
+    li:hasDeathBenefitAmount "Preferred"^^xsd:string,
+        "female"^^xsd:string ;
+    li:hasEffectiveDate "1958-03-18"^^xsd:date ;
+    li:hasFaceAmount "Elizabeth Anne Hartford"^^xsd:string,
+        "two lives"^^xsd:string ;
+    li:partyName "Elizabeth Anne Hartford"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Elizabeth Anne Hartford, date of birth, insured person details"^^xsd:string,
+        "Risk Class, Elizabeth Anne Hartford, Underwriting Status"^^xsd:string,
+        "gender, second insured, policy details"^^xsd:string,
+        "joint life insurance, two lives covered, death benefit trigger"^^xsd:string .
+
+abox:CertificateHolder_C8_FirstInsured a li:CertificateHolder,
+        li:FirstToDie ;
+    li:dateOfConfirmationOrDeathEvent "the death certificate of the first insured must be filed with the insurer"^^xsd:string ;
+    li:partyName "first insured"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "death certificate submission, first death procedure, policy continuation requirements"^^xsd:string .
+
+abox:CertificateHolder_C8_Insured a li:CertificateHolder,
+        li:Insured ;
+    li:definesCancellationRightTimeframe "two years"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection true,
+        "No war exclusions apply to this policy."^^xsd:string ;
+    li:hasDeathBenefitAmount "Proceeds paid to the trust should not be includable in either insured's estate"^^xsd:string,
+        "immediately"^^xsd:string ;
+    li:hasEstateShareAllocation "exclusion"^^xsd:string ;
+    li:partyName "Insured"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Estate Tax Planning, Irrevocable Trust, Tax-Free Proceeds"^^xsd:string,
+        "aviation exclusions, policy coverage, no exclusions"^^xsd:string,
+        "contestability, material misrepresentation, two-year window"^^xsd:string,
+        "simultaneous death, death benefit timing, joint insureds"^^xsd:string,
+        "travel exclusions, policy coverage, exclusion clauses"^^xsd:string,
+        "trust structure, estate tax planning, proceeds exclusion"^^xsd:string,
+        "war exclusions, policy coverage, Article VII"^^xsd:string .
+
+abox:CertificateHolder_C8_SecondInsured a li:CertificateHolder,
+        li:FirstToDie ;
+    li:hasAnnualPremium "Premiums continue to be payable after the first death."^^xsd:string ;
+    li:hasDeathBenefitAmount "single-life whole life policy"^^xsd:string ;
+    li:hasEffectiveDate "after the first insured's death"^^xsd:string ;
+    li:partyName "second insured"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "premium continuation, first death, survivorship policy"^^xsd:string,
+        "survivorship basis, policy continuation, administrative transition"^^xsd:string,
+        "survivorship basis, post-first-death coverage, policy continuity"^^xsd:string .
+
+abox:CertificateHolder_C8_WilliamAlexanderHartford a li:CertificateHolder,
+        li:Insured ;
+    li:hasCertificateHolderName "William Alexander Hartford"^^xsd:string ;
+    li:hasDeathBenefitAmount "Standard"^^xsd:string,
+        "male"^^xsd:string ;
+    li:hasEffectiveDate "1956-12-05"^^xsd:date ;
+    li:partyName "William Alexander Hartford"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Risk Class, Underwriting Status, Insured Profile"^^xsd:string,
+        "William Alexander Hartford, Date of Birth, Insured Details"^^xsd:string,
+        "gender, first insured, policyholder info"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C8_CompletedClaimForms a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Completed claim forms"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C8_JointSurvivorshipLifeInsurance a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:issueDate "2024-08-20"^^xsd:date ;
+    li:labelValue "Joint Survivorship Life Insurance"^^xsd:string ;
+    li:policyNumber "EPL-JSL-2024-1156"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ContingentBeneficiary_C8_FirstNationalBankOfConnecticut a li:ContingentBeneficiary,
+        li:TrusteeOfIrrevocableTrust ;
+    li:hasCertificateHolderName "First National Bank of Connecticut"^^xsd:string ;
+    li:insurerName "First National Bank of Connecticut"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "trustee, irrevocable trust, policy ownership"^^xsd:string .
+
+abox:ContingentBeneficiary_C8_Trust a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:definesCancellationRightTimeframe "under the policy"^^xsd:string ;
+    li:hasAmount "authorization from the trustee"^^xsd:string,
+        "irrevocable trust"^^xsd:string,
+        "policy loans"^^xsd:string ;
+    li:hasAnnualPremium "The Trust has the right to assign the policy."^^xsd:string ;
+    li:hasCertificateHolderName "Trust"^^xsd:string ;
+    li:hasEstateShareAllocation "excluded from the insureds' taxable estates"^^xsd:string ;
+    li:insurerName "Trust"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Trust Ownership, Policy Assignment, Ownership Rights"^^xsd:string,
+        "beneficiary designation, trust ownership, policy control"^^xsd:string,
+        "irrevocable trust, estate tax planning, policy ownership"^^xsd:string,
+        "irrevocable trust, estate tax planning, tax-free death benefits"^^xsd:string,
+        "policy assignment, trustee authority, ownership restrictions"^^xsd:string,
+        "policy loans, trust ownership, ownership rights"^^xsd:string,
+        "policy ownership, irrevocable trust, beneficiary designation"^^xsd:string .
+
+abox:ContingentBeneficiary_C8_We a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:hasEstateShareAllocation "estate tax liquidity purposes"^^xsd:string ;
+    li:insurerName "we"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "estate planning, death benefit trigger, survivorship basis"^^xsd:string .
+
+abox:DeathBenefitLimitationForEarlySuicide_C8_SuicideClause a li:DeathBenefitLimitationForEarlySuicide,
+        li:DeathCauseLimitingRefund ;
+    li:labelValue "SUICIDE CLAUSE"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C8_2500000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$2,500,000"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:EstateTaxMinimizationStrategy_C8_AnnualExclusionGiftPlanning a li:EstateTaxMinimizationStrategy,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Annual Exclusion Gift Planning"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ExclusionTriggerForEarlyDeath_C8_SuicideClause a li:ExclusionTriggerForEarlyDeath,
+        li:PolicyContinuationProtection ;
+    li:hasDeathBenefitAmount "return of premiums paid"^^xsd:string ;
+    li:hasEffectiveDate "if the policy is reinstated"^^xsd:string,
+        "two years of the issue date"^^xsd:string ;
+    li:labelValue "Suicide Clause"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "suicide clause, death benefit limit, premium refund"^^xsd:string,
+        "suicide clause, policy reinstatement, two-year limit"^^xsd:string,
+        "suicide clause, two-year period, death benefit limit"^^xsd:string .
+
+abox:GiftTaxExemptionCondition_C8_CrummeyPowerRequirements a li:GiftTaxExemptionCondition,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Crummey Power Requirements"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:GrowthLinkedPayout_C8_CashValueAccumulation a li:GrowthLinkedPayout,
+        li:PolicyContinuationProtection ;
+    li:hasAmount 285000.0,
+        "90%"^^xsd:string,
+        "guaranteed schedule"^^xsd:string ;
+    li:labelValue "CASH VALUE ACCUMULATION"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Cash Value Accumulation, Guaranteed Schedule, Policy Financial Growth"^^xsd:string,
+        "cash value accumulation, projected cash value, Year 10 milestone"^^xsd:string,
+        "policy loans, cash surrender value, loan limits"^^xsd:string .
+
+abox:GuaranteedAnnualPremium_C8_32400 a li:GuaranteedAnnualPremium,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$32,400"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:GuaranteedAnnualPremium_C8_48600 a li:GuaranteedAnnualPremium,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$48,600"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:JointDeathPayoutTiming_C8_SimultaneousDeath a li:JointDeathPayoutTiming,
+        li:PolicyContinuationProtection ;
+    li:hasEffectiveDate "thirty days"^^xsd:string ;
+    li:labelValue "Simultaneous Death"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "simultaneous death, claim processing, 30-day window"^^xsd:string .
+
+abox:LatePaymentWindow_C8_GracePeriod a li:LatePaymentWindow,
+        li:PolicyContinuationProtection ;
+    li:gracePeriodDuration 60 ;
+    li:labelValue "GRACE PERIOD"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Grace Period, Premium Payment, Policy Cancellation"^^xsd:string .
+
+abox:LoanAgainstCashValue_C8_PolicyLoans a li:LoanAgainstCashValue,
+        li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:hasCapRate 5.5 ;
+    li:hasDeathBenefitAmount "dollar-for-dollar"^^xsd:string ;
+    li:labelValue "POLICY LOANS"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "policy loans, death benefit reduction, cash value"^^xsd:string,
+        "policy loans, interest rate, variable rate"^^xsd:string .
+
+abox:PaymentProcessingTimeframe_C8_Within30Days a li:PaymentProcessingTimeframe,
+        li:RetryPaymentDate ;
+    li:dateValue "within 30 days"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PayoutTriggerCondition_C8_DeathBenefit a li:PayoutTriggerCondition,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PayoutTriggerCondition_C8_DeathBenefitTrigger a li:PayoutTriggerCondition,
+        li:PolicyContinuationProtection ;
+    li:hasAnnualPremium "unchanged"^^xsd:string ;
+    li:hasDeathBenefitAmount 0,
+        "A death certificate of the first insured must be submitted."^^xsd:string ;
+    li:labelValue "DEATH BENEFIT TRIGGER"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "death benefit trigger, claim documentation, first death proof"^^xsd:string,
+        "premium guarantee, first death impact, policy continuation"^^xsd:string,
+        "survivorship basis, first death, no payout"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_Contestability a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:hasEffectiveDate "while both insureds are alive"^^xsd:string ;
+    li:labelValue "Contestability"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "contestability, both insureds alive, policy validity period"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_FirstDeathPremiumContinuation a li:PolicyContinuationProtection,
+        li:PostFirstDeathPolicyDivision ;
+    li:annualPremiumAmount "the same rate"^^xsd:string ;
+    li:availableInvestmentFunds "before or after the first death"^^xsd:string ;
+    li:definesCancellationRightTimeframe "Upon the first death"^^xsd:string ;
+    li:effectiveDateOfNoPartialWithdrawalRule "not specified"^^xsd:string ;
+    li:labelValue "FIRST DEATH PREMIUM CONTINUATION"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, policy restrictions, cash value access"^^xsd:string,
+        "policy loans, first death, loan accessibility"^^xsd:string,
+        "policy split, first death, joint survivorship"^^xsd:string,
+        "premium continuation, first death, annual payments"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_ReturnOfPremiumsPaid a li:PolicyContinuationProtection,
+        li:SuicideBenefitLimit ;
+    li:labelValue "Return of Premiums Paid"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_SplitOption a li:PolicyContinuationProtection,
+        li:PostFirstDeathPolicyDivision ;
+    li:explainsLackOfAutomaticProtection "The split option is available only in rare cases involving simultaneous deaths with medical uncertainty."^^xsd:string ;
+    li:hasAmount "rarely"^^xsd:string ;
+    li:hasEffectiveDate "the time of the first death"^^xsd:string ;
+    li:labelValue "SPLIT OPTION"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "split option, first death, insured survival"^^xsd:string,
+        "split option, policy splitting, rare exercise"^^xsd:string,
+        "split option, simultaneous deaths, medical uncertainty"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_ThreeYearLookbackRule a li:PolicyContinuationProtection,
+        li:TaxComplianceRequirementAfterTransfer ;
+    li:labelValue "Three-Year Lookback Rule"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_WaiverOption a li:PolicyContinuationProtection,
+        li:PremiumWaiverAvailabilityCondition ;
+    li:explainsLackOfAutomaticProtection "Premium waiver is not available on joint survivorship policies."^^xsd:string ;
+    li:labelValue "WAIVER OPTION"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "premium waiver, joint survivorship policies, policy exclusions"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_Withdrawals a li:PolicyContinuationProtection,
+        li:WithdrawalRestrictionClause ;
+    li:labelValue "WITHDRAWALS"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyEffectiveDate_C8_August202024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "August 20, 2024"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyIdentifier_C8_EplJsl20241156 a li:PolicyEntity,
+        li:PolicyIdentifier ;
+    li:hasAgeEligibility 66,
+        67 ;
+    li:hasCertificateHolderName "Elizabeth Anne Hartford"^^xsd:string,
+        "The Hartford Family Irrevocable Life Insurance Trust"^^xsd:string,
+        "William Alexander Hartford"^^xsd:string ;
+    li:hasDeathBenefitAmount "triggered by the death of the second insured to die"^^xsd:string ;
+    li:labelValue "EPL-JSL-2024-1156"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Joint Insureds, First Insured, Age Information"^^xsd:string,
+        "Joint Insureds, First Insured, Policy Details"^^xsd:string,
+        "Joint Survivorship Life Insurance, Second-to-Die Policy, Elizabeth Anne Hartford"^^xsd:string,
+        "Joint Survivorship Policy, Insured Person Age, Second Insured"^^xsd:string,
+        "Policy Ownership, Irrevocable Trust, Estate Planning"^^xsd:string,
+        "second-to-die, death benefit trigger, joint survivorship"^^xsd:string .
+
+abox:PolicyMaintenanceCost_C8_AnnualPremium a li:PolicyMaintenanceCost,
+        li:ReinstatementFinancialObligation ;
+    li:labelValue "Annual Premium"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyOwner_C8_TheHartfordFamilyIrrevocableLife a li:PolicyOwner ;
+    li:hasCertificateHolderName "The Hartford Family Irrevocable Life Insurance Trust"^^xsd:string,
+        "The Hartford Family Irrevocable Trust"^^xsd:string ;
+    li:hasCertificateNumber "EPL-JSL-2024-1156"^^xsd:string ;
+    li:hasEffectiveDate "2024-08-01"^^xsd:date ;
+    li:labelValue "The Hartford Family Irrevocable Life Insurance Trust"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Irrevocable Trust, Estate Planning, Policy Ownership"^^xsd:string,
+        "Policy Number, Insurance Policy, Document Reference"^^xsd:string,
+        "beneficiary, trust, death benefit"^^xsd:string,
+        "premium payor, trust funding, policy financing"^^xsd:string .
+
+abox:PremiumDueDate_C8_August20th a li:PremiumDueDate,
+        li:RetryPaymentDate ;
+    li:dateValue "August 20th"^^xsd:string ;
+    li:definesCancellationRightTimeframe "2 years"^^xsd:string ;
+    li:hasEffectiveDate "2023-08-20"^^xsd:date,
+        "2 years of the issue date"^^xsd:string ;
+    li:hasEffectiveDateOfMinPremiumRule "2 years"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "policy loans, cash value accumulation, waiting period"^^xsd:string,
+        "policy split, timing requirements, first death"^^xsd:string,
+        "premium payment schedule, August 20th deadline, annual payment obligation"^^xsd:string,
+        "suicide clause, death benefit impact, two-year exclusion period"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C8_285000 a li:ProcessingFeeForChangingOption,
+        li:ProjectedCashValue ;
+    li:labelValue "$285,000"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C8_48600PerYear a li:ProcessingFeeForChangingOption,
+        li:ProjectedCashValue ;
+    li:annualPremiumAmount 48600.0 ;
+    li:hasAmount 712000.0 ;
+    li:hasFaceAmount "face amount"^^xsd:string ;
+    li:labelValue "$48,600 per year"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "annual premium, payment schedule, policy cost"^^xsd:string,
+        "cash value accumulation, projected cash value, Year 20 milestone"^^xsd:string,
+        "policy split, actuarial allocation, face amount determination"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C8_712000 a li:ProcessingFeeForChangingOption,
+        li:ProjectedCashValue ;
+    li:labelValue "$712,000"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ProofOfCoverageRequirement_C8_DeathCertificateOfFirstInsured a li:ProofOfCoverageRequirement,
+        li:RegulatoryDisclosure ;
+    li:hasFaceAmount "This is a joint life insurance policy."^^xsd:string ;
+    li:labelValue "Death certificate of first insured"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "joint life insurance, survivorship basis, two-insured policy"^^xsd:string .
+
+abox:ProofOfCoverageRequirement_C8_DeathCertificateOfSecondInsured a li:ProofOfCoverageRequirement,
+        li:RegulatoryDisclosure ;
+    li:hasAmount "two lives"^^xsd:string ;
+    li:labelValue "Death certificate of second insured"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "joint life insurance, two-insured policy, survivorship basis"^^xsd:string .
+
+abox:RetryPaymentDate_C8_August12024 a li:RetryPaymentDate,
+        li:TrustEstablishmentDate ;
+    li:dateValue "August 1, 2024"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:BurialExpenseCoverage_C8_Policy a li:BurialExpenseCoverage,
+        li:InsuranceContract ;
+    li:definesCancellationRightTimeframe "30 days"^^xsd:string ;
+    li:hasConcept abox:BurialExpenseCoverage_C8_Policy,
+        abox:CancellationWindow_C8_FreeLookPeriod,
+        abox:ClaimSubmissionDocument_C8_TheTrustDocument,
+        abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd,
+        abox:ExecutiveLeadershipPosition_C8_ChairmanChiefExecutiveOfficer,
+        abox:PolicyContinuationProtection_C8_OwnershipRights,
+        abox:TransferabilityRestriction_C8_PolicyMayNotBeAssignedWithoutTru ;
+    li:hasEffectiveDate abox:DocumentEffectiveDate_C8_August202024,
+        abox:FreeLookPeriodDuration_C8_30Days ;
+    li:hasLocation abox:ClaimMailingAddress_C8_HartfordConnecticut ;
+    li:labelValue "Policy"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "free look period, policy cancellation, refund eligibility"^^xsd:string .
+
+abox:CancellationWindow_C8_FreeLookPeriod a li:CancellationWindow,
+        li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:labelValue "Free Look Period"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C8_TheTrustDocument a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:definesCancellationRightTimeframe "without trustee authorization"^^xsd:string ;
+    li:hasEffectiveDate "2024-08-20"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C8_HartfordConnecticut ;
+    li:labelValue "the trust document"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "document issuance, effective date, signing date"^^xsd:string,
+        "trustee authorization, policy assignment, ownership transfer"^^xsd:string .
+
+abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:annualPremiumAmount 32400.0 ;
+    li:hasAnnualPremium "10 years"^^xsd:string ;
+    li:hasCertificateHolderName "Estate Planning Life Assurance Ltd."^^xsd:string ;
+    li:hasDeathBenefitAmount 2500000.0 ;
+    li:hasEffectiveDate "2024-08-20"^^xsd:date,
+        "Hartford, Connecticut"^^xsd:string ;
+    li:hasFaceAmount "Chairman & Chief Executive Officer"^^xsd:string,
+        "Second-to-Die Whole Life"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C8_HartfordConnecticut ;
+    li:insurerName "Estate Planning Life Assurance Ltd."^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "Company Location, Hartford Connecticut, Legal Entity Address"^^xsd:string,
+        "Joint Survivorship Life Insurance, Second-to-Die Death Benefit Trigger, Whole Life Coverage Type"^^xsd:string,
+        "Leadership Position, Company Hierarchy, Executive Title"^^xsd:string,
+        "annual premium, policy cost, premium payment"^^xsd:string,
+        "annual premium, premium guarantee, 10-year term"^^xsd:string,
+        "death benefit, insurance payout, policy coverage"^^xsd:string,
+        "policy issue date, effective date, insurance coverage"^^xsd:string .
+
+abox:DocumentEffectiveDate_C8_August202024 a li:DocumentEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "August 20, 2024"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ExecutiveLeadershipPosition_C8_ChairmanChiefExecutiveOfficer a li:ExecutiveLeadershipPosition,
+        li:Role ;
+    li:labelValue "Chairman & Chief Executive Officer"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:FreeLookPeriodDuration_C8_30Days a li:FreeLookPeriodDuration,
+        li:RenewedExclusionWindowPostReinstatement ;
+    li:labelValue "30 days"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:PolicyContinuationProtection_C8_OwnershipRights a li:PolicyContinuationProtection,
+        li:TrustRights ;
+    li:definesCancellationRightTimeframe 30 ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:hasLocation abox:ClaimMailingAddress_C8_HartfordConnecticut ;
+    li:labelValue "ownership rights"^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:sourceContractSection "free look period, policy cancellation, 30-day window"^^xsd:string,
+        "ownership rights, trust document, insured parties"^^xsd:string .
+
+abox:TransferabilityRestriction_C8_PolicyMayNotBeAssignedWithoutTru a li:TransferabilityRestriction ;
+    li:labelValue "Policy may not be assigned without trustee authorization."^^xsd:string ;
+    li:sourceContractID "C8"^^xsd:string .
+
+abox:ClaimMailingAddress_C8_HartfordConnecticut a li:ClaimMailingAddress,
+        li:CorporateHeadquartersLocation ;
+    li:sourceContractID "C8"^^xsd:string ;
+    li:stateOfIssuance "Hartford, Connecticut"^^xsd:string .
+

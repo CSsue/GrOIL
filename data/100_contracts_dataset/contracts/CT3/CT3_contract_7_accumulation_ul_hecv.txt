@@ -1,0 +1,276 @@
+═══════════════════════════════════════════════════════════════════
+       ACCUMULATION UNIVERSAL LIFE INSURANCE POLICY
+              HIGH EARLY CASH VALUE DESIGN
+              BlueStar Financial Life Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: BSF-AUL-24-22780
+Issue Date: September 9, 2024
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Nathaniel Owen Prescott
+Insured: Nathaniel Owen Prescott
+Gender: Male | DOB: 08/05/1990 | Age: 34
+Risk Class: Preferred Plus Nonsmoker
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $500,000
+Planned Premium: $1,500/month
+Minimum Premium: $200/month
+Target Premium: $1,500/month
+Death Benefit Option: Level (Option A)
+Design Purpose: Tax-advantaged cash accumulation with 
+                incidental death benefit protection
+
+7-Pay Test Amount: $18,000/year. Premiums above this level 
+in any year will cause this policy to be classified as a 
+Modified Endowment Contract. We will provide MEC warnings.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Claire Beatrice Prescott (Wife) - 100%
+Contingent: The Prescott Trust dated 08/01/2022 - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means the accumulated fund within this 
+    policy, being the sum of net premiums credited with 
+    interest, reduced by monthly charges.
+
+1.2 "High Early Cash Value" (HECV) means the feature 
+    of this policy design whereby the surrender charge 
+    structure is inverted compared to conventional UL 
+    products, creating greater liquidity in early years.
+
+1.3 "Target Premium" is the planned premium amount 
+    used in pricing the HECV feature. Premiums 
+    below Target in the first 5 years may reduce 
+    HECV benefits.
+
+1.4 "Overfund Amount" means premiums paid above the 
+    Target Premium in a given year, subject to 
+    IRC §7702 limits.
+
+1.5 "COI" means the monthly Cost of Insurance.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS & OVERFUNDING
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums may be paid at any time:
+    Minimum: $200/payment
+    Annual maximum: Guideline Annual Premium per IRC §7702
+    (We will calculate and communicate this limit annually)
+
+2.2 Premium expense load: 
+    On premiums up to Target Premium: 4.0%
+    On Overfund Amounts above Target: 1.5%
+    The lower load on overfunding encourages higher 
+    contributions to accelerate tax-sheltered growth.
+
+2.3 OVERFUNDING STRATEGY: This policy is designed for 
+    owners who wish to "stuff" the policy with premiums 
+    to grow a tax-deferred, potentially tax-free 
+    supplemental retirement fund. We recommend working 
+    with a financial advisor to optimize premium levels 
+    without triggering MEC status.
+
+2.4 Skipping premiums: Permitted so long as Account Value 
+    exceeds 6 months of projected monthly deductions.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HIGH EARLY CASH VALUE FEATURE
+═══════════════════════════════════════════════════════════════════
+3.1 Unlike conventional UL products, this policy has 
+    NO surrender charge in years 1 through 5.
+
+3.2 A minimal surrender charge applies only if the 
+    policy is surrendered in years 6-10 while Account 
+    Value is below the cumulative Target Premiums paid:
+
+    Year 6: 3.0% of shortfall | Year 7: 2.5%
+    Year 8: 2.0% | Year 9: 1.0% | Year 10+: 0%
+
+    The "shortfall" is defined as cumulative Target 
+    Premiums less actual premiums paid.
+
+3.3 Implication: If the Owner pays Target Premium 
+    consistently, there is NO surrender charge in 
+    any policy year.
+
+3.4 The HECV feature is funded by a slightly higher 
+    COI charge compared to conventional products 
+    of the same face amount.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+4.1 On the 9th of each month, we deduct from Account Value:
+    (a) Cost of Insurance charge
+    (b) Administrative fee: $10.00/month
+    (c) Outstanding loan interest
+
+4.2 COI Basis: 2017 CSO Preferred Plus Table. Rates are 
+    competitive because the HECV design self-selects 
+    for healthy, financially sophisticated insureds.
+
+4.3 Monthly COI is calculated as:
+    (Specified Amount - Account Value) × COI Rate / 1,000
+
+4.4 IMPORTANT: Because this policy is designed to 
+    accumulate significant Account Value, the net 
+    amount at risk (and thus COI) decreases over time 
+    as Account Value approaches Specified Amount.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - INTEREST CREDITING
+═══════════════════════════════════════════════════════════════════
+5.1 Interest is credited daily.
+    Guaranteed minimum: 2.00% per annum
+    Current rate: 5.00% per annum
+
+5.2 ENHANCED INTEREST TIERS:
+    AV < $100,000:       Current rate (5.00%)
+    AV $100,000-$499,999: Current rate + 0.25% (5.25%)
+    AV ≥ $500,000:        Current rate + 0.50% (5.50%)
+
+5.3 Tiered rate differential is guaranteed to be at 
+    least +0.10% and +0.20% respectively, regardless 
+    of the then-current base rate.
+
+5.4 Interest rate declared and credited in arrears 
+    monthly; rate may change from month to month.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT & IRC §7702 COMPLIANCE
+═══════════════════════════════════════════════════════════════════
+6.1 Death Benefit = greater of:
+    (a) Specified Amount, or
+    (b) Account Value × applicable corridor percentage 
+        per IRC §7702(d) based on insured's attained age
+
+6.2 Option A is in force. As Account Value grows, 
+    the IRC §7702 corridor may require the death 
+    benefit to temporarily exceed the Specified Amount. 
+    This "corridor" benefit is provided at no charge.
+
+6.3 If Account Value reaches Specified Amount (full 
+    accumulation), the policy is treated as an 
+    endowment for IRC purposes. We will notify the 
+    Owner before this occurs.
+
+6.4 Death proceeds are paid within 14 business days 
+    of receipt of required documentation.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 Minimum withdrawal: $500
+    Maximum per year: No annual limit (subject to 
+    minimum $5,000 remaining Account Value)
+
+7.2 No withdrawal fee in any policy year.
+
+7.3 Withdrawals are income-tax-free to the extent they 
+    do not exceed the policy "basis" (total premiums 
+    paid net of prior distributions), per IRC §72(e). 
+    This is a key planning feature.
+
+7.4 For MEC-classified policies: All distributions 
+    (including withdrawals) are income-first.
+
+7.5 Withdrawals permanently reduce Account Value and 
+    the Owner's cost basis.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+8.1 Maximum loan: 95% of Account Value (higher than 
+    conventional products to maximize retirement 
+    income distribution access)
+
+8.2 STANDARD LOAN: Interest charged at Prime Rate + 
+    0.50%, minimum 3.50%. Loaned amount earns 
+    guaranteed minimum rate of 2.00%.
+
+8.3 PARTICIPATING LOAN: Available from policy year 1. 
+    Interest charged at 4.00% fixed. Loaned amount 
+    continues to earn the full credited interest rate 
+    (currently 5.00%), resulting in a potential 
+    net gain on the loan cost.
+
+8.4 TAX TREATMENT: Policy loans from a non-MEC policy 
+    are not income, and are generally income-tax-free 
+    if the policy remains in force. Surrender or lapse 
+    with outstanding loans may trigger a taxable event.
+
+8.5 MAXIMUM LOAN WARNING: Borrowing 95% of Account 
+    Value significantly increases lapse risk. We 
+    will provide annual loan statements.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SUPPLEMENTAL RETIREMENT INCOME ILLUSTRATION
+═══════════════════════════════════════════════════════════════════
+9.1 We may prepare, upon request, a non-guaranteed 
+    illustration showing how combination of withdrawals 
+    (to basis) and loans may generate tax-advantaged 
+    income in retirement.
+
+9.2 All illustrations use non-guaranteed current 
+    assumptions. Actual results will vary based on 
+    interest rates, COI charges, and premium history. 
+    Illustrations are not contracts or guarantees.
+
+9.3 Such illustrations are governed by the NAIC Life 
+    Insurance Illustration Model Regulation.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE EXCLUSION: Death by suicide within 24 months: 
+     Account Value as of date of death, without interest, 
+     less outstanding loans.
+
+10.2 CONTESTABILITY: 2 years from issue date.
+
+10.3 MATERIAL CHANGE: Any increase in Specified Amount 
+     restarts contestability and suicide period for 
+     the increased portion.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - GRACE PERIOD & LAPSE
+═══════════════════════════════════════════════════════════════════
+11.1 If Account Value is insufficient to cover 3 months 
+     of monthly deductions, we notify the Owner. 
+     A 61-day grace period follows.
+
+11.2 Upon lapse, any Account Value exceeding outstanding 
+     loans is paid as a Cash Surrender Value; no 
+     surrender charge applies if the Owner has paid 
+     Target Premiums in all prior years.
+
+11.3 LAPSE TAX WARNING: If this policy lapses or is 
+     surrendered with outstanding loans exceeding 
+     cost basis, the excess is ordinary income 
+     in the year of lapse. Consult a tax advisor.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Charlotte, North Carolina
+
+[Signature]
+Chief Executive Officer
+BlueStar Financial Life Company
+
+Date: September 9, 2024
+
+BlueStar Financial Life Company. Products available through 
+licensed insurance agents only. Not available in all states.
+Policy Form BSF-AUL-2024.
+
+═══════════════════════════════════════════════════════════════════

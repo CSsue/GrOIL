@@ -1,0 +1,315 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Guardian Shield Life Insurance Company                     ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: GSL-IUL-PROT-2024-9183
+Date of Issue: August 22, 2024
+Form: Protection-First Indexed Universal Life (PFIUL-4)
+Market Position: Death Benefit Protection with Secondary
+                 Accumulation Benefits
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Carlos Miguel Esperanza
+Insured: Carlos Miguel Esperanza
+DOB: February 17, 1988 | Age: 36 | Gender: Male
+Underwriting Class: Preferred Plus Non-Tobacco
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $1,000,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $3,200
+No-Lapse Guarantee (NLG) Premium: $3,200 per year
+Accumulation Benefit Premium: Additional amounts above NLG
+Maximum Annual Premium: $25,000
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Rosa Elena Esperanza (Spouse) - 60%
+         Carlos Esperanza Jr. (Son) - 20%
+         Isabella Esperanza (Daughter) - 20%
+Contingent: Esperanza Family Living Trust - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "No-Lapse Guarantee (NLG)" - A contractual guarantee that
+    the policy will not lapse as long as the cumulative
+    guaranteed premium has been paid on or before each due date,
+    regardless of account value performance.
+
+1.2 "NLG Premium" - The level annual premium amount that, if
+    paid cumulatively on time, activates the No-Lapse Guarantee.
+    Shown on the Policy Specifications page.
+
+1.3 "Cumulative NLG Test" - The test applied monthly: total
+    premiums paid to date must equal or exceed total NLG
+    premiums due to date. Failure voids NLG.
+
+1.4 "Shadow Account" - A notional ledger used exclusively to
+    test NLG compliance, calculated separately from the actual
+    account value. Shadow account uses conservative guaranteed
+    assumptions.
+
+1.5 "Protection Zone" - Policy years 1-20, during which the
+    NLG provides the primary coverage guarantee.
+
+1.6 "Index Credit" - Non-guaranteed interest based on market
+    index performance, subject to cap and floor.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - NO-LAPSE GUARANTEE PROVISIONS
+═══════════════════════════════════════════════════════════════════
+2.1 GUARANTEE COVERAGE PERIOD: The NLG guarantees coverage
+    through the insured's age 90, provided NLG premiums are
+    paid as required.
+
+2.2 NLG ACTIVATION REQUIREMENT:
+    Each month, we compare:
+    (A) Total premiums paid to date (less withdrawals)
+    (B) Total NLG premiums due to date ($3,200 × months/12)
+    If (A) ≥ (B): NLG is active.
+    If (A) < (B): NLG is suspended for that month.
+
+2.3 NLG SUSPENSION: If the NLG is suspended in any month
+    and account value is also insufficient to cover monthly
+    charges, the policy enters the 61-day grace period. The
+    NLG resumes immediately if cumulative payments are brought
+    current before the grace period expires.
+
+2.4 NLG VOID EVENTS: The NLG is permanently voided by:
+    (a) Any outstanding policy loan balance (including accrued
+        interest) during the NLG guarantee period.
+    (b) Any partial withdrawal during policy years 1-10.
+    (c) Cumulative unpaid NLG premiums that are never remedied.
+    CRITICAL: Taking a loan permanently voids the No-Lapse
+    Guarantee. This policy is primarily a protection product.
+
+2.5 NLG DEATH BENEFIT: During any year the NLG is active, the
+    full $1,000,000 death benefit is guaranteed regardless of
+    account value, even if account value is zero or negative.
+
+2.6 NLG EXTENSION: Owner may extend NLG coverage past age 90
+    to age 100 by paying an additional rider premium of $400
+    per year beginning at age 80. See Rider NLG-EXT.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+3.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 9.00% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) Conservative Blended Index Account
+       Indices: 60% S&P 500 / 40% Barclays U.S. Aggregate Bond
+       Current Cap: 6.50% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Lower cap reflects built-in bond index dampening)
+
+    C) Fixed Account (Guaranteed)
+       Current Rate: 3.50% | Guaranteed Minimum: 2.25%
+
+3.2 DEFAULT ALLOCATION (if no election made):
+    Fixed Account: 100%
+    (Conservative default appropriate for protection-first buyers)
+
+3.3 CURRENT ELECTED ALLOCATION:
+    S&P 500 Annual: 60%
+    Fixed Account:  40%
+
+3.4 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 3.00%
+    • Blended cap: never below 2.50%
+    • Fixed account: never below 2.25%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 NLG PREMIUM TIER: $3,200 per year maintains the No-Lapse
+    Guarantee through age 90. Paying this amount on time each
+    year is the primary commitment for this policy.
+
+4.2 ACCUMULATION PREMIUM TIER: Premiums above $3,200 per year
+    (up to IRS limits) are treated as accumulation contributions
+    and directed per the elected index allocation.
+
+4.3 PREMIUM ALLOCATION SEQUENCING:
+    First $3,200/year: Allocated 100% to Fixed Account to
+    preserve NLG shadow account compliance.
+    Amounts above $3,200: Allocated per elected index allocation.
+
+4.4 PREMIUM LOAD: 3.0% of all premiums, all years.
+
+4.5 MODAL PREMIUMS:
+    Monthly:      $276 ($3,312 annually - includes modal fee)
+    Quarterly:    $820 ($3,280 annually)
+    Semi-Annual: $1,614 ($3,228 annually)
+    Annual:      $3,200 (no modal charge)
+
+4.6 IMPORTANT: Monthly payments incur a $9.33/month modal
+    charge. Paying annually is recommended to minimize cost.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COST OF INSURANCE: Charged monthly per $1,000 of net
+    amount at risk. Uses 2017 CSO mortality tables.
+    COI rates are guaranteed not to exceed illustrated maximums.
+
+5.2 ADMINISTRATIVE FEE: $8.00 per month (guaranteed for life).
+
+5.3 NLG RIDER CHARGE: $0.03 per $1,000 of face amount per
+    month while NLG is active ($30.00 per month at $1,000,000
+    face). This charge is waived if NLG is voided or expires.
+
+5.4 TOTAL MONTHLY CHARGES (Year 1, approximate):
+    COI:      ~$35/month (age 36, Preferred Plus)
+    Admin:    $8/month
+    NLG:      $30/month
+    Estimated Total: ~$73/month
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT OPTIONS
+═══════════════════════════════════════════════════════════════════
+6.1 OPTION 1 - LEVEL (CURRENT): Death Benefit = $1,000,000.
+    Optimized for maximum protection at minimum premium cost.
+
+6.2 OPTION CHANGE: Owner may request Option 2 (Increasing)
+    at any policy anniversary after year 5. Switching to
+    Option 2 increases COI charges and may affect NLG status.
+    Written confirmation required from owner before change.
+
+6.3 ACCELERATED DEATH BENEFIT - TERMINAL ILLNESS: Up to 80%
+    of face amount (maximum $800,000) payable if insured has
+    terminal illness with life expectancy under 24 months.
+    Minimum acceleration: $50,000. No charge for this rider.
+
+6.4 ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS: Up to 24%
+    of face amount per year ($240,000 maximum) if insured
+    cannot perform 2 of 6 activities of daily living (ADLs).
+    This benefit is subject to per-diem IRS limits. No charge.
+    See Rider ADB-CI for full ADL definitions.
+
+6.5 ACCELERATED DEATH BENEFIT - CRITICAL ILLNESS: Lump sum
+    of 25% of face amount ($250,000) upon first diagnosis of
+    specified critical illness. Covered conditions include:
+    heart attack, stroke, major organ failure, ALS, and
+    end-stage renal disease. See Rider ADB-CRIT.
+    Monthly rider charge: $4.50.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 LOAN AVAILABILITY: Loans are available but will permanently
+    void the No-Lapse Guarantee. Owner should not take loans
+    while depending on NLG for coverage certainty.
+
+7.2 POLICY LOAN TERMS (if taken, NLG voided):
+    Maximum: 90% of surrender value.
+    Loan rate: 5.5% annually.
+    Loaned amounts earn: Fixed account minimum rate (2.25%).
+
+7.3 PARTIAL WITHDRAWALS: Available after year 1.
+    Withdrawals during years 1-10 permanently void NLG.
+    Withdrawals after year 10 reduce death benefit but do
+    not affect NLG status if cumulative test remains current.
+    Minimum withdrawal: $500.
+
+7.4 OWNER ADVISORY: Given the protection-first design of this
+    policy, Guardian Shield strongly recommends consulting your
+    agent before taking any loan or withdrawal.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of account value):
+
+    Year 1:  9%    Year 5:  5%    Year 9:  1%
+    Year 2:  8%    Year 6:  4%    Year 10: 0.5%
+    Year 3:  7%    Year 7:  3%    Year 11+: 0%
+    Year 4:  6%    Year 8:  2%
+
+8.2 SURRENDER CHARGE BASIS: Applied to account value at time
+    of surrender, not to premiums paid.
+
+8.3 FREE WITHDRAWAL: 10% of account value per year, no
+    surrender charge, beginning in year 2. However, any
+    withdrawal in years 1-10 voids the NLG (see Article 7).
+
+8.4 SURRENDER NOTE: Surrendering this policy forfeits the
+    No-Lapse Guarantee. Surrender value may be significantly
+    less than premiums paid in early years.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - REINSTATEMENT
+═══════════════════════════════════════════════════════════════════
+9.1 A lapsed policy may be reinstated within 5 years of lapse
+    by paying all overdue NLG premiums with interest at 6%,
+    and providing satisfactory evidence of insurability.
+
+9.2 NLG REINSTATEMENT: Reinstated policies restart the NLG
+    cumulative test from the reinstatement date. The
+    contestability and suicide periods also restart.
+
+9.3 SIMPLIFIED REINSTATEMENT: Within 60 days of lapse, no
+    evidence of insurability is required. Payment of overdue
+    premium is sufficient.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: Benefits limited to return of premium (less
+     withdrawals) if death occurs by suicide within 2 years of
+     issue or reinstatement.
+
+10.2 CONTESTABILITY: 2 years from issue or reinstatement.
+
+10.3 AVIATION: EXCLUDED if insured is pilot or crew member of
+     non-commercial aircraft. Passenger travel on commercial
+     scheduled airlines is fully covered.
+
+10.4 HAZARDOUS OCCUPATION: EXCLUDED if insured's death arises
+     from occupation as: underground miner, offshore oil platform
+     worker, explosive demolition worker, or similar Category IV
+     high-risk occupation as defined in our underwriting manual.
+     If insured changes to a Category IV occupation, owner must
+     notify Guardian Shield within 30 days.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 This is a protection-primary product. While accumulation
+     benefits are available, the NLG structure prioritizes
+     death benefit certainty over cash value growth.
+
+11.2 Index participation excludes dividends and is not
+     investment participation in any security.
+
+11.3 The NLG shadow account assumptions are guaranteed but
+     conservative; actual account value may differ substantially.
+
+11.4 Illustration software projections are not guaranteed. Only
+     the NLG death benefit guarantee is contractually binding.
+
+═══════════════════════════════════════════════════════════════════
+
+Questions? Contact Guardian Shield Life:
+1-877-GUARDIAN | protect@guardianshieldlife.com
+Phoenix, Arizona
+
+[SEAL]
+
+__________________________________
+President
+Guardian Shield Life Insurance Company
+
+August 22, 2024
+
+═══════════════════════════════════════════════════════════════════

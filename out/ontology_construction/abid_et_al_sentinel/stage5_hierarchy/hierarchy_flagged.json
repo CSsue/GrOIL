@@ -1,0 +1,61 @@
+[
+  {
+    "owl_name": "Policy",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal agreement between an insurer and a policyholder outlining coverage terms and conditions.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set Policy subclassOf ContractualAgreement. Reasoning: Policy is a specific instance of a ContractualAgreement. A ContractualAgreement is a broad, general term referring to any formal agreement between parties that defines terms and obligations. A Policy, on the other hand, is a specific type of contractual agreement used in the context of insurance, with defined coverage, premiums, and conditions. Therefore, ContractualAgreement is the broader category (Superclass), and Policy is a more specific type (Subclass). This makes Option A the semantically sound relationship.",
+    "top_members": [
+      "CONCEPT",
+      "ORGANIZATION",
+      "DOCUMENT",
+      "POLICY",
+      "TERM",
+      "FINANCIAL_CONCEPT"
+    ]
+  },
+  {
+    "owl_name": "ContractualAgreement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal agreement defining the terms of insurance coverage between parties.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "POLICY",
+    "resolved_gnp": "Policy",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set Policy subclassOf ContractualAgreement. Reasoning: Policy is a specific instance of a ContractualAgreement. A ContractualAgreement is a broad, general term referring to any formal agreement between parties that defines terms and obligations. A Policy, on the other hand, is a specific type of contractual agreement used in the context of insurance, with defined coverage, premiums, and conditions. Therefore, ContractualAgreement is the broader category (Superclass), and Policy is a more specific type (Subclass). This makes Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "contractual agreement governing coverage"
+    ]
+  },
+  {
+    "owl_name": "Location",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A geographical place relevant to the life insurance contract.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "low",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "LLM parse failed",
+    "top_members": [
+      "LOCATION"
+    ]
+  }
+]

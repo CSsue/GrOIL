@@ -1,0 +1,460 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AccumulatedMonetaryBenefit_C5_CashValue a li:AccumulatedMonetaryBenefit,
+        li:PolicyContinuationProtection ;
+    li:hasAmount "any time"^^xsd:string ;
+    li:labelValue "CASH VALUE"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "cash value, policy loans, financial flexibility"^^xsd:string .
+
+abox:AuthorizedSignatory_C5_ChiefOperatingOfficer a li:AuthorizedSignatory,
+        li:CertificateHolder ;
+    li:partyName "Chief Operating Officer"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:AvailableUseOfAccumulatedFunds_C5_BorrowAgainstTheCashValue a li:AvailableUseOfAccumulatedFunds,
+        li:TerminationOption ;
+    li:labelValue "borrow against the cash value"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:BeneficiaryModificationProcedure_C5_ChangeBeneficiary a li:BeneficiaryModificationProcedure,
+        li:TerminationOption ;
+    li:labelValue "Change beneficiary"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:BurialExpenseCoverage_C5_ThisPolicy a li:BurialExpenseCoverage,
+        li:ClaimValidationDocument,
+        li:GuaranteedIssue ;
+    li:amountRequiredToPreventTermination "missed premiums with interest"^^xsd:string ;
+    li:contactChannelForTaxInquiries "1-800-COMFORT"^^xsd:string ;
+    li:definesCancellationRightTimeframe "30-day"^^xsd:string,
+        "After two years"^^xsd:string,
+        "After two years from issue"^^xsd:string,
+        "The policy remains with the policyholder even if they move to another state."^^xsd:string,
+        "at any time"^^xsd:string,
+        "immediately"^^xsd:string,
+        "two years"^^xsd:string ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:gracePeriodDuration "two years"^^xsd:string ;
+    li:hasAgeEligibility true,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85 ;
+    li:hasAmount "a written request"^^xsd:string ;
+    li:hasCertificateHolderName "Chief Operating Officer of ComfortCare Senior Insurance"^^xsd:string,
+        "ComfortCare Senior Insurance"^^xsd:string ;
+    li:hasDeathBenefitAmount "based on the cash value of the policy"^^xsd:string ;
+    li:hasEffectiveDate "2024-05-01"^^xsd:date,
+        "Tampa, Florida"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C5_TampaFl33601,
+        abox:ClaimMailingAddress_C5_TampaFlorida ;
+    li:labelValue "This policy"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "30-day free look, cancellation rights, full refund"^^xsd:string,
+        "30-day free look, policy receipt date, cancellation window"^^xsd:string,
+        "Chief Operating Officer, signature line, policy issuance"^^xsd:string,
+        "Guaranteed Issue, No Medical Exam, Graded Benefit Schedule"^^xsd:string,
+        "Guaranteed Issue, No Medical Exams, Policy Underwriting"^^xsd:string,
+        "Tampa, Florida, policy issuance, geographic scope"^^xsd:string,
+        "age limits, coverage availability, minimum age"^^xsd:string,
+        "age limits, coverage availability, policy eligibility"^^xsd:string,
+        "age limits, coverage availability, policy terms"^^xsd:string,
+        "age limits, coverage eligibility, policy age requirements"^^xsd:string,
+        "age limits, coverage eligibility, policy age restrictions"^^xsd:string,
+        "age limits, coverage eligibility, policy terms"^^xsd:string,
+        "age limits, eligibility requirements, policy terms"^^xsd:string,
+        "beneficiary change, policyholder rights, claim management"^^xsd:string,
+        "beneficiary change, written request, policy administration"^^xsd:string,
+        "cash value, policy cancellation, benefit options"^^xsd:string,
+        "customer service, phone number, contact information"^^xsd:string,
+        "free look period, cancellation rights, policy enrollment"^^xsd:string,
+        "incontestability, claim denial, premium payment"^^xsd:string,
+        "incontestability, claim denial, two-year period"^^xsd:string,
+        "incontestability, policy cancellation, two-year guarantee"^^xsd:string,
+        "issuing company, policy issuance, ComfortCare Senior Insurance"^^xsd:string,
+        "no medical exam, guaranteed issue, underwriting exemption"^^xsd:string,
+        "policy continuation, non-payment, reduced benefit"^^xsd:string,
+        "policy portability, geographic mobility, state transfer"^^xsd:string,
+        "policy reinstatement, missed premiums, interest charges"^^xsd:string,
+        "policy reinstatement, premium cessation, renewal window"^^xsd:string,
+        "policy signing, issuance date, document effective date"^^xsd:string,
+        "premium payment suspension, policy continuity, cash value utilization"^^xsd:string,
+        "reduced benefit, cash value, premium lapse"^^xsd:string .
+
+abox:BurialExpenseCoverage_C5_WholeLifeInsurancePolicy a li:BurialExpenseCoverage ;
+    li:dateOfConfirmationOrDeathEvent "2026-05-01"^^xsd:date ;
+    li:definesCancellationRightTimeframe 90 ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:effectiveDateOfNoPartialWithdrawalRule "2025-05-01"^^xsd:date ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:faceAmount 10000.0 ;
+    li:hasAmount "a small cash value"^^xsd:string,
+        "funeral and final expenses"^^xsd:string,
+        "never decrease"^^xsd:string ;
+    li:hasAnnualPremium 87.50,
+        "Premium payments are automatically deducted from the policyholder's bank account."^^xsd:string,
+        "never increase"^^xsd:string ;
+    li:hasDeathBenefitAmount 10000.0,
+        "30%"^^xsd:string,
+        "70%"^^xsd:string,
+        "all premiums paid"^^xsd:string,
+        "full benefit amount"^^xsd:string,
+        "the full benefit amount"^^xsd:string ;
+    li:hasEffectiveDate "2023-01-01"^^xsd:date,
+        "2025-05-01"^^xsd:date,
+        "2026-04-30"^^xsd:date ;
+    li:hasFaceAmount "This is a simplified issue whole life insurance policy."^^xsd:string ;
+    li:labelValue "whole life insurance policy"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "Graded Death Benefit, Premiums Paid, Year 2 Coverage"^^xsd:string,
+        "Premium Stability, Policy Cost Predictability, No Rate Increases"^^xsd:string,
+        "accidental death, 90-day rule, death benefit eligibility"^^xsd:string,
+        "accidental death, full benefit payout, immediate payment"^^xsd:string,
+        "accidental death, payout terms, premiums included"^^xsd:string,
+        "automatic deductions, premium payment method, bank account deduction"^^xsd:string,
+        "cash value, policy growth, life insurance features"^^xsd:string,
+        "coverage stability, lifetime protection, no benefit reduction"^^xsd:string,
+        "death benefit, policy payout, final expense coverage"^^xsd:string,
+        "face amount, death benefit, policy payout"^^xsd:string,
+        "funeral expenses, final expenses, whole life insurance"^^xsd:string,
+        "graded death benefit, payout timeline, year 2 coverage"^^xsd:string,
+        "graded death benefit, waiting period, payout timeline"^^xsd:string,
+        "graded death benefit, year 1 payout, face amount percentage"^^xsd:string,
+        "graded death benefit, year 1 payout, premimum reimbursement"^^xsd:string,
+        "monthly premium, fixed payments, policy cost"^^xsd:string,
+        "no health questions, simplified application, no medical exam"^^xsd:string,
+        "no medical exam, policy eligibility, simplified issue"^^xsd:string,
+        "premium payments, deduction schedule, monthly billing"^^xsd:string,
+        "simplified issue, whole life insurance, no medical exam"^^xsd:string .
+
+abox:CancellationGroundsAfterTwoYears_C5_NonPaymentOfPremiums a li:CancellationGroundsAfterTwoYears ;
+    li:hasEffectiveDate "this policy"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C5_TampaFlorida ;
+    li:labelValue "non-payment of premiums"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "graded benefit schedule, no medical exam, underwriting terms"^^xsd:string .
+
+abox:CancellationRightWithFullRefund_C5_30DayFreeLook a li:CancellationRightWithFullRefund ;
+    li:labelValue "30-Day Free Look"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:CertificateHolder_C5_DorothyMaeJohnson a li:CertificateHolder,
+        li:Insured ;
+    li:hasAgeEligibility 72 ;
+    li:hasAnnualPremium "guaranteed to remain level for life"^^xsd:string ;
+    li:hasCertificateHolderName "Dorothy Mae Johnson"^^xsd:string,
+        "Linda Sue Johnson"^^xsd:string ;
+    li:hasDeathBenefitAmount "female"^^xsd:string ;
+    li:hasEffectiveDate "1951-06-12"^^xsd:date,
+        "first day of each month"^^xsd:string ;
+    li:partyName "Dorothy Mae Johnson"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "Insured Person, Age Verification, Guaranteed Issue Policy"^^xsd:string,
+        "Insured Person, Birth Date, Policyholder Information"^^xsd:string,
+        "Insured Person, Demographics, Policy Holder Information"^^xsd:string,
+        "Insured Person, Policyholder Identity, Personal Information"^^xsd:string,
+        "daughter-beneficiary, family relation, policy beneficiary"^^xsd:string,
+        "monthly premium, lifetime guarantee, fixed payment"^^xsd:string,
+        "monthly premium, payment schedule, bank draft"^^xsd:string,
+        "premium payer, policyholder responsibility, payment obligation"^^xsd:string .
+
+abox:CertificateHolder_C5_LindaSueJohnson a li:CertificateHolder,
+        li:DeathBenefitRecipient ;
+    li:hasCertificateHolderName "Linda Sue Johnson"^^xsd:string ;
+    li:partyName "Linda Sue Johnson"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "primary beneficiary, beneficiary designation, death benefit recipient"^^xsd:string .
+
+abox:ClaimProcessingWindow_C5_5BusinessDays a li:ClaimProcessingWindow,
+        li:CreditingCycleDuration ;
+    li:labelValue "5 business days"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ClaimSubmissionChannel_C5_1800Comfort18002663678 a li:ClaimSubmissionChannel,
+        li:CustomerServiceHotline ;
+    li:hasCertificateHolderName "COMFORT"^^xsd:string ;
+    li:hasCertificateNumber "1-800-266-3678"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C5_TampaFlorida ;
+    li:labelValue "1-800-COMFORT (1-800-266-3678)"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "toll-free number, customer service, COMFORT"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C5_CompletedClaimForm a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Completed claim form"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C5_ThisPolicyIfAvailable a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:definesCancellationRightTimeframe "grace period"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:hasAmount "no travel restrictions"^^xsd:string ;
+    li:labelValue "This policy (if available)"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "grace period, payment failure, policy cancellation"^^xsd:string,
+        "travel restrictions, policy exclusions, coverage scope"^^xsd:string,
+        "war exclusion, policy coverage, benefits"^^xsd:string .
+
+abox:ContingentBeneficiary_C5_ComfortcareClaims a li:ClaimsProcessingAuthority,
+        li:ContingentBeneficiary ;
+    li:claimSubmissionAddress "ComfortCare Claims"^^xsd:string,
+        "P.O. Box 777, Tampa, FL 33601"^^xsd:string ;
+    li:contactChannelForTaxInquiries "1-800-COMFORT"^^xsd:string,
+        "ComfortCare"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection "Because there were no medical questions or exams, a graded benefit schedule applies."^^xsd:string ;
+    li:hasAnnualPremium "No further premiums are required"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C5_TampaFl33601 ;
+    li:insurerName "ComfortCare Claims"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "Guaranteed Issue, No Medical Exam, Graded Benefit Schedule"^^xsd:string,
+        "automatic continuation, reduced benefit, no further premiums"^^xsd:string,
+        "change beneficiary, call ComfortCare, policy rights"^^xsd:string,
+        "claim process, contact information, beneficiary instructions"^^xsd:string,
+        "claim submission, beneficiary responsibilities, claims mailing address"^^xsd:string,
+        "claims submission, mailing address, ComfortCare Claims"^^xsd:string,
+        "claims submission, policy mailing, beneficiary responsibilities"^^xsd:string,
+        "death certificate, claim submission, mailing requirements"^^xsd:string .
+
+abox:ContingentBeneficiary_C5_ComfortcareSeniorInsurance a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:insurerName "ComfortCare Senior Insurance"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:CreditingCycleDuration_C5_2Years a li:CreditingCycleDuration,
+        li:IncontestabilityPeriodDuration ;
+    li:labelValue "2 years"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:CustomerServiceHotline_C5_1800Comfort a li:CustomerServiceHotline,
+        li:OfficialEmailForInquiries ;
+    li:claimSubmissionAddress "1-800-COMFORT"^^xsd:string ;
+    li:labelValue "1-800-COMFORT"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "claim process, beneficiary action, contact information"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C5_10000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:hasDeathBenefitAmount 10000.0 ;
+    li:labelValue "$10,000"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "benefit amount, policy coverage, insurance payout"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C5_3000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$3,000"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C5_7000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$7,000"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C5_Suicide a li:DeathCauseLimitingRefund ;
+    li:labelValue "SUICIDE"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:DeductionDate_C5_The1stOfEachMonth a li:DeductionDate,
+        li:RetryPaymentDate ;
+    li:dateValue "the 1st of each month"^^xsd:string ;
+    li:gracePeriodDuration 30 ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "grace period, payment delay, policy continuation"^^xsd:string .
+
+abox:DocumentEffectiveDate_C5_May12024 a li:DocumentEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "May 1, 2024"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:EligibilityThreshold_C5_Ages5085 a li:EligibilityThreshold ;
+    li:labelValue "ages 50-85"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:EstimatedCashValueAfterTenYears_C5_3200 a li:EstimatedCashValueAfterTenYears,
+        li:MaxConversionPolicySize ;
+    li:gracePeriodDuration 15 ;
+    li:labelValue "$3,200"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "payment failure, automatic deduction, retry date"^^xsd:string .
+
+abox:GracePeriod_C5_30Days a li:GracePeriod,
+        li:RenewedExclusionWindowPostReinstatement ;
+    li:labelValue "30 days"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:GradedBenefitTrigger_C5_WithoutMedicalQuestionsOrExams a li:GradedBenefitTrigger,
+        li:PlanUpgradeRequirement ;
+    li:labelValue "without medical questions or exams"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:LatePaymentWindow_C5_GracePeriod a li:LatePaymentWindow,
+        li:PolicyContinuationProtection ;
+    li:hasEffectiveDate "2 years"^^xsd:string ;
+    li:labelValue "GRACE PERIOD"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, premium refund, policy cancellation terms"^^xsd:string .
+
+abox:MaxConversionPolicySize_C5_8750 a li:MaxConversionPolicySize,
+        li:MonthlyPremium ;
+    li:cashSurrenderValueFormula "cash value"^^xsd:string,
+        "slowly"^^xsd:string ;
+    li:hasAmount 3200.0 ;
+    li:hasAnnualPremium 87.50,
+        "1st"^^xsd:string,
+        "annual"^^xsd:string,
+        "bank draft"^^xsd:string,
+        "never increase"^^xsd:string,
+        "quarterly"^^xsd:string ;
+    li:labelValue "$87.50"^^xsd:string ;
+    li:premiumAmount 87.5 ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "cash value accumulation, policy duration, financial projection"^^xsd:string,
+        "cash value, policy growth, guaranteed cash value"^^xsd:string,
+        "cash value, policy termination, surrender rights"^^xsd:string,
+        "monthly premium, payment terms, policy cost"^^xsd:string,
+        "monthly premium, premium stability, fixed cost"^^xsd:string,
+        "payment options, monthly payments, quarterly payments"^^xsd:string,
+        "payment options, monthly to annual, billing flexibility"^^xsd:string,
+        "premium deduction, payment schedule, bank account withdrawal"^^xsd:string,
+        "premium payment method, bank draft, payment processing"^^xsd:string .
+
+abox:PaymentFrequency_C5_AnnualOrQuarterlyPayments a li:PaymentFrequency,
+        li:PaymentTerm ;
+    li:claimSubmissionAddress "the beneficiary must submit a completed claim form"^^xsd:string ;
+    li:hasAmount "a certified copy of the death certificate"^^xsd:string ;
+    li:hasAnnualPremium "no aviation exclusion"^^xsd:string ;
+    li:labelValue "annual or quarterly payments"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "aviation exclusion, policy coverage, exclusions"^^xsd:string,
+        "claim process, beneficiary requirements, documentation"^^xsd:string,
+        "claim process, death certificate, beneficiary requirements"^^xsd:string .
+
+abox:PayoutPercentageDetermination_C5_GradedDeathBenefit a li:PayoutPercentageDetermination,
+        li:PolicyContinuationProtection ;
+    li:labelValue "graded death benefit"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PayoutRecipient_C5_SurrenderThePolicyForTheCashValu a li:PayoutRecipient,
+        li:TerminationOption ;
+    li:labelValue "surrender the policy for the cash value"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PlanUpgradeRequirement_C5_After2Years a li:PlanUpgradeRequirement,
+        li:TimeThresholdForAutomaticContinuation ;
+    li:labelValue "After 2 years"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PlanUpgradeRequirement_C5_WeWillOnlyReturnThePremiumsPaid a li:PlanUpgradeRequirement,
+        li:SuicideClauseRefundLimitation ;
+    li:labelValue "we will only return the premiums paid"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PolicyContinuationProtection_C5_NoOtherExclusions a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:labelValue "NO OTHER EXCLUSIONS"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PolicyContinuationProtection_C5_Portability a li:PolicyContinuationProtection,
+        li:PolicyTransferAcrossStates ;
+    li:labelValue "Portability"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PolicyEffectiveDate_C5_May12024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "May 1, 2024"^^xsd:string ;
+    li:hasDeathBenefitAmount "100%"^^xsd:string ;
+    li:hasEffectiveDate "2024-05-01"^^xsd:date ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "beneficiary, death benefit, primary beneficiary"^^xsd:string,
+        "policy effective date, coverage initiation, May 1, 2024"^^xsd:string .
+
+abox:PolicyEffectiveDate_C5_May12026 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "May 1, 2026"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:PolicyIdentifier_C5_CcFe20249903 a li:BurialExpenseCoverage,
+        li:PolicyIdentifier ;
+    li:hasCertificateNumber "CC-FE-2024-9903"^^xsd:string ;
+    li:hasFaceAmount "guaranteed issue whole life"^^xsd:string ;
+    li:labelValue "CC-FE-2024-9903"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:sourceContractSection "guaranteed issue, whole life insurance, permanent coverage"^^xsd:string,
+        "policy number, insurance identification, coverage details"^^xsd:string .
+
+abox:PremiumCollectionMethod_C5_AutomaticDeduction a li:PremiumCollectionMethod ;
+    li:labelValue "automatic deduction"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ProofOfDeath_C5_DeathCertificateCertifiedCopy a li:ProofOfDeath,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Death certificate (certified copy)"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ReducedPayoutDueToGuaranteedIssue_C5_GradedBenefitSchedule a li:BenefitStructure,
+        li:ReducedPayoutDueToGuaranteedIssue ;
+    li:labelValue "Graded benefit schedule"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ReinstatementCondition_C5_MissedPremiumsWithInterest a li:ReinstatementCondition ;
+    li:labelValue "Missed premiums with interest"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:RetryPaymentDate_C5_April302026 a li:RetryPaymentDate,
+        li:SecondYearBenefitTierDate ;
+    li:dateValue "April 30, 2026"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:RetryPaymentDate_C5_May12025 a li:RetryPaymentDate,
+        li:SecondYearBenefitTierDate ;
+    li:dateValue "May 1, 2025"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:RetryPaymentDate_C5_The15th a li:RetryPaymentDate ;
+    li:dateValue "the 15th"^^xsd:string ;
+    li:sourceContractID "C5"^^xsd:string .
+
+abox:ClaimMailingAddress_C5_TampaFl33601 a li:ClaimMailingAddress ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:stateOfIssuance "Tampa, FL 33601"^^xsd:string .
+
+abox:ClaimMailingAddress_C5_TampaFlorida a li:ClaimMailingAddress,
+        li:PolicyIssuanceJurisdiction ;
+    li:sourceContractID "C5"^^xsd:string ;
+    li:stateOfIssuance "Tampa, Florida"^^xsd:string .
+

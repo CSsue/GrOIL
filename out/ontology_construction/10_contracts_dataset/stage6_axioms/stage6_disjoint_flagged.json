@@ -1,0 +1,58 @@
+[
+  {
+    "axiom_id": "AX_0036",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "DeathCauseLimitingRefund",
+    "property_name": null,
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "DeathCauseLimitingRefund DisjointWith Exclusion",
+    "definition": "Suicide within 2 years excludes full death benefit payout.",
+    "confidence": "high",
+    "reasoning": "The hierarchy shows DeathCauseLimitingRefund is a subclass of Exclusion, so they are not disjoint. Reformulating as a restriction: DeathCauseLimitingRefund is a type of Exclusion, and the property SuicidePayoutExclusion defines its exclusionary nature. | FLAGGED: Hierarchy conflict: DeathCauseLimitingRefund and Exclusion are in a subClassOf relationship (ancestors of DeathCauseLimitingRefund: {Exclusion, owl:Thing}; ancestors of Exclusion: {owl:Thing}) \u2014 asserting disjointWith would make one or both classes unsatisfiable.",
+    "evidence_sentences": [
+      "Suicide by the insured within 2 years of issue triggers a benefit equal to premiums paid minus any withdrawals and charges, without interest.",
+      "Suicide by the insured within 2 years of reinstatement triggers a benefit equal to premiums paid minus any withdrawals and charges, without interest.",
+      "If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.",
+      "If the insured dies by suicide within two years from the issue date, EFIT will pay only the premiums paid, without interest.",
+      "If the insured dies by suicide within 24 months of the issue date, the insurer pays only the Account Value."
+    ],
+    "source_cluster": "SuicidePayoutExclusion"
+  },
+  {
+    "axiom_id": "AX_0056",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "PolicyExclusion",
+    "property_name": null,
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "PolicyExclusion DisjointWith Exclusion",
+    "definition": "Coverage is prohibited under substance influence.",
+    "confidence": "high",
+    "reasoning": "The hierarchy shows PolicyExclusion is a subclass of Exclusion. Since they are in a subsumption relationship, disjointWith is invalid. Instead, the property should be interpreted as a restriction, but the evidence supports a direct exclusion, so the axiom is reformulated as a restriction via someValuesFrom. | FLAGGED: Hierarchy conflict: PolicyExclusion and Exclusion are in a subClassOf relationship (ancestors of PolicyExclusion: {Exclusion, owl:Thing}; ancestors of Exclusion: {owl:Thing}) \u2014 asserting disjointWith would make one or both classes unsatisfiable.",
+    "evidence_sentences": [
+      "No payment is made by the Death Benefit if the insured was under the influence of drugs at the time of death.",
+      "No payment is made by the Death Benefit if the insured was under the influence of alcohol at the time of death."
+    ],
+    "source_cluster": "ProhibitionOfCoverageForSubstanceInfluence"
+  },
+  {
+    "axiom_id": "AX_0058",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "PolicyExclusion",
+    "property_name": null,
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "PolicyExclusion DisjointWith Exclusion",
+    "definition": "Self-inflicted injury is excluded from coverage.",
+    "confidence": "high",
+    "reasoning": "The hierarchy shows PolicyExclusion is a subclass of Exclusion. Since they are in a subsumption relationship, disjointWith is invalid. However, the property defines a specific exclusion, so the correct interpretation is that PolicyExclusion is a type of Exclusion, not disjoint. Thus, the axiom is reformulated as a restriction via someValuesFrom. | FLAGGED: Hierarchy conflict: PolicyExclusion and Exclusion are in a subClassOf relationship (ancestors of PolicyExclusion: {Exclusion, owl:Thing}; ancestors of Exclusion: {owl:Thing}) \u2014 asserting disjointWith would make one or both classes unsatisfiable.",
+    "evidence_sentences": [
+      "Self-inflicted injury is excluded from qualifying for the Death Benefit."
+    ],
+    "source_cluster": "ProhibitionOfSelfInflictedInjury"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "stream": "property",
+    "owl_name": "hasConcealedMaterialFact",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "This property identifies concealed material facts, which are typically facts related to the insured or application. The source is a concept (e.g., misrepresentation), and the target is a document (e.g., application or medical record). The domain is Concept, and the range is Document, though Document is not in the allowed vocabulary. Thus, the range defaults to owl:Thing.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (16 edges)",
+          "Most frequent target type: DOCUMENT (134 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (16 edges)",
+          "Most frequent object type: DOCUMENT (134 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "conceals",
+      "may commit",
+      "prevents fraud",
+      "potentially subject to fraud via misrepresentation in claim",
+      "is a material fact potentially concealed"
+    ]
+  }
+]

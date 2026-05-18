@@ -1,0 +1,1227 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AccrualForDelayedPayments_EQUI_InterestRate a li:AccrualForDelayedPayments,
+        li:Rate ;
+    li:labelValue "interest rate"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:AnnualPremiumAmount_EQUI_420 a li:AnnualPremiumAmount ;
+    li:labelValue "$420"^^xsd:string ;
+    li:premiumAmount 420.0 ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:AnnualPremiumAmount_EQUI_500000 a li:AnnualPremiumAmount,
+        li:FaceAmountOfDeathBenefit ;
+    li:faceAmount 500000.0 ;
+    li:labelValue "$500,000"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:AnnualRenewalMilestone_EQUI_PolicyAnniversary a li:AnnualRenewalMilestone,
+        li:PremiumPaymentDeadline ;
+    li:dateValue "Policy Anniversary"^^xsd:string ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:policyAnniversaryDefinition "each yearly anniversary of the Policy's Issue Date"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy Anniversary, Issue Date, Annual Milestone"^^xsd:string .
+
+abox:ContestabilityPeriodDuration_EQUI_Two2Years a li:ContestabilityPeriodDuration,
+        li:PremiumPaymentDeadline ;
+    li:coverageDuration "2 years"^^xsd:string,
+        "P2Y"^^xsd:string ;
+    li:dateValue "two (2) years"^^xsd:string ;
+    li:dependsOn abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL,
+        abox:ContestabilityException_EQUI_MaterialMisrepresentation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:InsuredPerson_EQUI_TheInsured,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums,
+        abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner,
+        abox:SuicideExclusion_EQUI_FullDeathBenefit,
+        abox:SuicideExclusion_EQUI_SuicideExclusion ;
+    li:hasIncontestabilityPeriodDefinition "A new two-year contestability period applies from the date of reinstatement only with respect to statements made in the reinstatement application."^^xsd:string,
+        "After the contestability period expires, the Company may not contest the validity of the Policy, even in the event of misstatement."^^xsd:string,
+        "After the contestability period expires, the Company may not contest the validity of the Policy."^^xsd:string,
+        "This Policy shall be incontestable after it has been in force during the lifetime of the Insured for a period of two years from the Issue Date."^^xsd:string ;
+    li:hasLiabilityLimitedToTotalPremiumsPaid true ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy Reinstatement, Contestability Period Reset, Reinstatement Application"^^xsd:string,
+        "Reinstatement, Death Benefit, Two-Year Period"^^xsd:string,
+        "contestation period, policy validity, incontestability clause"^^xsd:string,
+        "contestation period, policy validity, misstatement exception"^^xsd:string,
+        "incontestability, death benefit, two-year period"^^xsd:string,
+        "incontestability, two-year period, issue date"^^xsd:string,
+        "suicide exclusion, policy reinstatement, two-year limit"^^xsd:string .
+
+abox:EligibilityUpperLimit_EQUI_MaximumConversionAge a li:EligibilityUpperLimit ;
+    li:labelValue "maximum conversion age"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:GoverningJurisdiction_EQUI_NewYorkNy a li:GoverningJurisdiction,
+        li:HomeOfficeLocation ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:governingLaw "New York"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "governing law, New York jurisdiction, contractual governance"^^xsd:string ;
+    li:stateOfIssuance "New York, NY"^^xsd:string .
+
+abox:MaximumReinstatementWindow_EQUI_Five5Years a li:MaximumReinstatementWindow,
+        li:PremiumPaymentDeadline ;
+    li:dateValue "five (5) years"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:NonCoveredTimeframeForClaims_EQUI_GracePeriod a li:NonCoveredTimeframeForClaims,
+        li:PostDueDateContinuationWindow ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:NonCoveredTimeframeForClaims_EQUI_IncontestabilityPeriod a li:NonCoveredTimeframeForClaims,
+        li:TimeLimitForCompanyChallenge ;
+    li:labelValue "Incontestability Period"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:NonCoveredTimeframeForClaims_EQUI_PeriodInWhichThePolicyWasLapsed a li:NonCoveredTimeframeForClaims ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:labelValue "period in which the Policy was lapsed"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:NonCoveredTimeframeForClaims_EQUI_SuicideExclusionPeriod a li:NonCoveredTimeframeForClaims,
+        li:RestrictedPayoutDurationPostSuicide ;
+    li:labelValue "Suicide Exclusion Period"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PolicyEffectiveDate_EQUI_August12025 a li:PolicyEffectiveDate,
+        li:PremiumPaymentDeadline ;
+    li:ageAtIssue 12025312045 ;
+    li:dateValue "August 1, 2025"^^xsd:string ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:hasInsuredPersonDateOfBirth "2025-08-01"^^xsd:date ;
+    li:issueDate "2025-08-01"^^xsd:date ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy Issue Date, Effective Coverage Start, Policy Anniversary"^^xsd:string .
+
+abox:PolicyEffectiveDate_EQUI_DueDateOfTheUnpaidPremium a li:PolicyEffectiveDate,
+        li:PremiumPaymentDeadline ;
+    li:dateValue "due date of the unpaid premium"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PolicyEffectiveDate_EQUI_July312045 a li:PolicyEffectiveDate,
+        li:PremiumPaymentDeadline ;
+    li:ageAtIssue 12025312045 ;
+    li:dateValue "July 31, 2045"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PremiumPaymentDeadline_EQUI_90Days a li:PremiumPaymentDeadline,
+        li:TimeLimitForLocatingBeneficiary ;
+    li:dateValue "90 days"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PremiumPaymentDeadline_EQUI_DateOfReinstatement a li:PremiumPaymentDeadline,
+        li:TriggerPointForNewExclusions ;
+    li:dateValue "date of reinstatement"^^xsd:string ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PremiumPaymentDeadline_EQUI_EndOfTheGracePeriod a li:PremiumPaymentDeadline ;
+    li:dateValue "end of the grace period"^^xsd:string ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:GoverningJurisdiction_EQUI_StateOfNewYork a li:GoverningJurisdiction ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:stateOfIssuance "State of New York"^^xsd:string .
+
+abox:NotificationDestination_EQUI_LastKnownAddressOfThePolicyOwner a li:NotificationDestination ;
+    li:labelValue "last known address of the Policy Owner"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ComprehensiveBindingAgreement_EQUI_EntireAgreement a li:ComprehensiveBindingAgreement,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:ComprehensiveBindingAgreement_EQUI_EntireAgreement,
+        abox:FormalRelinquishmentOfRightsRequirement_EQUI_Waiver,
+        abox:GoverningDocumentReference_EQUI_ThisPolicy,
+        abox:PartialEnforceabilityClause_EQUI_Severability ;
+    li:labelValue "Entire Agreement"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:FormalRelinquishmentOfRightsRequirement_EQUI_Waiver a li:FormalRelinquishmentOfRightsRequirement,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:ComprehensiveBindingAgreement_EQUI_EntireAgreement,
+        abox:FormalRelinquishmentOfRightsRequirement_EQUI_Waiver,
+        abox:GoverningDocumentReference_EQUI_ThisPolicy,
+        abox:PartialEnforceabilityClause_EQUI_Severability ;
+    li:labelValue "Waiver"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:GoverningDocumentReference_EQUI_ThisPolicy a li:GoverningDocumentReference,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:ComprehensiveBindingAgreement_EQUI_EntireAgreement,
+        abox:FormalRelinquishmentOfRightsRequirement_EQUI_Waiver,
+        abox:GoverningDocumentReference_EQUI_ThisPolicy,
+        abox:PartialEnforceabilityClause_EQUI_Severability ;
+    li:labelValue "this Policy"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PartialEnforceabilityClause_EQUI_Severability a li:PartialEnforceabilityClause,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:ComprehensiveBindingAgreement_EQUI_EntireAgreement,
+        abox:FormalRelinquishmentOfRightsRequirement_EQUI_Waiver,
+        abox:GoverningDocumentReference_EQUI_ThisPolicy,
+        abox:PartialEnforceabilityClause_EQUI_Severability ;
+    li:labelValue "Severability"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:BeneficiaryDesignationController_EQUI_PolicyOwner a li:BeneficiaryDesignationController,
+        li:DeathBenefitRecipient ;
+    li:partyName "Policy Owner"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL a li:ContestabilityException,
+        li:PolicyRightsTransfer ;
+    li:labelValue "fraud as defined by applicable state law"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ContestabilityException_EQUI_MaterialMisrepresentation a li:ContestabilityException,
+        li:PolicyRightsTransfer ;
+    li:labelValue "material misrepresentation"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:InsuredPerson_EQUI_TheInsured a li:DeathBenefitRecipient,
+        li:InsuredPerson ;
+    li:coverageDuration "2 years"^^xsd:string ;
+    li:dependsOn abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL,
+        abox:ContestabilityException_EQUI_MaterialMisrepresentation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:InsuredPerson_EQUI_TheInsured,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums,
+        abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner,
+        abox:SuicideExclusion_EQUI_FullDeathBenefit,
+        abox:SuicideExclusion_EQUI_SuicideExclusion ;
+    li:hasIncontestabilityPeriodDefinition "Upon reinstatement, the suicide exclusion applies anew from the date of reinstatement."^^xsd:string ;
+    li:hasLiabilityLimitedToTotalPremiumsPaid true ;
+    li:partyName "the Insured"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, policy reinstatement, two-year contestability"^^xsd:string,
+        "suicide exclusion, two-year limit, premium refund"^^xsd:string .
+
+abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums a li:PolicyLapseCondition,
+        li:PolicyRightsTransfer ;
+    li:labelValue "nonpayment of premiums"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner a li:DeathBenefitRecipient,
+        li:PolicyReinstatementBeneficiary ;
+    li:dependsOn abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL,
+        abox:ContestabilityException_EQUI_MaterialMisrepresentation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:InsuredPerson_EQUI_TheInsured,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums,
+        abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner,
+        abox:SuicideExclusion_EQUI_FullDeathBenefit,
+        abox:SuicideExclusion_EQUI_SuicideExclusion ;
+    li:hasIncontestabilityPeriodDefinition "a new two-year contestability period begins as of the date of reinstatement"^^xsd:string ;
+    li:partyName "the Policy Owner"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "contestation period, policy reinstatement, two-year rule"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_SimultaneousDeath a li:PolicyRightsTransfer,
+        li:UncertainOrderOfDeathEvent ;
+    li:labelValue "Simultaneous Death"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:SuicideExclusion_EQUI_FullDeathBenefit a li:PolicyRightsTransfer,
+        li:SuicideExclusion ;
+    li:dependsOn abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL,
+        abox:ContestabilityException_EQUI_MaterialMisrepresentation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:InsuredPerson_EQUI_TheInsured,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums,
+        abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner,
+        abox:SuicideExclusion_EQUI_FullDeathBenefit,
+        abox:SuicideExclusion_EQUI_SuicideExclusion ;
+    li:hasIncontestabilityPeriodDefinition "During the two-year contestability period, the Company may deny a claim if there was a material misrepresentation in the application."^^xsd:string,
+        "a new two-year contestability period shall apply from the date of reinstatement"^^xsd:string ;
+    li:labelValue "full death benefit"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy reinstatement, contestability period, two-year reset"^^xsd:string,
+        "contestation period, material misrepresentation, policy invalidity"^^xsd:string .
+
+abox:SuicideExclusion_EQUI_SuicideExclusion a li:PolicyRightsTransfer,
+        li:SuicideExclusion ;
+    li:labelValue "suicide exclusion"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionCriteriaReferenceGuide_EQUI_Policy a li:ContractualAgreement,
+        li:ConversionCriteriaReferenceGuide ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:hasInsuredGender "male"^^xsd:string ;
+    li:hasInsuredPersonDateOfBirth "1990-03-15"^^xsd:date,
+        "Jordan Ellis"^^xsd:string ;
+    li:labelValue "Policy"^^xsd:string ;
+    li:policyNumber "EML-2025-00028391"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Insured Person, Jordan Ellis, Policy Specifications"^^xsd:string,
+        "Insured Person, Sex, Policy Specifications"^^xsd:string,
+        "Policy Owner, Jordan Ellis, Ownership Rights"^^xsd:string,
+        "date of birth, insured person, policy specifications"^^xsd:string .
+
+abox:DeathBenefitRecipient_EQUI_TaylorEllis a li:DeathBenefitRecipient ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:hasInsuredPersonDateOfBirth "Taylor Ellis"^^xsd:string,
+        "Taylor Ellis (spouse)"^^xsd:string ;
+    li:partyName "Taylor Ellis"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "beneficiary, death benefit, policy ownership"^^xsd:string .
+
+abox:InsuredPerson_EQUI_JordanEllis a li:DeathBenefitRecipient,
+        li:InsuredPerson ;
+    li:dateOfBirth "1990-03-15"^^xsd:date ;
+    li:definesTimeLimitForLocatingBeneficiary "the person or persons designated to receive the death benefit proceeds upon the death of the insured"^^xsd:string ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:faceAmount "the amount payable upon the death of the insured"^^xsd:string ;
+    li:partyName "Jordan Ellis"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Face Amount, Death Benefit, Policy Specifications"^^xsd:string,
+        "beneficiary, death benefit, insured"^^xsd:string .
+
+abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa a li:IssuingInsurer ;
+    li:ceoSignatureLocation "New York, NY"^^xsd:string ;
+    li:coverageDuration 31,
+        "20-Year Level Term"^^xsd:string,
+        "2025-08-01/2045-07-31"^^xsd:string,
+        "annual"^^xsd:string ;
+    li:definesTimeLimitForLocatingBeneficiary "Equivita Mutual Life Insurance Company"^^xsd:string ;
+    li:dependsOn abox:ConversionCriteriaReferenceGuide_EQUI_Policy,
+        abox:DeathBenefitRecipient_EQUI_TaylorEllis,
+        abox:InsuredPerson_EQUI_JordanEllis,
+        abox:IssuingInsurer_EQUI_EquivitaMutualLifeInsuranceCompa,
+        abox:PolicyRightsTransfer_EQUI_20YearLevelTerm ;
+    li:faceAmount 500000.0 ;
+    li:hasCoverageAmount 420.0 ;
+    li:hasInsuredPersonDateOfBirth "Standard Non-Smoker"^^xsd:string ;
+    li:hasPolicyIdentificationNumber "EML-2025-00028391"^^xsd:string ;
+    li:insurerName "Equivita Mutual Life Insurance Company"^^xsd:string ;
+    li:policyAnniversaryDefinition "each yearly anniversary of the policy’s issue date"^^xsd:string ;
+    li:policyNumber "EML-2025-00028391"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "20-Year Level Term, Term Life Insurance, Policy Type"^^xsd:string,
+        "CEO Signature, Home Office Location, New York Jurisdiction"^^xsd:string,
+        "Company, Definition, Equivita Mutual Life Insurance"^^xsd:string,
+        "Coverage Term, Policy Duration, Effective Dates"^^xsd:string,
+        "Grace Period, Premium Payment Terms, Policy Maintenance"^^xsd:string,
+        "Policy Anniversary, Issue Date, Yearly Anniversary"^^xsd:string,
+        "annual premium, policy cost, premium payment"^^xsd:string,
+        "company signature, home office location, policy authorization"^^xsd:string,
+        "face amount, death benefit, policy coverage"^^xsd:string,
+        "policy number, identification, document reference"^^xsd:string,
+        "premium mode, annual payment, policy specifications"^^xsd:string,
+        "risk class, underwriting, insured profile"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_20YearLevelTerm a li:PolicyRightsTransfer,
+        li:Premium ;
+    li:labelValue "20-Year Level Term"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ClaimValidityAuthority_EQUI_RightToInvestigate a li:ClaimValidityAuthority,
+        li:Right ;
+    li:labelValue "right to investigate"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate a li:ConversionCriteriaReferenceGuide,
+        li:ProofOfDeath ;
+    li:labelValue "certified death certificate"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability a li:ConversionCriteriaReferenceGuide,
+        li:MedicalRequirement ;
+    li:labelValue "evidence of insurability"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:DeathBenefit_EQUI_DeathBenefit a li:Benefit,
+        li:DeathBenefit ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum a li:DefaultDeathBenefitDistributionMethod ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:hasInterestRate "Interest accrues on the death benefit from the date of death to the date of payment."^^xsd:string ;
+    li:labelValue "lump sum"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "interest accrual, death benefit payout, timing of payment"^^xsd:string .
+
+abox:InsuranceContract_EQUI_Policy a li:InsuranceContract,
+        li:LapseSubject ;
+    li:definesTimeLimitForLocatingBeneficiary "Due proof includes a certified death certificate."^^xsd:string,
+        "promptly"^^xsd:string ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:faceAmount "the Face Amount shown in the Policy Specifications"^^xsd:string ;
+    li:hasIncontestabilityPeriodDefinition "starts anew from the date of reinstatement"^^xsd:string ;
+    li:hasInterestRate "not less than required by applicable state law"^^xsd:string ;
+    li:hasOverduePremiumInterestTerms "All overdue premiums must be paid with interest at the rate specified by the Company at the time of reinstatement."^^xsd:string ;
+    li:labelValue "Policy"^^xsd:string ;
+    li:noAutomaticRenewal true ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Payment, Claim Documentation Approval, Proceeds Disbursement Timeline"^^xsd:string,
+        "Death Benefit, Face Amount, Policy Specifications"^^xsd:string,
+        "Policy Lapse, Reinstatement Rights, Benefits During Lapse"^^xsd:string,
+        "Proof of Death, Certified Death Certificate, Claim Documentation"^^xsd:string,
+        "Reinstatement Rights, Incontestability Provision, Policy Lapse"^^xsd:string,
+        "Reinstatement Rights, Overdue Premiums, Policy Lapse"^^xsd:string,
+        "interest rate, state law requirement, death benefit payout"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus a li:PolicyRightsTransfer,
+        li:PostReinstatementLimitation ;
+    li:labelValue "Incontestability and Suicide Exclusion provisions"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums a li:DefaultDeathBenefitDistributionMethod,
+        li:PreReinstatementFinancialObligation ;
+    li:labelValue "all overdue premiums"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement a li:ReinstatementRequirement ;
+    li:labelValue "written request for reinstatement"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:RevivalMechanism_EQUI_ReinstatementProvision a li:RevivalMechanism ;
+    li:labelValue "Reinstatement provision"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath a li:VerificationStepBeforeBenefitDisbursement ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:hasIncontestabilityPeriodDefinition "The Company may contest the claim if the claim falls within the contestability period."^^xsd:string ;
+    li:labelValue "Proof of Death"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "contestation rights, proof of death, contestability period"^^xsd:string .
+
+abox:ClausePreservingValidityOfRest_EQUI_Severability a li:ClausePreservingValidityOfRest,
+        li:RevivalMechanism ;
+    li:labelValue "severability"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConfidentialData_EQUI_PersonalInformation a li:ConfidentialData,
+        li:Data ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:labelValue "personal information"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications a li:ConversionCriteriaReferenceGuide ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:labelValue "Policy Specifications"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionOptionRequester_EQUI_Insured a li:ConversionOptionRequester,
+        li:DeathBenefitRecipient ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:governingLaw "State of New York"^^xsd:string ;
+    li:hasIncontestabilityPeriodDefinition "A new two-year contestability period begins on the date of reinstatement."^^xsd:string ;
+    li:partyName "Insured"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Dispute Resolution, Governing Law, Jurisdiction"^^xsd:string,
+        "contestability period, policy reinstatement, claim investigation window"^^xsd:string .
+
+abox:ConversionOptionRequester_EQUI_PolicyOwner a li:ConversionOptionRequester,
+        li:DeathBenefitRecipient ;
+    li:partyName "Policy Owner"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction a li:DisputeResolutionVenue ;
+    li:labelValue "court of competent jurisdiction"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry a li:EligibilityConditionForPolicyUpgrade ;
+    li:labelValue "extension or conversion at expiry"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid a li:FormalModificationMechanism ;
+    li:labelValue "properly authorized amendment or rider"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation a li:InformationalUpdate ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:labelValue "periodic statements or confirmations"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:InsuredPerson_EQUI_PolicyOwner a li:DeathBenefitRecipient,
+        li:InsuredPerson ;
+    li:dependsOn abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund ;
+    li:noDividendsPayableNow true ;
+    li:partyName "Policy Owner"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "nonparticipating policy, dividend exclusion, current payout status"^^xsd:string,
+        "nonparticipating policy, no dividends, future payouts"^^xsd:string .
+
+abox:LatePremiumPaymentExtension_EQUI_GracePeriod a li:LatePremiumPaymentExtension,
+        li:PolicyRightsTransfer ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati a li:LegalFrameworkForDataHandling ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:governingLaw "New York"^^xsd:string ;
+    li:labelValue "applicable privacy laws and regulations"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "dispute resolution, governing law, jurisdiction exceptions"^^xsd:string .
+
+abox:NonParticipatingPolicy_EQUI_Nonparticipating a li:NonParticipatingPolicy,
+        li:PolicyRightsTransfer ;
+    li:coverageDuration "During the grace period"^^xsd:string ;
+    li:dependsOn abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund ;
+    li:governingLaw "applicable law"^^xsd:string ;
+    li:hasCoverageAmount "Premium rates are based on the underwriting class of the Insured."^^xsd:string ;
+    li:labelValue "Nonparticipating"^^xsd:string ;
+    li:policyAnniversaryDefinition "Coverage terminates when the Policy lapses."^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy Owner Rights, Applicable Law, Contractual Obligations"^^xsd:string,
+        "grace period, policy in force, premium payment delay"^^xsd:string,
+        "policy lapse, coverage termination, premium nonpayment"^^xsd:string,
+        "underwriting class, premium determination, risk assessment"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_Assignment a li:PolicyRightsTransfer ;
+    li:dependsOn abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund ;
+    li:labelValue "Assignment"^^xsd:string ;
+    li:noAutomaticRenewal true ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "assignment responsibility, policy owner rights, legal limitations"^^xsd:string,
+        "tax consequences, policy assignment, company liability"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_Refund a li:PolicyRightsTransfer,
+        li:ReturnOfPaidPremiums ;
+    li:labelValue "Refund"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod a li:PolicyRightsTransfer,
+        li:PostReinstatementLimitation ;
+    li:labelValue "two-year contestability period"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ReinstatementEffect_EQUI_SuicideExclusion a li:ReinstatementEffect ;
+    li:labelValue "suicide exclusion"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo a li:ConversionRequestTimingConstraint,
+        li:ReinstatementRequirement ;
+    li:labelValue "conversion period specified in the Policy Specifications"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio a li:AutomaticInvalidationCondition,
+        li:Status ;
+    li:labelValue "Void ab initio"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ChangeAuthorizationRule_EQUI_Modifications a li:ChangeAuthorizationRule,
+        li:RevivalMechanism ;
+    li:labelValue "Modifications"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract a li:ContractualAgreement,
+        li:ConversionCriteriaReferenceGuide ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Entire Contract"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:NonWarrantyFactualClaim_EQUI_Representations a li:NonWarrantyFactualClaim,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Representations"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PartialEnforceabilityClause_EQUI_Warranties a li:PartialEnforceabilityClause,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:hasIncontestabilityPeriodDefinition "a two-year period during which the Company may contest the validity of the Policy"^^xsd:string ;
+    li:labelValue "Warranties"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Incontestability Period, policy validity, two-year limit"^^xsd:string .
+
+abox:PolicyRestoration_EQUI_Reinstatement a li:PolicyRestoration,
+        li:VerificationStepBeforeBenefitDisbursement ;
+    li:labelValue "Reinstatement"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath a li:DeathBenefit,
+        li:PolicyRightsTransfer ;
+    li:coverageDuration "two-year"^^xsd:string ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:governingLaw "governing law"^^xsd:string ;
+    li:hasInsuredGender "misstated"^^xsd:string ;
+    li:labelValue "Amount Payable Upon Death"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Suicide Exclusion Period, Death Benefit Limitations, Two-Year Exclusion"^^xsd:string,
+        "misstatement of sex, death benefit adjustment, policy correction"^^xsd:string,
+        "statutory changes, policy modifications, governing law"^^xsd:string,
+        "statutory changes, regulatory updates, policy enforcement"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_DeathBenefit a li:DeathBenefit,
+        li:PolicyRightsTransfer ;
+    li:dependsOn abox:BeneficiaryDesignationController_EQUI_PolicyOwner,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PolicyRightsTransfer_EQUI_SimultaneousDeath ;
+    li:hasLiabilityLimitedToTotalPremiumsPaid true ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "facility of payment, estate payout, equitable entitlement"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary a li:PolicyRightsTransfer,
+        li:PrimaryBeneficiary ;
+    li:dependsOn abox:BeneficiaryDesignationController_EQUI_PolicyOwner,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PolicyRightsTransfer_EQUI_SimultaneousDeath ;
+    li:governingLaw "state law"^^xsd:string ;
+    li:hasLiabilityLimitedToTotalPremiumsPaid true ;
+    li:labelValue "Irrevocable Beneficiary"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy Owner Rights, Irrevocable Beneficiary Designation, Contractual Authority"^^xsd:string,
+        "simultaneous death, order of death, state law exception"^^xsd:string .
+
+abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse a li:PolicyTerminationDueToMissedPayments ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Lapse"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex a li:AdjustmentTriggerForBenefits,
+        li:ReinstatementRequirement ;
+    li:definesTimeLimitForLocatingBeneficiary "No statement shall be used in defense of a claim under this Policy unless it is contained in the written application."^^xsd:string ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Misstatement of Age or Sex"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "written application, claim defense, representations vs warranties"^^xsd:string .
+
+abox:TransferOfOwnershipRights_EQUI_Assignment a li:EligibilityConditionForPolicyUpgrade,
+        li:TransferOfOwnershipRights ;
+    li:labelValue "Assignment"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:UnauthorizedPolicyTermModifier_EQUI_Agent a li:Role,
+        li:UnauthorizedPolicyTermModifier ;
+    li:labelValue "Agent"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative a li:Role,
+        li:UnauthorizedPolicyTermModifier ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:labelValue "Field Representative"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:UnauthorizedPolicyTermModifier_EQUI_Producer a li:Role,
+        li:UnauthorizedPolicyTermModifier ;
+    li:labelValue "Producer"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:ContingentBeneficiary_EQUI_ContingentBeneficiary a li:ContingentBeneficiary,
+        li:DeathBenefitRecipient ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:partyName "Contingent Beneficiary"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string .
+
+abox:DeathBenefitRecipient_EQUI_Beneficiary a li:DeathBenefitRecipient ;
+    li:definesTimeLimitForLocatingBeneficiary "If no designated Beneficiary survives the Insured, proceeds will be paid to the Contingent Beneficiary, if any."^^xsd:string ;
+    li:dependsOn abox:BeneficiaryDesignationController_EQUI_PolicyOwner,
+        abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_SimultaneousDeath,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:partyName "Beneficiary"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, beneficiary survival, death benefit distribution"^^xsd:string .
+
+abox:InsuranceContract_EQUI_ThisPolicy a li:InsuranceContract,
+        li:LapseSubject ;
+    li:coverageDuration 2,
+        "5 years"^^xsd:string ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ContestabilityException_EQUI_FraudAsDefinedByApplicableStateL,
+        abox:ContestabilityException_EQUI_MaterialMisrepresentation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:InsuredPerson_EQUI_TheInsured,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyLapseCondition_EQUI_NonpaymentOfPremiums,
+        abox:PolicyReinstatementBeneficiary_EQUI_ThePolicyOwner,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo,
+        abox:SuicideExclusion_EQUI_FullDeathBenefit,
+        abox:SuicideExclusion_EQUI_SuicideExclusion ;
+    li:governingLaw "New York"^^xsd:string ;
+    li:hasConversionEligibilityBeforeExpiry true ;
+    li:hasCoverageAmount "during the conversion period specified in the Policy Specifications"^^xsd:string ;
+    li:hasIncontestabilityPeriodDefinition "After the contestability period expires, the Company may not contest the validity of the Policy, unless such misstatement constitutes fraud as defined by applicable state law."^^xsd:string,
+        "During the two-year contestability period, the Company may rescind the Policy if there was a material misrepresentation in the application."^^xsd:string,
+        "This Policy shall be incontestable after it has been in force during the lifetime of the Insured for a period of two years from the Issue Date, except for nonpayment of premiums."^^xsd:string ;
+    li:hasLiabilityLimitedToTotalPremiumsPaid true ;
+    li:hasLocation abox:GoverningJurisdiction_EQUI_StateOfNewYork,
+        abox:NotificationDestination_EQUI_LastKnownAddressOfThePolicyOwner ;
+    li:hasOverduePremiumInterestTerms "compounded annually"^^xsd:string,
+        "interest at a rate determined by the Company"^^xsd:string ;
+    li:initiallyCollectsDataThatCausesUnderpaymentIfInaccurate true ;
+    li:labelValue "this Policy"^^xsd:string ;
+    li:noAutomaticRenewal true ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Policy reinstatement, overdue premiums, interest on unpaid premiums"^^xsd:string,
+        "automatic renewal, policy expiration, conversion option"^^xsd:string,
+        "contestation period, material misrepresentation, policy invalidation"^^xsd:string,
+        "conversion period, policy conversion, eligibility criteria"^^xsd:string,
+        "conversion rights, policy expiration, permanent life insurance"^^xsd:string,
+        "governing law, New York jurisdiction, legal provisions"^^xsd:string,
+        "incontestability clause, fraud exception, policy validity"^^xsd:string,
+        "incontestability, two-year period, policy enforcement"^^xsd:string,
+        "overdue premiums, interest compounding, policy reinstatement"^^xsd:string,
+        "personal information, privacy policy, data confidentiality"^^xsd:string,
+        "policy reinstatement, lapse due to nonpayment, five-year reinstatement period"^^xsd:string,
+        "reinstatement, liability limits, effective date"^^xsd:string .
+
+abox:IssuingInsurer_EQUI_TheCompany a li:IssuingInsurer ;
+    li:definesTimeLimitForLocatingBeneficiary "solely for underwriting, claims, and administrative purposes"^^xsd:string ;
+    li:dependsOn abox:ClausePreservingValidityOfRest_EQUI_Severability,
+        abox:ConfidentialData_EQUI_PersonalInformation,
+        abox:ConversionCriteriaReferenceGuide_EQUI_PolicySpecifications,
+        abox:ConversionOptionRequester_EQUI_Insured,
+        abox:ConversionOptionRequester_EQUI_PolicyOwner,
+        abox:DisputeResolutionVenue_EQUI_CourtOfCompetentJurisdiction,
+        abox:EligibilityConditionForPolicyUpgrade_EQUI_ExtensionOrConversionAtExpiry,
+        abox:FormalModificationMechanism_EQUI_ProperlyAuthorizedAmendmentOrRid,
+        abox:InformationalUpdate_EQUI_PeriodicStatementsOrConfirmation,
+        abox:InsuranceContract_EQUI_ThisPolicy,
+        abox:IssuingInsurer_EQUI_TheCompany,
+        abox:LegalFrameworkForDataHandling_EQUI_ApplicablePrivacyLawsAndRegulati,
+        abox:PolicyRightsTransfer_EQUI_TwoYearContestabilityPeriod,
+        abox:ReinstatementEffect_EQUI_SuicideExclusion,
+        abox:ReinstatementRequirement_EQUI_ConversionPeriodSpecifiedInThePo ;
+    li:insurerName "the Company"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Privacy and Confidentiality, Underwriting Purposes, Claims Processing"^^xsd:string .
+
+abox:InsuredPerson_EQUI_Insured a li:DeathBenefitRecipient,
+        li:InsuredPerson ;
+    li:coverageDuration 31,
+        "in advance on or before the due date shown in the Policy Specifications"^^xsd:string ;
+    li:deductionFromDeathBenefitDuringGracePeriod "any unpaid premium due will be deducted from the death benefit"^^xsd:string ;
+    li:definesTimeLimitForLocatingBeneficiary 90 ;
+    li:dependsOn abox:BeneficiaryDesignationController_EQUI_PolicyOwner,
+        abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PolicyRightsTransfer_EQUI_SimultaneousDeath,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:hasIncontestabilityPeriodDefinition "The Suicide Exclusion provision starts anew from the date of reinstatement."^^xsd:string ;
+    li:noDividendsPayableNow true ;
+    li:partyName "Insured"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Facility of Payment, Unlocated Beneficiary, Estate Disbursement"^^xsd:string,
+        "grace period, death benefit deduction, premium payment"^^xsd:string,
+        "grace period, premium payment, policy continuation"^^xsd:string,
+        "nonparticipating, no dividends, policy type"^^xsd:string,
+        "premium payments, due date, advance payment"^^xsd:string,
+        "suicide exclusion, policy reinstatement, contestation period"^^xsd:string .
+
+abox:IssuingInsurer_EQUI_Company a li:IssuingInsurer ;
+    li:dependsOn abox:BeneficiaryDesignationController_EQUI_PolicyOwner,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PolicyRightsTransfer_EQUI_SimultaneousDeath ;
+    li:insurerName "Company"^^xsd:string ;
+    li:noAutomaticRenewal true ;
+    li:noDividendsPayableNow true ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "assignment validity, company liability, policy transfer"^^xsd:string,
+        "nonparticipating policy, no surplus sharing, company earnings"^^xsd:string,
+        "nonparticipating, no surplus sharing, policy financial structure"^^xsd:string .
+
+abox:PolicyLapseCondition_EQUI_LapseForNonpayment a li:PolicyLapseCondition,
+        li:PolicyRightsTransfer ;
+    li:coverageDuration "5 years"^^xsd:string ;
+    li:deductionFromDeathBenefitDuringGracePeriod true,
+        "Any indebtedness is deducted from the death benefit."^^xsd:string ;
+    li:definesTimeLimitForLocatingBeneficiary "Evidence of insurability must be submitted and accepted to reinstate a lapsed Policy."^^xsd:string,
+        "the Policy is in force and before the Expiry Date"^^xsd:string ;
+    li:dependsOn abox:ClaimValidityAuthority_EQUI_RightToInvestigate,
+        abox:ContingentBeneficiary_EQUI_ContingentBeneficiary,
+        abox:ConversionCriteriaReferenceGuide_EQUI_CertifiedDeathCertificate,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EvidenceOfInsurability,
+        abox:DeathBenefitRecipient_EQUI_Beneficiary,
+        abox:DeathBenefit_EQUI_DeathBenefit,
+        abox:DefaultDeathBenefitDistributionMethod_EQUI_LumpSum,
+        abox:InsuranceContract_EQUI_Policy,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IncontestabilityAndSuicideExclus,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PreReinstatementFinancialObligation_EQUI_AllOverduePremiums,
+        abox:ReinstatementRequirement_EQUI_WrittenRequestForReinstatement,
+        abox:RevivalMechanism_EQUI_ReinstatementProvision,
+        abox:VerificationStepBeforeBenefitDisbursement_EQUI_ProofOfDeath ;
+    li:hasCoverageAmount "lump sum"^^xsd:string ;
+    li:labelValue "Lapse for Nonpayment"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Policy In Force, Designated Beneficiary"^^xsd:string,
+        "Death Benefit, Unpaid Premiums, Debt Reduction"^^xsd:string,
+        "Death Benefit, Unpaid Premiums, Policy Settlement"^^xsd:string,
+        "Policy reinstatement, evidence of insurability, lapsed policy recovery"^^xsd:string,
+        "death benefit proceeds, payout options, lump sum payment"^^xsd:string,
+        "policy reinstatement, lapse duration, five-year reinstatement"^^xsd:string .
+
+abox:PolicyRightsTransfer_EQUI_Premium a li:PolicyRightsTransfer,
+        li:Premium ;
+    li:coverageDuration 31 ;
+    li:dependsOn abox:AutomaticInvalidationCondition_EQUI_VoidAbInitio,
+        abox:ChangeAuthorizationRule_EQUI_Modifications,
+        abox:ConversionCriteriaReferenceGuide_EQUI_EntireContract,
+        abox:InsuredPerson_EQUI_Insured,
+        abox:InsuredPerson_EQUI_PolicyOwner,
+        abox:IssuingInsurer_EQUI_Company,
+        abox:LatePremiumPaymentExtension_EQUI_GracePeriod,
+        abox:NonParticipatingPolicy_EQUI_Nonparticipating,
+        abox:NonWarrantyFactualClaim_EQUI_Representations,
+        abox:PartialEnforceabilityClause_EQUI_Warranties,
+        abox:PolicyLapseCondition_EQUI_LapseForNonpayment,
+        abox:PolicyRestoration_EQUI_Reinstatement,
+        abox:PolicyRightsTransfer_EQUI_AmountPayableUponDeath,
+        abox:PolicyRightsTransfer_EQUI_Assignment,
+        abox:PolicyRightsTransfer_EQUI_DeathBenefit,
+        abox:PolicyRightsTransfer_EQUI_IrrevocableBeneficiary,
+        abox:PolicyRightsTransfer_EQUI_Premium,
+        abox:PolicyRightsTransfer_EQUI_Refund,
+        abox:PolicyTerminationDueToMissedPayments_EQUI_Lapse,
+        abox:ReinstatementRequirement_EQUI_MisstatementOfAgeOrSex,
+        abox:TransferOfOwnershipRights_EQUI_Assignment,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Agent,
+        abox:UnauthorizedPolicyTermModifier_EQUI_FieldRepresentative,
+        abox:UnauthorizedPolicyTermModifier_EQUI_Producer ;
+    li:hasOverduePremiumInterestTerms "without interest"^^xsd:string ;
+    li:labelValue "Premium"^^xsd:string ;
+    li:sourceContractID "EQUI"^^xsd:string ;
+    li:sourceContractSection "Grace Period, premium due date, policy in force"^^xsd:string,
+        "misstatement of age, premium overpayment, refund without interest"^^xsd:string .
+

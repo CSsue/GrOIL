@@ -1,0 +1,671 @@
+[
+  {
+    "stream": "property",
+    "owl_name": "isRenewableAnnually",
+    "domain": "LifeInsurancePolicy",
+    "range": "AnnualPaymentDiscount",
+    "confidence": "low",
+    "reasoning": "The property indicates annual renewability of a policy. The domain is the policy, and the range is a class representing the renewal condition.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: AMOUNT (6 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: AMOUNT (6 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "annual renewable",
+      "is stabilized annually",
+      "is renewable annually"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "isPotentiallyAffectedByHigherCoverage",
+    "domain": "Policyholder",
+    "range": "Coverage",
+    "confidence": "low",
+    "reasoning": "The property describes a policy's potential to benefit from higher coverage due to extra payments. The domain is a policyholder or policy, and the range must be a class representing a benefit or coverage state. 'Policy' is the most appropriate domain, and 'Coverage' is the correct range.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: PERSON (11 edges)",
+          "Most frequent target type: AGE (815 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: PERSON (11 edges)",
+          "Most frequent object type: AGE (815 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "premiums\u4e0d\u53d7\u5065\u5eb7\u53d8\u5316\u5f71\u54cd",
+      "is potentially\u53d7\u76ca from higher coverage due to extra payments"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "declinesTo",
+    "domain": "Policyholder",
+    "range": "Benefit",
+    "confidence": "low",
+    "reasoning": "The property denotes a refusal to accept a benefit or coverage under certain conditions. The domain is Policyholder, as it is the party making the decision. The range is Benefit, which represents the coverage or benefit being declined.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (172 edges)",
+          "Most frequent target type: DATE (15150 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (172 edges)",
+          "Most frequent object type: DATE (15150 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "declines to",
+      "declines due to",
+      "can be declined via written opt out",
+      "can be declined",
+      "mandates decline procedure"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "claimType",
+    "domain": "Claim",
+    "range": "Claim",
+    "confidence": "low",
+    "reasoning": "The property identifies the type of claim associated with an incident. The domain should be a claim-related entity, and 'Claim' is the most specific and appropriate class for the target of this property.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (6 edges)",
+          "Most frequent target type: CLAIM (70 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (6 edges)",
+          "Most frequent object type: CLAIM (70 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "claim type",
+      "claim type subject to adjustment",
+      "claim type subject to timeline",
+      "incident type covered"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasAccumulationEfficiency",
+    "domain": "OptionAfterThreeFullPolicyYears",
+    "range": "AccumulationEffectiveDaffEquity",
+    "confidence": "low",
+    "reasoning": "The property links a contract or feature to accumulation efficiency, which affects cash value growth. The domain is a policy feature or option, so 'Option' is appropriate. The range is the efficiency metric, and 'AccumulationEfficiency' is a valid class in the vocabulary.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (240 edges)",
+          "Most frequent target type: OPTION (1324 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (240 edges)",
+          "Most frequent object type: OPTION (1324 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "Option 2 combined with minimum face provides a key accumulation efficiency advantage."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "Option 2 (1)",
+          "Net Amount at Risk (1)",
+          "Account Value Growth (1)",
+          "Death Benefit Structure (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "related to accumulation efficiency",
+      "has accumulation efficiency advantage when combined with minimum face",
+      "influences accumulation efficiency in option 2",
+      "impacts accumulation efficiency",
+      "Accumulation Efficiency Advantage"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "enhancesSustainability",
+    "domain": "LifeInsuranceContract",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "The property indicates a positive contribution to sustainability, but the graph signals show a mismatch between the subject (CONCEPT) and target (LOCATION), which is semantically inconsistent. Given the lack of relevant textual evidence and the mismatched entity types, the range must be broadened to owl:Thing.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (476 edges)",
+          "Most frequent target type: LOCATION (2935 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (476 edges)",
+          "Most frequent object type: LOCATION (2935 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "enhances sustainability",
+      "enables sustainability",
+      "ensures sustainability",
+      "influences sustainability",
+      "impacts sustainability"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "convergesTo",
+    "domain": "ContractualProvideifaMembership",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "The property indicates a legal or financial convergence between clauses. The graph signals show only one edge from EXCLUSION, which is insufficient for confident assignment. Given the lack of clear semantic alignment and absence of supporting text, the range is set to owl:Thing.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: EXCLUSION (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: EXCLUSION (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "converges to",
+      "converges in consequence"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "automaticallyAdjustsFundingLevels",
+    "domain": "Process",
+    "range": "Funding",
+    "confidence": "low",
+    "reasoning": "The property describes a process that adjusts funding levels within boundaries. The domain is a process, and the range is a funding level, consistent with automated financial processes in insurance contracts.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: PROCESS (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: PROCESS (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "automatically adjusts funding levels within defined boundaries"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasNonCommercialInsuranceStatus",
+    "domain": "InsurancePolicyReview",
+    "range": "NonCompoundedGain",
+    "confidence": "low",
+    "reasoning": "The property indicates non-commercial use of insurance, with signals pointing to CONCEPT linked to STATUS. The domain is an insurance entity, and the range is a status indicating non-commercial use. Thus, domain is 'InsurancePolicy' and range is 'NonCommercialStatus'.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (3 edges)",
+          "Most frequent target type: STATUS (135 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (3 edges)",
+          "Most frequent object type: STATUS (135 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "This Benefit Certificate is not a standard commercial life insurance policy."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "fraternal benefit society (1)",
+          "non-commercial policy (1)",
+          "governance by order laws (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "Non-Commercial Insurance Status"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasMedicationAdherenceVerification",
+    "domain": "LifeInsurancePolicy",
+    "range": "MedicalHistory",
+    "confidence": "low",
+    "reasoning": "This property relates to medical verification of medication adherence, which is a medical condition. The domain is LifeInsurancePolicy as it is the policy requiring verification, and the range is MedicalCondition as it represents the health state being verified.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: ORGANIZATION (167 edges)",
+          "Most frequent target type: CONDITION (1712 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: ORGANIZATION (167 edges)",
+          "Most frequent object type: CONDITION (1712 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "encompasses condition of medication noncompliance",
+      "provides medical verification of medication adherence"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasUpdatedRiskClassAfter",
+    "domain": "LifeInsurancePolicy",
+    "range": "DateWindow",
+    "confidence": "low",
+    "reasoning": "The property links a policy to an updated risk class after a specific event. The domain is LifeInsurancePolicy as it is the entity undergoing risk reclassification, and the range is Date as it represents the time point of change.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (7 edges)",
+          "Most frequent target type: DATE (15150 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (7 edges)",
+          "Most frequent object type: DATE (15150 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "has updated risk class after"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "handleRequest",
+    "domain": "PersonalInformation",
+    "range": "PersonalInformation",
+    "confidence": "low",
+    "reasoning": "The property identifies the entity responsible for handling a request in an insurance contract. The target 'Person' is a valid class in the range vocabulary, and the source 'Concept' is a general domain that can represent request handlers.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Insufficient labeled edges (found 1, need 3)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: PERSON (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "request handler"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "canWithdrawDividendsFromOption4",
+    "domain": "Policyholder",
+    "range": "Benefit",
+    "confidence": "low",
+    "reasoning": "The property indicates a right to withdraw dividends from a specific option, which is a benefit entitlement tied to policyholder rights. The target is a benefit, fitting the allowed range vocabulary.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: AMOUNT (1 edges)",
+          "Most frequent target type: OPTION (1324 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: AMOUNT (1 edges)",
+          "Most frequent object type: OPTION (1324 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "can withdraw dividends from option 4"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasAuthorshipRelation",
+    "domain": "Document",
+    "range": "Authorship",
+    "confidence": "low",
+    "reasoning": "The property links a concept to an author, but the graph signals are sparse. Given the definition, the relationship is between a document and its creator. The most appropriate range is a document or policy, so the range is set to a document-related class.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (2 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (2 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "authorship relation"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasComparativeAdvantage",
+    "domain": "ConsequenceOfFailureToNotify",
+    "range": "Rate",
+    "confidence": "low",
+    "reasoning": "The property links a concept (e.g., market position) to its competitive advantage. Based on insurance semantics, 'market position' is a strategic attribute of a policy or product, and the comparative advantage is a feature of that position. The most frequent target type in graph signals is 'RATE', but this is misleading. The correct range is 'CONCEPT' as it represents the strategic positioning entity. The domain is 'CONCEPT' as it describes the entity with the advantage.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (291 edges)",
+          "Most frequent target type: RATE (2610 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (291 edges)",
+          "Most frequent object type: RATE (2610 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "The market position of the policy is child/juvenile coverage with education and wealth transfer focus.",
+          "The market position of the policy is charitable / philanthropic life insurance.",
+          "Market Position: Foreign National / Non-US Resident Life Insurance."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "Juvenile Coverage (1)",
+          "Education Funding (1)",
+          "Wealth Transfer (1)",
+          "charitable life insurance (1)",
+          "philanthropic policy (1)",
+          "nonprofit-owned life insurance (1)",
+          "Foreign National (1)",
+          "Non-US Resident (1)",
+          "International Insurance (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "comparative advantage",
+      "has market position",
+      "market position",
+      "is the market position due to",
+      "proprietary strategy"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "determinesOrderOfWithdrawalReturns",
+    "domain": "ConsequenceOfFailureToNotify",
+    "range": "Withdrawal",
+    "confidence": "low",
+    "reasoning": "The property specifies the entity or rule that determines the sequence of withdrawal returns. In insurance contracts, withdrawal processes are governed by rules or mechanisms. The graph signals show the target as 'WITHDRAWAL', but this is incorrect. The correct range is 'CONCEPT' as it represents the rule or mechanism determining order. The domain is 'CONCEPT' as it describes the governing entity.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (81 edges)",
+          "Most frequent target type: WITHDRAWAL (328 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (81 edges)",
+          "Most frequent object type: WITHDRAWAL (328 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "determines order of withdrawal returns"
+    ]
+  }
+]

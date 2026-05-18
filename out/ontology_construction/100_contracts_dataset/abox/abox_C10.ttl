@@ -1,0 +1,906 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:ActualAnnualCreditRate_C10_PreferredLoanRate a li:ActualAnnualCreditRate,
+        li:FixedLowerRateOption ;
+    li:labelValue "Preferred Loan Rate"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:ActualAnnualCreditRate_C10_StandardLoanRate a li:ActualAnnualCreditRate,
+        li:LoanInterestRate ;
+    li:labelValue "Standard Loan Rate"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AllocationAccount_C10_FixedAccount a li:AllocationAccount,
+        li:InvestmentComponentAffectedByWithdrawals ;
+    li:allocationChangeFrequency "20%"^^xsd:decimal ;
+    li:annualInterestRateAppliedToGptPolicy "2.50%"^^xsd:decimal ;
+    li:labelValue "Fixed Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Fixed Account, Current Allocation, Investment Distribution"^^xsd:string,
+        "Fixed Account, Guaranteed Minimum, Crediting Rate"^^xsd:string .
+
+abox:AllocationAccount_C10_SP500AnnualCapAccount a li:AllocationAccount,
+        li:InvestmentComponentAffectedByWithdrawals ;
+    li:absorbsFirstTenPercentOfAnnualLosses 8.0 ;
+    li:allocationChangeFrequency "30%"^^xsd:decimal ;
+    li:appliesCappedAnnualGainsBeforeSumming true ;
+    li:labelValue "S&P 500 Annual Cap Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Account E, buffer account, downside protection"^^xsd:string,
+        "Buffer Account, Index Performance, Credit Calculation"^^xsd:string,
+        "S&P 500 Annual Cap Account, Current Allocation, Investment Distribution"^^xsd:string .
+
+abox:AllocationAccount_C10_SP500SpreadAccount a li:AllocationAccount,
+        li:InvestmentComponentAffectedByWithdrawals ;
+    li:allocationChangeFrequency "25%"^^xsd:decimal ;
+    li:annualInterestRateAppliedToGptPolicy 6.00 ;
+    li:appliesPenaltyRateOrReductionFactor "5%"^^xsd:string ;
+    li:calculatesAdjustedCredit "MAX(0%, Index% - Spread)"^^xsd:string ;
+    li:labelValue "S&P 500 Spread Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Spread Account, Current Allocation, Investment Distribution"^^xsd:string,
+        "Spread Account, Cap Rate, Guaranteed Minimums"^^xsd:string,
+        "Spread Account, Credit Calculation, Index Performance Deduction"^^xsd:string,
+        "buffer account, S&P 500 decline, segment value reduction"^^xsd:string .
+
+abox:AllocationAccount_C10_SP500TwoYearAccount a li:AllocationAccount,
+        li:InvestmentComponentAffectedByWithdrawals ;
+    li:accountValueOrTaxableBasis "25%"^^xsd:string ;
+    li:allocationChangeFrequency "Two-Year"^^xsd:string ;
+    li:annualInterestRateAppliedToGptPolicy "+12%"^^xsd:string ;
+    li:annualizedReturnDifferenceFavoringMonthlyAverage "+8%"^^xsd:string ;
+    li:labelValue "S&P 500 Two-Year Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Two-Year Account, asset allocation, investment segmentation"^^xsd:string,
+        "Two-Year Segment, Cumulative Crediting, Index Return Calculation"^^xsd:string,
+        "two-year segment, no crediting in year one, index return deferral"^^xsd:string .
+
+abox:AllocationRatio_C10_25 a li:AllocationRatio,
+        li:SAndP500AllocationShare ;
+    li:labelValue "25%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AllocationRatio_C10_30 a li:AllocationRatio,
+        li:SAndP500AllocationShare ;
+    li:labelValue "30%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AnnualCapFloor_C10_4 a li:AnnualCapFloor,
+        li:MinimumBufferLevel ;
+    li:labelValue "4%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AnnualCapFloor_C10_7 a li:AnnualCapFloor,
+        li:MinimumBufferLevel ;
+    li:labelValue "7%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AnnualCreditingFormula_C10_CreditMaxFloorMinCapIndexPartici a li:AnnualCreditingFormula,
+        li:MonthlyCOICalculationMethod ;
+    li:labelValue "Credit = MAX(Floor, MIN(Cap, Index% × Participation Rate))"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AnnualPremiumAmount_C10_180000 a li:AnnualPremiumAmount,
+        li:StandardBaseRate ;
+    li:labelValue "$180,000"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AnnualPremiumAmount_C10_85000 a li:AnnualPremiumAmount,
+        li:StandardBaseRate ;
+    li:annualInterestRateAppliedToGptPolicy 20.0 ;
+    li:labelValue "$85,000"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "credited rate, cumulative gain cap, two-year segment"^^xsd:string .
+
+abox:ApplicationSubmissionDate_C10_EndOfYear2 a li:ApplicationSubmissionDate,
+        li:AutomaticTransferTriggerDate ;
+    li:dateValue "end of year 2"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AuthenticationSymbol_C10_CorporateSeal a li:AuthenticationSymbol,
+        li:TransferableInsuranceOption ;
+    li:labelValue "[CORPORATE SEAL]"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AutomaticTransferTriggerDate_C10_5BusinessDays a li:AutomaticTransferTriggerDate,
+        li:CorridorCalculationResponseTimeframe ;
+    li:dateValue "5 business days"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:AutomaticTransferTriggerDate_C10_March a li:AutomaticTransferTriggerDate,
+        li:PolicyIssueDate ;
+    li:dateValue "March"^^xsd:string ;
+    li:policyIssuanceDate "March"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "policy issuance, issue date, March"^^xsd:string .
+
+abox:AutomaticTransferTriggerDate_C10_March152024 a li:AutomaticTransferTriggerDate,
+        li:CertificateIssueDate ;
+    li:dateValue "March 15, 2024"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:BaselineParticipation_C10_StatedCapRate a li:BaselineParticipation,
+        li:MaximumUpsideGainLimit ;
+    li:labelValue "stated cap rate"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:BufferedIndexAccount_C10_Russell2000AnnualPointToPoint a li:BufferedIndexAccount,
+        li:IndexAccountTrackingRussell2000Performance ;
+    li:annualInterestRateAppliedToGptPolicy 9.5 ;
+    li:baselineAnnualPointToPointReturn "0%"^^xsd:string ;
+    li:bloombergIndexParticipationRate "100%"^^xsd:string ;
+    li:labelValue "Russell 2000 Annual Point-to-Point"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Russell 2000, Index Account Floor, Crediting Period"^^xsd:string,
+        "Russell 2000, Index Account, Cap Rate"^^xsd:string,
+        "Russell 2000, Participation Rate, Index Account"^^xsd:string .
+
+abox:BufferedIndexAccount_C10_SP500AnnualPointToPointWithCap a li:BufferedIndexAccount,
+        li:CreditingPeriod,
+        li:IndexedAccount ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:accountValueOrTaxableBasis "15.0%"^^xsd:decimal,
+        "0%"^^xsd:string ;
+    li:adjustsOnBirthdayFollowingMonth "1 year"^^xsd:string ;
+    li:allocationChangeFrequency "30%"^^xsd:decimal ;
+    li:annualIncreaseUntilTenThousandDollarCap 11.0 ;
+    li:bloombergIndexParticipationRate "100%"^^xsd:string ;
+    li:labelValue "S&P 500 Annual Point-to-Point with Cap"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Annual Cap Account, Investment Allocation, Index Account Distribution"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Cap, Index Account Floor, Crediting Period"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Cap, Index Capping Mechanism, Crediting Period: 1 Year"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Cap, Participation Rate, Index Account Features"^^xsd:string,
+        "S&P 500 Buffer Account, Crediting Period, Index Account Features"^^xsd:string,
+        "S&P 500 Buffer Account, Index Crediting Cap, Risk Mitigation Feature"^^xsd:string,
+        "S&P 500 Buffer Account, Index Loss Beyond Buffer, Policyholder Risk Exposure"^^xsd:string,
+        "S&P 500 Buffer Account, Loss protection, Company absorbs first 10%"^^xsd:string,
+        "S&P 500 Buffer Account, Participation Rate, Indexing Options"^^xsd:string .
+
+abox:BufferedIndexAccount_C10_SP500AnnualPointToPointWithSprea a li:BufferedIndexAccount,
+        li:IndexAccountWithSpreadDeduction ;
+    li:accountValueOrTaxableBasis "0%"^^xsd:string ;
+    li:annualCreditEarningPotentialUnderPreservedGrowth "3.50%"^^xsd:decimal ;
+    li:appliesCappedAnnualGainsBeforeSumming false ;
+    li:bloombergIndexParticipationRate "100%"^^xsd:string ;
+    li:labelValue "S&P 500 Annual Point-to-Point with Spread (No Cap)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Annual Point-to-Point with Spread, Index Gain Calculation, 3.50% Spread"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Spread, No Cap Feature, Index Account Terms"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Spread, Participation Rate, Index Account Features"^^xsd:string,
+        "S&P 500 Annual Point-to-Point with Spread, floor, index account"^^xsd:string .
+
+abox:BufferedIndexAccount_C10_SP500BufferAccount10Buffer a li:BufferedIndexAccount ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:annualWithdrawalLimitOrReductionRate 10.0 ;
+    li:labelValue "S&P 500 Buffer Account (10% Buffer)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Buffer Account, 10% Buffer, Index Loss Protection"^^xsd:string .
+
+abox:BufferedIndexAccount_C10_SP500TwoYearPointToPointWithCap a li:BufferedIndexAccount,
+        li:CreditingPeriod ;
+    li:accountValueOrTaxableBasis "2 years"^^xsd:string,
+        "Two-Year Crediting Delay"^^xsd:string ;
+    li:allocationChangeFrequency "25%"^^xsd:decimal ;
+    li:annualInterestRateAppliedToGptPolicy 20.0 ;
+    li:bloombergIndexParticipationRate "100%"^^xsd:string ;
+    li:labelValue "S&P 500 Two-Year Point-to-Point with Cap"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "S&P 500 Two-Year Account, Allocation Percentage, Indexing Options"^^xsd:string,
+        "S&P 500 Two-Year Point-to-Point, Crediting Period, Index Account"^^xsd:string,
+        "S&P 500 Two-Year Point-to-Point, Crediting Period, Index Account Features"^^xsd:string,
+        "S&P 500 Two-Year Point-to-Point, Index Cap, Crediting Period"^^xsd:string,
+        "S&P 500 Two-Year Point-to-Point, Participation Rate, Index Account"^^xsd:string .
+
+abox:COIBasis_C10_NetAmountAtRiskNar a li:COIBasis,
+        li:TransferableInsuranceOption ;
+    li:annualCoIRate "Table D rates"^^xsd:string ;
+    li:labelValue "net amount at risk (NAR)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Cost of Insurance, Table D Rates, Premium Guarantees"^^xsd:string .
+
+abox:CeilingRateForCoIguarantees_C10_TableD a li:CeilingRateForCoIguarantees ;
+    li:labelValue "Table D"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:ContactEmail_C10_CorporatebenefitsApexcbiCom a li:ContactEmail,
+        li:CustomerServiceHotline ;
+    li:labelValue "corporatebenefits@apexcbi.com"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:ContactEmail_C10_WwwApexcorporatebenefitsCom a li:ContactEmail,
+        li:CustomerServiceHotline ;
+    li:absorbsFirstTenPercentOfAnnualLosses false ;
+    li:annualPremiumAmount 500000 ;
+    li:labelValue "www.apexcorporatebenefits.com"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "CORPORATE OWNED LIFE INSURANCE, IRC §6039I, Face Amount Threshold"^^xsd:string,
+        "securities product, insurance classification, financial disclosure"^^xsd:string .
+
+abox:ContestationRight_C10_Contestability a li:ContestationRight ;
+    li:ageAtEarlyPolicySurrender 2 ;
+    li:ageThresholdForInitialIncrease 2 ;
+    li:labelValue "CONTESTABILITY"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "contestation, material misrepresentation, policy validity"^^xsd:string,
+        "incontestability, policy contestability, two-year period"^^xsd:string .
+
+abox:CorridorCalculationProvider_C10_Apex a li:CorridorCalculationProvider,
+        li:LegalAdvisor ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:accountValueOrTaxableBasis "Account Value"^^xsd:string,
+        "account value growth"^^xsd:string,
+        "fixed account"^^xsd:string ;
+    li:annualCoIRate "per $1,000 of net amount at risk (NAR)"^^xsd:string ;
+    li:annualPremiumAmount 5.00,
+        20.0,
+        "full planned premium"^^xsd:string ;
+    li:appliesAsInterestRateOrCostFactorWhenUsingSemiAnnualOption "separately"^^xsd:string ;
+    li:baseFaceAmountForDeathBenefit "Death Benefit"^^xsd:string ;
+    li:insurerName "Apex"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Cost of Insurance, Net Amount at Risk, Monthly Charges"^^xsd:string,
+        "Endorsement SD-01, Split-dollar premium sharing, Employer responsibility"^^xsd:string,
+        "Net Amount at Risk, Death Benefit, Account Value"^^xsd:string,
+        "Option 2, Net Amount at Risk, Death Benefit Growth"^^xsd:string,
+        "Option 2, account value growth, death benefit increase"^^xsd:string,
+        "Policy Fee, Monthly Charge, Guaranteed Cost"^^xsd:string,
+        "Rider Charges, Fee Structure, Policy Administration"^^xsd:string,
+        "Segment Administrative Fee, Fixed Account Charge, Monthly Policy Charges"^^xsd:string,
+        "Segment Administrative Fee, Monthly Charge, Fixed Account"^^xsd:string .
+
+abox:CoverageInitiationPeriod_C10_TwoYearSegmentLockIn a li:CoverageInitiationPeriod,
+        li:TransferableInsuranceOption ;
+    li:ageAtEarlyPolicySurrender 2 ;
+    li:labelValue "Two-Year Segment Lock-In"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "two-year segment, withdrawal limits, maturity requirement"^^xsd:string .
+
+abox:CreditComputationMethod_C10_CreditMax0IndexSpread a li:CreditComputationMethod,
+        li:MonthlyCOICalculationMethod ;
+    li:labelValue "Credit = MAX(0%, Index% - Spread)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:CustomerServiceHotline_C10_1800ApexCorp a li:CustomerServiceHotline ;
+    li:labelValue "1-800-APEX-CORP"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:DeathProceedsDistributionRule_C10_EndorsementSd01 a li:DeathProceedsDistributionRule,
+        li:PremiumOffsetMechanism ;
+    li:labelValue "Endorsement SD-01"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:DeathProceedsDistributionRule_C10_SplitDollarDeathBenefitAllocatio a li:DeathProceedsDistributionRule ;
+    li:allocationChangeFrequency "per Endorsement SD-01"^^xsd:string ;
+    li:annualInterestRateAppliedToGptPolicy "Prime + 1.0%"^^xsd:string ;
+    li:beneficiaryShare "remaining proceeds, if any"^^xsd:string ;
+    li:labelValue "Split-Dollar Death Benefit Allocation"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Loan Interest Rate, Variable Rate, Annual Reset"^^xsd:string,
+        "split-dollar allocation, beneficiary proceeds, Endorsement SD-01"^^xsd:string,
+        "split-dollar death benefit, employer payout, Endorsement SD-01"^^xsd:string .
+
+abox:DecliningPenaltyRate_C10_Year110Year66Year112 a li:DecliningPenaltyRate ;
+    li:appliesPenaltyRateOrReductionFactor "2.5%"^^xsd:decimal,
+        "2%"^^xsd:string,
+        "9%"^^xsd:string ;
+    li:labelValue "Year 1: 10% Year 6: 6% Year 11: 2%"^^xsd:string ;
+    li:premiumAmount 85000.0 ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "surrender charge schedule, year 11, policy surrender fees"^^xsd:string,
+        "surrender charge, policy year, charge schedule"^^xsd:string,
+        "surrender charge, year 10, premium penalty"^^xsd:string .
+
+abox:DefaultHoldingForOutOfWindowPremiums_C10_FixedAccountRate a li:DefaultHoldingForOutOfWindowPremiums,
+        li:InterestCreditingBasisForLoanedAmounts ;
+    li:labelValue "Fixed Account Rate"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:DemographicDataAdjustmentRule_C10_FreeWithdrawalProvision a li:DemographicDataAdjustmentRule,
+        li:PenaltyFreeWithdrawalCondition ;
+    li:labelValue "FREE WITHDRAWAL PROVISION"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:DistributionRule_C10_PremiumLoads a li:DistributionRule,
+        li:FundsStateTaxes,
+        li:TransferableInsuranceOption ;
+    li:adjustmentRate "1.5%"^^xsd:decimal ;
+    li:annualPremiumAmount 180000.0 ;
+    li:labelValue "Premium Loads"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "premium flexibility, annual premium limit, CVAT corridor"^^xsd:string,
+        "premium load, policy years 11+, fee structure"^^xsd:string .
+
+abox:EligibilityWindowForWithdrawals_C10_AvailableAnyTimeAfterYear1 a li:EligibilityWindowForWithdrawals ;
+    li:allowsTemporaryExtensionBeforePenalty true ;
+    li:appliesPenaltyRateOrReductionFactor "0.5%"^^xsd:decimal,
+        "3%"^^xsd:decimal,
+        "4%"^^xsd:decimal,
+        "5%"^^xsd:decimal,
+        "10%"^^xsd:string,
+        "6%"^^xsd:string,
+        "8%"^^xsd:string ;
+    li:labelValue "Available any time after year 1"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, withdrawal timing, year 1 restriction"^^xsd:string,
+        "surrender charge schedule, policy year 7, premium reduction fee"^^xsd:string,
+        "surrender charge schedule, year 2 penalty, policy termination fees"^^xsd:string,
+        "surrender charge schedule, year 6, policy duration"^^xsd:string,
+        "surrender charge schedule, year 8, policy duration fees"^^xsd:string,
+        "surrender charge, year 9, policy fees"^^xsd:string,
+        "surrender charges, policy year 13, charge schedule"^^xsd:string,
+        "surrender charges, policy year 4, charge schedule"^^xsd:string .
+
+abox:ExecutiveLeadershipPosition_C10_PresidentChiefUnderwritingOffice a li:ExecutiveLeadershipPosition,
+        li:SpousalPrimaryBeneficiaryAfterDebtSettlement ;
+    li:beneficiaryShare "President & Chief Underwriting Officer"^^xsd:string ;
+    li:partyName "President & Chief Underwriting Officer"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Corporate Documentation, Official Headings, Document Layout"^^xsd:string .
+
+abox:FaceAmountLimit_C10_004Per1000OfFaceAmountPerMonth a li:FaceAmountLimit,
+        li:SupplementalLifeElectionAmount ;
+    li:labelValue "$0.04 per $1,000 of face amount per month"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:FlightActivityExclusion_C10_AviationExclusion a li:FlightActivityExclusion,
+        li:TransferableInsuranceOption ;
+    li:absorbsFirstTenPercentOfAnnualLosses false ;
+    li:labelValue "Aviation Exclusion"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "aviation exclusion, death benefit coverage, policy exclusions"^^xsd:string .
+
+abox:GuaranteedInterestCreditRate_C10_325 a li:GuaranteedInterestCreditRate,
+        li:MinimumBufferLevel ;
+    li:annualCreditEarningPotentialUnderPreservedGrowth "MAX(Floor, MIN(Cap, Index% × Participation Rate))"^^xsd:string ;
+    li:annualIncreaseUntilTenThousandDollarCap "the stated cap rate"^^xsd:string ;
+    li:labelValue "3.25%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Annual Crediting Formula, Cap Floor Mechanics, Participation Rate Application"^^xsd:string,
+        "buffer account, cap rate, upside earnings"^^xsd:string .
+
+abox:GuaranteedMinimumInterestRate_C10_250 a li:GuaranteedMinimumInterestRate,
+        li:MinimumBufferLevel ;
+    li:labelValue "2.50%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:GuaranteedPolicyFeeAmount_C10_20PerMonth a li:GuaranteedPolicyFeeAmount,
+        li:SupplementalLifeElectionAmount ;
+    li:labelValue "$20 per month"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:ImputedIncomeReportingRequirement_C10_IrcRevRul2003105 a li:ImputedIncomeReportingRequirement,
+        li:MedicalCertificationOfDisability ;
+    li:absorbsFirstTenPercentOfAnnualLosses "IRC Rev. Rul. 2003-105"^^xsd:string ;
+    li:appliesAsAssetBasedChargeRate 0.04 ;
+    li:labelValue "IRC Rev. Rul. 2003-105"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Face Amount Charge, Monthly Policy Charges, Years 1–10"^^xsd:string,
+        "IRC Rev. Rul. 2003-105, loan regime, split-dollar sharing"^^xsd:string .
+
+abox:IndexAccountAllocationUnit_C10_Segment a li:IndexAccountAllocationUnit,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Segment"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:IndexCalculationExcludesDividendIncome_C10_DividendExclusion a li:IndexCalculationExcludesDividendIncome,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Dividend Exclusion"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:IndexCreditCalculationMethod_C10_HighWaterMark a li:IndexCreditCalculationMethod,
+        li:TransferableInsuranceOption ;
+    li:labelValue "High-Water Mark"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:InterestApplicationPeriod_C10_WithdrawalsFromIndexedSegmentsAr a li:InterestApplicationPeriod ;
+    li:appliesPenaltyRateOrReductionFactor "0%"^^xsd:string ;
+    li:labelValue "Withdrawals from indexed segments are credited at 0%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "indexed segments, partial crediting period, withdrawal crediting rate"^^xsd:string .
+
+abox:InvestmentComponentAffectedByWithdrawals_C10_BufferAccount a li:InvestmentComponentAffectedByWithdrawals,
+        li:RiskMitigationLayer ;
+    li:absorbsFirstTenPercentOfAnnualLosses "5%"^^xsd:decimal ;
+    li:adjustsOnBirthdayFollowingMonth "-Buffer"^^xsd:decimal,
+        "0%"^^xsd:decimal ;
+    li:labelValue "Buffer Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Buffer Account, Guaranteed Minimum, Market Loss Protection"^^xsd:string,
+        "Buffer Account, Index Performance Threshold, Credit Calculation Rule"^^xsd:string .
+
+abox:InvestmentComponentAffectedByWithdrawals_C10_FixedAccount a li:GuaranteedInterestAccount,
+        li:InvestmentComponentAffectedByWithdrawals,
+        li:SegmentAdministrativeFeeRecipient ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:annualInterestRateAppliedToGptPolicy 3.25 ;
+    li:labelValue "Fixed Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Face Amount Charge, Year 10 waiver, Policy Duration"^^xsd:string,
+        "Fixed Account, Guaranteed Rate, Annual Interest"^^xsd:string .
+
+abox:IssuingInsurer_C10_ApexCorporateBenefitsInsuranceCo a li:IssuingInsurer,
+        li:LegalAdvisor ;
+    li:absorbsFirstTenPercentOfAnnualLosses true,
+        "worldwide"^^xsd:string,
+        "www.apexcorporatebenefits.com"^^xsd:string ;
+    li:insurerName "Apex Corporate Benefits Insurance Company"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Corporate-owned policy, tax implications, ownership structure"^^xsd:string,
+        "official website, company contact info, web address"^^xsd:string,
+        "worldwide coverage, war exclusion, global benefits"^^xsd:string .
+
+abox:LapsePreventionFeature_C10_OverloanProtectionRider a li:LapsePreventionFeature,
+        li:PremiumWaiverTermsReference ;
+    li:labelValue "Overloan Protection Rider"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:LapsePreventionFeature_C10_OverloanProtectionRiderOlp03 a li:LapsePreventionFeature,
+        li:PremiumWaiverTermsReference ;
+    li:annualWithdrawalLimitOrReductionRate 3 ;
+    li:appliesButReducedPaidUpOptionUnavailable true ;
+    li:labelValue "OVERLOAN PROTECTION RIDER (OLP-03)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Key Person Disability Waiver Rider, Premium Waiver Duration, Disability Event Limit"^^xsd:string,
+        "Overloan Protection Rider, no additional charge, policy riders"^^xsd:string .
+
+abox:LapseProtection_C10_ProtectionRiderIncluded a li:LapseProtection ;
+    li:accountValueOrTaxableBasis "95%"^^xsd:decimal ;
+    li:annualWithdrawalLimitOrReductionRate "15%"^^xsd:string ;
+    li:appliesPenaltyRateOrReductionFactor "10%"^^xsd:decimal,
+        "0%"^^xsd:string ;
+    li:labelValue "PROTECTION RIDER (Included)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Protection Rider, Loan-to-Value Ratio, Policy Lapse Avoidance"^^xsd:string,
+        "free withdrawal provision, surrender charge exemption, account value withdrawal"^^xsd:string,
+        "loan-to-value threshold, policy lapse prevention, Protection Rider"^^xsd:string,
+        "surrender charge, year 1, premium schedule"^^xsd:string,
+        "surrender charges, policy duration, Year 14+"^^xsd:string .
+
+abox:LegalAdvisor_C10_ApexCorporateBenefits a li:LegalAdvisor,
+        li:PolicySupportProvider ;
+    li:accountValueOrTaxableBasis "corporatebenefits@apexcbi.com"^^xsd:string,
+        "www.apexcorporatebenefits.com"^^xsd:string ;
+    li:alertsUsersToPotentialLossOfTaxAdvantagesBeyondBasis true ;
+    li:annualCoIRate "annual"^^xsd:string ;
+    li:annualPremiumAmount "1-800-APEX-CORP"^^xsd:string ;
+    li:appliesPenaltyRateOrReductionFactor "IRC §264"^^xsd:string ;
+    li:insurerName "Apex Corporate Benefits"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Corporate-Owned Policy, Tax Compliance, IRC Section 264"^^xsd:string,
+        "IRC §264, Corporate-Owned Policy, Interest Deduction Limitations"^^xsd:string,
+        "contact information, email address, Apex Corporate Benefits"^^xsd:string,
+        "contact information, phone number, Apex Corporate Benefits"^^xsd:string,
+        "contact information, website, Apex Corporate Benefits"^^xsd:string,
+        "tax-deductibility, corporate-owned policy, IRC §264"^^xsd:string .
+
+abox:LegalAdvisor_C10_FirstMidwestCommercialBankNA a li:LegalAdvisor,
+        li:SplitDollarAgreementParty ;
+    li:insurerName "First Midwest Commercial Bank, N.A."^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:LegalAdvisor_C10_RenfieldManufacturingGroupLlc a li:Beneficiary,
+        li:LegalAdvisor ;
+    li:beneficiaryShare "100%"^^xsd:string,
+        "Renfield Manufacturing Group, LLC"^^xsd:string ;
+    li:insurerName "Renfield Manufacturing Group, LLC"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Primary Beneficiary, Beneficiary Designation, Split-Dollar Arrangement"^^xsd:string,
+        "Primary Beneficiary, Renfield Manufacturing Group, LLC, Split-Dollar Endorsement"^^xsd:string .
+
+abox:LoanCap_C10_MaximumPolicyLoan a li:LoanCap,
+        li:LumpSumPayoutMechanism ;
+    li:amountWithheld "95%"^^xsd:decimal ;
+    li:labelValue "Maximum Policy Loan"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Policy Loans, Cash Surrender Value, Loan Limits"^^xsd:string .
+
+abox:LossAbsorptionMechanism_C10_Buffer a li:LossAbsorptionMechanism,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Buffer"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:LumpSumPayoutLimit_C10_Cvat a li:LongTermInvestmentVehicle,
+        li:LumpSumPayoutLimit ;
+    li:accelerationRequestResponseTime 5 ;
+    li:annualWithdrawalLimitOrReductionRate "the CVAT maximum"^^xsd:string ;
+    li:labelValue "CVAT"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "CVAT corridor calculations, written request response time, policy administration"^^xsd:string,
+        "CVAT maximum, lump-sum deposit, policy year funding"^^xsd:string .
+
+abox:MandatoryIrsReportingRequirement_C10_ColiAnnualReporting a li:MandatoryIrsReportingRequirement,
+        li:TransferableInsuranceOption ;
+    li:labelValue "COLI Annual Reporting"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MaximumCreditedInterestRate_C10_200 a li:MaximumCreditedInterestRate,
+        li:StandardBaseRate ;
+    li:labelValue "20.0%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MaximumPolicyLoss_C10_5 a li:MaximumPolicyLoss,
+        li:MinimumBufferLevel ;
+    li:labelValue "5%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MaximumSpreadAllowed_C10_600 a li:MaximumSpreadAllowed,
+        li:MinimumBufferLevel ;
+    li:labelValue "6.00%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MedicalCertificationOfDisability_C10_EndorsementSd01 a li:MedicalCertificationOfDisability,
+        li:SplitDollarBenefitAllocationInstrument ;
+    li:absorbsFirstTenPercentOfAnnualLosses 10 ;
+    li:adjustsOnBirthdayFollowingMonth true ;
+    li:allocationChangeFrequency "Endorsement SD-01"^^xsd:string,
+        "See Endorsement SD-01 for detailed provisions regarding split-dollar benefit allocation."^^xsd:string ;
+    li:appliesCappedAnnualGainsBeforeSumming true ;
+    li:labelValue "Endorsement SD-01"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Buffer Accounts, index loss absorption, risk mitigation"^^xsd:string,
+        "Segment, End Date, Crediting Period"^^xsd:string,
+        "Spread, index gains, crediting mechanism"^^xsd:string,
+        "split-dollar arrangement, Endorsement SD-01, beneficiary allocation"^^xsd:string,
+        "split-dollar arrangement, beneficiary allocation, Endorsement SD-01"^^xsd:string .
+
+abox:MedicalCertificationOfDisability_C10_IndexedUniversalLifeInsurancePol a li:ContractualProtection,
+        li:MedicalCertificationOfDisability ;
+    li:annualPremiumAmount 85000.0 ;
+    li:baseFaceAmountForDeathBenefit 3000000.0 ;
+    li:labelValue "Indexed Universal Life Insurance Policy"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Annual Premium, Cash Value Accumulation, Policy Funding"^^xsd:string,
+        "Face Amount, Death Benefit, Policy Specification"^^xsd:string .
+
+abox:MinimumBufferLevel_C10_15 a li:AbsorptionThreshold,
+        li:MinimumBufferLevel ;
+    li:absorbsFirstTenPercentOfAnnualLosses 10 ;
+    li:labelValue "15%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "buffer account, loss protection, S&P 500 decline"^^xsd:string .
+
+abox:MinimumBufferLevel_C10_5 a li:MinimumBufferLevel ;
+    li:labelValue "5%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MinimumBufferLevel_C10_8 a li:AbsorptionThreshold,
+        li:MinimumBufferLevel ;
+    li:labelValue "8%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MinimumDeathBenefitRequirement_C10_Irc7702Compliance a li:MinimumDeathBenefitRequirement,
+        li:RegulatoryRequirement ;
+    li:ageThresholdForInitialIncrease 10 ;
+    li:baseFaceAmountForDeathBenefit "minimum face amount"^^xsd:string ;
+    li:labelValue "IRC §7702 COMPLIANCE"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "CVAT Compliance, Death Benefit Adjustment, Automatic Coverage Increase"^^xsd:string,
+        "Overloan Protection Rider, Face Amount Threshold, Policy Lapse Prevention"^^xsd:string .
+
+abox:MinimumRequiredPremium_C10_5000 a li:MinimumRequiredPremium,
+        li:StandardBaseRate ;
+    li:labelValue "$5,000"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MonthlyCOICalculationMethod_C10_IfBufferIndex0Credit0 a li:BufferAccountScenario,
+        li:MonthlyCOICalculationMethod ;
+    li:labelValue "If -Buffer ≤ Index% < 0%: Credit = 0%"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MonthlyCOICalculationMethod_C10_IfIndex0CreditMinCapIndex a li:BufferAccountScenario,
+        li:MonthlyCOICalculationMethod ;
+    li:labelValue "If Index% ≥ 0%: Credit = MIN(Cap, Index%)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:MonthlyCOICalculationMethod_C10_IfIndexBufferCreditIndexBufferNe a li:BufferAccountScenario,
+        li:MonthlyCOICalculationMethod ;
+    li:annualInterestRateAppliedToGptPolicy "4%"^^xsd:decimal,
+        "7%"^^xsd:decimal ;
+    li:labelValue "If Index% < -Buffer: Credit = Index% + Buffer (negative result)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Annual Cap Account, Guaranteed Minimum, Crediting Rate Floor"^^xsd:string,
+        "Two-Year Cap Account, Guaranteed Minimum Cumulative Rate, Crediting Floor"^^xsd:string .
+
+abox:NoDirectWithdrawalCost_C10_NoExplicitWithdrawalFee a li:NoDirectWithdrawalCost ;
+    li:appliesPenaltyRateOrReductionFactor "no explicit withdrawal fee"^^xsd:string ;
+    li:labelValue "No explicit withdrawal fee"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, withdrawal fees, surrender charges"^^xsd:string .
+
+abox:NonCoveredSkydivingVariant_C10_Suicide a li:ExcludedCauseOfDeath,
+        li:NonCoveredSkydivingVariant ;
+    li:accountValueOrTaxableBasis "total premiums paid minus withdrawals and outstanding loans"^^xsd:string ;
+    li:appliesPenaltyRateOrReductionFactor "2 years"^^xsd:integer,
+        "2 years"^^xsd:string ;
+    li:labelValue "SUICIDE"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, death benefit limitation, premium refund"^^xsd:string,
+        "suicide exclusion, policy issue date, death benefit limitation"^^xsd:string,
+        "suicide exclusion, policy reinstatement, death benefit limitation"^^xsd:string .
+
+abox:NonReducibleMonetaryValue_C10_AutomaticFaceIncrease a li:NonReducibleMonetaryValue,
+        li:PolicyStatus ;
+    li:labelValue "AUTOMATIC FACE INCREASE"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:OneTimeDepositLimit_C10_AdditionalLumpSumCapability a li:OneTimeDepositLimit,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Additional Lump Sum Capability"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:OnlineSubmissionPortal_C10_WwwApexcorporatebenefitsCom a li:OnlineSubmissionPortal ;
+    li:labelValue "www.apexcorporatebenefits.com"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:PlaceOfExecution_C10_SchaumburgIllinois a li:PlaceOfExecution,
+        li:PolicyIssuanceLocation ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:stateOfIssuance "Schaumburg, Illinois"^^xsd:string .
+
+abox:PolicyMember_C10_Employer a li:Beneficiary,
+        li:PolicyMember ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:annualInterestRateAppliedToGptPolicy 3.5,
+        "fixed account rate"^^xsd:string ;
+    li:labelValue "Employer"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Overloan Protection Rider, Policy Lapse Prevention, Loan Safety Feature"^^xsd:string,
+        "Policy Loans, Fixed Account Rate, Interest Accrual"^^xsd:string,
+        "loan rates, fixed interest rate, policy year 10 threshold"^^xsd:string .
+
+abox:PolicyMember_C10_InsuredSBeneficiary a li:DeathBenefitRecipient,
+        li:PolicyMember ;
+    li:labelValue "Insured's beneficiary"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:PolicyOwner_C10_RenfieldManufacturingGroupLlcIll a li:IssuingInsurer,
+        li:LegalAdvisor,
+        li:PolicyOwner ;
+    li:absorbsFirstTenPercentOfAnnualLosses "Illinois"^^xsd:string ;
+    li:insurerName "Renfield Manufacturing Group, LLC (Illinois LLC)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Renfield Manufacturing Group, LLC, Illinois, Legal Jurisdiction"^^xsd:string .
+
+abox:PremiumLoadRate_C10_15 a li:PremiumLoadRate,
+        li:ReinstatementRopCreditRate ;
+    li:sharePercentage "1.5%"^^xsd:decimal ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:PremiumLoadRate_C10_30 a li:PremiumLoadRate,
+        li:ReinstatementRopCreditRate ;
+    li:appliesCappedAnnualGainsBeforeSumming 20.0 ;
+    li:sharePercentage "3.0%"^^xsd:decimal ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "two-year cumulative gain, credit cap, indexed segment crediting"^^xsd:string .
+
+abox:PremiumLoadRate_C10_50 a li:PremiumLoadRate,
+        li:ReinstatementRopCreditRate ;
+    li:sharePercentage "5.0%"^^xsd:decimal ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:PremiumWaiverDuringDisability_C10_KeyPersonDisabilityWaiverRiderKp a li:PremiumWaiverDuringDisability,
+        li:PremiumWaiverTermsReference ;
+    li:annualPremiumAmount "monthly charge"^^xsd:string ;
+    li:labelValue "KEY PERSON DISABILITY WAIVER RIDER (KPD-02)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Key Person Disability Waiver Rider, monthly charge, rider schedule"^^xsd:string .
+
+abox:PremiumWaiverTermsReference_C10_ReturnOfPremiumDeathBenefitRider a li:DeathBenefit,
+        li:PremiumWaiverTermsReference ;
+    li:annualPremiumAmount 0.02,
+        "Monthly charge applies to Return of Premium Death Benefit Rider ROPDB-01 for policy years 1–10."^^xsd:string ;
+    li:baseFaceAmountForDeathBenefit "total gross premiums paid under ROPDB-01"^^xsd:string ;
+    li:labelValue "RETURN OF PREMIUM DEATH BENEFIT RIDER (ROPDB-01)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Return of Premium Death Benefit Rider, Monthly charge, Face amount"^^xsd:string,
+        "Return of Premium Death Benefit Rider, monthly charge, policy years 1-10"^^xsd:string,
+        "Return of Premium Death Benefit, Death Benefit Increase, Policy Years 1–5"^^xsd:string .
+
+abox:PremiumWaiverTermsReference_C10_RiderCharges a li:PremiumWaiverTermsReference,
+        li:Rider ;
+    li:labelValue "rider charges"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:PrincipalLossExposureBeyondBufferLimit_C10_BufferAccountRisk a li:PrincipalLossExposureBeyondBufferLimit,
+        li:TransferableInsuranceOption ;
+    li:absorbsFirstTenPercentOfAnnualLosses false ;
+    li:labelValue "Buffer Account Risk"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Buffer Account Risk, Principal Loss Exposure, Investment Design Feature"^^xsd:string .
+
+abox:ProcessingDeadline_C10_CreditingDate a li:ProcessingDeadline,
+        li:TransferableInsuranceOption ;
+    li:annualPremiumAmount 5000.0 ;
+    li:labelValue "Crediting Date"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "minimum premium, single payment, premium flexibility"^^xsd:string .
+
+abox:ProratedReduction_C10_IntraYearWithdrawals a li:ProratedReduction,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Intra-Year Withdrawals"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:ROPReturnPeriod_C10_CreditingPeriod a li:FixedAccountRatePeriod,
+        li:ROPReturnPeriod ;
+    li:labelValue "crediting period"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:RegulatoryDisclosureReference_C10_Irc264F a li:RegulatoryDisclosureReference,
+        li:TaxCodeRequirementForColiNotice ;
+    li:absorbsFirstTenPercentOfAnnualLosses true ;
+    li:labelValue "IRC §264(f)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Protection Rider, Policy Lapse Prevention, Rider Activation Conditions"^^xsd:string .
+
+abox:ReportingObligation_C10_CorporateLoanDocumentation a li:ReportingObligation ;
+    li:appliesPenaltyRateOrReductionFactor "1%"^^xsd:string ;
+    li:labelValue "Corporate Loan Documentation"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "surrender charges, policy year schedule, financial penalties"^^xsd:string .
+
+abox:SegmentDuration_C10_CreditingPeriod a li:SegmentDuration,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Crediting Period"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:SpousalPrimaryBeneficiaryAfterDebtSettlement_C10_DanielArthurRenfield a li:InsuredIndividual,
+        li:SpousalPrimaryBeneficiaryAfterDebtSettlement ;
+    li:absorbsFirstTenPercentOfAnnualLosses "COIUL-SD-01"^^xsd:string,
+        "Daniel Arthur Renfield"^^xsd:string,
+        "Male"^^xsd:string,
+        "Split-Dollar Arrangement"^^xsd:string ;
+    li:ageAtEarlyPolicySurrender 45,
+        51 ;
+    li:ageAtIssue 51 ;
+    li:partyName "Daniel Arthur Renfield"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Daniel Arthur Renfield, Gender, Insured Information"^^xsd:string,
+        "Date of Birth, Insured Information, Underwriting Classification"^^xsd:string,
+        "Insured Age, Policy Issue Date, Life Insurance Underwriting"^^xsd:string,
+        "Insured Individual, Daniel Arthur Renfield, Key Person Coverage"^^xsd:string,
+        "Split-Dollar Arrangement, Collateral Assignee, Corporate Ownership"^^xsd:string,
+        "split-dollar arrangement, endorsement COIUL-SD-01, collateral assignment"^^xsd:string .
+
+abox:SpousalPrimaryBeneficiaryAfterDebtSettlement_C10_SandraMarieRenfieldSpouse a li:Beneficiary,
+        li:SpousalPrimaryBeneficiaryAfterDebtSettlement ;
+    li:beneficiaryShare "100%"^^xsd:string,
+        "spouse"^^xsd:string ;
+    li:partyName "Sandra Marie Renfield (Spouse)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, beneficiary designation, spousal beneficiary"^^xsd:string,
+        "spouse, beneficiary, split-dollar arrangement"^^xsd:string .
+
+abox:SurrenderConditionContinuation_C10_ColiSurrenderCon a li:SurrenderConditionContinuation ;
+    li:alertsUsersToPotentialLossOfTaxAdvantagesBeyondBasis true ;
+    li:baseFaceAmountForDeathBenefit 250000.0 ;
+    li:labelValue "COLI SURRENDER CON"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Corporate-Owned Life Insurance, IRC §264(f), Compliance Documentation"^^xsd:string,
+        "Protection Rider, Minimum Face Amount, Rider Activation"^^xsd:string .
+
+abox:SurrenderFeeBasis_C10_AppliedAsPercentageOfTargetPremi a li:SurrenderFeeBasis ;
+    li:annualPremiumAmount 85000.0 ;
+    li:labelValue "Applied as percentage of target premium ($85,000)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Surrender Charges, Target Premium, Policy Cost Structure"^^xsd:string .
+
+abox:TaxAdvisoryRequirement_C10_ColiSurrenderConsideration a li:TaxAdvisoryRequirement,
+        li:TransferableInsuranceOption ;
+    li:labelValue "COLI SURRENDER CONSIDERATION"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TaxComplianceDisclosure_C10_BusinessPurposeNotice a li:TaxComplianceDisclosure,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Business Purpose Notice"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TaxComplianceThreshold_C10_MinimumDeathBenefitCorridor a li:TaxComplianceThreshold,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Minimum Death Benefit Corridor"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TaxEfficientDeathBenefitCalculationMethod_C10_IncreasingDeathBenefit a li:TaxEfficientDeathBenefitCalculationMethod,
+        li:TransferableInsuranceOption ;
+    li:accountValueOrTaxableBasis "account value"^^xsd:string ;
+    li:baseFaceAmountForDeathBenefit 3000000.0 ;
+    li:labelValue "INCREASING DEATH BENEFIT"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "death benefit calculation, account value inclusion, Option 2 design"^^xsd:string,
+        "death benefit, account value, tax-efficient COLI"^^xsd:string .
+
+abox:TaxQualification_C10_CashValueAccumulationTestCvat a li:TaxQualification,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Cash Value Accumulation Test (CVAT)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TaxQualification_C10_Cvat a li:TaxQualification,
+        li:TransferableInsuranceOption ;
+    li:labelValue "CVAT"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TaxQualification_C10_Irc7702TestB a li:TaxQualification,
+        li:TransferableInsuranceOption ;
+    li:labelValue "IRC §7702 Test B"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TermExtensionWithoutFurtherPremiums_C10_Option2Increasing a li:DeathBenefitOptionWithRisingNarStability,
+        li:TermExtensionWithoutFurtherPremiums ;
+    li:labelValue "Option 2 (Increasing)"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_Contestability a li:ContestabilityPeriod,
+        li:TransferableInsuranceOption ;
+    li:ageAtEarlyPolicySurrender 2 ;
+    li:labelValue "Contestability"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "contestation period, material misrepresentation, policy validity"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_IndexAccount a li:IndexedSubAccount,
+        li:TransferableInsuranceOption ;
+    li:accountValueOrTaxableBasis "An 'Index Account' is a sub-account where interest is credited based on the measured performance of an external index."^^xsd:string ;
+    li:labelValue "Index Account"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Index Account, Interest Crediting, External Index Performance"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_IndexParticipation a li:MarketIndexedInvestment,
+        li:TransferableInsuranceOption ;
+    li:adjustsOnBirthdayFollowingMonth "Two-year segment values are not accessible for crediting until the segment matures."^^xsd:string ;
+    li:labelValue "Index Participation"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "two-year segment, maturity requirement, crediting delay"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_Spread a li:IndexGainDeduction,
+        li:TransferableInsuranceOption ;
+    li:labelValue "Spread"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_TwoYearSegmentExample a li:IndexedReturn,
+        li:TransferableInsuranceOption ;
+    li:amortizationResult "zero"^^xsd:string ;
+    li:annualIncreaseUntilTenThousandDollarCap "8%"^^xsd:decimal ;
+    li:annualPremiumAmount 85000.0 ;
+    li:appliesPenaltyRateOrReductionFactor "pro-rated basis"^^xsd:string ;
+    li:calculatesAdjustedCredit "Index percentage plus Buffer"^^xsd:string ;
+    li:labelValue "Two-year segment example"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "Index Performance, Two-Year Segment Example, Cumulative Growth Calculation"^^xsd:string,
+        "buffer calculation, zero credit, capped performance"^^xsd:string,
+        "buffer mechanism, credit calculation, index percentage"^^xsd:string,
+        "planned premium, annual contribution, premium flexibility"^^xsd:string,
+        "withdrawal assessment, crediting period, pro-rated basis"^^xsd:string .
+
+abox:TransferableInsuranceOption_C10_WarExclusion a li:TransferableInsuranceOption,
+        li:WarCoverage ;
+    li:labelValue "War Exclusion"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:WithdrawalFee_C10_SurrenderCharge a li:TransferableInsuranceOption,
+        li:WithdrawalFee ;
+    li:labelValue "surrender charge"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:WithdrawalPrivilege_C10_FreeWithdrawalProvisionOwnerMayW a li:Withdrawal,
+        li:WithdrawalPrivilege ;
+    li:labelValue "Free withdrawal provision: Owner may withdraw up to 15% of account value per policy year"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string .
+
+abox:WithdrawalThreshold_C10_MinimumPerWithdrawal2500 a li:WithdrawalThreshold ;
+    li:annualWithdrawalLimitOrReductionRate 2500.0 ;
+    li:appliesPenaltyRateOrReductionFactor "7%"^^xsd:string ;
+    li:labelValue "Minimum per withdrawal: $2,500"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, withdrawal limits, account access"^^xsd:string,
+        "surrender charge schedule, year 5, policy duration"^^xsd:string .
+
+abox:Withdrawal_C10_AccountValue a li:TransferableInsuranceOption,
+        li:Withdrawal ;
+    li:absorbsFirstTenPercentOfAnnualLosses "Tax consequences of surrender are governed by IRC §264."^^xsd:string ;
+    li:annualWithdrawalLimitOrReductionRate "15%"^^xsd:decimal ;
+    li:labelValue "account value"^^xsd:string ;
+    li:sourceContractID "C10"^^xsd:string ;
+    li:sourceContractSection "IRC §264, Surrender Consequences, Corporate Policy Owners"^^xsd:string,
+        "free withdrawal, account value, no surrender charge"^^xsd:string .
+

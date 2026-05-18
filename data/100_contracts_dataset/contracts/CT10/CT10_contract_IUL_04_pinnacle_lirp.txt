@@ -1,0 +1,335 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Pinnacle Accumulation Life Insurance, Inc.                 ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: PALI-IUL-LIRP-2024-0077
+Date of Issue: May 1, 2024
+Form: Maximum Accumulation Indexed Universal Life (MAIUL-12)
+Market Position: Life Insurance Retirement Plan (LIRP) -
+                 Tax-Advantaged Accumulation and Income
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Priya Anand Krishnamurthy
+Insured: Priya Anand Krishnamurthy
+DOB: November 9, 1979 | Age: 44 | Gender: Female
+Underwriting Class: Preferred Plus Non-Tobacco
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $500,000 (minimum face for premium target)
+Death Benefit Option: Option 2 (Increasing) - required for LIRP
+Planned Annual Premium: $50,000 (maximum non-MEC funding)
+Target Annual Premium: $50,000
+MEC Limit (Year 1 Seven-Pay Test): $51,488
+Maximum Annual Premium: $51,488 (Guideline Annual Premium)
+Tax Qualification Test: Guideline Premium Test (GPT)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Rajan Krishnamurthy (Spouse) - 100%
+Contingent: Krishnamurthy Family Trust - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "LIRP" - Life Insurance Retirement Plan; an informal term
+    for an overfunded permanent life insurance policy used as a
+    supplemental retirement income vehicle.
+
+1.2 "MEC" - Modified Endowment Contract; classification under
+    IRC §7702A that subjects distributions to income tax and
+    possible 10% penalty. This policy is designed to stay
+    below MEC threshold.
+
+1.3 "Seven-Pay Test" - The IRS test determining MEC status;
+    premiums in any 7-year period must not exceed the net level
+    premium for a fully paid-up policy.
+
+1.4 "GPT" - Guideline Premium Test; the §7702 tax qualification
+    method elected, which allows the highest annual premiums
+    relative to face amount.
+
+1.5 "Policy Loan Income Strategy" - Tax-efficient withdrawals
+    using a combination of basis withdrawals and policy loans
+    structured to generate tax-free retirement income.
+
+1.6 "Wash Loan" - A loan arrangement where the loaned amount
+    earns a crediting rate equal to (or near) the loan interest
+    rate, resulting in minimal net cost to the policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE INDEX ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point (Standard Cap)
+       Current Cap: 11.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) S&P 500 Uncapped Participation Account
+       Cap: NONE | Participation Rate: 60%
+       Floor: 0% | Crediting Period: 1 year
+       Example: Index gains 25% → Credit = 15.0%
+
+    C) Volatility-Controlled Equity Account
+       Index: Proprietary volatility-managed equity strategy
+       targeting 5% realized volatility
+       Current Cap: 13.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Higher cap reflects lower realized volatility target)
+
+    D) Bloomberg U.S. Dynamic Balance Index (II)
+       A rules-based index blending equity and fixed income
+       with daily volatility management
+       Current Cap: 14.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    E) Fixed Account
+       Current Rate: 3.00% | Guaranteed Minimum: 2.00%
+
+2.2 CURRENT ALLOCATION (LIRP-optimized strategy):
+    S&P 500 Standard Cap:          25%
+    S&P 500 Uncapped Participation: 25%
+    Volatility-Controlled Account:  25%
+    Bloomberg Dynamic Balance:      25%
+    (Multi-strategy diversification within the indexed framework)
+
+2.3 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 4.50%
+    • Uncapped participation rate: never below 30%
+    • Volatility-controlled cap: never below 4.50%
+    • Bloomberg cap: never below 4.50%
+    • Fixed account: never below 2.00%
+
+2.4 REALLOCATION: Unlimited free reallocations annually.
+    Reallocations between credited periods take effect at next
+    anniversary; do not interrupt active crediting segments.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 STANDARD ANNUAL FORMULA:
+    Credit = MAX(Floor, MIN(Cap, Index Change%))
+
+3.2 UNCAPPED ACCOUNT:
+    Credit = MAX(0%, Index Change% × 60%)
+    This account is appropriate when long-term upside capture
+    is prioritized over capped near-term potential.
+
+3.3 VOLATILITY-CONTROLLED INDEX: The underlying index
+    automatically adjusts equity exposure (0%-100%) daily to
+    target a 5% volatility budget. In turbulent markets,
+    equity exposure decreases, reducing both upside and
+    downside. This produces more consistent crediting over time.
+    Index is provided by a third-party index provider under
+    license; index composition and rules are independently
+    published.
+
+3.4 BLOOMBERG DYNAMIC BALANCE: Blends equity and bond futures
+    in a daily rules-based process. Index includes an embedded
+    cost deduction of approximately 0.50%-0.75% annually that
+    reduces gross index performance before caps are applied.
+
+3.5 CREDITED INTEREST AND INCOME: Because this is a GPT policy
+    under §7702, interest credited enhances account value and
+    may be accessed income-tax-free via the loan strategy
+    outlined in Article 7, up to the policy's cost basis.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 LIRP DESIGN CONCEPT: This policy is designed to be
+    aggressively funded to the maximum non-MEC limit annually.
+    High front-loaded premiums maximize account value growth
+    by minimizing the death benefit relative to premium.
+
+4.2 PLANNED PREMIUM: $50,000 per year for 10 years ($500,000
+    total). Projections assume this funding schedule.
+
+4.3 MEC MONITORING: We will track seven-pay test compliance
+    on your behalf and notify you if a proposed additional
+    premium would cause MEC classification. Owner is ultimately
+    responsible for MEC compliance; consult a tax professional.
+
+4.4 FACE AMOUNT MINIMIZATION: Option 2 death benefit and minimum
+    face amount ($500,000) are selected to keep the death benefit
+    as low as possible relative to premium, minimizing COI drag
+    and maximizing accumulation efficiency.
+
+4.5 CORRIDOR AUTO-ADJUSTMENT: If account value growth causes
+    the CVAT/GPT corridor to require a higher death benefit,
+    we automatically increase the face amount. No evidence of
+    insurability required for corridor increases.
+
+4.6 PREMIUM LOAD: 4.0% years 1-5; 2.0% years 6+.
+
+4.7 SHORT PAY OPTION: Owner may elect to stop premiums after
+    year 10 and allow the policy to continue from accumulated
+    values. Year 11+ policy is designed to be self-sustaining
+    under current assumptions. Guarantees do not apply to
+    non-guaranteed premium scenarios.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Charged monthly based on net amount at risk. Under
+    Option 2, NAR = Face Amount ($500,000 initially); as account
+    value grows, total death benefit rises but NAR stays near
+    original face amount. This is the key accumulation efficiency
+    advantage of Option 2 + minimum face.
+
+5.2 POLICY FEE: $15 per month (guaranteed for policy life).
+
+5.3 ASSET-BASED CHARGE: 0.25% per year (0.0208% per month)
+    of account value, covering investment management expenses
+    for proprietary indexed accounts. This charge is deducted
+    from the fixed account monthly.
+
+5.4 TOTAL APPROXIMATE CHARGES (Year 1):
+    COI: ~$120/month | Policy Fee: $15/month
+    Asset Charge: ~$85/month (on $50K account value)
+    Total: ~$220/month
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 OPTION 2 - INCREASING (REQUIRED FOR THIS PRODUCT):
+    Death Benefit = $500,000 + Account Value at claim.
+    As account value grows to $1,000,000, total death benefit
+    = $1,500,000. The policy provides meaningful death benefit
+    throughout and grows alongside accumulation.
+
+6.2 ACCELERATED DEATH BENEFIT - TERMINAL: Up to 75% of death
+    benefit, maximum $500,000, if life expectancy < 12 months.
+
+6.3 ACCELERATED DEATH BENEFIT - CHRONIC: Available for
+    inability to perform 2 of 6 ADLs. Per-diem IRS limits apply.
+    Benefit reduces death benefit dollar-for-dollar.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - RETIREMENT INCOME STRATEGY (LOANS & WITHDRAWALS)
+═══════════════════════════════════════════════════════════════════
+7.1 RETIREMENT INCOME CONCEPT:
+    Phase 1 (Accumulation): Premiums paid for 10+ years.
+    Phase 2 (Income): Owner takes tax-free income via:
+    Step A: Withdraw cost basis first (tax-free return of basis).
+    Step B: After basis exhausted, use policy loans (tax-free
+            per IRC §72 as long as policy remains in force
+            and is not a MEC).
+
+7.2 STANDARD POLICY LOANS:
+    Maximum: 90% of surrender value.
+    Loan rate: 5.0% annually (variable; resets annually based
+    on Moody's Composite Bond Yield + 1%).
+    Collateral treatment: Loaned amounts earn fixed account rate.
+
+7.3 PARTICIPATING (WASH) LOANS:
+    Available beginning in policy year 11.
+    Loan rate: 5.0% fixed annually.
+    Loaned amounts continue to earn FULL index crediting rate
+    (as if not loaned). Net cost: 5.0% interest charged minus
+    whatever the indexed accounts earn.
+    In a year where index credits = 7%: net gain 2%.
+    In a year where index credits = 0%: net cost 5%.
+    Wash loans create leveraged income potential but also risk.
+
+7.4 POLICY LOAN STRATEGY ILLUSTRATION:
+    Age 65 projected account value (current assumptions): $2.1M
+    Annual loan income available at 5% of account: ~$105,000
+    Tax character: Tax-free (as long as policy not MEC/lapsed)
+    Policy remains in force as long as account value exceeds
+    outstanding loan balance (managed repayment critical).
+
+7.5 PARTIAL WITHDRAWALS:
+    Minimum: $1,000. No fee for first 12 per year.
+    Reduces account value and death benefit under Option 2.
+    Reduces cost basis; tracked by Pinnacle for tax reporting.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of target premium $50,000):
+
+    Year 1:  12%   Year 5:  7%    Year 9:  3%
+    Year 2:  11%   Year 6:  6%    Year 10: 1.5%
+    Year 3:  10%   Year 7:  5%    Year 11: 0.5%
+    Year 4:   9%   Year 8:  4%    Year 12+: 0%
+
+8.2 Given the LIRP nature of this product, early surrender is
+    strongly counterproductive; the policy is designed for
+    30+ year hold periods.
+
+8.3 FREE WITHDRAWAL: 15% of account value annually, no
+    surrender charge, beginning year 2.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LAPSE AND GRACE PERIOD
+═══════════════════════════════════════════════════════════════════
+9.1 Lapse Risk Advisory: A key risk of the LIRP strategy is
+    policy lapse during the retirement income phase due to
+    excessive loans. If a policy lapses with outstanding loans,
+    the net loan amount is treated as taxable income in the
+    lapse year per IRC §72. Owner should model income
+    distributions conservatively.
+
+9.2 AUTOMATED MONITORING: Pinnacle will send an annual
+    sustainability projection to Owner. If modeled loan
+    income strategy is projected to cause lapse before age 100,
+    Pinnacle will notify Owner and suggest remediation options.
+
+9.3 LAPSE GRACE PERIOD: 61 days from notice. Paying additional
+    premium cures the lapse risk; loans cannot be "uncured" except
+    by repayment.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: Return of premiums only within 2 years of issue.
+10.2 CONTESTABILITY: 2 years from issue.
+10.3 NO AVIATION, WAR, OCCUPATION, or HAZARDOUS ACTIVITY
+     exclusions apply to this policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - IMPORTANT DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 The LIRP income strategy described herein is not guaranteed.
+     Actual income depends on actual index performance, which
+     cannot be predicted.
+
+11.2 Tax treatment of policy distributions depends on policy
+     remaining in force, non-MEC status, and applicable tax law.
+     Pinnacle does not provide tax advice; consult a qualified
+     tax professional.
+
+11.3 Proprietary index accounts (volatility-controlled and
+     Bloomberg Dynamic Balance) have embedded index fees that
+     reduce gross performance. These are reflected in the cap
+     rates shown.
+
+11.4 Dividends from underlying index components are excluded
+     from all index performance calculations.
+
+11.5 MEC classification cannot be undone once triggered.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Pinnacle Accumulation Life Insurance, Inc.
+Wealth Solutions Division
+1-888-PINNACLE | wealth@pinnacleaccumulation.com
+Austin, Texas
+
+[SEAL]
+
+__________________________________
+Chief Executive Officer
+Pinnacle Accumulation Life Insurance, Inc.
+
+May 1, 2024
+
+═══════════════════════════════════════════════════════════════════

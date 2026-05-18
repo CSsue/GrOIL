@@ -1,0 +1,304 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        SURVIVORSHIP INDEXED UNIVERSAL LIFE INSURANCE              ║
+║        Meridian Legacy Insurance Corporation                      ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: MLIC-SIUL-2024-3302
+Date of Issue: January 8, 2024
+Form: Survivorship Indexed Universal Life (SIUL-9)
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSUREDS
+═══════════════════════════════════════════════════════════════════
+Owner: The Hargrove Family Irrevocable Life Insurance Trust
+       (ILIT, dated December 1, 2023, Lawrence & Diana Hargrove,
+       Grantors; Westlake Trust Company, Trustee)
+
+Insured #1: Lawrence Edmund Hargrove
+DOB: April 3, 1951 | Age: 72 | Gender: Male
+Underwriting Class: Standard Tobacco
+
+Insured #2: Diana Claire Hargrove
+DOB: September 14, 1954 | Age: 69 | Gender: Female
+Underwriting Class: Preferred Plus Non-Tobacco
+
+SURVIVAL DESIGN: Death Benefit payable upon the death of the
+LAST surviving insured (second-to-die).
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $5,000,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $42,000
+Blended Equivalent Age: 74 (used for COI purposes)
+Minimum Premium to Keep Policy In Force: See Article 5
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: The Hargrove Family Irrevocable Life Insurance Trust
+         (as Trustee of record) - 100%
+         (Proceeds to be distributed per Trust instrument)
+Contingent: Hargrove Children Equally, Per Stirpes - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Survivorship Policy" - A policy insuring two lives where the
+    death benefit is payable only upon the death of the second,
+    or last surviving, insured.
+
+1.2 "Blended COI Rate" - A composite mortality rate based on the
+    ages, genders, and risk classes of both insureds, calculated
+    actuarially to price survivorship coverage.
+
+1.3 "Single Life Continuation" - The period after the first
+    insured's death during which the policy continues under
+    modified COI calculation based solely on the surviving
+    insured.
+
+1.4 "Estate Multiplier" - The ratio of face amount to total
+    planned premiums paid; designed to exceed 3:1 in this policy.
+
+1.5 "Index Credit" - Interest applied to an account based on
+    measured change of a referenced market index.
+
+1.6 "Guaranteed Interest Account (GIA)" - The fixed rate account
+    earning a declared, guaranteed minimum rate.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE INDEX ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 9.50% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) Blended Multi-Index Account
+       Indices: 50% S&P 500 / 30% MSCI EAFE / 20% Bloomberg
+       U.S. Aggregate Bond Index
+       Current Cap: 8.00% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Volatility-controlled blend, rebalanced annually)
+
+    C) S&P 500 High Participation Account (No Cap)
+       Cap: NONE | Participation Rate: 55%
+       Floor: 0% | Crediting Period: 1 year
+       Note: Full upside participation at 55%; no cap ceiling.
+
+    D) Guaranteed Interest Account (GIA)
+       Current Rate: 3.10% | Guaranteed Minimum: 2.00%
+
+2.2 CURRENT ALLOCATION:
+    S&P 500 Annual Account:    40%
+    Multi-Index Account:       35%
+    Guaranteed Interest:       25%
+
+2.3 REALLOCATION: Owner (Trustee) may reallocate on any policy
+    anniversary. Unlimited reallocations at no charge.
+
+2.4 GUARANTEED MINIMUMS:
+    • Annual cap: never below 3.50%
+    • Multi-Index cap: never below 3.00%
+    • High Participation rate: never below 25%
+    • GIA: never below 2.00%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 STANDARD ANNUAL CREDITING:
+    Interest Credited = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 HIGH PARTICIPATION ACCOUNT:
+    Interest Credited = MAX(0%, Index% Change × 55%)
+    Example: S&P 500 gains 20% → Credit = 11.0%
+    Example: S&P 500 gains 8%  → Credit = 4.4%
+
+3.3 MULTI-INDEX BLENDED ACCOUNT:
+    The weighted average of the three component indices is
+    computed annually. The resulting blended percentage is
+    applied to the cap and floor formula. Bond component
+    provides downside dampening in equity-down years.
+
+3.4 DEATH OF FIRST INSURED - CREDITING IMPACT:
+    Upon first insured's death, the policy continues unchanged
+    for the surviving insured. All index allocations, segments,
+    and pending credits remain in effect. COI charges adjust
+    to reflect single-life survivorship mortality only.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM FLEXIBILITY
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $42,000 per year, payable by Trustee from
+    annual gifting contributions from Grantors. Policy is
+    designed to accept Crummey-eligible annual gift amounts.
+
+4.2 CRUMMEY NOTICE COORDINATION: Meridian will provide annual
+    notices to Trustee confirming premium deposit dates and
+    amounts to assist with Crummey withdrawal right
+    documentation. Owner retains responsibility for legal
+    Crummey procedures.
+
+4.3 FLEXIBLE PAYMENT: Premiums may be paid monthly, quarterly,
+    semi-annually, or annually. Monthly modal factor: 0.0875.
+    Quarterly modal factor: 0.255. Semi-annual: 0.510.
+
+4.4 PREMIUM LOAD: 4.5% of each premium, years 1-7.
+                  2.0% of each premium, years 8+.
+
+4.5 ESTATE PLANNING NOTE: Planned premium is calibrated to
+    maximize the estate multiplier effect while remaining
+    within annual gift tax exclusion limits ($18,000 per
+    donee in 2024 per IRC §2503(b)).
+
+4.6 LUMP SUM FLEXIBILITY: Additional premiums accepted up to
+    IRC §7702 corridor limits. No MEC corridor testing bypass.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COST OF INSURANCE: Charged monthly using a blended COI
+    rate applied to the net amount at risk. After first insured
+    dies, the blended rate converts to a single-life rate for
+    the surviving insured. COI rates are guaranteed never to
+    exceed those in the policy schedule, which are based on
+    2017 CSO tables.
+
+5.2 POLICY FEE: $18 per month (guaranteed, no increase).
+
+5.3 ESTATE PLANNING EXPENSE CHARGE: $0.10 per $1,000 face
+    amount per month, deducted for years 1-15 to offset
+    high face-amount issuance costs at older insured ages.
+
+5.4 CHARGES AFTER FIRST DEATH: Policy fee and expense charges
+    remain unchanged. COI reprices to surviving-life basis.
+    No additional underwriting or charges for the transition.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 SECOND-TO-DIE BENEFIT: The full $5,000,000 death benefit
+    is payable only upon the death of the last surviving insured.
+    No benefit is payable upon the first insured's death.
+
+6.2 FIRST DEATH - CONTINUED PREMIUM WAIVER OPTION:
+    Upon first insured's death, Owner may elect the Optional
+    Premium Waiver (OPW) at an additional charge of $0.05 per
+    $1,000 face per month. If elected within 90 days of first
+    death, no further premiums are required to maintain coverage.
+    (See Rider OPW-S for full terms.)
+
+6.3 ESTATE TAX DESIGN: Proceeds payable to ILIT are intended
+    to be outside the taxable estates of both Grantors.
+    Tax treatment depends on proper ILIT establishment and
+    administration; counsel with estate attorney is required.
+
+6.4 ACCELERATED DEATH BENEFIT (ADB): If either surviving insured
+    is diagnosed with a terminal illness (life expectancy < 12
+    months), Owner may accelerate up to 50% of death benefit.
+    Minimum acceleration: $100,000. See Rider ADB-T01.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 POLICY LOANS:
+    Available after policy year 1 to Trustee/Owner.
+    Maximum: 90% of surrender value.
+    Loan rate: 5.0% fixed annually.
+    Loaned amounts earn GIA rate (minimum 2.00%).
+
+7.2 WITHDRAWAL RESTRICTIONS: Withdrawals are permitted but
+    strongly discouraged in estate-planning context, as they
+    permanently reduce the death benefit and potentially the
+    estate multiplier. First 5 withdrawals per year are free;
+    $50 fee thereafter. Minimum withdrawal: $1,000.
+
+7.3 TRUSTEE AUTHORIZATION: All loan and withdrawal requests
+    must include written Trustee authorization with signature
+    conforming to Trust instrument. Meridian is not responsible
+    for determining proper Trustee authority; that determination
+    rests with the requesting party.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of premiums paid in first 10 years):
+
+    Year 1:  12%   Year 5:  7%   Year 9:  3%   Year 13: 0.5%
+    Year 2:  11%   Year 6:  6%   Year 10: 2%   Year 14+: 0%
+    Year 3:  10%   Year 7:  5%   Year 11: 1%
+    Year 4:   9%   Year 8:  4%   Year 12: 0.5%
+
+8.2 NOTE: Surrender charges are particularly significant in
+    survivorship policies given that the primary purpose is
+    long-term estate liquidity. Early surrender forfeits
+    intended estate planning benefits.
+
+8.3 FREE WITHDRAWAL: 10% of account value per year, no charge,
+    beginning year 2.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - POLICY LAPSE PROVISIONS
+═══════════════════════════════════════════════════════════════════
+9.1 If account value is insufficient to cover monthly charges,
+    we will provide 30-day advance notice to Trustee at address
+    of record.
+
+9.2 Grace period: 61 days from notice to remit sufficient premium.
+
+9.3 SURVIVORSHIP LAPSE RISK: Given the advanced ages of both
+    insureds, lapse risk increases significantly in later years
+    as COI charges escalate. The Trustee should review in-force
+    illustrations annually. Annual review illustrations are
+    available at no charge upon request.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: If either insured dies by suicide within 2 years
+     of policy issue, we pay only premiums paid minus charges
+     and withdrawals. The 2-year period resets upon reinstatement.
+
+10.2 CONTESTABILITY: Policy is contestable for 2 years from issue.
+     Incontestable thereafter except for fraud. Both insureds'
+     representations are subject to this provision.
+
+10.3 SIMULTANEOUS DEATH: If both insureds die simultaneously or
+     within 24 hours of each other, the younger insured is deemed
+     to have survived for policy purposes.
+
+10.4 NO AVIATION, WAR, OR OCCUPATION EXCLUSIONS apply to this
+     policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - IMPORTANT DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 Dividends from index components are not included.
+11.2 Index credits are not guaranteed; 0% minimum per year.
+11.3 Survivorship policies are inherently long-duration products.
+     The actuarial benefit is realized upon the second death,
+     which may be 20-30 years from issue at current ages.
+11.4 This policy is intended as a permanent estate planning tool.
+     It is unsuitable as a short-term savings or investment vehicle.
+11.5 Meridian Legacy Insurance Corporation is a stock company
+     organized under the laws of Iowa.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Meridian Legacy Insurance Corporation
+Estate Planning Division
+1-800-MERIDIAN | legacy@meridianinsurance.com
+Des Moines, Iowa
+
+[CORPORATE SEAL]
+
+__________________________________
+Chief Executive Officer
+Meridian Legacy Insurance Corporation
+
+January 8, 2024
+
+═══════════════════════════════════════════════════════════════════

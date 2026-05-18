@@ -1,0 +1,465 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AccelerationLimit_C6_250000 a li:AccelerationLimit ;
+    li:labelValue "$250,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:AccelerationLimit_C6_5000 a li:AccelerationLimit ;
+    li:labelValue "$5,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:AnnualBenefitRecalculationTrigger_C6_SalaryChanges a li:AnnualBenefitRecalculationTrigger,
+        li:PolicyContinuationProtection ;
+    li:hasAnnualBaseSalaryForLifeBenefit "employee’s current salary"^^xsd:string ;
+    li:hasEffectiveDate "Coverage is subject to the terms, conditions, and exclusions in the Master Policy."^^xsd:string ;
+    li:labelValue "Salary changes"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "Master Policy Authority, Policy Hierarchy, Terms and Conditions"^^xsd:string,
+        "salary-based recalculations, annual benefit adjustment, current salary impact"^^xsd:string .
+
+abox:AnnualRecalculationTrigger_C6_PolicyAnniversary a li:AnnualRecalculationTrigger,
+        li:RetryPaymentDate ;
+    li:dateValue "policy anniversary"^^xsd:string ;
+    li:earnedOn "policy anniversary"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "annual recalibration, salary-based benefits, policy anniversary"^^xsd:string .
+
+abox:AuthorizedSignatory_C6_VicePresidentGroupOperations a li:AuthorizedSignatory,
+        li:Role ;
+    li:labelValue "Vice President, Group Operations"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:AutomaticCoverageUponHire_C6_BasicCoverage a li:AutomaticCoverageUponHire,
+        li:PolicyContinuationProtection ;
+    li:hasAmount 1000 ;
+    li:labelValue "Basic coverage"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "basic life benefit, rounding rule, salary-based calculation"^^xsd:string .
+
+abox:BasicLifeBenefitAmount_C6_180000 a li:BasicLifeBenefitAmount,
+        li:MaxConversionPolicySize ;
+    li:effectiveCoverageStart "upon eligibility"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:labelValue "180,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "automatic coverage, eligibility requirements, effective date"^^xsd:string,
+        "basic life insurance, no evidence of insurability, automatic eligibility"^^xsd:string .
+
+abox:CertificateHolder_C6_AlexMorganTaylor a li:CertificateHolder ;
+    li:effectiveCoverageStart "2024-06-01"^^xsd:date ;
+    li:hasBasicLifeInsuranceAmount "two times the annual salary of the employee"^^xsd:string ;
+    li:hasCertificateHolderName "Alex Morgan Taylor"^^xsd:string,
+        "Software Engineering Department"^^xsd:string ;
+    li:hasDeathBenefitAmount 100000.0,
+        280000.0 ;
+    li:hasEffectiveDate "1990-02-14"^^xsd:date,
+        "2022-03-01"^^xsd:date ;
+    li:hasEmployeeId "TC-8842"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_SanJoseCalifornia ;
+    li:partyName "Alex Morgan Taylor"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "Certificate Holder, Employee Information, Name Verification"^^xsd:string,
+        "Date of Birth, Employee Identification, Personal Information"^^xsd:string,
+        "Date of Hire, Employee Details, Hiring Timeline"^^xsd:string,
+        "Employee ID, Certificate Holder, TechCorp Industries"^^xsd:string,
+        "Software Engineering, Employee Department, Group Term Life Insurance"^^xsd:string,
+        "basic life insurance, annual salary multiplier, coverage formula"^^xsd:string,
+        "effective date, life insurance coverage, coverage summary"^^xsd:string,
+        "total coverage, life insurance, coverage summary"^^xsd:string,
+        "voluntary additional coverage, life insurance benefits, employee election"^^xsd:string .
+
+abox:ClaimSubmissionChannel_C6_1888555Claim a li:ClaimSubmissionChannel,
+        li:CustomerServiceHotline ;
+    li:labelValue "1-888-555-CLAIM"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ClaimSubmissionChannel_C6_ClaimsHotline1888555Claim a li:ClaimSubmissionChannel ;
+    li:claimSubmissionAddress "1-888-555-CLAIM"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:labelValue "Claims Hotline: 1-888-555-CLAIM"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "claims hotline, contact details, claim submission"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C6_CompletedClaimForm a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:labelValue "completed claim form"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C6_GroupTermLifeInsuranceCertificat a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:hasCertificateNumber "AGB-GT-2024-TechCorp-00842"^^xsd:string ;
+    li:hasEffectiveDate "2024-06-01"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C6_SanJoseCalifornia ;
+    li:labelValue "Group Term Life Insurance Certificate"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "certificate number, policy identification, insurance documentation"^^xsd:string,
+        "issue date, certificate issuance, effective coverage start"^^xsd:string .
+
+abox:CombinedInsuredValue_C6_TotalCoverage a li:CombinedInsuredValue,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Total Coverage"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ContingentBeneficiary_C6_AllianceGroupBenefits a li:ClaimsProcessingAuthority,
+        li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:claimSubmissionAddress "1-888-555-CLAIM"^^xsd:string,
+        "1200 Insurance Plaza, Dallas, TX 75201"^^xsd:string,
+        "Alliance Group Benefits - Claims Department"^^xsd:string,
+        "either the employer or the insurer"^^xsd:string ;
+    li:contactChannelForTaxInquiries "Alliance Group Benefits"^^xsd:string ;
+    li:definesCancellationRightTimeframe 10,
+        "at any time"^^xsd:string ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:explainsLackOfAutomaticProtection "Evidence of insurability is not required for portability."^^xsd:string ;
+    li:hasAmount "75%"^^xsd:string,
+        "A certified death certificate"^^xsd:string,
+        "Proof of beneficiary identity"^^xsd:string,
+        "a completed claim form"^^xsd:string,
+        "group coverage"^^xsd:string ;
+    li:hasEffectiveDate "This certificate is governed by the laws of the state of California."^^xsd:string,
+        "This certificate is issued under the laws of the state of California."^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_1200InsurancePlazaDallasTx75201,
+        abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:insurerName "Alliance Group Benefits"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "accelerated death benefit, terminal illness, death benefit reduction"^^xsd:string,
+        "beneficiary designation, HR department, change form"^^xsd:string,
+        "claim documentation, beneficiary identification, claims process"^^xsd:string,
+        "claim documentation, filing procedure, required forms"^^xsd:string,
+        "claim filing, beneficiary responsibility, immediate notification"^^xsd:string,
+        "claim filing, required documentation, death certificate"^^xsd:string,
+        "claim process, document access, insurer contact"^^xsd:string,
+        "claim processing, payment timeframe, benefit disbursement"^^xsd:string,
+        "claim submission, Alliance Group Benefits, claims department"^^xsd:string,
+        "claims process, contact information, claim submission"^^xsd:string,
+        "claims submission, mailing address, benefit processing"^^xsd:string,
+        "governing law, California jurisdiction, legal governance"^^xsd:string,
+        "governing law, California regulations, legal jurisdiction"^^xsd:string,
+        "group coverage, insurance provider, benefits eligibility"^^xsd:string,
+        "portability, evidence of insurability, coverage transfer"^^xsd:string,
+        "pre-existing condition exclusion, group coverage, benefit eligibility"^^xsd:string .
+
+abox:ContingentBeneficiary_C6_TaylorFamilyRevocableTrust a li:ContingentBeneficiary ;
+    li:hasCertificateHolderName "Taylor Family Revocable Trust"^^xsd:string ;
+    li:hasEffectiveDate "The Master Group Policy is issued to the employer."^^xsd:string ;
+    li:insurerName "Taylor Family Revocable Trust"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "Master Group Policy, Employer as Insured, Policy Issuance"^^xsd:string,
+        "contingent beneficiary, beneficiary designation, life insurance payout"^^xsd:string .
+
+abox:ContingentBeneficiary_C6_TechcorpIndustriesInc a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:hasCertificateHolderName "TechCorp Industries, Inc."^^xsd:string ;
+    li:hasCertificateNumber "AGB-2024-TC-GROUP"^^xsd:string ;
+    li:hasEffectiveDate "San Jose, California"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_SanJoseCalifornia ;
+    li:insurerName "TechCorp Industries, Inc."^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "Employer, Policyholder, TechCorp Industries"^^xsd:string,
+        "Master Policy Number, Group Term Life Insurance, Policy Identifier"^^xsd:string,
+        "corporate headquarters, location, TechCorp Industries"^^xsd:string .
+
+abox:ContinuationAfterLeavingEmployment_C6_Portability a li:ContinuationAfterLeavingEmployment,
+        li:PolicyContinuationProtection ;
+    li:labelValue "portability"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ConversionApplicationWindow_C6_Within31DaysOfTermination a li:ConversionApplicationWindow,
+        li:RetryPaymentDate ;
+    li:dateValue "within 31 days of termination"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:CoverageContinuationRule_C6_CoverageContinuesWithoutPremiumP a li:CoverageContinuationRule,
+        li:Status ;
+    li:labelValue "Coverage continues without premium payment during disability"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:CoverageLimit_C6_BasicLifeInsurance a li:CoverageLimit,
+        li:PolicyContinuationProtection ;
+    li:hasBasicLifeInsuranceAmount 180000.0 ;
+    li:hasLocation abox:ClaimMailingAddress_C6_SanJoseCalifornia ;
+    li:labelValue "Basic Life Insurance"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "basic life insurance, coverage summary, insurance payout"^^xsd:string .
+
+abox:CoverageLimit_C6_MaximumBenefit a li:CoverageLimit,
+        li:PolicyContinuationProtection ;
+    li:hasAmount "the same amount that was in effect under the group policy"^^xsd:string ;
+    li:labelValue "maximum benefit"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "portability, coverage continuation, group-to-individual transition"^^xsd:string .
+
+abox:CoverageLimit_C6_SuicideExclusion a li:CoverageLimit,
+        li:PolicyContinuationProtection ;
+    li:labelValue "suicide exclusion"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:DocumentEffectiveDate_C6_June12024 a li:DocumentEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "June 1, 2024"^^xsd:string ;
+    li:hasEffectiveDate "2024-06-01"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "certificate issuance, policy effective date, document timestamp"^^xsd:string .
+
+abox:ElectiveSupplementaryCoverage_C6_VoluntaryCoverage a li:ElectiveSupplementaryCoverage,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Voluntary coverage"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:EligibilityTrigger_C6_TotallyDisabledBeforeAge60AndRem a li:EligibilityTrigger,
+        li:PlanUpgradeRequirement ;
+    li:labelValue "totally disabled before age 60 and remain disabled for 6 consecutive months"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:GoverningLawClause_C6_TheLawsOfTheStateOfCalifornia a li:GoverningLawClause ;
+    li:labelValue "the laws of the state of California"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:GroupCoverageWithoutRestrictions_C6_PreExistingConditionLimitation a li:GroupCoverageWithoutRestrictions,
+        li:PolicyContinuationProtection ;
+    li:labelValue "pre-existing condition limitation"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:IncrementalIncreaseOption_C6_AdditionalCoverage a li:IncrementalIncreaseOption,
+        li:PolicyContinuationProtection ;
+    li:canBeElectedInIncrementsOf 10000 ;
+    li:definesCancellationRightTimeframe 31 ;
+    li:explainsLackOfAutomaticProtection "Evidence of insurability is not required for portability."^^xsd:string ;
+    li:hasAnnualBaseSalaryForLifeBenefit "five times the employee's salary"^^xsd:string ;
+    li:hasAnnualPremium "payable directly to the insurance company"^^xsd:string ;
+    li:labelValue "additional coverage"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "coverage increments, additional coverage, salary-based limits"^^xsd:string,
+        "elective coverage, salary multiple, coverage limits"^^xsd:string,
+        "portability, coverage continuation, application timeline"^^xsd:string,
+        "portability, evidence of insurability, group-to-individual transition"^^xsd:string,
+        "portable coverage, premium payment method, individual policy continuation"^^xsd:string .
+
+abox:LatePaymentWindow_C6_BenefitsWillBePaidWithin10Busine a li:LatePaymentWindow,
+        li:PolicyContinuationProtection ;
+    li:definesCancellationRightTimeframe 10 ;
+    li:hasLocation abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:labelValue "Benefits will be paid within 10 business days of receipt of complete claim documentation."^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "claim documentation, benefit disbursement, processing time"^^xsd:string .
+
+abox:MaxConversionPolicySize_C6_12Month a li:MaxConversionPolicySize,
+        li:MonthlyPremium ;
+    li:employerPaysBasicPremium true ;
+    li:hasAnnualPremium 12.0 ;
+    li:labelValue "$12/month"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "employer responsibility, basic life coverage, premium payment"^^xsd:string,
+        "voluntary coverage, monthly premium, employee contribution"^^xsd:string .
+
+abox:MaxConversionPolicySize_C6_200000 a li:MaxConversionPolicySize ;
+    li:hasAmount 1000000 ;
+    li:labelValue "$200,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "maximum coverage, benefit cap, total coverage limit"^^xsd:string .
+
+abox:MaxConversionPolicySize_C6_280000 a li:MaxConversionPolicySize,
+        li:TotalCombinedCoverageAmount ;
+    li:hasDeathBenefitAmount 280000.0 ;
+    li:labelValue "$280,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "total coverage, basic life insurance, voluntary supplemental"^^xsd:string .
+
+abox:PayoutTriggerCondition_C6_AcceleratedDeathBenefit a li:PayoutTriggerCondition,
+        li:PolicyContinuationProtection ;
+    li:labelValue "accelerated death benefit"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_AcceleratedDeathBenefit a li:PolicyContinuationProtection,
+        li:TerminalDiagnosisBenefit ;
+    li:hasAmount 5000.0,
+        250000.0,
+        "12 months or less"^^xsd:string,
+        "an actuarial discount"^^xsd:string,
+        "equal"^^xsd:string ;
+    li:hasDeathBenefitAmount "reduces the death benefit payable to beneficiaries"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_1200InsurancePlazaDallasTx75201 ;
+    li:labelValue "accelerated death benefit"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "accelerated death benefit, actuarial discount, benefit reduction"^^xsd:string,
+        "accelerated death benefit, death benefit reduction, beneficiary payout"^^xsd:string,
+        "accelerated death benefit, maximum payout, death benefit reduction"^^xsd:string,
+        "accelerated death benefit, minimum payout, terminal illness benefit"^^xsd:string,
+        "accelerated death benefit, terminal illness, life expectancy"^^xsd:string,
+        "beneficiary designation, multiple beneficiaries, equal distribution"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_ConversionPrivilege a li:PolicyContinuationProtection,
+        li:RightToSwitchToPermanentPolicy ;
+    li:conversionAgeImpact "employee’s attained age at the time of conversion"^^xsd:string ;
+    li:definesCancellationRightTimeframe 31 ;
+    li:explainsLackOfAutomaticProtection "Conversion to an individual whole life policy does not require evidence of insurability."^^xsd:string ;
+    li:hasAnnualPremium "age-banded group rates"^^xsd:string ;
+    li:labelValue "conversion privilege"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, attained age, policy issuance"^^xsd:string,
+        "conversion privilege, no evidence of insurability, individual whole life policy"^^xsd:string,
+        "conversion privilege, time limit, group coverage termination"^^xsd:string,
+        "portable coverage, age-banded rates, premium calculation"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_CoverageEnds a li:PolicyContinuationProtection,
+        li:TerminationConditionSet ;
+    li:effectiveDateOfNoPartialWithdrawalRule "the date the Master Policy terminates"^^xsd:date,
+        "the date the employee ceases active full-time employment"^^xsd:date,
+        "the date the employee requests termination of voluntary coverage"^^xsd:date,
+        "the last day for which required premiums have been paid"^^xsd:date,
+        "the last day of the month in which the employee ceases to be eligible"^^xsd:date ;
+    li:hasAnnualPremium "the employee may convert to an individual whole life policy"^^xsd:string ;
+    li:hasEffectiveDate "If an employee leaves employment, they may port their coverage as an individual policy."^^xsd:string ;
+    li:labelValue "coverage ends"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, group-to-individual transition, non-premium-related termination"^^xsd:string,
+        "coverage end dates, employee eligibility loss, voluntary coverage cancellation"^^xsd:string,
+        "portability, employment termination, individual policy continuation"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_IndividualWholeLifePolicy a li:PolicyContinuationProtection,
+        li:PostConversionPolicy ;
+    li:hasAmount 200000 ;
+    li:hasAnnualPremium "standard premium rates"^^xsd:string ;
+    li:labelValue "individual whole life policy"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, maximum benefit limit, individual policy conversion"^^xsd:string,
+        "conversion privilege, standard premium rates, individual policy"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_MasterGroupPolicy a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:labelValue "Master Group Policy"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:PolicyContinuationProtection_C6_WaiverOfPremium a li:PolicyContinuationProtection,
+        li:PremiumRelief ;
+    li:effectiveDateOfNoPartialWithdrawalRule "when the individual recovers from disability"^^xsd:string,
+        "when the individual returns to work"^^xsd:string ;
+    li:hasAgeEligibility 65 ;
+    li:hasAmount 6,
+        "without premium payment"^^xsd:string ;
+    li:hasAnnualPremium 6,
+        "annually"^^xsd:string,
+        "their voluntary life insurance premiums may be waived"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:labelValue "Waiver of Premium"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "disability waiver, annual proof, premium waiver"^^xsd:string,
+        "premium waiver, disability benefits, age 65 termination"^^xsd:string,
+        "premium waiver, disability coverage, return to work"^^xsd:string,
+        "total disability, premium waiver, consecutive months"^^xsd:string,
+        "voluntary life insurance, total disability, premium waiver"^^xsd:string,
+        "waiver of premium, disability coverage, premium payment suspension"^^xsd:string,
+        "waiver of premium, disability recovery, coverage continuation"^^xsd:string .
+
+abox:PolicyEffectiveDate_C6_June12024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "June 1, 2024"^^xsd:string ;
+    li:effectiveCoverageStart "2024-06-01"^^xsd:date,
+        "date of hire"^^xsd:string ;
+    li:effectiveDateOfNoPartialWithdrawalRule "31 days of hire"^^xsd:string ;
+    li:hasEffectiveDate "The voluntary additional coverage was elected by the employee."^^xsd:string ;
+    li:issueDate "2024-06-01"^^xsd:date ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "effective date, coverage start, policy activation"^^xsd:string,
+        "eligibility, date of hire, coverage start"^^xsd:string,
+        "voluntary coverage, enrollment period, 31-day rule"^^xsd:string,
+        "voluntary supplemental life insurance, employee election, coverage enrollment"^^xsd:string .
+
+abox:PolicyEffectiveDate_C6_LastDayOfTheMonthInWhichYouCease a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:conversionAgeImpact "No medical exam is required for conversion to an individual whole life policy."^^xsd:string ;
+    li:dateValue "last day of the month in which you cease to be an eligible employee"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, no medical exam, individual whole life policy"^^xsd:string .
+
+abox:PortCoverageDeadline_C6_Within31DaysOfTerminationOfEmplo a li:PortCoverageDeadline,
+        li:RetryPaymentDate ;
+    li:dateValue "within 31 days of termination of employment"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:PrimaryBeneficiary_C6_JordanCaseyTaylor a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasAnnualPremiumTaxCap 31 ;
+    li:hasCertificateHolderName "Jordan Casey Taylor"^^xsd:string ;
+    li:hasDeathBenefitAmount "100%"^^xsd:string ;
+    li:hasEffectiveDate "spouse"^^xsd:string ;
+    li:partyName "Jordan Casey Taylor"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "primary beneficiary, beneficiary designation, life insurance benefits"^^xsd:string,
+        "primary beneficiary, benefit distribution, payout percentage"^^xsd:string,
+        "spouse, beneficiary, primary beneficiary"^^xsd:string,
+        "voluntary coverage enrollment, 31-day deadline, late entrant provisions"^^xsd:string .
+
+abox:ProofOfDeath_C6_CertifiedDeathCertificate a li:ProofOfDeath,
+        li:RegulatoryDisclosure ;
+    li:labelValue "certified death certificate"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ProofOfDeath_C6_ProofOfBeneficiaryIdentity a li:ProofOfDeath,
+        li:RegulatoryDisclosure ;
+    li:labelValue "proof of beneficiary identity"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ProofRequirementDuringWaiver_C6_YouMustProvideProofOfContinuingD a li:ProofRequirementDuringWaiver ;
+    li:labelValue "You must provide proof of continuing disability annually"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:RetryPaymentDate_C6_12Months a li:RetryPaymentDate,
+        li:TimeThresholdForTerminalIllnessEligibility ;
+    li:dateValue "12 months"^^xsd:string ;
+    li:hasEffectiveDate "12 months"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_1200InsurancePlazaDallasTx75201 ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, coverage effective date, death benefit denial"^^xsd:string .
+
+abox:SupplementaryEmployeeElectedCoverage_C6_100000 a li:MaxConversionPolicySize,
+        li:SupplementaryEmployeeElectedCoverage ;
+    li:canBeElectedInIncrementsOf 10000.0 ;
+    li:earnedOn "policy anniversary"^^xsd:string ;
+    li:hasAnnualBaseSalaryForLifeBenefit 2,
+        "Salary changes"^^xsd:string,
+        "five times the employee’s salary"^^xsd:string ;
+    li:hasContingentInterestPercentage "100%"^^xsd:string ;
+    li:hasDeathBenefitAmount 100000.0 ;
+    li:labelValue "$100,000"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "annual recalibration, policy anniversary, basic life benefit"^^xsd:string,
+        "basic life benefit, annual base salary, coverage calculation"^^xsd:string,
+        "contingent beneficiary, benefit distribution, designated beneficiaries"^^xsd:string,
+        "salary changes, basic benefit calculation, annual recalculation"^^xsd:string,
+        "voluntary supplemental life insurance, coverage amount, elective benefits"^^xsd:string,
+        "voluntary supplemental life insurance, coverage multiplier, salary-based limit"^^xsd:string,
+        "voluntary supplemental life, coverage increments, election options"^^xsd:string .
+
+abox:SupplementaryEmployeeElectedCoverage_C6_VoluntaryAdditionalCoverage a li:PolicyContinuationProtection,
+        li:SupplementaryEmployeeElectedCoverage ;
+    li:labelValue "Voluntary Additional Coverage"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:WaiverTerminationCriteria_C6_WaiverEndsWhenYouReturnToWorkRec a li:WaiverTerminationCriteria ;
+    li:labelValue "Waiver ends when you return to work, recover, or reach age 65"^^xsd:string ;
+    li:sourceContractID "C6"^^xsd:string .
+
+abox:ClaimMailingAddress_C6_1200InsurancePlazaDallasTx75201 a li:ClaimMailingAddress ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:stateOfIssuance "1200 Insurance Plaza, Dallas, TX 75201"^^xsd:string .
+
+abox:ClaimMailingAddress_C6_SanJoseCalifornia a li:ClaimMailingAddress,
+        li:CorporateHeadquartersLocation ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:stateOfIssuance "San Jose, California"^^xsd:string .
+
+abox:ClaimMailingAddress_C6_PlazaDallasTx75201 a li:ClaimMailingAddress,
+        li:CorporateHeadquartersLocation ;
+    li:hasEffectiveDate "Dallas, TX 75201"^^xsd:string,
+        "Dallas, Texas"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C6_PlazaDallasTx75201 ;
+    li:sourceContractID "C6"^^xsd:string ;
+    li:sourceContractSection "Dallas, Texas, Corporate Headquarters, Address Information"^^xsd:string,
+        "Plaza address, Dallas location, contact information"^^xsd:string ;
+    li:stateOfIssuance "Plaza, Dallas, TX 75201"^^xsd:string .
+

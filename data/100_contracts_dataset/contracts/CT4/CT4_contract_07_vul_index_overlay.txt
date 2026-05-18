@@ -1,0 +1,77 @@
+INDEX-OVERLAY VARIABLE UNIVERSAL LIFE POLICY
+Granite Ridge Life and Annuity Company
+
+Policy Number: GRL-IOVUL-2026-7035
+Policy Date: April 10, 2026
+
+INSURED PARTY
+Name: Nathan Cole Whitaker
+Date of Birth: March 27, 1982
+Gender: Male | Age at Issue: 44 | Class: Preferred
+
+POLICY SPECIFICATIONS
+Initial Face Amount: $900,000
+Planned Annual Premium: $10,800
+Death Benefit Option: Option II (Face + Account Value)
+Index Overlay Program: Elected
+
+BENEFICIARIES
+Primary: Lauren Paige Whitaker - 100%
+Contingent: Estate of insured - 100%
+
+SECTION 1: DEFINITIONS
+1.1 "Index Overlay Sleeve" means the rules-based managed sleeve that reallocates among underlying variable portfolios using a published volatility-control methodology.
+1.2 "Base Portfolio" means the underlying portfolio selected by the owner to support the Index Overlay Sleeve.
+1.3 "Overlay Reset Date" means the monthly date on which the sleeve may rebalance pursuant to the overlay program.
+1.4 "Protected Cash Position" means the short-term reserve allocation used by the overlay methodology during market stress periods.
+
+SECTION 2: INVESTMENT OPTIONS
+2.1 Net premiums may be allocated among U.S. Broad Market, International Equity, Core Bond, Managed Risk Overlay Sleeve, and Fixed Account options.
+2.2 Current Allocation: 50% Managed Risk Overlay Sleeve, 20% U.S. Broad Market, 10% International Equity, 10% Core Bond, 10% Fixed Account.
+2.3 The Managed Risk Overlay Sleeve is not an indexed universal life account and remains part of the variable separate account.
+2.4 We may terminate or replace the overlay methodology if the index sponsor discontinues the strategy or licensing.
+
+SECTION 3: CHARGES
+3.1 PREMIUM LOAD: 4.00%
+3.2 M&E CHARGE: 0.88% annually, deducted daily
+3.3 MONTHLY POLICY CHARGE: $13
+3.4 COST OF INSURANCE: Monthly based on net amount at risk
+3.5 FUND EXPENSES: 0.18% to 1.00% annually
+3.6 OVERLAY PROGRAM CHARGE: 0.20% annually on values in the Managed Risk Overlay Sleeve
+3.7 SURRENDER CHARGE: 7% years 1-4, 4% years 5-6, 2% years 7-8, 0% year 9+
+
+SECTION 4: BENEFIT DESIGN
+4.1 OPTION II - FACE PLUS ACCOUNT VALUE (CURRENTLY SELECTED)
+4.2 The death benefit will fluctuate with account value and any applicable corridor required by law.
+4.3 You may change to Option I once each policy year, subject to our administrative rules and a $35 processing fee.
+4.4 We reserve the right to require evidence of insurability for any requested increase in death benefit.
+
+SECTION 5: RIDERS AND PROGRAM FEATURES
+5.1 UNEMPLOYMENT PREMIUM DEFERMENT RIDER
+5.2 SYSTEMATIC TRANSFER PROGRAM
+5.3 VOLATILITY CONTROL DISCLOSURE
+
+SECTION 6: LOANS AND WITHDRAWALS
+6.1 POLICY LOANS: Maximum 90% of surrender value; 5.15% variable; loaned amounts are removed proportionately from all investment options.
+6.2 PARTIAL WITHDRAWALS: Minimum $1,000; maximum account value less surrender charges and loan reserve; processing fee $25.
+6.3 Withdrawals and loans may reduce the effect of the overlay program and the value available for future rebalancing.
+
+SECTION 7: LAPSE AND REINSTATEMENT
+7.1 This policy lapses if account value is insufficient to cover monthly deductions and the grace period expires.
+7.2 We will send notice at least 30 days before lapse.
+7.3 Reinstatement within 5 years requires evidence of insurability, payment of required amounts, and compliance with then-current rules.
+
+SECTION 8: EXCLUSIONS AND LIMITATIONS
+8.1 SUICIDE: If death occurs by suicide within 2 years, liability is limited to premiums paid less withdrawals and debt.
+8.2 INVESTMENT RISK: The owner bears all investment risk for the variable account, including the overlay sleeve.
+8.3 INDEX SPONSOR LIMITATION: No index sponsor is liable for policy performance, charges, or death benefits.
+
+SECTION 9: DISCLOSURES
+9.1 This policy is issued through Granite Ridge Separate Account V.
+9.2 The overlay sleeve is part of the variable account and is not a bank product or deposit.
+9.3 Read the prospectus and overlay supplement before investing.
+
+EXECUTION
+Granite Ridge Life and Annuity Company
+Denver, Colorado
+Chief Insurance Officer

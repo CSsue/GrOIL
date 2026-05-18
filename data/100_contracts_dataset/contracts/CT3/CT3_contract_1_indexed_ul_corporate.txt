@@ -1,0 +1,271 @@
+═══════════════════════════════════════════════════════════════════
+              INDEXED UNIVERSAL LIFE INSURANCE POLICY
+              Pinnacle Life & Annuity Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: PLA-IUL-24-00782
+Issue Date: February 1, 2024
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Thornton Enterprises LLC (a Delaware limited liability company)
+Insured: Marcus Dale Thornton
+Gender: Male | DOB: 07/22/1975 | Age: 48
+Taxpayer ID (Owner): 83-4412209
+Insured SSN: ***-**-6841
+
+Relationship of Owner to Insured: Business Owner / Key Person
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $1,500,000
+Planned Premium: $1,200/month
+Minimum Premium: $350/month
+Target Premium: $1,200/month
+Death Benefit Option: Increasing (Option B)
+Policy Classification: Corporate-Owned Life Insurance (COLI)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Thornton Enterprises LLC - 100%
+Contingent: Sandra K. Thornton (Spouse of Insured) - 100%
+
+IRS Notice 2008-42 Disclosure: This policy may qualify as a COLI 
+arrangement. Owner must satisfy employee notice and consent 
+requirements under IRC §101(j). Failure to comply may result in 
+death benefit proceeds being includable in gross income.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means the sum of all Segment Values plus any 
+    Fixed Account balance, less outstanding policy loans.
+
+1.2 "Index Segment" means a portion of Account Value allocated 
+    to an indexed crediting strategy for one Segment Term.
+
+1.3 "Segment Term" means a one-year or two-year period, as 
+    elected, during which an Index Segment earns indexed credits.
+
+1.4 "Index Cap Rate" means the maximum credited rate for a 
+    given Segment, declared at Segment inception.
+
+1.5 "Floor Rate" means the minimum indexed credit rate, 
+    guaranteed to be not less than 0% (protection from loss).
+
+1.6 "Participation Rate" means the percentage of positive index 
+    change applied to calculate indexed credits; guaranteed 
+    minimum 100%.
+
+1.7 "Cost of Insurance" (COI) means the monthly charge based on 
+    net amount at risk, insured age, sex, and rate class.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - FLEXIBLE PREMIUM PAYMENTS
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums may be remitted at any time subject to:
+
+    Minimum per payment: $250
+    Annual maximum: $250,000 (IRS corridor compliance)
+    Guideline Single Premium limit applies per IRC §7702
+
+2.2 A premium load of 5% is deducted from each premium before 
+    allocation to Account Value.
+
+2.3 Premiums received outside a Segment allocation window are 
+    credited to the Fixed Account until the next Segment 
+    start date.
+
+2.4 Policy remains in force so long as Account Value exceeds 
+    total monthly deductions. No grace period applies during 
+    an active Segment Term without written request.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - INDEXED CREDITING STRATEGIES
+═══════════════════════════════════════════════════════════════════
+3.1 AVAILABLE STRATEGIES (elected at each Segment start):
+
+    (a) S&P 500® Annual Point-to-Point
+        Floor: 0% | Cap: Declared annually (current: 11.00%)
+        Participation Rate: 100%
+
+    (b) S&P 500® Two-Year Point-to-Point
+        Floor: 0% | Cap: Declared at inception (current: 24.00%)
+        Participation Rate: 100%
+
+    (c) Bloomberg U.S. Dynamic Balance Index II
+        Floor: 0% | No Cap | Participation Rate: 130%
+        (Current participation rate; guaranteed minimum: 100%)
+
+    (d) Fixed Account
+        Guaranteed minimum: 2.50% per annum
+        Current rate: 4.10% per annum
+
+3.2 The S&P 500® is a product of S&P Dow Jones Indices LLC. This 
+    policy is not sponsored, endorsed, sold, or promoted by S&P.
+
+3.3 We reserve the right to replace any index if it is 
+    discontinued or if calculation methodology materially changes, 
+    subject to regulatory approval.
+
+3.4 Indexed credits are applied at end of each Segment Term; 
+    no partial-year credit is available on terminated Segments.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+4.1 On the 1st of each calendar month, the following are 
+    deducted from the Fixed Account (or, if insufficient, 
+    pro-rata from Segment Values):
+
+    (a) Cost of Insurance charge
+    (b) Policy fee: $12.00/month
+    (c) Per-unit charge: $0.09 per $1,000 of Specified Amount 
+        (applies for first 10 policy years)
+    (d) Outstanding loan interest, if not paid separately
+
+4.2 COI Rate Basis: 2017 CSO Gender-Distinct Aggregate Table, 
+    nonsmoker rates apply; rates are guaranteed not to exceed 
+    maximums shown in the attached COI Schedule.
+
+4.3 Net Amount at Risk = Death Benefit - Account Value
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION B (Increasing) — Currently Selected
+    Death Benefit = Specified Amount + Account Value
+
+5.2 OPTION A (Level) — Available by Request
+    Death Benefit = Specified Amount
+
+5.3 IRC §7702 Corridor: Regardless of elected option, the 
+    death benefit shall not be less than the applicable 
+    percentage of Account Value as required by federal law.
+
+5.4 Death benefit is paid net of outstanding policy loans. 
+    Payment is made within 30 days of receipt of due proof 
+    of death and all required claim forms.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+6.1 Withdrawals are permitted only from the Fixed Account or 
+    at the end of a Segment Term. Mid-term withdrawals from 
+    an Index Segment trigger a Segment Withdrawal Adjustment.
+
+6.2 Segment Withdrawal Adjustment = withdrawal amount × 
+    (1 - days remaining in Segment Term / total Segment days)
+
+6.3 Minimum withdrawal: $1,000
+    Maximum: Account Value less $5,000 reserve
+
+6.4 First two withdrawals per policy year: no charge.
+    Each additional withdrawal: $35 per transaction.
+
+6.5 Withdrawals reduce Account Value and, if Option B is in 
+    force, reduce death benefit dollar-for-dollar.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+7.1 Maximum loan: 85% of current Account Value
+
+7.2 Standard Loan Interest Rate: Prime Rate + 1.00%, 
+    minimum 4.00%, adjusted each January 1.
+
+7.3 Participating (Wash) Loan: Beginning in policy year 11, 
+    loaned amounts may earn indexed credits at the same rate 
+    as if unloaned. Loan interest charged at a fixed 5.00%.
+
+7.4 Outstanding loans reduce death benefit dollar-for-dollar 
+    and may cause lapse if Account Value is insufficient 
+    to cover monthly deductions.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER & SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 Cash Surrender Value = Account Value - Surrender Charge - 
+    Outstanding Loans
+
+8.2 Surrender Charge Schedule (% of Target Premium × Years 
+    of Target Premiums paid, capped at Specified Amount):
+    Year 1: 100% | Year 3: 80% | Year 5: 60% | Year 7: 40%
+    Year 9: 20%  | Year 10: 10% | Year 11+: 0%
+
+8.3 No surrender charge applies to the Fixed Account balance 
+    accumulated from premiums paid above Target Premium.
+
+8.4 Upon full surrender, all Segment Values are liquidated; 
+    no indexed credit is applied for the incomplete Segment.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+9.1 SUICIDE EXCLUSION: Death by suicide within 24 months of 
+    issue date: proceeds limited to premiums paid, without 
+    interest, less outstanding loans.
+
+9.2 CONTESTABILITY: We may rescind this policy within 2 years 
+    of issue date for material misrepresentation in the 
+    application while the Insured is living.
+
+9.3 WAR EXCLUSION: No war exclusion applies under this contract.
+
+9.4 AVIATION EXCLUSION: No aviation exclusion applies.
+
+9.5 MATERIAL CHANGE RULE: Any benefit increase triggers a new 
+    2-year contestability and suicide period for the increase.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LAPSE AND REINSTATEMENT
+═══════════════════════════════════════════════════════════════════
+10.1 If Account Value is insufficient to cover monthly 
+     deductions, a 61-day grace period commences.
+
+10.2 During grace period, coverage remains in force. If the 
+     Insured dies during the grace period, the death benefit 
+     is reduced by the overdue monthly deductions.
+
+10.3 REINSTATEMENT: Within 5 years of lapse, the policy may 
+     be reinstated upon:
+     (a) Evidence of insurability satisfactory to us
+     (b) Payment of all overdue charges plus interest at 6%
+     (c) No outstanding loan may be reinstated without 
+         full repayment
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - RIDERS (ATTACHED AND INCORPORATED)
+═══════════════════════════════════════════════════════════════════
+11.1 OVERLOAN PROTECTION RIDER (no additional premium):
+     If policy loans exceed 95% of Account Value after 
+     policy year 15 and insured is age 75+, policy is 
+     converted to a reduced paid-up status rather than 
+     lapsing, preserving a reduced death benefit.
+
+11.2 CHRONIC ILLNESS ACCELERATION RIDER (no additional premium):
+     Up to 24% of Specified Amount per year (maximum $240,000) 
+     may be accelerated if Insured is certified as chronically 
+     ill by a licensed healthcare practitioner.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Des Moines, Iowa
+
+[Signature]
+President & Chief Executive Officer
+Pinnacle Life & Annuity Company
+
+[Signature]
+Vice President, Policy Administration
+
+Date: February 1, 2024
+
+This policy, the application, and all attached riders and schedules 
+constitute the entire contract. No agent has authority to modify 
+this contract or waive any of its provisions.
+
+═══════════════════════════════════════════════════════════════════

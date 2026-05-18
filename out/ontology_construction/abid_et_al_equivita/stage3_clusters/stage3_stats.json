@@ -1,0 +1,17 @@
+{
+  "class": {
+    "real_clusters": 196,
+    "noise_candidates": 0,
+    "total_candidates": 516
+  },
+  "property": {
+    "real_clusters": 115,
+    "noise_candidates": 0,
+    "total_candidates": 1298
+  },
+  "axiom": {
+    "real_clusters": 34,
+    "noise_candidates": 0,
+    "total_candidates": 90
+  }
+}

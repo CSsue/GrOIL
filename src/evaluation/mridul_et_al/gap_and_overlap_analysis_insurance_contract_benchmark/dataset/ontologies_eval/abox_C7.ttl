@@ -1,0 +1,557 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AccidentalDeathBenefit_C7_AccidentalDeathBenefit a li:AccidentalDeathBenefit,
+        li:PremiumReliefAfterLongTermDisability ;
+    li:annualPremiumAmount 94.0 ;
+    li:hasChronicIllnessDefinition "No Actuarial Discount – Chronic Illness"^^xsd:string ;
+    li:labelValue "ACCIDENTAL DEATH BENEFIT"^^xsd:string ;
+    li:premiumAmount 94.0 ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Accidental Death Benefit, Annual Premium, Insurance Rider Cost"^^xsd:string,
+        "Chronic Illness, Accelerated Death Benefit, No Actuarial Discount"^^xsd:string .
+
+abox:AdditionalCoverageAccessRight_C7_Rider6GuaranteedInsurabilityOpti a li:AdditionalCoverageAccessRight,
+        li:PremiumReliefAfterLongTermDisability ;
+    li:annualPremiumAmount 89.0 ;
+    li:gracePeriodDuration 31 ;
+    li:hasAgeEligibility 50 ;
+    li:hasAmount 100000,
+        "Monthly payment mode is available upon request"^^xsd:string,
+        "all or part"^^xsd:string ;
+    li:hasAnnualPremium "annually"^^xsd:string ;
+    li:hasEffectiveDate 43,
+        46,
+        49,
+        "age 40"^^xsd:string,
+        "birth or adoption of a child"^^xsd:string ;
+    li:labelValue "RIDER 6: GUARANTEED INSURABILITY OPTION"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Guaranteed Insurability Option, Age 40 Option Date, Additional Coverage Purchase"^^xsd:string,
+        "Guaranteed Insurability Option, Age 43, Policy Rider Benefits"^^xsd:string,
+        "Guaranteed Insurability Option, Age 46, Rider 6"^^xsd:string,
+        "Guaranteed Insurability Option, Age 49, Additional Coverage"^^xsd:string,
+        "Guaranteed Insurability Option, Age Limitation, Coverage Expansion"^^xsd:string,
+        "Guaranteed Insurability Option, Annual Premium, Rider 6"^^xsd:string,
+        "Guaranteed Insurability Option, Life Insurance Riders, Birth or Adoption Event"^^xsd:string,
+        "RIDER 6, Guaranteed Insurability, $100,000 limit"^^xsd:string,
+        "grace period, premium payment, coverage continuation"^^xsd:string,
+        "payment modes, premium flexibility, annual vs monthly"^^xsd:string,
+        "policy conversion, coverage flexibility, renewal terms"^^xsd:string,
+        "premium payment, annual payment mode, payment terms"^^xsd:string .
+
+abox:AuthorizedSignatory_C7_PresidentAndCeo a li:AuthorizedSignatory,
+        li:CertificateHolder ;
+    li:partyName "President and CEO"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:CancellationWindow_C7_0DaysWrittenNotice a li:CancellationWindow,
+        li:PolicyContinuationProtection ;
+    li:definesCancellationRightTimeframe 0 ;
+    li:hasLocation abox:ClaimMailingAddress_C7_DenverColorado ;
+    li:labelValue "0 days written notice"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "written notice, policy terms, notice period"^^xsd:string .
+
+abox:CertificateHolder_C7_ChristopherBennettJr a li:CertificateHolder,
+        li:EligibleInsuredChildUnderRider ;
+    li:dateOfConfirmationOrDeathEvent "90 days"^^xsd:integer ;
+    li:hasAgeEligibility "all natural and legally adopted children"^^xsd:string ;
+    li:hasAmount "the direct cause of death"^^xsd:string ;
+    li:partyName "Christopher Bennett Jr."^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Children's Term Insurance, Natural Children, Legally Adopted Children"^^xsd:string,
+        "accidental death benefit, 90-day clause, death timing requirement"^^xsd:string,
+        "accidental death benefit, direct cause of death, rider conditions"^^xsd:string .
+
+abox:CertificateHolder_C7_ChristopherDavidBennett a li:CertificateHolder,
+        li:Insured ;
+    li:ageAtIssue 37 ;
+    li:hasAllocationPercentage 20.0 ;
+    li:hasAmount "20%"^^xsd:string ;
+    li:hasAnnualPremium 30,
+        612.00 ;
+    li:hasCertificateHolderName "Christopher Bennett Jr."^^xsd:string,
+        "Christopher David Bennett"^^xsd:string,
+        "Olivia Grace Bennett"^^xsd:string,
+        "Rachel Marie Bennett"^^xsd:string ;
+    li:hasDeathBenefitAmount 20.0,
+        "Preferred Non-Smoker"^^xsd:string ;
+    li:hasEffectiveDate "1987-05-20"^^xsd:date ;
+    li:hasFaceAmount "male"^^xsd:string ;
+    li:partyName "Christopher David Bennett"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Beneficiaries, Primary Beneficiary, Insurance Policy"^^xsd:string,
+        "Insured Information, Date of Birth, Policy Underwriting"^^xsd:string,
+        "Insured Information, Gender Classification, Underwriting Class"^^xsd:string,
+        "Insured Information, Policy Holder Identity, Personal Details"^^xsd:string,
+        "base annual premium, policy cost, term life insurance"^^xsd:string,
+        "beneficiaries, death benefit distribution, policy payout"^^xsd:string,
+        "beneficiaries, policy distribution, primary vs secondary"^^xsd:string,
+        "beneficiary allocation, death benefit payout, policy beneficiaries"^^xsd:string,
+        "daughter, beneficiary relationship, insured family member"^^xsd:string,
+        "policy period, term length, coverage duration"^^xsd:string,
+        "son, beneficiary, family relation"^^xsd:string,
+        "spouse, beneficiary, insured relationship"^^xsd:string,
+        "underwriting class, preferred risk, non-smoker status"^^xsd:string ;
+    li:underwritingClass "Preferred Non-Smoker"^^xsd:string .
+
+abox:CertificateHolder_C7_OliviaGraceBennett a li:CertificateHolder,
+        li:EligibleInsuredChildUnderRider ;
+    li:childCoverageAmount "Automatic"^^xsd:string ;
+    li:hasDeathBenefitAmount 750000,
+        "The remaining death benefit under Rider 2"^^xsd:string ;
+    li:partyName "Olivia Grace Bennett"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Accelerated Death Benefit, Terminal Illness, Beneficiary Payout"^^xsd:string,
+        "Accidental Death Benefit, Additional Death Payment, Accident-Caused Death"^^xsd:string,
+        "Children's Term Insurance, Future Children Coverage, No Medical Exam Required"^^xsd:string .
+
+abox:ChronicCareAdvance_C7_AcceleratedDeathBenefitChronicIl a li:ChronicCareAdvance,
+        li:PremiumReliefAfterLongTermDisability ;
+    li:annualPremiumAmount 48.0 ;
+    li:hasAmount "2%"^^xsd:string,
+        "50%"^^xsd:string ;
+    li:hasChronicIllnessDefinition "chronic illness status"^^xsd:string,
+        "the insured becomes chronically ill and cannot perform two or more Activities of Daily Living"^^xsd:string ;
+    li:hasEffectiveDate "Rider 3"^^xsd:string ;
+    li:labelValue "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS"^^xsd:string ;
+    li:premiumAmount 48.0 ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Accelerated Death Benefit, Chronic Illness, Rider Premium"^^xsd:string,
+        "Chronic Illness, Accelerated Death Benefit, Advance Limit"^^xsd:string,
+        "chronic illness, Activities of Daily Living, accelerated death benefit"^^xsd:string,
+        "chronic illness, healthcare practitioner certification, Rider 3"^^xsd:string,
+        "chronic illness, monthly advance, face amount"^^xsd:string .
+
+abox:ClaimProcessingWindow_C7_30Days a li:ClaimProcessingWindow,
+        li:TimePeriod ;
+    li:labelValue "30 days"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:ClaimProcessingWindow_C7_Within90DaysOfAccident a li:ClaimProcessingWindow,
+        li:RetryPaymentDate ;
+    li:dateValue "within 90 days of accident"^^xsd:string ;
+    li:definesCancellationRightTimeframe 90 ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Guaranteed Insurability Option, Option Dates, Time Limit for Purchase"^^xsd:string .
+
+abox:ContingentBeneficiary_C7_BennettFamilyIrrevocableTrust a li:ContingentBeneficiary ;
+    li:hasEstateShareAllocation "100%"^^xsd:string ;
+    li:insurerName "Bennett Family Irrevocable Trust"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiaries, irrevocable trust, estate distribution"^^xsd:string .
+
+abox:ContingentBeneficiary_C7_ProtectplusFamilyInsuranceCo a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:hasCertificateHolderName "Olivia Grace Bennett"^^xsd:string,
+        "ProtectPlus Family Insurance Co."^^xsd:string ;
+    li:hasEffectiveDate "2024-07-12"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C7_DenverColorado ;
+    li:insurerName "ProtectPlus Family Insurance Co."^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "beneficiaries, Olivia Grace Bennett, policy distribution"^^xsd:string,
+        "issue date, document timestamp, effective date"^^xsd:string,
+        "issuing company, document origin, company identification"^^xsd:string,
+        "policy date, coverage start, term life insurance"^^xsd:string .
+
+abox:ConversionDeadline_C7_70thBirthday a li:Age,
+        li:ConversionDeadline ;
+    li:labelValue "70th birthday"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:CoreBenefitsSection_C7_Section1BasePolicyCoverage a li:CoreBenefitsSection,
+        li:RopRulesSection ;
+    li:hasAnnualPremium 102.0 ;
+    li:labelValue "Section 1: Base Policy Coverage"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Rider 1, Waiver of Premium, Annual Premium"^^xsd:string .
+
+abox:CoveredEvent_C7_ChronicIllness a li:CoveredEvent,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Chronic Illness"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:CoveredEvent_C7_Disability a li:CoveredEvent,
+        li:PolicyContinuationProtection ;
+    li:definesAnnualAllocationAdjustmentRange "the complete inability to perform the material and substantial duties of the insured's regular occupation due to sickness or injury"^^xsd:string ;
+    li:hasCertificateHolderName "Waiver of Premium Due to Disability"^^xsd:string ;
+    li:hasChronicIllnessDefinition "the inability to perform at least two of six Activities of Daily Living for at least 90 consecutive days"^^xsd:string ;
+    li:labelValue "Disability"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Chronic Illness, Activities of Daily Living, 90-day duration"^^xsd:string,
+        "Disability Definition, Waiver of Premium, Policy Coverage"^^xsd:string,
+        "Waiver of Premium, Disability Coverage, Rider Benefits"^^xsd:string .
+
+abox:CoveredEvent_C7_TerminalIllness a li:CoveredEvent,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Terminal Illness"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C7_750000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:gracePeriodDuration "during the grace period"^^xsd:string,
+        "the grace period"^^xsd:string ;
+    li:hasAmount "additional life insurance coverage"^^xsd:string ;
+    li:hasAnnualPremium 1089.00 ;
+    li:hasDeathBenefitAmount 750000 ;
+    li:labelValue "$750,000"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Annual Premium, Policy Cost, Rider Fees"^^xsd:string,
+        "Death Benefit, Accidental Injury, Additional Payout"^^xsd:string,
+        "grace period, coverage continuation, premium payment"^^xsd:string,
+        "grace period, death benefit deduction, premium payment"^^xsd:string,
+        "guaranteed insurability, additional coverage, no medical underwriting"^^xsd:string .
+
+abox:DeathBenefit_C7_DeathBenefit a li:DeathBenefit ;
+    li:hasEffectiveDate "two years of the policy issue date"^^xsd:string ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, premium refund, policy termination"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_AviationAsPilotCrew a li:DeathCauseLimitingRefund,
+        li:ExcludedCauseOfDeath ;
+    li:labelValue "aviation (as pilot/crew)"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_SelfInflictedInjury a li:DeathCauseLimitingRefund,
+        li:ExcludedCauseOfDeath ;
+    li:excludedFromPaymentWhenUnderAlcoholInfluence "Self-inflicted injury"^^xsd:string ;
+    li:hasDeathBenefitAmount "Death Benefit"^^xsd:string ;
+    li:labelValue "self-inflicted injury"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit exclusions, self-inflicted injury, accidental death criteria"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_Suicide a li:DeathCauseLimitingRefund,
+        li:ExcludedCauseOfDeath ;
+    li:hasDeathBenefitAmount "Death Benefit"^^xsd:string ;
+    li:labelValue "suicide"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Exclusions, Accidental Injury"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_SuicideExclusion a li:DeathCauseLimitingRefund,
+        li:ExcludedCauseOfDeath ;
+    li:labelValue "Suicide Exclusion"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_War a li:DeathCauseLimitingRefund,
+        li:ExcludedCauseOfDeath ;
+    li:hasDeathBenefitAmount "excluded"^^xsd:string ;
+    li:labelValue "war"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Exclusions, War-related death"^^xsd:string .
+
+abox:DependentChildCoverage_C7_ChildrenSTermInsuranceRider a li:DependentChildCoverage,
+        li:PremiumReliefAfterLongTermDisability ;
+    li:childCoverageAmount 15000 ;
+    li:conversionAgeImpact 25 ;
+    li:effectiveCoverageStart "birth"^^xsd:string ;
+    li:hasAgeEligibility 5,
+        8 ;
+    li:hasAmount "five times the rider amount"^^xsd:string ;
+    li:hasAnnualPremium 25 ;
+    li:hasChildRiderPremium 156.0,
+        "No medical exam is required for child coverage under Rider 4"^^xsd:string,
+        "Rider 4"^^xsd:string ;
+    li:labelValue "CHILDREN'S TERM INSURANCE RIDER"^^xsd:string ;
+    li:premiumAmount 156.0 ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Child coverage, no medical exam, Rider 4"^^xsd:string,
+        "Children's Term Insurance, Annual Premium, Rider 4"^^xsd:string,
+        "Children's Term Insurance, Coverage Per Child, Eligible Children"^^xsd:string,
+        "Children's Term Insurance, Eligible Child Coverage, Family Policy Benefits"^^xsd:string,
+        "Children's Term Insurance, Eligible Child, Coverage Age Limit"^^xsd:string,
+        "child coverage, age 25 limit, birth or adoption"^^xsd:string,
+        "child insurance, conversion privilege, age 25 eligibility"^^xsd:string,
+        "conversion rights, children's term insurance, policy conversion"^^xsd:string .
+
+abox:DisqualifyingConditionForPayout_C7_UnderInfluenceOfDrugsAlcohol a li:DisqualifyingConditionForPayout,
+        li:PlanUpgradeRequirement ;
+    li:excludedFromPaymentWhenUnderAlcoholInfluence true ;
+    li:labelValue "under influence of drugs/alcohol"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Substance Use Exclusion, Eligibility Condition"^^xsd:string .
+
+abox:DocumentEffectiveDate_C7_July122024 a li:DocumentEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "July 12, 2024"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:ExclusionTriggerForEarlyDeath_C7_AccidentalInjury a li:ExclusionTriggerForEarlyDeath,
+        li:PolicyContinuationProtection ;
+    li:definesCancellationRightTimeframe "90 days"^^xsd:string ;
+    li:excludedFromPaymentWhenUnderAlcoholInfluence true ;
+    li:hasDeathBenefitAmount "Death Benefit"^^xsd:string ;
+    li:labelValue "accidental injury"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit exclusions, aviation accident exclusion, pilot/crew limitation"^^xsd:string,
+        "Death Benefit, Accident Cause, Claim Eligibility"^^xsd:string,
+        "Death Benefit, alcohol influence, payout conditions"^^xsd:string,
+        "death benefit, accidental injury, timeframe for payout"^^xsd:string .
+
+abox:FaceAmount_C7_750000 a li:FaceAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$750,000"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:GracePeriodAdjustment_C7_UnpaidPremiumWillBeDeductedFromD a li:GracePeriodAdjustment ;
+    li:labelValue "unpaid premium will be deducted from death benefit"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:GracePeriod_C7_31DaysFromDueDate a li:CoverageContinuationWindow,
+        li:GracePeriod ;
+    li:labelValue "31 days from due date"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:MaxConversionPolicySize_C7_108900 a li:MaxConversionPolicySize,
+        li:PlannedAnnualPremium,
+        li:TotalAnnualPremiumWithRiders ;
+    li:hasEffectiveDate "2023-07-12"^^xsd:date ;
+    li:labelValue "$1,089.00"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "premium payment, due date, annual payment"^^xsd:string .
+
+abox:MaxConversionPolicySize_C7_61200 a li:MaxConversionPolicySize,
+        li:PlannedAnnualPremium ;
+    li:labelValue "$612.00"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:MaximumRenewabilityDuration_C7_GuaranteedRenewableToAge95 a li:MaximumRenewabilityDuration,
+        li:RenewalTerm ;
+    li:labelValue "guaranteed renewable to age 95"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:PaymentFrequency_C7_Annual a li:PaymentFrequency,
+        li:PaymentTerm ;
+    li:labelValue "Annual"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:PolicyContinuationProtection_C7_AddingRiders a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:hasAmount "evidence of insurability"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C7_DenverColorado ;
+    li:labelValue "Adding riders"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "adding riders, evidence of insurability, policy modifications"^^xsd:string .
+
+abox:PolicyContinuationProtection_C7_BeneficiaryChanges a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:definesCancellationRightTimeframe "at any time"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C7_DenverColorado ;
+    li:labelValue "Beneficiary changes"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "beneficiary changes, written request, policy flexibility"^^xsd:string .
+
+abox:PolicyEffectiveDate_C7_July122024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "July 12, 2024"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:PolicyEffectiveDate_C7_July122054 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "July 12, 2054"^^xsd:string ;
+    li:hasEffectiveDate "2054-07-12"^^xsd:date ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Term Life Insurance, Coverage Duration, Expiration Date"^^xsd:string .
+
+abox:PolicyIdentifier_C7_PpTl20246729r a li:BurialExpenseCoverage,
+        li:PolicyIdentifier ;
+    li:hasFaceAmount 750000.0,
+        "30-Year Level Premium Term"^^xsd:string ;
+    li:labelValue "PP-TL-2024-6729R"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Face Amount, Base Policy, Insurance Coverage"^^xsd:string,
+        "Term Life Insurance, Policy Duration, Premium Structure"^^xsd:string .
+
+abox:PremiumDueDate_C7_July12 a li:PremiumDueDate,
+        li:RetryPaymentDate ;
+    li:dateValue "July 12"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:PremiumReliefAfterLongTermDisability_C7_AcceleratedDeathBenefitTerminalI a li:PremiumReliefAfterLongTermDisability,
+        li:TerminalIllnessBenefit ;
+    li:hasAnnualPremium "8%"^^xsd:string,
+        "included at no charge"^^xsd:string ;
+    li:hasDeathBenefitAmount 500000.0,
+        "95%"^^xsd:string ;
+    li:labelValue "ACCELERATED DEATH BENEFIT - TERMINAL ILLNESS"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Accelerated Death Benefit, Terminal Illness, Benefit Cap"^^xsd:string,
+        "Accelerated Death Benefit, Terminal Illness, No Premium Cost"^^xsd:string,
+        "Accelerated death benefit, Terminal illness, Actuarial discount"^^xsd:string,
+        "accelerated death benefit, terminal illness, death benefit access"^^xsd:string .
+
+abox:PremiumReliefAfterLongTermDisability_C7_WaiverOfPremiumDueToDisability a li:PremiumReliefAfterLongTermDisability ;
+    li:effectiveDateOfNoPartialWithdrawalRule "the insured recovers, returns to work, or reaches age 65"^^xsd:string ;
+    li:hasAgeEligibility 60 ;
+    li:hasAmount 6 ;
+    li:hasAnnualPremium 6,
+        102.0,
+        "all future premiums are waived"^^xsd:string ;
+    li:hasChronicIllnessDefinition "Activities of Daily Living include bathing, dressing, eating, toileting, transferring, and continence."^^xsd:string ;
+    li:hasEffectiveDate "Rider 1"^^xsd:string,
+        "if the waiver is activated"^^xsd:string ;
+    li:labelValue "WAIVER OF PREMIUM DUE TO DISABILITY"^^xsd:string ;
+    li:premiumAmount 102.0 ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Activities of Daily Living, Chronic Illness Qualification, Rider 3 Details"^^xsd:string,
+        "Rider 1, disability verification, annual proof submission"^^xsd:string,
+        "Waiver of Premium, Disability Insurance, Annual Premium"^^xsd:string,
+        "disability duration, premium waiver, consecutive months"^^xsd:string,
+        "disability, premium waiver, age 60"^^xsd:string,
+        "premium waiver, disability coverage, age 65 termination"^^xsd:string,
+        "premium waiver, disability coverage, continued benefits"^^xsd:string,
+        "premium waiver, disability coverage, future premiums"^^xsd:string .
+
+abox:PremiumReliefRider_C7_WaiverOfPremiumDueToDisability a li:PremiumReliefRider ;
+    li:labelValue "Waiver of Premium Due to Disability"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:PrimaryBeneficiary_C7_ChristopherBennettJr a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasCertificateHolderName "Christopher Bennett Jr."^^xsd:string ;
+    li:hasEstateShareAllocation "20%"^^xsd:decimal ;
+    li:partyName "Christopher Bennett Jr."^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "estate distribution, primary beneficiaries, inheritance percentage"^^xsd:string,
+        "primary beneficiaries, death benefit allocation, family inheritance"^^xsd:string .
+
+abox:PrimaryBeneficiary_C7_OliviaGraceBennett a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasAnnualPremium 1089.00 ;
+    li:hasCertificateHolderName "Olivia Grace Bennett"^^xsd:string ;
+    li:hasCertificateNumber "PP-TL-2024-6729R"^^xsd:string ;
+    li:hasEstateShareAllocation "20%"^^xsd:decimal ;
+    li:partyName "Olivia Grace Bennett"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "estate distribution, primary beneficiaries, inheritance percentages"^^xsd:string,
+        "policy number, insurance documentation, identifier"^^xsd:string,
+        "primary beneficiary, beneficiary allocation, death benefit distribution"^^xsd:string,
+        "total annual premium, riders inclusion, policy cost"^^xsd:string .
+
+abox:PrimaryBeneficiary_C7_RachelMarieBennett a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:gracePeriodDuration 30 ;
+    li:hasAmount "60%"^^xsd:decimal ;
+    li:hasCertificateHolderName "Bennett Family Irrevocable Trust"^^xsd:string,
+        "Rachel Marie Bennett"^^xsd:string ;
+    li:hasChronicIllnessDefinition "Terminal Illness is defined as a medical condition expected to result in death within 24 months as certified by a physician."^^xsd:string ;
+    li:hasDeathBenefitAmount "the death benefit"^^xsd:string ;
+    li:hasEstateShareAllocation "60%"^^xsd:decimal ;
+    li:partyName "Rachel Marie Bennett"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Terminal Illness Definition, Physician Certification, Life Expectancy Threshold"^^xsd:string,
+        "beneficiaries, death benefit allocation, policy payout"^^xsd:string,
+        "contingent beneficiary, irrevocable trust, beneficiary structure"^^xsd:string,
+        "death benefit, policy in force, premium payment requirement"^^xsd:string,
+        "death benefit, proof of death, payout timeline"^^xsd:string,
+        "estate distribution, primary beneficiaries, ownership percentages"^^xsd:string,
+        "primary beneficiaries, death benefit distribution, Rachel Marie Bennett"^^xsd:string .
+
+abox:TerminationPointForDeathBenefit_C7_Age70 a li:TerminationPointForDeathBenefit ;
+    li:annualPremiumAmount "increasing according to the renewal rate schedule"^^xsd:string ;
+    li:hasAgeEligibility 95 ;
+    li:hasAnnualPremium "The premium for any additional coverage purchased via RIDER 6 is determined by the insured’s age and risk classification at the time of exercise."^^xsd:string ;
+    li:hasDeathBenefitAmount 70 ;
+    li:labelValue "age 70"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Age 70 Termination, Policy End Conditions"^^xsd:string,
+        "Rider 6, Guaranteed Insurability, Age-based Premium"^^xsd:string,
+        "policy renewal, age 95 guarantee, guaranteed renewability"^^xsd:string,
+        "renewal premiums, renewal rate schedule, guaranteed renewable"^^xsd:string .
+
+abox:AdditionalWaiverCost_C7_175Year a li:AdditionalWaiverCost ;
+    li:annualPremiumAmount "upon renewal according to the renewal rate schedule"^^xsd:string ;
+    li:labelValue "$175/year"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "renewal rate schedule, premium increases, guaranteed renewability"^^xsd:string .
+
+abox:BurialExpenseCoverage_C7_ThisPolicy a li:BurialExpenseCoverage,
+        li:InsuranceContract ;
+    li:annualPremiumAmount 175.0 ;
+    li:conversionAgeImpact "without evidence of insurability"^^xsd:string ;
+    li:definesCancellationRightTimeframe "before the policy expiration date"^^xsd:string ;
+    li:hasAgeEligibility 70,
+        95 ;
+    li:hasAmount 50000.0 ;
+    li:hasConcept abox:AdditionalWaiverCost_C7_175Year,
+        abox:BurialExpenseCoverage_C7_ThisPolicy,
+        abox:ConversionLimit_C7_50000,
+        abox:DeathCauseLimitingRefund_C7_AviationExclusion,
+        abox:ExcludedAviationScenario_C7_MilitaryCombatOperations,
+        abox:RopRulesSection_C7_Section5Incontestability,
+        abox:RopRulesSection_C7_Section6AviationExclusionWaiver,
+        abox:RopRulesSection_C7_Section7PolicyModification ;
+    li:hasDeathBenefitAmount "Death coverage includes riding as a passenger in any aircraft."^^xsd:string,
+        "excluded"^^xsd:string,
+        "operating an aircraft"^^xsd:string ;
+    li:hasEffectiveDate abox:ContestabilityPeriodDuration_C7_2Years,
+        abox:MaximumAgeForGuarantee_C7_Age95,
+        "2 years"^^xsd:string,
+        "due to the insured's declared private pilot activities"^^xsd:string,
+        "the earlier of the policy expiration date or the insured’s 70th birthday"^^xsd:string,
+        "this policy"^^xsd:string ;
+    li:labelValue "this policy"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "aviation exclusion waiver, additional premium, base premium"^^xsd:string,
+        "aviation exclusion waiver, aircraft operation, death coverage"^^xsd:string,
+        "aviation exclusion waiver, military combat operations, policy exclusions"^^xsd:string,
+        "aviation exclusion waiver, passenger aircraft death coverage, private pilot activities"^^xsd:string,
+        "aviation exclusion waiver, private pilot activities, coverage for aircraft"^^xsd:string,
+        "aviation exclusion, private pilot, flight coverage"^^xsd:string,
+        "conversion option, age limit, permanent insurance"^^xsd:string,
+        "conversion option, policy expiration, permanent life insurance"^^xsd:string,
+        "conversion to permanent insurance, evidence of insurability waiver, policy conversion terms"^^xsd:string,
+        "guaranteed renewal, age 95, renewal terms"^^xsd:string,
+        "incontestability, policy duration, insurer limitations"^^xsd:string,
+        "policy conversion, age limit, expiration date"^^xsd:string,
+        "policy conversion, minimum conversion amount, permanent life insurance"^^xsd:string .
+
+abox:ContestabilityPeriodDuration_C7_2Years a li:ContestabilityPeriodDuration,
+        li:RetryPaymentDate ;
+    li:dateValue "2 years"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:ConversionLimit_C7_50000 a li:ConversionLimit,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$50,000"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C7_AviationExclusion a li:DeathCauseLimitingRefund,
+        li:RestrictedPayoutTrigger ;
+    li:labelValue "aviation exclusion"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:ExcludedAviationScenario_C7_MilitaryCombatOperations a li:ExcludedAviationScenario ;
+    li:labelValue "military combat operations"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:MaximumAgeForGuarantee_C7_Age95 a li:MaximumAgeForGuarantee,
+        li:RetryPaymentDate ;
+    li:dateValue "age 95"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:RopRulesSection_C7_Section5Incontestability a li:CoverageExtension,
+        li:RopRulesSection ;
+    li:labelValue "Section 5: Incontestability"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:RopRulesSection_C7_Section6AviationExclusionWaiver a li:CoverageExtension,
+        li:RopRulesSection ;
+    li:labelValue "Section 6: Aviation Exclusion Waiver"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:RopRulesSection_C7_Section7PolicyModification a li:CoverageExtension,
+        li:RopRulesSection ;
+    li:labelValue "Section 7: Policy Modification"^^xsd:string ;
+    li:sourceContractID "C7"^^xsd:string .
+
+abox:ClaimMailingAddress_C7_DenverColorado a li:ClaimMailingAddress,
+        li:PolicyIssuanceJurisdiction ;
+    li:hasEffectiveDate "Denver, Colorado"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C7_DenverColorado ;
+    li:sourceContractID "C7"^^xsd:string ;
+    li:sourceContractSection "Denver, Colorado, document issuance, geographic origin"^^xsd:string ;
+    li:stateOfIssuance "Denver, Colorado"^^xsd:string .
+

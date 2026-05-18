@@ -1,0 +1,2947 @@
+[
+  {
+    "owl_name": "Fraud",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A deceptive act committed to gain unauthorized benefits under an insurance policy.",
+    "parents": [
+      "Action"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "fraud warning",
+      "insurance fraud",
+      "claim fraud",
+      "fraudulent insurance act",
+      "corporate misconduct"
+    ]
+  },
+  {
+    "owl_name": "PartialBenefitAccess",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A contract provision enabling early or partial payout upon diagnosis of a specified condition.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "RIDER",
+    "resolved_gnp": "Rider",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "additional provision allowing partial benefit access",
+      "provides early payout on diagnosis"
+    ]
+  },
+  {
+    "owl_name": "ContractualProvision",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legally binding term or condition within an insurance contract governing rights and obligations.",
+    "parents": [
+      "ContractualTerm"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "contractual integrity",
+      "Contractual Rights",
+      "contract modification",
+      "applicable law",
+      "Insurance Contract",
+      "governing law",
+      "contract enforcement",
+      "Contractual Obligations"
+    ]
+  },
+  {
+    "owl_name": "PolicyValidity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The state indicating whether a life insurance policy is active and enforceable.",
+    "parents": [
+      "PolicyAttribute"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy terms",
+      "policy validity",
+      "Policy Assignment",
+      "policy effectiveness",
+      "Policy Details",
+      "Policy Terms",
+      "Policy Definition",
+      "application"
+    ]
+  },
+  {
+    "owl_name": "Policy",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal agreement between an insurer and a policyholder outlining coverage terms and conditions.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set Policy subclassOf ContractualAgreement. Reasoning: Policy is a specific instance of a ContractualAgreement. A ContractualAgreement is a broad, general term referring to any formal agreement between parties that defines terms and obligations. A Policy, on the other hand, is a specific type of contractual agreement used in the context of insurance, with defined coverage, premiums, and conditions. Therefore, ContractualAgreement is the broader category (Superclass), and Policy is a more specific type (Subclass). This makes Option A the semantically sound relationship.",
+    "top_members": [
+      "CONCEPT",
+      "ORGANIZATION",
+      "DOCUMENT",
+      "POLICY",
+      "TERM",
+      "FINANCIAL_CONCEPT"
+    ]
+  },
+  {
+    "owl_name": "PolicyEffectiveDate",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The date on which the initial policy coverage becomes active.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DATE",
+    "resolved_gnp": "Period",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "effective date of policy issuance",
+      "start date of initial policy coverage",
+      "duration for examining policy"
+    ]
+  },
+  {
+    "owl_name": "GuaranteedPremiumDuration",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The period during which premium payments are guaranteed to remain level.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "TERM",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "duration of guaranteed premium",
+      "coverage"
+    ]
+  },
+  {
+    "owl_name": "Reinstatement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision allowing restoration of a lapsed life insurance policy under specified conditions.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "reinstatement",
+      "policy reinstatement",
+      "reinstatement period",
+      "coverage restoration",
+      "Reinstatement",
+      "Reinstatement provision",
+      "Benefits recovery",
+      "reinstatement eligibility"
+    ]
+  },
+  {
+    "owl_name": "AgeOrGenderMisstatement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A misrepresentation of the insured's age or gender at the time of policy issuance.",
+    "parents": [
+      "MaterialMisrepresentation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Issue Age",
+      "age misstatement",
+      "Misstatement of Age or Gender"
+    ]
+  },
+  {
+    "owl_name": "PolicyOwnerRights",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The rights granted to the individual who holds ownership of a life insurance policy.",
+    "parents": [
+      "Right"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Owner Rights",
+      "Policy Ownership",
+      "policy owner rights",
+      "Owner Rights",
+      "Ownership Rights",
+      "Policy Ownership Rights",
+      "Policyowner Rights",
+      "Policy Owner"
+    ]
+  },
+  {
+    "owl_name": "LoanAvailability",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The availability of a loan option within a life insurance policy, including automatic premium loan features.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Automatic Premium Loan",
+      "Policy Loan",
+      "Loan Value Availability"
+    ]
+  },
+  {
+    "owl_name": "LifeInsuranceRider",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An optional provision added to a life insurance policy to extend or modify coverage.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Life Insurance Riders",
+      "Riders and Endorsements",
+      "riders",
+      "Rider Addition",
+      "Rider Access",
+      "optional riders",
+      "Optional Riders",
+      "policy rider"
+    ]
+  },
+  {
+    "owl_name": "Period",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A duration or interval of time specified in a life insurance contract.",
+    "parents": [
+      "TemporalConcept"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "DATE",
+      "PERIOD"
+    ]
+  },
+  {
+    "owl_name": "ContestabilityPeriodStart",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The point in time when the contestability period for a life insurance policy begins.",
+    "parents": [
+      "ContestabilityPeriod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "two-year challenge window for validity",
+      "basis for issuing the policy",
+      "start point of coverage activation",
+      "independent review requested by insurer",
+      "starting point for contestability"
+    ]
+  },
+  {
+    "owl_name": "NonPaymentException",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition allowing coverage to continue without further premium payments.",
+    "parents": [
+      "BenefitEligibilityCondition"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Nonpayment Exception",
+      "No Further Payments"
+    ]
+  },
+  {
+    "owl_name": "BenefitLimit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The maximum amount of benefit payable under a life insurance policy.",
+    "parents": [
+      "BenefitStructure"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Benefit Limit",
+      "Company Maximum Limit"
+    ]
+  },
+  {
+    "owl_name": "PremiumPayment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition or guarantee related to the payment of insurance premiums over a specified period.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "premium payment",
+      "Guaranteed Premiums",
+      "premium guarantee",
+      "level premiums",
+      "Premium Payment Condition",
+      "Guaranteed Premium",
+      "Monthly Premium",
+      "Level Term Coverage"
+    ]
+  },
+  {
+    "owl_name": "LifeInsuranceCoverage",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A type of insurance providing financial benefits upon the insured's death within a specified term.",
+    "parents": [
+      "DeathBenefit"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Level Term Life Insurance",
+      "Insured Survival Status",
+      "Life Insurance Coverage",
+      "Term Life Insurance",
+      "Individual Term Life Insurance",
+      "life insurance",
+      "insured survival requirement",
+      "Life Expectancy Requirement"
+    ]
+  },
+  {
+    "owl_name": "TwoYearClause",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time-based limitation in a life insurance policy that restricts claims during the first two years.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "20-Year Coverage",
+      "two-year period",
+      "Two-Year Rule",
+      "Two-Year Clause",
+      "two-year limitation",
+      "two-year clause",
+      "five-year window"
+    ]
+  },
+  {
+    "owl_name": "WrittenConsent",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A written authorization granting permission for a specific action or disclosure.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "written consent",
+      "written authorization"
+    ]
+  },
+  {
+    "owl_name": "PolicyAdjustment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A change made to a life insurance policy's terms or values.",
+    "parents": [
+      "Policy"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy modification",
+      "insurance adjustment",
+      "Insurance Amount Adjustment",
+      "Policy Correction",
+      "policy enhancements",
+      "policy value adjustment"
+    ]
+  },
+  {
+    "owl_name": "CoverageTerm",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The period during which insurance coverage is active and benefits are payable.",
+    "parents": [
+      "CoveragePeriod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Coverage Term",
+      "coverage commencement",
+      "coverage limitations",
+      "continued coverage",
+      "Coverage Start"
+    ]
+  },
+  {
+    "owl_name": "IncontestabilityPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time period during which the insurer cannot contest the validity of a life insurance policy.",
+    "parents": [
+      "ContestabilityPeriod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Incontestability Period",
+      "Incontestability",
+      "incontestability"
+    ]
+  },
+  {
+    "owl_name": "ExecutiveOfficer",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A senior official responsible for the overall management and leadership of an organization.",
+    "parents": [
+      "Person"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Chief Executive Officer",
+      "CEO",
+      "company leadership",
+      "Executive Leadership",
+      "Organizational Leadership",
+      "executive officer"
+    ]
+  },
+  {
+    "owl_name": "LiabilityLimitation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause limiting the insurer's financial responsibility under a life insurance policy.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Liability Limitation",
+      "liability reduction"
+    ]
+  },
+  {
+    "owl_name": "WrittenNoticeRequirement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A contractual obligation requiring written communication for specified actions or disclosures.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "written notice requirement",
+      "state-specific notices",
+      "written notice"
+    ]
+  },
+  {
+    "owl_name": "MedicalVerification",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "Documentation used to verify an individual's medical condition for insurance purposes.",
+    "parents": [
+      "DocumentArtifact"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "medical documentation",
+      "medical verification"
+    ]
+  },
+  {
+    "owl_name": "CoveragePeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The time interval during which insurance coverage is active and valid.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Effective Date",
+      "effective date",
+      "premium due dates",
+      "Expiration Date",
+      "coverage end date",
+      "Time of Coverage",
+      "effective date condition"
+    ]
+  },
+  {
+    "owl_name": "CorporateEntity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An organization legally recognized as a distinct entity, often referenced in insurance contracts.",
+    "parents": [
+      "Party"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "company definition",
+      "Company Records",
+      "corporate entity"
+    ]
+  },
+  {
+    "owl_name": "PolicyNumber",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A unique identifier assigned to a life insurance policy.",
+    "parents": [
+      "PolicyAttribute"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Number",
+      "Policy Form Number"
+    ]
+  },
+  {
+    "owl_name": "PolicyReviewAndModificationParty",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A party entitled to review and modify the terms of a life insurance policy.",
+    "parents": [
+      "Party"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "party entitled to review policy",
+      "party entitled to modify policy"
+    ]
+  },
+  {
+    "owl_name": "DocumentVerification",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The process of confirming the authenticity and validity of a document.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "document verification",
+      "Document Identification"
+    ]
+  },
+  {
+    "owl_name": "InsuredPerson",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The individual whose life is covered by the life insurance policy.",
+    "parents": [
+      "Person"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "individual covered by policy",
+      "payer responsible for premium decisions",
+      "person whose life is covered",
+      "contractual holder of policy rights",
+      "insured person under policy"
+    ]
+  },
+  {
+    "owl_name": "VoidFromInception",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A policy status indicating the contract is invalid from its beginning.",
+    "parents": [
+      "PolicyValidity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "void from inception",
+      "Void from Inception"
+    ]
+  },
+  {
+    "owl_name": "Designation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal designation of a beneficiary or recipient as recorded in the policy file.",
+    "parents": [
+      "Beneficiary"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Designation Rules",
+      "Designation",
+      "Designation On File"
+    ]
+  },
+  {
+    "owl_name": "InterestAccrual",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A financial charge applied to unpaid or delayed insurance premiums.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "interest calculation",
+      "Interest Payment",
+      "interest on delinquent payments",
+      "Interest Accrual",
+      "interest accrual",
+      "interest charge"
+    ]
+  },
+  {
+    "owl_name": "SuicideExclusion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause in a life insurance policy that denies benefits if the insured dies by suicide within a specified period.",
+    "parents": [
+      "Exclusion"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "suicide exclusion",
+      "suicide exclusion",
+      "Suicide Exclusion"
+    ]
+  },
+  {
+    "owl_name": "PremiumStability",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The condition of maintaining consistent premium payments throughout the life of a policy.",
+    "parents": [
+      "PolicyContinuity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Premium Stability",
+      "policy cost stability"
+    ]
+  },
+  {
+    "owl_name": "CoverageTermination",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The ending of insurance coverage, resulting in the cessation of benefits.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "coverage termination",
+      "policy termination",
+      "lapse and termination",
+      "Coverage Termination",
+      "Termination of Benefits"
+    ]
+  },
+  {
+    "owl_name": "RightToExaminePolicy",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The right of a policyholder to review a life insurance policy and request information within a specified period.",
+    "parents": [
+      "Right"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Right to Examine Policy",
+      "Right to Examine",
+      "Right to Request Information"
+    ]
+  },
+  {
+    "owl_name": "PremiumPaymentMode",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A specified method or schedule for paying insurance premiums.",
+    "parents": [
+      "PaymentSchedule"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "premium payment modes",
+      "premium payment mode",
+      "payment mode",
+      "Payment Mechanism",
+      "Payment Requirement",
+      "advance payment"
+    ]
+  },
+  {
+    "owl_name": "BenefitConditions",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "Conditions governing eligibility and terms for receiving insurance benefits.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Schedule of Benefits",
+      "benefit eligibility",
+      "benefit conditions",
+      "Benefit Conditions"
+    ]
+  },
+  {
+    "owl_name": "ChiefExecutiveOfficer",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An individual holding the highest-ranking executive position in an organization with signing authority.",
+    "parents": [
+      "ExecutiveOfficer"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Chief Executive Officer",
+      "Chief Executive Officer signing authority"
+    ]
+  },
+  {
+    "owl_name": "RegulatoryVariation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A variation in insurance requirements imposed by regulatory authorities.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "regulatory variations"
+    ]
+  },
+  {
+    "owl_name": "ProofOfDeath",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A document verifying the death of an individual, typically a death certificate.",
+    "parents": [
+      "DocumentArtifact"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Proof of Death",
+      "proof of death",
+      "death certificate"
+    ]
+  },
+  {
+    "owl_name": "TerminalIllnessBenefit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A benefit payable upon diagnosis of a terminal illness as defined in the policy.",
+    "parents": [
+      "BenefitClaim"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "terminal illness",
+      "Terminal Illness Payout",
+      "Terminal Illness Coverage",
+      "Terminal Illness Diagnosis"
+    ]
+  },
+  {
+    "owl_name": "ConversionRight",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A policyholder's ability to convert a term life insurance policy to a permanent one under specified conditions.",
+    "parents": [
+      "Right"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "conversion rights",
+      "conversion option",
+      "conversion rules"
+    ]
+  },
+  {
+    "owl_name": "AuthorizedSignature",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A signature authorized to legally bind a corporate entity in a life insurance contract.",
+    "parents": [
+      "AuthorizedRepresentative"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "officer signature requirement",
+      "authorized signature",
+      "Corporate Signatures"
+    ]
+  },
+  {
+    "owl_name": "InsurerHeadquartersLocation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The principal office location of the insurance company issuing the policy.",
+    "parents": [
+      "Location"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "LOCATION",
+    "resolved_gnp": "Location",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "principal office location of insurer",
+      "headquarters location of insurer"
+    ]
+  },
+  {
+    "owl_name": "Premium",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A periodic payment required to maintain ongoing life insurance coverage.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "financial obligation for ongoing coverage",
+      "periodic payment to maintain coverage",
+      "amount required for continued coverage"
+    ]
+  },
+  {
+    "owl_name": "RenewalOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision specifying the conditions under which a life insurance policy may be renewed.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy renewal options",
+      "renewal option",
+      "renewal requirement",
+      "renewal terms"
+    ]
+  },
+  {
+    "owl_name": "ClaimProcessing",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The procedural steps taken to evaluate and settle a life insurance claim.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "claim investigation",
+      "Claims Processing",
+      "claim initiation",
+      "policy claims procedure"
+    ]
+  },
+  {
+    "owl_name": "PolicyLapse",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition where a life insurance policy terminates due to non-payment of premiums.",
+    "parents": [
+      "CoverageTermination"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy lapse",
+      "lapsed policy",
+      "lapse condition",
+      "Policy lapse",
+      "Lapsed Policy",
+      "lapse duration"
+    ]
+  },
+  {
+    "owl_name": "ActiveStatusRestoration",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The process of reinstating a life insurance policy to active status after lapse.",
+    "parents": [
+      "PolicyRestoration"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "active status restoration"
+    ]
+  },
+  {
+    "owl_name": "PaymentSchedule",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A recurring pattern specifying when and how often premium payments are made.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "payment frequency",
+      "Premium Payment Delay",
+      "change in payment frequency",
+      "payment schedule",
+      "change in payment schedule",
+      "Timing of Payment"
+    ]
+  },
+  {
+    "owl_name": "BeneficiaryRelationship",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A familial or designated connection between a policyholder and a beneficiary.",
+    "parents": [
+      "Designation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "beneficiary relationship",
+      "family relationship"
+    ]
+  },
+  {
+    "owl_name": "PaymentCap",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A maximum limit on the amount payable under a life insurance policy.",
+    "parents": [
+      "BenefitLimit"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Payment Cap"
+    ]
+  },
+  {
+    "owl_name": "UnderwritingDetails",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "Information used to assess risk and determine eligibility for life insurance coverage.",
+    "parents": [
+      "PolicyAttribute"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Underwriting Details",
+      "Underwriting Criteria"
+    ]
+  },
+  {
+    "owl_name": "MaterialMisrepresentation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A false statement or omission of material facts made intentionally in an insurance application.",
+    "parents": [
+      "Fraud"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Material Misrepresentation",
+      "material misrepresentation",
+      "materially false information",
+      "concealing material facts",
+      "intentional deception",
+      "false statements",
+      "intentional misrepresentation",
+      "knowingly false statements"
+    ]
+  },
+  {
+    "owl_name": "UnpaidPremium",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A premium that has not been paid by its due date, resulting in a delinquent status.",
+    "parents": [
+      "PremiumPayment"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "non-payment of premium",
+      "Unpaid Premiums",
+      "Past Due Premiums",
+      "past due premiums",
+      "Missed Premium",
+      "subsequent premiums",
+      "unearned premiums",
+      "Premium Payment History"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A monetary payment made to beneficiaries upon the insured's death.",
+    "parents": [
+      "BenefitClaim"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "payout triggered by insured's death",
+      "amount paid after insured's death",
+      "monetary payout upon insured's death",
+      "provision enabling early death benefit payout",
+      "amount paid upon insured's death",
+      "payout upon insured's death",
+      "amount payable upon insured's death",
+      "methods for paying death benefit"
+    ]
+  },
+  {
+    "owl_name": "PolicyContinuity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The condition of a life insurance policy remaining active and in force without lapse.",
+    "parents": [
+      "PolicyValidity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Continuity"
+    ]
+  },
+  {
+    "owl_name": "LegalDeterrent",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision intended to discourage fraudulent or deceptive insurance claims.",
+    "parents": [
+      "LegalNotice"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "LEGAL_NOTICE",
+    "resolved_gnp": "LegalNotice",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "legal deterrent against deceptive claims"
+    ]
+  },
+  {
+    "owl_name": "CompanyAuthority",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A designation granting an individual authority to act on behalf of the insurance company.",
+    "parents": [
+      "AuthorizedRepresentative"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "company officer authority",
+      "company authority",
+      "executive authority",
+      "Company Authority",
+      "Corporate Authority"
+    ]
+  },
+  {
+    "owl_name": "CompanyDiscretion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A contractual provision allowing the insurance company to approve or deny a request at its discretion.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "company discretion",
+      "company approval",
+      "Company Approval",
+      "Company Discretion",
+      "Company approval"
+    ]
+  },
+  {
+    "owl_name": "CentralIllegalAction",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A prohibited act central to the policy's terms and conditions.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "central illegal action described"
+    ]
+  },
+  {
+    "owl_name": "RevocationOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision allowing the policyholder to cancel or withdraw a life insurance policy.",
+    "parents": [
+      "CancellationAbility"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "revocation option",
+      "revocation process"
+    ]
+  },
+  {
+    "owl_name": "ContestabilityPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time period during which the insurer can contest the validity of a life insurance policy.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "contestability period",
+      "Contestability Period"
+    ]
+  },
+  {
+    "owl_name": "CoverageActivation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The event or process that initiates the coverage provided by a life insurance policy.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy activation",
+      "Coverage Activation"
+    ]
+  },
+  {
+    "owl_name": "ContractualAgreement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal agreement defining the terms of insurance coverage between parties.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "POLICY",
+    "resolved_gnp": "Policy",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set Policy subclassOf ContractualAgreement. Reasoning: Policy is a specific instance of a ContractualAgreement. A ContractualAgreement is a broad, general term referring to any formal agreement between parties that defines terms and obligations. A Policy, on the other hand, is a specific type of contractual agreement used in the context of insurance, with defined coverage, premiums, and conditions. Therefore, ContractualAgreement is the broader category (Superclass), and Policy is a more specific type (Subclass). This makes Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "contractual agreement governing coverage"
+    ]
+  },
+  {
+    "owl_name": "ProofOfClaim",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A document or evidence required to verify eligibility for benefit approval.",
+    "parents": [
+      "DocumentArtifact"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "proof required for benefit approval"
+    ]
+  },
+  {
+    "owl_name": "InitialMonthlyPremiumAmount",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The amount of the first monthly premium payment in a life insurance policy.",
+    "parents": [
+      "Amount"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "AMOUNT",
+    "resolved_gnp": "Amount",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "initial monthly premium amount"
+    ]
+  },
+  {
+    "owl_name": "RiskClassification",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A categorization of an individual's insurability based on health and lifestyle factors.",
+    "parents": [
+      "UnderwritingDetails"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Risk Classification"
+    ]
+  },
+  {
+    "owl_name": "FelonyInvolvement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal status indicating involvement in a felony offense.",
+    "parents": [
+      "LegalStatus"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "felony involvement"
+    ]
+  },
+  {
+    "owl_name": "TaxConsequence",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A financial impact resulting from tax regulations related to life insurance policies.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Tax Consequences"
+    ]
+  },
+  {
+    "owl_name": "Beneficiary",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A person or entity designated to receive insurance benefits upon the insured's death.",
+    "parents": [
+      "Person"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "primary beneficiary",
+      "contingent beneficiary"
+    ]
+  },
+  {
+    "owl_name": "PolicyRestoration",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The process of reinstating a life insurance policy after it has lapsed.",
+    "parents": [
+      "Reinstatement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "process restoring lapsed policy",
+      "restoration of lapsed policy status"
+    ]
+  },
+  {
+    "owl_name": "AuthorizedRepresentative",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An individual authorized to execute a life insurance policy on behalf of a party.",
+    "parents": [
+      "Role"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ROLE",
+    "resolved_gnp": "Role",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "representative authorized to execute policy"
+    ]
+  },
+  {
+    "owl_name": "Action",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A procedural or operational event within a life insurance contract.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "ACTION"
+    ]
+  },
+  {
+    "owl_name": "BeneficiaryChangeInstrument",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal document used to modify the designated beneficiary of a life insurance policy.",
+    "parents": [
+      "PolicyAdjustment"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "formal instrument for changing beneficiary"
+    ]
+  },
+  {
+    "owl_name": "WarRelatedActivity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An activity involving participation in armed conflict or military operations.",
+    "parents": [
+      "Action"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "war-related activities"
+    ]
+  },
+  {
+    "owl_name": "IssuingInsurer",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The insurer legally responsible for issuing and administering the life insurance policy.",
+    "parents": [
+      "Insurer"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ORGANIZATION",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "issuing insurer of the policy",
+      "issuing insurer",
+      "contracting party",
+      "issuer of the insurance policy",
+      "issuing insurer with authority over terms",
+      "insurer administering policy"
+    ]
+  },
+  {
+    "owl_name": "PremiumWaiverMechanism",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A mechanism that covers missed premiums using policy loans.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "mechanism covering missed premiums via policy loans"
+    ]
+  },
+  {
+    "owl_name": "AssignmentRights",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The legal right to assign ownership or benefits of a life insurance policy.",
+    "parents": [
+      "PolicyOwnerRights"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Assignment Rights",
+      "Assignment Validity"
+    ]
+  },
+  {
+    "owl_name": "BenefitClaim",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal submission to initiate the payment of a life insurance benefit.",
+    "parents": [
+      "Action"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ACTION",
+    "resolved_gnp": "Action",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "formal submission to initiate benefit"
+    ]
+  },
+  {
+    "owl_name": "EffectiveDate",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The date on which a policy provision or benefit becomes active.",
+    "parents": [
+      "TemporalConcept"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "August 7, 2025"
+    ]
+  },
+  {
+    "owl_name": "Location",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A geographical place relevant to the life insurance contract.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "low",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "LLM parse failed",
+    "top_members": [
+      "LOCATION"
+    ]
+  },
+  {
+    "owl_name": "CancellationAbility",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The right to cancel a benefit request within a specified period.",
+    "parents": [
+      "Right"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "RIGHT",
+    "resolved_gnp": "Right",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "ability to cancel benefit request"
+    ]
+  },
+  {
+    "owl_name": "ContractIdentifier",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A unique identifier assigned to a life insurance contract for reference and tracking.",
+    "parents": [
+      "PolicyAttribute"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Contract Identifier"
+    ]
+  },
+  {
+    "owl_name": "SpousalDesignation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A designation of a spouse as a beneficiary or recipient in a life insurance policy.",
+    "parents": [
+      "Beneficiary"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "spousal designation"
+    ]
+  },
+  {
+    "owl_name": "PolicyWaiver",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision that exempts the policyholder from paying premiums under specified conditions.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy waivers"
+    ]
+  },
+  {
+    "owl_name": "Gender",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A biological or social attribute indicating male, female, or other gender identity.",
+    "parents": [
+      "Person"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Gender"
+    ]
+  },
+  {
+    "owl_name": "LumpSumPayout",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A single, immediate payment made upon the occurrence of a specified event.",
+    "parents": [
+      "BenefitClaim"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "lump sum payout"
+    ]
+  },
+  {
+    "owl_name": "Amount",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A monetary value specified in a life insurance contract.",
+    "parents": [
+      "FinancialInstrument"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "AMOUNT"
+    ]
+  },
+  {
+    "owl_name": "MonthlyBankDraft",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A recurring payment method where premiums are deducted monthly from a bank account.",
+    "parents": [
+      "PremiumPaymentMode"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Monthly Bank Draft"
+    ]
+  },
+  {
+    "owl_name": "SemiAnnualBilling",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A billing frequency occurring twice per year, every six months.",
+    "parents": [
+      "PremiumPaymentMode"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "semi-annual billing"
+    ]
+  },
+  {
+    "owl_name": "ColoradoJurisdiction",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal jurisdiction within the state of Colorado relevant to life insurance contracts.",
+    "parents": [
+      "Location"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Colorado jurisdiction"
+    ]
+  },
+  {
+    "owl_name": "RefundEligibility",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The condition under which a policyholder is entitled to receive a refund of premiums paid.",
+    "parents": [
+      "BenefitEligibilityCondition"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Refund",
+      "Full Refund",
+      "premium refund",
+      "refund eligibility"
+    ]
+  },
+  {
+    "owl_name": "PolicyLoanDeduction",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A deduction from a life insurance policy due to an outstanding policy loan.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "policy loan deduction",
+      "policy lien deduction"
+    ]
+  },
+  {
+    "owl_name": "ReviewPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time interval during which the policy owner may review and potentially cancel the policy.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "20-day review period for owner"
+    ]
+  },
+  {
+    "owl_name": "Insurer",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An entity that provides life insurance coverage and assumes risk.",
+    "parents": [
+      "CorporateEntity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Sentinel Life Assurance Company"
+    ]
+  },
+  {
+    "owl_name": "RefundablePortionAfterCancellation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The portion of a life insurance policy that is refunded to the policyholder upon cancellation.",
+    "parents": [
+      "Policy"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "refundable portion after cancellation"
+    ]
+  },
+  {
+    "owl_name": "WrittenAmendment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal, documented change to a life insurance contract.",
+    "parents": [
+      "PolicyAdjustment"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "written amendments"
+    ]
+  },
+  {
+    "owl_name": "PrincipalOfficeAddress",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The primary physical address of an organization's main office.",
+    "parents": [
+      "Location"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "principal office address"
+    ]
+  },
+  {
+    "owl_name": "MaterialFact",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A fact that is significant enough to influence an insurance decision.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "material facts"
+    ]
+  },
+  {
+    "owl_name": "PolicyFormIdentifier",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A unique identifier assigned to a specific policy form within an insurance contract.",
+    "parents": [
+      "ContractIdentifier"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "unique identifier for policy form"
+    ]
+  },
+  {
+    "owl_name": "PolicyEndorsement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal amendment to a life insurance policy that modifies its terms.",
+    "parents": [
+      "PolicyAdjustment"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Endorsement"
+    ]
+  },
+  {
+    "owl_name": "SuicideBenefitRestriction",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A limitation on benefit payments resulting from suicide within a specified period.",
+    "parents": [
+      "ClaimValidityLimitation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CLAUSE",
+    "resolved_gnp": "Clause",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "restriction on benefit payments due to suicide"
+    ]
+  },
+  {
+    "owl_name": "DocumentAccess",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The right to access policy-related documents and information.",
+    "parents": [
+      "Right"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Document Access",
+      "Information Access"
+    ]
+  },
+  {
+    "owl_name": "RequestProcessing",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The process of handling and managing requests within a life insurance contract.",
+    "parents": [
+      "ProceduralEvent"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Request Processing"
+    ]
+  },
+  {
+    "owl_name": "BindingAgreement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legally enforceable agreement that constitutes the complete contract between parties.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "complete binding agreement definition"
+    ]
+  },
+  {
+    "owl_name": "BenefitEligibilityCondition",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition that must be met for a benefit to be eligible for payment.",
+    "parents": [
+      "Exclusion"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "EXCLUSION",
+    "resolved_gnp": "Exclusion",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "condition preventing benefit eligibility"
+    ]
+  },
+  {
+    "owl_name": "SettlementOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A specified method for receiving life insurance benefits upon the insured's death.",
+    "parents": [
+      "BenefitStructure"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "settlement options",
+      "settlement option approval",
+      "Settlement Options"
+    ]
+  },
+  {
+    "owl_name": "AuthorizedRepresentativeEmployer",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The employer of an individual authorized to act on behalf of another in insurance matters.",
+    "parents": [
+      "AuthorizedRepresentative"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ORGANIZATION",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "authorized representative's employer"
+    ]
+  },
+  {
+    "owl_name": "ReinstatementPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The time limit within which a lapsed policy may be reinstated.",
+    "parents": [
+      "Period"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERIOD",
+    "resolved_gnp": "Period",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "time limit for reinstating lapsed policy"
+    ]
+  },
+  {
+    "owl_name": "Right",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legally recognized entitlement or privilege granted within a life insurance contract.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "RIGHT"
+    ]
+  },
+  {
+    "owl_name": "PremiumEquivalence",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition where the premium amount remains unchanged despite policy changes.",
+    "parents": [
+      "PremiumStability"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "premium equivalence"
+    ]
+  },
+  {
+    "owl_name": "Rider",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An optional provision added to a life insurance policy that extends or modifies coverage.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "RIDER"
+    ]
+  },
+  {
+    "owl_name": "LegalNotice",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal notification required by law or contract in a life insurance policy.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "LEGAL_NOTICE"
+    ]
+  },
+  {
+    "owl_name": "StandardNonSmoker",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A life insurance policyholder classification for individuals who do not smoke and meet standard health criteria.",
+    "parents": [
+      "RiskClassification"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Standard Non-Smoker"
+    ]
+  },
+  {
+    "owl_name": "BaseSumAssured",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The fundamental amount of coverage specified in a life insurance policy.",
+    "parents": [
+      "DeathBenefit"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "FINANCIAL_CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "base sum assured under policy"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefitRecipient",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An entity designated to receive the death benefit payout upon the insured's death.",
+    "parents": [
+      "Beneficiary"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "recipient of death benefit payout",
+      "recipient of death benefit"
+    ]
+  },
+  {
+    "owl_name": "ClaimValidityLimitation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A restriction on the validity of a claim during the early period of a policy.",
+    "parents": [
+      "Clause"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CLAUSE",
+    "resolved_gnp": "Clause",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "limitation on claim validity early in policy"
+    ]
+  },
+  {
+    "owl_name": "ReasonableTimeframe",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A period of time considered fair and appropriate for completing a specified action.",
+    "parents": [
+      "TemporalConcept"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Reasonable Timeframe"
+    ]
+  },
+  {
+    "owl_name": "Exclusion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A provision in a life insurance policy that specifies conditions or circumstances not covered by the policy.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "exclusions",
+      "Policy Exclusions",
+      "exclusion clause"
+    ]
+  },
+  {
+    "owl_name": "GuaranteedTermPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The fixed period during which policy terms are guaranteed and cannot be altered.",
+    "parents": [
+      "ContractualTerm"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "guaranteed term period",
+      "Policy Duration",
+      "term expiration",
+      "Guaranteed Term"
+    ]
+  },
+  {
+    "owl_name": "LifeInsuredUnderActiveCoverage",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An individual whose life insurance policy is currently active and providing coverage.",
+    "parents": [
+      "InsuredPerson"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "Person",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "life insured under active coverage"
+    ]
+  },
+  {
+    "owl_name": "PremiumDetailsDocument",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A document that specifies the details of insurance premiums.",
+    "parents": [
+      "DocumentArtifact"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "document specifying premium details"
+    ]
+  },
+  {
+    "owl_name": "InsurerAuthorizedToApproveChanges",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An insurer entity authorized to approve modifications to a life insurance policy.",
+    "parents": [
+      "PolicyReviewAndModificationParty"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ORGANIZATION",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "insurer authorized to approve changes"
+    ]
+  },
+  {
+    "owl_name": "Clause",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A distinct section of a life insurance contract that outlines specific terms or conditions.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "CLAUSE"
+    ]
+  },
+  {
+    "owl_name": "ExecutionTimeline",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "Conditions and timing governing the execution of a life insurance contract.",
+    "parents": [
+      "ContractualProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "execution timeline",
+      "execution conditions"
+    ]
+  },
+  {
+    "owl_name": "GracePeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A period after the due date during which a policy remains in force before lapsing.",
+    "parents": [
+      "Policy"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "Policy",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "window after due date before lapse occurs"
+    ]
+  },
+  {
+    "owl_name": "FaceAmount",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The specified amount of life insurance coverage provided by a policy.",
+    "parents": [
+      "DeathBenefit"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "AMOUNT",
+    "resolved_gnp": "Amount",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "face amount of life insurance coverage"
+    ]
+  },
+  {
+    "owl_name": "CancellationRight",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The right to terminate a life insurance policy under specified conditions.",
+    "parents": [
+      "PolicyOwnerRights"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Policy Cancellation",
+      "policy cancellation",
+      "Cancellation Rights",
+      "Policy cancellation",
+      "Right to Cancel"
+    ]
+  },
+  {
+    "owl_name": "Role",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A function or position held by an individual within a life insurance contract.",
+    "parents": [
+      "Party"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "ROLE"
+    ]
+  },
+  {
+    "owl_name": "GracePeriodForPremiumPayment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A period after the due date during which a premium can be paid without the policy lapsing.",
+    "parents": [
+      "GracePeriod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERIOD",
+    "resolved_gnp": "Period",
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "grace period for premium payment"
+    ]
+  },
+  {
+    "owl_name": "Person",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An individual human being who is a party to a life insurance contract.",
+    "parents": [
+      "Party"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "PERSON"
+    ]
+  },
+  {
+    "owl_name": "FinancialObligation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A monetary responsibility arising from a life insurance contract.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Financial Obligations"
+    ]
+  },
+  {
+    "owl_name": "EvidenceOfInsurability",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A document or proof demonstrating an individual's eligibility for life insurance coverage.",
+    "parents": [
+      "DocumentArtifact"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "evidence of insurability"
+    ]
+  },
+  {
+    "owl_name": "AdministrativeCharge",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A fee imposed for administrative services related to a life insurance policy.",
+    "parents": [
+      "FinancialObligation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "administrative charges"
+    ]
+  },
+  {
+    "owl_name": "PayoutDesignation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A designation specifying how a life insurance payout is to be distributed.",
+    "parents": [
+      "Designation"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Payout Designation"
+    ]
+  },
+  {
+    "owl_name": "PolicyIssuingOffice",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An entity responsible for issuing a life insurance policy, located in Hartford, Connecticut.",
+    "parents": [
+      "CorporateEntity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": [
+      "Hartford, Connecticut"
+    ]
+  },
+  {
+    "owl_name": "Party",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "An individual, entity, or organization that has a legal or contractual role in an insurance agreement.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "ContractualTerm",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A specific condition, provision, or obligation defined within an insurance contract that governs rights, responsibilities, or outcomes.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "TemporalConcept",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A time-related entity or interval that defines the duration, timing, or scheduling of insurance-related events or conditions.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "FinancialInstrument",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A structured financial product or mechanism within an insurance policy that involves monetary value, payments, or benefits.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "LegalStatus",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A formal classification of the validity, enforceability, or legal standing of a policy or claim within the insurance contract.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "BenefitStructure",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A framework defining the conditions, limits, and mechanisms for the delivery of insurance benefits.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "DocumentArtifact",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A formal written or digital record that serves as evidence, authorization, or amendment within the insurance lifecycle.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "ProceduralEvent",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A sequence of actions or steps taken during the administration, processing, or modification of an insurance contract.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "RiskCondition",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "A factor, circumstance, or state that influences the assessment, acceptance, or management of risk in an insurance context.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  },
+  {
+    "owl_name": "PolicyAttribute",
+    "is_abstract": true,
+    "inferred_top_level": true,
+    "definition": "An intrinsic characteristic or identifier that defines or describes a life insurance policy\u2019s identity, form, or operational state.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "abstract",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": false,
+    "flag_reason": "",
+    "top_members": []
+  }
+]

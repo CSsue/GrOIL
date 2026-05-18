@@ -1,0 +1,312 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Inclusive Life Assurance Corporation                       ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: ILAC-IUL-2024-7741
+Date of Issue: November 14, 2024
+Form: Impaired Risk Indexed Universal Life (IRIUL-6)
+Market Position: Non-Standard / Substandard Risk Acceptance
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Thomas Earl Beaumont
+Insured: Thomas Earl Beaumont
+DOB: August 30, 1965 | Age: 59 | Gender: Male
+Underwriting Class: Table D (Standard + Table 4)
+Rated Reason: Type 2 Diabetes (A1C 7.8), Controlled
+              Hypertension, BMI 34
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $250,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $9,000
+Table Rating Multiplier: 1.50× standard COI rates
+(Table D = standard COI rate × 150%)
+Policy Issued via Simplified Underwriting Pathway (SU-3)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Eleanor Grace Beaumont (Spouse) - 100%
+Contingent: Thomas Earl Beaumont Jr. (Son) - 50%
+            Claire Beaumont-Foley (Daughter) - 50%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Table Rating" - An underwriting classification for
+    substandard risks, expressed as a multiplier to the
+    standard COI rate. Table D = 1.50× standard COI.
+
+1.2 "Flat Extra Premium" - An additional flat dollar charge
+    per $1,000 of face amount per year applied to certain
+    substandard risks. Not applicable to this policy (table
+    rating used instead of flat extra).
+
+1.3 "Rating Improvement Rider" - A rider providing that the
+    table rating will be reviewed and potentially improved
+    at specified intervals based on health evidence submitted.
+
+1.4 "Simplified Underwriting" - A streamlined application
+    process using health questionnaire and third-party data
+    (MIB, Rx check, motor vehicle report) without requiring
+    a physical exam.
+
+1.5 "Impaired Risk" - An insured whose health history results
+    in a substandard rating classification.
+
+1.6 "Standard COI" - The cost of insurance rate applicable
+    to a Standard risk of the same age and gender.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 10.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) Dow Jones Industrial Average (Annual P-to-P)
+       Current Cap: 9.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    C) Fixed Account
+       Current Rate: 3.75% | Guaranteed Minimum: 2.50%
+       (Higher fixed rate vs. standard products, reflecting
+       the older/rated demographic typical of this product)
+
+2.2 CURRENT ALLOCATION:
+    S&P 500: 50% | Fixed Account: 50%
+
+2.3 ALLOCATION PHILOSOPHY: Given the higher COI charges
+    from the table rating, a conservative allocation with
+    meaningful fixed account exposure is recommended to
+    provide predictable account growth to offset charges.
+
+2.4 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 3.50%
+    • DJIA cap: never below 3.50%
+    • Fixed account: never below 2.50%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 Standard annual point-to-point crediting:
+    Credit = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 CHARGE OFFSET CONTEXT: At Table D rating, approximate
+    Year 1 monthly COI is ~$260/month (~$3,120/year).
+    At a 6% average annual index credit on a $9,000/year
+    funded policy, the account value growth may partially
+    but not fully offset rising COI charges in later years.
+    Owner should review in-force projections regularly.
+
+3.3 The 0% floor ensures market downturns do not compound
+    the pressure from high COI charges.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $9,000 per year recommended given the
+    table rating and age 59. Higher premiums are strongly
+    encouraged to maintain coverage long-term.
+
+4.2 MINIMUM PREMIUM: No contractual minimum beyond keeping
+    the policy from lapsing. However, paying below $9,000/year
+    significantly increases lapse risk after age 70.
+
+4.3 MAXIMUM ANNUAL PREMIUM: $30,000 per year.
+
+4.4 PREMIUM LOAD: 3.5% of each premium, all years.
+
+4.5 ILLUSTRATED FUNDING ASSUMPTION: Illustrations for this
+    policy are run with $9,000 per year to age 80, then
+    zero premium. Owner should review annual projections
+    and increase premiums if account value depletion is
+    projected before age 90.
+
+4.6 SUBSTANDARD DISCLOSURE: The $9,000 planned premium
+    is calibrated for this Table D rating. If the rating
+    improves (see Article 8), the premium required to maintain
+    the same coverage will decrease.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COST OF INSURANCE:
+    Monthly COI = Standard COI Rate × Table D Multiplier (1.50)
+                × NAR ÷ 1,000
+
+    The 1.50× multiplier reflects the actuarial assessment
+    of elevated mortality risk due to the rated conditions.
+    Maximum COI rates (guaranteed) are shown in the policy
+    schedule and include the table rating.
+
+5.2 ADMINISTRATIVE FEE: $12 per month (guaranteed for life).
+
+5.3 ILLUSTRATIVE COI TRAJECTORY (Table D, Male):
+    Age 59: ~$17/month per $1,000 NAR (×1.50 = ~$25.50)
+    Age 70: ~$40/month per $1,000 NAR (×1.50 = ~$60.00)
+    Age 80: ~$110/month per $1,000 NAR (×1.50 = ~$165.00)
+    These are current non-guaranteed rates for illustration;
+    guaranteed maximums are approximately 2× these amounts.
+
+5.4 COI DRAG WARNING: At older attained ages, Table D COI
+    rates consume account value significantly faster than
+    at standard rates. Long-term policy sustainability depends
+    on consistent premium funding above the planned amount.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 LEVEL DEATH BENEFIT: $250,000 payable upon death of insured.
+
+6.2 ACCELERATED DEATH BENEFIT - TERMINAL: Available if life
+    expectancy < 24 months (extended window vs. standard 12
+    months reflects common rated risk disease profile).
+    Maximum acceleration: 75% or $187,500.
+
+6.3 ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS: Available
+    for inability to perform 2 of 6 ADLs. Given the medical
+    profile of this insured, this benefit may be particularly
+    relevant. Benefit: up to 2% of face per month ($5,000/month
+    maximum). Cumulative limit: 80% of face amount.
+
+6.4 FACE AMOUNT REDUCTION OPTION: Owner may reduce face amount
+    at any policy anniversary to lower COI charges. Minimum
+    face after reduction: $100,000. This is a valuable option
+    if financial needs change or if lower charges are needed.
+    No surrender charge applies to face reductions.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - RATING IMPROVEMENT PROVISIONS
+═══════════════════════════════════════════════════════════════════
+7.1 RATING IMPROVEMENT RIDER (Included at no additional charge):
+    Owner may request a rating review at the following intervals:
+    • 3 years from policy issue (November 2027)
+    • 5 years from policy issue (November 2029)
+    • Every 3 years thereafter through age 70
+
+7.2 REVIEW PROCESS: Owner submits:
+    (a) Attending physician statement
+    (b) Updated lab work (A1C, blood pressure, lipid panel)
+    (c) Current body weight and BMI
+
+7.3 IMPROVEMENT OUTCOMES:
+    If health metrics improve sufficiently, Inclusive Life
+    may reduce the table rating (e.g., Table D → Table B)
+    or remove the table rating entirely (Standard).
+    Rating improvements are permanent and retroactive to
+    the next policy anniversary after approval.
+
+7.4 NO IMPROVEMENT: If health metrics remain unchanged or
+    worsen, the table rating remains as issued. There is no
+    penalty for requesting a review that does not result in
+    improvement.
+
+7.5 REMOVAL OF FLAT EXTRAS: If any flat extra charges were
+    assessed (none on this policy), they may be removed
+    separately from the table rating.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+8.1 POLICY LOANS: Available after year 1.
+    Maximum: 90% of surrender value.
+    Loan rate: 5.0% annually.
+    Loaned amounts earn fixed account rate.
+
+8.2 PARTIAL WITHDRAWALS: Minimum $500. First 6 free per year;
+    $30 fee thereafter. Reduces death benefit.
+
+8.3 CAUTION: Given the elevated COI structure of this policy,
+    withdrawals further reduce the account value buffer
+    available to cover charges and accelerate lapse risk.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+9.1 SCHEDULE (% of premiums paid in first 7 years):
+
+    Year 1:  8%    Year 4: 5%    Year 7: 2%
+    Year 2:  7%    Year 5: 4%    Year 8+: 0%
+    Year 3:  6%    Year 6: 3%
+
+9.2 Shortened surrender charge period (8 years vs. standard
+    10-14 years) reflects the impaired risk product design
+    and older insured age at issue.
+
+9.3 FREE WITHDRAWAL: 10% of account value per year, year 2+.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - GRACE PERIOD AND LAPSE PROVISIONS
+═══════════════════════════════════════════════════════════════════
+10.1 30-day advance notice of potential lapse.
+10.2 61-day grace period to pay sufficient premium.
+10.3 REINSTATEMENT: Within 3 years of lapse, with evidence of
+     insurability. Given the rated health conditions, re-
+     underwriting upon reinstatement may result in the same
+     or a higher table rating. Owner should make every effort
+     to prevent lapse.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+11.1 SUICIDE: Return of premium only if death by suicide within
+     2 years of issue or reinstatement.
+
+11.2 CONTESTABILITY: 2-year period from issue. INCLUSIVE LIFE
+     reserves the right to investigate all claims thoroughly
+     for material misrepresentation for the full 2-year period.
+
+11.3 SIMPLIFIED UNDERWRITING LIMITATIONS: Because this policy
+     was issued through simplified underwriting (no exam),
+     we relied on MIB records, pharmacy database, and the
+     application. Any material misrepresentation not detected
+     at underwriting remains subject to contestability during
+     the 2-year period.
+
+11.4 RATED CONDITIONS DISCLOSURE: The following conditions
+     were disclosed on the application and priced into the
+     Table D rating. These conditions DO NOT constitute
+     additional exclusions; death from any cause (including
+     diabetes complications or hypertension-related events)
+     is fully covered after the contestability period:
+     • Type 2 Diabetes (A1C 7.8)
+     • Controlled Hypertension
+     • BMI 34
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 12 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+12.1 Index credits are not guaranteed; 0% minimum floor applies.
+12.2 Dividends from index components are excluded.
+12.3 Table D rating increases the cost of this policy compared
+     to a standard policy. The long-term sustainability of
+     this policy depends on consistent premium payments.
+12.4 Illustrated values at current (non-guaranteed) COI rates
+     are not guaranteed. Guaranteed illustration available
+     upon request and strongly recommended for planning.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Inclusive Life Assurance Corporation
+Impaired Risk Division
+1-800-INCLUSIVE | impaired@inclusivelifeassurance.com
+Hartford, Connecticut
+
+[SEAL]
+
+__________________________________
+Chief Underwriting Officer
+Inclusive Life Assurance Corporation
+
+November 14, 2024
+
+═══════════════════════════════════════════════════════════════════

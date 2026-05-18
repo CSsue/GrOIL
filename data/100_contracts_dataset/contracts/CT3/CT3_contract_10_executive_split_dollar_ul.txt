@@ -1,0 +1,357 @@
+═══════════════════════════════════════════════════════════════════
+       UNIVERSAL LIFE INSURANCE POLICY
+       EXECUTIVE SPLIT-DOLLAR ARRANGEMENT
+       Vanguard Executive Benefits Life Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: VEB-UL-24-00094
+Issue Date: November 4, 2024
+
+═══════════════════════════════════════════════════════════════════
+SPLIT-DOLLAR DISCLOSURE
+═══════════════════════════════════════════════════════════════════
+This policy is issued in connection with a Split-Dollar Life 
+Insurance Arrangement between the Employer (policy owner) and 
+the Employee/Insured. The arrangement is documented in a 
+separate Split-Dollar Agreement dated November 4, 2024, which 
+governs allocation of premium payments, policy rights, and 
+death benefit between the parties.
+
+Split-Dollar Regime: Endorsement Method (Employer owns policy; 
+Employee's interest endorsed per agreement).
+
+Tax Guidance: This arrangement is subject to Treasury 
+Regulations §1.61-22 and §1.7872-15. The economic benefit 
+reportable by the Employee is the cost of current life 
+insurance protection allocated to the Employee under the 
+split-dollar agreement. Employer and Employee should consult 
+independent tax counsel.
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Harrington-Cole Industries, Inc.
+       (a Delaware corporation)
+       EIN: 44-7712903
+       Plan Administrator: Chief Human Resources Officer
+
+Insured: Thomas A. Harrington III
+         President & Chief Executive Officer
+         Gender: Male | DOB: 12/01/1969 | Age: 54
+         Risk Class: Preferred Plus Nonsmoker
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $5,000,000
+Planned Premium: $25,000/month
+Minimum Premium: $5,000/month
+Target Premium: $25,000/month
+Death Benefit Option: Increasing (Option B)
+
+COLI Compliance: Harrington-Cole Industries, Inc. has 
+obtained the prior written consent of the Insured in 
+compliance with IRC §101(j)(4). The Employer is a 
+validly insurable entity under §101(j)(1)(A).
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION — SPLIT-DOLLAR ENDORSEMENT
+═══════════════════════════════════════════════════════════════════
+Employer's Interest (Recoverable Amount):
+  Primary: Harrington-Cole Industries, Inc. — the greater 
+           of (a) total premiums paid by Employer, or 
+           (b) Account Value at death
+  (This interest is established by the Split-Dollar Agreement)
+
+Employee's Interest (Family Benefit):
+  Primary Beneficiary designated by Insured:
+    Vanessa L. Harrington (Spouse) — 100%
+  Contingent: Thomas A. Harrington IV — 50%
+              Sarah M. Harrington — 50%
+  
+  Employee's Death Benefit = Total Death Benefit minus 
+  Employer's Recoverable Amount.
+
+NOTE: The Split-Dollar Agreement governs the precise 
+calculation of each party's benefit at time of death. 
+This policy pays proceeds to each party per their 
+respective interests as set forth in the Endorsement.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means accumulated premiums net 
+    of expenses, plus credited interest, less monthly 
+    deductions.
+
+1.2 "Split-Dollar Agreement" means the separate agreement 
+    between Employer and Employee governing their 
+    respective rights in this policy.
+
+1.3 "Employer's Recoverable Amount" means the greater 
+    of (a) total premiums paid by Employer or (b) 
+    the Account Value at any relevant date, per the 
+    Split-Dollar Agreement.
+
+1.4 "Employee's Family Benefit" means the death 
+    benefit proceeds remaining after payment of the 
+    Employer's Recoverable Amount.
+
+1.5 "Rollout" means the termination of the split-dollar 
+    arrangement and the transfer of policy ownership 
+    to the Employee or Employee's designee.
+
+1.6 "Economic Benefit" means the cost of the current 
+    life insurance protection allocated to the Employee, 
+    reportable as income under IRS PS-58 rates or 
+    insurer's published alternative term rates.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums paid by Employer (Owner):
+    Minimum: $5,000/payment
+    Annual maximum: Governed by IRC §7702; this policy 
+    is designed to remain below MEC thresholds.
+
+2.2 Premium expense load: 2.0% of each premium 
+    (reduced load reflecting large case economics).
+
+2.3 The Employee does not pay premiums. The Employee 
+    reports the economic benefit of the term insurance 
+    coverage as imputed income on Form W-2.
+
+2.4 Employee may elect to pay the economic benefit 
+    cost directly to the Employer to avoid imputed 
+    income, per the Split-Dollar Agreement. This does 
+    not make the Employee a premium payer under 
+    this policy.
+
+2.5 Premiums are paid flexibly; Employer may pay 
+    additional amounts above Target Premium subject 
+    to IRC §7702 corridor limits.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+3.1 On the 4th of each month, we deduct from Account Value:
+    (a) Cost of Insurance charge
+    (b) Administrative fee: $25.00/month
+    (c) Outstanding loan interest
+
+3.2 COI Basis: 2017 CSO Preferred Plus Table; guaranteed 
+    maximum rates per COI Schedule. Due to the large 
+    face amount, net COI rates are highly competitive.
+
+3.3 COI = (Option B Net Amount at Risk) × COI Rate / 1,000
+    Option B Net Amount at Risk = Specified Amount 
+    (Account Value is additive to death benefit, 
+    so Specified Amount is always at risk)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - INTEREST CREDITING
+═══════════════════════════════════════════════════════════════════
+4.1 Interest credited daily.
+    Guaranteed minimum: 2.25% per annum
+    Current rate: 5.10% per annum
+
+4.2 LARGE CASE ENHANCEMENT: For Account Values above 
+    $2,000,000, an additional 0.30% per annum 
+    enhancement is credited (guaranteed minimum 
+    enhancement: 0.10% per annum).
+
+4.3 Current rate declared monthly; guaranteed minimum 
+    applies always.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION B (Increasing) — In Force
+    Total Death Benefit = Specified Amount + Account Value
+
+5.2 Upon death, proceeds are bifurcated:
+    (a) Employer receives: Employer's Recoverable Amount
+    (b) Employee's Family receives: Remainder
+
+5.3 Minimum Family Benefit per Rollout Agreement: 
+    Subject to the Split-Dollar Agreement, a minimum 
+    family benefit of $1,000,000 is guaranteed for 
+    the first 10 years of the arrangement.
+
+5.4 If death occurs after Rollout (ownership transferred 
+    to Employee), all proceeds go to Employee's 
+    designated beneficiaries.
+
+5.5 COLI Income Tax Exclusion: Employer's share of 
+    death proceeds is excludable from Employer's 
+    gross income under IRC §101(a) if §101(j) 
+    requirements are satisfied.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+6.1 Only the Owner (Employer) may exercise withdrawal 
+    rights. Employee has no unilateral withdrawal rights 
+    under the Endorsement Method split-dollar arrangement.
+
+6.2 Minimum withdrawal: $10,000
+    Maximum: Account Value less Employer's Recoverable 
+    Amount minimum balance as required by the 
+    Split-Dollar Agreement.
+
+6.3 No withdrawal fee.
+
+6.4 Each withdrawal reduces Account Value and may 
+    reduce the Employee's Family Benefit.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+7.1 Maximum loan: 85% of Account Value
+
+7.2 Loan interest rate: Applicable Federal Rate (AFR) 
+    for mid-term loans, as published by the IRS monthly, 
+    plus 0.50%, adjusted quarterly.
+
+7.3 AFR is used to ensure the loan does not constitute 
+    a below-market loan under IRC §7872, which could 
+    trigger additional imputed income to the Employee.
+
+7.4 Only the Owner (Employer) may request loans.
+
+7.5 Loans are reflected in the Employer's Recoverable 
+    Amount calculation under the Split-Dollar Agreement.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - ROLLOUT PROVISIONS
+═══════════════════════════════════════════════════════════════════
+8.1 "Rollout" refers to the termination of the 
+    split-dollar arrangement and transfer of policy 
+    ownership from Employer to Employee (or Employee's 
+    designee, such as an ILIT).
+
+8.2 Upon Rollout, the Employer is entitled to receive 
+    the Employer's Recoverable Amount before or 
+    simultaneously with ownership transfer.
+
+8.3 Rollout triggers:
+    (a) Scheduled rollout per Split-Dollar Agreement 
+        (typically after 10-15 years)
+    (b) Employee's termination of employment (all rights)
+    (c) Employer's dissolution or insolvency
+    (d) Mutual agreement of parties
+
+8.4 TAX CONSEQUENCES OF ROLLOUT: If the policy is 
+    transferred to the Employee for less than fair 
+    market value, the difference may be includable 
+    in the Employee's income. Consult tax counsel.
+
+8.5 We will cooperate with ownership change requests 
+    that satisfy our administrative requirements 
+    and are accompanied by a copy of the Split-Dollar 
+    Agreement and a signed transfer form.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+9.1 Cash Surrender Value = Account Value - Surrender Charge 
+    - Outstanding Loans
+
+9.2 Surrender Charge Schedule (% of Specified Amount):
+    Year 1: 5% | Year 2: 4% | Year 3: 3%
+    Year 4: 2% | Year 5: 1% | Year 6+: 0%
+
+9.3 The shorter surrender charge period reflects 
+    the large case / executive market design.
+
+9.4 Upon Rollout, if Employer transfers the policy, 
+    the surrender charge (if any) transfers with 
+    the policy; the charge period does not reset.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE EXCLUSION: Death by suicide within 24 months 
+     of issue: Account Value paid to Employer 
+     (as Recoverable Amount); no Family Benefit paid.
+
+10.2 CONTESTABILITY: We may contest within 2 years of 
+     issue for material misrepresentation by Insured 
+     in the application.
+
+10.3 NO WAR OR AVIATION EXCLUSION: Neither war nor 
+     aviation hazard exclusions apply to this policy. 
+     The Insured's executive travel (including private 
+     aviation) was disclosed and accepted at standard 
+     Preferred Plus rates.
+
+10.4 EMPLOYER INSOLVENCY: If Employer becomes insolvent, 
+     this policy is a general asset of the Employer's 
+     estate to the extent of the Employer's Recoverable 
+     Amount. The Employee's Family Benefit may be at 
+     risk. Employee is advised to monitor the 
+     arrangement and consider requesting Rollout 
+     if Employer's financial condition deteriorates.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - CHRONIC ILLNESS ACCELERATION RIDER (ATTACHED)
+═══════════════════════════════════════════════════════════════════
+11.1 CHRONIC ILLNESS ACCELERATION RIDER (Form VEB-CIA-R):
+     Benefit: Up to 2% of Specified Amount per month, 
+              maximum $100,000/month, lifetime maximum 
+              equal to Specified Amount
+     Trigger: Permanent inability to perform 2+ ADLs 
+              or severe cognitive impairment, 
+              certified by licensed physician
+     Waiting Period: 90 days of continuous qualifying 
+                     condition
+     Benefit reduces Specified Amount and death benefit.
+     Only the Owner (Employer) may invoke this rider 
+     unless the Split-Dollar Agreement grants the 
+     Employee authority to do so.
+     Rider charge: $110.00/month
+
+11.2 This rider is intended to provide liquidity to 
+     the Employer if the Insured becomes chronically 
+     ill and is no longer serving as a productive 
+     executive. See IRC §7702B for potential 
+     tax treatment of benefits.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 12 - GRACE PERIOD & LAPSE
+═══════════════════════════════════════════════════════════════════
+12.1 If Account Value is insufficient to cover monthly 
+     deductions, we notify the Owner (Employer). 
+     A 61-day grace period commences.
+
+12.2 Lapse of this policy during a split-dollar 
+     arrangement may have significant adverse tax 
+     and business consequences for both Employer 
+     and Employee. We strongly recommend the 
+     Employer maintain adequate funding.
+
+12.3 Reinstatement: Within 3 years of lapse with 
+     evidence of insurability of the Insured and 
+     payment of all overdue charges plus 6% interest.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Boston, Massachusetts
+
+[Signature]
+President & Chief Executive Officer
+Vanguard Executive Benefits Life Company
+
+[Signature]
+Executive Vice President, Advanced Markets
+
+Date: November 4, 2024
+
+This policy is issued pursuant to and in connection with the 
+Executive Split-Dollar Agreement between Harrington-Cole 
+Industries, Inc. and Thomas A. Harrington III, dated 
+November 4, 2024. In the event of conflict between this 
+policy and the Split-Dollar Agreement, the terms of this 
+policy control. Policy Form VEB-UL-2024.
+
+═══════════════════════════════════════════════════════════════════

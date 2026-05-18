@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-16",
+  "min_confidence": "medium",
+  "base_iri": "https://example.org/ontology/insurance#",
+  "classes_emitted": 151,
+  "classes_flagged": 1,
+  "properties_emitted": 98,
+  "properties_flagged": 0,
+  "axioms_emitted": 31,
+  "axioms_flagged": 0,
+  "provenance": {
+    "stage3_clusters_class": 151,
+    "stage3_clusters_property": 100,
+    "stage3_clusters_axiom": 31,
+    "stage4_annotated_props": 100,
+    "stage5_class_nodes": 152,
+    "stage6_axioms_raw": 31
+  }
+}

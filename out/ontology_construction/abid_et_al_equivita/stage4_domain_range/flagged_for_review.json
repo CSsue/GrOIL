@@ -1,0 +1,42 @@
+[
+  {
+    "stream": "property",
+    "owl_name": "manages",
+    "domain": "Role",
+    "range": "Age",
+    "confidence": "low",
+    "reasoning": "The property indicates administrative oversight. The domain is Role, as roles manage entities, and the range is Age, which is a common administrative detail managed by roles, though this is a weak signal. A better fit would be a more general administrative entity, but Age is the most frequent object in signals.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: ROLE (1 edges)",
+          "Most frequent target type: AGE (24 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: ROLE (1 edges)",
+          "Most frequent object type: AGE (24 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "manages"
+    ]
+  }
+]

@@ -1,0 +1,435 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AuthorizedRepresentativeEmployer_SEN_SentinelLifeAssuranceCompany a li:AuthorizedRepresentativeEmployer,
+        li:InsurerAuthorizedToApproveChanges ;
+    li:insurerName "Sentinel Life Assurance Company"^^xsd:string ;
+    li:organizationStatus "an organization"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "insurance company, corporate entity, official documentation"^^xsd:string .
+
+abox:AuthorizedRepresentative_SEN_AuthorizedRepresentative a li:AuthorizedRepresentative,
+        li:Role ;
+    li:labelValue "Authorized Representative"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:BaseSumAssured_SEN_FaceAmount a li:BaseSumAssured ;
+    li:hasPolicyDefinition "Accelerated Death Benefit Rider"^^xsd:string ;
+    li:labelValue "Face Amount"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Optional Riders, Death Benefit Acceleration, Terminal Illness Payout"^^xsd:string .
+
+abox:BeneficiaryChangeInstrument_SEN_WrittenRequest a li:BeneficiaryChangeInstrument,
+        li:PremiumDetailsDocument ;
+    li:labelValue "Written request"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:Beneficiary_SEN_ElaineMHughes a li:Beneficiary,
+        li:Person ;
+    li:partyName "Elaine M. Hughes"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:Beneficiary_SEN_MorganLHughes a li:Beneficiary,
+        li:Person ;
+    li:partyName "Morgan L. Hughes"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:BenefitClaim_SEN_WrittenRequest a li:BenefitClaim ;
+    li:labelValue "written request"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:BenefitEligibilityCondition_SEN_IntentionalSelfInflictedInjury a li:BenefitEligibilityCondition,
+        li:Exclusion ;
+    li:labelValue "intentional self-inflicted injury"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:BenefitEligibilityCondition_SEN_ParticipationInAFelony a li:BenefitEligibilityCondition,
+        li:Exclusion ;
+    li:labelValue "participation in a felony"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:BenefitEligibilityCondition_SEN_WarRelatedActivities a li:BenefitEligibilityCondition,
+        li:Exclusion ;
+    li:labelValue "war-related activities"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:CancellationAbility_SEN_RightToRevoke a li:CancellationAbility,
+        li:Right ;
+    li:labelValue "right to revoke"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:CentralIllegalAction_SEN_FraudulentInsuranceAct a li:CentralIllegalAction,
+        li:GracePeriod ;
+    li:labelValue "fraudulent insurance act"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ChiefExecutiveOfficer_SEN_EleanorBRaynor a li:ChiefExecutiveOfficer,
+        li:Person ;
+    li:executedAt "Eleanor B. Raynor is the Chief Executive Officer."^^xsd:string ;
+    li:hasPolicyDefinition "Eleanor B. Raynor represents Sentinel Life Assurance Company."^^xsd:string ;
+    li:organizationStatus "authorized representative"^^xsd:string ;
+    li:partyName "Eleanor B. Raynor"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Chief Executive Officer, Authorized Representative, Sentinel Life Assurance Company"^^xsd:string,
+        "Chief Executive Officer, Organizational Leadership, Corporate Authority"^^xsd:string,
+        "authorized representative, executive officer, insurance company"^^xsd:string .
+
+abox:ClaimValidityLimitation_SEN_TwoYearContestabilityPeriod a li:ClaimValidityLimitation,
+        li:Clause ;
+    li:labelValue "two-year contestability period"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ContestabilityPeriodStart_SEN_Consideration a li:ContestabilityPeriodStart,
+        li:GracePeriod ;
+    li:labelValue "Consideration"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ContestabilityPeriodStart_SEN_EffectiveDate a li:ContestabilityPeriodStart,
+        li:GracePeriod,
+        li:SuicideExclusion ;
+    li:labelValue "Effective Date"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ContestabilityPeriodStart_SEN_IncontestabilityPeriod a li:ContestabilityPeriodStart,
+        li:GracePeriod ;
+    li:labelValue "Incontestability Period"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ContestabilityPeriodStart_SEN_SecondMedicalOpinion a li:ContestabilityPeriodStart,
+        li:GracePeriod ;
+    li:labelValue "second medical opinion"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:ContractualAgreement_SEN_IndividualTermLifeInsurancePolic a li:ContractualAgreement ;
+    li:hasInsuredGender "Male"^^xsd:string ;
+    li:hasPolicyDefinition "Jordan Everett Hughes"^^xsd:string ;
+    li:labelValue "Individual Term Life Insurance Policy"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Gender, Insured Information, Policy Details"^^xsd:string,
+        "Insured Individual, Policy Holder, Life Insurance Coverage"^^xsd:string,
+        "Insured Name, Schedule of Benefits, Policy Details"^^xsd:string .
+
+abox:DeathBenefitRecipient_SEN_Beneficiary a li:DeathBenefitRecipient,
+        li:Person ;
+    li:hasPolicyDefinition "The Beneficiary is the person or entity named in the application."^^xsd:string ;
+    li:partyName "Beneficiary"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Beneficiary, Policy Application, Designation Rules"^^xsd:string .
+
+abox:DeathBenefit_SEN_AcceleratedDeathBenefitRider a li:DeathBenefit,
+        li:GracePeriod ;
+    li:faceAmount "50%"^^xsd:decimal ;
+    li:hasPolicyDefinition "Knowingly submitting false statements with intent to defraud an insurance company is a fraudulent insurance act."^^xsd:string ;
+    li:labelValue "Accelerated Death Benefit Rider"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Accelerated Death Benefit Rider, Face Amount Cap, Benefit Limit"^^xsd:string,
+        "fraud warning, false statements, intentional misrepresentation"^^xsd:string .
+
+abox:DeathBenefit_SEN_DeathBenefit a li:DeathBenefit,
+        li:GracePeriod ;
+    li:hasPolicyDefinition "An alteration or waiver requires express written authorization from an officer of the Company."^^xsd:string ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:reinstatementWindow "Reinstatement provision"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Reinstatement provision, Policy lapse, Benefits recovery"^^xsd:string,
+        "policy modification, written consent, company officer authority"^^xsd:string .
+
+abox:DeathBenefit_SEN_SettlementOptions a li:DeathBenefit,
+        li:GracePeriod ;
+    li:labelValue "Settlement options"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:FaceAmount_SEN_500000 a li:Amount,
+        li:FaceAmount ;
+    li:labelValue "$500,000"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriodForPremiumPayment_SEN_31Days a li:GracePeriodForPremiumPayment ;
+    li:labelValue "31 days"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriodForPremiumPayment_SEN_ThreeYears a li:GracePeriodForPremiumPayment,
+        li:ReinstatementPeriod ;
+    li:labelValue "three years"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriod_SEN_AutomaticPremiumLoanApl a li:GracePeriod,
+        li:PremiumWaiverMechanism ;
+    li:labelValue "Automatic Premium Loan (APL)"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriod_SEN_EntireContract a li:BindingAgreement,
+        li:GracePeriod ;
+    li:labelValue "Entire Contract"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Right to Examine, 20-Day Review Period, Policy Ownership Rights"^^xsd:string ;
+    li:startDateOfExaminationPeriod 20 .
+
+abox:GracePeriod_SEN_GracePeriod a li:GracePeriod ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriod_SEN_Premium a li:GracePeriod,
+        li:Premium ;
+    li:labelValue "Premium"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriod_SEN_RightToExaminePolicy a li:GracePeriod,
+        li:ReviewPeriod ;
+    li:labelValue "Right to Examine Policy"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GracePeriod_SEN_UnearnedPremiums a li:GracePeriod,
+        li:RefundablePortionAfterCancellation ;
+    li:labelValue "Unearned premiums"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:GuaranteedPremiumDuration_SEN_20Years a li:GuaranteedPremiumDuration ;
+    li:labelValue "20 Years"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:InitialMonthlyPremiumAmount_SEN_4200 a li:Amount,
+        li:InitialMonthlyPremiumAmount ;
+    li:labelValue "$42.00"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:InsuredPerson_SEN_Insured a li:InsuredPerson,
+        li:Person ;
+    li:executedAt "immediately"^^xsd:string ;
+    li:hasEffectivePolicyStartDate "the date the request is signed"^^xsd:date,
+        "two years from the Effective Date"^^xsd:string ;
+    li:hasGracePeriodDuration 31 ;
+    li:hasPolicyDefinition "A Policy refers to this Individual Term Life Insurance contract."^^xsd:string,
+        "An Incontestability Period is a two-year period."^^xsd:string,
+        "The Beneficiary is the person or persons designated to receive the Death Benefit upon the Insured’s death."^^xsd:string,
+        "The Insured is the person whose life is covered under this policy."^^xsd:string,
+        "This policy shall be incontestable after it has been in force during the lifetime of the Insured for two years from the Effective Date."^^xsd:string,
+        "Upon cancellation, no further benefits will be payable."^^xsd:string ;
+    li:hasReturnWindowStartDate 20 ;
+    li:partyName "Insured"^^xsd:string ;
+    li:reinstatementWindow 5 ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Beneficiary Change, Effective Date, Insured Survival Status"^^xsd:string,
+        "Beneficiary Change, Effective Date, Policy Owner Rights"^^xsd:string,
+        "Beneficiary, Death Benefit, Payout Designation"^^xsd:string,
+        "Grace Period, Missed Premium, Policy Inforce"^^xsd:string,
+        "Incontestability Period, two-year period, policy validity"^^xsd:string,
+        "Incontestability, Material Misrepresentation, Contestability Period"^^xsd:string,
+        "Insured, policy definition, life insurance"^^xsd:string,
+        "Policy Cancellation, Termination of Benefits, No Further Payments"^^xsd:string,
+        "Policy Definition, Individual Term Life Insurance, Contract Terms"^^xsd:string,
+        "Right to Examine Policy, Full Refund, 20-Day Review Period"^^xsd:string,
+        "Suicide Exclusion, Liability Limitation, Two-Year Clause"^^xsd:string,
+        "incontestability, two-year period, policy enforcement"^^xsd:string,
+        "reinstatement period, policy lapse, coverage restoration"^^xsd:string,
+        "reinstatement, lapsed policy, five-year window"^^xsd:string,
+        "suicide exclusion, two-year limitation, premium refund"^^xsd:string .
+
+abox:InsuredPerson_SEN_JordanEverettHughes a li:InsuredPerson,
+        li:Person ;
+    li:hasEffectivePolicyStartDate "2045-08-07"^^xsd:date ;
+    li:hasInitialMonthlyPremium "Monthly Bank Draft"^^xsd:string ;
+    li:hasIssueAge 37 ;
+    li:partyName "Jordan Everett Hughes"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Coverage Term, Expiration Date, Policy Duration"^^xsd:string,
+        "Issue Age, Underwriting Details, Policy Terms"^^xsd:string,
+        "Monthly Bank Draft, Premium Mode, Payment Mechanism"^^xsd:string .
+
+abox:InsuredPerson_SEN_Owner a li:InsuredPerson,
+        li:Person ;
+    li:hasEffectivePolicyStartDate "12:01 A.M. Standard Time at the Owner’s address on the Effective Date"^^xsd:string ;
+    li:partyName "Owner"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Effective Date, Coverage Activation, Time of Coverage"^^xsd:string,
+        "Right to Examine Policy, Policy Ownership Rights, Review Period"^^xsd:string ;
+    li:startDateOfExaminationPeriod "2023-10-01"^^xsd:date .
+
+abox:InsuredPerson_SEN_PolicyOwner a li:InsuredPerson,
+        li:Person ;
+    li:executedAt "The Policy Owner elects the premium payment mode."^^xsd:string ;
+    li:hasEffectivePolicyStartDate "Effective Date"^^xsd:string ;
+    li:hasPolicyDefinition "Quarterly Premium Payments"^^xsd:string ;
+    li:partyName "Policy Owner"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "premium due dates, effective date, first premium"^^xsd:string,
+        "premium payment mode, policy owner rights, payment frequency"^^xsd:string,
+        "premium payment modes, policy renewal options, payment frequency"^^xsd:string .
+
+abox:InsurerAuthorizedToApproveChanges_SEN_Company a li:InsurerAuthorizedToApproveChanges ;
+    li:hasInitialMonthlyPremium "in advance"^^xsd:string,
+        "monthly"^^xsd:string ;
+    li:hasPolicyDefinition "Coverage terminates without value when the policy lapses."^^xsd:string,
+        "This policy does not include an Automatic Premium Loan provision."^^xsd:string ;
+    li:insurerName "Company"^^xsd:string ;
+    li:reinstatementWindow "payment of all past due premiums with interest"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Automatic Premium Loan, Policy Exclusions, Reinstatement Terms"^^xsd:string,
+        "policy lapse, coverage termination, non-payment of premium"^^xsd:string,
+        "policy reinstatement, past due premiums, interest on delinquent payments"^^xsd:string,
+        "premium payment modes, monthly payments, policy owner options"^^xsd:string,
+        "premium payment, advance payment, payment schedule"^^xsd:string .
+
+abox:InsurerHeadquartersLocation_SEN_HartfordConnecticut a li:InsurerHeadquartersLocation,
+        li:Location ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:stateOfIssuance "Hartford, Connecticut"^^xsd:string .
+
+abox:InsurerHeadquartersLocation_SEN_HartfordCt06103 a li:InsurerHeadquartersLocation,
+        li:Location ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:stateOfIssuance "Hartford, CT 06103"^^xsd:string .
+
+abox:IssuingInsurer_SEN_Company a li:InsurerAuthorizedToApproveChanges,
+        li:IssuingInsurer ;
+    li:hasEffectivePolicyStartDate "two years from the Effective Date"^^xsd:string ;
+    li:hasPolicyDefinition "This policy shall be incontestable after two years from the Effective Date, except for nonpayment of premium."^^xsd:string ;
+    li:insurerName "Company"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Incontestability, Two-Year Rule, Nonpayment Exception"^^xsd:string,
+        "policy cancellation, void from inception, examination period"^^xsd:string,
+        "suicide exclusion, liability reduction, two-year clause"^^xsd:string ;
+    li:voidFromAbInitioDate "Upon return of the policy"^^xsd:string .
+
+abox:IssuingInsurer_SEN_SentinelLifeAssuranceCompany a li:InsurerAuthorizedToApproveChanges,
+        li:IssuingInsurer ;
+    li:executedAt "Eleanor B. Raynor"^^xsd:string,
+        "Home Office of Sentinel Life Assurance Company in Hartford, Connecticut"^^xsd:string ;
+    li:faceAmount 500000.0 ;
+    li:hasEffectivePolicyStartDate "2025-08-07"^^xsd:date,
+        "shown on the Schedule of Benefits"^^xsd:string ;
+    li:hasGracePeriodDuration 20 ;
+    li:hasInitialMonthlyPremium 42.00,
+        "12 months or less"^^xsd:string ;
+    li:hasInsuranceProductType "Level Term Life Insurance – 20 Years"^^xsd:string ;
+    li:hasPolicyDefinition "Committing a fraudulent insurance act involves knowing falsity or concealment related to material facts."^^xsd:string,
+        "During the Grace Period, the policy remains in force."^^xsd:string,
+        "Sentinel Life Assurance Company"^^xsd:string,
+        "The Entire Contract consists of this policy, the application, and any attached riders or endorsements."^^xsd:string,
+        "The policy includes a two-year contestability period."^^xsd:string,
+        "To receive an accelerated benefit, the Policyowner must submit a written request."^^xsd:string ;
+    li:hasPolicyNumber "SLAC-2025-001"^^xsd:string,
+        "SLAC-TL2025-20YR"^^xsd:string ;
+    li:insurerName "Sentinel Life Assurance Company"^^xsd:string ;
+    li:organizationStatus "Sentinel Life Assurance Company"^^xsd:string ;
+    li:reinstatementWindow 5 ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Accelerated Death Benefit, Life Expectancy Requirement, Terminal Illness Diagnosis"^^xsd:string,
+        "CEO, company leadership, executive authority"^^xsd:string,
+        "Coverage Term, Effective Date, August 7, 2025"^^xsd:string,
+        "Effective Date, Schedule of Benefits, Coverage Start"^^xsd:string,
+        "Entire Contract, policy components, application"^^xsd:string,
+        "Face Amount, Death Benefit, Policy Coverage"^^xsd:string,
+        "Grace Period, Policy Inforce Status, Premium Payment Delay"^^xsd:string,
+        "Insurer, Sentinel Life Assurance Company, Policy Issuer"^^xsd:string,
+        "Level Term Life Insurance, 20-Year Coverage, Guaranteed Premiums"^^xsd:string,
+        "Monthly Premium, Financial Obligations, Level Term Coverage"^^xsd:string,
+        "Policy Form Number, Document Identification, Insurance Policy Metadata"^^xsd:string,
+        "Policy Number, Insurance Contract, Document Reference"^^xsd:string,
+        "Policy Number, Schedule of Benefits, Contract Identifier"^^xsd:string,
+        "Premium Guaranteed Period, Level Term Life Insurance, Guaranteed Premiums"^^xsd:string,
+        "Sentinel Life Assurance Company, policy issuer, company definition"^^xsd:string,
+        "Term Life Insurance, Policy Duration, Guaranteed Premium"^^xsd:string,
+        "accelerated death benefit, policyholder requirements, claim initiation"^^xsd:string,
+        "contestability period, policy terms, claim investigation"^^xsd:string,
+        "effective date, policy activation, coverage commencement"^^xsd:string,
+        "fraud warning, material facts, knowingly false statements"^^xsd:string,
+        "policy execution, Sentinel Life Assurance Company, Hartford, Connecticut"^^xsd:string,
+        "policy issuance, insurer identification, company authority"^^xsd:string,
+        "reinstatement period, policy lapse, coverage restoration"^^xsd:string .
+
+abox:LegalDeterrent_SEN_FraudWarning a li:LegalDeterrent,
+        li:LegalNotice ;
+    li:labelValue "Fraud Warning"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:LifeInsuredUnderActiveCoverage_SEN_Insured a li:LifeInsuredUnderActiveCoverage,
+        li:Person ;
+    li:partyName "Insured"^^xsd:string ;
+    li:reinstatementWindow 5,
+        "Reinstatement requires providing evidence of insurability satisfactory to the Company."^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, lapse duration, reinstatement eligibility"^^xsd:string,
+        "reinstatement, evidence of insurability, policy lapse"^^xsd:string .
+
+abox:PartialBenefitAccess_SEN_AcceleratedDeathBenefitRider a li:PartialBenefitAccess,
+        li:Rider ;
+    li:labelValue "Accelerated Death Benefit Rider"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:Person_SEN_Owner a li:Person,
+        li:PolicyReviewAndModificationParty ;
+    li:hasGracePeriodDuration 31 ;
+    li:hasPolicyDefinition "During the grace period, the policy remains in force."^^xsd:string ;
+    li:hasReturnWindowStartDate 20 ;
+    li:partyName "Owner"^^xsd:string ;
+    li:reinstatementWindow "all past due premiums must be paid"^^xsd:string,
+        "evidence of insurability satisfactory to the Company must be provided"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "Grace Period, Policy Continuity, Premium Payment Delay"^^xsd:string,
+        "Grace Period, Premium Payment, Policy Continuity"^^xsd:string,
+        "Policy Review, Ownership Rights, 20-Day Inspection"^^xsd:string,
+        "Reinstatement, Past Due Premiums, Lapsed Policy"^^xsd:string,
+        "Right to Examine Policy, Policy Cancellation, Void from Inception"^^xsd:string,
+        "Right to Examine Policy, Policy Refund, 20-Day Review Period"^^xsd:string,
+        "reinstatement, evidence of insurability, lapsed policy"^^xsd:string ;
+    li:startDateOfExaminationPeriod 20 ;
+    li:voidFromAbInitioDate "Upon return of the policy, the policy shall be treated as if never issued."^^xsd:string .
+
+abox:Person_SEN_PolicyOwner a li:Person,
+        li:PolicyReviewAndModificationParty ;
+    li:partyName "Policy Owner"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyEffectiveDate_SEN_20Days a li:Period,
+        li:PolicyEffectiveDate ;
+    li:dateValue "20 days"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyEffectiveDate_SEN_August72025 a li:Period,
+        li:PolicyEffectiveDate ;
+    li:dateValue "August 7, 2025"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyEffectiveDate_SEN_EffectiveDate a li:Period,
+        li:PolicyEffectiveDate ;
+    li:dateValue "Effective Date"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyEffectiveDate_SEN_TheDateShownInTheScheduleOfBenef a li:Period,
+        li:PolicyEffectiveDate ;
+    li:dateValue "the date shown in the Schedule of Benefits"^^xsd:string ;
+    li:hasEffectivePolicyStartDate "the date shown in the Schedule of Benefits"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string ;
+    li:sourceContractSection "policy effectiveness, Schedule of Benefits, execution timeline"^^xsd:string .
+
+abox:PolicyFormIdentifier_SEN_PolicyFormNumberSlacTl202520yr a li:PolicyFormIdentifier,
+        li:PremiumDetailsDocument ;
+    li:labelValue "Policy Form Number SLAC-TL2025-20YR"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyRestoration_SEN_Reinstatement a li:GracePeriod,
+        li:PolicyRestoration ;
+    li:labelValue "Reinstatement"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PolicyRestoration_SEN_ReinstatementProvision a li:GracePeriod,
+        li:PolicyRestoration ;
+    li:labelValue "Reinstatement Provision"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PremiumDetailsDocument_SEN_MedicalDocumentation a li:PremiumDetailsDocument,
+        li:ProofOfClaim ;
+    li:labelValue "medical documentation"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:PremiumDetailsDocument_SEN_ScheduleOfBenefits a li:PremiumDetailsDocument ;
+    li:labelValue "Schedule of Benefits"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+
+abox:SuicideBenefitRestriction_SEN_SuicideExclusionClause a li:Clause,
+        li:SuicideBenefitRestriction ;
+    li:labelValue "suicide exclusion clause"^^xsd:string ;
+    li:sourceContractID "SEN"^^xsd:string .
+

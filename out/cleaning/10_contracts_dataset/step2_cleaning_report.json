@@ -1,0 +1,108 @@
+{
+  "step": "step2",
+  "decisions_file": "out/cleaning/10_contracts_dataset/step2_decisions.json",
+  "summary": {
+    "before": 34244,
+    "removed_null_like": 0,
+    "removed_rare": 0,
+    "removed_selfloop": 0,
+    "removed_duplicate": 0,
+    "normalized": 925,
+    "total_removed": 0,
+    "after": 34244,
+    "removed_pct": 0.0
+  },
+  "per_file": {
+    "contract_10_indexed_universal.graphml": {
+      "before": 5842,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 193,
+      "after": 5842
+    },
+    "contract_1_term_life.graphml": {
+      "before": 1821,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 33,
+      "after": 1821
+    },
+    "contract_2_whole_life.graphml": {
+      "before": 2199,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 56,
+      "after": 2199
+    },
+    "contract_3_universal_life.graphml": {
+      "before": 2651,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 66,
+      "after": 2651
+    },
+    "contract_4_variable_universal.graphml": {
+      "before": 3408,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 86,
+      "after": 3408
+    },
+    "contract_5_final_expense.graphml": {
+      "before": 4700,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 142,
+      "after": 4700
+    },
+    "contract_6_group_term.graphml": {
+      "before": 2936,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 92,
+      "after": 2936
+    },
+    "contract_7_term_with_riders.graphml": {
+      "before": 3235,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 66,
+      "after": 3235
+    },
+    "contract_8_joint_survivorship.graphml": {
+      "before": 3446,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 75,
+      "after": 3446
+    },
+    "contract_9_return_of_premium.graphml": {
+      "before": 4006,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 116,
+      "after": 4006
+    }
+  },
+  "errors": []
+}

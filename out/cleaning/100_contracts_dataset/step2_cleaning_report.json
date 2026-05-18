@@ -1,0 +1,918 @@
+{
+  "step": "step2",
+  "decisions_file": "out/cleaning/100_contracts_dataset/step2_decisions.json",
+  "summary": {
+    "before": 467981,
+    "removed_null_like": 5,
+    "removed_rare": 0,
+    "removed_selfloop": 0,
+    "removed_duplicate": 0,
+    "normalized": 15051,
+    "total_removed": 5,
+    "after": 467976,
+    "removed_pct": 0.0
+  },
+  "per_file": {
+    "CT10_contract_IUL_01_apex_corporate.graphml": {
+      "before": 9297,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 208,
+      "after": 9297
+    },
+    "CT10_contract_IUL_02_meridian_survivorship.graphml": {
+      "before": 8562,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 197,
+      "after": 8562
+    },
+    "CT10_contract_IUL_03_guardian_protection.graphml": {
+      "before": 7518,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 164,
+      "after": 7518
+    },
+    "CT10_contract_IUL_04_pinnacle_lirp.graphml": {
+      "before": 12520,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 300,
+      "after": 12520
+    },
+    "CT10_contract_IUL_05_futurebright_juvenile.graphml": {
+      "before": 8162,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 224,
+      "after": 8162
+    },
+    "CT10_contract_IUL_06_inclusive_impaired_risk.graphml": {
+      "before": 9341,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 237,
+      "after": 9341
+    },
+    "CT10_contract_IUL_07_altruist_charitable.graphml": {
+      "before": 9231,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 195,
+      "after": 9231
+    },
+    "CT10_contract_IUL_08_ultralife_jumbo.graphml": {
+      "before": 10705,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 312,
+      "after": 10705
+    },
+    "CT10_contract_IUL_09_heartland_living_benefits.graphml": {
+      "before": 7358,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 210,
+      "after": 7358
+    },
+    "CT10_contract_IUL_10_pacific_gateway_foreign_national.graphml": {
+      "before": 11021,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 225,
+      "after": 11021
+    },
+    "CT1_contract_10_portable_term.graphml": {
+      "before": 3956,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 107,
+      "after": 3956
+    },
+    "CT1_contract_1_substandard_term.graphml": {
+      "before": 4851,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 116,
+      "after": 4851
+    },
+    "CT1_contract_2_rop_term.graphml": {
+      "before": 2941,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 91,
+      "after": 2941
+    },
+    "CT1_contract_3_joint_term.graphml": {
+      "before": 3094,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 133,
+      "after": 3094
+    },
+    "CT1_contract_4_keyperson_term.graphml": {
+      "before": 2670,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 83,
+      "after": 2670
+    },
+    "CT1_contract_5_decreasing_term.graphml": {
+      "before": 4710,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 185,
+      "after": 4710
+    },
+    "CT1_contract_6_layered_term_adb.graphml": {
+      "before": 4131,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 151,
+      "after": 4131
+    },
+    "CT1_contract_7_ilit_term.graphml": {
+      "before": 4498,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 141,
+      "after": 4498
+    },
+    "CT1_contract_8_simplified_issue_term.graphml": {
+      "before": 4125,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 149,
+      "after": 4125
+    },
+    "CT1_contract_9_charitable_term.graphml": {
+      "before": 3475,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 91,
+      "after": 3475
+    },
+    "CT2_contract_01_participating_family_legacy.graphml": {
+      "before": 2830,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 77,
+      "after": 2830
+    },
+    "CT2_contract_02_limited_pay_estate_protector.graphml": {
+      "before": 2995,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 106,
+      "after": 2995
+    },
+    "CT2_contract_03_single_premium_legacy_transfer.graphml": {
+      "before": 2928,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 123,
+      "after": 2928
+    },
+    "CT2_contract_04_final_expense_guaranteed_issue.graphml": {
+      "before": 2121,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 62,
+      "after": 2121
+    },
+    "CT2_contract_05_indexed_whole_life.graphml": {
+      "before": 2752,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 106,
+      "after": 2752
+    },
+    "CT2_contract_06_joint_survivorship.graphml": {
+      "before": 2574,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 86,
+      "after": 2574
+    },
+    "CT2_contract_07_child_growth_policy.graphml": {
+      "before": 2787,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 84,
+      "after": 2787
+    },
+    "CT2_contract_08_business_continuation.graphml": {
+      "before": 2313,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 66,
+      "after": 2313
+    },
+    "CT2_contract_09_faith_based_stewardship.graphml": {
+      "before": 2704,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 88,
+      "after": 2704
+    },
+    "CT2_contract_10_retirement_income_whole_life.graphml": {
+      "before": 3514,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 134,
+      "after": 3514
+    },
+    "CT3_contract_10_executive_split_dollar_ul.graphml": {
+      "before": 8269,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 234,
+      "after": 8269
+    },
+    "CT3_contract_1_indexed_ul_corporate.graphml": {
+      "before": 5631,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 211,
+      "after": 5631
+    },
+    "CT3_contract_2_variable_ul_nolapse.graphml": {
+      "before": 5600,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 136,
+      "after": 5600
+    },
+    "CT3_contract_3_survivorship_ul_ilit.graphml": {
+      "before": 5084,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 145,
+      "after": 5084
+    },
+    "CT3_contract_4_ul_ltc_single_pay.graphml": {
+      "before": 5412,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 211,
+      "after": 5412
+    },
+    "CT3_contract_5_current_assumption_ul_shadow.graphml": {
+      "before": 7211,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 203,
+      "after": 7211
+    },
+    "CT3_contract_6_guaranteed_ul_simplified_issue.graphml": {
+      "before": 6631,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 197,
+      "after": 6630
+    },
+    "CT3_contract_7_accumulation_ul_hecv.graphml": {
+      "before": 6610,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 187,
+      "after": 6610
+    },
+    "CT3_contract_8_juvenile_ul_payor_gio.graphml": {
+      "before": 6408,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 208,
+      "after": 6408
+    },
+    "CT3_contract_9_ul_protection_plus_riders.graphml": {
+      "before": 6815,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 306,
+      "after": 6815
+    },
+    "CT4_contract_01_vul_advisory_platform.graphml": {
+      "before": 3387,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 109,
+      "after": 3387
+    },
+    "CT4_contract_02_vul_survivorship_trust_owned.graphml": {
+      "before": 2744,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 84,
+      "after": 2744
+    },
+    "CT4_contract_03_vul_employer_exec_bonus.graphml": {
+      "before": 2776,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 99,
+      "after": 2776
+    },
+    "CT4_contract_04_vul_return_of_premium_no_lapse.graphml": {
+      "before": 2705,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 66,
+      "after": 2705
+    },
+    "CT4_contract_05_vul_private_placement.graphml": {
+      "before": 3459,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 172,
+      "after": 3459
+    },
+    "CT4_contract_06_vul_juvenile_gift_policy.graphml": {
+      "before": 2847,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 78,
+      "after": 2847
+    },
+    "CT4_contract_07_vul_index_overlay.graphml": {
+      "before": 3534,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 109,
+      "after": 3534
+    },
+    "CT4_contract_08_vul_charitable_legacy.graphml": {
+      "before": 2684,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 69,
+      "after": 2684
+    },
+    "CT4_contract_09_vul_business_continuation.graphml": {
+      "before": 2379,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 76,
+      "after": 2379
+    },
+    "CT4_contract_10_vul_senior_lapse_protected.graphml": {
+      "before": 3071,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 89,
+      "after": 3071
+    },
+    "CT5_contract_10_liberty_bell.graphml": {
+      "before": 4593,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 140,
+      "after": 4593
+    },
+    "CT5_contract_1_heartland_legacy.graphml": {
+      "before": 3997,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 107,
+      "after": 3997
+    },
+    "CT5_contract_2_southern_dignity.graphml": {
+      "before": 4259,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 121,
+      "after": 4259
+    },
+    "CT5_contract_3_piedmont_mutual.graphml": {
+      "before": 5392,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 194,
+      "after": 5392
+    },
+    "CT5_contract_4_american_keystone.graphml": {
+      "before": 5287,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 180,
+      "after": 5286
+    },
+    "CT5_contract_5_silvergate.graphml": {
+      "before": 4652,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 160,
+      "after": 4652
+    },
+    "CT5_contract_6_golden_years.graphml": {
+      "before": 4188,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 136,
+      "after": 4188
+    },
+    "CT5_contract_7_twin_oaks.graphml": {
+      "before": 4316,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 164,
+      "after": 4316
+    },
+    "CT5_contract_8_american_hearth.graphml": {
+      "before": 4497,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 111,
+      "after": 4497
+    },
+    "CT5_contract_9_continental_reserve.graphml": {
+      "before": 3645,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 116,
+      "after": 3645
+    },
+    "CT6_contract_10_transoceanic_expat_group_term.graphml": {
+      "before": 6955,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 203,
+      "after": 6955
+    },
+    "CT6_contract_1_summit_group_term.graphml": {
+      "before": 4877,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 174,
+      "after": 4877
+    },
+    "CT6_contract_2_heartland_group_term.graphml": {
+      "before": 5438,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 224,
+      "after": 5438
+    },
+    "CT6_contract_3_pinnacle_exec_group_term.graphml": {
+      "before": 4826,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 165,
+      "after": 4826
+    },
+    "CT6_contract_4_cornerstone_assoc_group_term.graphml": {
+      "before": 5449,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 188,
+      "after": 5449
+    },
+    "CT6_contract_5_continental_union_trust_term.graphml": {
+      "before": 5550,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 218,
+      "after": 5549
+    },
+    "CT6_contract_6_verity_flex_group_term.graphml": {
+      "before": 4718,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 173,
+      "after": 4718
+    },
+    "CT6_contract_7_providence_nonprofit_group_term.graphml": {
+      "before": 4713,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 192,
+      "after": 4712
+    },
+    "CT6_contract_8_meridian_university_group_term.graphml": {
+      "before": 6455,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 227,
+      "after": 6455
+    },
+    "CT6_contract_9_pacific_trust_gov_group_term.graphml": {
+      "before": 5348,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 211,
+      "after": 5348
+    },
+    "CT7_contract_10_extreme_avocation.graphml": {
+      "before": 10934,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 385,
+      "after": 10934
+    },
+    "CT7_contract_1_return_of_premium.graphml": {
+      "before": 6352,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 230,
+      "after": 6352
+    },
+    "CT7_contract_2_key_person_business.graphml": {
+      "before": 4635,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 158,
+      "after": 4635
+    },
+    "CT7_contract_3_decreasing_term_mortgage.graphml": {
+      "before": 4291,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 136,
+      "after": 4291
+    },
+    "CT7_contract_4_ilit_estate_planning.graphml": {
+      "before": 4069,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 146,
+      "after": 4069
+    },
+    "CT7_contract_5_simplified_issue_rated.graphml": {
+      "before": 4415,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 141,
+      "after": 4415
+    },
+    "CT7_contract_6_military_hazardous_occupation.graphml": {
+      "before": 7220,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 228,
+      "after": 7219
+    },
+    "CT7_contract_7_group_term_certificate.graphml": {
+      "before": 7149,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 264,
+      "after": 7149
+    },
+    "CT7_contract_8_laddered_term.graphml": {
+      "before": 5832,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 234,
+      "after": 5832
+    },
+    "CT7_contract_9_survivorship_second_to_die.graphml": {
+      "before": 5228,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 158,
+      "after": 5228
+    },
+    "CT8_contract_10_premium_deposit_survivorship.graphml": {
+      "before": 3131,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 127,
+      "after": 3131
+    },
+    "CT8_contract_1_dynasty_trust_survivorship.graphml": {
+      "before": 3418,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 119,
+      "after": 3418
+    },
+    "CT8_contract_2_limited_pay_survivorship.graphml": {
+      "before": 2639,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 80,
+      "after": 2639
+    },
+    "CT8_contract_3_indexed_crediting_survivorship.graphml": {
+      "before": 2032,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 68,
+      "after": 2032
+    },
+    "CT8_contract_4_guaranteed_nolapse_survivorship.graphml": {
+      "before": 2126,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 94,
+      "after": 2126
+    },
+    "CT8_contract_5_business_succession_survivorship.graphml": {
+      "before": 2536,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 95,
+      "after": 2536
+    },
+    "CT8_contract_6_charitable_legacy_survivorship.graphml": {
+      "before": 2332,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 83,
+      "after": 2332
+    },
+    "CT8_contract_7_multi_owner_estate_equalization.graphml": {
+      "before": 2930,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 95,
+      "after": 2930
+    },
+    "CT8_contract_8_survivor_income_option.graphml": {
+      "before": 2438,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 93,
+      "after": 2438
+    },
+    "CT8_contract_9_asset_protection_survivorship.graphml": {
+      "before": 1896,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 62,
+      "after": 1896
+    },
+    "CT9_contract_10_indexed_rop_credit.graphml": {
+      "before": 2382,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 71,
+      "after": 2382
+    },
+    "CT9_contract_1_staged_loyalty_rop.graphml": {
+      "before": 3388,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 105,
+      "after": 3388
+    },
+    "CT9_contract_2_family_income_rop.graphml": {
+      "before": 3221,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 127,
+      "after": 3221
+    },
+    "CT9_contract_3_mortgage_shield_rop.graphml": {
+      "before": 5447,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 297,
+      "after": 5447
+    },
+    "CT9_contract_4_business_key_person_rop.graphml": {
+      "before": 2449,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 102,
+      "after": 2449
+    },
+    "CT9_contract_5_step_up_face_rop.graphml": {
+      "before": 2354,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 95,
+      "after": 2354
+    },
+    "CT9_contract_6_joint_owner_survivorship_rop.graphml": {
+      "before": 2898,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 88,
+      "after": 2898
+    },
+    "CT9_contract_7_child_education_rop.graphml": {
+      "before": 2770,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 101,
+      "after": 2770
+    },
+    "CT9_contract_8_wellness_credit_rop.graphml": {
+      "before": 2530,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 115,
+      "after": 2530
+    },
+    "CT9_contract_9_charitable_benefit_rop.graphml": {
+      "before": 2843,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 110,
+      "after": 2843
+    }
+  },
+  "errors": []
+}

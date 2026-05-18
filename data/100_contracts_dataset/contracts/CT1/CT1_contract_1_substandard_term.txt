@@ -1,0 +1,241 @@
+═══════════════════════════════════════════════════════════════════
+                    LIFE INSURANCE POLICY
+                    Resolute Life & Risk Insurance Company
+═══════════════════════════════════════════════════════════════════
+
+POLICY NUMBER: RL-2024-SR-00991
+ISSUE DATE: November 18, 2024
+POLICY TYPE: 10-Year Level Term — Substandard Risk Class
+             (Table Rating + Flat Extra)
+
+───────────────────────────────────────────────────────────────────
+SECTION 1: POLICY OWNER AND INSURED
+───────────────────────────────────────────────────────────────────
+
+Policy Owner:     Brendan Patrick O'Sullivan
+Insured Person:   Brendan Patrick O'Sullivan
+Date of Birth:    August 30, 1972
+Age at Issue:     52 years
+Risk Class:       Substandard — Table D (4) Rating
+Flat Extra:       $8.00 per $1,000 of face amount per year
+                  (Occupational flat extra; expires Year 5)
+Reason for Rating: Occupational hazard (commercial diver)
+                   and controlled Type 2 diabetes
+
+───────────────────────────────────────────────────────────────────
+SECTION 2: COVERAGE DETAILS
+───────────────────────────────────────────────────────────────────
+
+Death Benefit Amount:  $300,000 (Level)
+Policy Term:           10 years (expires November 18, 2034)
+
+Premium Calculation:
+  Standard Base Rate (Table A):         $195.00/month
+  Table D Surcharge (3 tables × 25%):   $ 73.13/month
+  Flat Extra ($8 × 300 / 12):           $200.00/month
+  ─────────────────────────────────────────────────────
+  Total Monthly Premium (Years 1–5):    $468.13/month
+  Total Monthly Premium (Years 6–10):   $268.13/month
+  (Flat extra expires after Year 5)
+
+Payment Mode: Monthly automatic deduction
+
+───────────────────────────────────────────────────────────────────
+SECTION 3: BENEFICIARY DESIGNATION
+───────────────────────────────────────────────────────────────────
+
+Primary Beneficiary:    Siobhan Clare O'Sullivan (Spouse) - 100%
+Contingent Beneficiary: Liam James O'Sullivan (Son) - 50%
+                        Aoife Bridget O'Sullivan (Daughter) - 50%
+
+───────────────────────────────────────────────────────────────────
+SECTION 4: DEFINITIONS
+───────────────────────────────────────────────────────────────────
+
+4.1 "Death Benefit" means the $300,000 payable upon the
+    insured's death while this policy is in force.
+
+4.2 "Table Rating" means the mortality surcharge applied to
+    reflect the insured's elevated risk profile, expressed
+    as a percentage addition to standard rates.
+
+    Table A = Standard; each Table adds approximately 25%
+    to the standard premium. Table D (4) = 100% above
+    standard rates.
+
+4.3 "Flat Extra Premium" means an additional per-thousand
+    charge applied for a defined period to account for a
+    specific identified risk (occupational hazard). The
+    flat extra is temporary and expires as stated above.
+
+4.4 "Grace Period" means the 31-day period following each
+    missed monthly premium due date.
+
+4.5 "Occupational Hazard Exclusion" means the exclusion
+    described in Section 8.2, applicable during the flat
+    extra period.
+
+───────────────────────────────────────────────────────────────────
+SECTION 5: DEATH BENEFIT
+───────────────────────────────────────────────────────────────────
+
+5.1 We will pay the death benefit to the named beneficiary
+    if:
+    (a) The insured dies while this policy is in force,
+    (b) Death occurs before November 18, 2034, and
+    (c) We receive satisfactory proof of death, and
+    (d) The cause of death is not excluded under Section 8.
+
+5.2 The death benefit is paid in a lump sum within 30 days
+    of claim approval.
+
+───────────────────────────────────────────────────────────────────
+SECTION 6: PREMIUM STEP-DOWN UPON FLAT EXTRA EXPIRATION
+───────────────────────────────────────────────────────────────────
+
+6.1 The occupational flat extra of $200.00/month will
+    automatically expire at the end of policy year 5
+    (November 18, 2029).
+
+6.2 No notification or action by the owner is required.
+    The monthly premium will automatically reduce to
+    $268.13/month beginning with the premium due on
+    December 18, 2029.
+
+6.3 The owner may, at any time during the flat extra period,
+    request a re-evaluation of the occupational hazard
+    surcharge if the insured changes occupations. Written
+    evidence of a change in occupation must be submitted.
+    Re-evaluation is at our sole discretion.
+
+───────────────────────────────────────────────────────────────────
+SECTION 7: PREMIUM PAYMENTS AND LAPSE
+───────────────────────────────────────────────────────────────────
+
+7.1 The monthly premium (as specified in Section 2) is due
+    on the 18th of each month.
+
+7.2 A grace period of 31 days follows each missed due date.
+
+7.3 Non-payment after the grace period causes lapse.
+
+7.4 Reinstatement is available within 2 years of lapse upon:
+    (a) Evidence of insurability satisfactory to us,
+    (b) Payment of all overdue premiums with 7% interest,
+    (c) Acceptance of any revised rating terms.
+
+───────────────────────────────────────────────────────────────────
+SECTION 8: EXCLUSIONS
+───────────────────────────────────────────────────────────────────
+
+8.1 SUICIDE CLAUSE: If the insured dies by suicide within
+    two years of the issue date, our liability is limited
+    to a refund of premiums paid.
+
+8.2 OCCUPATIONAL HAZARD EXCLUSION (Years 1–5 Only):
+    During policy years 1 through 5, no death benefit
+    is payable if death results directly from the insured's
+    performance of commercial diving operations, including:
+    (a) Saturation, mixed gas, or surface-supplied diving,
+    (b) Underwater construction, inspection, or salvage,
+    (c) Any diving activity in an occupational capacity.
+    In lieu of the death benefit, premiums paid will be
+    refunded with 4% annual interest.
+
+    After policy year 5, this occupational exclusion
+    terminates and death from any commercial diving
+    activity is fully covered.
+
+8.3 DIABETES COMPLICATION EXCLUSION: No death benefit is
+    payable if the insured fails to maintain insulin or
+    medication therapy as prescribed and death results
+    directly from uncontrolled diabetic ketoacidosis or
+    hyperosmolar hyperglycemic crisis within the first
+    two policy years.
+
+8.4 No other exclusions apply.
+
+───────────────────────────────────────────────────────────────────
+SECTION 9: RATING REVIEW PROVISION
+───────────────────────────────────────────────────────────────────
+
+9.1 The owner may request a formal review of the Table D
+    rating on or after the 3rd policy anniversary.
+
+9.2 A rating review requires:
+    (a) Written request from the policy owner
+    (b) Current attending physician's statement
+    (c) HbA1c laboratory results dated within 90 days
+    (d) Payment of a $150.00 review fee
+
+9.3 If the review supports a reduction in mortality risk,
+    we may reduce the table rating and adjust the premium
+    accordingly on a prospective basis.
+
+9.4 No premium refund is available for periods prior to
+    the effective date of any rating improvement.
+
+9.5 We may decline to conduct a rating review more than
+    once per policy year.
+
+───────────────────────────────────────────────────────────────────
+SECTION 10: NO CONVERSION PRIVILEGE
+───────────────────────────────────────────────────────────────────
+
+10.1 This substandard-rated policy does not include a
+     conversion privilege to a permanent policy on a
+     guaranteed basis.
+
+10.2 The insured may apply for a new individual policy at
+     the expiry of this term, subject to full underwriting
+     at the time of application.
+
+───────────────────────────────────────────────────────────────────
+SECTION 11: CLAIMS PROCEDURE
+───────────────────────────────────────────────────────────────────
+
+11.1 To file a death claim:
+     (a) Form RL-CLM-01 (claim form)
+     (b) Certified copy of the death certificate
+     (c) Attending physician's statement indicating
+         cause of death
+     (d) If occupational: diving logs or employer records
+         for claims arising during policy years 1–5
+
+11.2 Submit all documents to:
+     Resolute Life & Risk Insurance Company
+     Specialty Risk Claims Unit
+     2500 Risk Management Plaza, Dallas, TX 75201
+
+11.3 We will pay valid claims within 30 days of receiving
+     all required documentation.
+
+───────────────────────────────────────────────────────────────────
+SECTION 12: GENERAL PROVISIONS
+───────────────────────────────────────────────────────────────────
+
+12.1 INCONTESTABILITY: After two years from the issue date,
+     we may not contest this policy on the basis of
+     misrepresentation, except for non-payment of premium.
+     The diabetes and occupational exclusions in Section 8
+     are not subject to the incontestability clause.
+
+12.2 MISSTATEMENT OF AGE OR SEX: If misstated, benefits
+     will be adjusted to amounts purchasable at the correct
+     age and sex under the applicable rating class.
+
+12.3 ENTIRE CONTRACT: This policy and the application
+     constitute the entire agreement.
+
+12.4 GOVERNING LAW: This policy is governed by the laws
+     of the State of Texas.
+
+═══════════════════════════════════════════════════════════════════
+
+Authorized Signature: ___________________________
+                     Chief Underwriting Officer — Specialty Risk
+                     Resolute Life & Risk Insurance Company
+
+Date Issued: November 18, 2024
+
+═══════════════════════════════════════════════════════════════════

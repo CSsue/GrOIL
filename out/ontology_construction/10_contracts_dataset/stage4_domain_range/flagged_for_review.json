@@ -1,0 +1,622 @@
+[
+  {
+    "stream": "property",
+    "owl_name": "hasPolicyAnniversary",
+    "domain": "InsuranceContract",
+    "range": "DateOfHire",
+    "confidence": "low",
+    "reasoning": "A policy anniversary is an annual event tied to the issue date of the policy. The domain is the policy or contract, and the range is the specific date marking the anniversary.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: PERSON (14 edges)",
+          "Most frequent target type: DATE (1576 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: PERSON (14 edges)",
+          "Most frequent object type: DATE (1576 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "A 'Policy Anniversary' refers to the same day and month as the issue date in each subsequent year."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "Policy Anniversary (2)",
+          "Issue Date (2)",
+          "Annual Policy Milestone (1)",
+          "Annual Renewal (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "may have a policy anniversary if insured by secure life insurance company",
+      "Policy Anniversary Definition",
+      "issues policies with annual policy anniversaries",
+      "is issue date for policy anniversary",
+      "date of policy anniversary triggering recalibration"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "qualifyingEventForRiderActivation",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: DATE (4 edges)",
+          "Most frequent target type: EVENT (41 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: DATE (4 edges)",
+          "Most frequent object type: EVENT (41 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "qualifying event for rider activation",
+      "time constraint for rider activation"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasReducedPaidUpInsurance",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (3 edges)",
+          "Most frequent target type: CALCULATION (49 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (3 edges)",
+          "Most frequent object type: CALCULATION (49 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "Paid-Up Insurance is a reduced death benefit with no further premiums required.",
+          "If premiums are stopped after the policy has been in force for three years, the policyholder may elect Non-Forfeiture Option REDUCED PAID-UP INSURANCE.",
+          "REDUCED PAID-UP INSURANCE provides continued coverage for a reduced death benefit with no further premiums required.",
+          "The amount of REDUCED PAID-UP INSURANCE is based on the cash value and the insured\u2019s attained age."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "Non-Forfeiture Options (3)",
+          "No Further Premiums (2)",
+          "Paid-Up Insurance (1)",
+          "Death Benefit Reduction (1)",
+          "Reduced Paid-Up Insurance (1)",
+          "Post-Premium Termination Benefits (1)",
+          "Continued Coverage (1)",
+          "Cash Value (1)",
+          "Attained Age (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "Paid-Up Insurance Definition",
+      "Reduced Paid-Up Insurance",
+      "Reduced Paid-Up Calculation"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasEstateShare",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Insufficient labeled edges (found 2, need 3)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (2 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "Christopher Bennett Jr.'s share of the estate is 20%.",
+          "Olivia Grace Bennett's share of the estate is 20%."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "estate distribution (2)",
+          "primary beneficiaries (2)",
+          "inheritance percentage (1)",
+          "inheritance percentages (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "Christopher's Estate Share",
+      "Olivia's Estate Share"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasSealAuthentication",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Insufficient labeled edges (found 1, need 3)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (1 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "A seal is present on this document."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "seal (1)",
+          "document authentication (1)",
+          "official signature (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "Seal Authentication"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasSurrenderChargeTier",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: ORGANIZATION (3 edges)",
+          "Most frequent target type: CHARGE (229 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: ORGANIZATION (3 edges)",
+          "Most frequent object type: CHARGE (229 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "tiered charge dependent on holding duration for",
+      "defines time based surrender charge tiers"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasPaymentFrequency",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (23 edges)",
+          "Most frequent target type: OPTION (103 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (23 edges)",
+          "Most frequent object type: OPTION (103 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "You can choose to switch from monthly payments to quarterly payments."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "payment options (1)",
+          "monthly payments (1)",
+          "quarterly payments (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "payment frequency option",
+      "payment frequency",
+      "has payment frequency of annual",
+      "contribution frequency",
+      "frequency reference"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasLocation",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: SUB_ACCOUNT (45 edges)",
+          "Most frequent target type: DOCUMENT (449 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: SUB_ACCOUNT (45 edges)",
+          "Most frequent object type: DOCUMENT (449 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "The current allocation to the S&P 500 Index is 50%.",
+          "The current allocation to the NASDAQ-100 Index is 30%.",
+          "The current allocation to the Fixed Account is 20%.",
+          "Policyholders may change their investment allocations on any policy anniversary.",
+          "Changing allocations on a policy anniversary incurs no charge.",
+          "The first four reallocation requests per year are free.",
+          "A $25 fee applies to each reallocation request beyond the first four per year.",
+          "The policy was executed at Chicago, Illinois.",
+          "This document was executed in Chicago, Illinois.",
+          "This policy was issued in Boston, Massachusetts."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "investment allocation (8)",
+          "policy anniversary (3)",
+          "policy execution (2)",
+          "Chicago, Illinois (2)",
+          "legal jurisdiction (2)",
+          "policy issuance (2)",
+          "premium allocation (2)",
+          "premium load (2)",
+          "sub-account allocation (2)",
+          "Investment Allocation (2)"
+        ]
+      }
+    ],
+    "top_members": [
+      "location",
+      "execution location",
+      "headquarters location",
+      "located in",
+      "verifies location"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasRange",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "LLM call failed after all retries.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (4 edges)",
+          "Most frequent target type: AMOUNT (1027 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (4 edges)",
+          "Most frequent object type: AMOUNT (1027 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "same range",
+      "amount range",
+      "falls in range",
+      "part of range",
+      "sets boundary"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "noGrowthImpliesRiskOwnership",
+    "domain": "InsuranceContract",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "The property links a policy or portfolio concept to risk ownership, where absence of growth implies the insurer retains risk. Given the semantics, the domain is a policy or financial vehicle, and the range is a risk-related entity. 'owl:Thing' is used as a safe fallback for the range since 'RISK' is not in the allowed vocabulary.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (2 edges)",
+          "Most frequent target type: RISK (29 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (2 edges)",
+          "Most frequent object type: RISK (29 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "no growth implies risk ownership"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "conditionalRequirementForChangingFromLevelBenefit",
+    "domain": "BenefitStructure",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "The property specifies a condition required to change from a level benefit structure. The domain is a policy or benefit structure, and the range is a condition. 'Condition' is not in the allowed vocabulary, so 'owl:Thing' is used as a fallback for the range.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONDITION (4 edges)",
+          "Most frequent target type: CONDITION (216 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONDITION (4 edges)",
+          "Most frequent object type: CONDITION (216 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "conditional requirement for changing from level benefit"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "followsAndIsLessThan",
+    "domain": "owl:Thing",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "The property denotes a sequential and comparative relationship between entities. Given the lack of clear semantic context and no supporting signals, the most neutral and generalizable domain and range are 'owl:Thing' to allow for any entity pair.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (2 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (2 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "follows and is less than"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "hasProspectusReviewRequirement",
+    "domain": "InsuranceContract",
+    "range": "ProceedsExclusion",
+    "confidence": "low",
+    "reasoning": "The property indicates a requirement for reviewing a prospectus before policy issuance. The domain is the contract requiring the review, and the range is the requirement itself. 'InsuranceContract' is the correct domain, and 'ProspectusReviewRequirement' is a valid class in the range vocabulary.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: OBLIGATION (1 edges)",
+          "Most frequent target type: REQUIREMENT (15 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: OBLIGATION (1 edges)",
+          "Most frequent object type: REQUIREMENT (15 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "The prospectus for the Separate Account must be read carefully before investing.",
+          "The prospectus for the underlying funds must be read carefully before investing."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "regulatory disclosure (2)",
+          "prospectus (1)",
+          "investment risk (1)",
+          "prospectus review (1)",
+          "underlying funds (1)"
+        ]
+      }
+    ],
+    "top_members": [
+      "Prospectus Review Requirement"
+    ]
+  },
+  {
+    "stream": "property",
+    "owl_name": "determinesPolicySolvencyAfterYear10WithoutRider",
+    "domain": "InsuranceContract",
+    "range": "owl:Thing",
+    "confidence": "low",
+    "reasoning": "This property identifies the factor that ensures policy solvency beyond year 10 without rider influence. The domain is InsuranceContract, as it is the entity subject to solvency evaluation, and the range is a relevant financial or structural condition, best represented by a generic class like owl:Thing due to semantic ambiguity.",
+    "flag_reason": "LLM confidence is low \u2014 manual review recommended.",
+    "signals": [
+      {
+        "signal_id": "S1",
+        "evidence": [
+          "Most frequent source type: CONCEPT (6 edges)",
+          "Most frequent target type: POLICY (251 edges)"
+        ]
+      },
+      {
+        "signal_id": "S2",
+        "evidence": [
+          "Most frequent subject type: CONCEPT (6 edges)",
+          "Most frequent object type: POLICY (251 edges)"
+        ]
+      },
+      {
+        "signal_id": "S3",
+        "evidence": [
+          "No matching fact sentences found."
+        ]
+      },
+      {
+        "signal_id": "S4",
+        "evidence": [
+          "No matching chunk topics found."
+        ]
+      }
+    ],
+    "top_members": [
+      "determines policy solvency after year 10 without rider"
+    ]
+  }
+]

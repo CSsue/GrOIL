@@ -1,0 +1,673 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AdjustmentAfterReinstatement_C9_RopBenefitRecalculated a li:AdjustmentAfterReinstatement ;
+    li:labelValue "ROP benefit recalculated"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:AgeBasedDeathBenefitAdjustment_C9_MisstatementOfAge a li:AgeBasedDeathBenefitAdjustment ;
+    li:labelValue "MISSTATEMENT OF AGE"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:AlternativeRopPaymentMethod_C9_TaxableGain a li:AlternativeRopPaymentMethod,
+        li:PolicyContinuationProtection ;
+    li:labelValue "taxable gain"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:AlternativeRopPaymentMethod_C9_WaitingUntilEndOfTerm a li:AlternativeRopPaymentMethod,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Waiting until end of term"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:AnnualPaymentRule_C9_41AnnualPremiumOf1620IsDueEachSe a li:AnnualPaymentRule,
+        li:DueDate,
+        li:StabilityClause ;
+    li:labelValue "4.1 Annual premium of $1,620 is due each September 15."^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:BorrowingRestriction_C9_PartialWithdrawalsNotPermitted a li:BorrowingRestriction,
+        li:CashValueAccessRestriction ;
+    li:labelValue "Partial withdrawals not permitted"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:BorrowingRestriction_C9_PolicyLoansNotAvailable a li:BorrowingRestriction ;
+    li:labelValue "Policy loans not available"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:CashValueGrowthMechanism_C9_FullSurrender a li:CashValueGrowthMechanism,
+        li:PolicyContinuationProtection ;
+    li:definesCancellationRightTimeframe "5 years"^^xsd:string ;
+    li:hasAmount "full surrender with an applicable ROP percentage"^^xsd:string,
+        "waiting until the end of the term for full ROP payment"^^xsd:string ;
+    li:labelValue "Full surrender"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "cash value access, full surrender, ROP payment"^^xsd:string,
+        "policy reinstatement, lapse recovery window, reinstatement timeframe"^^xsd:string .
+
+abox:CertificateHolder_C9_NicoleChristineMartinez a li:CertificateHolder,
+        li:Insured ;
+    li:deathBenefitAmount 300000.0 ;
+    li:hasAgeEligibility 36 ;
+    li:hasCertificateHolderName "Carlos Roberto Martinez"^^xsd:string,
+        "Nicole Christine Martinez"^^xsd:string ;
+    li:hasDeathBenefitAmount "female"^^xsd:string ;
+    li:hasEffectiveDate "1988-04-07"^^xsd:date ;
+    li:hasFaceAmount "Preferred Plus"^^xsd:string ;
+    li:partyName "Nicole Christine Martinez"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Age at Issue, Insured Information, Policy Underwriting"^^xsd:string,
+        "Insured Information, Date of Birth, Personal Details"^^xsd:string,
+        "Insured Person, Policyholder Identity, Personal Information"^^xsd:string,
+        "Preferred Plus Rating, Insurance Risk Classification, Health-Based Underwriting"^^xsd:string,
+        "death benefit, policy coverage, financial terms"^^xsd:string,
+        "gender, insured details, policyholder info"^^xsd:string,
+        "spouse, beneficiary, marital status"^^xsd:string .
+
+abox:ClaimProcessingWindow_C9_GracePeriod a li:ClaimProcessingWindow,
+        li:CreditingCycleDuration ;
+    li:labelValue "Grace period"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C9_CompletedClaimForm a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Completed claim form"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ContestablePeriodExclusion_C9_MaterialMisrepresentation a li:ContestablePeriodExclusion,
+        li:DeathCauseLimitingRefund ;
+    li:definesCancellationRightTimeframe "2 years"^^xsd:string ;
+    li:labelValue "MATERIAL MISREPRESENTATION"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "contestability period, material misrepresentation, policy invalidation"^^xsd:string .
+
+abox:ContestablePeriodExclusion_C9_Suicide a li:ContestablePeriodExclusion,
+        li:DeathCauseLimitingRefund ;
+    li:gracePeriodDuration "2-year"^^xsd:string ;
+    li:hasAmount "reinstatement is only possible if the insured is still alive"^^xsd:string,
+        "satisfactory evidence of insurability"^^xsd:string ;
+    li:hasEffectiveDate "24 months"^^xsd:string ;
+    li:labelValue "SUICIDE"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, insurability evidence, lapse recovery"^^xsd:string,
+        "reinstatement, contestability period, suicide exclusion"^^xsd:string,
+        "reinstatement, insured living, policy lapse"^^xsd:string,
+        "suicide exclusion, death benefit denial, contestability period"^^xsd:string,
+        "suicide exclusion, premiums returned, contestability period"^^xsd:string .
+
+abox:ContingentBeneficiary_C9_SofiaIsabellaMartinez a li:CertificateHolder,
+        li:ContingentBeneficiary ;
+    li:partyName "Sofia Isabella Martinez"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ConversionDeadline_C9_InsuredS65thBirthday a li:Age,
+        li:ConversionDeadline ;
+    li:labelValue "Insured's 65th birthday"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ConversionTimingCondition_C9_BeforePolicyExpiration a li:ConversionTimingCondition,
+        li:PlanUpgradeRequirement ;
+    li:labelValue "Before policy expiration"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:CostImplicationDueToRopFeature_C9_ThisPolicyCostsMoreThanStandardT a li:CostImplicationDueToRopFeature,
+        li:EconomicFactor ;
+    li:hasAnnualPremium "more than standard term life insurance"^^xsd:string ;
+    li:labelValue "This policy costs more than standard term life insurance"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "return of premium, policy cost, term life insurance"^^xsd:string .
+
+abox:CustomerServiceHotline_C9_1800ValueGuard a li:CustomerServiceHotline,
+        li:OfficialEmailForInquiries ;
+    li:labelValue "1-800-VALUE-GUARD"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C9_NoWarAviationTravelHazardousActi a li:DeathCauseLimitingRefund,
+        li:RestrictedPayoutTrigger ;
+    li:explainsLackOfAutomaticProtection true ;
+    li:labelValue "NO WAR, AVIATION, TRAVEL, HAZARDOUS ACTIVITY EXCLUSIONS"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "aviation exclusions, policy coverage, no hazardous activity limits"^^xsd:string,
+        "hazardous activity exclusions, policy exclusions, coverage terms"^^xsd:string,
+        "travel exclusions, policy coverage, no hazardous activity limits"^^xsd:string,
+        "war exclusions, policy coverage, no hazardous activity limits"^^xsd:string .
+
+abox:DisbursementTimingRule_C9_34RopPaymentsAreMadeWithin60Days a li:DisbursementTimingRule,
+        li:StabilityClause ;
+    li:labelValue "3.4 ROP payments are made within 60 days of the applicable date."^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:EarlyCashAccess_C9_FullSurrender a li:CashAccessMethod,
+        li:EarlyCashAccess ;
+    li:hasFaceAmount "the current face amount of the policy"^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Full surrender"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, maximum conversion amount, face amount"^^xsd:string .
+
+abox:EarlyCashAccess_C9_WaitingUntilEndOfTerm a li:CashAccessMethod,
+        li:EarlyCashAccess ;
+    li:labelValue "Waiting until end of term"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:EligibilityRequirementWarning_C9_CriticalToReceiveTheFullReturnOf a li:CriticalCondition,
+        li:EligibilityRequirementWarning ;
+    li:labelValue "CRITICAL: To receive the full return of premium at end of"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:EligibilityTrigger_C9_PolicyLapses a li:EligibilityTrigger,
+        li:PlanUpgradeRequirement ;
+    li:earnedOn "Upon reinstatement"^^xsd:string ;
+    li:labelValue "Policy lapses"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Policy Reinstatement, Lapsed Period Adjustment"^^xsd:string .
+
+abox:FinalYearReturn_C9_Year20 a li:FinalYearReturn ;
+    li:labelValue "Year 20"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:FullPremiumReturnAmount_C9_32400 a li:FullPremiumReturnAmount,
+        li:MaxConversionPolicySize ;
+    li:annualPremiumAmount 1620.0 ;
+    li:definesCancellationRightTimeframe "Years 1–5"^^xsd:string ;
+    li:hasAmount 32400.0 ;
+    li:hasAnnualPremium "100%"^^xsd:string ;
+    li:hasDeathBenefitAmount 32400.0 ;
+    li:hasEffectiveDate "before the end of the term"^^xsd:string ;
+    li:labelValue "$32,400"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Early Surrender ROP, Premium Return Schedule, Surrender Timing"^^xsd:string,
+        "End of Term ROP, Premium Return at Year 20, Surrender Value"^^xsd:string,
+        "Return of Premium, End of Term, Premium Repayment"^^xsd:string,
+        "Return of Premium, Survival Benefit, Final Payment Condition"^^xsd:string,
+        "annual premium, premium payment, policy cost"^^xsd:string,
+        "return of premium, early surrender, surrender timing"^^xsd:string .
+
+abox:FullRefundFeature_C9_ReturnOfPremiumRop a li:FullRefundFeature,
+        li:PolicyContinuationProtection ;
+    li:hasAmount "100%"^^xsd:string ;
+    li:hasAnnualPremium 32400.0 ;
+    li:hasDeathBenefitAmount 32400.0 ;
+    li:hasFaceAmount "Return of Premium (ROP) Term Life Insurance Policy"^^xsd:string ;
+    li:labelValue "Return of Premium (ROP)"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Survival Benefit, Term Life Insurance"^^xsd:string,
+        "Return of Premium, Term Life Insurance, Premium Refund"^^xsd:string,
+        "Return of Premium, Total Premiums Paid, Policy Refund"^^xsd:string .
+
+abox:FullRefundRequirement_C9_FullReturnOfPremium a li:CriticalCondition,
+        li:FullRefundRequirement ;
+    li:cashSurrenderValueFormula "full surrender with applicable return of premium percentage"^^xsd:string ;
+    li:conversionAgeImpact "the return of premium benefit is forfeited"^^xsd:string ;
+    li:effectiveDateOfNoPartialWithdrawalRule "unknown"^^xsd:string,
+        "waiting until the end of the term for full return of premium payment"^^xsd:string ;
+    li:hasDeathBenefitAmount 300000.0 ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Full return of premium"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "cash value access, full surrender, return of premium"^^xsd:string,
+        "conversion privilege, maximum conversion amount, permanent life insurance"^^xsd:string,
+        "conversion privilege, return of premium forfeiture, policy conversion terms"^^xsd:string,
+        "partial withdrawals, cash value access, policy restrictions"^^xsd:string .
+
+abox:IncreasedCostTerm_C9_ReturnOfPremiumFeature a li:IncreasedCostTerm ;
+    li:annualPremiumAmount "more than standard term life insurance"^^xsd:string ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:hasAmount "not considered a taxable gain"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C9_MinneapolisMinnesota ;
+    li:labelValue "return of premium feature"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, tax-free payout, financial benefits"^^xsd:string,
+        "cash value, policy features, term life insurance"^^xsd:string,
+        "return of premium, policy pricing, term life insurance"^^xsd:string .
+
+abox:LatePremiumPenalty_C9_PolicyLapses a li:LatePremiumPenalty,
+        li:LossOfReturnUponConversion ;
+    li:definesCancellationRightTimeframe "No Policy Loans Allowed"^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Policy lapses"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "policy loans, financial restrictions, benefit limitations"^^xsd:string .
+
+abox:LatePremiumPenalty_C9_RopBenefitReduction a li:Charge,
+        li:LatePremiumPenalty ;
+    li:labelValue "ROP benefit reduction"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:LevelPremium_C9_LevelPremiums a li:LevelPremium,
+        li:PolicyContinuationProtection ;
+    li:hasAnnualPremium "on time"^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "LEVEL premiums"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Premium Payment Timing, Policy Lapse Risk"^^xsd:string .
+
+abox:LossOfReturnUponConversion_C9_RopBenefitForfeited a li:LossOfReturnUponConversion ;
+    li:labelValue "ROP benefit forfeited"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:MaturityReturnCondition_C9_31EndOfTermRop a li:MaturityReturnCondition,
+        li:StabilityClause ;
+    li:labelValue "3.1 END OF TERM ROP:"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:MaturityReturnCondition_C9_32EarlySurrenderRop a li:MaturityReturnCondition,
+        li:StabilityClause ;
+    li:labelValue "3.2 EARLY SURRENDER ROP:"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:NoRetroactiveCorrectionAllowed_C9_MissedPremiumsCannotBeMadeUp a li:NoRetroactiveCorrectionAllowed,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Missed premiums cannot be made up"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:NonAccumulatingBenefit_C9_CashValue a li:NonAccumulatingBenefit,
+        li:PolicyContinuationProtection ;
+    li:effectiveDateOfNoPartialWithdrawalRule "during the term of this policy"^^xsd:string ;
+    li:hasAnnualPremium "convert the policy to permanent insurance"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C9_MinneapolisMinnesota ;
+    li:labelValue "cash value"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "cash value, borrowing, term policy"^^xsd:string,
+        "policy ownership, conversion option, permanent insurance"^^xsd:string .
+
+abox:NonRefundableUponConversion_C9_PremiumsPaidToDate a li:NonRefundableCost,
+        li:NonRefundableUponConversion ;
+    li:hasAmount "10%"^^xsd:string ;
+    li:hasAnnualPremium "level"^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Premiums paid to date"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "level premiums, no premium increases, policy term stability"^^xsd:string,
+        "return of premium, grace period, late payment penalty"^^xsd:string .
+
+abox:NonTaxablePayout_C9_ReturnOfPremium a li:NonTaxablePayout,
+        li:PolicyContinuationProtection ;
+    li:contactChannelForTaxInquiries "in writing"^^xsd:string ;
+    li:hasAnnualPremium "more than standard term life insurance"^^xsd:string,
+        "the applicable ROP percentage"^^xsd:string ;
+    li:hasDeathBenefitAmount "adjusted to reflect what the premium would have purchased at the correct age"^^xsd:string ;
+    li:hasEffectiveDate "2024-09-15"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C9_MinneapolisMinnesota ;
+    li:labelValue "Return of Premium"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Owner Rights, Written Requests, Home Office Procedures"^^xsd:string,
+        "age misstatement, death benefit adjustment, premium purchasing power"^^xsd:string,
+        "policy execution, effective date, document timestamp"^^xsd:string,
+        "policy surrender, return of premium, owner rights"^^xsd:string,
+        "return of premium, policy cost comparison, term life insurance"^^xsd:string .
+
+abox:OfficialEmailForInquiries_C9_ServiceValueguardlifeCom a li:OfficialEmailForInquiries ;
+    li:email ""^^xsd:string ;
+    li:labelValue "service@valueguardlife.com"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PaymentObligationSection_C9_Section4PremiumPaymentRequiremen a li:PaymentObligationSection,
+        li:RopRulesSection ;
+    li:labelValue "SECTION 4: PREMIUM PAYMENT REQUIREMENTS"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PlanUpgradeRequirement_C9_ApplyForReinstatementWithin5Year a li:PlanUpgradeRequirement,
+        li:TimeLimitForReinstatingLapse ;
+    li:labelValue "Apply for reinstatement within 5 years"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyContinuationProtection_C9_AnnualPremium a li:PolicyContinuationProtection,
+        li:PremiumPayment ;
+    li:annualPremiumAmount 1620.0 ;
+    li:conversionAgeImpact "based on the attained age of the insured"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection "Missed premiums cannot be made up."^^xsd:string ;
+    li:gracePeriodDuration 31,
+        "within the grace period"^^xsd:string ;
+    li:hasAmount "premiums paid to date"^^xsd:string ;
+    li:hasEffectiveDate "2023-09-15"^^xsd:date,
+        "If the policy lapses due to unpaid premium, the return of premium benefit is forfeited."^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Annual premium"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Grace Period, Premium Payment, Policy Lapse"^^xsd:string,
+        "annual premium, policy cost, premium payment"^^xsd:string,
+        "conversion privilege, premium calculation, attained age"^^xsd:string,
+        "conversion privilege, premium forfeiture, policy conversion"^^xsd:string,
+        "grace period, premium payment deadline, policy lapse prevention"^^xsd:string,
+        "missed premiums, return of premium, payment deadlines"^^xsd:string,
+        "policy lapse, return of premium, grace period"^^xsd:string,
+        "premium due date, September 15, payment schedule"^^xsd:string .
+
+abox:PolicyContinuationProtection_C9_ConversionPrivilege a li:PolicyContinuationProtection,
+        li:RightToSwitchToPermanentPolicy ;
+    li:conversionAgeImpact "any time before the policy expires"^^xsd:string,
+        "without providing evidence of insurability"^^xsd:string ;
+    li:hasAgeEligibility 65 ;
+    li:hasAmount 50000.0 ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:labelValue "Conversion privilege"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, insured age limit, policy conversion"^^xsd:string,
+        "conversion privilege, minimum conversion amount, policy conversion"^^xsd:string,
+        "conversion privilege, permanent life insurance, no evidence of insurability"^^xsd:string,
+        "conversion privilege, policy expiration, permanent life insurance"^^xsd:string .
+
+abox:PolicyContinuationProtection_C9_LifeInsuranceProtection a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:hasAnnualPremium 20 ;
+    li:hasEffectiveDate "during the term"^^xsd:string ;
+    li:labelValue "Life insurance protection"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Term Life Insurance, Policy Features"^^xsd:string,
+        "policy term, return of premium, 20-year term"^^xsd:string .
+
+abox:PolicyContinuationProtection_C9_NewPolicyPremium a li:PolicyContinuationProtection,
+        li:PostConversionPolicy ;
+    li:labelValue "New policy premium"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyContinuationProtection_C9_OptionToConvertToPermanentInsura a li:PolicyContinuationProtection,
+        li:PostConversionPolicy ;
+    li:labelValue "Option to convert to permanent insurance"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyEffectiveDate_C9_20YearTerm a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "20-year term"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyIdentifier_C9_VgRop20244183 a li:PolicyIdentifier,
+        li:PolicyTermDuration ;
+    li:faceAmount 300000.0 ;
+    li:hasCertificateNumber "VG-ROP-2024-4183"^^xsd:string ;
+    li:labelValue "VG-ROP-2024-4183"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Policy Number, Insurance Document, VG-ROP-2024-4183"^^xsd:string .
+
+abox:PolicyOwner_C9_AssignThePolicyAsCollateral a li:OwnershipRight,
+        li:PolicyOwner ;
+    li:labelValue "assign the policy as collateral"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyOwner_C9_ChangeBeneficiaries a li:OwnershipRight,
+        li:PolicyOwner ;
+    li:definesCancellationRightTimeframe "at any time"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C9_MinneapolisMinnesota ;
+    li:labelValue "change beneficiaries"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "policy owner rights, beneficiary management, ownership privileges"^^xsd:string .
+
+abox:PolicyOwner_C9_ConvertToPermanentInsurance a li:OwnershipRight,
+        li:PolicyOwner ;
+    li:labelValue "convert to permanent insurance"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyOwner_C9_SurrenderThePolicyForTheApplicab a li:OwnershipRight,
+        li:PolicyOwner ;
+    li:labelValue "surrender the policy for the applicable ROP percentage"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PremiumDueDate_C9_September15 a li:PremiumDueDate,
+        li:RetryPaymentDate ;
+    li:dateValue "September 15"^^xsd:string ;
+    li:hasEffectiveDate "before policy expiration"^^xsd:string,
+        "before the insured turns 65"^^xsd:string ;
+    li:hasRange abox:ConversionLimit_C9_MaximumConversionAmount,
+        abox:ConversionLimit_C9_MinimumConversionAmount ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, age limit, policy expiration"^^xsd:string .
+
+abox:PremiumRefund_C9_12960 a li:MaxConversionPolicySize,
+        li:PremiumRefund ;
+    li:labelValue "$12,960"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PremiumRefund_C9_3888 a li:MaxConversionPolicySize,
+        li:PremiumRefund ;
+    li:labelValue "$3,888"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PremiumReturnRate_C9_0 a li:PremiumReturnRate,
+        li:SurrenderCharge ;
+    li:hasAnnualPremium "all premiums must be paid"^^xsd:string ;
+    li:hasDeathBenefitAmount "proportional premium refund based on the early surrender schedule"^^xsd:string ;
+    li:sharePercentage "0%"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Premium Payment Requirement, End-of-Term Payout"^^xsd:string,
+        "death benefit, premium refund, early surrender schedule"^^xsd:string .
+
+abox:PremiumReturnRate_C9_100 a li:PremiumReturnRate,
+        li:SurrenderCharge ;
+    li:hasAnnualPremium "level"^^xsd:string ;
+    li:sharePercentage "100%"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "level premiums, no premium increases, annual payment stability"^^xsd:string .
+
+abox:PremiumReturnRate_C9_30 a li:PremiumReturnRate,
+        li:SurrenderCharge ;
+    li:hasAnnualPremium "30%"^^xsd:decimal ;
+    li:sharePercentage "30%"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Early Surrender ROP, Premium Return Percentage, Years 6–10"^^xsd:string .
+
+abox:PremiumReturnRate_C9_60 a li:PremiumReturnRate,
+        li:SurrenderCharge ;
+    li:definesCancellationRightTimeframe 60 ;
+    li:hasAnnualPremium "60%"^^xsd:decimal ;
+    li:sharePercentage "60%"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Payout Timing, Event-Based Disbursement"^^xsd:string,
+        "early surrender ROP, premium return percentage, policy surrender timeline"^^xsd:string .
+
+abox:PremiumReturnRate_C9_90 a li:PremiumReturnRate,
+        li:SurrenderCharge ;
+    li:cashSurrenderValueFormula "90% of premiums paid"^^xsd:string ;
+    li:sharePercentage "90%"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Policy Surrender, Premium Refund Schedule"^^xsd:string .
+
+abox:PrimaryBeneficiary_C9_CarlosRobertoMartinez a li:CertificateHolder,
+        li:InsuredPerson,
+        li:PrimaryBeneficiary ;
+    li:claimSubmissionAddress "beneficiaries"^^xsd:string ;
+    li:conversionAgeImpact "The policy includes the option to convert to permanent insurance."^^xsd:string ;
+    li:deathBenefitAmount 300000 ;
+    li:hasAllocationPercentage "100%"^^xsd:string ;
+    li:hasAmount 32400.0,
+        "A government-issued ID"^^xsd:string ;
+    li:hasCertificateHolderName "Carlos Roberto Martinez"^^xsd:string,
+        "Marco Daniel Martinez"^^xsd:string,
+        "Sofia Isabella Martinez"^^xsd:string ;
+    li:hasDeathBenefitAmount 300000.0,
+        "payable in addition to any proportional premium refund"^^xsd:string ;
+    li:partyName "Carlos Roberto Martinez"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "claim documentation, beneficiary requirements, government-issued ID"^^xsd:string,
+        "claim process, beneficiary documentation, death benefit payout"^^xsd:string,
+        "contingent beneficiary, beneficiary designation, insurance policy"^^xsd:string,
+        "conversion option, permanent insurance, term life features"^^xsd:string,
+        "death benefit claim, required documentation, beneficiary procedures"^^xsd:string,
+        "death benefit, policy payout, term life insurance"^^xsd:string,
+        "death benefit, policy term, beneficiary payout"^^xsd:string,
+        "death benefit, return of premium, dual payout"^^xsd:string,
+        "husband, beneficiary designations, policy ownership"^^xsd:string,
+        "policy ownership, primary beneficiary, insured individual"^^xsd:string,
+        "primary beneficiary, beneficiary designation, policy payout recipient"^^xsd:string,
+        "primary beneficiary, death benefit, beneficiary designation"^^xsd:string,
+        "return of premium, policy term expiration, premium reimbursement"^^xsd:string,
+        "son, beneficiary, contingent distribution"^^xsd:string .
+
+abox:PrimaryBeneficiary_C9_MarcoDanielMartinez a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasCertificateHolderName "Marco Daniel Martinez"^^xsd:string ;
+    li:partyName "Marco Daniel Martinez"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, beneficiary distribution, policy payout"^^xsd:string .
+
+abox:PrimaryBeneficiary_C9_SofiaIsabellaMartinez a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasCertificateHolderName "Sofia Isabella Martinez"^^xsd:string ;
+    li:hasContingentInterestPercentage "50%"^^xsd:string ;
+    li:partyName "Sofia Isabella Martinez"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, beneficiary allocation, 50% split"^^xsd:string,
+        "contingent beneficiary, beneficiary structure, policy payout order"^^xsd:string,
+        "daughter, contingent beneficiary, inheritance rights"^^xsd:string .
+
+abox:ProofOfCoverageRequirement_C9_GovernmentIssuedId a li:ProofOfCoverageRequirement,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Government-issued ID"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ProofOfDeath_C9_CertifiedDeathCertificate a li:ProofOfDeath,
+        li:RegulatoryDisclosure ;
+    li:labelValue "Certified death certificate"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ProofRequiredForReinstatement_C9_SatisfactoryEvidenceOfInsurabili a li:ProofRequiredForReinstatement ;
+    li:labelValue "Satisfactory evidence of insurability"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ReinstatementEligibilityCriterion_C9_InsuredIsStillAlive a li:ReinstatementEligibilityCriterion,
+        li:Status ;
+    li:labelValue "Insured is still alive"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ReinstatementFinancialObligation_C9_PastDuePremiumsWithInterestAt6Pe a li:ReinstatementFinancialObligation ;
+    li:amountRequiredToPreventTermination "all past due premiums with interest at 6% per annum"^^xsd:string ;
+    li:labelValue "Past due premiums with interest at 6% per annum"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, past due premiums, interest rate"^^xsd:string .
+
+abox:RenewedExclusionWindowPostReinstatement_C9_New2YearSuicideAndContestability a li:RenewedExclusionWindowPostReinstatement ;
+    li:labelValue "New 2-year suicide and contestability period"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:RopRulesSection_C9_Section3ReturnOfPremiumProvision a li:RopRulesSection ;
+    li:labelValue "SECTION 3: RETURN OF PREMIUM PROVISIONS"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:StabilityClause_C9_33DeathDuringTerm a li:MidTermDeathBenefit,
+        li:StabilityClause ;
+    li:labelValue "3.3 DEATH DURING TERM:"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:StabilityClause_C9_42PremiumsAreLevelAndWillNotIncr a li:StabilityClause ;
+    li:labelValue "4.2 Premiums are LEVEL and will not increase during the term."^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:SurrenderPeriodReturn_C9_Years1115 a li:FinalYearReturn,
+        li:SurrenderPeriodReturn ;
+    li:labelValue "Years 11–15"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:SurrenderPeriodReturn_C9_Years15 a li:FinalYearReturn,
+        li:SurrenderPeriodReturn ;
+    li:labelValue "Years 1–5"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:SurrenderPeriodReturn_C9_Years1619 a li:FinalYearReturn,
+        li:SurrenderPeriodReturn ;
+    li:labelValue "Years 16–19"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:SurrenderPeriodReturn_C9_Years610 a li:FinalYearReturn,
+        li:SurrenderPeriodReturn ;
+    li:labelValue "Years 6–10"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:BurialExpenseCoverage_C9_ReturnOfPremiumTermLifeInsurance a li:BurialExpenseCoverage,
+        li:InsuranceContract ;
+    li:annualPremiumAmount 1620.0 ;
+    li:hasAnnualPremium 20,
+        "annual payment"^^xsd:string ;
+    li:hasConcept abox:BurialExpenseCoverage_C9_ReturnOfPremiumTermLifeInsurance,
+        abox:ContingentBeneficiary_C9_ValueguardLifeInsuranceCompany,
+        abox:CoverageContinuationWindow_C9_20YearReturnOfPremiumTerm,
+        abox:DeathBenefitPayoutAmount_C9_300000,
+        abox:MaxConversionPolicySize_C9_1620,
+        abox:MaxConversionPolicySize_C9_32400 ;
+    li:hasDeathBenefitAmount "100%"^^xsd:string ;
+    li:hasEffectiveDate abox:PolicyEffectiveDate_C9_September152024,
+        abox:PolicyEffectiveDate_C9_September152044,
+        "2044-09-15"^^xsd:date ;
+    li:hasFaceAmount "20-Year Return of Premium Term Life"^^xsd:string ;
+    li:labelValue "Return of Premium Term Life Insurance Policy"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "annual premium, policy cost, premium payment"^^xsd:string,
+        "policy end date, term life expiration, coverage period"^^xsd:string,
+        "policy term, coverage duration, 20-year term"^^xsd:string,
+        "premium mode, annual payment, policy terms"^^xsd:string,
+        "primary beneficiary, death benefit, beneficiary designation"^^xsd:string,
+        "return of premium, term life insurance, policy term"^^xsd:string .
+
+abox:ContingentBeneficiary_C9_ValueguardLifeInsuranceCompany a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:contactChannelForTaxInquiries "service@valueguardlife.com"^^xsd:string ;
+    li:earnedOn "Minneapolis, Minnesota"^^xsd:string ;
+    li:hasAnnualPremium "1-800-VALUE-GUARD"^^xsd:string ;
+    li:hasCertificateHolderName "ValueGuard Life Insurance Company"^^xsd:string ;
+    li:hasEffectiveDate "2024-09-15"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C9_MinneapolisMinnesota ;
+    li:insurerName "ValueGuard Life Insurance Company"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Insurance Provider, Policy Issuer, Company Name"^^xsd:string,
+        "customer service, contact information, email address"^^xsd:string,
+        "customer service, phone number, contact details"^^xsd:string,
+        "policy execution, Minneapolis, legal jurisdiction"^^xsd:string,
+        "policy issuance, coverage start date, term life insurance"^^xsd:string .
+
+abox:CoverageContinuationWindow_C9_20YearReturnOfPremiumTerm a li:CoverageContinuationWindow,
+        li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:labelValue "20-Year Return of Premium Term"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C9_300000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:deathBenefitAmount 300000 ;
+    li:labelValue "$300,000"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "death benefit, beneficiary payout, term insurance"^^xsd:string .
+
+abox:MaxConversionPolicySize_C9_1620 a li:MaxConversionPolicySize,
+        li:PlannedAnnualPremium ;
+    li:labelValue "$1,620"^^xsd:string ;
+    li:premiumAmount "annual"^^xsd:decimal ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:MaxConversionPolicySize_C9_32400 a li:MaxConversionPolicySize,
+        li:RefundablePremiumsAtTermEnd ;
+    li:labelValue "$32,400"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyEffectiveDate_C9_September152024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "September 15, 2024"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:PolicyEffectiveDate_C9_September152044 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "September 15, 2044"^^xsd:string ;
+    li:effectiveDateOfNoPartialWithdrawalRule "2044-09-15"^^xsd:date ;
+    li:hasEffectiveDate "2023-09-15"^^xsd:date ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:sourceContractSection "Return of Premium, Policy Termination, September 15, 2044"^^xsd:string,
+        "premium payment schedule, September 15 deadline, annual premium obligation"^^xsd:string .
+
+abox:ClaimMailingAddress_C9_MinneapolisMinnesota a li:ClaimMailingAddress,
+        li:PolicyIssuanceJurisdiction ;
+    li:sourceContractID "C9"^^xsd:string ;
+    li:stateOfIssuance "Minneapolis, Minnesota"^^xsd:string .
+
+abox:ConversionLimit_C9_MaximumConversionAmount a li:ConversionLimit ;
+    li:labelValue "Maximum conversion amount"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+
+abox:ConversionLimit_C9_MinimumConversionAmount a li:ConversionLimit ;
+    li:labelValue "Minimum conversion amount"^^xsd:string ;
+    li:sourceContractID "C9"^^xsd:string .
+

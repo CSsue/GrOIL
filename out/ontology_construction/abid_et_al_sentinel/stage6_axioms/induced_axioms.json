@@ -1,0 +1,580 @@
+[
+  {
+    "axiom_id": "AX_0000",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "reinstatementWindow",
+    "filler": "Action",
+    "cardinality": null,
+    "axiom_str": "Policy reinstatementWindow some Action",
+    "definition": "Policy must meet conditions to be reinstated after lapse.",
+    "confidence": "high",
+    "reasoning": "Evidence shows reinstatement requires specific actions like providing evidence of insurability and paying past due premiums with interest, which are procedural events tied to the policy.",
+    "evidence_sentences": [
+      "To reinstate a lapsed policy, evidence of insurability satisfactory to the Company must be provided.",
+      "To reinstate a lapsed policy, all past due premiums must be paid.",
+      "Interest on past due premiums must be paid as determined by the Company at the time of reinstatement.",
+      "Reinstatement requires payment of all past due premiums with interest.",
+      "The Policyowner may revoke a request for accelerated benefits at any time prior to payment."
+    ],
+    "source_cluster": "ReinstatementRequirement"
+  },
+  {
+    "axiom_id": "AX_0001",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Person",
+    "property_name": "defaultPayoutMethod",
+    "filler": "Right",
+    "cardinality": null,
+    "axiom_str": "Person defaultPayoutMethod some Right",
+    "definition": "Default owner is designated when no explicit owner is named.",
+    "confidence": "high",
+    "reasoning": "The policy states that if no owner is named, the insured is deemed the owner, implying a default right tied to the person\u2019s status.",
+    "evidence_sentences": [
+      "If no Owner is named, the Insured shall be deemed the Owner.",
+      "The Owner has the right to examine this policy for a period of 20 days from receipt."
+    ],
+    "source_cluster": "DefaultOwnerDesignation"
+  },
+  {
+    "axiom_id": "AX_0002",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Action",
+    "property_name": "requiresProofOfDeath",
+    "filler": "Policy",
+    "cardinality": null,
+    "axiom_str": "Action requiresProofOfDeath some Policy",
+    "definition": "Policy changes require written authorization from the policyholder.",
+    "confidence": "high",
+    "reasoning": "Evidence indicates that changes require written authorization from the company officer, linking the action to the policy as the entity being modified.",
+    "evidence_sentences": [
+      "An alteration or waiver requires express written authorization from an officer of the Company.",
+      "No change or waiver of any provision in this policy shall be valid unless made in writing.",
+      "No change or waiver of any provision in this policy shall be valid unless signed by an authorized officer of the Company.",
+      "To receive an accelerated benefit, the Policyowner must submit a written request."
+    ],
+    "source_cluster": "WrittenAuthorizationRequirement"
+  },
+  {
+    "axiom_id": "AX_0003",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "policyOwnerChoosesPaymentMode",
+    "filler": "PolicyLapse",
+    "cardinality": null,
+    "axiom_str": "Policy policyOwnerChoosesPaymentMode some PolicyLapse",
+    "definition": "Policy lapses if premium is not paid by due date.",
+    "confidence": "high",
+    "reasoning": "The policy lapses when a premium is not paid by the end of the grace period, directly linking non-payment to the lapse event.",
+    "evidence_sentences": [
+      "Continued coverage depends on the timely payment of all subsequent premiums due.",
+      "If a premium is not paid before the end of the grace period, the policy shall lapse as of the due date of the unpaid premium.",
+      "If a premium is not paid before the end of the grace period, coverage shall terminate.",
+      "If a premium is not paid before the end of the grace period, there shall be no further benefits payable under the policy.",
+      "Failure to pay the premium by the end of the grace period causes the policy to lapse."
+    ],
+    "source_cluster": "PolicyLapseDueToNonPayment"
+  },
+  {
+    "axiom_id": "AX_0004",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "adjustsInsuranceAmountBasedOnCorrectedAge",
+    "filler": "Amount",
+    "cardinality": null,
+    "axiom_str": "Policy adjustsInsuranceAmountBasedOnCorrectedAge some Amount",
+    "definition": "Adjustments apply for inaccurate age or gender reporting.",
+    "confidence": "high",
+    "reasoning": "Evidence specifies that insurance amount is adjusted based on correct age or gender, indicating a direct relationship between policy and adjusted financial amount.",
+    "evidence_sentences": [
+      "If the age of the Insured has been misstated, the amount of insurance shall be adjusted to the amount that the premium paid would have purchased at the correct age.",
+      "If the gender of the Insured has been misstated, the amount of insurance shall be adjusted to the amount that the premium paid would have purchased at the correct gender."
+    ],
+    "source_cluster": "MisstatementAdjustment"
+  },
+  {
+    "axiom_id": "AX_0005",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "BenefitsConditionalOnContractTerms",
+    "filler": "BenefitEligibilityCondition",
+    "cardinality": null,
+    "axiom_str": "Policy BenefitsConditionalOnContractTerms some BenefitEligibilityCondition",
+    "definition": "Benefits are only available if contractual terms are met.",
+    "confidence": "high",
+    "reasoning": "All benefits are subject to contract terms and exclusions, indicating that eligibility depends on fulfilling defined conditions within the policy.",
+    "evidence_sentences": [
+      "No change to the contract is valid unless made in writing and signed by an officer of Sentinel Life Assurance Company.",
+      "All benefits are subject to the terms of the contract.",
+      "Renewal or conversion must follow specifications outlined in the contract.",
+      "All benefits are subject to the terms and exclusions outlined in the policy.",
+      "The Entire Contract consists of this policy, the application, and any attached riders or endorsements."
+    ],
+    "source_cluster": "BenefitsConditionalOnContractTerms"
+  },
+  {
+    "axiom_id": "AX_0006",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "triggersIncontestabilityPeriodAfterTwoYears",
+    "filler": "Clause",
+    "cardinality": null,
+    "axiom_str": "Policy triggersIncontestabilityPeriodAfterTwoYears some Clause",
+    "definition": "Policy cannot be contested after two years from issuance.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that the incontestability period begins after two years from the effective date, and this condition is formalized as a clause in the policy. The property correctly links Policy to Clause.",
+    "evidence_sentences": [
+      "During the Incontestability Period, the Company may contest the validity of the policy.",
+      "The Company may contest the policy based on material misrepresentations.",
+      "This policy shall be incontestable after it has been in force during the lifetime of the Insured for two years from the Effective Date.",
+      "This policy shall be incontestable after two years from the Effective Date, except for nonpayment of premium.",
+      "Any misrepresentation or omission that materially affects the acceptance of risk may render the policy void if discovered within two years from the Effective Date."
+    ],
+    "source_cluster": "IncontestabilityAfterTwoYears"
+  },
+  {
+    "axiom_id": "AX_0007",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Person",
+    "property_name": "isSubjectToFraudulentInsuranceAct",
+    "filler": "Fraud",
+    "cardinality": null,
+    "axiom_str": "Person isSubjectToFraudulentInsuranceAct some Fraud",
+    "definition": "Policyholder is prohibited from concealing material facts.",
+    "confidence": "high",
+    "reasoning": "The evidence shows that concealing material facts with intent constitutes fraud. The property captures this legal prohibition, linking Person to Fraud as the consequence of such actions.",
+    "evidence_sentences": [
+      "Filing an insurance application or claim with materially false information constitutes fraud.",
+      "Concealing material facts with intent to mislead constitutes a fraudulent insurance act.",
+      "Knowingly submitting false statements with intent to defraud an insurance company is a fraudulent insurance act.",
+      "Committing a fraudulent insurance act involves knowing falsity or concealment related to material facts.",
+      "A fraudulent insurance act occurred."
+    ],
+    "source_cluster": "FraudulentConcealmentProhibition"
+  },
+  {
+    "axiom_id": "AX_0008",
+    "owl_construct": "owl:maxCardinality",
+    "axiom_family": "cardinality_constraint",
+    "subject_class": "LifeInsuranceCoverage",
+    "property_name": "hasAcceleratedDeathBenefitRider",
+    "filler": "Amount",
+    "cardinality": 1,
+    "axiom_str": "LifeInsuranceCoverage hasAcceleratedDeathBenefitRider max 1 Amount",
+    "definition": "Accelerated benefit payment is constrained by a specified limit.",
+    "confidence": "high",
+    "reasoning": "The evidence indicates a maximum limit on accelerated benefit payments, implying a cardinality constraint on the associated Amount. The property reflects the rider's cap on payout.",
+    "evidence_sentences": [
+      "The amount payable under the Accelerated Death Benefit Rider is subject to a maximum limit set by the Company.",
+      "Interest applied to the accelerated benefit is included in the reduction of the Death Benefit."
+    ],
+    "source_cluster": "AcceleratedBenefitPaymentLimit"
+  },
+  {
+    "axiom_id": "AX_0009",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "hasLevelPremiumGuarantee",
+    "filler": "PremiumStability",
+    "cardinality": null,
+    "axiom_str": "Policy hasLevelPremiumGuarantee some PremiumStability",
+    "definition": "Premium remains fixed at a guaranteed level throughout the term.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that premiums are guaranteed to remain level during the term, aligning with the concept of PremiumStability. The property captures this guarantee.",
+    "evidence_sentences": [
+      "Premiums are level throughout the guaranteed term period.",
+      "Premiums are guaranteed not to increase during the guaranteed term period.",
+      "Premiums are level during the guaranteed term period.",
+      "The policy becomes effective only if the first premium has been paid.",
+      "The policy becomes effective only if the Insured is alive on the effective date."
+    ],
+    "source_cluster": "GuaranteedLevelPremium"
+  },
+  {
+    "axiom_id": "AX_0010",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "LifeInsuranceCoverage",
+    "property_name": "triggersExclusion",
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "LifeInsuranceCoverage triggersExclusion some Exclusion",
+    "definition": "Policyholder excluded from coverage for war-related claims.",
+    "confidence": "high",
+    "reasoning": "The evidence specifies that claims from war-related activities are excluded, and this exclusion is formalized as a clause. The property links LifeInsuranceCoverage to Exclusion.",
+    "evidence_sentences": [
+      "No accelerated benefit will be paid if the terminal illness results from war-related activities."
+    ],
+    "source_cluster": "WarRelatedExclusion"
+  },
+  {
+    "axiom_id": "AX_0011",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Policy",
+    "property_name": "NoAutomaticPremiumLoan",
+    "filler": "Right",
+    "cardinality": null,
+    "axiom_str": "Policy NoAutomaticPremiumLoan some Right",
+    "definition": "Prevents automatic premium loan activation under any circumstances.",
+    "confidence": "high",
+    "reasoning": "The evidence states that the policy lacks an automatic premium loan provision, which implies a restriction on a right. The property captures this exclusion as a right-related constraint.",
+    "evidence_sentences": [
+      "This policy does not include an Automatic Premium Loan provision.",
+      "If an Automatic Premium Loan is in force, unpaid premiums due at the end of the grace period will be paid automatically by a policy loan.",
+      "Unpaid premiums will be covered by a policy loan only if there is sufficient loan value available."
+    ],
+    "source_cluster": "NoAutomaticPremiumLoan"
+  },
+  {
+    "axiom_id": "AX_0012",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "TermEndCoverageTermination",
+    "filler": "CoverageTermination",
+    "cardinality": null,
+    "axiom_str": "Policy TermEndCoverageTermination some CoverageTermination",
+    "definition": "Coverage ends at term expiration unless conversion is elected.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that coverage termination occurs at term end unless conversion is elected, aligning with the property's domain and range. The construct captures the existence of such a termination event.",
+    "evidence_sentences": [
+      "Coverage terminates at the end of the term unless renewed or converted as specified in the contract.",
+      "Coverage terminates at the end of the term unless renewed.",
+      "Coverage terminates at the end of the term unless converted."
+    ],
+    "source_cluster": "TermEndCoverageTermination"
+  },
+  {
+    "axiom_id": "AX_0013",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "LifeInsuranceCoverage",
+    "property_name": "SuicideExclusion",
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "LifeInsuranceCoverage SuicideExclusion some Exclusion",
+    "definition": "Death by suicide within two years excludes claim eligibility.",
+    "confidence": "high",
+    "reasoning": "The property defines a claim exclusion for suicide within two years, consistent with the range Exclusion. The evidence supports this as a standard contractual restriction.",
+    "evidence_sentences": [
+      "If the Insured dies by suicide within two years from the Effective Date, the Company\u2019s liability shall be limited to a refund of premiums paid.",
+      "If the Insured dies by suicide within two years from the Effective Date, the Company\u2019s liability shall be reduced by any indebtedness owed.",
+      "No accelerated benefit will be paid if the terminal illness results from intentional self-inflicted injury."
+    ],
+    "source_cluster": "SuicideExclusion"
+  },
+  {
+    "axiom_id": "AX_0014",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "RefundEligibilityAfterReturn",
+    "filler": "RefundEligibility",
+    "cardinality": null,
+    "axiom_str": "Policy RefundEligibilityAfterReturn some RefundEligibility",
+    "definition": "Policyholder is eligible for refund upon return within 20 days.",
+    "confidence": "high",
+    "reasoning": "The evidence shows refund eligibility is triggered by returning the policy within 20 days, directly linking the property to the eligibility condition. The construct reflects this dependency.",
+    "evidence_sentences": [
+      "If the Owner is not satisfied with the policy within 20 days of receipt, the policy may be returned to the Company.",
+      "If the policy is returned within 20 days of receipt, the Company shall issue a full refund of any premium paid.",
+      "Upon return of the policy, the policy shall be void from inception.",
+      "Upon return of the policy, the policy shall be treated as if never issued.",
+      "If the policy has any unearned premiums, they will be refunded as specified under applicable law."
+    ],
+    "source_cluster": "RefundEligibilityAfterReturn"
+  },
+  {
+    "axiom_id": "AX_0015",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Policy",
+    "property_name": "EndorsementOnlyAccess",
+    "filler": "PolicyEndorsement",
+    "cardinality": null,
+    "axiom_str": "Policy EndorsementOnlyAccess some PolicyEndorsement",
+    "definition": "Access to APL is permitted only via endorsement.",
+    "confidence": "medium",
+    "reasoning": "The evidence indicates that APL access is restricted to endorsement, supporting a someValuesFrom restriction. The low confidence reflects limited edge topology evidence.",
+    "evidence_sentences": [
+      "An Automatic Premium Loan provision can only be added via endorsement or rider."
+    ],
+    "source_cluster": "EndorsementOnlyAccess"
+  },
+  {
+    "axiom_id": "AX_0016",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "GracePeriod",
+    "property_name": "GracePeriodBenefitAdjustment",
+    "filler": "DeathBenefit",
+    "cardinality": null,
+    "axiom_str": "GracePeriod GracePeriodBenefitAdjustment some DeathBenefit",
+    "definition": "Death benefit may be adjusted during the grace period.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that the death benefit is adjusted during the grace period due to unpaid premiums, directly linking the property to the benefit. The construct captures this conditional adjustment.",
+    "evidence_sentences": [
+      "During the Grace Period, the policy remains in force.",
+      "During the grace period, the policy remains in force.",
+      "If the Insured dies during the grace period, any unpaid premium due will be deducted from the Death Benefit."
+    ],
+    "source_cluster": "GracePeriodBenefitAdjustment"
+  },
+  {
+    "axiom_id": "AX_0017",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Action",
+    "property_name": "PhysicianCertificationRequirement",
+    "filler": "MedicalVerification",
+    "cardinality": null,
+    "axiom_str": "Action PhysicianCertificationRequirement some MedicalVerification",
+    "definition": "Physician certification is required for benefit eligibility.",
+    "confidence": "high",
+    "reasoning": "The evidence specifies that life expectancy certification must be physician-certified, aligning with MedicalVerification. The property correctly links the action to the required verification.",
+    "evidence_sentences": [
+      "The life expectancy determination must be certified by a licensed physician."
+    ],
+    "source_cluster": "PhysicianCertificationRequirement"
+  },
+  {
+    "axiom_id": "AX_0018",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "hasPolicyDefinition",
+    "filler": "Policy",
+    "cardinality": null,
+    "axiom_str": "Policy hasPolicyDefinition some Policy",
+    "definition": "Policy issuance requires a formal application.",
+    "confidence": "medium",
+    "reasoning": "The evidence indicates policy issuance depends on a formal application. The property 'hasPolicyDefinition' is inferred as the closest match to capture the issuance condition, with 'Policy' as the filler to reflect the definition's domain.",
+    "evidence_sentences": [
+      "This policy is issued in consideration of the statements made in the application."
+    ],
+    "source_cluster": "ApplicationBasedIssuance"
+  },
+  {
+    "axiom_id": "AX_0019",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "AdministrativeCharge",
+    "property_name": "administersDeathBenefitTerms",
+    "filler": "DeathBenefit",
+    "cardinality": null,
+    "axiom_str": "AdministrativeCharge administersDeathBenefitTerms some DeathBenefit",
+    "definition": "Administrative charges reduce the death benefit.",
+    "confidence": "high",
+    "reasoning": "The property 'administersDeathBenefitTerms' is selected as it best captures the effect of administrative charges on death benefit terms. The evidence confirms the reduction of death benefit by such charges.",
+    "evidence_sentences": [
+      "Administrative charges applied to the accelerated benefit are included in the reduction of the Death Benefit."
+    ],
+    "source_cluster": "AdminChargesReduceDeathBenefit"
+  },
+  {
+    "axiom_id": "AX_0020",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "disjointness",
+    "subject_class": "Policy",
+    "property_name": null,
+    "filler": "Beneficiary",
+    "cardinality": null,
+    "axiom_str": "Policy DisjointWith Beneficiary",
+    "definition": "Death benefit payout priority is determined by rules.",
+    "confidence": "high",
+    "reasoning": "The evidence shows distinct payout paths for beneficiaries, policy owners, and estates. The classes 'Beneficiary' and 'Policy' are not in a subclass relationship and share no common subclass, satisfying disjointness safety.",
+    "evidence_sentences": [
+      "The Death Benefit is subject to the terms of this policy.",
+      "The Company will pay the Death Benefit upon receipt of due proof of the Insured\u2019s death while the policy is in force.",
+      "The Death Benefit is paid to the designated Beneficiary.",
+      "The Death Benefit payment is subject to the terms of this policy.",
+      "If no Beneficiary survives the Insured, the Death Benefit will be paid to the Policy Owner if the Policy Owner is living."
+    ],
+    "source_cluster": "DeathBenefitPayoutPriority"
+  },
+  {
+    "axiom_id": "AX_0021",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Person",
+    "property_name": "isSubjectToFraudulentInsuranceAct",
+    "filler": "Exclusion",
+    "cardinality": null,
+    "axiom_str": "Person isSubjectToFraudulentInsuranceAct some Exclusion",
+    "definition": "A person is excluded if they participated in a felony.",
+    "confidence": "high",
+    "reasoning": "The property 'isSubjectToFraudulentInsuranceAct' is the closest match to capture felony-related exclusion. The evidence confirms that felony participation triggers exclusion from benefits.",
+    "evidence_sentences": [
+      "No accelerated benefit will be paid if the terminal illness results from participation in a felony."
+    ],
+    "source_cluster": "FelonyParticipationExclusion"
+  },
+  {
+    "axiom_id": "AX_0022",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Action",
+    "property_name": "requiresProofOfDeath",
+    "filler": "DocumentAccess",
+    "cardinality": null,
+    "axiom_str": "Action requiresProofOfDeath some DocumentAccess",
+    "definition": "Documentation is required before acceleration.",
+    "confidence": "high",
+    "reasoning": "The evidence specifies that medical documentation must accompany the request. The property 'requiresProofOfDeath' is used to link the action to the required document access.",
+    "evidence_sentences": [
+      "Medical documentation acceptable to the Company must accompany the request."
+    ],
+    "source_cluster": "DocumentationRequirementForAcceleration"
+  },
+  {
+    "axiom_id": "AX_0023",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Policy",
+    "property_name": "triggersLienDeductionAdjustment",
+    "filler": "PolicyLoanDeduction",
+    "cardinality": null,
+    "axiom_str": "Policy triggersLienDeductionAdjustment some PolicyLoanDeduction",
+    "definition": "Loans are deducted only after acceleration.",
+    "confidence": "high",
+    "reasoning": "The evidence states that outstanding loans and liens are deducted after acceleration. The property 'triggersLienDeductionAdjustment' best captures this temporal dependency.",
+    "evidence_sentences": [
+      "Outstanding loans on the policy are deducted when calculating the adjusted Death Benefit after acceleration.",
+      "Outstanding liens on the policy are deducted when calculating the adjusted Death Benefit after acceleration."
+    ],
+    "source_cluster": "LoanDeductionPostAcceleration"
+  },
+  {
+    "axiom_id": "AX_0024",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Right",
+    "property_name": "RightToExamineDuration",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "Right hasRightToExamineDuration some Period",
+    "definition": "Policyholder has right to examine policy for specified duration.",
+    "confidence": "high",
+    "reasoning": "The right to examine is associated with a 20-day period from receipt, making 'Period' the appropriate range. The property directly links the 'Right' class to its temporal duration.",
+    "evidence_sentences": [
+      "The Right to Examine applies for a period of 20 days from receipt."
+    ],
+    "source_cluster": "RightToExamineDuration"
+  },
+  {
+    "axiom_id": "AX_0025",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "Policy",
+    "property_name": "PolicyComponentsDefinition",
+    "filler": "Policy",
+    "cardinality": null,
+    "axiom_str": "Policy hasPolicyComponentsDefinition some Policy",
+    "definition": "Defines the components that constitute a policy.",
+    "confidence": "medium",
+    "reasoning": "The policy includes application, schedule, riders, and endorsements, suggesting a structural relationship. Although 'Policy' is used as a placeholder for components, it is the closest available class in the vocabulary.",
+    "evidence_sentences": [
+      "A Policy includes the application, policy schedule, riders, and endorsements."
+    ],
+    "source_cluster": "PolicyComponentsDefinition"
+  },
+  {
+    "axiom_id": "AX_0026",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "AuthorizedRepresentative",
+    "property_name": "hasAgentAuthorityLimitation",
+    "filler": "Right",
+    "cardinality": null,
+    "axiom_str": "AuthorizedRepresentative hasAgentAuthorityLimitation some Right",
+    "definition": "Agent's authority is restricted to specific actions or scopes.",
+    "confidence": "high",
+    "reasoning": "The evidence shows agents cannot modify or waive policy provisions, indicating limitations on their rights. Thus, the range 'Right' is appropriate for the limitation.",
+    "evidence_sentences": [
+      "No agent or representative may alter or waive any provision of this policy.",
+      "No agent or broker is authorized to modify the policy.",
+      "No agent or broker is authorized to waive any of the policy's provisions."
+    ],
+    "source_cluster": "AgentAuthorityLimitation"
+  },
+  {
+    "axiom_id": "AX_0027",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuredPerson",
+    "property_name": "TerminalIllnessEligibility",
+    "filler": "BenefitEligibilityCondition",
+    "cardinality": null,
+    "axiom_str": "InsuredPerson hasTerminalIllnessEligibility some BenefitEligibilityCondition",
+    "definition": "Policyholder must meet medical criteria for terminal illness benefits.",
+    "confidence": "high",
+    "reasoning": "The insured must be diagnosed with a terminal illness and have a life expectancy of 12 months or less, which defines a medical eligibility condition.",
+    "evidence_sentences": [
+      "An insured individual qualifies for the accelerated benefit if diagnosed with a terminal illness.",
+      "A diagnosis of terminal illness must come with a life expectancy of 12 months or less."
+    ],
+    "source_cluster": "TerminalIllnessEligibility"
+  },
+  {
+    "axiom_id": "AX_0028",
+    "owl_construct": "owl:maxCardinality",
+    "axiom_family": "cardinality_constraint",
+    "subject_class": "Policy",
+    "property_name": "MaxPayoutLimit",
+    "filler": "Amount",
+    "cardinality": 1,
+    "axiom_str": "Policy hasMaxPayoutLimit max 1 Amount",
+    "definition": "Maximum amount payable under a policy is constrained.",
+    "confidence": "high",
+    "reasoning": "The evidence specifies a 50% cap on the accelerated death benefit, indicating a maximum limit. The cardinality is 1 because the limit is a single value.",
+    "evidence_sentences": [
+      "The amount payable under the Accelerated Death Benefit Rider cannot exceed 50% of the policy\u2019s Face Amount."
+    ],
+    "source_cluster": "MaxPayoutLimit"
+  },
+  {
+    "axiom_id": "AX_0029",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "BeneficiaryChangeInstrument",
+    "property_name": "BeneficiaryChangeEffectiveImmediately",
+    "filler": "EffectiveDate",
+    "cardinality": null,
+    "axiom_str": "BeneficiaryChangeInstrument hasBeneficiaryChangeEffectiveImmediately some EffectiveDate",
+    "definition": "Beneficiary change takes effect immediately upon submission.",
+    "confidence": "high",
+    "reasoning": "The change takes effect regardless of the insured's survival status, indicating a specific effective date. The property links the instrument to a temporal point.",
+    "evidence_sentences": [
+      "A change of Beneficiary takes effect regardless of whether the Insured is alive when the Company receives the request."
+    ],
+    "source_cluster": "BeneficiaryChangeEffectiveImmediately"
+  },
+  {
+    "axiom_id": "AX_0030",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Policy",
+    "property_name": "terminates",
+    "filler": "CoverageTermination",
+    "cardinality": null,
+    "axiom_str": "Policy terminates some CoverageTermination",
+    "definition": "Policy cancellation triggers coverage termination.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that cancellation directly causes coverage termination. The property 'terminates' correctly captures this causal link between Policy and CoverageTermination.",
+    "evidence_sentences": [
+      "Upon cancellation, insurance coverage will terminate.",
+      "Upon cancellation, no further benefits will be payable."
+    ],
+    "source_cluster": "PolicyCancellationTermination"
+  }
+]

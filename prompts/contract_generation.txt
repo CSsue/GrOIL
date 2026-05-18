@@ -1,0 +1,12 @@
+You are an expert life insurance contract drafter. I have attached a seed contract.
+
+Generate 10 new contracts in the same product category as the seed — preserve the 
+product type (e.g., if the seed is a level term, all 10 should be level term), but 
+make each contract genuinely structurally diverse. Do not just vary names, amounts, 
+or dates — vary the actual product design, provisions, exclusion regimes, riders, 
+ownership structures, market positioning, etc so each contract feels like a distinct 
+offering from a different carrier. Keep the contract length similar to the seed — 
++-20% is okay.
+
+Output:
+- 10 .txt files for the contracts

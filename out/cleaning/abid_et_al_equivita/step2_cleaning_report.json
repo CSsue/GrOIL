@@ -1,0 +1,27 @@
+{
+  "step": "step2",
+  "decisions_file": "out/cleaning/abid_et_al_equivita/step2_decisions.json",
+  "summary": {
+    "before": 7676,
+    "removed_null_like": 1,
+    "removed_rare": 0,
+    "removed_selfloop": 0,
+    "removed_duplicate": 0,
+    "normalized": 130,
+    "total_removed": 1,
+    "after": 7675,
+    "removed_pct": 0.01
+  },
+  "per_file": {
+    "equi.graphml": {
+      "before": 7676,
+      "removed_null_like": 1,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 130,
+      "after": 7675
+    }
+  },
+  "errors": []
+}

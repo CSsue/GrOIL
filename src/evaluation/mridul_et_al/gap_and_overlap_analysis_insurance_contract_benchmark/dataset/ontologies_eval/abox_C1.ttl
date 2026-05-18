@@ -1,0 +1,286 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AnnualRenewalReferencePoint_C1_PolicyAnniversary a li:AnnualRenewalReferencePoint,
+        li:FinalYearReturn,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Policy Anniversary"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:AuthorizedSignatory_C1_ChiefUnderwritingOfficer a li:AuthorizedSignatory,
+        li:CertificateHolder ;
+    li:hasDeathBenefitAmount "the death benefit to reflect what the premiums paid would have purchased at the correct sex"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:partyName "Chief Underwriting Officer"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "misstatement of sex, death benefit adjustment, premium equivalence"^^xsd:string .
+
+abox:BenefitAdjustment_C1_MisstatementOfAgeOrSex a li:BenefitAdjustment,
+        li:InsurerChallengePeriodLimit ;
+    li:labelValue "MISSTATEMENT OF AGE OR SEX"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:CertificateHolder_C1_JohnMichaelAnderson a li:CertificateHolder,
+        li:Insured,
+        li:PolicyOwner ;
+    li:hasAgeEligibility 38 ;
+    li:hasAnnualPremium 45.00,
+        "monthly automatic deduction"^^xsd:string ;
+    li:hasCertificateHolderName "John Michael Anderson"^^xsd:string,
+        "Sarah Elizabeth Anderson"^^xsd:string ;
+    li:hasEffectiveDate "1985-03-22"^^xsd:date,
+        "2044-01-15"^^xsd:date ;
+    li:partyName "John Michael Anderson"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "Date of Birth, Insured Person, Policy Details"^^xsd:string,
+        "Insured Age, Underwriting Information, Policy Issuance Details"^^xsd:string,
+        "Insured Person, Policy Owner, Personal Information"^^xsd:string,
+        "Policy Owner, John Michael Anderson, Section 1"^^xsd:string,
+        "policy term, expiration date, coverage duration"^^xsd:string,
+        "premium amount, monthly payment, policy cost"^^xsd:string,
+        "premium payment mode, automatic deduction, monthly payments"^^xsd:string,
+        "spouse, beneficiary designation, insured relationship"^^xsd:string .
+
+abox:ClaimHandler_C1_ClaimsDepartment a li:ClaimHandler ;
+    li:labelValue "Claims Department"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:ClaimProcessingWindow_C1_Within30Days a li:ClaimProcessingWindow,
+        li:CreditingCycleDuration ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:labelValue "within 30 days"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:ClaimSubmissionDocument_C1_CompletedClaimForm a li:ClaimSubmissionDocument,
+        li:RegulatoryDisclosure ;
+    li:claimSubmissionAddress "a completed claim form"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:labelValue "completed claim form"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "death benefit claim, claim form, beneficiary procedure"^^xsd:string .
+
+abox:ClaimSubmissionProcess_C1_Section9ClaimsProcedure a li:ClaimSubmissionProcess,
+        li:RopRulesSection ;
+    li:claimSubmissionAddress "P.O. Box 5000, Hartford, CT 06102"^^xsd:string,
+        "a certified copy of the death certificate"^^xsd:string ;
+    li:definesCancellationRightTimeframe 30 ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:labelValue "SECTION 9: CLAIMS PROCEDURE"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "claim processing, payment timeframe, valid claims"^^xsd:string,
+        "claims procedure, submission address, policy claims"^^xsd:string,
+        "death benefit claim, required documentation, certified death certificate"^^xsd:string .
+
+abox:ContingentBeneficiary_C1_EmmaGraceAnderson a li:CertificateHolder,
+        li:ContingentBeneficiary ;
+    li:hasCertificateHolderName "Emma Grace Anderson"^^xsd:string ;
+    li:hasDeathBenefitAmount "50%"^^xsd:string ;
+    li:partyName "Emma Grace Anderson"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, beneficiary designation, policy beneficiaries"^^xsd:string,
+        "contingent beneficiary, death benefit distribution, beneficiary designation"^^xsd:string,
+        "daughter, beneficiary, family relation"^^xsd:string .
+
+abox:ContingentBeneficiary_C1_LucasJamesAnderson a li:CertificateHolder,
+        li:ContingentBeneficiary ;
+    li:hasCertificateHolderName "Lucas James Anderson"^^xsd:string ;
+    li:hasContingentInterestPercentage "50%"^^xsd:string ;
+    li:hasEffectiveDate "the same day and month as the issue date in each subsequent year"^^xsd:string ;
+    li:partyName "Lucas James Anderson"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "Policy Anniversary, Issue Date, Annual Policy Milestone"^^xsd:string,
+        "contingent beneficiary, beneficiary share, policy beneficiary"^^xsd:string,
+        "contingent beneficiary, death benefit distribution, beneficiary designation"^^xsd:string,
+        "contingent beneficiary, family relationship, insured's child"^^xsd:string .
+
+abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany a li:ClaimsProcessingAuthority,
+        li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:claimSubmissionAddress "Claims Department of SecureLife Insurance Company"^^xsd:string,
+        "SecureLife Insurance Company"^^xsd:string ;
+    li:conversionAgeImpact "The class of permanent policy selected affects the conversion outcome."^^xsd:string ;
+    li:gracePeriodDuration 31 ;
+    li:hasAmount "The amount of coverage converted"^^xsd:string ;
+    li:hasAnnualPremium 20 ;
+    li:hasCertificateHolderName "Chief Underwriting Officer"^^xsd:string ;
+    li:hasCertificateNumber "SL-2024-TRM-00123"^^xsd:string,
+        "SecureLife Insurance Company"^^xsd:string ;
+    li:hasDeathBenefitAmount 500000.0,
+        "adjust the death benefit to reflect what the premiums paid would have purchased at the correct age"^^xsd:string,
+        "the amount payable to the beneficiary upon the death of the insured during the policy term"^^xsd:string ;
+    li:hasEffectiveDate "2024-01-15"^^xsd:date,
+        15,
+        "two years from the issue date"^^xsd:string,
+        "until they receive written notice at their home office"^^xsd:string ;
+    li:hasFaceAmount "20-Year Level Term Life Insurance"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:insurerName "SecureLife Insurance Company"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Beneficiary Payout, Policy Term Coverage"^^xsd:string,
+        "Grace Period, Coverage Continuity, Premium Due Date"^^xsd:string,
+        "Issue Date, Policy Documentation, Effective Date"^^xsd:string,
+        "Issue Date, Policy Start, Temporal Reference"^^xsd:string,
+        "Premium Due Date, Monthly Payment Schedule, Insurance Policy Terms"^^xsd:string,
+        "Term Life Insurance, Policy Type, Coverage Duration"^^xsd:string,
+        "assignment, written notice, policy transfer"^^xsd:string,
+        "authorized signature, Chief Underwriting Officer, SecureLife Insurance Company"^^xsd:string,
+        "claims procedure, claim submission, SecureLife Claims Department"^^xsd:string,
+        "claims procedure, submission location, beneficiary instructions"^^xsd:string,
+        "conversion outcome, coverage amount, policy conversion"^^xsd:string,
+        "conversion outcome, permanent policy class, policy selection factor"^^xsd:string,
+        "death benefit, coverage details, policy payout"^^xsd:string,
+        "incontestability, policy duration, two-year rule"^^xsd:string,
+        "misstatement of age, death benefit adjustment, premiums vs. correct age"^^xsd:string,
+        "policy number, insurance identification, document reference"^^xsd:string,
+        "policy term, coverage duration, 20-year term"^^xsd:string .
+
+abox:ConversionDeadline_C1_InsuredS65thBirthday a li:ConversionDeadline,
+        li:RetryPaymentDate ;
+    li:dateValue "insured's 65th birthday"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:CoverageContinuationWindow_C1_GracePeriod a li:CoverageContinuationWindow,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:DeathBenefit_C1_DeathBenefit a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Death Benefit"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:InsuredBirthDate_C1_March221985 a li:InsuredBirthDate,
+        li:RetryPaymentDate ;
+    li:dateValue "March 22, 1985"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:InsurerChallengePeriodLimit_C1_Assignment a li:InsurerChallengePeriodLimit,
+        li:TransferOfPolicyRightsPermit ;
+    li:labelValue "ASSIGNMENT"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:InsurerChallengePeriodLimit_C1_Incontestability a li:InsurerChallengePeriodLimit ;
+    li:conversionAgeImpact "The insured's attained age at conversion affects the conversion outcome."^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:labelValue "INCONTESTABILITY"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "conversion outcome, insured's attained age, policy conversion factors"^^xsd:string .
+
+abox:LatePaymentWindow_C1_GracePeriod a li:LatePaymentWindow,
+        li:PolicyContinuationProtection ;
+    li:gracePeriodDuration 31,
+        "The grace period allows continued coverage even if the premium is not paid by the due date."^^xsd:string,
+        "during the grace period"^^xsd:string,
+        "during the grace period when a premium is unpaid"^^xsd:string,
+        "the end of the grace period"^^xsd:string ;
+    li:labelValue "grace period"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "grace period, coverage continuity, premium payment delay"^^xsd:string,
+        "grace period, premium non-payment, policy lapse"^^xsd:string,
+        "grace period, premium payment, coverage continuation"^^xsd:string,
+        "grace period, premium payment, policy lapse"^^xsd:string .
+
+abox:LatePaymentWindow_C1_PremiumDueDate a li:LatePaymentWindow,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Premium Due Date"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:LumpSumPayout_C1_DeathBenefit a li:LumpSumPayout,
+        li:PolicyContinuationProtection ;
+    li:dateOfConfirmationOrDeathEvent "before the policy expiry date"^^xsd:string ;
+    li:hasAmount "Proof of death acceptable to us must be received in order for the death benefit to be paid."^^xsd:string,
+        "the amount of coverage converted"^^xsd:string ;
+    li:hasDeathBenefitAmount "lump sum"^^xsd:string,
+        "the death benefit"^^xsd:string ;
+    li:hasEffectiveDate "two years from the issue date"^^xsd:string ;
+    li:labelValue "death benefit"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "death benefit payout, settlement options, beneficiary choices"^^xsd:string,
+        "death benefit, policy expiry date, claim eligibility"^^xsd:string,
+        "death benefit, policy in force, beneficiary payout"^^xsd:string,
+        "death benefit, proof of death, claim processing"^^xsd:string,
+        "premium calculation, conversion privilege, coverage amount"^^xsd:string,
+        "suicide clause, two-year exclusion, premium refund"^^xsd:string .
+
+abox:PolicyContinuationProtection_C1_ConversionPrivilege a li:PolicyContinuationProtection,
+        li:RightToSwitchToPermanentPolicy ;
+    li:conversionAgeImpact "The premium for the new policy will be based on the insured's attained age at conversion."^^xsd:string,
+        "without evidence of insurability"^^xsd:string ;
+    li:hasEffectiveDate "the earlier of the policy expiry date or the insured's 65th birthday"^^xsd:string ;
+    li:labelValue "conversion privilege"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "conversion privilege, permanent life insurance, no evidence of insurability"^^xsd:string,
+        "conversion privilege, policy expiry date, age 65"^^xsd:string,
+        "conversion privilege, premium calculation, attained age"^^xsd:string .
+
+abox:PolicyContinuationProtection_C1_SuicideClause a li:PolicyContinuationProtection,
+        li:SuicideBenefitLimit ;
+    li:labelValue "suicide clause"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PolicyEffectiveDate_C1_January152024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "January 15, 2024"^^xsd:string ;
+    li:hasEffectiveDate "the insured’s age at the time of misstatement"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "misstatement of age, death benefit adjustment, policy correction"^^xsd:string .
+
+abox:PolicyEffectiveDate_C1_January152044 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "January 15, 2044"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PolicyEffectiveDate_C1_PolicyExpiryDate a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "policy expiry date"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PolicyIdentifier_C1_Sl2024Trm00123 a li:PolicyIdentifier,
+        li:PolicyTermDuration ;
+    li:labelValue "SL-2024-TRM-00123"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PolicyTermDuration_C1_20Years a li:PolicyTermDuration ;
+    li:labelValue "20 years"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PolicyTermDuration_C1_4500 a li:MonthlyPremium,
+        li:PolicyTermDuration ;
+    li:labelValue "$45.00"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:PremiumDueDate_C1_The15thOfEachMonth a li:PremiumDueDate,
+        li:RetryPaymentDate ;
+    li:dateValue "the 15th of each month"^^xsd:string ;
+    li:hasEffectiveDate 15 ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "premium payments, due date, monthly schedule"^^xsd:string .
+
+abox:PrimaryBeneficiary_C1_SarahElizabethAnderson a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasCertificateHolderName "Sarah Elizabeth Anderson"^^xsd:string ;
+    li:hasEstateShareAllocation "100%"^^xsd:string ;
+    li:partyName "Sarah Elizabeth Anderson"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "beneficiary designation, death benefit distribution, primary beneficiary"^^xsd:string,
+        "primary beneficiary, beneficiary designation, death benefit payout"^^xsd:string .
+
+abox:ProofOfCoverageRequirement_C1_OriginalPolicyDocument a li:ProofOfCoverageRequirement,
+        li:RegulatoryDisclosure ;
+    li:claimSubmissionAddress "the original policy document if available"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 ;
+    li:labelValue "original policy document"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:sourceContractSection "death benefit claim, original policy document, claim procedure"^^xsd:string .
+
+abox:ProofOfDeath_C1_CertifiedCopyOfTheDeathCertifica a li:ProofOfDeath,
+        li:RegulatoryDisclosure ;
+    li:labelValue "certified copy of the death certificate"^^xsd:string ;
+    li:sourceContractID "C1"^^xsd:string .
+
+abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 a li:ClaimMailingAddress ;
+    li:sourceContractID "C1"^^xsd:string ;
+    li:stateOfIssuance "P.O. Box 5000, Hartford, CT 06102"^^xsd:string .
+

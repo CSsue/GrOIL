@@ -1,0 +1,474 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AdjustmentAfterReinstatement_C4_FaceAmountAtRiskMonthlyCoiRate10 a li:AdjustmentAfterReinstatement,
+        li:CostOfInsuranceChargeFormula ;
+    li:costPerMonthForTenThousandIncrement 1.0 ;
+    li:hasDeathBenefitAmount "Death Benefit"^^xsd:string ;
+    li:hasFaceAmount "Face Amount at Risk"^^xsd:string ;
+    li:labelValue "(Face Amount at Risk) × (Monthly COI Rate) / 1,000"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Cost of Insurance, Death Benefit Calculation, Monthly Charge Formula"^^xsd:string,
+        "Cost of Insurance, Death Benefit, Account Value"^^xsd:string .
+
+abox:BenefitOptionChangeFee_C4_50AdministrativeFee a li:BenefitOptionChangeFee,
+        li:Charge ;
+    li:amountRequiredToPreventTermination "insufficient to cover monthly deductions"^^xsd:string ;
+    li:hasAnnualPremium "higher"^^xsd:string ;
+    li:labelValue "$50 administrative fee"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Charges Comparison, Variable Death Benefit"^^xsd:string,
+        "policy lapse, account value shortfall, monthly deductions"^^xsd:string .
+
+abox:CashValueGrowthMechanism_C4_UnitInvestmentTrust a li:CashValueGrowthMechanism,
+        li:PolicyContinuationProtection ;
+    li:labelValue "UNIT INVESTMENT TRUST"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:CertificateHolder_C4_DrAmandaKatherineFoster a li:CertificateHolder,
+        li:Insured ;
+    li:ageAtIssue 48 ;
+    li:dateOfBirth "1975-09-03"^^xsd:date ;
+    li:hasAgeEligibility 48 ;
+    li:hasAllocationPercentage "100%"^^xsd:string ;
+    li:hasCertificateHolderName "Dr. Amanda Katherine Foster"^^xsd:string,
+        "Foster Children's Trust"^^xsd:string,
+        "Michael Thomas Foster"^^xsd:string ;
+    li:hasEffectiveDate "1975-09-03"^^xsd:date ;
+    li:hasFaceAmount 1000000.0 ;
+    li:partyName "Dr. Amanda Katherine Foster"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Age at Issue, Insured Party, Preferred Plus Classification"^^xsd:string,
+        "Beneficiaries, Foster Children's Trust, Death Benefit Distribution"^^xsd:string,
+        "Beneficiaries, Trust Distribution, Ownership Percentage"^^xsd:string,
+        "Initial Face Amount, Death Benefit, Policy Specifications"^^xsd:string,
+        "Insured Party, Date of Birth, Age at Issue"^^xsd:string,
+        "Insured Party, Dr. Amanda Katherine Foster, Policyholder Information"^^xsd:string,
+        "spouse, beneficiaries, policyholder relationship"^^xsd:string .
+
+abox:ChargeShortfallConsequence_C4_PolicyLapseDueToLowAccountValue a li:ChargeShortfallConsequence,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Policy lapse due to low account value"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:ContingentBeneficiaryTrust_C4_FosterChildrenSTrust a li:ContingentBeneficiaryTrust,
+        li:Trust ;
+    li:hasAllocationPercentage "100%"^^xsd:string ;
+    li:hasFaceAmount "Female"^^xsd:string,
+        "Preferred Plus"^^xsd:string ;
+    li:labelValue "Foster Children's Trust"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Beneficiary Allocation, Ownership Percentage, Death Benefit Distribution"^^xsd:string,
+        "Insured Party, Gender, Policy Details"^^xsd:string,
+        "Preferred Plus, Underwriting Class, Risk Classification"^^xsd:string .
+
+abox:DeathBenefitLimitation_C4_SuicideExclusion a li:DeathBenefitLimitation,
+        li:PolicyContinuationProtection ;
+    li:labelValue "SUICIDE EXCLUSION"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:DecliningSurrenderPenalty_C4_Year127Year345Year563Year70 a li:ChargeSchedule,
+        li:DecliningSurrenderPenalty ;
+    li:hasAmount "Changes to allocation can be submitted through the online portal."^^xsd:string ;
+    li:hasAnnualPremium "7%"^^xsd:string ;
+    li:hasExpenseRatio "Detailed expense ratios for each sub-account are provided in the prospectus."^^xsd:string ;
+    li:labelValue "Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Surrender Charges, Premium Payment Timing, Early Withdrawal Penalty"^^xsd:string,
+        "investment allocation, online portal, account management"^^xsd:string,
+        "sub-account expenses, prospectus details, expense ratio disclosure"^^xsd:string .
+
+abox:EffectOfPartialWithdrawal_C4_ReducesFaceAmountProportionally a li:EffectOfPartialWithdrawal,
+        li:Reduction ;
+    li:labelValue "Reduces face amount proportionally"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:ExpenseRatioRange_C4_045To125Annually a li:ExpenseRatioRange ;
+    li:labelValue "0.45% to 1.25% annually"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:FixedAdministrativeCost_C4_15PerMonth a li:FixedAdministrativeCost,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$15 per month"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:FixedPayoutOption_C4_LevelDeathBenefit a li:FixedPayoutOption,
+        li:PolicyContinuationProtection ;
+    li:hasDeathBenefitAmount "Option I"^^xsd:string,
+        "Option II"^^xsd:string,
+        "dollar-for-dollar"^^xsd:string,
+        "the face amount"^^xsd:string ;
+    li:labelValue "Level Death Benefit"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Policy Flexibility, Option Switching Conditions"^^xsd:string,
+        "Option I, Face Amount, Death Benefit"^^xsd:string,
+        "Policy Loans, Death Benefit Reduction, Variable Death Benefit"^^xsd:string .
+
+abox:FlightRelatedDeathExclusion_C4_AviationExclusion a li:FlightRelatedDeathExclusion,
+        li:PolicyContinuationProtection ;
+    li:labelValue "AVIATION EXCLUSION"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:GlobalStockMarketExposureOption_C4_EquityGrowthFund a li:GlobalStockMarketExposureOption,
+        li:GrowthVehicle ;
+    li:availableInvestmentFunds "Equity Growth Fund"^^xsd:string ;
+    li:dailyMeCharge "daily"^^xsd:string ;
+    li:hasAllocationPercentage 40.0,
+        "follows the investor's investment instructions"^^xsd:string ;
+    li:hasAmount 15.0,
+        "remaining premium payments"^^xsd:string ;
+    li:hasAnnualPremium "0%"^^xsd:string,
+        "5%"^^xsd:string ;
+    li:hasExpenseRatio "0.45%"^^xsd:decimal,
+        "1.25%"^^xsd:decimal,
+        "annual"^^xsd:string ;
+    li:labelValue "Equity Growth Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Administrative Charge, Monthly Fees, Policy Maintenance Costs"^^xsd:string,
+        "Equity Growth Fund, Sub-Accounts, Investment Options"^^xsd:string,
+        "Mortality & Expense Risk Charge, Daily Deductions, Account Value Charges"^^xsd:string,
+        "investment allocation, sub-account weighting, equity growth fund"^^xsd:string,
+        "investment instructions, sub-account allocation, premium payment allocation"^^xsd:string,
+        "premium load, sub-account allocation, investment instruction"^^xsd:string,
+        "sub-account expenses, expense ratios, investment allocation"^^xsd:string,
+        "sub-account expenses, expense ratios, investment fees"^^xsd:string,
+        "surrender charge, premium payment timing, yearly fee schedule"^^xsd:string,
+        "surrender charge, premium timing, yearly fee schedule"^^xsd:string .
+
+abox:GlobalStockMarketExposureOption_C4_InternationalEquityFund a li:GlobalStockMarketExposureOption ;
+    li:availableInvestmentFunds "International Equity Fund"^^xsd:string ;
+    li:labelValue "International Equity Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Available Sub-Accounts, International Equity Fund, Investment Options"^^xsd:string .
+
+abox:GracePeriodAdjustment_C4_ReducesDeathBenefitDollarForDoll a li:GracePeriodAdjustment,
+        li:PolicyLoanDeduction ;
+    li:labelValue "Reduces death benefit dollar-for-dollar"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:GrowthLinkedPayout_C4_VariableDeathBenefit a li:GrowthLinkedPayout,
+        li:PolicyContinuationProtection ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:hasAmount "not guaranteed"^^xsd:string ;
+    li:hasDeathBenefitAmount "fluctuates based on sub-account performance"^^xsd:string,
+        "not guaranteed"^^xsd:string,
+        "the sum of the face amount and the account value"^^xsd:string ;
+    li:hasDeathBenefitGrowthFactor "account value"^^xsd:string ;
+    li:labelValue "Variable Death Benefit"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Investment Growth, Level Death Benefit"^^xsd:string,
+        "Option II, account value, investment risk"^^xsd:string,
+        "Option II, non-guaranteed death benefit, investment volatility"^^xsd:string,
+        "Option II, sub-account performance, death benefit variability"^^xsd:string,
+        "Variable Death Benefit, Account Value Impact, Option II"^^xsd:string,
+        "Variable Death Benefit, Account Value, Face Amount"^^xsd:string .
+
+abox:GuaranteedRateHoldingVehicle_C4_MoneyMarketSubAccount a li:GlobalStockMarketExposureOption,
+        li:GuaranteedRateHoldingVehicle ;
+    li:accountBalanceThreshold 1000.0 ;
+    li:assumedGuaranteedInterestRate "1.5%"^^xsd:decimal ;
+    li:hasAmount 50.0,
+        "Loan amounts"^^xsd:string ;
+    li:hasFaceAmount "minimum face amount"^^xsd:string,
+        "proportionally"^^xsd:string ;
+    li:labelValue "Money Market sub-account"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Administrative Fees, Policy Changes"^^xsd:string,
+        "Money Market sub-account, guaranteed minimum rate, investment risk"^^xsd:string,
+        "Option Switching, Face Amount Requirements, Policy Flexibility"^^xsd:string,
+        "Policy Loans, Money Market Sub-Account, Account Value Management"^^xsd:string,
+        "partial withdrawals, face amount reduction, policy value adjustment"^^xsd:string,
+        "partial withdrawals, minimum withdrawal amount, policy fund access"^^xsd:string,
+        "partial withdrawals, processing fee, account management"^^xsd:string .
+
+abox:LoanInterestRate_C4_55PerAnnum a li:LoanInterestRate,
+        li:VariableLoanInterestCalculationBasis ;
+    li:hasFixedLoanInterestRate 5.5 ;
+    li:labelValue "5.5% per annum"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Policy Loans, Interest Rate, Financial Terms"^^xsd:string .
+
+abox:LoanLimit_C4_Maximum90OfSurrenderValue a li:LoanLimit ;
+    li:labelValue "Maximum: 90% of surrender value"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:MaxConversionPolicySize_C4_50 a li:MaxConversionPolicySize,
+        li:PremiumLoadingDeductionRate ;
+    li:hasAnnualPremium "premium payments are made after applying a premium load"^^xsd:string ;
+    li:labelValue "5.0%"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "premium load, investment allocation, charge deduction"^^xsd:string .
+
+abox:ModerateRiskDiversifiedPortfolio_C4_BalancedAllocationFund a li:GlobalStockMarketExposureOption,
+        li:ModerateRiskDiversifiedPortfolio ;
+    li:availableInvestmentFunds "Balanced Allocation Fund"^^xsd:string ;
+    li:hasAllocationPercentage 30.0 ;
+    li:labelValue "Balanced Allocation Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Available Sub-Accounts, Balanced Allocation Fund, Investment Options"^^xsd:string,
+        "investment allocation, sub-account distribution, current portfolio mix"^^xsd:string .
+
+abox:MonthlyDeathBenefitCost_C4_SurrenderCharges a li:MonthlyDeathBenefitCost,
+        li:WithdrawalCost ;
+    li:hasAnnualPremium "no guaranteed minimum return"^^xsd:string ;
+    li:labelValue "Surrender charges"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "investment risk, sub-account returns, Money Market guarantee"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_AccountValueFluctuations a li:PolicyContinuationProtection,
+        li:VariableComponent ;
+    li:hasAmount "90%"^^xsd:string ;
+    li:labelValue "Account value fluctuations"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "policy loans, surrender value, loan limits"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_BackCharges a li:PolicyContinuationProtection,
+        li:UnpaidInstallmentsDueUponReinstatement ;
+    li:labelValue "BACK CHARGES"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_MinimumFaceAmountRequirements a li:PolicyContinuationProtection,
+        li:RightToSwitchToPermanentPolicy ;
+    li:labelValue "Minimum face amount requirements"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_OutstandingLoans a li:PolicyContinuationProtection,
+        li:PolicyDebt ;
+    li:gracePeriodDuration 3 ;
+    li:hasLocation abox:ClaimMailingAddress_C4_NewYorkNewYork ;
+    li:labelValue "OUTSTANDING LOANS"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, back charges, interest on delinquent payments"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_PolicyLapse a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:gracePeriodDuration "3 years"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C4_NewYorkNewYork ;
+    li:labelValue "POLICY LAPSE"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, outstanding loans, reinstatement conditions"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_ProofOfInsurability a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:labelValue "Proof of insurability"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_Reinstatement a li:PolicyContinuationProtection,
+        li:PolicyReinstatementPeriod ;
+    li:finalPayoutCalculationMethodUnderLevelDeathBenefitOption "premiums paid minus withdrawals"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C4_NewYorkNewYork ;
+    li:labelValue "REINSTATEMENT"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, reinstatement timeline, payout calculation"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_WarExclusion a li:PolicyContinuationProtection,
+        li:WarExclusion ;
+    li:labelValue "WAR EXCLUSION"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyOwner_C4_InvestmentRisk a li:ContractualProvision,
+        li:PolicyOwner ;
+    li:earnedOn "sub-account performance"^^xsd:string ;
+    li:explainsLackOfAutomaticProtection "Poor investment performance can result in the policy lapsing."^^xsd:string ;
+    li:hasAmount "lower charges"^^xsd:string ;
+    li:hasEffectiveDate "current selection"^^xsd:string ;
+    li:labelValue "Investment risk"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Charges Comparison, Policy Cost Structure"^^xsd:string,
+        "Option II, sub-account performance, variable death benefit"^^xsd:string,
+        "Variable Death Benefit, Policyholder Choice, Account Value Growth"^^xsd:string,
+        "investment risk, policy lapse, account value fluctuations"^^xsd:string .
+
+abox:PrimaryBeneficiary_C4_MichaelThomasFoster a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasAllocationPercentage "after application of premium load"^^xsd:string ;
+    li:hasAmount "Premium payments"^^xsd:string ;
+    li:partyName "Michael Thomas Foster"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "premium allocation, sub-accounts, premium load"^^xsd:string .
+
+abox:RealEstateBackedEquityInvestment_C4_RealEstateSecuritiesFund a li:GlobalStockMarketExposureOption,
+        li:RealEstateBackedEquityInvestment ;
+    li:availableInvestmentFunds "Real Estate Securities Fund"^^xsd:string ;
+    li:definesAnnualAllocationAdjustmentRange "written request"^^xsd:string ;
+    li:hasAnnualPremium "Surrender Charges apply based on the surrender charge schedule."^^xsd:string ;
+    li:labelValue "Real Estate Securities Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Surrender Charges, Withdrawal Penalties, Premium Payment Timeline"^^xsd:string,
+        "investment allocation, written request, change procedures"^^xsd:string,
+        "sub-accounts, investment options, Real Estate Securities Fund"^^xsd:string .
+
+abox:RegulatoryDisclosure_C4_Prospectus a li:RegulatoryDisclosure ;
+    li:labelValue "prospectus"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:ReinstatementHealthProof_C4_EvidenceOfInsurability a li:PolicyContinuationProtection,
+        li:ReinstatementHealthProof ;
+    li:labelValue "EVIDENCE OF INSURABILITY"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:SecuritiesGoverningAuthority_C4_SecRegulation a li:SecuritiesGoverningAuthority ;
+    li:labelValue "SEC regulation"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:StableValueInvestment_C4_GovernmentBondFund a li:GlobalStockMarketExposureOption,
+        li:StableValueInvestment ;
+    li:availableInvestmentFunds "Government Bond Fund"^^xsd:string ;
+    li:hasAllocationPercentage 20.0 ;
+    li:labelValue "Government Bond Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Available Sub-Accounts, Government Bond Fund, Investment Options"^^xsd:string,
+        "Government Bond Fund, Investment Allocation, Sub-Account Distribution"^^xsd:string .
+
+abox:StableValueInvestment_C4_MoneyMarketFund a li:GlobalStockMarketExposureOption,
+        li:StableValueInvestment ;
+    li:assumedGuaranteedInterestRate 1.5 ;
+    li:availableInvestmentFunds "Money Market Fund"^^xsd:string ;
+    li:definesAnnualAllocationAdjustmentRange "any time"^^xsd:string ;
+    li:hasAllocationPercentage 10.0 ;
+    li:hasAmount 25.0 ;
+    li:hasAnnualPremium 0.90,
+        5.0,
+        "3%"^^xsd:string ;
+    li:hasFreeReallocationLimit 12 ;
+    li:labelValue "Money Market Fund"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Available Sub-Accounts, Investment Options, Money Market Fund"^^xsd:string,
+        "Money Market Fund, Guaranteed Return, Minimum Yield"^^xsd:string,
+        "Money Market Fund, Investment Allocation, Sub-Account Distribution"^^xsd:string,
+        "Mortality & Expense Risk Charge, Annual Fee Structure, Account Value-Based Charges"^^xsd:string,
+        "Surrender Charges, Premium Timing, Year 5–6"^^xsd:string,
+        "allocation changes, fee waiver, investment flexibility"^^xsd:string,
+        "investment allocation, fee structure, rebalancing limits"^^xsd:string,
+        "investment allocation, portfolio rebalancing, policyholder control"^^xsd:string,
+        "premium load, charge structure, investment allocation"^^xsd:string .
+
+abox:VariableLoanInterestCalculationBasis_C4_090PerAnnum a li:DailyRiskCharge,
+        li:VariableLoanInterestCalculationBasis ;
+    li:labelValue "0.90% per annum"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:WithdrawalCharge_C4_50ProcessingFee a li:Charge,
+        li:WithdrawalCharge ;
+    li:labelValue "$50 processing fee"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:AdministrativeExpense_C4_MortalityAndExpenseRiskChargeME a li:AdministrativeExpense,
+        li:DailyRiskCharge,
+        li:MonthlyDeathBenefitCost ;
+    li:labelValue "Mortality and Expense Risk Charge (M&E)"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:BurialExpenseCoverage_C4_VariableUniversalLifeInsurancePo a li:BurialExpenseCoverage,
+        li:InsuranceContract ;
+    li:hasAmount "the value of one unit of a sub-account"^^xsd:string ;
+    li:hasCertificateHolderName "Michael Thomas Foster"^^xsd:string ;
+    li:hasConcept abox:AdministrativeExpense_C4_MortalityAndExpenseRiskChargeME,
+        abox:BurialExpenseCoverage_C4_VariableUniversalLifeInsurancePo,
+        abox:CashValueGrowthMechanism_C4_SubAccount,
+        abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp,
+        abox:DeathBenefitPayoutAmount_C4_1000000,
+        abox:MaxConversionPolicySize_C4_12000,
+        abox:PolicyContinuationProtection_C4_AccumulationUnits,
+        abox:PolicyContinuationProtection_C4_UnitValue ;
+    li:hasDeathBenefitAmount "Face Amount plus Account Value"^^xsd:string,
+        "Option II"^^xsd:string ;
+    li:hasEffectiveDate abox:PolicyEffectiveDate_C4_April52024 ;
+    li:labelValue "VARIABLE UNIVERSAL LIFE INSURANCE POLICY"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Beneficiaries, Death Benefit, Primary Beneficiary"^^xsd:string,
+        "Death Benefit Option, Account Value, Face Amount"^^xsd:string,
+        "Death Benefit Option, Option II, Account Value"^^xsd:string,
+        "Unit Value, Sub-Account, Investment Measurement"^^xsd:string .
+
+abox:CashValueGrowthMechanism_C4_SubAccount a li:CashValueGrowthMechanism,
+        li:PolicyContinuationProtection ;
+    li:dailyMeCharge "daily"^^xsd:string ;
+    li:hasAmount "Mortality and Expense Risk Charge (M&E) covers insurance risks and administrative costs."^^xsd:string ;
+    li:labelValue "Sub-Account"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Mortality and Expense Risk Charge, daily charging, policy fees"^^xsd:string,
+        "Mortality and Expense Risk Charge, insurance risk coverage, administrative costs"^^xsd:string .
+
+abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:amountRequiredToPreventTermination 61 ;
+    li:annualPremiumAmount 0.90 ;
+    li:creditingPeriodDuration "daily"^^xsd:string ;
+    li:definesCancellationRightTimeframe 30 ;
+    li:doesNotInvolveDirectStockOwnership true ;
+    li:finalPayoutCalculationMethodUnderLevelDeathBenefitOption "premiums paid minus withdrawals"^^xsd:string ;
+    li:hasAmount "units held in sub-accounts prior to any distributions"^^xsd:string ;
+    li:hasAnnualPremium 12000.0 ;
+    li:hasCertificateHolderName "Pinnacle Investment Life Separate Account A"^^xsd:string ;
+    li:hasCertificateNumber "PIL-VUL-2024-5521"^^xsd:string ;
+    li:hasDeathBenefitAmount "excluded"^^xsd:string ;
+    li:hasEffectiveDate "2024-04-05"^^xsd:date,
+        "2 years of issue"^^xsd:string,
+        "24 months"^^xsd:string,
+        "3 years"^^xsd:string,
+        "This policy is subject to SEC regulation."^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C4_NewYorkNewYork ;
+    li:insurerName "Pinnacle Investment Life Corp."^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "Accumulation Units, Sub-Accounts, Investment Allocation"^^xsd:string,
+        "Mortality and Expense Risk Charge, annual fee rate, policy charges"^^xsd:string,
+        "Planned Annual Premium, Premium Payment Terms, Policy Funding"^^xsd:string,
+        "Policy Date, Effective Start Date, Contract Initiation"^^xsd:string,
+        "Policy Number, Insurance Contract Identifier"^^xsd:string,
+        "SEC regulation, securities product, regulatory compliance"^^xsd:string,
+        "Separate Account A, Securities Product, Regulatory Framework"^^xsd:string,
+        "Sub-Account, Investment Allocation, Mutual Fund"^^xsd:string,
+        "Unit Value, daily calculation, fund performance"^^xsd:string,
+        "aviation exclusion, pilot or crew death, extra premium requirement"^^xsd:string,
+        "lapse notice, policy lapse, notification period"^^xsd:string,
+        "policy lapse, account value deficiency, 61-day deduction period"^^xsd:string,
+        "policy reinstatement, insurability verification, lapse recovery conditions"^^xsd:string,
+        "registered unit investment trust, separate account, regulatory classification"^^xsd:string,
+        "securities product, SEC regulation, regulatory information"^^xsd:string,
+        "suicide exclusion, payout calculation, two-year window"^^xsd:string,
+        "war exclusion, military service death, time-limited exclusions"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C4_1000000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:faceAmount 1000000.0 ;
+    li:labelValue "$1,000,000"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:MaxConversionPolicySize_C4_12000 a li:MaxConversionPolicySize,
+        li:PlannedAnnualPremium ;
+    li:labelValue "$12,000"^^xsd:string ;
+    li:premiumAmount 12000.0 ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_AccumulationUnits a li:PolicyContinuationProtection,
+        li:PreDistributionHoldingUnits ;
+    li:labelValue "Accumulation Units"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyContinuationProtection_C4_UnitValue a li:PolicyContinuationProtection,
+        li:SubAccountValuationMetric ;
+    li:labelValue "Unit Value"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:PolicyEffectiveDate_C4_April52024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "April 5, 2024"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string .
+
+abox:ReducedAccessToFunds_C4_PartialWithdrawals a li:ReducedAccessToFunds,
+        li:Withdrawal ;
+    li:accountBalanceThreshold 5000 ;
+    li:hasAmount "entirely by the policy owner"^^xsd:string ;
+    li:hasMinimumWithdrawalAmount abox:ReducedAccessToFunds_C4_PartialWithdrawals ;
+    li:labelValue "Partial Withdrawals"^^xsd:string ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:sourceContractSection "investment risk, policy owner responsibility, account value volatility"^^xsd:string,
+        "partial withdrawals, account value, surrender value"^^xsd:string .
+
+abox:ClaimMailingAddress_C4_NewYorkNewYork a li:ClaimMailingAddress,
+        li:CorporateHeadquartersLocation ;
+    li:sourceContractID "C4"^^xsd:string ;
+    li:stateOfIssuance "New York, New York"^^xsd:string .
+

@@ -1,0 +1,27 @@
+{
+  "step": "step2",
+  "decisions_file": "out/cleaning/abid_et_al_sentinel/step2_decisions.json",
+  "summary": {
+    "before": 7507,
+    "removed_null_like": 0,
+    "removed_rare": 0,
+    "removed_selfloop": 0,
+    "removed_duplicate": 0,
+    "normalized": 128,
+    "total_removed": 0,
+    "after": 7507,
+    "removed_pct": 0.0
+  },
+  "per_file": {
+    "sen.graphml": {
+      "before": 7507,
+      "removed_null_like": 0,
+      "removed_rare": 0,
+      "removed_selfloop": 0,
+      "removed_duplicate": 0,
+      "normalized": 128,
+      "after": 7507
+    }
+  },
+  "errors": []
+}

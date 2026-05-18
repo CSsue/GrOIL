@@ -1,0 +1,170 @@
+# Induced TBox Axioms — Manchester Syntax Summary
+
+## owl:someValuesFrom  (69 axioms)
+
+  [✓] AccountValue hasGuaranteedCapRateFloor some RateCapCondition
+      # Guaranteed minimum floor for capped interest rates.
+  [✓] AccountValue AccountValueNotGuaranteed some MonetaryValue
+      # Account value is not guaranteed to remain stable or increase.
+  [✓] AgeBasedDeathBenefitAdjustment hasAgeMisstatementAdjustmentRule some Age
+      # Policy terms adjust based on misstated age.
+  [✓] AgeBasedTermination hasAgeBasedTermination some Age
+      # Termination occurs when insured reaches specified age.
+  [✓] Benefit hasBasicBenefitRoundingRule some RoundingRule
+      # Specifies rounding rules for basic benefit amounts.
+  [✓] BenefitStructure AnnualBenefitRecalibration some AnnualRecalculationTrigger
+      # Benefits are recalculated annually based on salary adjustments.
+  [✓] CashValue reducesDeathBenefitDollarForDollar some DeathBenefit
+      # Benefit reduces when cash value is below threshold.
+  [~] Certificate CertificateTermsAuthority some RegulatoryBody
+      # Specifies the authority responsible for governing certificate terms.
+  [✓] ChronicIllness hasChronicIllnessEligibilityRequirement some ActivitiesOfDailyLiving
+      # Eligibility requires functional limitations.
+  [✓] ClaimProcess DirectCauseRequirement some ClaimValidationDocument
+      # A claim must have a direct causal link to the insured event.
+  [✓] ClaimSubmissionProcess requiresEvidenceOfInsurability some ClaimSubmissionDocument
+      # Claim requires ID and documentation.
+  [✓] ConversionPrivilege hasConversionDeadlineConstraint some RateCapCondition
+      # Time window for conversion after triggering event.
+  [✓] ConversionPrivilege hasConversionWithoutMedicalExam some NoMedicalExam
+      # Conversion allowed without medical exam.
+  [✓] Coverage requiresEvidenceOfInsurability some ProofOfCoverageRequirement
+      # Evidence of insurability required for coverage changes.
+  [✓] DeathBenefit LoanReductionOfDeathBenefit some AccountValueDeduction
+      # A loan reduces the death benefit amount payable upon policyholder's death.
+  [✓] DisabilityCoverage enablesWaiver some PremiumWaiverAvailabilityCondition
+      # Policyholder exempt from premiums under specified conditions.
+  [✓] EnrollmentPeriod hasVoluntaryEnrollmentDeadline some PolicyFeature
+      # Enrollment must occur before the deadline.
+  [✓] GuaranteedRateHoldingVehicle hasZeroLossProtection some ZeroLossProtection
+      # A policy ensures no financial loss under market decline.
+  [✓] IndexAccount IndexDeclineProtection some MarketDeclineProtection
+      # Protection triggers when index declines.
+  [✓] InsuranceContract hasContestabilityPeriodConstraint some ContestabilityPeriod
+      # Contestability limited to initial policy period.
+  [✓] InsuranceContract hasGuaranteedCOIRates some RateCapCondition
+      # COI rates are guaranteed not to change.
+  [✓] InsuranceContract LoanDeductionFromCashSurrenderValue some Deduction
+      # A loan reduces the cash surrender value of a policy.
+  [✓] InsuranceContract FloorProtectionDuringDecline some Percentage
+      # Ensures minimum coverage value during policy decline.
+  [✓] InsuranceContract surrenderChargeRate some MonetaryValue
+      # Surrender charge applies within first 12 years.
+  [✓] InsuranceContract providesCoverageUntilAge25 some Coverage
+      # Eligibility for coverage after employment termination.
+  [✓] InsuranceContract hasPortabilityApplicationDeadline some TemporalReference
+      # Policyholder must apply for portability before a deadline.
+  [✓] InsuranceContract hasSplitOptionEligibility some Eligibility
+      # Policyholder must meet criteria to qualify for a split option.
+  [✓] InsuranceContract hasAutomaticFutureChildCoverage some Coverage
+      # Future children are automatically covered under the policy.
+  [✓] InsurancePolicy GradedBenefitWithoutMedicalExam some GradedBenefitTrigger
+      # Policy qualifies for graded benefit without medical exam.
+  [✓] Insured administersMisstatementProvisionAffectingDeathBenefit some DeathBenefit
+      # Adjustments apply for misstated insured sex.
+  [✓] InsuredPerson hasDeathBenefitEligibility some DeathBenefit
+      # Conditions under which death benefit is payable.
+  [✓] InsuredPerson hasDisabilityPremiumWaiverEligibility some PremiumWaiverAvailabilityCondition
+      # Disability eligibility requires proof and duration.
+  [✓] InsuredPerson ChildConversionRights some RightToSwitchToPermanentPolicy
+      # A child may convert policy under conditions.
+  [✓] InsuredPerson ProofOfDeathRequirement some ClaimValidationDocument
+      # Death certificate required for death benefit claim.
+  [✓] InsuredPerson TerminalIllnessBenefitEligibility some TerminalIllnessBenefit
+      # Policyholder qualifies for accelerated death benefit.
+  [~] InvestmentAllocation allocationChangeFlexibility some InvestmentAllocation
+      # Allocation depends on investor instructions.
+  [✓] MasterPolicy MasterPolicyPrecedence some ContractualProvision
+      # Master policy takes precedence in conflicts.
+  [✓] MinimumGuarantee MinimumGuaranteeRequirement some MonetaryValue
+      # A minimum financial guarantee must be met for eligibility.
+  [~] PaymentObligationSection hasPaymentRetryProcedure some RetryDate
+      # Specifies conditions for retrying a failed payment.
+  [✓] PolicyFinancialGrowth hasGuaranteedCashValueGrowth some CashValueGrowth
+      # Guaranteed growth in cash value over time.
+  [✓] PolicyFunding hasPremiumLoadAllocationSequence some InvestmentAllocation
+      # Premiums are allocated after load application.
+  [✓] PolicyGuarantee ZeroInterestGuarantee some ZeroInterestFloor
+      # A policy guarantees no interest accrual under specified conditions.
+  [✓] PolicyLapse hasExtendedTermEligibility some Coverage
+      # Eligibility for extended term insurance after policy lapse.
+  [✓] PolicyLapse hasPolicyLapseDueToNonPayment some PolicyTermination
+      # Policy lapses if payment not made by due date.
+  [✓] PolicyLapse hasLapseTriggeredForfeiture some SurrenderCharge
+      # A policy lapse causes forfeiture of return of premium.
+  [✓] PolicyLapse ReinstatementEligibilityCondition some ReinstatementEligibilityCriterion
+      # Policyholder must meet conditions to reinstate a lapsed policy.
+  [✓] PolicyLoan hasPolicyTerminationDueToDebtOverhang some TerminationCondition
+      # Policy terminates if debt exceeds cash value.
+  [✓] PolicyModification hasChangeSubmissionRequirement some DocumentExecution
+      # Policyholder must submit formal request for changes.
+  [✓] PolicyOwner investmentRiskBearer some AccountValueVolatility
+      # Owner bears investment risk of the policy.
+  [✓] PolicyOwner hasSurrenderElectionType some SurrenderCharge
+      # A surrender election must be of a specific type.
+  [✓] PolicyOwner AccessToCashValueMethods some CashAccessMethod
+      # Policyholder must access cash value methods.
+  [✓] PolicyOwner FreeLookCancellationRight some CancellationRightWithFullRefund
+      # Policyholder may cancel for full refund.
+  [✓] PolicyOwnership allocationChangeFlexibility some InvestmentAllocation
+      # Allows flexible allocation under specified conditions.
+  [~] PolicyPortability hasNoMedicalProofForPortability some EligibilityRequirementWarning
+      # Portability requires medical proof.
+  [✓] PolicyReinstatement hasRopRecalculationAfterReinstatement some RopRulesSection
+      # Reinstatement triggers ROP recalculation.
+  [~] PolicySplit SplitElectionDeadline some DeadlineForElectiveActionPostLapse
+      # Deadline exists for making split election.
+  [✓] PolicyTerm isNotSecuritiesProduct some PolicyTermination
+      # Policy remains non-cancelable after two years.
+  [✓] PolicyTerm hasLifeCoverageDuringTerm some LifeInsuranceBenefit
+      # Life protection must remain active during term.
+  [✓] PolicyTerm GracePeriodBeforeCancellation some GracePeriod
+      # Policy remains active during grace period after missed payment.
+  [✓] PolicyTerm PolicyContinuationOnSurvival some TerminationCondition
+      # Policy continues if insured survives specified period.
+  [✓] PolicyTerm hasEarlySurrenderReturnRate some Percentage
+      # Early surrender returns 30% of accumulated value.
+  [✓] PolicyTermination hasReturnOfPremiumGuarantee some MonetaryValue
+      # Policy guarantees return of premiums under conditions.
+  [✓] PolicyTransfer survivorshipBasisTrigger some ConversionPrivilege
+      # Surviving insured may transition to a different policy type.
+  [✓] PortableCoverage hasCoverageAmountPreservation some CoverageLimit
+      # Coverage amount remains unchanged when ported.
+  [✓] PortfolioRebalancing hasReguulatoryOversight some ReallocationFee
+      # Fee applied when reallocation exceeds free limit.
+  [✓] TimePeriod accruesInterest some TimePeriod
+      # Accidental death must occur within specified timeframe.
+  [✓] Trust TrustBasedEstateExclusion some Exclusion
+      # Trust excludes estate from liabilities.
+  [✓] Trust requiresTrusteeAuthorization some OwnershipRight
+      # Trustee must be authorized to act on trust.
+  [✓] Withdrawal hasWithdrawalReducesAccountValue some AccountValue
+      # Withdrawals reduce account value or face amount.
+
+## owl:exactCardinality  (1 axioms)
+
+  [✓] Beneficiary hasEqualDivisionRule exactly 2 EqualDistribution
+      # Beneficiaries receive equal shares of the benefit.
+
+## owl:minCardinality  (1 axioms)
+
+  [✓] WithdrawalRule hasMinimumWithdrawalAmount min 500 MonetaryValue
+      # Quantitative bounds on withdrawal amounts or frequencies.
+
+## owl:maxCardinality  (3 axioms)
+
+  [✓] ClaimProcess ClaimPaymentTimeline max 30 TimePeriod
+      # Specifies the time frame within which a claim must be settled.
+  [✓] InsuranceContract hasCoverageLimit max 1 CoverageLimit
+      # Limits maximum coverage amount under specified conditions.
+  [✓] PolicyLoan hasLoanLimitBasedOnSurrenderValue max 1 MaximumLoanToSurrenderValueRatio
+      # Loan amount capped at 90% of surrender value.
+
+## owl:disjointWith  (3 axioms)
+
+  [✓] Coverage DisjointWith Exclusion
+      # Coverage prohibited in war zones.
+  [✓] InvestmentExperience DisjointWith Dividend
+      # Dividends not paid in negative market conditions.
+  [~] InvestmentFund DisjointWith GuaranteedReturnComponent
+      # No guaranteed return from any other source.

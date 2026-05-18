@@ -1,0 +1,350 @@
+[
+  {
+    "scenario_id": "SCEN-001",
+    "scenario_description": "Insured dies from natural causes (heart attack) 5 years after policy issue. All premiums paid on time. No outstanding loans.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . FILTER NOT EXISTS { ?db a li:SurvivorshipDeathBenefit } OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:SurvivorshipDeathBenefit . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-002",
+    "scenario_description": "Insured dies by suicide 10 months after the policy issue date. All premiums were paid up to date. No prior withdrawals or loans.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?exclusionPeriod ?benefitType ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:SuicideExclusion ; li:suicideExclusionPeriodMonths ?exclusionPeriod ; li:suicideBenefitType ?benefitType . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } FILTER(?exclusionPeriod <= 10) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?exclusionPeriod ?benefitType ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:SuicideExclusion ; li:suicideExclusionPeriodMonths ?exclusionPeriod ; li:suicideBenefitType ?benefitType . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } FILTER(?exclusionPeriod > 10) }"
+  },
+  {
+    "scenario_id": "SCEN-003",
+    "scenario_description": "Insured dies by suicide exactly 13 months after policy issue. All premiums were paid. No prior withdrawals or loans.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?exclusionPeriod ?benefitType ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:SuicideExclusion ; li:suicideExclusionPeriodMonths ?exclusionPeriod ; li:suicideBenefitType ?benefitType . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } FILTER(?exclusionPeriod <= 12) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?exclusionPeriod ?benefitType ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:SuicideExclusion ; li:suicideExclusionPeriodMonths ?exclusionPeriod ; li:suicideBenefitType ?benefitType . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } FILTER(?exclusionPeriod > 12) }"
+  },
+  {
+    "scenario_id": "SCEN-004",
+    "scenario_description": "Insured dies from a natural illness in the 14th month after the policy issue date. All premiums were paid on time.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . FILTER NOT EXISTS { ?db a li:SurvivorshipDeathBenefit } OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-005",
+    "scenario_description": "Insured dies from an accidental fall in the 8th month after policy issue. Death occurs within 90 days of the accident. All premiums were paid on time.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . FILTER NOT EXISTS { ?db a li:GradedDeathBenefit } FILTER NOT EXISTS { ?db a li:SurvivorshipDeathBenefit } OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } } UNION { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:GradedDeathBenefit ; li:gradedBenefitAccidentalDeathException true . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:SurvivorshipDeathBenefit . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-006",
+    "scenario_description": "Both joint insureds have died — the first insured died 3 years ago and the second insured has just died. All premiums were paid. No outstanding loans.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:SurvivorshipDeathBenefit . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#>\nPREFIX li_abox: <http://www.lifeinsurance.org/ontology/abox#>\nSELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE {\n  ?policy li:sourceContractID ?contractID ;\n          li:hasExclusion ?excl .\n  ?excl a li:SurvivorshipExclusion .\n  OPTIONAL { ?excl li:sourceSection ?sourceSection ; li:sourceText ?sourceText . }\n}"
+  },
+  {
+    "scenario_id": "SCEN-007",
+    "scenario_description": "The policy owner decides to cancel the policy 20 days after receiving it and requests a full refund of premiums paid.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?freeLookDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:FreeLookProvision ; li:freeLookDays ?freeLookDays . FILTER(?freeLookDays >= 20) OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#>\nPREFIX li_abox: <http://www.lifeinsurance.org/ontology/abox#>\nSELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE {\n  ?policy li:sourceContractID ?contractID ;\n          li:hasProvision ?prov .\n  ?prov a li:FreeLookProvision ;\n        li:freeLookPeriodDays ?days .\n  FILTER(?days < 20)\n  OPTIONAL { ?prov li:sourceSection ?sourceSection ; li:sourceText ?sourceText . }\n}"
+  },
+  {
+    "scenario_id": "SCEN-008",
+    "scenario_description": "After several years, the policy owner stops paying premiums and neither surrenders the policy nor selects a non-forfeiture option within 60 days of lapse.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?optionType ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a ?optionType . VALUES ?optionType { li:CashSurrenderOption li:ReducedPaidUpOption li:ExtendedTermOption } OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } } UNION { ?policy a li:UniversalLifePolicy ; li:sourceContractID ?contractID ; li:lapseAutoPaysSurrenderValue true . FILTER NOT EXISTS { ?policy a li:IndexedUniversalLifePolicy . } FILTER NOT EXISTS { ?policy a li:VariableUniversalLifePolicy . } FILTER NOT EXISTS { ?policy li:hasNonForfeitureOption ?opt . } BIND(li:CashSurrenderOption AS ?optionType) } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a ?optionType . ?opt li:isNegated true . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-009",
+    "scenario_description": "A term or group life policy owner wishes to convert their coverage to a permanent individual policy without providing evidence of insurability.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?maxAge ?minAmount ?maxAmount ?deadlineDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ConversionPrivilege . OPTIONAL { ?prov li:conversionMaxAge ?maxAge . } OPTIONAL { ?prov li:conversionMinAmount ?minAmount . } OPTIONAL { ?prov li:conversionMaxAmount ?maxAmount . } OPTIONAL { ?prov li:conversionDeadlineDays ?deadlineDays . } OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ConversionPrivilege ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-010",
+    "scenario_description": "A policy lapses due to non-payment. The policy owner applies to reinstate it 18 months after lapse, paying all overdue premiums with interest and providing evidence of insurability.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?reinstatePeriod ?interestRate ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ReinstatementProvision ; li:reinstatementPeriodYears ?reinstatePeriod . OPTIONAL { ?prov li:reinstatementInterestRate ?interestRate . } OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } FILTER(?reinstatePeriod * 12 >= 18) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ReinstatementProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-011",
+    "scenario_description": "The insured dies 20 days after a missed premium due date, during the grace period. No prior loans or withdrawals.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?graceDays ?deductOnDeath ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . FILTER NOT EXISTS { ?policy a li:JointSurvivorshipPolicy . } OPTIONAL { ?gp li:gracePeriodDays ?graceDays . } OPTIONAL { ?gp li:unpaidPremiumDeductedOnDeathDuringGrace ?deductOnDeath . } OPTIONAL { ?gp li:sourceContractSection ?sourceSection . } OPTIONAL { ?gp li:coverageSourceText ?sourceText . } FILTER(!bound(?graceDays) || ?graceDays >= 20) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?graceDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp li:gracePeriodDays ?graceDays . FILTER(?graceDays < 20) OPTIONAL { ?gp li:sourceContractSection ?sourceSection . } OPTIONAL { ?gp li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-012",
+    "scenario_description": "The policy owner wishes to take out a loan against the policy's cash value or account value, shortly after the policy has been in force for 1 year.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?maxPct ?interestRate ?rateType ?minYears ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasPolicyLoan ?loan . ?loan li:policyLoanMaxPercentOfCV ?maxPct . OPTIONAL { ?loan li:policyLoanInterestRate ?interestRate . } OPTIONAL { ?loan li:policyLoanInterestRateType ?rateType . } OPTIONAL { ?loan li:loanMinimumYearsInForce ?minYears . } OPTIONAL { ?loan li:sourceContractSection ?sourceSection . } OPTIONAL { ?loan li:coverageSourceText ?sourceText . } FILTER(!BOUND(?minYears) || ?minYears <= 1) } UNION { ?policy li:sourceContractID ?contractID ; li:hasCashValue ?cv . FILTER NOT EXISTS { ?policy li:hasPolicyLoan ?loan . } FILTER NOT EXISTS { ?policy a li:TermLifePolicy . } FILTER NOT EXISTS { ?policy a li:GroupLifeCertificate . } OPTIONAL { ?cv li:sourceContractSection ?sourceSection . } OPTIONAL { ?cv li:coverageSourceText ?sourceText . } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?minYears ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPolicyLoan ?loan . ?loan li:loanMinimumYearsInForce ?minYears . FILTER(?minYears > 1) OPTIONAL { ?loan li:sourceContractSection ?sourceSection . } OPTIONAL { ?loan li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-013",
+    "scenario_description": "The policy owner requests a cash withdrawal of $2,000 from the policy's account value (not a loan) to cover an emergency expense.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?minAmount ?feePerTxn ?freeCount ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPartialWithdrawal ?pw . ?pw li:withdrawalMinimumAmount ?minAmount . OPTIONAL { ?pw li:withdrawalFeePerTransaction ?feePerTxn . } OPTIONAL { ?pw li:withdrawalFreeNumberPerYear ?freeCount . } OPTIONAL { ?pw li:sourceContractSection ?sourceSection . } OPTIONAL { ?pw li:coverageSourceText ?sourceText . } FILTER(?minAmount <= 2000) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPartialWithdrawal ?pw . ?pw li:isNegated true . OPTIONAL { ?pw li:sourceContractSection ?sourceSection . } OPTIONAL { ?pw li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-014",
+    "scenario_description": "The policy owner skips a premium payment month entirely, making no payment, while the account value remains sufficient to cover all monthly charges.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPremium ?prem . ?prem a li:FlexiblePremium ; li:premiumSkippingAllowed true . OPTIONAL { ?prem li:sourceContractSection ?sourceSection . } OPTIONAL { ?prem li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPremium ?prem . ?prem a li:FlexiblePremium ; li:premiumSkippingAllowed false . OPTIONAL { ?prem li:sourceContractSection ?sourceSection . } OPTIONAL { ?prem li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-015",
+    "scenario_description": "The insured becomes totally disabled at age 55 and remains disabled for 8 consecutive months. The insured cannot pay premiums during this disability period.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?waitMonths ?maxAgeAtDisability ?terminationAge ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:WaiverOfPremiumRider ; li:waiverDisabilityWaitingMonths ?waitMonths ; li:waiverMaxAgeAtDisability ?maxAgeAtDisability ; li:waiverTerminationAge ?terminationAge . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } FILTER(?waitMonths <= 8 && ?maxAgeAtDisability > 55) } UNION { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:WaiverOfPremiumProvision ; li:waiverDisabilityWaitingMonths ?waitMonths ; li:waiverMaxAgeAtDisability ?maxAgeAtDisability ; li:waiverTerminationAge ?terminationAge . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } FILTER(?waitMonths <= 8 && ?maxAgeAtDisability > 55) } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:WaiverOfPremiumRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } } UNION { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:WaiverOfPremiumProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } } }"
+  },
+  {
+    "scenario_id": "SCEN-016",
+    "scenario_description": "The insured is diagnosed with a terminal illness and given a life expectancy of 10 months. The insured requests an advance of a portion of the death benefit while still alive.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?maxPct ?minAmount ?maxAmount ?lifeExpMonths ?discount ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasRider ?r . ?r a li:TerminalIllnessADBRider ; li:terminalIllnessLifeExpectancyMonths ?lifeExpMonths ; li:adbMaxPercentOfFaceAmount ?maxPct . OPTIONAL { ?r li:adbMinimumAmount ?minAmount . } OPTIONAL { ?r li:adbMaximumAmount ?maxAmount . } OPTIONAL { ?r li:adbActuarialDiscountApplies ?discount . } OPTIONAL { ?r li:sourceContractSection ?sourceSection . } OPTIONAL { ?r li:coverageSourceText ?sourceText . } FILTER(?lifeExpMonths >= 10) } UNION { ?policy li:sourceContractID ?contractID ; li:hasLivingBenefit ?lb . ?lb a li:TerminalIllnessADB ; li:terminalIllnessLifeExpectancyMonths ?lifeExpMonths ; li:adbMaxPercentOfFaceAmount ?maxPct . OPTIONAL { ?lb li:adbMinimumAmount ?minAmount . } OPTIONAL { ?lb li:adbMaximumAmount ?maxAmount . } OPTIONAL { ?lb li:adbActuarialDiscountApplies ?discount . } OPTIONAL { ?lb li:sourceContractSection ?sourceSection . } OPTIONAL { ?lb li:coverageSourceText ?sourceText . } FILTER(?lifeExpMonths >= 10) } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasRider ?r . ?r a li:TerminalIllnessADBRider ; li:isNegated true . OPTIONAL { ?r li:sourceContractSection ?sourceSection . } OPTIONAL { ?r li:coverageSourceText ?sourceText . } } UNION { ?policy li:sourceContractID ?contractID ; li:hasLivingBenefit ?lb . ?lb a li:TerminalIllnessADB ; li:isNegated true . OPTIONAL { ?lb li:sourceContractSection ?sourceSection . } OPTIONAL { ?lb li:coverageSourceText ?sourceText . } } }"
+  },
+  {
+    "scenario_id": "SCEN-017",
+    "scenario_description": "The insured survives the full policy term with all premiums paid on time. The policy owner requests the return of all premiums paid.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?ropPct ?latePenalty ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasLivingBenefit ?lb . ?lb a li:ReturnOfPremiumBenefit ; li:ropPercentAtEndOfTerm ?ropPct . OPTIONAL { ?lb li:ropLatePremiumPenaltyPercentage ?latePenalty . } OPTIONAL { ?lb li:sourceContractSection ?sourceSection . } OPTIONAL { ?lb li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasLivingBenefit ?lb . ?lb a li:ReturnOfPremiumBenefit ; li:isNegated true . OPTIONAL { ?lb li:sourceContractSection ?sourceSection . } OPTIONAL { ?lb li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-018",
+    "scenario_description": "The insured, who is a licensed private pilot, dies while operating a small private aircraft on a non-commercial flight. No war or military activity is involved.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy a li:VariableUniversalLifePolicy } OPTIONAL { ?policy li:hasRider ?r . ?r a li:AviationExclusionWaiver . OPTIONAL { ?r li:sourceContractSection ?sourceSection } OPTIONAL { ?r li:coverageSourceText ?sourceText } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:AviationExclusion . FILTER NOT EXISTS { ?excl li:isNegated true } OPTIONAL { ?excl li:sourceContractSection ?sourceSection } OPTIONAL { ?excl li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-019",
+    "scenario_description": "An insured who is an active-duty military member dies while serving in a military conflict in a war zone, 18 months after the policy issue date.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy a li:VariableUniversalLifePolicy } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?exclusionPeriod ?timeBounded ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:WarExclusion . OPTIONAL { ?excl li:exclusionPeriodMonths ?exclusionPeriod } OPTIONAL { ?excl li:exclusionIsTimeBounded ?timeBounded } OPTIONAL { ?excl li:sourceContractSection ?sourceSection } OPTIONAL { ?excl li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-020",
+    "scenario_description": "Upon a death claim, the insurer discovers the insured misrepresented their age on the application — the insured was actually 5 years older than declared. The policy has been in force for 3 years.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:MisstatementOfAgeProvision . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:MisstatementOfAgeProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-021",
+    "scenario_description": "The policy owner decides to fully surrender a permanent or investment-linked policy in Year 3 and requests the full account value or cash surrender value.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?basis ?periodYears ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasSurrenderCharge ?sc . ?sc li:surrenderChargePeriodYears ?periodYears . OPTIONAL { ?sc li:surrenderChargeBasis ?basis . } OPTIONAL { ?sc li:sourceContractSection ?sourceSection . } OPTIONAL { ?sc li:coverageSourceText ?sourceText . } FILTER(?periodYears >= 3) } UNION { ?policy li:sourceContractID ?contractID ; li:hasCashValue ?cv . FILTER NOT EXISTS { ?policy li:hasSurrenderCharge ?sc . } FILTER NOT EXISTS { ?policy a li:TermLifePolicy . } FILTER NOT EXISTS { ?policy a li:GroupLifeCertificate . } FILTER NOT EXISTS { ?policy a li:ReturnOfPremiumTermPolicy . } OPTIONAL { ?cv li:sourceContractSection ?sourceSection . } OPTIONAL { ?cv li:coverageSourceText ?sourceText . } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasLivingBenefit ?lb . ?lb a li:ReturnOfPremiumBenefit ; li:ropLapseForfeitsROP true . OPTIONAL { ?lb li:sourceContractSection ?sourceSection . } OPTIONAL { ?lb li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-022",
+    "scenario_description": "The policy owner selects the increasing death benefit option (face amount + account value) at policy inception. The insured dies with a substantial account value accumulated.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:IncreasingDeathBenefit . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:IncreasingDeathBenefit ; li:coverageStatus ?status . FILTER(?status != li:selected) OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-023",
+    "scenario_description": "The stock market index drops 15% during a policy year. The policy owner is concerned about a corresponding loss in account value due to index-linked crediting.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?floorValue ?capValue ?participationRate ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasIndexAccount ?ia . ?ia li:hasFloorRate ?floorNode . ?floorNode li:floorRateValue ?floorValue . OPTIONAL { ?ia li:hasCapRate ?capNode . ?capNode li:capRateCurrentValue ?capValue . } OPTIONAL { ?ia li:hasParticipationRate ?prNode . ?prNode li:participationRateCurrent ?participationRate . } OPTIONAL { ?ia li:sourceContractSection ?sourceSection . } OPTIONAL { ?ia li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasIndexAccount ?ia . ?ia li:isNegated true . OPTIONAL { ?ia li:sourceContractSection ?sourceSection . } OPTIONAL { ?ia li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-024",
+    "scenario_description": "An applicant with severe pre-existing health conditions (cancer, heart disease) applies for a new life insurance policy and cannot answer health questions favorably.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasUnderwritingType li:GuaranteedIssueUnderwriting . OPTIONAL { ?policy li:sourceContractSection ?sourceSection . } OPTIONAL { ?policy li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasUnderwritingType ?uwType . ?uwType a li:GuaranteedIssueUnderwriting ; li:isNegated true . OPTIONAL { ?policy li:sourceContractSection ?sourceSection . } OPTIONAL { ?policy li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-025",
+    "scenario_description": "The insured dies 18 months after policy issue. The insurer investigates and discovers a material misrepresentation in the original application (the insured omitted a prior cancer diagnosis).",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?contestYears ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:IncontestabilityProvision ; li:contestabilityPeriodYears ?contestYears . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } FILTER(?contestYears * 12 < 18) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?contestYears ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:IncontestabilityProvision ; li:contestabilityPeriodYears ?contestYears . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } FILTER(?contestYears * 12 >= 18) }"
+  },
+  {
+    "scenario_id": "SCEN-026",
+    "scenario_description": "An employee covered under a group life certificate is laid off from their job. The employee asks what happens to their life insurance coverage.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?convDeadlineDays ?portDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; a li:GroupLifeCertificate . { ?policy li:hasProvision ?conv . ?conv a li:ConversionPrivilege . OPTIONAL { ?conv li:conversionDeadlineDays ?convDeadlineDays . } OPTIONAL { ?conv li:sourceContractSection ?sourceSection . } OPTIONAL { ?conv li:coverageSourceText ?sourceText . } } UNION { ?policy li:hasProvision ?port . ?port a li:PortabilityProvision . OPTIONAL { ?port li:portabilityApplicationDays ?portDays . } OPTIONAL { ?port li:sourceContractSection ?sourceSection . } OPTIONAL { ?port li:coverageSourceText ?sourceText . } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ConversionPrivilege ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-027",
+    "scenario_description": "The insurer declares an annual dividend on a participating whole life policy. The policy owner wants to understand how the dividend will be applied.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?dividendOption ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDividendOption ?opt . ?opt a ?dividendOption . VALUES ?dividendOption { li:PaidUpAdditionsDividendOption li:CashDividendOption li:PremiumReductionOption li:AccumulateAtInterestOption li:OneyearTermOption } OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDividendOption ?opt . ?opt li:isNegated true . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-028",
+    "scenario_description": "Both joint insureds die in the same car accident and are pronounced dead within 15 days of each other. Determining who died first is medically impossible.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?windowDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SimultaneousDeathEvent ; li:simultaneousDeathWindowDays ?windowDays . FILTER(?windowDays >= 15) OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SimultaneousDeathEvent ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-029",
+    "scenario_description": "The insured's child, age 10, dies unexpectedly. The insured has a children's term insurance rider on their policy.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?coverageAmount ?maxAge ?conversionMultiple ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChildrenTermRider ; li:childrenRiderCoverageAmount ?coverageAmount ; li:childrenRiderMaxAge ?maxAge . OPTIONAL { ?rider li:childrenRiderConversionMultiple ?conversionMultiple . } OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChildrenTermRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-030",
+    "scenario_description": "The insured is certified by a licensed healthcare practitioner as chronically ill, being unable to perform 3 of 6 Activities of Daily Living for over 90 days. The insured requests an early benefit advance.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?adlMin ?qualifyDays ?monthlyPct ?maxTotalPct ?discountApplies ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChronicIllnessADBRider ; li:adlMinimumUnableToPerform ?adlMin ; li:adlQualifyingPeriodDays ?qualifyDays . OPTIONAL { ?rider li:chronicallyIllMonthlyAdvancePercentage ?monthlyPct . } OPTIONAL { ?rider li:chronicIllnessMaxTotalPercentage ?maxTotalPct . } OPTIONAL { ?rider li:adbActuarialDiscountApplies ?discountApplies . } OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChronicIllnessADBRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-031",
+    "scenario_description": "A wealthy couple wants to ensure their life insurance proceeds are excluded from their taxable estate and immediately available for estate tax liquidity upon the death of the surviving spouse.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:heldInTrust ?trust . ?trust a li:IrrevocableTrust . OPTIONAL { ?policy li:sourceContractSection ?sourceSection . } OPTIONAL { ?policy li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:heldInTrust ?trust . ?trust a li:IrrevocableTrust ; li:isNegated true . OPTIONAL { ?policy li:sourceContractSection ?sourceSection . } OPTIONAL { ?policy li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-032",
+    "scenario_description": "A policy owner pays a premium into a flexible-premium permanent policy. A portion of the premium is deducted as a front-end load before allocation to the account.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?loadPct ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPremium ?prem . ?prem li:hasPremiumLoad ?load . ?load li:premiumLoadPercentage ?loadPct . OPTIONAL { ?load li:sourceContractSection ?sourceSection . } OPTIONAL { ?load li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasPremium ?prem . ?prem li:hasPremiumLoad ?load . ?load li:isNegated true . OPTIONAL { ?load li:sourceContractSection ?sourceSection . } OPTIONAL { ?load li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-033",
+    "scenario_description": "The insured turns 43 years old and wishes to purchase additional life insurance coverage without undergoing a new medical examination.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?optionDates ?maxPerOption ?terminationAge ?exerciseDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:GuaranteedInsurabilityRider . OPTIONAL { ?rider li:gioOptionDates ?optionDates . } OPTIONAL { ?rider li:gioMaxCoveragePerOption ?maxPerOption . } OPTIONAL { ?rider li:gioTerminationAge ?terminationAge . } OPTIONAL { ?rider li:gioExerciseWindowDays ?exerciseDays . } OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:GuaranteedInsurabilityRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-034",
+    "scenario_description": "An employee covered under a group life certificate receives a significant salary raise. The policy owner wishes to know if the basic life insurance benefit automatically changes.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?salaryMultiple ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:BasicGroupCoverage ; li:salaryMultiple ?salaryMultiple . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db a li:BasicGroupCoverage ; li:isNegated true . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-035",
+    "scenario_description": "The insured dies in a car accident that is the direct cause of death. The insured's blood alcohol level was below the legal limit. Death occurs 30 days after the accident.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?additionalBenefit ?deathWindowDays ?terminationAge ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:AccidentalDeathBenefitRider ; li:adbRiderAdditionalBenefitAmount ?additionalBenefit ; li:adbRiderAccidentDeathWindowDays ?deathWindowDays . OPTIONAL { ?rider li:adbRiderTerminationAge ?terminationAge . } OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } FILTER(?deathWindowDays >= 30) }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:AccidentalDeathBenefitRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-036",
+    "scenario_description": "The S&P 500 index rises 18% during the policy year. The policy owner expects to receive the full 18% interest credit on the indexed account.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?accountLabel ?capValue ?capMin ?participationCurrent ?participationMin ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasIndexAccount ?ia . ?ia li:accountLabel ?accountLabel ; li:hasCapRate ?capNode ; li:hasParticipationRate ?prNode . ?capNode li:capRateCurrentValue ?capValue ; li:capRateGuaranteedMinimum ?capMin . ?prNode li:participationRateCurrent ?participationCurrent ; li:participationRateGuaranteedMinimum ?participationMin . OPTIONAL { ?ia li:sourceContractSection ?sourceSection . } OPTIONAL { ?ia li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasIndexAccount ?ia . ?ia li:isNegated true . OPTIONAL { ?ia li:sourceContractSection ?sourceSection . } OPTIONAL { ?ia li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-037",
+    "scenario_description": "An insured who had a pre-existing heart condition (disclosed in the application) dies from heart failure. The claim is submitted and the insurer checks for pre-existing condition exclusions.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy li:hasExclusion ?excl . ?excl a li:PreExistingConditionExclusion . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:PreExistingConditionExclusion . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-038",
+    "scenario_description": "The policy owner wishes to use their life insurance policy as collateral for a bank loan, assigning the policy to the lender.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:AssignmentProvision . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } } UNION { ?policy li:sourceContractID ?contractID ; li:hasCashValue ?cv . FILTER NOT EXISTS { ?policy li:hasProvision ?prov . ?prov a li:AssignmentProvision . } FILTER EXISTS { { ?policy a li:ParticipatingWholeLifePolicy } UNION { ?policy a li:JointSurvivorshipPolicy } } OPTIONAL { ?cv li:sourceContractSection ?sourceSection . } OPTIONAL { ?cv li:coverageSourceText ?sourceText . } } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:AssignmentProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-039",
+    "scenario_description": "The first insured on a joint survivorship policy has died. The surviving insured and the trust want to explore splitting the joint policy into two separate individual policies.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?electionYears ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SplitOption ; li:splitOptionElectionYearsAfterDeath ?electionYears . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SplitOption ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-040",
+    "scenario_description": "A beneficiary submits a complete and valid death claim with all required documentation. The beneficiary wants to know the fastest possible time to receive payment.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?paymentDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db li:deathBenefitPaymentDays ?paymentDays . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } } ORDER BY ?paymentDays",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasDeathBenefit ?db . ?db li:deathBenefitPaymentDays ?paymentDays ; li:isNegated true . OPTIONAL { ?db li:sourceContractSection ?sourceSection . } OPTIONAL { ?db li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-041",
+    "scenario_description": "A flexible-premium permanent policy owner stops paying premiums. High monthly charges eventually deplete the account value to zero. The insurer sends a lapse notice.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?graceDays ?priorNoticeDays ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp a li:AccountValueDepletionGracePeriod ; li:gracePeriodDays ?graceDays . OPTIONAL { ?gp li:lapsePriorNoticeRequiredDays ?priorNoticeDays . } OPTIONAL { ?gp li:sourceContractSection ?sourceSection . } OPTIONAL { ?gp li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp a li:AccountValueDepletionGracePeriod ; li:isNegated true . OPTIONAL { ?gp li:sourceContractSection ?sourceSection . } OPTIONAL { ?gp li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-042",
+    "scenario_description": "A severe market crash causes all equity-linked sub-accounts in a variable life policy to lose 40% of their value. The account value drops sharply, and monthly charges may now exceed account value.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasCreditingMechanism ?mech . ?mech a li:VariableSubAccountCrediting . OPTIONAL { ?mech li:sourceContractSection ?sourceSection . } OPTIONAL { ?mech li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasCreditingMechanism ?mech . ?mech a li:VariableSubAccountCrediting ; li:isNegated true . OPTIONAL { ?mech li:sourceContractSection ?sourceSection . } OPTIONAL { ?mech li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-043",
+    "scenario_description": "The policy owner of an IUL policy is concerned about the policy lapsing if the account value drops to zero due to insufficient index credits in consecutive poor market years. The policy owner wants a guarantee that the policy will not lapse as long as minimum premiums are paid.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?status ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:NoLapseGuaranteeRider ; li:coverageStatus ?status . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:NoLapseGuaranteeRider ; li:isNegated true . OPTIONAL { ?rider li:sourceContractSection ?sourceSection . } OPTIONAL { ?rider li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-044",
+    "scenario_description": "After 10 years, the owner of a return of premium term policy decides to convert the policy to permanent life insurance. The policy owner asks whether premiums paid to date will be refunded at conversion.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?maxAge ?minAmount ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ConversionPrivilege . OPTIONAL { ?prov li:conversionMaxAge ?maxAge . } OPTIONAL { ?prov li:conversionMinAmount ?minAmount . } OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:ConversionPrivilege ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-045",
+    "scenario_description": "The joint survivorship policy has been in force for 12 years. The insurer notifies the trust that the premium may be increased.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?guaranteePeriod ?maxPremium ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:premiumGuaranteePeriodYears ?guaranteePeriod . OPTIONAL { ?policy li:maximumGuaranteedPremium ?maxPremium . } OPTIONAL { ?policy li:sourceContractSection ?sourceSection . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:PremiumGuaranteeProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-046",
+    "scenario_description": "The insured dies in a car accident. Toxicology confirms the insured had a blood alcohol concentration above the legal limit at the time of the accident. The beneficiary files an accidental death benefit claim.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID WHERE { ?policy li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy li:hasExclusion ?excl . ?excl a li:DrugAlcoholExclusion . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasExclusion ?excl . ?excl a li:DrugAlcoholExclusion . OPTIONAL { ?excl li:sourceContractSection ?sourceSection . } OPTIONAL { ?excl li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-047",
+    "scenario_description": "A whole life policy owner stops paying premiums. After the grace period expires, the policy lapses. The owner does not contact the insurer within 60 days of lapse to choose a non-forfeiture option.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a li:ExtendedTermOption . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a li:ExtendedTermOption ; li:isNegated true . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-048",
+    "scenario_description": "An employee who has been at the company for 8 months attempts to enroll in the voluntary supplemental group life coverage for the first time.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?windowDays ?requiresEOI ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:LateEntrantProvision ; li:lateEntrantEnrollmentWindowDays ?windowDays . ?prov li:lateEntrantRequiresEOI ?requiresEOI . FILTER(?requiresEOI = false) OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?windowDays ?requiresEOI ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:LateEntrantProvision ; li:lateEntrantEnrollmentWindowDays ?windowDays . ?prov li:lateEntrantRequiresEOI ?requiresEOI . FILTER(?requiresEOI = true) OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-049",
+    "scenario_description": "The primary beneficiary of a life insurance policy wishes to receive the death benefit in installments over time rather than as a single lump-sum payment.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SettlementOptionProvision . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SettlementOptionProvision ; li:isNegated true . OPTIONAL { ?prov li:sourceContractSection ?sourceSection . } OPTIONAL { ?prov li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-050",
+    "scenario_description": "After many years of premium payments, a whole life policy owner wishes to stop paying premiums entirely but wants to keep some level of life insurance coverage in force for the rest of their life without paying any more premiums.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a li:ReducedPaidUpOption . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy li:sourceContractID ?contractID ; li:hasNonForfeitureOption ?opt . ?opt a li:ReducedPaidUpOption ; li:isNegated true . OPTIONAL { ?opt li:sourceContractSection ?sourceSection . } OPTIONAL { ?opt li:coverageSourceText ?sourceText . } }"
+  },
+  {
+    "scenario_id": "SCEN-051",
+    "scenario_description": "Both insureds on a joint survivorship policy die in the same car accident. It cannot be medically determined who died first. The beneficiary wants to know if the full $2,500,000 death benefit is immediately payable.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasProvision ?prov . ?prov a li:SimultaneousDeathEvent . OPTIONAL { ?prov li:sourceContractSection ?sourceSection } OPTIONAL { ?prov li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy li:hasProvision ?prov . ?prov a li:SimultaneousDeathEvent } }"
+  },
+  {
+    "scenario_id": "SCEN-052",
+    "scenario_description": "On a joint survivorship policy, the annual premium due on August 20th was not paid. The first insured dies 36 days after the premium due date. The surviving insured wants to know if the policy continues.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp a li:PremiumNonpaymentGracePeriod ; li:gracePeriodDays ?days . FILTER(?days >= 36) OPTIONAL { ?gp li:sourceContractSection ?sourceSection } OPTIONAL { ?gp li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp a li:PremiumNonpaymentGracePeriod ; li:gracePeriodDays ?days . FILTER(?days < 36) OPTIONAL { ?gp li:sourceContractSection ?sourceSection } OPTIONAL { ?gp li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-053",
+    "scenario_description": "On a joint survivorship policy, the first insured dies with an outstanding policy loan of $50,000 at 5.5% annual interest. The surviving insured and trustee want to know how the loan is treated during the continuation period and its impact on the eventual death benefit.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID ; li:hasPolicyLoan ?loan . OPTIONAL { ?loan li:sourceContractSection ?sourceSection } OPTIONAL { ?loan li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID WHERE { ?policy a li:JointSurvivorshipPolicy ; li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy li:hasPolicyLoan ?loan } }"
+  },
+  {
+    "scenario_id": "SCEN-054",
+    "scenario_description": "The insured's annual premium goes unpaid on its due date. The insured suffers an accidental injury 20 days later, while still within the grace period. The insured dies from those injuries 11 days after that — which is 31 days after the grace period expired and the policy had lapsed. The beneficiary files a claim for the Accidental Death Benefit rider.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:AccidentalDeathBenefitRider . FILTER NOT EXISTS { ?policy li:hasGracePeriod ?gp . ?gp a li:PremiumNonpaymentGracePeriod } OPTIONAL { ?rider li:sourceContractSection ?sourceSection } OPTIONAL { ?rider li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasGracePeriod ?gp . ?gp a li:PremiumNonpaymentGracePeriod . { ?policy li:hasRider ?rider . ?rider a li:AccidentalDeathBenefitRider . OPTIONAL { ?rider li:sourceContractSection ?sourceSection } OPTIONAL { ?rider li:coverageSourceText ?sourceText } } UNION { ?policy li:hasDeathBenefit ?db . ?db li:gradedBenefitAccidentalDeathException true . OPTIONAL { ?db li:sourceContractSection ?sourceSection } OPTIONAL { ?db li:coverageSourceText ?sourceText } } }"
+  },
+  {
+    "scenario_id": "SCEN-055",
+    "scenario_description": "The insured disclosed a prior history of cancer (in remission) on the application. Eighteen months after policy issue, the cancer returns and a physician certifies a terminal prognosis of less than 24 months. The insurer argues the terminal condition 'existed' before issue and attempts to deny the accelerated death benefit.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID . { ?policy li:hasLivingBenefit ?adb } UNION { ?policy li:hasRider ?adb } ?adb a li:TerminalIllnessADBRider ; li:terminalIllnessLifeExpectancyMonths ?limit . FILTER(?limit >= 24) OPTIONAL { ?adb li:sourceContractSection ?sourceSection } OPTIONAL { ?adb li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID . { ?policy li:hasLivingBenefit ?adb } UNION { ?policy li:hasRider ?adb } ?adb a li:TerminalIllnessADB ; li:terminalIllnessLifeExpectancyMonths ?limit . FILTER(?limit < 24) OPTIONAL { ?adb li:sourceContractSection ?sourceSection } OPTIONAL { ?adb li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-056",
+    "scenario_description": "A child covered under the Children's Term Insurance Rider turns 25 years old. The child dies 7 days after their 25th birthday. The insurer has not yet processed the administrative termination of the child's coverage. The parent wants to know if the $15,000 child rider benefit is payable.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChildrenTermRider ; li:childrenRiderMaxAge ?maxAge . FILTER(?maxAge > 25) OPTIONAL { ?rider li:sourceContractSection ?sourceSection } OPTIONAL { ?rider li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasRider ?rider . ?rider a li:ChildrenTermRider ; li:childrenRiderMaxAge ?maxAge . FILTER(?maxAge <= 25) OPTIONAL { ?rider li:sourceContractSection ?sourceSection } OPTIONAL { ?rider li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-057",
+    "scenario_description": "The insured dies 23 months after policy issue. During the claim investigation, the insurer discovers the insured answered 'No' on the application to questions about recent foreign travel to a high-risk region and a recent driving license suspension, both of which were false. The insurer wants to contest and deny the claim on the basis of material misrepresentation.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasProvision ?inc . ?inc a li:IncontestabilityProvision ; li:contestabilityPeriodYears ?years . FILTER(?years <= 2) FILTER NOT EXISTS { ?policy a li:VariableUniversalLifePolicy } FILTER NOT EXISTS { ?policy a li:GroupLifeCertificate } FILTER NOT EXISTS { ?policy li:hasUnderwritingType li:GuaranteedIssueUnderwriting } OPTIONAL { ?inc li:sourceContractSection ?sourceSection } OPTIONAL { ?inc li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:Policy ; li:sourceContractID ?contractID ; li:hasProvision ?inc . ?inc a li:IncontestabilityProvision ; li:contestabilityPeriodYears ?years . FILTER(?years > 2) OPTIONAL { ?inc li:sourceContractSection ?sourceSection } OPTIONAL { ?inc li:coverageSourceText ?sourceText } }"
+  },
+  {
+    "scenario_id": "SCEN-058",
+    "scenario_description": "A policyholder wants to understand how much cash value their Variable Universal Life policy will accumulate over 30 years at contract maximum charges, assuming a 5% gross annual return. The projection assumes a $250,000 face amount, issue age 35, Death Benefit Option I (Level), and a $1,500 planned annual premium.",
+    "query_covered": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID ?sourceSection ?sourceText WHERE { ?policy a li:VariableUniversalLifePolicy ; li:sourceContractID ?contractID ; li:hasPremium ?prem ; li:hasCharge ?charge . ?prem li:hasPremiumLoad ?load . { ?charge a li:CostOfInsurance } UNION { ?charge a li:AdministrativeCharge } OPTIONAL { ?charge li:sourceContractSection ?sourceSection } OPTIONAL { ?charge li:coverageSourceText ?sourceText } }",
+    "query_denied": "PREFIX li: <http://www.lifeinsurance.org/ontology#> SELECT DISTINCT ?contractID WHERE { ?policy a li:VariableUniversalLifePolicy ; li:sourceContractID ?contractID . FILTER NOT EXISTS { ?policy li:hasPremium ?prem . ?prem li:hasPremiumLoad ?load } FILTER NOT EXISTS { ?policy li:hasCharge ?charge . ?charge a li:CostOfInsurance } }"
+  }
+]

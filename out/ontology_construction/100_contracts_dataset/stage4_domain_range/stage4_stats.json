@@ -1,0 +1,21 @@
+{
+  "property": {
+    "total_real_clusters": 2458,
+    "noise_clusters_skipped": 0,
+    "confidence_distribution": {
+      "high": 2220,
+      "medium": 222,
+      "low": 16
+    },
+    "flagged_for_review": 16
+  },
+  "axiom": {
+    "total_real_clusters": 554,
+    "noise_clusters_skipped": 0,
+    "confidence_distribution": {
+      "high": 541,
+      "medium": 13
+    },
+    "flagged_for_review": 0
+  }
+}

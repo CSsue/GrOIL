@@ -1,0 +1,336 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Ultralife Premier Insurance Company                        ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: UPIC-IUL-JUMBO-2024-0003
+Date of Issue: July 1, 2024
+Form: Jumbo Elite Indexed Universal Life (JEIUL-1)
+Market Tier: Ultra-High Net Worth (UHNW) / Jumbo Coverage
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: The Ashworth Dynasty Trust
+       (Irrevocable Trust, dated June 1, 2024)
+       (Chase Private Bank, Trustee)
+
+Insured: Geoffrey Harrison Ashworth III
+DOB: October 18, 1967 | Age: 56 | Gender: Male
+Underwriting Class: Super Preferred Plus Non-Tobacco
+(Proprietary elite tier; better than Preferred Plus)
+Medical Review: Full underwriting including 5-year medical
+                records, executive physical, paramedical exam,
+                treadmill stress test, cognitive screening
+
+Co-Insurer Notice: This policy is reinsured in part with
+Munich Re Life US and RGA Reinsurance Company under
+automatic facultative agreements. Retained amount by UPIC:
+$10,000,000. Reinsured amount: $40,000,000.
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $50,000,000
+Death Benefit Option: Option 2 (Increasing)
+Planned Annual Premium: $1,200,000
+Tax Qualification Test: Guideline Premium Test (GPT)
+MEC Limit (Year 1 Seven-Pay): $1,318,440
+Financial Underwriting Requirement: Net worth confirmed
+    at $485,000,000 (estate liquidity justification on file)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: The Ashworth Dynasty Trust - 100%
+         (Distributes per Trust instrument upon second death
+         or as directed by Trust Protector)
+Contingent: Ashworth Children's Irrevocable Trust - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Jumbo Policy" - A life insurance policy with a face
+    amount requiring formal reinsurance due to the insurer's
+    retention limits. Jumbo threshold at UPIC: $10,000,000.
+
+1.2 "Super Preferred Plus" - Ultralife's proprietary highest
+    underwriting classification, reserved for individuals who
+    meet stricter criteria than standard Preferred Plus:
+    no family history of cancer or cardiac disease before age
+    70, BMI 18-26, cholesterol under 175, no medications
+    except preventatives, executive physical within 12 months.
+
+1.3 "Reinsurance" - An arrangement by which a portion of the
+    mortality risk is transferred to one or more reinsurers.
+    The policy owner's rights are unaffected by reinsurance.
+
+1.4 "Dynasty Trust" - A long-duration irrevocable trust
+    designed to hold assets across multiple generations while
+    minimizing estate and generation-skipping transfer taxes.
+
+1.5 "Private Placement" - Not applicable; this is a registered
+    product. See Article 12 for distinction from PPLI.
+
+1.6 "Indexed Strategy" - The method of crediting interest
+    based on external index performance.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE INDEX ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point (Standard)
+       Current Cap: 12.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) S&P 500 Uncapped with Participation (No Cap)
+       Cap: NONE | Participation Rate: 65%
+       Floor: 0% | Crediting Period: 1 year
+
+    C) S&P 500 Two-Year Sum Account
+       Two-year cumulative gain capped at 22%.
+       Floor: 0% per year | Crediting Period: 2 years
+       (Each year's gain is summed, not compounded)
+
+    D) MSCI World (ex-US) Index Annual P-to-P
+       Current Cap: 10.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Global diversification for ultra-wealthy portfolios)
+
+    E) Custom Indexed Account - Goldman Sachs Motif Index
+       A proprietary multi-factor equity strategy
+       Current Cap: 15.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Available exclusively on UHNW jumbo policies)
+
+    F) Fixed Account
+       Current Rate: 4.00% | Guaranteed Minimum: 2.50%
+
+2.2 CURRENT ALLOCATION (Trustee election):
+    S&P 500 Standard:           20%
+    S&P 500 Uncapped:           20%
+    S&P 500 Two-Year Sum:       20%
+    MSCI World (ex-US):         20%
+    Goldman Sachs Motif Index:  10%
+    Fixed Account:              10%
+
+2.3 REALLOCATION: Unlimited free reallocations.
+    Minimum allocation to any account: 5%.
+    Maximum to any single account: 50%.
+
+2.4 BESPOKE ALLOCATION CONSULTING: A dedicated UHNW Policy
+    Advisor is assigned to this policy (contact: private
+    banker channel). The Advisor will conduct an annual
+    allocation review with the Trustee.
+
+2.5 GUARANTEED MINIMUMS:
+    • S&P 500 standard cap: never below 5.00%
+    • Uncapped participation: never below 40%
+    • Two-year sum cap: never below 10.00% cumulative
+    • MSCI World cap: never below 4.00%
+    • Goldman Sachs Motif cap: never below 5.00%
+    • Fixed account: never below 2.50%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 STANDARD ANNUAL FORMULA:
+    Credit = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 UNCAPPED ACCOUNT:
+    Credit = MAX(0%, 65% × Index% Change)
+
+3.3 TWO-YEAR SUM ACCOUNT:
+    Year 1 sub-credit = MAX(0%, MIN(11%, Index% Change Yr1))
+    Year 2 sub-credit = MAX(0%, MIN(11%, Index% Change Yr2))
+    Total credit applied at Year 2 = Sum of sub-credits
+    (maximum 22% cumulative over 2 years)
+    Note: Two-year sum differs from two-year point-to-point:
+    each year's gain is independently measured and capped,
+    then summed, rather than measuring the cumulative gain
+    at period end.
+
+3.4 GOLDMAN SACHS MOTIF INDEX: A rules-based index designed
+    to track 5 investment themes (Technology Disruption,
+    Healthcare Innovation, Clean Energy, Consumer Resilience,
+    and Financial Infrastructure) with equal weight and
+    quarterly rebalancing. Embedded index fee of ~0.65%/year
+    reflected in the higher cap. Index rules are published
+    and available from Goldman Sachs Asset Management.
+
+3.5 LARGE ACCOUNT VALUE IMPACT: At the scale of this policy,
+    even a 1% index credit represents $120,000+ of credited
+    interest on a $12M account value. Premium of $1,200,000/
+    year compounding at 6% average credit would produce
+    an estimated account value of $22M-$28M after 15 years.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $1,200,000 annually for an envisioned
+    10-year funding period, then minimum to sustain.
+
+4.2 INSTITUTIONAL PREMIUM DELIVERY: Premiums may be wired
+    directly from the Dynasty Trust's custodial account
+    (Chase Private Bank) via ACH or wire transfer. Wire
+    instructions provided separately.
+
+4.3 FINANCIAL UNDERWRITING: Face amount requires documented
+    net worth supporting estate liquidity need. Financial
+    statement on file as of April 15, 2024.
+
+4.4 PREMIUM LOAD: 3.0% all years. (Reduced from standard
+    4-5% due to jumbo policy economics.)
+
+4.5 LARGE FACE AMOUNT DISCOUNT: COI rates for this policy
+    benefit from volume discount banding:
+    Face amount bands > $25M receive a 10% COI reduction
+    from published standard rates.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Applied monthly to net amount at risk. Rates reflect
+    Super Preferred Plus classification with volume discount.
+    Approximate Year 1 COI at age 56, Super Preferred Male:
+    ~$2.80/month per $1,000 NAR
+    At $50M face, Option 2: NAR ~$50M initially
+    COI Year 1 estimate: ~$140,000 annually.
+
+5.2 POLICY FEE: $50 per month (elevated for jumbo service).
+
+5.3 ASSET CHARGE: 0.15% of account value annually (billed
+    monthly). Reflects proprietary index licensing costs.
+
+5.4 ANNUAL POLICY SERVICE: Ultralife assigns a dedicated case
+    manager. All transactions require written authorization
+    from Trustee with conforming Trust certification.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 OPTION 2 INCREASING: Death Benefit = $50,000,000 +
+    Account Value. As account value reaches $20M, total
+    death benefit = $70,000,000. This exceeds many competing
+    UHNW policies by maintaining the full face plus cash value.
+
+6.2 ESTATE TAX PLANNING: For a 2024 federal estate tax
+    exemption of $13.61M (per individual), the Ashworth
+    estate faces potential estate tax exposure. The Dynasty
+    Trust structure with ILIT provisions is intended to
+    keep policy proceeds outside the taxable estate.
+
+6.3 GST TAX: Generation-Skipping Transfer (GST) tax
+    implications should be reviewed with estate counsel.
+    Ultralife provides no tax guidance.
+
+6.4 ACCELERATED BENEFITS: Terminal illness acceleration
+    up to 50% of total death benefit. Maximum per benefit:
+    $25,000,000. Medical Director review required.
+
+6.5 REINSURANCE DISCLOSURE: Reinsurers share in the death
+    benefit payment obligation proportionally to their
+    assumed risk. UPIC remains the primary contract obligor;
+    all claims are paid by UPIC regardless of reinsurer
+    solvency. Reinsurers have no contractual relationship
+    with the policy owner.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 POLICY LOANS:
+    Maximum: 90% of surrender value.
+    Standard loan rate: 4.0% annually.
+    Preferred loan rate (years 11+): 3.0% fixed.
+    Participating (wash) loans: Available years 11+.
+    Loaned amounts earn applicable index allocation.
+
+7.2 MINIMUM LOAN: $100,000 per transaction.
+
+7.3 PARTIAL WITHDRAWALS: Minimum $50,000.
+    No fee. Unlimited withdrawals per year.
+    Reduces death benefit under Option 2.
+
+7.4 LARGE TRANSACTION APPROVAL: Loans and withdrawals
+    exceeding $5,000,000 per transaction require 5 business
+    days advance notice to UPIC's Jumbo Policy Operations team.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of target premium $1,200,000):
+
+    Year 1:  8%    Year 5:  4%    Year 9:  1%
+    Year 2:  7%    Year 6:  3%    Year 10: 0.5%
+    Year 3:  6%    Year 7:  2%    Year 11+: 0%
+    Year 4:  5%    Year 8:  1.5%
+
+8.2 Reduced surrender charge period and percentages for
+    jumbo policies reflecting the institutional nature of
+    the placement and lower distribution cost allocation.
+
+8.3 FREE WITHDRAWAL: 15% of account value annually, year 2+.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LAPSE AND CONTINUITY
+═══════════════════════════════════════════════════════════════════
+9.1 LAPSE NOTIFICATION: 60 days advance written notice by
+    certified mail and email to Trustee.
+9.2 GRACE PERIOD: 61 days.
+9.3 REINSTATEMENT: Up to 5 years with full evidence of
+    insurability. Given the insured's age and face amount,
+    reinstatement underwriting will be extensive.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: 2-year return-of-premium limit.
+10.2 CONTESTABILITY: 2 years from issue.
+10.3 NO AVIATION, WAR, OCCUPATION, OR FOREIGN TRAVEL
+     EXCLUSIONS. Global coverage, including high-risk travel.
+     (Super Preferred underwriting accounts for lifestyle.)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - PRIVATE PLACEMENT vs. REGISTERED PRODUCT
+═══════════════════════════════════════════════════════════════════
+11.1 This policy is a REGISTERED indexed universal life product.
+     It is NOT a Private Placement Life Insurance (PPLI) policy.
+     Index accounts are general account products; they are not
+     separate account investment products subject to securities
+     registration. Policy owners do not choose investment
+     managers or separately managed accounts.
+
+11.2 For clients seeking PPLI structures (with separately
+     managed investment accounts), please inquire about UPIC's
+     PPLI division product suite.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 12 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+12.1 Reinsurance does not reduce policy owner rights.
+12.2 Index credits exclude dividends. 0% floor applies.
+12.3 Proprietary index accounts include embedded fees.
+12.4 Super Preferred Plus classification requires annual
+     certification of continued health status at policy
+     anniversary for the first 5 policy years.
+12.5 UHNW policies are subject to enhanced annual financial
+     review to confirm continued insurable interest.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Ultralife Premier Insurance Company
+UHNW & Jumbo Policy Division
+1-800-ULTRALIFE | jumbo@ultralifepremier.com
+New York, New York
+
+[CORPORATE SEAL]
+
+__________________________________
+Chief Executive Officer
+Ultralife Premier Insurance Company
+
+July 1, 2024
+
+═══════════════════════════════════════════════════════════════════

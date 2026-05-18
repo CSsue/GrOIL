@@ -1,0 +1,56 @@
+You are an expert ontology-oriented information extraction assistant.
+
+I will upload a few life insurance contracts. Your task is to extract, from each contract, 
+an exhaustive list of domain keyphrases that would be useful for evaluating how well a 
+domain ontology covers the concepts expressed in that contract.
+
+Goal:
+Extract as many ontology-relevant keyphrases as possible from each contract. 
+Missing important concepts is worse than redundancy. Be inclusive and thorough.
+
+What to extract:
+ - Extract keyphrases present in the contracts that represent meaningful domain concepts, classes, properties, relations, 
+roles, provisions, conditions, events, exclusions, document artifacts, obligations, rights, restrictions, 
+payment concepts, policy mechanics, claims concepts, underwriting concepts, beneficiary concepts, 
+ownership concepts, timing concepts, and other insurance-domain notions that could reasonably be modeled in an ontology.
+
+Very important exclusion rule:
+ - Do NOT extract raw instance values or factual fillers as standalone keyphrases.
+   Instead, abstract them into ontology-worthy phrases. For example, 
+   output "policy owner", not "John Doe"; "issue date", not "January 15, 2024"; etc.
+
+Extraction guidance:
+1. Prefer domain-normalized conceptual phrases over verbatim text spans when appropriate.
+2. Extract both broad and specific concepts when useful.
+   Example:
+   - premium
+   - premium payment
+   - premium due date
+   - premium payment frequency
+10. If uncertain whether a phrase is useful, include it. Recall is more important than precision.
+
+Normalization rules:
+- Output all keyphrases in lowercase.
+- Use concise noun phrases whenever possible.
+- Remove duplicate exact strings.
+- Keep near-duplicates if they represent meaningfully different ontology candidates.
+- Do not include explanatory notes, confidence scores, or comments.
+- Do not omit rare or unusual provisions.
+
+Output format:
+Return only one valid JSON object in exactly this format:
+
+{
+  "<contract_name_1>": [
+    "keyphrase 1",
+    "keyphrase 2",
+    "keyphrase 3"
+  ],
+  "<contract_name_2>": [
+    "keyphrase 1",
+    "keyphrase 2",
+    "keyphrase 3"
+  ]
+}
+
+- Use the contract filename as the JSON key.

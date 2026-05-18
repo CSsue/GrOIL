@@ -1,0 +1,2672 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix ins: <https://example.org/ontology/insurance#> .
+
+### =========================================================
+###  Ontology header
+### =========================================================
+
+<https://example.org/ontology/insurance> a owl:Ontology ;
+    rdfs:label "Life Insurance Policy TBox"@en ;
+    dcterms:title "Life Insurance Policy TBox"@en ;
+    dcterms:description "OWL TBox ontology induced from a corpus of life insurance policy documents via the Graph-Grounded Ontology Induction pipeline."@en ;
+    dcterms:created "2026-05-16"^^xsd:date ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    dcterms:creator "Graph-Grounded Ontology Induction Pipeline (Stages 1-7)"^^xsd:string .
+
+
+### =========================================================
+###  Classes
+### =========================================================
+
+### Class: ins:Action
+ins:Action
+    a owl:Class ;
+    rdfs:label "Action"@en ;
+    rdfs:comment "A procedural or operational event within a life insurance contract. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A procedural or operational event within a life insurance contract."@en ;
+    rdfs:subClassOf ins:ProceduralEvent .
+
+### Class: ins:ActiveStatusRestoration
+ins:ActiveStatusRestoration
+    a owl:Class ;
+    rdfs:label "Active Status Restoration"@en ;
+    rdfs:comment "The process of reinstating a life insurance policy to active status after lapse. Induced from a Placed as subClassOf PolicyRestoration (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The process of reinstating a life insurance policy to active status after lapse."@en ;
+    rdfs:subClassOf ins:PolicyRestoration .
+
+### Class: ins:AdministrativeCharge
+ins:AdministrativeCharge
+    a owl:Class ;
+    rdfs:label "Administrative Charges"@en ;
+    rdfs:comment "A fee imposed for administrative services related to a life insurance policy. Induced from a Placed as subClassOf FinancialObligation (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A fee imposed for administrative services related to a life insurance policy."@en ;
+    rdfs:subClassOf ins:FinancialObligation .
+
+### Class: ins:AgeOrGenderMisstatement
+ins:AgeOrGenderMisstatement
+    a owl:Class ;
+    rdfs:label "Issue Age"@en ;
+    rdfs:comment "A misrepresentation of the insured's age or gender at the time of policy issuance. Induced from a Placed as subClassOf MaterialMisrepresentation (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in Stag…"@en ;
+    skos:definition "A misrepresentation of the insured's age or gender at the time of policy issuance."@en ;
+    rdfs:subClassOf ins:MaterialMisrepresentation ;
+    skos:altLabel "age misstatement"@en ;
+    skos:altLabel "Misstatement of Age or Gender"@en .
+
+### Class: ins:Amount
+ins:Amount
+    a owl:Class ;
+    rdfs:label "Amount"@en ;
+    rdfs:comment "A monetary value specified in a life insurance contract. Induced from a Placed as subClassOf FinancialInstrument (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A monetary value specified in a life insurance contract."@en ;
+    rdfs:subClassOf ins:FinancialInstrument .
+
+### Class: ins:AssignmentRights
+ins:AssignmentRights
+    a owl:Class ;
+    rdfs:label "Assignment Rights"@en ;
+    rdfs:comment "The legal right to assign ownership or benefits of a life insurance policy. Induced from a Placed as subClassOf PolicyOwnerRights (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The legal right to assign ownership or benefits of a life insurance policy."@en ;
+    rdfs:subClassOf ins:PolicyOwnerRights ;
+    skos:altLabel "Assignment Validity"@en .
+
+### Class: ins:AuthorizedRepresentative
+ins:AuthorizedRepresentative
+    a owl:Class ;
+    rdfs:label "Representative Authorized To Execute Policy"@en ;
+    rdfs:comment "An individual authorized to execute a life insurance policy on behalf of a party. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf ROLE; cluster of 1 surface variant(s) m…"@en ;
+    skos:definition "An individual authorized to execute a life insurance policy on behalf of a party."@en ;
+    rdfs:subClassOf ins:Role .
+
+### Class: ins:AuthorizedRepresentativeEmployer
+ins:AuthorizedRepresentativeEmployer
+    a owl:Class ;
+    rdfs:label "Authorized Representative'S Employer"@en ;
+    rdfs:comment "The employer of an individual authorized to act on behalf of another in insurance matters. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf ORGANIZATION; cluster of 1 sur…"@en ;
+    skos:definition "The employer of an individual authorized to act on behalf of another in insurance matters."@en ;
+    rdfs:subClassOf ins:AuthorizedRepresentative .
+
+### Class: ins:AuthorizedSignature
+ins:AuthorizedSignature
+    a owl:Class ;
+    rdfs:label "Officer Signature Requirement"@en ;
+    rdfs:comment "A signature authorized to legally bind a corporate entity in a life insurance contract. Induced from a Placed as subClassOf AuthorizedRepresentative (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in…"@en ;
+    skos:definition "A signature authorized to legally bind a corporate entity in a life insurance contract."@en ;
+    rdfs:subClassOf ins:AuthorizedRepresentative ;
+    skos:altLabel "authorized signature"@en ;
+    skos:altLabel "Corporate Signatures"@en .
+
+### Class: ins:BaseSumAssured
+ins:BaseSumAssured
+    a owl:Class ;
+    rdfs:label "Base Sum Assured Under Policy"@en ;
+    rdfs:comment "The fundamental amount of coverage specified in a life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf FINANCIAL_CONCEPT; cluster of 1 surface variant(…"@en ;
+    skos:definition "The fundamental amount of coverage specified in a life insurance policy."@en ;
+    rdfs:subClassOf ins:DeathBenefit .
+
+### Class: ins:Beneficiary
+ins:Beneficiary
+    a owl:Class ;
+    rdfs:label "Primary Beneficiary"@en ;
+    rdfs:comment "A person or entity designated to receive insurance benefits upon the insured's death. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster of 2 surface varian…"@en ;
+    skos:definition "A person or entity designated to receive insurance benefits upon the insured's death."@en ;
+    rdfs:subClassOf ins:Person ;
+    skos:altLabel "contingent beneficiary"@en .
+
+### Class: ins:BeneficiaryChangeInstrument
+ins:BeneficiaryChangeInstrument
+    a owl:Class ;
+    rdfs:label "Formal Instrument For Changing Beneficiary"@en ;
+    rdfs:comment "A formal document used to modify the designated beneficiary of a life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf DOCUMENT; cluster of 1 surface va…"@en ;
+    skos:definition "A formal document used to modify the designated beneficiary of a life insurance policy."@en ;
+    rdfs:subClassOf ins:PolicyAdjustment .
+
+### Class: ins:BeneficiaryRelationship
+ins:BeneficiaryRelationship
+    a owl:Class ;
+    rdfs:label "Beneficiary Relationship"@en ;
+    rdfs:comment "A familial or designated connection between a policyholder and a beneficiary. Induced from a Placed as subClassOf Designation (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A familial or designated connection between a policyholder and a beneficiary."@en ;
+    rdfs:subClassOf ins:Designation ;
+    skos:altLabel "family relationship"@en .
+
+### Class: ins:BenefitClaim
+ins:BenefitClaim
+    a owl:Class ;
+    rdfs:label "Formal Submission To Initiate Benefit"@en ;
+    rdfs:comment "A formal submission to initiate the payment of a life insurance benefit. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf ACTION; cluster of 1 surface variant(s) merged i…"@en ;
+    skos:definition "A formal submission to initiate the payment of a life insurance benefit."@en ;
+    rdfs:subClassOf ins:Action .
+
+### Class: ins:BenefitConditions
+ins:BenefitConditions
+    a owl:Class ;
+    rdfs:label "Schedule of Benefits"@en ;
+    rdfs:comment "Conditions governing eligibility and terms for receiving insurance benefits. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 4 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "Conditions governing eligibility and terms for receiving insurance benefits."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "benefit eligibility"@en ;
+    skos:altLabel "benefit conditions"@en .
+
+### Class: ins:BenefitEligibilityCondition
+ins:BenefitEligibilityCondition
+    a owl:Class ;
+    rdfs:label "Condition Preventing Benefit Eligibility"@en ;
+    rdfs:comment "A condition that must be met for a benefit to be eligible for payment. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf EXCLUSION; cluster of 1 surface variant(s) merged…"@en ;
+    skos:definition "A condition that must be met for a benefit to be eligible for payment."@en ;
+    rdfs:subClassOf ins:Exclusion .
+
+### Class: ins:BenefitLimit
+ins:BenefitLimit
+    a owl:Class ;
+    rdfs:label "Benefit Limit"@en ;
+    rdfs:comment "The maximum amount of benefit payable under a life insurance policy. Induced from a Placed as subClassOf BenefitStructure (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The maximum amount of benefit payable under a life insurance policy."@en ;
+    rdfs:subClassOf ins:BenefitStructure ;
+    skos:altLabel "Company Maximum Limit"@en .
+
+### Class: ins:BenefitStructure
+ins:BenefitStructure
+    a owl:Class ;
+    rdfs:label "Benefit Structure"@en ;
+    rdfs:comment "A framework defining the conditions, limits, and mechanisms for the delivery of insurance benefits. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not directly attested in sou…"@en ;
+    skos:definition "A framework defining the conditions, limits, and mechanisms for the delivery of insurance benefits."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:BindingAgreement
+ins:BindingAgreement
+    a owl:Class ;
+    rdfs:label "Complete Binding Agreement Definition"@en ;
+    rdfs:comment "A legally enforceable agreement that constitutes the complete contract between parties. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surface var…"@en ;
+    skos:definition "A legally enforceable agreement that constitutes the complete contract between parties."@en ;
+    rdfs:subClassOf ins:ContractualAgreement .
+
+### Class: ins:CancellationAbility
+ins:CancellationAbility
+    a owl:Class ;
+    rdfs:label "Ability To Cancel Benefit Request"@en ;
+    rdfs:comment "The right to cancel a benefit request within a specified period. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf RIGHT; cluster of 1 surface variant(s) merged in Stage 3…"@en ;
+    skos:definition "The right to cancel a benefit request within a specified period."@en ;
+    rdfs:subClassOf ins:Right .
+
+### Class: ins:CancellationRight
+ins:CancellationRight
+    a owl:Class ;
+    rdfs:label "Policy Cancellation"@en ;
+    rdfs:comment "The right to terminate a life insurance policy under specified conditions. Induced from a Placed as subClassOf PolicyOwnerRights (Stage 5, confidence: high); cluster of 5 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The right to terminate a life insurance policy under specified conditions."@en ;
+    rdfs:subClassOf ins:PolicyOwnerRights ;
+    skos:altLabel "Cancellation Rights"@en .
+
+### Class: ins:CentralIllegalAction
+ins:CentralIllegalAction
+    a owl:Class ;
+    rdfs:label "Central Illegal Action Described"@en ;
+    rdfs:comment "A prohibited act central to the policy's terms and conditions. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surface variant(s) merged in Stage 3…"@en ;
+    skos:definition "A prohibited act central to the policy's terms and conditions."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:ChiefExecutiveOfficer
+ins:ChiefExecutiveOfficer
+    a owl:Class ;
+    rdfs:label "Chief Executive Officer"@en ;
+    rdfs:comment "An individual holding the highest-ranking executive position in an organization with signing authority. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster o…"@en ;
+    skos:definition "An individual holding the highest-ranking executive position in an organization with signing authority."@en ;
+    rdfs:subClassOf ins:ExecutiveOfficer ;
+    skos:altLabel "Chief Executive Officer signing authority"@en .
+
+### Class: ins:ClaimProcessing
+ins:ClaimProcessing
+    a owl:Class ;
+    rdfs:label "Claim Investigation"@en ;
+    rdfs:comment "The procedural steps taken to evaluate and settle a life insurance claim. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 4 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The procedural steps taken to evaluate and settle a life insurance claim."@en ;
+    rdfs:subClassOf ins:ProceduralEvent ;
+    skos:altLabel "Claims Processing"@en ;
+    skos:altLabel "claim initiation"@en .
+
+### Class: ins:ClaimValidityLimitation
+ins:ClaimValidityLimitation
+    a owl:Class ;
+    rdfs:label "Limitation On Claim Validity Early In Policy"@en ;
+    rdfs:comment "A restriction on the validity of a claim during the early period of a policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CLAUSE; cluster of 1 surface variant(s) mer…"@en ;
+    skos:definition "A restriction on the validity of a claim during the early period of a policy."@en ;
+    rdfs:subClassOf ins:Clause .
+
+### Class: ins:Clause
+ins:Clause
+    a owl:Class ;
+    rdfs:label "Clause"@en ;
+    rdfs:comment "A distinct section of a life insurance contract that outlines specific terms or conditions. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in…"@en ;
+    skos:definition "A distinct section of a life insurance contract that outlines specific terms or conditions."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:ColoradoJurisdiction
+ins:ColoradoJurisdiction
+    a owl:Class ;
+    rdfs:label "Colorado jurisdiction"@en ;
+    rdfs:comment "A legal jurisdiction within the state of Colorado relevant to life insurance contracts. Induced from a Placed as subClassOf Location (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A legal jurisdiction within the state of Colorado relevant to life insurance contracts."@en ;
+    rdfs:subClassOf ins:Location .
+
+### Class: ins:CompanyAuthority
+ins:CompanyAuthority
+    a owl:Class ;
+    rdfs:label "Company Officer Authority"@en ;
+    rdfs:comment "A designation granting an individual authority to act on behalf of the insurance company. Induced from a Placed as subClassOf AuthorizedRepresentative (Stage 5, confidence: high); cluster of 5 surface variant(s) merged i…"@en ;
+    skos:definition "A designation granting an individual authority to act on behalf of the insurance company."@en ;
+    rdfs:subClassOf ins:AuthorizedRepresentative ;
+    skos:altLabel "company authority"@en ;
+    skos:altLabel "executive authority"@en .
+
+### Class: ins:CompanyDiscretion
+ins:CompanyDiscretion
+    a owl:Class ;
+    rdfs:label "Company Discretion"@en ;
+    rdfs:comment "A contractual provision allowing the insurance company to approve or deny a request at its discretion. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 5 surface variant(s)…"@en ;
+    skos:definition "A contractual provision allowing the insurance company to approve or deny a request at its discretion."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "company approval"@en ;
+    skos:altLabel "Company Approval"@en .
+
+### Class: ins:ContestabilityPeriod
+ins:ContestabilityPeriod
+    a owl:Class ;
+    rdfs:label "Contestability Period"@en ;
+    rdfs:comment "A time period during which the insurer can contest the validity of a life insurance policy. Induced from a Placed as subClassOf Period (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A time period during which the insurer can contest the validity of a life insurance policy."@en ;
+    rdfs:subClassOf ins:Period .
+
+### Class: ins:ContestabilityPeriodStart
+ins:ContestabilityPeriodStart
+    a owl:Class ;
+    rdfs:label "Two-Year Challenge Window For Validity"@en ;
+    rdfs:comment "The point in time when the contestability period for a life insurance policy begins. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 5 surface varian…"@en ;
+    skos:definition "The point in time when the contestability period for a life insurance policy begins."@en ;
+    rdfs:subClassOf ins:ContestabilityPeriod ;
+    skos:altLabel "basis for issuing the policy"@en ;
+    skos:altLabel "start point of coverage activation"@en .
+
+### Class: ins:ContractIdentifier
+ins:ContractIdentifier
+    a owl:Class ;
+    rdfs:label "Contract Identifier"@en ;
+    rdfs:comment "A unique identifier assigned to a life insurance contract for reference and tracking. Induced from a Placed as subClassOf PolicyAttribute (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A unique identifier assigned to a life insurance contract for reference and tracking."@en ;
+    rdfs:subClassOf ins:PolicyAttribute .
+
+### Class: ins:ContractualAgreement
+ins:ContractualAgreement
+    a owl:Class ;
+    rdfs:label "Contractual Agreement Governing Coverage"@en ;
+    rdfs:comment "A formal agreement defining the terms of insurance coverage between parties. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf POLICY; cluster of 1 surface variant(s) merg…"@en ;
+    skos:definition "A formal agreement defining the terms of insurance coverage between parties."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:ContractualProvision
+ins:ContractualProvision
+    a owl:Class ;
+    rdfs:label "Contractual Integrity"@en ;
+    rdfs:comment "A legally binding term or condition within an insurance contract governing rights and obligations. Induced from a Placed as subClassOf ContractualTerm (Stage 5, confidence: high); cluster of 21 surface variant(s) merged…"@en ;
+    skos:definition "A legally binding term or condition within an insurance contract governing rights and obligations."@en ;
+    rdfs:subClassOf ins:ContractualTerm ;
+    skos:altLabel "Contractual Rights"@en ;
+    skos:altLabel "contract modification"@en .
+
+### Class: ins:ContractualTerm
+ins:ContractualTerm
+    a owl:Class ;
+    rdfs:label "Contractual Term"@en ;
+    rdfs:comment "A specific condition, provision, or obligation defined within an insurance contract that governs rights, responsibilities, or outcomes. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Ph…"@en ;
+    skos:definition "A specific condition, provision, or obligation defined within an insurance contract that governs rights, responsibilities, or outcomes."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:ConversionRight
+ins:ConversionRight
+    a owl:Class ;
+    rdfs:label "Conversion Rights"@en ;
+    rdfs:comment "A policyholder's ability to convert a term life insurance policy to a permanent one under specified conditions. Induced from a Placed as subClassOf Right (Stage 5, confidence: high); cluster of 3 surface variant(s) merge…"@en ;
+    skos:definition "A policyholder's ability to convert a term life insurance policy to a permanent one under specified conditions."@en ;
+    rdfs:subClassOf ins:Right ;
+    skos:altLabel "conversion option"@en ;
+    skos:altLabel "conversion rules"@en .
+
+### Class: ins:CorporateEntity
+ins:CorporateEntity
+    a owl:Class ;
+    rdfs:label "Company Definition"@en ;
+    rdfs:comment "An organization legally recognized as a distinct entity, often referenced in insurance contracts. Induced from a Placed as subClassOf Party (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "An organization legally recognized as a distinct entity, often referenced in insurance contracts."@en ;
+    rdfs:subClassOf ins:Party ;
+    skos:altLabel "Company Records"@en ;
+    skos:altLabel "corporate entity"@en .
+
+### Class: ins:CoverageActivation
+ins:CoverageActivation
+    a owl:Class ;
+    rdfs:label "Policy Activation"@en ;
+    rdfs:comment "The event or process that initiates the coverage provided by a life insurance policy. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The event or process that initiates the coverage provided by a life insurance policy."@en ;
+    rdfs:subClassOf ins:ProceduralEvent ;
+    skos:altLabel "Coverage Activation"@en .
+
+### Class: ins:CoveragePeriod
+ins:CoveragePeriod
+    a owl:Class ;
+    rdfs:label "Effective Date"@en ;
+    rdfs:comment "The time interval during which insurance coverage is active and valid. Induced from a Placed as subClassOf Period (Stage 5, confidence: high); cluster of 7 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The time interval during which insurance coverage is active and valid."@en ;
+    rdfs:subClassOf ins:Period ;
+    skos:altLabel "premium due dates"@en .
+
+### Class: ins:CoverageTerm
+ins:CoverageTerm
+    a owl:Class ;
+    rdfs:label "Coverage Term"@en ;
+    rdfs:comment "The period during which insurance coverage is active and benefits are payable. Induced from a Placed as subClassOf CoveragePeriod (Stage 5, confidence: high); cluster of 5 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The period during which insurance coverage is active and benefits are payable."@en ;
+    rdfs:subClassOf ins:CoveragePeriod ;
+    skos:altLabel "coverage commencement"@en ;
+    skos:altLabel "coverage limitations"@en .
+
+### Class: ins:CoverageTermination
+ins:CoverageTermination
+    a owl:Class ;
+    rdfs:label "Coverage Termination"@en ;
+    rdfs:comment "The ending of insurance coverage, resulting in the cessation of benefits. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 5 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The ending of insurance coverage, resulting in the cessation of benefits."@en ;
+    rdfs:subClassOf ins:ProceduralEvent ;
+    skos:altLabel "policy termination"@en ;
+    skos:altLabel "lapse and termination"@en .
+
+### Class: ins:DeathBenefit
+ins:DeathBenefit
+    a owl:Class ;
+    rdfs:label "Accelerated Death Benefit"@en ;
+    rdfs:comment "A monetary payment made to beneficiaries upon the insured's death. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 19 surface variant(s) merged in St…"@en ;
+    skos:definition "A monetary payment made to beneficiaries upon the insured's death."@en ;
+    rdfs:subClassOf ins:BenefitClaim ;
+    skos:altLabel "Death Benefit"@en ;
+    skos:altLabel "Death Benefit Payment"@en .
+
+### Class: ins:DeathBenefitRecipient
+ins:DeathBenefitRecipient
+    a owl:Class ;
+    rdfs:label "Recipient Of Death Benefit Payout"@en ;
+    rdfs:comment "An entity designated to receive the death benefit payout upon the insured's death. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster of 2 surface variant(s…"@en ;
+    skos:definition "An entity designated to receive the death benefit payout upon the insured's death."@en ;
+    rdfs:subClassOf ins:Beneficiary ;
+    skos:altLabel "recipient of death benefit"@en .
+
+### Class: ins:Designation
+ins:Designation
+    a owl:Class ;
+    rdfs:label "Designation Rules"@en ;
+    rdfs:comment "A formal designation of a beneficiary or recipient as recorded in the policy file. Induced from a Placed as subClassOf Beneficiary (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A formal designation of a beneficiary or recipient as recorded in the policy file."@en ;
+    rdfs:subClassOf ins:Beneficiary ;
+    skos:altLabel "Designation On File"@en .
+
+### Class: ins:DocumentAccess
+ins:DocumentAccess
+    a owl:Class ;
+    rdfs:label "Document Access"@en ;
+    rdfs:comment "The right to access policy-related documents and information. Induced from a Placed as subClassOf Right (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The right to access policy-related documents and information."@en ;
+    rdfs:subClassOf ins:Right ;
+    skos:altLabel "Information Access"@en .
+
+### Class: ins:DocumentArtifact
+ins:DocumentArtifact
+    a owl:Class ;
+    rdfs:label "Document Artifact"@en ;
+    rdfs:comment "A formal written or digital record that serves as evidence, authorization, or amendment within the insurance lifecycle. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not dire…"@en ;
+    skos:definition "A formal written or digital record that serves as evidence, authorization, or amendment within the insurance lifecycle."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:DocumentVerification
+ins:DocumentVerification
+    a owl:Class ;
+    rdfs:label "Document Verification"@en ;
+    rdfs:comment "The process of confirming the authenticity and validity of a document. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The process of confirming the authenticity and validity of a document."@en ;
+    rdfs:subClassOf ins:ProceduralEvent ;
+    skos:altLabel "Document Identification"@en .
+
+### Class: ins:EffectiveDate
+ins:EffectiveDate
+    a owl:Class ;
+    rdfs:label "August 7, 2025"@en ;
+    rdfs:comment "The date on which a policy provision or benefit becomes active. Induced from a Placed as subClassOf TemporalConcept (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The date on which a policy provision or benefit becomes active."@en ;
+    rdfs:subClassOf ins:TemporalConcept .
+
+### Class: ins:EvidenceOfInsurability
+ins:EvidenceOfInsurability
+    a owl:Class ;
+    rdfs:label "Evidence Of Insurability"@en ;
+    rdfs:comment "A document or proof demonstrating an individual's eligibility for life insurance coverage. Induced from a Placed as subClassOf DocumentArtifact (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage…"@en ;
+    skos:definition "A document or proof demonstrating an individual's eligibility for life insurance coverage."@en ;
+    rdfs:subClassOf ins:DocumentArtifact .
+
+### Class: ins:Exclusion
+ins:Exclusion
+    a owl:Class ;
+    rdfs:label "Exclusion"@en ;
+    rdfs:comment "A provision in a life insurance policy that specifies conditions or circumstances not covered by the policy. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface vari…"@en ;
+    skos:definition "A provision in a life insurance policy that specifies conditions or circumstances not covered by the policy."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:ExecutionTimeline
+ins:ExecutionTimeline
+    a owl:Class ;
+    rdfs:label "Execution Timeline"@en ;
+    rdfs:comment "Conditions and timing governing the execution of a life insurance contract. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "Conditions and timing governing the execution of a life insurance contract."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "execution conditions"@en .
+
+### Class: ins:ExecutiveOfficer
+ins:ExecutiveOfficer
+    a owl:Class ;
+    rdfs:label "Chief Executive Officer"@en ;
+    rdfs:comment "A senior official responsible for the overall management and leadership of an organization. Induced from a Placed as subClassOf Person (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A senior official responsible for the overall management and leadership of an organization."@en ;
+    rdfs:subClassOf ins:Person ;
+    skos:altLabel "CEO"@en ;
+    skos:altLabel "company leadership"@en .
+
+### Class: ins:FaceAmount
+ins:FaceAmount
+    a owl:Class ;
+    rdfs:label "Face Amount"@en ;
+    rdfs:comment "The specified amount of life insurance coverage provided by a policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf AMOUNT; cluster of 2 surface variant(s) merged in S…"@en ;
+    skos:definition "The specified amount of life insurance coverage provided by a policy."@en ;
+    rdfs:subClassOf ins:DeathBenefit ;
+    skos:altLabel "Face Amount Cap"@en .
+
+### Class: ins:FelonyInvolvement
+ins:FelonyInvolvement
+    a owl:Class ;
+    rdfs:label "Felony Involvement"@en ;
+    rdfs:comment "A legal status indicating involvement in a felony offense. Induced from a Placed as subClassOf LegalStatus (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A legal status indicating involvement in a felony offense."@en ;
+    rdfs:subClassOf ins:LegalStatus .
+
+### Class: ins:FinancialInstrument
+ins:FinancialInstrument
+    a owl:Class ;
+    rdfs:label "Financial Instrument"@en ;
+    rdfs:comment "A structured financial product or mechanism within an insurance policy that involves monetary value, payments, or benefits. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not…"@en ;
+    skos:definition "A structured financial product or mechanism within an insurance policy that involves monetary value, payments, or benefits."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:FinancialObligation
+ins:FinancialObligation
+    a owl:Class ;
+    rdfs:label "Financial Obligations"@en ;
+    rdfs:comment "A monetary responsibility arising from a life insurance contract. Induced from a Placed as subClassOf ContractualAgreement (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A monetary responsibility arising from a life insurance contract."@en ;
+    rdfs:subClassOf ins:ContractualAgreement .
+
+### Class: ins:Fraud
+ins:Fraud
+    a owl:Class ;
+    rdfs:label "Fraud Warning"@en ;
+    rdfs:comment "A deceptive act committed to gain unauthorized benefits under an insurance policy. Induced from a Placed as subClassOf Action (Stage 5, confidence: high); cluster of 5 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A deceptive act committed to gain unauthorized benefits under an insurance policy."@en ;
+    rdfs:subClassOf ins:Action ;
+    skos:altLabel "insurance fraud"@en ;
+    skos:altLabel "claim fraud"@en .
+
+### Class: ins:Gender
+ins:Gender
+    a owl:Class ;
+    rdfs:label "Gender"@en ;
+    rdfs:comment "A biological or social attribute indicating male, female, or other gender identity. Induced from a Placed as subClassOf Person (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A biological or social attribute indicating male, female, or other gender identity."@en ;
+    rdfs:subClassOf ins:Person .
+
+### Class: ins:GracePeriod
+ins:GracePeriod
+    a owl:Class ;
+    rdfs:label "31-Day Window Post-Missed Payment"@en ;
+    rdfs:comment "A period after the due date during which a policy remains in force before lapsing. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surface variant(…"@en ;
+    skos:definition "A period after the due date during which a policy remains in force before lapsing."@en ;
+    rdfs:subClassOf ins:Policy .
+
+### Class: ins:GracePeriodForPremiumPayment
+ins:GracePeriodForPremiumPayment
+    a owl:Class ;
+    rdfs:label "Grace Period For Premium Payment"@en ;
+    rdfs:comment "A period after the due date during which a premium can be paid without the policy lapsing. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERIOD; cluster of 1 surface v…"@en ;
+    skos:definition "A period after the due date during which a premium can be paid without the policy lapsing."@en ;
+    rdfs:subClassOf ins:GracePeriod .
+
+### Class: ins:GuaranteedPremiumDuration
+ins:GuaranteedPremiumDuration
+    a owl:Class ;
+    rdfs:label "Duration Of Guaranteed Premium"@en ;
+    rdfs:comment "The period during which premium payments are guaranteed to remain level. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf TERM; cluster of 2 surface variant(s) merged in…"@en ;
+    skos:definition "The period during which premium payments are guaranteed to remain level."@en ;
+    rdfs:subClassOf ins:Period ;
+    skos:altLabel "coverage"@en .
+
+### Class: ins:GuaranteedTermPeriod
+ins:GuaranteedTermPeriod
+    a owl:Class ;
+    rdfs:label "Guaranteed Term Period"@en ;
+    rdfs:comment "The fixed period during which policy terms are guaranteed and cannot be altered. Induced from a Placed as subClassOf ContractualTerm (Stage 5, confidence: high); cluster of 4 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The fixed period during which policy terms are guaranteed and cannot be altered."@en ;
+    rdfs:subClassOf ins:ContractualTerm ;
+    skos:altLabel "Policy Duration"@en ;
+    skos:altLabel "term expiration"@en .
+
+### Class: ins:IncontestabilityPeriod
+ins:IncontestabilityPeriod
+    a owl:Class ;
+    rdfs:label "Incontestability Period"@en ;
+    rdfs:comment "A time period during which the insurer cannot contest the validity of a life insurance policy. Induced from a Placed as subClassOf ContestabilityPeriod (Stage 5, confidence: high); cluster of 3 surface variant(s) merged…"@en ;
+    skos:definition "A time period during which the insurer cannot contest the validity of a life insurance policy."@en ;
+    rdfs:subClassOf ins:ContestabilityPeriod ;
+    skos:altLabel "Incontestability"@en ;
+    skos:altLabel "incontestability"@en .
+
+### Class: ins:InitialMonthlyPremiumAmount
+ins:InitialMonthlyPremiumAmount
+    a owl:Class ;
+    rdfs:label "Initial Monthly Premium Amount"@en ;
+    rdfs:comment "The amount of the first monthly premium payment in a life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf AMOUNT; cluster of 1 surface variant(s) merge…"@en ;
+    skos:definition "The amount of the first monthly premium payment in a life insurance policy."@en ;
+    rdfs:subClassOf ins:Amount .
+
+### Class: ins:InsuredPerson
+ins:InsuredPerson
+    a owl:Class ;
+    rdfs:label "Policy Holder"@en ;
+    rdfs:comment "The individual whose life is covered by the life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster of 12 surface variant(s) merged in Sta…"@en ;
+    skos:definition "The individual whose life is covered by the life insurance policy."@en ;
+    rdfs:subClassOf ins:Person ;
+    skos:altLabel "insurance company"@en ;
+    skos:altLabel "Insurer"@en .
+
+### Class: ins:Insurer
+ins:Insurer
+    a owl:Class ;
+    rdfs:label "Sentinel Life Assurance Company"@en ;
+    rdfs:comment "An entity that provides life insurance coverage and assumes risk. Induced from a Placed as subClassOf CorporateEntity (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "An entity that provides life insurance coverage and assumes risk."@en ;
+    rdfs:subClassOf ins:CorporateEntity .
+
+### Class: ins:InsurerAuthorizedToApproveChanges
+ins:InsurerAuthorizedToApproveChanges
+    a owl:Class ;
+    rdfs:label "Insurer Authorized To Approve Changes"@en ;
+    rdfs:comment "An insurer entity authorized to approve modifications to a life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf ORGANIZATION; cluster of 1 surface vari…"@en ;
+    skos:definition "An insurer entity authorized to approve modifications to a life insurance policy."@en ;
+    rdfs:subClassOf ins:PolicyReviewAndModificationParty .
+
+### Class: ins:InsurerHeadquartersLocation
+ins:InsurerHeadquartersLocation
+    a owl:Class ;
+    rdfs:label "Principal Office Location Of Insurer"@en ;
+    rdfs:comment "The principal office location of the insurance company issuing the policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf LOCATION; cluster of 2 surface variant(s) merg…"@en ;
+    skos:definition "The principal office location of the insurance company issuing the policy."@en ;
+    rdfs:subClassOf ins:Location ;
+    skos:altLabel "headquarters location of insurer"@en .
+
+### Class: ins:InterestAccrual
+ins:InterestAccrual
+    a owl:Class ;
+    rdfs:label "Interest Calculation"@en ;
+    rdfs:comment "A financial charge applied to unpaid or delayed insurance premiums. Induced from a Placed as subClassOf FinancialObligation (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A financial charge applied to unpaid or delayed insurance premiums."@en ;
+    rdfs:subClassOf ins:FinancialObligation ;
+    skos:altLabel "Interest Payment"@en ;
+    skos:altLabel "interest on delinquent payments"@en .
+
+### Class: ins:IssuingInsurer
+ins:IssuingInsurer
+    a owl:Class ;
+    rdfs:label "Issuing Insurer Of The Policy"@en ;
+    rdfs:comment "The insurer legally responsible for issuing and administering the life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf ORGANIZATION; cluster of 6 surfa…"@en ;
+    skos:definition "The insurer legally responsible for issuing and administering the life insurance policy."@en ;
+    rdfs:subClassOf ins:Insurer ;
+    skos:altLabel "issuing insurer"@en ;
+    skos:altLabel "contracting party"@en .
+
+### Class: ins:LegalDeterrent
+ins:LegalDeterrent
+    a owl:Class ;
+    rdfs:label "Legal Deterrent Against Deceptive Claims"@en ;
+    rdfs:comment "A provision intended to discourage fraudulent or deceptive insurance claims. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf LEGAL_NOTICE; cluster of 1 surface variant(s…"@en ;
+    skos:definition "A provision intended to discourage fraudulent or deceptive insurance claims."@en ;
+    rdfs:subClassOf ins:LegalNotice .
+
+### Class: ins:LegalNotice
+ins:LegalNotice
+    a owl:Class ;
+    rdfs:label "Legal Notice"@en ;
+    rdfs:comment "A formal notification required by law or contract in a life insurance policy. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A formal notification required by law or contract in a life insurance policy."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "LEGAL_NOTICE"@en .
+
+### Class: ins:LegalStatus
+ins:LegalStatus
+    a owl:Class ;
+    rdfs:label "Legal Status"@en ;
+    rdfs:comment "A formal classification of the validity, enforceability, or legal standing of a policy or claim within the insurance contract. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); n…"@en ;
+    skos:definition "A formal classification of the validity, enforceability, or legal standing of a policy or claim within the insurance contract."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:LiabilityLimitation
+ins:LiabilityLimitation
+    a owl:Class ;
+    rdfs:label "Liability Limitation"@en ;
+    rdfs:comment "A clause limiting the insurer's financial responsibility under a life insurance policy. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stag…"@en ;
+    skos:definition "A clause limiting the insurer's financial responsibility under a life insurance policy."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "liability reduction"@en .
+
+### Class: ins:LifeInsuranceCoverage
+ins:LifeInsuranceCoverage
+    a owl:Class ;
+    rdfs:label "Level Term Life Insurance"@en ;
+    rdfs:comment "A type of insurance providing financial benefits upon the insured's death within a specified term. Induced from a Placed as subClassOf DeathBenefit (Stage 5, confidence: high); cluster of 9 surface variant(s) merged in S…"@en ;
+    skos:definition "A type of insurance providing financial benefits upon the insured's death within a specified term."@en ;
+    rdfs:subClassOf ins:DeathBenefit ;
+    skos:altLabel "Insured Survival Status"@en ;
+    skos:altLabel "Life Insurance Coverage"@en .
+
+### Class: ins:LifeInsuranceRider
+ins:LifeInsuranceRider
+    a owl:Class ;
+    rdfs:label "Life Insurance Riders"@en ;
+    rdfs:comment "An optional provision added to a life insurance policy to extend or modify coverage. Induced from a Placed as subClassOf owl:Thing (Stage 5, confidence: high); cluster of 8 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "An optional provision added to a life insurance policy to extend or modify coverage."@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:altLabel "Riders and Endorsements"@en ;
+    skos:altLabel "riders"@en .
+
+### Class: ins:LifeInsuredUnderActiveCoverage
+ins:LifeInsuredUnderActiveCoverage
+    a owl:Class ;
+    rdfs:label "Life Insured Under Active Coverage"@en ;
+    rdfs:comment "An individual whose life insurance policy is currently active and providing coverage. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster of 1 surface varian…"@en ;
+    skos:definition "An individual whose life insurance policy is currently active and providing coverage."@en ;
+    rdfs:subClassOf ins:InsuredPerson .
+
+### Class: ins:LoanAvailability
+ins:LoanAvailability
+    a owl:Class ;
+    rdfs:label "Automatic Premium Loan"@en ;
+    rdfs:comment "The availability of a loan option within a life insurance policy, including automatic premium loan features. Induced from a Placed as subClassOf FinancialObligation (Stage 5, confidence: high); cluster of 3 surface varia…"@en ;
+    skos:definition "The availability of a loan option within a life insurance policy, including automatic premium loan features."@en ;
+    rdfs:subClassOf ins:FinancialObligation ;
+    skos:altLabel "Policy Loan"@en ;
+    skos:altLabel "Loan Value Availability"@en .
+
+### Class: ins:LumpSumPayout
+ins:LumpSumPayout
+    a owl:Class ;
+    rdfs:label "Lump Sum Payout"@en ;
+    rdfs:comment "A single, immediate payment made upon the occurrence of a specified event. Induced from a Placed as subClassOf BenefitClaim (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A single, immediate payment made upon the occurrence of a specified event."@en ;
+    rdfs:subClassOf ins:BenefitClaim .
+
+### Class: ins:MaterialFact
+ins:MaterialFact
+    a owl:Class ;
+    rdfs:label "Material Facts"@en ;
+    rdfs:comment "A fact that is significant enough to influence an insurance decision. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A fact that is significant enough to influence an insurance decision."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:MaterialMisrepresentation
+ins:MaterialMisrepresentation
+    a owl:Class ;
+    rdfs:label "Material Misrepresentation"@en ;
+    rdfs:comment "A false statement or omission of material facts made intentionally in an insurance application. Induced from a Placed as subClassOf Fraud (Stage 5, confidence: high); cluster of 8 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A false statement or omission of material facts made intentionally in an insurance application."@en ;
+    rdfs:subClassOf ins:Fraud ;
+    skos:altLabel "materially false information"@en .
+
+### Class: ins:MedicalVerification
+ins:MedicalVerification
+    a owl:Class ;
+    rdfs:label "Medical Documentation"@en ;
+    rdfs:comment "Documentation used to verify an individual's medical condition for insurance purposes. Induced from a Placed as subClassOf DocumentArtifact (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "Documentation used to verify an individual's medical condition for insurance purposes."@en ;
+    rdfs:subClassOf ins:DocumentArtifact ;
+    skos:altLabel "medical verification"@en .
+
+### Class: ins:MonthlyBankDraft
+ins:MonthlyBankDraft
+    a owl:Class ;
+    rdfs:label "Monthly Bank Draft"@en ;
+    rdfs:comment "A recurring payment method where premiums are deducted monthly from a bank account. Induced from a Placed as subClassOf PremiumPaymentMode (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A recurring payment method where premiums are deducted monthly from a bank account."@en ;
+    rdfs:subClassOf ins:PremiumPaymentMode .
+
+### Class: ins:NonPaymentException
+ins:NonPaymentException
+    a owl:Class ;
+    rdfs:label "Nonpayment Exception"@en ;
+    rdfs:comment "A condition allowing coverage to continue without further premium payments. Induced from a Placed as subClassOf BenefitEligibilityCondition (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A condition allowing coverage to continue without further premium payments."@en ;
+    rdfs:subClassOf ins:BenefitEligibilityCondition ;
+    skos:altLabel "No Further Payments"@en .
+
+### Class: ins:PartialBenefitAccess
+ins:PartialBenefitAccess
+    a owl:Class ;
+    rdfs:label "Additional Provision Allowing Partial Benefit Access"@en ;
+    rdfs:comment "A contract provision enabling early or partial payout upon diagnosis of a specified condition. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf RIDER; cluster of 2 surfac…"@en ;
+    skos:definition "A contract provision enabling early or partial payout upon diagnosis of a specified condition."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "provides early payout on diagnosis"@en .
+
+### Class: ins:Party
+ins:Party
+    a owl:Class ;
+    rdfs:label "Party"@en ;
+    rdfs:comment "An individual, entity, or organization that has a legal or contractual role in an insurance agreement. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not directly attested in…"@en ;
+    skos:definition "An individual, entity, or organization that has a legal or contractual role in an insurance agreement."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:PaymentCap
+ins:PaymentCap
+    a owl:Class ;
+    rdfs:label "Payment Cap"@en ;
+    rdfs:comment "A maximum limit on the amount payable under a life insurance policy. Induced from a Placed as subClassOf BenefitLimit (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A maximum limit on the amount payable under a life insurance policy."@en ;
+    rdfs:subClassOf ins:BenefitLimit .
+
+### Class: ins:PaymentSchedule
+ins:PaymentSchedule
+    a owl:Class ;
+    rdfs:label "Payment Frequency"@en ;
+    rdfs:comment "A recurring pattern specifying when and how often premium payments are made. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A recurring pattern specifying when and how often premium payments are made."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "Premium Payment Delay"@en ;
+    skos:altLabel "change in payment frequency"@en .
+
+### Class: ins:PayoutDesignation
+ins:PayoutDesignation
+    a owl:Class ;
+    rdfs:label "Payout Designation"@en ;
+    rdfs:comment "A designation specifying how a life insurance payout is to be distributed. Induced from a Placed as subClassOf Designation (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A designation specifying how a life insurance payout is to be distributed."@en ;
+    rdfs:subClassOf ins:Designation .
+
+### Class: ins:Period
+ins:Period
+    a owl:Class ;
+    rdfs:label "Period"@en ;
+    rdfs:comment "A duration or interval of time specified in a life insurance contract. Induced from a Placed as subClassOf TemporalConcept (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A duration or interval of time specified in a life insurance contract."@en ;
+    rdfs:subClassOf ins:TemporalConcept ;
+    skos:altLabel "DATE"@en .
+
+### Class: ins:Person
+ins:Person
+    a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "An individual human being who is a party to a life insurance contract. Induced from a Placed as subClassOf Party (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "An individual human being who is a party to a life insurance contract."@en ;
+    rdfs:subClassOf ins:Party .
+
+### Class: ins:Policy
+ins:Policy
+    a owl:Class ;
+    rdfs:label "Policy"@en ;
+    rdfs:comment "A legal agreement between an insurer and a policyholder outlining coverage terms and conditions. Induced from a Placed as subClassOf ContractualAgreement (Stage 5, confidence: high); cluster of 6 surface variant(s) merge…"@en ;
+    skos:definition "A legal agreement between an insurer and a policyholder outlining coverage terms and conditions."@en ;
+    rdfs:subClassOf ins:ContractualAgreement ;
+    skos:altLabel "CONCEPT"@en ;
+    skos:altLabel "ORGANIZATION"@en ;
+    skos:altLabel "DOCUMENT"@en .
+
+### Class: ins:PolicyAdjustment
+ins:PolicyAdjustment
+    a owl:Class ;
+    rdfs:label "Policy Modification"@en ;
+    rdfs:comment "A change made to a life insurance policy's terms or values. Induced from a Placed as subClassOf Policy (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A change made to a life insurance policy's terms or values."@en ;
+    rdfs:subClassOf ins:Policy ;
+    skos:altLabel "insurance adjustment"@en ;
+    skos:altLabel "Insurance Amount Adjustment"@en .
+
+### Class: ins:PolicyAttribute
+ins:PolicyAttribute
+    a owl:Class ;
+    rdfs:label "Policy Attribute"@en ;
+    rdfs:comment "An intrinsic characteristic or identifier that defines or describes a life insurance policy’s identity, form, or operational state. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase…"@en ;
+    skos:definition "An intrinsic characteristic or identifier that defines or describes a life insurance policy’s identity, form, or operational state."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:PolicyContinuity
+ins:PolicyContinuity
+    a owl:Class ;
+    rdfs:label "Policy Continuity"@en ;
+    rdfs:comment "The condition of a life insurance policy remaining active and in force without lapse. Induced from a Placed as subClassOf PolicyValidity (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The condition of a life insurance policy remaining active and in force without lapse."@en ;
+    rdfs:subClassOf ins:PolicyValidity .
+
+### Class: ins:PolicyEffectiveDate
+ins:PolicyEffectiveDate
+    a owl:Class ;
+    rdfs:label "Effective Date Of Policy Issuance"@en ;
+    rdfs:comment "The date on which the initial policy coverage becomes active. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf DATE; cluster of 3 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The date on which the initial policy coverage becomes active."@en ;
+    rdfs:subClassOf ins:Period ;
+    skos:altLabel "start date of initial policy coverage"@en ;
+    skos:altLabel "duration for examining policy"@en .
+
+### Class: ins:PolicyEndorsement
+ins:PolicyEndorsement
+    a owl:Class ;
+    rdfs:label "Policy Endorsement"@en ;
+    rdfs:comment "A formal amendment to a life insurance policy that modifies its terms. Induced from a Placed as subClassOf PolicyAdjustment (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A formal amendment to a life insurance policy that modifies its terms."@en ;
+    rdfs:subClassOf ins:PolicyAdjustment .
+
+### Class: ins:PolicyFormIdentifier
+ins:PolicyFormIdentifier
+    a owl:Class ;
+    rdfs:label "Unique Identifier For Policy Form"@en ;
+    rdfs:comment "A unique identifier assigned to a specific policy form within an insurance contract. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf DOCUMENT; cluster of 1 surface varia…"@en ;
+    skos:definition "A unique identifier assigned to a specific policy form within an insurance contract."@en ;
+    rdfs:subClassOf ins:ContractIdentifier .
+
+### Class: ins:PolicyIssuingOffice
+ins:PolicyIssuingOffice
+    a owl:Class ;
+    rdfs:label "Hartford, Connecticut"@en ;
+    rdfs:comment "An entity responsible for issuing a life insurance policy, located in Hartford, Connecticut. Induced from a Placed as subClassOf CorporateEntity (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stag…"@en ;
+    skos:definition "An entity responsible for issuing a life insurance policy, located in Hartford, Connecticut."@en ;
+    rdfs:subClassOf ins:CorporateEntity .
+
+### Class: ins:PolicyLapse
+ins:PolicyLapse
+    a owl:Class ;
+    rdfs:label "Policy Lapse"@en ;
+    rdfs:comment "A condition where a life insurance policy terminates due to non-payment of premiums. Induced from a Placed as subClassOf CoverageTermination (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A condition where a life insurance policy terminates due to non-payment of premiums."@en ;
+    rdfs:subClassOf ins:CoverageTermination ;
+    skos:altLabel "lapsed policy"@en ;
+    skos:altLabel "lapse condition"@en .
+
+### Class: ins:PolicyLoanDeduction
+ins:PolicyLoanDeduction
+    a owl:Class ;
+    rdfs:label "Policy Loan Deduction"@en ;
+    rdfs:comment "A deduction from a life insurance policy due to an outstanding policy loan. Induced from a Placed as subClassOf FinancialObligation (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A deduction from a life insurance policy due to an outstanding policy loan."@en ;
+    rdfs:subClassOf ins:FinancialObligation ;
+    skos:altLabel "policy lien deduction"@en .
+
+### Class: ins:PolicyNumber
+ins:PolicyNumber
+    a owl:Class ;
+    rdfs:label "Policy Number"@en ;
+    rdfs:comment "A unique identifier assigned to a life insurance policy. Induced from a Placed as subClassOf PolicyAttribute (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A unique identifier assigned to a life insurance policy."@en ;
+    rdfs:subClassOf ins:PolicyAttribute ;
+    skos:altLabel "Policy Form Number"@en .
+
+### Class: ins:PolicyOwnerRights
+ins:PolicyOwnerRights
+    a owl:Class ;
+    rdfs:label "Policy Owner Rights"@en ;
+    rdfs:comment "The rights granted to the individual who holds ownership of a life insurance policy. Induced from a Placed as subClassOf Right (Stage 5, confidence: high); cluster of 23 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The rights granted to the individual who holds ownership of a life insurance policy."@en ;
+    rdfs:subClassOf ins:Right ;
+    skos:altLabel "Policy Ownership"@en .
+
+### Class: ins:PolicyRestoration
+ins:PolicyRestoration
+    a owl:Class ;
+    rdfs:label "Process Restoring Lapsed Policy"@en ;
+    rdfs:comment "The process of reinstating a life insurance policy after it has lapsed. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 2 surface variant(s) merged i…"@en ;
+    skos:definition "The process of reinstating a life insurance policy after it has lapsed."@en ;
+    rdfs:subClassOf ins:Reinstatement ;
+    skos:altLabel "restoration of lapsed policy status"@en .
+
+### Class: ins:PolicyReviewAndModificationParty
+ins:PolicyReviewAndModificationParty
+    a owl:Class ;
+    rdfs:label "Party Entitled To Review Policy"@en ;
+    rdfs:comment "A party entitled to review and modify the terms of a life insurance policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERSON; cluster of 2 surface variant(s) merge…"@en ;
+    skos:definition "A party entitled to review and modify the terms of a life insurance policy."@en ;
+    rdfs:subClassOf ins:Party ;
+    skos:altLabel "party entitled to modify policy"@en .
+
+### Class: ins:PolicyValidity
+ins:PolicyValidity
+    a owl:Class ;
+    rdfs:label "Policy Terms"@en ;
+    rdfs:comment "The state indicating whether a life insurance policy is active and enforceable. Induced from a Placed as subClassOf PolicyAttribute (Stage 5, confidence: high); cluster of 49 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The state indicating whether a life insurance policy is active and enforceable."@en ;
+    rdfs:subClassOf ins:PolicyAttribute ;
+    skos:altLabel "policy validity"@en ;
+    skos:altLabel "Policy Assignment"@en .
+
+### Class: ins:PolicyWaiver
+ins:PolicyWaiver
+    a owl:Class ;
+    rdfs:label "Policy Waivers"@en ;
+    rdfs:comment "A provision that exempts the policyholder from paying premiums under specified conditions. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in S…"@en ;
+    skos:definition "A provision that exempts the policyholder from paying premiums under specified conditions."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:Premium
+ins:Premium
+    a owl:Class ;
+    rdfs:label "Financial Obligation For Ongoing Coverage"@en ;
+    rdfs:comment "A periodic payment required to maintain ongoing life insurance coverage. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 3 surface variant(s) merged…"@en ;
+    skos:definition "A periodic payment required to maintain ongoing life insurance coverage."@en ;
+    rdfs:subClassOf ins:FinancialObligation ;
+    skos:altLabel "periodic payment to maintain coverage"@en ;
+    skos:altLabel "amount required for continued coverage"@en .
+
+### Class: ins:PremiumDetailsDocument
+ins:PremiumDetailsDocument
+    a owl:Class ;
+    rdfs:label "Document Specifying Premium Details"@en ;
+    rdfs:comment "A document that specifies the details of insurance premiums. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf DOCUMENT; cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A document that specifies the details of insurance premiums."@en ;
+    rdfs:subClassOf ins:DocumentArtifact .
+
+### Class: ins:PremiumEquivalence
+ins:PremiumEquivalence
+    a owl:Class ;
+    rdfs:label "Premium Equivalence"@en ;
+    rdfs:comment "A condition where the premium amount remains unchanged despite policy changes. Induced from a Placed as subClassOf PremiumStability (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A condition where the premium amount remains unchanged despite policy changes."@en ;
+    rdfs:subClassOf ins:PremiumStability .
+
+### Class: ins:PremiumPayment
+ins:PremiumPayment
+    a owl:Class ;
+    rdfs:label "Premium Payment"@en ;
+    rdfs:comment "A condition or guarantee related to the payment of insurance premiums over a specified period. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 19 surface variant(s) merged…"@en ;
+    skos:definition "A condition or guarantee related to the payment of insurance premiums over a specified period."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "Guaranteed Premiums"@en ;
+    skos:altLabel "premium guarantee"@en .
+
+### Class: ins:PremiumPaymentMode
+ins:PremiumPaymentMode
+    a owl:Class ;
+    rdfs:label "Premium Payment Modes"@en ;
+    rdfs:comment "A specified method or schedule for paying insurance premiums. Induced from a Placed as subClassOf PaymentSchedule (Stage 5, confidence: high); cluster of 6 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A specified method or schedule for paying insurance premiums."@en ;
+    rdfs:subClassOf ins:PaymentSchedule ;
+    skos:altLabel "premium payment mode"@en ;
+    skos:altLabel "payment mode"@en .
+
+### Class: ins:PremiumStability
+ins:PremiumStability
+    a owl:Class ;
+    rdfs:label "Premium Stability"@en ;
+    rdfs:comment "The condition of maintaining consistent premium payments throughout the life of a policy. Induced from a Placed as subClassOf PolicyContinuity (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage…"@en ;
+    skos:definition "The condition of maintaining consistent premium payments throughout the life of a policy."@en ;
+    rdfs:subClassOf ins:PolicyContinuity ;
+    skos:altLabel "policy cost stability"@en .
+
+### Class: ins:PremiumWaiverMechanism
+ins:PremiumWaiverMechanism
+    a owl:Class ;
+    rdfs:label "Mechanism Covering Missed Premiums Via Policy Loans"@en ;
+    rdfs:comment "A mechanism that covers missed premiums using policy loans. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A mechanism that covers missed premiums using policy loans."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:PrincipalOfficeAddress
+ins:PrincipalOfficeAddress
+    a owl:Class ;
+    rdfs:label "Principal Office Address"@en ;
+    rdfs:comment "The primary physical address of an organization's main office. Induced from a Placed as subClassOf Location (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The primary physical address of an organization's main office."@en ;
+    rdfs:subClassOf ins:Location .
+
+### Class: ins:ProceduralEvent
+ins:ProceduralEvent
+    a owl:Class ;
+    rdfs:label "Procedural Event"@en ;
+    rdfs:comment "A sequence of actions or steps taken during the administration, processing, or modification of an insurance contract. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not direct…"@en ;
+    skos:definition "A sequence of actions or steps taken during the administration, processing, or modification of an insurance contract."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:ProofOfClaim
+ins:ProofOfClaim
+    a owl:Class ;
+    rdfs:label "Proof Required For Benefit Approval"@en ;
+    rdfs:comment "A document or evidence required to verify eligibility for benefit approval. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf DOCUMENT; cluster of 1 surface variant(s) mer…"@en ;
+    skos:definition "A document or evidence required to verify eligibility for benefit approval."@en ;
+    rdfs:subClassOf ins:DocumentArtifact .
+
+### Class: ins:ProofOfDeath
+ins:ProofOfDeath
+    a owl:Class ;
+    rdfs:label "Proof of Death"@en ;
+    rdfs:comment "A document verifying the death of an individual, typically a death certificate. Induced from a Placed as subClassOf DocumentArtifact (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A document verifying the death of an individual, typically a death certificate."@en ;
+    rdfs:subClassOf ins:DocumentArtifact ;
+    skos:altLabel "death certificate"@en .
+
+### Class: ins:ReasonableTimeframe
+ins:ReasonableTimeframe
+    a owl:Class ;
+    rdfs:label "Reasonable Timeframe"@en ;
+    rdfs:comment "A period of time considered fair and appropriate for completing a specified action. Induced from a Placed as subClassOf TemporalConcept (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A period of time considered fair and appropriate for completing a specified action."@en ;
+    rdfs:subClassOf ins:TemporalConcept .
+
+### Class: ins:RefundEligibility
+ins:RefundEligibility
+    a owl:Class ;
+    rdfs:label "Policy Refund"@en ;
+    rdfs:comment "The condition under which a policyholder is entitled to receive a refund of premiums paid. Induced from a Placed as subClassOf BenefitEligibilityCondition (Stage 5, confidence: high); cluster of 4 surface variant(s) merg…"@en ;
+    skos:definition "The condition under which a policyholder is entitled to receive a refund of premiums paid."@en ;
+    rdfs:subClassOf ins:BenefitEligibilityCondition ;
+    skos:altLabel "Full Refund"@en ;
+    skos:altLabel "premium refund"@en .
+
+### Class: ins:RefundablePortionAfterCancellation
+ins:RefundablePortionAfterCancellation
+    a owl:Class ;
+    rdfs:label "Refundable Portion After Cancellation"@en ;
+    rdfs:comment "The portion of a life insurance policy that is refunded to the policyholder upon cancellation. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surf…"@en ;
+    skos:definition "The portion of a life insurance policy that is refunded to the policyholder upon cancellation."@en ;
+    rdfs:subClassOf ins:Policy .
+
+### Class: ins:RegulatoryVariation
+ins:RegulatoryVariation
+    a owl:Class ;
+    rdfs:label "Regulatory Variations"@en ;
+    rdfs:comment "A variation in insurance requirements imposed by regulatory authorities. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A variation in insurance requirements imposed by regulatory authorities."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:Reinstatement
+ins:Reinstatement
+    a owl:Class ;
+    rdfs:label "Policy Reinstatement"@en ;
+    rdfs:comment "A provision allowing restoration of a lapsed life insurance policy under specified conditions. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 10 surface variant(s) merged…"@en ;
+    skos:definition "A provision allowing restoration of a lapsed life insurance policy under specified conditions."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "reinstatement period"@en .
+
+### Class: ins:ReinstatementPeriod
+ins:ReinstatementPeriod
+    a owl:Class ;
+    rdfs:label "Time Limit For Reinstating Lapsed Policy"@en ;
+    rdfs:comment "The time limit within which a lapsed policy may be reinstated. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf PERIOD; cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The time limit within which a lapsed policy may be reinstated."@en ;
+    rdfs:subClassOf ins:Period .
+
+### Class: ins:RenewalOption
+ins:RenewalOption
+    a owl:Class ;
+    rdfs:label "Policy Renewal Options"@en ;
+    rdfs:comment "A provision specifying the conditions under which a life insurance policy may be renewed. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 4 surface variant(s) merged in St…"@en ;
+    skos:definition "A provision specifying the conditions under which a life insurance policy may be renewed."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "renewal option"@en ;
+    skos:altLabel "renewal requirement"@en .
+
+### Class: ins:RequestProcessing
+ins:RequestProcessing
+    a owl:Class ;
+    rdfs:label "Request Processing"@en ;
+    rdfs:comment "The process of handling and managing requests within a life insurance contract. Induced from a Placed as subClassOf ProceduralEvent (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "The process of handling and managing requests within a life insurance contract."@en ;
+    rdfs:subClassOf ins:ProceduralEvent .
+
+### Class: ins:ReviewPeriod
+ins:ReviewPeriod
+    a owl:Class ;
+    rdfs:label "20-Day Review Period For Owner"@en ;
+    rdfs:comment "A time interval during which the policy owner may review and potentially cancel the policy. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEPT; cluster of 1 surface…"@en ;
+    skos:definition "A time interval during which the policy owner may review and potentially cancel the policy."@en ;
+    rdfs:subClassOf ins:Period .
+
+### Class: ins:RevocationOption
+ins:RevocationOption
+    a owl:Class ;
+    rdfs:label "Revocation Option"@en ;
+    rdfs:comment "A provision allowing the policyholder to cancel or withdraw a life insurance policy. Induced from a Placed as subClassOf CancellationAbility (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A provision allowing the policyholder to cancel or withdraw a life insurance policy."@en ;
+    rdfs:subClassOf ins:CancellationAbility ;
+    skos:altLabel "revocation process"@en .
+
+### Class: ins:Rider
+ins:Rider
+    a owl:Class ;
+    rdfs:label "Rider"@en ;
+    rdfs:comment "An optional provision added to a life insurance policy that extends or modifies coverage. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in St…"@en ;
+    skos:definition "An optional provision added to a life insurance policy that extends or modifies coverage."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:Right
+ins:Right
+    a owl:Class ;
+    rdfs:label "Right"@en ;
+    rdfs:comment "A legally recognized entitlement or privilege granted within a life insurance contract. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stag…"@en ;
+    skos:definition "A legally recognized entitlement or privilege granted within a life insurance contract."@en ;
+    rdfs:subClassOf ins:ContractualProvision .
+
+### Class: ins:RightToExaminePolicy
+ins:RightToExaminePolicy
+    a owl:Class ;
+    rdfs:label "Right to Examine Policy"@en ;
+    rdfs:comment "The right of a policyholder to review a life insurance policy and request information within a specified period. Induced from a Placed as subClassOf Right (Stage 5, confidence: high); cluster of 3 surface variant(s) merg…"@en ;
+    skos:definition "The right of a policyholder to review a life insurance policy and request information within a specified period."@en ;
+    rdfs:subClassOf ins:Right ;
+    skos:altLabel "Right to Examine"@en ;
+    skos:altLabel "Right to Request Information"@en .
+
+### Class: ins:RiskClassification
+ins:RiskClassification
+    a owl:Class ;
+    rdfs:label "Risk Classification"@en ;
+    rdfs:comment "A categorization of an individual's insurability based on health and lifestyle factors. Induced from a Placed as subClassOf UnderwritingDetails (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage…"@en ;
+    skos:definition "A categorization of an individual's insurability based on health and lifestyle factors."@en ;
+    rdfs:subClassOf ins:UnderwritingDetails .
+
+### Class: ins:RiskCondition
+ins:RiskCondition
+    a owl:Class ;
+    rdfs:label "Risk Condition"@en ;
+    rdfs:comment "A factor, circumstance, or state that influences the assessment, acceptance, or management of risk in an insurance context. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); not…"@en ;
+    skos:definition "A factor, circumstance, or state that influences the assessment, acceptance, or management of risk in an insurance context."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:Role
+ins:Role
+    a owl:Class ;
+    rdfs:label "Role"@en ;
+    rdfs:comment "A function or position held by an individual within a life insurance contract. Induced from a Placed as subClassOf Party (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A function or position held by an individual within a life insurance contract."@en ;
+    rdfs:subClassOf ins:Party .
+
+### Class: ins:SemiAnnualBilling
+ins:SemiAnnualBilling
+    a owl:Class ;
+    rdfs:label "Semi-Annual Billing"@en ;
+    rdfs:comment "A billing frequency occurring twice per year, every six months. Induced from a Placed as subClassOf PremiumPaymentMode (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A billing frequency occurring twice per year, every six months."@en ;
+    rdfs:subClassOf ins:PremiumPaymentMode .
+
+### Class: ins:SettlementOption
+ins:SettlementOption
+    a owl:Class ;
+    rdfs:label "Settlement Options"@en ;
+    rdfs:comment "A specified method for receiving life insurance benefits upon the insured's death. Induced from a Placed as subClassOf BenefitStructure (Stage 5, confidence: high); cluster of 3 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A specified method for receiving life insurance benefits upon the insured's death."@en ;
+    rdfs:subClassOf ins:BenefitStructure ;
+    skos:altLabel "settlement option approval"@en .
+
+### Class: ins:SpousalDesignation
+ins:SpousalDesignation
+    a owl:Class ;
+    rdfs:label "Spousal Designation"@en ;
+    rdfs:comment "A designation of a spouse as a beneficiary or recipient in a life insurance policy. Induced from a Placed as subClassOf Beneficiary (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A designation of a spouse as a beneficiary or recipient in a life insurance policy."@en ;
+    rdfs:subClassOf ins:Beneficiary .
+
+### Class: ins:StandardNonSmoker
+ins:StandardNonSmoker
+    a owl:Class ;
+    rdfs:label "Standard Non-Smoker"@en ;
+    rdfs:comment "A life insurance policyholder classification for individuals who do not smoke and meet standard health criteria. Induced from a Placed as subClassOf RiskClassification (Stage 5, confidence: high); cluster of 1 surface va…"@en ;
+    skos:definition "A life insurance policyholder classification for individuals who do not smoke and meet standard health criteria."@en ;
+    rdfs:subClassOf ins:RiskClassification .
+
+### Class: ins:SuicideBenefitRestriction
+ins:SuicideBenefitRestriction
+    a owl:Class ;
+    rdfs:label "Restriction On Benefit Payments Due To Suicide"@en ;
+    rdfs:comment "A limitation on benefit payments resulting from suicide within a specified period. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CLAUSE; cluster of 1 surface variant(s…"@en ;
+    skos:definition "A limitation on benefit payments resulting from suicide within a specified period."@en ;
+    rdfs:subClassOf ins:ClaimValidityLimitation .
+
+### Class: ins:SuicideExclusion
+ins:SuicideExclusion
+    a owl:Class ;
+    rdfs:label "Suicide Exclusion"@en ;
+    rdfs:comment "A clause in a life insurance policy that denies benefits if the insured dies by suicide within a specified period. Induced from a Hierarchy placement via graph-native parent (entity role co-occurrence): subClassOf CONCEP…"@en ;
+    skos:definition "A clause in a life insurance policy that denies benefits if the insured dies by suicide within a specified period."@en ;
+    rdfs:subClassOf ins:Exclusion .
+
+### Class: ins:TaxConsequence
+ins:TaxConsequence
+    a owl:Class ;
+    rdfs:label "Tax Consequences"@en ;
+    rdfs:comment "A financial impact resulting from tax regulations related to life insurance policies. Induced from a Placed as subClassOf FinancialObligation (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3…"@en ;
+    skos:definition "A financial impact resulting from tax regulations related to life insurance policies."@en ;
+    rdfs:subClassOf ins:FinancialObligation .
+
+### Class: ins:TemporalConcept
+ins:TemporalConcept
+    a owl:Class ;
+    rdfs:label "Temporal Concept"@en ;
+    rdfs:comment "A time-related entity or interval that defines the duration, timing, or scheduling of insurance-related events or conditions. Induced from a Abstract class inferred by the LLM from corpus structure (Stage 5, Phase 1); no…"@en ;
+    skos:definition "A time-related entity or interval that defines the duration, timing, or scheduling of insurance-related events or conditions."@en ;
+    rdfs:subClassOf owl:Thing .
+
+### Class: ins:TerminalIllnessBenefit
+ins:TerminalIllnessBenefit
+    a owl:Class ;
+    rdfs:label "Terminal Illness"@en ;
+    rdfs:comment "A benefit payable upon diagnosis of a terminal illness as defined in the policy. Induced from a Placed as subClassOf BenefitClaim (Stage 5, confidence: high); cluster of 4 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A benefit payable upon diagnosis of a terminal illness as defined in the policy."@en ;
+    rdfs:subClassOf ins:BenefitClaim ;
+    skos:altLabel "Terminal Illness Payout"@en ;
+    skos:altLabel "Terminal Illness Coverage"@en .
+
+### Class: ins:TwoYearClause
+ins:TwoYearClause
+    a owl:Class ;
+    rdfs:label "20-Year Coverage"@en ;
+    rdfs:comment "A time-based limitation in a life insurance policy that restricts claims during the first two years. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 7 surface variant(s) m…"@en ;
+    skos:definition "A time-based limitation in a life insurance policy that restricts claims during the first two years."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "two-year period"@en ;
+    skos:altLabel "Two-Year Rule"@en .
+
+### Class: ins:UnderwritingDetails
+ins:UnderwritingDetails
+    a owl:Class ;
+    rdfs:label "Underwriting Details"@en ;
+    rdfs:comment "Information used to assess risk and determine eligibility for life insurance coverage. Induced from a Placed as subClassOf PolicyAttribute (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "Information used to assess risk and determine eligibility for life insurance coverage."@en ;
+    rdfs:subClassOf ins:PolicyAttribute ;
+    skos:altLabel "Underwriting Criteria"@en .
+
+### Class: ins:UnpaidPremium
+ins:UnpaidPremium
+    a owl:Class ;
+    rdfs:label "Non-Payment Of Premium"@en ;
+    rdfs:comment "A premium that has not been paid by its due date, resulting in a delinquent status. Induced from a Placed as subClassOf PremiumPayment (Stage 5, confidence: high); cluster of 8 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A premium that has not been paid by its due date, resulting in a delinquent status."@en ;
+    rdfs:subClassOf ins:PremiumPayment ;
+    skos:altLabel "Unpaid Premiums"@en ;
+    skos:altLabel "Past Due Premiums"@en .
+
+### Class: ins:VoidFromInception
+ins:VoidFromInception
+    a owl:Class ;
+    rdfs:label "Void From Inception"@en ;
+    rdfs:comment "A policy status indicating the contract is invalid from its beginning. Induced from a Placed as subClassOf PolicyValidity (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A policy status indicating the contract is invalid from its beginning."@en ;
+    rdfs:subClassOf ins:PolicyValidity .
+
+### Class: ins:WarRelatedActivity
+ins:WarRelatedActivity
+    a owl:Class ;
+    rdfs:label "War-Related Activities"@en ;
+    rdfs:comment "An activity involving participation in armed conflict or military operations. Induced from a Placed as subClassOf Action (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "An activity involving participation in armed conflict or military operations."@en ;
+    rdfs:subClassOf ins:Action .
+
+### Class: ins:WrittenAmendment
+ins:WrittenAmendment
+    a owl:Class ;
+    rdfs:label "Written Amendments"@en ;
+    rdfs:comment "A formal, documented change to a life insurance contract. Induced from a Placed as subClassOf PolicyAdjustment (Stage 5, confidence: high); cluster of 1 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A formal, documented change to a life insurance contract."@en ;
+    rdfs:subClassOf ins:PolicyAdjustment .
+
+### Class: ins:WrittenConsent
+ins:WrittenConsent
+    a owl:Class ;
+    rdfs:label "Written Consent"@en ;
+    rdfs:comment "A written authorization granting permission for a specific action or disclosure. Induced from a Placed as subClassOf ContractualAgreement (Stage 5, confidence: high); cluster of 2 surface variant(s) merged in Stage 3."@en ;
+    skos:definition "A written authorization granting permission for a specific action or disclosure."@en ;
+    rdfs:subClassOf ins:ContractualAgreement ;
+    skos:altLabel "written authorization"@en .
+
+### Class: ins:WrittenNoticeRequirement
+ins:WrittenNoticeRequirement
+    a owl:Class ;
+    rdfs:label "Written Notice Requirement"@en ;
+    rdfs:comment "A contractual obligation requiring written communication for specified actions or disclosures. Induced from a Placed as subClassOf ContractualProvision (Stage 5, confidence: high); cluster of 3 surface variant(s) merged…"@en ;
+    skos:definition "A contractual obligation requiring written communication for specified actions or disclosures."@en ;
+    rdfs:subClassOf ins:ContractualProvision ;
+    skos:altLabel "state-specific notices"@en ;
+    skos:altLabel "written notice"@en .
+
+### =========================================================
+###  Properties
+### =========================================================
+
+### Property: ins:additionalDocumentationRequirement
+ins:additionalDocumentationRequirement
+    a owl:ObjectProperty ;
+    rdfs:label "Additional Documentation Requirement"@en ;
+    rdfs:comment "Indicates a requirement for additional documentation as specified in the insurance contract. Assigned domain=Action, range=DocumentAccess; This property specifies a requirement for additional documentation, typically tri…"@en ;
+    skos:definition "Indicates a requirement for additional documentation as specified in the insurance contract."@en ;
+    rdfs:domain ins:Action ;
+    rdfs:range ins:DocumentAccess ;
+    skos:altLabel "Additional Documentation Authority"@en ;
+    skos:altLabel "Timely Provision of Policy Info"@en .
+
+### Property: ins:adjustsInsuranceAmountBasedOnCorrectedAge
+ins:adjustsInsuranceAmountBasedOnCorrectedAge
+    a owl:ObjectProperty ;
+    rdfs:label "Adjusts Insurance Amount Based On Corrected Age"@en ;
+    rdfs:comment "Indicates that the insurance amount is adjusted in response to a correction in the insured's age. Assigned domain=Insurer, range=Amount; This property describes a change in insurance amount due to corrected age, which di…"@en ;
+    skos:definition "Indicates that the insurance amount is adjusted in response to a correction in the insured's age."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:Amount ;
+    skos:altLabel "subject to adjustment based on age correction"@en ;
+    skos:altLabel "adjusts insurance amount based on misstatement"@en .
+
+### Property: ins:administersCoverage
+ins:administersCoverage
+    a owl:ObjectProperty ;
+    rdfs:label "Administers Coverage"@en ;
+    rdfs:comment "Indicates that an entity administers the coverage provided in an insurance contract. Assigned domain=Insurer, range=LifeInsuranceCoverage; The property indicates an entity responsible for managing coverage. Graph signals…"@en ;
+    skos:definition "Indicates that an entity administers the coverage provided in an insurance contract."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:LifeInsuranceCoverage ;
+    skos:altLabel "administers"@en ;
+    skos:altLabel "supervises"@en .
+
+### Property: ins:administersDeathBenefitTerms
+ins:administersDeathBenefitTerms
+    a owl:ObjectProperty ;
+    rdfs:label "Administers Death Benefit Terms"@en ;
+    rdfs:comment "Specifies the entity responsible for managing the terms associated with the death benefit in an insurance contract. Assigned domain=Insurer, range=Person; The entity responsible for administering death benefit terms is t…"@en ;
+    skos:definition "Specifies the entity responsible for managing the terms associated with the death benefit in an insurance contract."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:Person ;
+    skos:altLabel "conditions payout of death benefit"@en ;
+    skos:altLabel "receives death benefit ensured by level premium structure"@en .
+
+### Property: ins:affectedByChangeEffectiveOnSignatureDate
+ins:affectedByChangeEffectiveOnSignatureDate
+    a owl:ObjectProperty ;
+    rdfs:label "Affected By Change Effective On Signature Date"@en ;
+    rdfs:comment "Indicates that an entity is affected by a change whose effective date is the signature date of the insurance contract. Assigned domain=Person, range=EffectiveDate; This property links a person to a change whose effective…"@en ;
+    skos:definition "Indicates that an entity is affected by a change whose effective date is the signature date of the insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:EffectiveDate ;
+    skos:altLabel "Change Effective on Signature Date"@en .
+
+### Property: ins:authorizes
+ins:authorizes
+    a owl:ObjectProperty ;
+    rdfs:label "Requires Authorization"@en ;
+    rdfs:comment "Indicates that one party is granted the authority to perform a specific action or obligation by another party in the context of an insurance contract. Assigned domain=Insurer, range=AuthorizedRepresentative; The property…"@en ;
+    skos:definition "Indicates that one party is granted the authority to perform a specific action or obligation by another party in the context of an insurance contract."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:AuthorizedRepresentative ;
+    skos:altLabel "requires written authorization"@en .
+
+### Property: ins:canBeCoveredByPolicyLoan
+ins:canBeCoveredByPolicyLoan
+    a owl:ObjectProperty ;
+    rdfs:label "Conditional On Loan Value"@en ;
+    rdfs:comment "Indicates that a financial obligation, such as unpaid premiums, can be satisfied using an available policy loan. Assigned domain=UnpaidPremium, range=Policy; The property indicates that a financial obligation (e.g., unpa…"@en ;
+    skos:definition "Indicates that a financial obligation, such as unpaid premiums, can be satisfied using an available policy loan."@en ;
+    rdfs:domain ins:UnpaidPremium ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "can satisfy advance payment requirement using policy loans"@en ;
+    skos:altLabel "controls loan value"@en .
+
+### Property: ins:changeInPremiumFrequency
+ins:changeInPremiumFrequency
+    a owl:ObjectProperty ;
+    rdfs:label "Change in Premium Frequency"@en ;
+    rdfs:comment "Indicates a change in the frequency with which premiums are paid, such as from monthly to annually. Assigned domain=Policy, range=PremiumPaymentMode; The property describes a change in premium payment frequency, which is…"@en ;
+    skos:definition "Indicates a change in the frequency with which premiums are paid, such as from monthly to annually."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:PremiumPaymentMode ;
+    skos:altLabel "Change in Premium Mode Process"@en ;
+    skos:altLabel "Change in Premium Mode Approval"@en .
+
+### Property: ins:defaultPayoutMethod
+ins:defaultPayoutMethod
+    a owl:ObjectProperty ;
+    rdfs:label "Payout Method Default"@en ;
+    rdfs:comment "Specifies the default method by which a payout is made under the insurance contract. Assigned domain=Policy, range=SettlementOption; The default payout method is a characteristic of the policy's settlement terms. The dom…"@en ;
+    skos:definition "Specifies the default method by which a payout is made under the insurance contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:SettlementOption ;
+    skos:altLabel "defines default"@en ;
+    skos:altLabel "defaults to"@en .
+
+### Property: ins:dependsOnLifeExpectancyCertification
+ins:dependsOnLifeExpectancyCertification
+    a owl:ObjectProperty ;
+    rdfs:label "Depends On Life Expectancy Certification"@en ;
+    rdfs:comment "Indicates that a policy or benefit conditionally depends on the certification of life expectancy. Assigned domain=Policy, range=MedicalVerification; The property indicates a conditionality based on life expectancy certif…"@en ;
+    skos:definition "Indicates that a policy or benefit conditionally depends on the certification of life expectancy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:MedicalVerification .
+
+### Property: ins:detectsOrEvaluates
+ins:detectsOrEvaluates
+    a owl:ObjectProperty ;
+    rdfs:label "Detects Or Evaluates"@en ;
+    rdfs:comment "Indicates the relationship where an entity detects or evaluates another entity within the context of an insurance contract. Assigned domain=Insurer, range=ClaimProcessing; This property describes a monitoring or assessme…"@en ;
+    skos:definition "Indicates the relationship where an entity detects or evaluates another entity within the context of an insurance contract."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:ClaimProcessing .
+
+### Property: ins:determinesBenefitDistributionPath
+ins:determinesBenefitDistributionPath
+    a owl:ObjectProperty ;
+    rdfs:label "Receives Or Not Receives Based On Survival"@en ;
+    rdfs:comment "Specifies the entity or mechanism that governs how benefits are distributed according to the contract terms. Assigned domain=Policy, range=SettlementOption; The property specifies the entity or mechanism that governs ben…"@en ;
+    skos:definition "Specifies the entity or mechanism that governs how benefits are distributed according to the contract terms."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:SettlementOption ;
+    skos:altLabel "determines benefit distribution path"@en .
+
+### Property: ins:determinesConversionEligibilityRules
+ins:determinesConversionEligibilityRules
+    a owl:ObjectProperty ;
+    rdfs:label "Determines Rules For Conversion Eligibility"@en ;
+    rdfs:comment "Indicates the entity or condition that establishes the criteria for eligibility to convert coverage under the insurance contract. Assigned domain=CorporateEntity, range=Policy; The entity that sets conversion eligibility…"@en ;
+    skos:definition "Indicates the entity or condition that establishes the criteria for eligibility to convert coverage under the insurance contract."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "may convert coverage before term end"@en ;
+    skos:altLabel "has authority to initiate conversion"@en .
+
+### Property: ins:elects
+ins:elects
+    a owl:ObjectProperty ;
+    rdfs:label "Elects Mode"@en ;
+    rdfs:comment "Indicates that an entity selects or chooses another entity as a beneficiary, representative, or option within the insurance contract. Assigned domain=Person, range=Person; The property indicates a selection action by an…"@en ;
+    skos:definition "Indicates that an entity selects or chooses another entity as a beneficiary, representative, or option within the insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Person ;
+    skos:altLabel "nominates"@en .
+
+### Property: ins:enablesReinstatement
+ins:enablesReinstatement
+    a owl:ObjectProperty ;
+    rdfs:label "Enables Reinstatement"@en ;
+    rdfs:comment "Indicates that a condition or feature allows the policyholder to reinstate a lapsed insurance policy. Assigned domain=Policy, range=Period; This property indicates conditions that allow policy reinstatement after lapse.…"@en ;
+    skos:definition "Indicates that a condition or feature allows the policyholder to reinstate a lapsed insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Period ;
+    skos:altLabel "prevents lapse"@en ;
+    skos:altLabel "enables recovery"@en .
+
+### Property: ins:executedAt
+ins:executedAt
+    a owl:DatatypeProperty ;
+    rdfs:label "Executed At"@en ;
+    rdfs:comment "Indicates the date and time when the insurance contract was executed. Assigned domain=Policy, range=xsd:dateTime; The execution date and time of a contract is a temporal attribute of the policy itself. The domain is Poli…"@en ;
+    skos:definition "Indicates the date and time when the insurance contract was executed."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:dateTime .
+
+### Property: ins:faceAmount
+ins:faceAmount
+    a owl:DatatypeProperty ;
+    rdfs:label "Face Amount: $500,000"@en ;
+    rdfs:comment "The specified monetary value of the insurance benefit payable upon the occurrence of the insured event, expressed as a monetary amount. Assigned domain=Policy, range=xsd:decimal; This property specifies the monetary valu…"@en ;
+    skos:definition "The specified monetary value of the insurance benefit payable upon the occurrence of the insured event, expressed as a monetary amount."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:decimal .
+
+### Property: ins:governingLawJurisdiction
+ins:governingLawJurisdiction
+    a owl:ObjectProperty ;
+    rdfs:label "Governing Law Jurisdiction"@en ;
+    rdfs:comment "Specifies the jurisdiction whose laws govern the insurance contract. Assigned domain=Policy, range=ColoradoJurisdiction; The property specifies the legal jurisdiction governing the contract. The definition and sentences…"@en ;
+    skos:definition "Specifies the jurisdiction whose laws govern the insurance contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:ColoradoJurisdiction ;
+    skos:altLabel "State-Specific Provisions"@en .
+
+### Property: ins:hasAcceleratedDeathBenefitRider
+ins:hasAcceleratedDeathBenefitRider
+    a owl:ObjectProperty ;
+    rdfs:label "Accelerated Death Benefit Rider"@en ;
+    rdfs:comment "Indicates the accelerated death benefit rider associated with an insurance policy, which allows the policyholder to receive a portion of the death benefit prior to death under specified conditions. Assigned domain=Policy…"@en ;
+    skos:definition "Indicates the accelerated death benefit rider associated with an insurance policy, which allows the policyholder to receive a portion of the death benefit prior to death under specified conditions."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Rider ;
+    skos:altLabel "Death Benefit Obligation"@en ;
+    skos:altLabel "Death Benefit Conditions"@en .
+
+### Property: ins:hasAccessRightToPolicyCopy
+ins:hasAccessRightToPolicyCopy
+    a owl:ObjectProperty ;
+    rdfs:label "Has Access Right To Policy Copy"@en ;
+    rdfs:comment "Indicates that an entity has the right to access a copy of a policy. Assigned domain=PolicyOwnerRights, range=DocumentAccess; This property grants access rights to a policy copy. The domain is PolicyOwnerRights, as it re…"@en ;
+    skos:definition "Indicates that an entity has the right to access a copy of a policy."@en ;
+    rdfs:domain ins:PolicyOwnerRights ;
+    rdfs:range ins:DocumentAccess ;
+    skos:altLabel "has right to request premium history"@en .
+
+### Property: ins:hasAccruingInterest
+ins:hasAccruingInterest
+    a owl:ObjectProperty ;
+    rdfs:label "Has Accruing Interest"@en ;
+    rdfs:comment "Indicates that a policy or financial obligation has interest that accumulates over time. Assigned domain=Premium, range=InterestAccrual; The property indicates that interest accumulates over time, typically associated wi…"@en ;
+    skos:definition "Indicates that a policy or financial obligation has interest that accumulates over time."@en ;
+    rdfs:domain ins:Premium ;
+    rdfs:range ins:InterestAccrual ;
+    skos:altLabel "requires interest payment"@en ;
+    skos:altLabel "requires payment of past due premiums"@en .
+
+### Property: ins:hasAgentAuthorityLimitation
+ins:hasAgentAuthorityLimitation
+    a owl:ObjectProperty ;
+    rdfs:label "Has Agent Authority Limitation"@en ;
+    rdfs:comment "Relates an agent to the specific limitations on their authority as defined in an insurance contract. Assigned domain=CorporateEntity, range=Right; The property specifies limitations on an agent’s authority as defined in…"@en ;
+    skos:definition "Relates an agent to the specific limitations on their authority as defined in an insurance contract."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Right .
+
+### Property: ins:hasApplicableRider
+ins:hasApplicableRider
+    a owl:ObjectProperty ;
+    rdfs:label "Request Applicable Riders"@en ;
+    rdfs:comment "Relates an insurance policy to the riders that are applicable or included as optional additions to the policy. Assigned domain=Policy, range=Rider; This property links a policy to its optional riders. The domain is Polic…"@en ;
+    skos:definition "Relates an insurance policy to the riders that are applicable or included as optional additions to the policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Rider ;
+    skos:altLabel "Optional Riders Included"@en .
+
+### Property: ins:hasAssignmentRight
+ins:hasAssignmentRight
+    a owl:ObjectProperty ;
+    rdfs:label "Policy Assignment Right"@en ;
+    rdfs:comment "Indicates that a policyholder has the right to assign the insurance policy to another party. Assigned domain=Person, range=Policy; The right to assign a policy is a contractual right held by the policyholder. The propert…"@en ;
+    skos:definition "Indicates that a policyholder has the right to assign the insurance policy to another party."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "No Tax Responsibility for Assignment"@en ;
+    skos:altLabel "Assignment Terms Binding"@en .
+
+### Property: ins:hasAuthorizedRepresentativeStatus
+ins:hasAuthorizedRepresentativeStatus
+    a owl:ObjectProperty ;
+    rdfs:label "Authorized Representative Status"@en ;
+    rdfs:comment "Indicates the status of an individual who is authorized to act on behalf of the insured in matters related to the insurance contract. Assigned domain=Person, range=AuthorizedRepresentative; The property describes the sta…"@en ;
+    skos:definition "Indicates the status of an individual who is authorized to act on behalf of the insured in matters related to the insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:AuthorizedRepresentative .
+
+### Property: ins:hasBindingDocumentCollection
+ins:hasBindingDocumentCollection
+    a owl:ObjectProperty ;
+    rdfs:label "Binding Document Collection"@en ;
+    rdfs:comment "Relates an insurance contract to the collection of documents that constitute its binding agreement. Assigned domain=Policy, range=PolicyEndorsement; The property links a contract to its binding documents. The domain is a…"@en ;
+    skos:definition "Relates an insurance contract to the collection of documents that constitute its binding agreement."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:PolicyEndorsement .
+
+### Property: ins:hasCancellationRight
+ins:hasCancellationRight
+    a owl:ObjectProperty ;
+    rdfs:label "Right to Cancel Policy"@en ;
+    rdfs:comment "Indicates that a policy grants the right to cancel the insurance contract under specified conditions. Assigned domain=Policy, range=CancellationRight; The property indicates the right to cancel a policy, which is a right…"@en ;
+    skos:definition "Indicates that a policy grants the right to cancel the insurance contract under specified conditions."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:CancellationRight ;
+    skos:altLabel "Policy Cancellation Right"@en .
+
+### Property: ins:hasChiefExecutiveOfficer
+ins:hasChiefExecutiveOfficer
+    a owl:ObjectProperty ;
+    rdfs:label "CEO of Sentinel Life Assurance Company"@en ;
+    rdfs:comment "Relates an insurance contract to the individual holding the CEO role at Sentinel Life Assurance Company, as confirmed in the contract. Assigned domain=CorporateEntity, range=Role; The property links an organization to it…"@en ;
+    skos:definition "Relates an insurance contract to the individual holding the CEO role at Sentinel Life Assurance Company, as confirmed in the contract."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Role ;
+    skos:altLabel "Chief Executive Officer Role"@en ;
+    skos:altLabel "CEO Role Confirmation"@en .
+
+### Property: ins:hasChunkFact
+ins:hasChunkFact
+    a owl:ObjectProperty ;
+    rdfs:label "has Chunk Fact"@en ;
+    rdfs:comment "Relates an insurance contract to a specific factual chunk that represents a piece of information within the contract. Assigned domain=Policy; The property connects a contract to a factual chunk representing a piece of in…"@en ;
+    skos:definition "Relates an insurance contract to a specific factual chunk that represents a piece of information within the contract."@en ;
+    rdfs:domain ins:Policy ;
+    skos:altLabel "chunk_fact"@en .
+
+### Property: ins:hasConcealedMaterialFact
+ins:hasConcealedMaterialFact
+    a owl:ObjectProperty ;
+    rdfs:label "May Commit"@en ;
+    rdfs:comment "Indicates that an entity conceals a material fact that could affect the insurance contract. Assigned This property identifies concealed material facts, which are typically facts related to the insured or application. The…"@en ;
+    skos:definition "Indicates that an entity conceals a material fact that could affect the insurance contract."@en ;
+    skos:altLabel "conceals"@en ;
+    skos:altLabel "prevents fraud"@en .
+
+### Property: ins:hasConcept
+ins:hasConcept
+    a owl:ObjectProperty ;
+    rdfs:label "Depends On"@en ;
+    rdfs:comment "Links a contract element to the conceptual idea or notion it represents within the insurance policy. Assigned domain=Policy; The property links a contract element to the conceptual idea it represents. In insurance contra…"@en ;
+    skos:definition "Links a contract element to the conceptual idea or notion it represents within the insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    skos:altLabel "concept"@en ;
+    skos:altLabel "enables"@en .
+
+### Property: ins:hasContestabilityClause
+ins:hasContestabilityClause
+    a owl:ObjectProperty ;
+    rdfs:label "Has Contestability Clause"@en ;
+    rdfs:comment "Indicates that an insurance policy includes a contestability clause, which defines the conditions under which the insurer may challenge the validity of the policy. Assigned domain=Policy, range=Clause; A contestability c…"@en ;
+    skos:definition "Indicates that an insurance policy includes a contestability clause, which defines the conditions under which the insurer may challenge the validity of the policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Clause ;
+    skos:altLabel "may contest policy validity"@en ;
+    skos:altLabel "allows company to contest policy validity"@en .
+
+### Property: ins:hasContingentBeneficiary
+ins:hasContingentBeneficiary
+    a owl:ObjectProperty ;
+    rdfs:label "Contingent Beneficiary Designation"@en ;
+    rdfs:comment "Indicates the contingent beneficiary designated in the insurance policy, who receives benefits if the primary beneficiary is not eligible. Assigned domain=Policy, range=Beneficiary; This property identifies the contingen…"@en ;
+    skos:definition "Indicates the contingent beneficiary designated in the insurance policy, who receives benefits if the primary beneficiary is not eligible."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Beneficiary ;
+    skos:altLabel "Beneficiary Role Definition"@en ;
+    skos:altLabel "Right to Change Beneficiaries"@en .
+
+### Property: ins:hasEffectivePolicyStartDate
+ins:hasEffectivePolicyStartDate
+    a owl:DatatypeProperty ;
+    rdfs:label "Effective Policy Start Date"@en ;
+    rdfs:comment "Specifies the date from which the insurance policy becomes effective and coverage begins. Assigned domain=Policy, range=xsd:date; This property specifies the start date of policy effectiveness, which is a temporal anchor…"@en ;
+    skos:definition "Specifies the date from which the insurance policy becomes effective and coverage begins."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:date ;
+    skos:altLabel "Premium Guarantee Duration"@en ;
+    skos:altLabel "Coverage Term Start Date"@en .
+
+### Property: ins:hasExaminationRight
+ins:hasExaminationRight
+    a owl:ObjectProperty ;
+    rdfs:label "Right to Examine Policy"@en ;
+    rdfs:comment "Indicates that a party has the right to examine a policy, granting them access to review its contents. Assigned domain=PolicyOwnerRights, range=Policy; The property indicates a right to examine a policy, which is a right…"@en ;
+    skos:definition "Indicates that a party has the right to examine a policy, granting them access to review its contents."@en ;
+    rdfs:domain ins:PolicyOwnerRights ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "Policy Copy Access Right"@en ;
+    skos:altLabel "Information Access Rights"@en .
+
+### Property: ins:hasGracePeriodDuration
+ins:hasGracePeriodDuration
+    a owl:DatatypeProperty ;
+    rdfs:label "Duration Of Grace Period"@en ;
+    rdfs:comment "Specifies the length of time, in days or months, that constitutes the grace period in an insurance policy. Assigned domain=Policy, range=xsd:duration; The property links a policy to the duration of its grace period, whic…"@en ;
+    skos:definition "Specifies the length of time, in days or months, that constitutes the grace period in an insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:duration ;
+    skos:altLabel "has coverage during grace period"@en ;
+    skos:altLabel "defines the grace period duration"@en .
+
+### Property: ins:hasInitialMonthlyPremium
+ins:hasInitialMonthlyPremium
+    a owl:DatatypeProperty ;
+    rdfs:label "Initial Monthly Premium"@en ;
+    rdfs:comment "Specifies the initial monthly premium amount required for the insurance policy. Assigned domain=Policy, range=xsd:decimal; This property specifies the initial monthly premium amount for a policy, which is a financial val…"@en ;
+    skos:definition "Specifies the initial monthly premium amount required for the insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:decimal ;
+    skos:altLabel "Premium Payment Method"@en ;
+    skos:altLabel "First Premium Consideration"@en .
+
+### Property: ins:hasInsuranceProductType
+ins:hasInsuranceProductType
+    a owl:DatatypeProperty ;
+    rdfs:label "Level Term Life Insurance"@en ;
+    rdfs:comment "Relates an insurance contract to the specific type of life insurance product it represents, such as Level Term Life Insurance or Level Term Life Insurance – 20 Years. Assigned domain=Policy, range=xsd:string; This proper…"@en ;
+    skos:definition "Relates an insurance contract to the specific type of life insurance product it represents, such as Level Term Life Insurance or Level Term Life Insurance – 20 Years."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:string ;
+    skos:altLabel "Level Term Life Insurance – 20 Years"@en .
+
+### Property: ins:hasInsured
+ins:hasInsured
+    a owl:ObjectProperty ;
+    rdfs:label "Issuer Of"@en ;
+    rdfs:comment "Indicates the person who is the insured under a policy. Assigned domain=Policy, range=InsuredPerson; This property identifies the person insured under a policy. The domain is the policy, which contains the insured indivi…"@en ;
+    skos:definition "Indicates the person who is the insured under a policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:InsuredPerson ;
+    skos:altLabel "person"@en ;
+    skos:altLabel "policyholder"@en .
+
+### Property: ins:hasInsuredGender
+ins:hasInsuredGender
+    a owl:DatatypeProperty ;
+    rdfs:label "Is Insured Male"@en ;
+    rdfs:comment "Relates an insurance policy or claim to the gender of the insured person, as specified in the contract. Assigned domain=InsuredPerson, range=xsd:string; This property links the insured person to their gender, a categoric…"@en ;
+    skos:definition "Relates an insurance policy or claim to the gender of the insured person, as specified in the contract."@en ;
+    rdfs:domain ins:InsuredPerson ;
+    rdfs:range xsd:string ;
+    skos:altLabel "has insured gender"@en ;
+    skos:altLabel "has misstated gender"@en .
+
+### Property: ins:hasIssueAge
+ins:hasIssueAge
+    a owl:DatatypeProperty ;
+    rdfs:label "Has Issue Age"@en ;
+    rdfs:comment "Relates an insurance policy or insured individual to their issue age, which is the age at which the policy was issued. Assigned domain=InsuredPerson, range=xsd:integer; This property relates the insured person to their i…"@en ;
+    skos:definition "Relates an insurance policy or insured individual to their issue age, which is the age at which the policy was issued."@en ;
+    rdfs:domain ins:InsuredPerson ;
+    rdfs:range xsd:integer ;
+    skos:altLabel "issue age"@en ;
+    skos:altLabel "has misstated age"@en .
+
+### Property: ins:hasJurisdictionForFraudulentAct
+ins:hasJurisdictionForFraudulentAct
+    a owl:ObjectProperty ;
+    rdfs:label "Jurisdiction For Fraudulent Act"@en ;
+    rdfs:comment "Relates a fraudulent act to the jurisdiction in which it occurred or is legally recognized. Assigned domain=Fraud, range=ColoradoJurisdiction; The property links a fraudulent act to a jurisdiction. The domain is Fraud, a…"@en ;
+    skos:definition "Relates a fraudulent act to the jurisdiction in which it occurred or is legally recognized."@en ;
+    rdfs:domain ins:Fraud ;
+    rdfs:range ins:ColoradoJurisdiction ;
+    skos:altLabel "recipient of fraudulent claim"@en .
+
+### Property: ins:hasLegalContractualAgreement
+ins:hasLegalContractualAgreement
+    a owl:ObjectProperty ;
+    rdfs:label "Legal Contractual Agreement"@en ;
+    rdfs:comment "Indicates the legal contractual agreement that forms the basis of the insurance contract. Assigned domain=Action, range=Clause; The property links a policy or action to the legal contractual agreement forming the basis o…"@en ;
+    skos:definition "Indicates the legal contractual agreement that forms the basis of the insurance contract."@en ;
+    rdfs:domain ins:Action ;
+    rdfs:range ins:Clause ;
+    skos:altLabel "Entire Contract Clause"@en ;
+    skos:altLabel "Legal Interest Requirement"@en .
+
+### Property: ins:hasLevelPremiumGuarantee
+ins:hasLevelPremiumGuarantee
+    a owl:ObjectProperty ;
+    rdfs:label "Has Level Premium Guarantee"@en ;
+    rdfs:comment "Indicates that a policy is issued with a guarantee of a level premium for a specified term. Assigned domain=Policy, range=Amount; The property indicates a guarantee of level premiums over a term. The definition and sente…"@en ;
+    skos:definition "Indicates that a policy is issued with a guarantee of a level premium for a specified term."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Amount ;
+    skos:altLabel "amount"@en ;
+    skos:altLabel "issues policy with level premium guarantee"@en .
+
+### Property: ins:hasLiabilityLimitation
+ins:hasLiabilityLimitation
+    a owl:ObjectProperty ;
+    rdfs:label "Company Liability Limitation"@en ;
+    rdfs:comment "Relates an insurance policy to the specified limitation on the company's liability as defined in the contract. Assigned domain=Policy, range=LiabilityLimitation; The property links a policy to a limitation on the insurer…"@en ;
+    skos:definition "Relates an insurance policy to the specified limitation on the company's liability as defined in the contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:LiabilityLimitation .
+
+### Property: ins:hasLimit
+ins:hasLimit
+    a owl:ObjectProperty ;
+    rdfs:label "Conditional Limitation"@en ;
+    rdfs:comment "Indicates the limit or restriction specified in an insurance contract, such as financial or temporal boundaries on coverage. Assigned domain=Policy, range=Amount; The property indicates a restriction, such as a financial…"@en ;
+    skos:definition "Indicates the limit or restriction specified in an insurance contract, such as financial or temporal boundaries on coverage."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Amount ;
+    skos:altLabel "limits"@en ;
+    skos:altLabel "enforces limitation"@en .
+
+### Property: ins:hasLocation
+ins:hasLocation
+    a owl:ObjectProperty ;
+    rdfs:label "Has Principal Office Location"@en ;
+    rdfs:comment "Relates an entity to its geographical location, such as a physical address or coordinates. Assigned domain=CorporateEntity, range=Location; The property relates an entity to its geographical location. The definition incl…"@en ;
+    skos:definition "Relates an entity to its geographical location, such as a physical address or coordinates."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Location ;
+    skos:altLabel "location"@en ;
+    skos:altLabel "location of"@en .
+
+### Property: ins:hasOwnersRights
+ins:hasOwnersRights
+    a owl:ObjectProperty ;
+    rdfs:label "Owner's Rights Definition"@en ;
+    rdfs:comment "Relates an insurance policy to the defined rights of the policy owner as specified in the contract. Assigned domain=Policy, range=Right; The property links a policy to the rights held by the policy owner, as defined in t…"@en ;
+    skos:definition "Relates an insurance policy to the defined rights of the policy owner as specified in the contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Right ;
+    skos:altLabel "Owner Rights"@en .
+
+### Property: ins:hasPaymentModeSelectedBy
+ins:hasPaymentModeSelectedBy
+    a owl:ObjectProperty ;
+    rdfs:label "Approved Payment Mode"@en ;
+    rdfs:comment "Indicates the entity that selects the payment mode for an insurance policy. Assigned domain=PolicyOwnerRights, range=Person; This property indicates the entity responsible for selecting the payment mode. The definition a…"@en ;
+    skos:definition "Indicates the entity that selects the payment mode for an insurance policy."@en ;
+    rdfs:domain ins:PolicyOwnerRights ;
+    rdfs:range ins:Person ;
+    skos:altLabel "depends on maintaining active status ensured by advance premium payments"@en ;
+    skos:altLabel "chooses payment mode"@en .
+
+### Property: ins:hasPolicyDefinition
+ins:hasPolicyDefinition
+    a owl:DatatypeProperty ;
+    rdfs:label "Definition of Policy"@en ;
+    rdfs:comment "Specifies the textual definition or description of the insurance policy. Assigned domain=Policy, range=xsd:string; This property provides a textual description of the policy. Graph signals show PERSON as the source, but…"@en ;
+    skos:definition "Specifies the textual definition or description of the insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:string ;
+    skos:altLabel "Definition of Insured"@en ;
+    skos:altLabel "Premium Definition"@en .
+
+### Property: ins:hasPolicyIdentification
+ins:hasPolicyIdentification
+    a owl:ObjectProperty ;
+    rdfs:label "Policy Identification"@en ;
+    rdfs:comment "Relates a policy to its unique identification information, such as policy number or form identifier. Assigned domain=Policy, range=PolicyNumber; The property links a policy to its unique identifiers such as policy number…"@en ;
+    skos:definition "Relates a policy to its unique identification information, such as policy number or form identifier."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:PolicyNumber ;
+    skos:altLabel "Insurer Identification"@en ;
+    skos:altLabel "Insured Person Identification"@en .
+
+### Property: ins:hasPolicyNumber
+ins:hasPolicyNumber
+    a owl:DatatypeProperty ;
+    rdfs:label "Has Policy Number"@en ;
+    rdfs:comment "Relates an insurance policy to its unique policy number identifier. Assigned domain=Policy, range=xsd:string; The property uniquely identifies a policy via a policy number. Graph signals show POLICY as the source and POL…"@en ;
+    skos:definition "Relates an insurance policy to its unique policy number identifier."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:string ;
+    skos:altLabel "has risk classification"@en ;
+    skos:altLabel "has id"@en .
+
+### Property: ins:hasPosteriority
+ins:hasPosteriority
+    a owl:ObjectProperty ;
+    rdfs:label "has Posteriority"@en ;
+    rdfs:comment "Indicates the relationship between an insurance contract and its posteriority, representing the temporal or logical precedence of one contract over another in a sequence of related agreements. Assigned domain=Policy, ran…"@en ;
+    skos:definition "Indicates the relationship between an insurance contract and its posteriority, representing the temporal or logical precedence of one contract over another in a sequence of related agreements."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "posteriors"@en ;
+    skos:altLabel "posteriority"@en .
+
+### Property: ins:hasPremiumHistory
+ins:hasPremiumHistory
+    a owl:ObjectProperty ;
+    rdfs:label "Request Premium History"@en ;
+    rdfs:comment "Relates an insurance policy to its associated request premium history, representing the record of premium requests over time. Assigned domain=Policy, range=PremiumPayment; The property connects a policy to its premium pa…"@en ;
+    skos:definition "Relates an insurance policy to its associated request premium history, representing the record of premium requests over time."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:PremiumPayment .
+
+### Property: ins:hasPrincipalOfficeLocation
+ins:hasPrincipalOfficeLocation
+    a owl:ObjectProperty ;
+    rdfs:label "Principal Office Location"@en ;
+    rdfs:comment "Indicates the location where the principal office of the insurance entity is situated. Assigned domain=CorporateEntity, range=Location; The property links an organization to its principal office location. The domain is '…"@en ;
+    skos:definition "Indicates the location where the principal office of the insurance entity is situated."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Location ;
+    skos:altLabel "Premium Details Location"@en ;
+    skos:altLabel "Policy Execution Location"@en .
+
+### Property: ins:hasReturnWindowStartDate
+ins:hasReturnWindowStartDate
+    a owl:DatatypeProperty ;
+    rdfs:label "Start Date Of Return Window"@en ;
+    rdfs:comment "Specifies the start date of the return window during which a product may be returned for a refund or voidance. Assigned domain=Policy, range=xsd:date; The return window start date is a time-bound feature tied to a policy…"@en ;
+    skos:definition "Specifies the start date of the return window during which a product may be returned for a refund or voidance."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:date ;
+    skos:altLabel "time limit for return"@en ;
+    skos:altLabel "defines time window for refund"@en .
+
+### Property: ins:hasRider
+ins:hasRider
+    a owl:ObjectProperty ;
+    rdfs:label "Exception To Rider"@en ;
+    rdfs:comment "Indicates that a policy includes a specific rider as part of its coverage. Assigned domain=Policy, range=Rider; The property indicates that a policy includes a rider. The domain is 'Policy' as the rider is attached to th…"@en ;
+    skos:definition "Indicates that a policy includes a specific rider as part of its coverage."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Rider ;
+    skos:altLabel "rider"@en ;
+    skos:altLabel "has right to request riders or endorsements"@en .
+
+### Property: ins:hasRightToExamineFor20DaysFromReceipt
+ins:hasRightToExamineFor20DaysFromReceipt
+    a owl:ObjectProperty ;
+    rdfs:label "Has Right To Examine For 20 Days From Receipt"@en ;
+    rdfs:comment "Indicates that a party has the right to examine the insurance contract for a period of 20 days starting from the date of receipt. Assigned domain=Person, range=Right; The property indicates a party's right to examine the…"@en ;
+    skos:definition "Indicates that a party has the right to examine the insurance contract for a period of 20 days starting from the date of receipt."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Right .
+
+### Property: ins:hasRightToSecondMedicalOpinion
+ins:hasRightToSecondMedicalOpinion
+    a owl:ObjectProperty ;
+    rdfs:label "Contains Right To Second Medical Opinion"@en ;
+    rdfs:comment "Indicates that an insurance policy or coverage includes the right for the insured to obtain a second medical opinion. Assigned domain=Policy, range=Right; This property links a policy or document to a right related to me…"@en ;
+    skos:definition "Indicates that an insurance policy or coverage includes the right for the insured to obtain a second medical opinion."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Right ;
+    skos:altLabel "Second Medical Opinion Right"@en .
+
+### Property: ins:hasRiskClassification
+ins:hasRiskClassification
+    a owl:ObjectProperty ;
+    rdfs:label "Risk Classification: Standard Non-Smoker"@en ;
+    rdfs:comment "Relates an insurance policy or insured individual to their risk classification, such as 'Standard Non-Smoker', which determines premium rates and underwriting decisions. Assigned domain=InsuredPerson, range=RiskClassific…"@en ;
+    skos:definition "Relates an insurance policy or insured individual to their risk classification, such as 'Standard Non-Smoker', which determines premium rates and underwriting decisions."@en ;
+    rdfs:domain ins:InsuredPerson ;
+    rdfs:range ins:RiskClassification .
+
+### Property: ins:hasSettlementOption
+ins:hasSettlementOption
+    a owl:ObjectProperty ;
+    rdfs:label "Requests Change Of Settlement Option"@en ;
+    rdfs:comment "Relates an insurance contract or claim to the settlement option that has been selected or is applicable, influencing distribution and terms. Assigned domain=BenefitClaim, range=SettlementOption; This property links a pol…"@en ;
+    skos:definition "Relates an insurance contract or claim to the settlement option that has been selected or is applicable, influencing distribution and terms."@en ;
+    rdfs:domain ins:BenefitClaim ;
+    rdfs:range ins:SettlementOption ;
+    skos:altLabel "determined by approved settlement option"@en ;
+    skos:altLabel "may trigger need for settlement option selection via death"@en .
+
+### Property: ins:hasSettlementOptionApproval
+ins:hasSettlementOptionApproval
+    a owl:ObjectProperty ;
+    rdfs:label "Alternative Settlement Approval"@en ;
+    rdfs:comment "Indicates the approval status of a settlement option within an insurance contract, reflecting whether an alternative or elected settlement option has been formally approved. Assigned domain=Policy, range=SettlementOption…"@en ;
+    skos:definition "Indicates the approval status of a settlement option within an insurance contract, reflecting whether an alternative or elected settlement option has been formally approved."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:SettlementOption ;
+    skos:altLabel "Elect Settlement Options"@en ;
+    skos:altLabel "Settlement Option Approval"@en .
+
+### Property: ins:hasSuicideExclusionClause
+ins:hasSuicideExclusionClause
+    a owl:ObjectProperty ;
+    rdfs:label "Covered By Policy With Suicide Exclusion Clause"@en ;
+    rdfs:comment "Indicates that a policy includes a clause that excludes coverage for death by suicide within a specified period. Assigned domain=Policy, range=SuicideExclusion; The property links a policy to a suicide exclusion clause,…"@en ;
+    skos:definition "Indicates that a policy includes a clause that excludes coverage for death by suicide within a specified period."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:SuicideExclusion ;
+    skos:altLabel "defines timeframe for suicide exclusion"@en ;
+    skos:altLabel "refundable upon suicide within two years"@en .
+
+### Property: ins:hasTaxConsequenceUponAssignment
+ins:hasTaxConsequenceUponAssignment
+    a owl:ObjectProperty ;
+    rdfs:label "May Lead To Assignment With Tax Consequences"@en ;
+    rdfs:comment "Indicates that a contractual provision or action may result in tax implications when assignment occurs. Assigned domain=Policy, range=TaxConsequence; This property connects a contractual provision or action to tax conseq…"@en ;
+    skos:definition "Indicates that a contractual provision or action may result in tax implications when assignment occurs."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:TaxConsequence ;
+    skos:altLabel "has no tax responsibility for assignment"@en ;
+    skos:altLabel "can result in tax implications when used post assignment"@en .
+
+### Property: ins:hasTiming
+ins:hasTiming
+    a owl:ObjectProperty ;
+    rdfs:label "Sets Timing For"@en ;
+    rdfs:comment "Relates an insurance contract or clause to its associated temporal constraints or scheduling information. Assigned domain=Clause, range=EffectiveDate; The property relates an entity to temporal constraints such as dates…"@en ;
+    skos:definition "Relates an insurance contract or clause to its associated temporal constraints or scheduling information."@en ;
+    rdfs:domain ins:Clause ;
+    rdfs:range ins:EffectiveDate ;
+    skos:altLabel "date"@en ;
+    skos:altLabel "period"@en .
+
+### Property: ins:hasTwoYearContestabilityClause
+ins:hasTwoYearContestabilityClause
+    a owl:ObjectProperty ;
+    rdfs:label "Two-Year Contestability Clause"@en ;
+    rdfs:comment "Indicates that an insurance policy includes a two-year contestability clause, which allows the insurer to investigate and potentially deny claims during the first two years of the policy. Assigned domain=Policy, range=Cl…"@en ;
+    skos:definition "Indicates that an insurance policy includes a two-year contestability clause, which allows the insurer to investigate and potentially deny claims during the first two years of the policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Clause .
+
+### Property: ins:initiatesOrSupports
+ins:initiatesOrSupports
+    a owl:ObjectProperty ;
+    rdfs:label "Initiates Or Supports"@en ;
+    rdfs:comment "Indicates that one entity initiates or supports another entity within the context of an insurance contract. Assigned domain=Person, range=Person; The property indicates one entity initiating or supporting another in a co…"@en ;
+    skos:definition "Indicates that one entity initiates or supports another entity within the context of an insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Person ;
+    skos:altLabel "is required to initiate"@en .
+
+### Property: ins:isBeneficiaryOf
+ins:isBeneficiaryOf
+    a owl:ObjectProperty ;
+    rdfs:label "Is Beneficiary Of"@en ;
+    rdfs:comment "Indicates that one entity is designated as a beneficiary of a specific insurance benefit or policy. Assigned domain=Person, range=Policy; The property indicates that a person is designated as a beneficiary of a policy. T…"@en ;
+    skos:definition "Indicates that one entity is designated as a beneficiary of a specific insurance benefit or policy."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "beneficiary of death benefit"@en ;
+    skos:altLabel "primary beneficiary"@en .
+
+### Property: ins:isDeterminedByMostRecentWrittenDesignationFromCompanyRecord
+ins:isDeterminedByMostRecentWrittenDesignationFromCompanyRecord
+    a owl:ObjectProperty ;
+    rdfs:label "Is Determined By Most Recent Written Designation From Company Record"@en ;
+    rdfs:comment "This property indicates that a particular entity or value is determined by the most recent written designation recorded by the insurance company. Assigned domain=Policy, range=Designation; The property links a financial…"@en ;
+    skos:definition "This property indicates that a particular entity or value is determined by the most recent written designation recorded by the insurance company."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Designation .
+
+### Property: ins:isEligibleForRefund
+ins:isEligibleForRefund
+    a owl:ObjectProperty ;
+    rdfs:label "Is Eligible For Refund"@en ;
+    rdfs:comment "Indicates that a party or policyholder is eligible to receive a refund under specified conditions. Assigned domain=Policy, range=Right; Eligibility for refund is a right held by the policyholder under specific conditions…"@en ;
+    skos:definition "Indicates that a party or policyholder is eligible to receive a refund under specified conditions."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Right ;
+    skos:altLabel "conditions refund"@en ;
+    skos:altLabel "has right to return"@en .
+
+### Property: ins:isExcludedFromAcceleratedBenefitDueToWarRelatedCause
+ins:isExcludedFromAcceleratedBenefitDueToWarRelatedCause
+    a owl:ObjectProperty ;
+    rdfs:label "May Be Ineligible For Accelerated Benefit If Illness Stems From War Related Activities"@en ;
+    rdfs:comment "Indicates that a policyholder may be ineligible for an accelerated benefit if the illness is determined to stem from war-related activities. Assigned domain=Exclusion, range=Exclusion; The property indicates exclusion fr…"@en ;
+    skos:definition "Indicates that a policyholder may be ineligible for an accelerated benefit if the illness is determined to stem from war-related activities."@en ;
+    rdfs:domain ins:Exclusion ;
+    rdfs:range ins:Exclusion ;
+    skos:altLabel "is excluded from payment when terminal illness is caused by war related activities"@en .
+
+### Property: ins:isPayoutConditionallyDuringActiveTerm
+ins:isPayoutConditionallyDuringActiveTerm
+    a owl:ObjectProperty ;
+    rdfs:label "Is Payout Conditionally During Active Term"@en ;
+    rdfs:comment "Indicates that a payout is granted only if the policy remains active during its term. Assigned domain=Policy, range=BenefitClaim; The property describes a condition on payout dependent on policy activity during its term.…"@en ;
+    skos:definition "Indicates that a payout is granted only if the policy remains active during its term."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:BenefitClaim ;
+    skos:altLabel "remains payable only if policy is active post term"@en ;
+    skos:altLabel "may receive if policy remains in force"@en .
+
+### Property: ins:isSubjectToFraudulentInsuranceAct
+ins:isSubjectToFraudulentInsuranceAct
+    a owl:ObjectProperty ;
+    rdfs:label "Fraudulent Insurance Act"@en ;
+    rdfs:comment "Indicates that an insurance contract or related entity is subject to the provisions of the Fraudulent Insurance Act. Assigned domain=Person, range=Fraud; The property indicates that a contract or entity is subject to leg…"@en ;
+    skos:definition "Indicates that an insurance contract or related entity is subject to the provisions of the Fraudulent Insurance Act."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Fraud .
+
+### Property: ins:isSubjectToRevocation
+ins:isSubjectToRevocation
+    a owl:ObjectProperty ;
+    rdfs:label "Is Subject To Revocation"@en ;
+    rdfs:comment "Indicates that an insurance contract is subject to revocation under specified conditions. Assigned domain=Person, range=Right; The property links a subject (typically a person or entity) to a right related to revocation.…"@en ;
+    skos:definition "Indicates that an insurance contract is subject to revocation under specified conditions."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Right ;
+    skos:altLabel "has right to revoke"@en ;
+    skos:altLabel "defines deadline for revocation"@en .
+
+### Property: ins:managesBillingSystem
+ins:managesBillingSystem
+    a owl:ObjectProperty ;
+    rdfs:label "Manages Billing System"@en ;
+    rdfs:comment "Indicates the entity that manages the billing system within an insurance contract. Assigned domain=Insurer, range=PaymentSchedule; The property identifies the entity responsible for managing the billing system. Graph sig…"@en ;
+    skos:definition "Indicates the entity that manages the billing system within an insurance contract."@en ;
+    rdfs:domain ins:Insurer ;
+    rdfs:range ins:PaymentSchedule .
+
+### Property: ins:managesLoanDeductions
+ins:managesLoanDeductions
+    a owl:ObjectProperty ;
+    rdfs:label "Manages Loan Deductions"@en ;
+    rdfs:comment "Indicates the entity or process that manages the deduction of loan payments from an insurance policy. Assigned domain=Policy, range=AdministrativeCharge; The property refers to the entity responsible for managing loan de…"@en ;
+    skos:definition "Indicates the entity or process that manages the deduction of loan payments from an insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:AdministrativeCharge ;
+    skos:altLabel "triggers the condition under which loan deductions occur"@en ;
+    skos:altLabel "determines the effective timeline for applying loan deductions"@en .
+
+### Property: ins:mayAuthorizeClaimActions
+ins:mayAuthorizeClaimActions
+    a owl:ObjectProperty ;
+    rdfs:label "May Authorize Actions Related To The Claim But Does Not Affect The Deduction Rule"@en ;
+    rdfs:comment "Indicates that a party may authorize actions related to a claim, without affecting the deduction rules applied to the claim. Assigned domain=Role, range=Action; This property describes a role's authority to authorize cla…"@en ;
+    skos:definition "Indicates that a party may authorize actions related to a claim, without affecting the deduction rules applied to the claim."@en ;
+    rdfs:domain ins:Role ;
+    rdfs:range ins:Action .
+
+### Property: ins:mayInitiateAssignmentWithoutCompanyValidation
+ins:mayInitiateAssignmentWithoutCompanyValidation
+    a owl:ObjectProperty ;
+    rdfs:label "May Initiate Assignment Without Company Validation"@en ;
+    rdfs:comment "Indicates that the insured party has the right to initiate an assignment of the insurance contract without requiring validation or approval from the insurance company. Assigned domain=Person, range=Right; This property d…"@en ;
+    skos:definition "Indicates that the insured party has the right to initiate an assignment of the insurance contract without requiring validation or approval from the insurance company."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Right ;
+    skos:altLabel "may exercise assignment rights without company guarantee"@en .
+
+### Property: ins:missedPaymentTriggers
+ins:missedPaymentTriggers
+    a owl:ObjectProperty ;
+    rdfs:label "Missed Payment Triggers"@en ;
+    rdfs:comment "Indicates that a missed payment leads to a specific consequence or action within the insurance policy. Assigned domain=Policy, range=Policy; The property links a missed payment to a consequence, such as policy lapse. The…"@en ;
+    skos:definition "Indicates that a missed payment leads to a specific consequence or action within the insurance policy."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "follows missed premium"@en ;
+    skos:altLabel "enforces policy lapse upon non payment"@en .
+
+### Property: ins:modifies
+ins:modifies
+    a owl:ObjectProperty ;
+    rdfs:label "Cannot Be Altered By Agent"@en ;
+    rdfs:comment "Indicates that one contract clause or provision alters the terms of another clause or the overall policy. Assigned domain=Clause, range=ContractualProvision; The property 'modifies' indicates that one clause or provision…"@en ;
+    skos:definition "Indicates that one contract clause or provision alters the terms of another clause or the overall policy."@en ;
+    rdfs:domain ins:Clause ;
+    rdfs:range ins:ContractualProvision ;
+    skos:altLabel "requires written authorization for alteration"@en .
+
+### Property: ins:organizationStatus
+ins:organizationStatus
+    a owl:DatatypeProperty ;
+    rdfs:label "Organization Status"@en ;
+    rdfs:comment "Represents the current status of an organization within an insurance contract, such as active, inactive, or suspended. Assigned domain=CorporateEntity, range=xsd:string; The property describes the status of an organizati…"@en ;
+    skos:definition "Represents the current status of an organization within an insurance contract, such as active, inactive, or suspended."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range xsd:string .
+
+### Property: ins:pays
+ins:pays
+    a owl:ObjectProperty ;
+    rdfs:label "Enables Payout"@en ;
+    rdfs:comment "Indicates the entity that makes a payment in the context of an insurance contract. Assigned domain=Person, range=Period; The entity making a payment is typically the policyholder or another party responsible for premium…"@en ;
+    skos:definition "Indicates the entity that makes a payment in the context of an insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Period ;
+    skos:altLabel "has payment method"@en .
+
+### Property: ins:policyOwnerChoosesPaymentMode
+ins:policyOwnerChoosesPaymentMode
+    a owl:ObjectProperty ;
+    rdfs:label "Policy Owner Chooses Payment Mode"@en ;
+    rdfs:comment "Indicates the action where the policy owner selects the payment mode for the insurance policy. Assigned domain=Person, range=Policy; This property describes the action of the policy owner selecting the payment mode. The…"@en ;
+    skos:definition "Indicates the action where the policy owner selects the payment mode for the insurance policy."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "Company Approves Payment Mode"@en ;
+    skos:altLabel "Change in Payment Method Request"@en .
+
+### Property: ins:potentialReceiverOfAssignmentOutcomeUnderUncertainValidity
+ins:potentialReceiverOfAssignmentOutcomeUnderUncertainValidity
+    a owl:ObjectProperty ;
+    rdfs:label "Potential Receiver Of Assignment Outcome Under Uncertain Validity"@en ;
+    rdfs:comment "A relationship indicating an entity that may receive the outcome of an assignment, where the validity of the assignment is uncertain. Assigned domain=Beneficiary, range=Beneficiary; This property describes an entity that…"@en ;
+    skos:definition "A relationship indicating an entity that may receive the outcome of an assignment, where the validity of the assignment is uncertain."@en ;
+    rdfs:domain ins:Beneficiary ;
+    rdfs:range ins:Beneficiary .
+
+### Property: ins:processesBeneficiaryChange
+ins:processesBeneficiaryChange
+    a owl:ObjectProperty ;
+    rdfs:label "Signs Request For Change Of Beneficiary"@en ;
+    rdfs:comment "Indicates the entity that processes a request to change the beneficiary in an insurance contract. Assigned domain=PolicyOwnerRights, range=Right; The property identifies the entity responsible for processing beneficiary…"@en ;
+    skos:definition "Indicates the entity that processes a request to change the beneficiary in an insurance contract."@en ;
+    rdfs:domain ins:PolicyOwnerRights ;
+    rdfs:range ins:Right ;
+    skos:altLabel "processes beneficiary change"@en ;
+    skos:altLabel "is required to exercise change beneficiary right"@en .
+
+### Property: ins:providesBenefitWhenDiagnosedWithTerminalIllness
+ins:providesBenefitWhenDiagnosedWithTerminalIllness
+    a owl:ObjectProperty ;
+    rdfs:label "Provides Benefit When Diagnosed With Terminal Illness"@en ;
+    rdfs:comment "Indicates that a policy provides a benefit upon diagnosis of a terminal illness. Assigned domain=Policy, range=LifeInsuranceRider; This property links a policy to the benefit provided upon terminal illness diagnosis, whi…"@en ;
+    skos:definition "Indicates that a policy provides a benefit upon diagnosis of a terminal illness."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:LifeInsuranceRider ;
+    skos:altLabel "evaluates eligibility for accelerated death benefit rider based on terminal illness diagnosis"@en ;
+    skos:altLabel "has diagnosed terminal illness with life expectancy ≤ 12 months"@en .
+
+### Property: ins:receives
+ins:receives
+    a owl:ObjectProperty ;
+    rdfs:label "Recipient Of"@en ;
+    rdfs:comment "Indicates that one entity receives something (e.g., a benefit, information, or request) from another entity in the context of an insurance contract. Assigned domain=Beneficiary, range=DeathBenefit; The property indicates…"@en ;
+    skos:definition "Indicates that one entity receives something (e.g., a benefit, information, or request) from another entity in the context of an insurance contract."@en ;
+    rdfs:domain ins:Beneficiary ;
+    rdfs:range ins:DeathBenefit ;
+    skos:altLabel "receives information from"@en .
+
+### Property: ins:reducedByAcceleratedPayment
+ins:reducedByAcceleratedPayment
+    a owl:ObjectProperty ;
+    rdfs:label "Reduced By Accelerated Payment"@en ;
+    rdfs:comment "Indicates that a policy's value or benefit is reduced as a result of an accelerated payment. Assigned domain=DeathBenefit, range=BenefitLimit; The property indicates that a benefit or value is diminished due to an accele…"@en ;
+    skos:definition "Indicates that a policy's value or benefit is reduced as a result of an accelerated payment."@en ;
+    rdfs:domain ins:DeathBenefit ;
+    rdfs:range ins:BenefitLimit ;
+    skos:altLabel "has accelerated benefit payment limit"@en ;
+    skos:altLabel "causes exclusion of accelerated benefit"@en .
+
+### Property: ins:reinstatementWindow
+ins:reinstatementWindow
+    a owl:DatatypeProperty ;
+    rdfs:label "Policy Reinstatement Window"@en ;
+    rdfs:comment "Specifies the time period during which a lapsed insurance policy can be reinstated, typically measured in days or months. Assigned domain=Policy, range=xsd:duration; The reinstatement window refers to the duration during…"@en ;
+    skos:definition "Specifies the time period during which a lapsed insurance policy can be reinstated, typically measured in days or months."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:duration ;
+    skos:altLabel "Reinstatement Period Duration"@en ;
+    skos:altLabel "Reinstatement Window Duration"@en .
+
+### Property: ins:represents
+ins:represents
+    a owl:ObjectProperty ;
+    rdfs:label "Eleanor Raynor Represents Company"@en ;
+    rdfs:comment "Indicates that one entity (e.g., an individual) acts on behalf of another entity (e.g., a company) in the context of an insurance contract. Assigned domain=Person, range=CorporateEntity; The property 'represents' denotes…"@en ;
+    skos:definition "Indicates that one entity (e.g., an individual) acts on behalf of another entity (e.g., a company) in the context of an insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:CorporateEntity .
+
+### Property: ins:requestBeneficiaryInfo
+ins:requestBeneficiaryInfo
+    a owl:ObjectProperty ;
+    rdfs:label "Request Beneficiary Info"@en ;
+    rdfs:comment "Indicates a request for information about the beneficiary in an insurance contract. Assigned domain=Person, range=Beneficiary; This property denotes a request for beneficiary-related information. The requester is typical…"@en ;
+    skos:definition "Indicates a request for information about the beneficiary in an insurance contract."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:Beneficiary .
+
+### Property: ins:requiresProofOfDeath
+ins:requiresProofOfDeath
+    a owl:ObjectProperty ;
+    rdfs:label "Requires Proof Of Death"@en ;
+    rdfs:comment "Indicates that a party or condition requires the submission of proof of death as part of a claim or contractual obligation. Assigned domain=Person, range=ProofOfDeath; The property indicates that a party requires proof o…"@en ;
+    skos:definition "Indicates that a party or condition requires the submission of proof of death as part of a claim or contractual obligation."@en ;
+    rdfs:domain ins:Person ;
+    rdfs:range ins:ProofOfDeath ;
+    skos:altLabel "subject of proof of death"@en ;
+    skos:altLabel "submits proof of death for"@en .
+
+### Property: ins:startDateOfExaminationPeriod
+ins:startDateOfExaminationPeriod
+    a owl:DatatypeProperty ;
+    rdfs:label "Start Date Of Examination Period"@en ;
+    rdfs:comment "Specifies the start date of the examination period in an insurance contract. Assigned domain=Policy, range=xsd:date; The examination period is a time-bound contractual feature typically associated with a policy. The prop…"@en ;
+    skos:definition "Specifies the start date of the examination period in an insurance contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:date ;
+    skos:altLabel "duration of examination period"@en .
+
+### Property: ins:terminates
+ins:terminates
+    a owl:ObjectProperty ;
+    rdfs:label "Prevents Payment"@en ;
+    rdfs:comment "Indicates that one entity causes the termination of another entity, such as a policy being terminated by an action or condition. Assigned domain=CorporateEntity, range=Policy; The property indicates that one entity cause…"@en ;
+    skos:definition "Indicates that one entity causes the termination of another entity, such as a policy being terminated by an action or condition."@en ;
+    rdfs:domain ins:CorporateEntity ;
+    rdfs:range ins:Policy ;
+    skos:altLabel "has payment obligation to avoid coverage termination"@en .
+
+### Property: ins:triggersExclusion
+ins:triggersExclusion
+    a owl:ObjectProperty ;
+    rdfs:label "Triggers Exclusion"@en ;
+    rdfs:comment "Indicates that a specific event or condition leads to the activation of an exclusion clause in an insurance contract. Assigned domain=Clause, range=Exclusion; The property indicates that an event or condition activates a…"@en ;
+    skos:definition "Indicates that a specific event or condition leads to the activation of an exclusion clause in an insurance contract."@en ;
+    rdfs:domain ins:Clause ;
+    rdfs:range ins:Exclusion ;
+    skos:altLabel "triggers response"@en ;
+    skos:altLabel "triggered by"@en .
+
+### Property: ins:triggersIncontestabilityPeriodAfterTwoYears
+ins:triggersIncontestabilityPeriodAfterTwoYears
+    a owl:ObjectProperty ;
+    rdfs:label "Must Provide Evidence Of Insurability"@en ;
+    rdfs:comment "Indicates that a specific event or condition initiates the incontestability period that begins after two years from the effective date of the insurance contract. Assigned domain=Policy, range=Period; This property is tri…"@en ;
+    skos:definition "Indicates that a specific event or condition initiates the incontestability period that begins after two years from the effective date of the insurance contract."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range ins:Period ;
+    skos:altLabel "conditional on insurability"@en ;
+    skos:altLabel "restricted by incontestability period duration"@en .
+
+### Property: ins:triggersLienDeductionAdjustment
+ins:triggersLienDeductionAdjustment
+    a owl:ObjectProperty ;
+    rdfs:label "Administers Lien Deduction Procedure Upon Acceleration"@en ;
+    rdfs:comment "Indicates the event or condition that initiates the adjustment of the death benefit, including the deduction of liens, as specified in the insurance contract. Assigned domain=BenefitClaim, range=DeathBenefit; This proper…"@en ;
+    skos:definition "Indicates the event or condition that initiates the adjustment of the death benefit, including the deduction of liens, as specified in the insurance contract."@en ;
+    rdfs:domain ins:BenefitClaim ;
+    rdfs:range ins:DeathBenefit ;
+    skos:altLabel "triggers adjustment of death benefit including lien deduction"@en ;
+    skos:altLabel "determines timing of lien deduction in adjusted death benefit calculation"@en .
+
+### Property: ins:voidFromAbInitioDate
+ins:voidFromAbInitioDate
+    a owl:DatatypeProperty ;
+    rdfs:label "Date From Which Policy Is Void Ab Initio"@en ;
+    rdfs:comment "Specifies the date from which the insurance policy is void ab initio, meaning it is considered invalid from its inception. Assigned domain=Policy, range=xsd:date; This property indicates the date from which a policy is v…"@en ;
+    skos:definition "Specifies the date from which the insurance policy is void ab initio, meaning it is considered invalid from its inception."@en ;
+    rdfs:domain ins:Policy ;
+    rdfs:range xsd:date .
+
+### =========================================================
+###  TBox Restrictions & Disjointness Axioms
+### =========================================================
+
+### Axiom: AX_0000  [owl:someValuesFrom]
+# Policy reinstatementWindow some Action
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:reinstatementWindow ;
+        owl:someValuesFrom ins:Action
+    ] ;
+    rdfs:comment "Policy must meet conditions to be reinstated after lapse. Induced via Stage 6 restriction induction; Evidence shows reinstatement requires specific actions like providing evidence of insurability and paying past due prem…"@en .
+
+### Axiom: AX_0001  [owl:someValuesFrom]
+# Person defaultPayoutMethod some Right
+ins:Person
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:defaultPayoutMethod ;
+        owl:someValuesFrom ins:Right
+    ] ;
+    rdfs:comment "Default owner is designated when no explicit owner is named. Induced via Stage 6 restriction induction; The policy states that if no owner is named, the insured is deemed the owner, implying a default right tied to the p…"@en .
+
+### Axiom: AX_0002  [owl:someValuesFrom]
+# Action requiresProofOfDeath some Policy
+ins:Action
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:requiresProofOfDeath ;
+        owl:someValuesFrom ins:Policy
+    ] ;
+    rdfs:comment "Policy changes require written authorization from the policyholder. Induced via Stage 6 restriction induction; Evidence indicates that changes require written authorization from the company officer, linking the action to…"@en .
+
+### Axiom: AX_0003  [owl:someValuesFrom]
+# Policy policyOwnerChoosesPaymentMode some PolicyLapse
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:policyOwnerChoosesPaymentMode ;
+        owl:someValuesFrom ins:PolicyLapse
+    ] ;
+    rdfs:comment "Policy lapses if premium is not paid by due date. Induced via Stage 6 restriction induction; The policy lapses when a premium is not paid by the end of the grace period, directly linking non-payment to the lapse event; s…"@en .
+
+### Axiom: AX_0004  [owl:someValuesFrom]
+# Policy adjustsInsuranceAmountBasedOnCorrectedAge some Amount
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:adjustsInsuranceAmountBasedOnCorrectedAge ;
+        owl:someValuesFrom ins:Amount
+    ] ;
+    rdfs:comment "Adjustments apply for inaccurate age or gender reporting. Induced via Stage 6 restriction induction; Evidence specifies that insurance amount is adjusted based on correct age or gender, indicating a direct relationship b…"@en .
+
+### Axiom: AX_0005  [owl:someValuesFrom]
+# Policy BenefitsConditionalOnContractTerms some BenefitEligibilityCondition
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:BenefitsConditionalOnContractTerms ;
+        owl:someValuesFrom ins:BenefitEligibilityCondition
+    ] ;
+    rdfs:comment "Benefits are only available if contractual terms are met. Induced via Stage 6 restriction induction; All benefits are subject to contract terms and exclusions, indicating that eligibility depends on fulfilling defined co…"@en .
+
+### Axiom: AX_0006  [owl:someValuesFrom]
+# Policy triggersIncontestabilityPeriodAfterTwoYears some Clause
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:triggersIncontestabilityPeriodAfterTwoYears ;
+        owl:someValuesFrom ins:Clause
+    ] ;
+    rdfs:comment "Policy cannot be contested after two years from issuance. Induced via Stage 6 restriction induction; The evidence confirms that the incontestability period begins after two years from the effective date, and this conditi…"@en .
+
+### Axiom: AX_0007  [owl:someValuesFrom]
+# Person isSubjectToFraudulentInsuranceAct some Fraud
+ins:Person
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:isSubjectToFraudulentInsuranceAct ;
+        owl:someValuesFrom ins:Fraud
+    ] ;
+    rdfs:comment "Policyholder is prohibited from concealing material facts. Induced via Stage 6 restriction induction; The evidence shows that concealing material facts with intent constitutes fraud. The property captures this legal proh…"@en .
+
+### Axiom: AX_0008  [owl:maxCardinality]
+# LifeInsuranceCoverage hasAcceleratedDeathBenefitRider max 1 Amount
+ins:LifeInsuranceCoverage
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:hasAcceleratedDeathBenefitRider ;
+        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+    ] ;
+    rdfs:comment "Accelerated benefit payment is constrained by a specified limit. Induced via Stage 6 restriction induction; The evidence indicates a maximum limit on accelerated benefit payments, implying a cardinality constraint on the…"@en .
+
+### Axiom: AX_0009  [owl:someValuesFrom]
+# Policy hasLevelPremiumGuarantee some PremiumStability
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:hasLevelPremiumGuarantee ;
+        owl:someValuesFrom ins:PremiumStability
+    ] ;
+    rdfs:comment "Premium remains fixed at a guaranteed level throughout the term. Induced via Stage 6 restriction induction; The evidence confirms that premiums are guaranteed to remain level during the term, aligning with the concept of…"@en .
+
+### Axiom: AX_0010  [owl:someValuesFrom]
+# LifeInsuranceCoverage triggersExclusion some Exclusion
+ins:LifeInsuranceCoverage
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:triggersExclusion ;
+        owl:someValuesFrom ins:Exclusion
+    ] ;
+    rdfs:comment "Policyholder excluded from coverage for war-related claims. Induced via Stage 6 restriction induction; The evidence specifies that claims from war-related activities are excluded, and this exclusion is formalized as a cl…"@en .
+
+### Axiom: AX_0011  [owl:someValuesFrom]
+# Policy NoAutomaticPremiumLoan some Right
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:NoAutomaticPremiumLoan ;
+        owl:someValuesFrom ins:Right
+    ] ;
+    rdfs:comment "Prevents automatic premium loan activation under any circumstances. Induced via Stage 6 restriction induction; The evidence states that the policy lacks an automatic premium loan provision, which implies a restriction on…"@en .
+
+### Axiom: AX_0012  [owl:someValuesFrom]
+# Policy TermEndCoverageTermination some CoverageTermination
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:TermEndCoverageTermination ;
+        owl:someValuesFrom ins:CoverageTermination
+    ] ;
+    rdfs:comment "Coverage ends at term expiration unless conversion is elected. Induced via Stage 6 restriction induction; The evidence confirms that coverage termination occurs at term end unless conversion is elected, aligning with the…"@en .
+
+### Axiom: AX_0013  [owl:someValuesFrom]
+# LifeInsuranceCoverage SuicideExclusion some Exclusion
+ins:LifeInsuranceCoverage
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:SuicideExclusion ;
+        owl:someValuesFrom ins:Exclusion
+    ] ;
+    rdfs:comment "Death by suicide within two years excludes claim eligibility. Induced via Stage 6 restriction induction; The property defines a claim exclusion for suicide within two years, consistent with the range Exclusion. The evide…"@en .
+
+### Axiom: AX_0014  [owl:someValuesFrom]
+# Policy RefundEligibilityAfterReturn some RefundEligibility
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:RefundEligibilityAfterReturn ;
+        owl:someValuesFrom ins:RefundEligibility
+    ] ;
+    rdfs:comment "Policyholder is eligible for refund upon return within 20 days. Induced via Stage 6 restriction induction; The evidence shows refund eligibility is triggered by returning the policy within 20 days, directly linking the p…"@en .
+
+### Axiom: AX_0015  [owl:someValuesFrom]
+# Policy EndorsementOnlyAccess some PolicyEndorsement
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:EndorsementOnlyAccess ;
+        owl:someValuesFrom ins:PolicyEndorsement
+    ] ;
+    rdfs:comment "Access to APL is permitted only via endorsement. Induced via Stage 6 restriction induction; The evidence indicates that APL access is restricted to endorsement, supporting a someValuesFrom restriction. The low confidence…"@en .
+
+### Axiom: AX_0016  [owl:someValuesFrom]
+# GracePeriod GracePeriodBenefitAdjustment some DeathBenefit
+ins:GracePeriod
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:GracePeriodBenefitAdjustment ;
+        owl:someValuesFrom ins:DeathBenefit
+    ] ;
+    rdfs:comment "Death benefit may be adjusted during the grace period. Induced via Stage 6 restriction induction; The evidence confirms that the death benefit is adjusted during the grace period due to unpaid premiums, directly linking…"@en .
+
+### Axiom: AX_0017  [owl:someValuesFrom]
+# Action PhysicianCertificationRequirement some MedicalVerification
+ins:Action
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:PhysicianCertificationRequirement ;
+        owl:someValuesFrom ins:MedicalVerification
+    ] ;
+    rdfs:comment "Physician certification is required for benefit eligibility. Induced via Stage 6 restriction induction; The evidence specifies that life expectancy certification must be physician-certified, aligning with MedicalVerifica…"@en .
+
+### Axiom: AX_0018  [owl:someValuesFrom]
+# Policy hasPolicyDefinition some Policy
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:hasPolicyDefinition ;
+        owl:someValuesFrom ins:Policy
+    ] ;
+    rdfs:comment "Policy issuance requires a formal application. Induced via Stage 6 restriction induction; The evidence indicates policy issuance depends on a formal application. The property 'hasPolicyDefinition' is inferred as the clos…"@en .
+
+### Axiom: AX_0019  [owl:someValuesFrom]
+# AdministrativeCharge administersDeathBenefitTerms some DeathBenefit
+ins:AdministrativeCharge
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:administersDeathBenefitTerms ;
+        owl:someValuesFrom ins:DeathBenefit
+    ] ;
+    rdfs:comment "Administrative charges reduce the death benefit. Induced via Stage 6 restriction induction; The property 'administersDeathBenefitTerms' is selected as it best captures the effect of administrative charges on death benefi…"@en .
+
+### Axiom: AX_0020  [owl:disjointWith]
+# Policy DisjointWith Beneficiary
+ins:Policy
+    owl:disjointWith ins:Beneficiary ;
+    rdfs:comment "Death benefit payout priority is determined by rules. Induced via Stage 6 restriction induction; The evidence shows distinct payout paths for beneficiaries, policy owners, and estates. The classes 'Beneficiary' and 'Poli…"@en .
+
+### Axiom: AX_0021  [owl:someValuesFrom]
+# Person isSubjectToFraudulentInsuranceAct some Exclusion
+ins:Person
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:isSubjectToFraudulentInsuranceAct ;
+        owl:someValuesFrom ins:Exclusion
+    ] ;
+    rdfs:comment "A person is excluded if they participated in a felony. Induced via Stage 6 restriction induction; The property 'isSubjectToFraudulentInsuranceAct' is the closest match to capture felony-related exclusion. The evidence co…"@en .
+
+### Axiom: AX_0022  [owl:someValuesFrom]
+# Action requiresProofOfDeath some DocumentAccess
+ins:Action
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:requiresProofOfDeath ;
+        owl:someValuesFrom ins:DocumentAccess
+    ] ;
+    rdfs:comment "Documentation is required before acceleration. Induced via Stage 6 restriction induction; The evidence specifies that medical documentation must accompany the request. The property 'requiresProofOfDeath' is used to link…"@en .
+
+### Axiom: AX_0023  [owl:someValuesFrom]
+# Policy triggersLienDeductionAdjustment some PolicyLoanDeduction
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:triggersLienDeductionAdjustment ;
+        owl:someValuesFrom ins:PolicyLoanDeduction
+    ] ;
+    rdfs:comment "Loans are deducted only after acceleration. Induced via Stage 6 restriction induction; The evidence states that outstanding loans and liens are deducted after acceleration. The property 'triggersLienDeductionAdjustment'…"@en .
+
+### Axiom: AX_0024  [owl:someValuesFrom]
+# Right hasRightToExamineDuration some Period
+ins:Right
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:RightToExamineDuration ;
+        owl:someValuesFrom ins:Period
+    ] ;
+    rdfs:comment "Policyholder has right to examine policy for specified duration. Induced via Stage 6 restriction induction; The right to examine is associated with a 20-day period from receipt, making 'Period' the appropriate range. The…"@en .
+
+### Axiom: AX_0025  [owl:someValuesFrom]
+# Policy hasPolicyComponentsDefinition some Policy
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:PolicyComponentsDefinition ;
+        owl:someValuesFrom ins:Policy
+    ] ;
+    rdfs:comment "Defines the components that constitute a policy. Induced via Stage 6 restriction induction; The policy includes application, schedule, riders, and endorsements, suggesting a structural relationship. Although 'Policy' is…"@en .
+
+### Axiom: AX_0026  [owl:someValuesFrom]
+# AuthorizedRepresentative hasAgentAuthorityLimitation some Right
+ins:AuthorizedRepresentative
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:hasAgentAuthorityLimitation ;
+        owl:someValuesFrom ins:Right
+    ] ;
+    rdfs:comment "Agent's authority is restricted to specific actions or scopes. Induced via Stage 6 restriction induction; The evidence shows agents cannot modify or waive policy provisions, indicating limitations on their rights. Thus,…"@en .
+
+### Axiom: AX_0027  [owl:someValuesFrom]
+# InsuredPerson hasTerminalIllnessEligibility some BenefitEligibilityCondition
+ins:InsuredPerson
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:TerminalIllnessEligibility ;
+        owl:someValuesFrom ins:BenefitEligibilityCondition
+    ] ;
+    rdfs:comment "Policyholder must meet medical criteria for terminal illness benefits. Induced via Stage 6 restriction induction; The insured must be diagnosed with a terminal illness and have a life expectancy of 12 months or less, whi…"@en .
+
+### Axiom: AX_0028  [owl:maxCardinality]
+# Policy hasMaxPayoutLimit max 1 Amount
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:MaxPayoutLimit ;
+        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+    ] ;
+    rdfs:comment "Maximum amount payable under a policy is constrained. Induced via Stage 6 restriction induction; The evidence specifies a 50% cap on the accelerated death benefit, indicating a maximum limit. The cardinality is 1 because…"@en .
+
+### Axiom: AX_0029  [owl:someValuesFrom]
+# BeneficiaryChangeInstrument hasBeneficiaryChangeEffectiveImmediately some EffectiveDate
+ins:BeneficiaryChangeInstrument
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:BeneficiaryChangeEffectiveImmediately ;
+        owl:someValuesFrom ins:EffectiveDate
+    ] ;
+    rdfs:comment "Beneficiary change takes effect immediately upon submission. Induced via Stage 6 restriction induction; The change takes effect regardless of the insured's survival status, indicating a specific effective date. The prope…"@en .
+
+### Axiom: AX_0030  [owl:someValuesFrom]
+# Policy terminates some CoverageTermination
+ins:Policy
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ins:terminates ;
+        owl:someValuesFrom ins:CoverageTermination
+    ] ;
+    rdfs:comment "Policy cancellation triggers coverage termination. Induced via Stage 6 restriction induction; The evidence confirms that cancellation directly causes coverage termination. The property 'terminates' correctly captures thi…"@en .

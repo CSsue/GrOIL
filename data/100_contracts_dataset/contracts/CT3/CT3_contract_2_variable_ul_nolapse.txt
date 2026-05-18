@@ -1,0 +1,280 @@
+═══════════════════════════════════════════════════════════════════
+         VARIABLE UNIVERSAL LIFE INSURANCE POLICY
+         Meridian Life Insurance Company of New York
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: MLY-VUL-24-11047
+Issue Date: January 15, 2024
+
+SECURITIES DISCLOSURE: This policy is a variable life insurance 
+contract. Premiums allocated to investment Sub-Accounts are 
+subject to market risk and investment loss, including possible 
+loss of principal. This policy is registered under the Securities 
+Act of 1933. It is offered only by prospectus. The prospectus 
+contains complete information on investment objectives, risks, 
+charges, and expenses. Read it carefully before investing.
+
+FINRA/SIPC: This contract is not a deposit, is not FDIC-insured, 
+and is not guaranteed by any bank or government agency.
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Diana Louise Ferrara
+Insured: Diana Louise Ferrara
+Gender: Female | DOB: 03/04/1988 | Age: 35
+
+Selling Representative: James R. Hollis, CFP®
+Rep FINRA CRD: 2219847
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $750,000
+Planned Premium: $550/month
+Minimum Premium: $100/month
+No-Lapse Guarantee Premium: $310/month
+Death Benefit Option: Level (Option A)
+
+NO-LAPSE GUARANTEE: If cumulative premiums paid meet or exceed 
+the cumulative No-Lapse Guarantee Premium by each Monthly 
+Deduction Date, this policy will not lapse regardless of 
+Account Value, through the No-Lapse Guarantee Period.
+
+No-Lapse Guarantee Period: To age 65 of Insured.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Anthony Joseph Ferrara (Husband) - 100%
+Contingent: The Ferrara Family Trust dated 09/12/2020 - 100%
+            (EIN: 87-3301142)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Separate Account" means Meridian Variable Life Account B, 
+    a segregated asset account of Meridian Life Insurance 
+    Company of New York, insulated from the company's 
+    general account creditors.
+
+1.2 "Sub-Account" means a subdivision of the Separate Account 
+    investing in shares of a designated underlying mutual fund.
+
+1.3 "Account Value" means the sum of all Sub-Account values 
+    plus any Fixed Account balance.
+
+1.4 "Net Investment Factor" means the ratio used to calculate 
+    daily Sub-Account unit values, reflecting investment 
+    performance and mortality and expense charges.
+
+1.5 "No-Lapse Guarantee" (NLG) means the contractual 
+    guarantee that the policy will not lapse provided 
+    cumulative NLG Premiums are satisfied.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS & ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums are subject to:
+    Minimum per payment: $100
+    Annual maximum: $150,000 (IRC §7702 compliance)
+
+2.2 A premium expense charge of 4.5% is deducted from each 
+    premium before allocation.
+
+2.3 Owner designates premium allocation among Sub-Accounts 
+    and Fixed Account on the Policy Data Page. Allocation 
+    changes are permitted twice per policy year at no charge; 
+    each additional change: $25.
+
+2.4 If No-Lapse Guarantee Premium is underpaid in any month, 
+    the NLG is suspended. The NLG is reinstated when 
+    cumulative premiums paid return to the cumulative NLG 
+    Premium schedule.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - INVESTMENT SUB-ACCOUNTS
+═══════════════════════════════════════════════════════════════════
+3.1 The following Sub-Accounts are available. Each invests 
+    exclusively in the named underlying portfolio:
+
+    EQUITY SUB-ACCOUNTS
+    (a) MLY Growth Portfolio (Large Cap Growth)
+    (b) MLY S&P 500 Index Portfolio
+    (c) MLY International Equity Portfolio
+    (d) MLY Small-Mid Cap Portfolio
+
+    FIXED INCOME SUB-ACCOUNTS
+    (e) MLY Bond Income Portfolio
+    (f) MLY U.S. Government Portfolio
+
+    BALANCED/OTHER
+    (g) MLY Managed Volatility Portfolio
+    (h) MLY Asset Allocation Portfolio
+
+    FIXED ACCOUNT
+    (i) Guaranteed minimum 2.00% per annum; current 3.75%
+
+3.2 Sub-Account values fluctuate daily with market performance. 
+    We do not guarantee any rate of return on Sub-Accounts.
+
+3.3 We reserve the right to add, remove, or substitute 
+    Sub-Accounts upon 30 days' written notice to Owner, 
+    subject to regulatory approval.
+
+3.4 Underlying fund prospectuses are available at 
+    www.meridianlifeny.com/vul or upon written request.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - CHARGES & DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+4.1 SEPARATE ACCOUNT CHARGES (deducted daily from Sub-Accounts):
+    Mortality & Expense Risk Charge: 0.60% per annum
+    Administrative Charge: 0.15% per annum
+    (Underlying fund expense ratios charged separately 
+     within each portfolio — see fund prospectus)
+
+4.2 MONTHLY POLICY CHARGES (deducted on the 15th of each month):
+    (a) Cost of Insurance charge (see COI Schedule)
+    (b) Policy administration fee: $10.00/month
+    (c) Outstanding loan interest not yet paid
+
+4.3 COI is calculated on the net amount at risk using 
+    2017 CSO Aggregate Unisex Table, nonsmoker rates.
+
+4.4 No No-Lapse Guarantee charge is assessed separately; 
+    it is embedded in the mortality and expense charge.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION A (Level) — Currently Selected
+    Death Benefit = greater of Specified Amount or the 
+    IRC §7702 corridor percentage of Account Value
+
+5.2 OPTION B (Increasing) — Available upon request
+    Death Benefit = Specified Amount + Account Value
+
+5.3 Death proceeds are paid from the general account. 
+    They are not subject to market risk after the date 
+    of death.
+
+5.4 IF NO-LAPSE GUARANTEE IS ACTIVE: Death benefit equals 
+    at minimum the Specified Amount regardless of Account 
+    Value, for the duration of the NLG Period.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - TRANSFERS AMONG SUB-ACCOUNTS
+═══════════════════════════════════════════════════════════════════
+6.1 The Owner may transfer Account Value among Sub-Accounts 
+    and the Fixed Account at any time.
+
+6.2 Transfers from the Fixed Account: maximum 25% of the 
+    Fixed Account balance per policy year.
+
+6.3 First 12 transfers per year: free.
+    Each additional transfer: $25.
+
+6.4 Market timing restrictions: We reserve the right to 
+    refuse transfer requests that we determine, in our 
+    sole discretion, constitute disruptive short-term 
+    trading that harms other policyholders.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 Minimum withdrawal: $500
+    Maximum: Account Value less $500 reserve and less 
+    any applicable surrender charge
+
+7.2 Withdrawals are taken pro-rata from all Sub-Accounts 
+    and Fixed Account unless Owner specifies otherwise.
+
+7.3 Withdrawal fee: $25 per withdrawal in years 1-10; 
+    no fee thereafter.
+
+7.4 WARNING: Withdrawals during the NLG period may reduce 
+    the NLG Premium required to maintain the guarantee. 
+    The NLG is permanently reduced, not suspended, by 
+    withdrawals.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+8.1 Maximum loan: 90% of Account Value excluding amounts in 
+    Sub-Accounts pledged as collateral
+
+8.2 Loaned amounts are transferred to the Fixed Account 
+    as collateral and credited at 2.00% per annum.
+
+8.3 Loan interest rate: 3.50% per annum, fixed.
+
+8.4 Net loan cost: 1.50% (interest charged less interest 
+    credited on collateral).
+
+8.5 If outstanding loans reduce Account Value to zero, 
+    the policy lapses (NLG does not protect against 
+    loan-induced lapse).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+9.1 Cash Surrender Value = Account Value - Surrender Charge - 
+    Outstanding Loans
+
+9.2 Surrender Charge Schedule (applied to each premium 
+    within 10 years of payment):
+    Months 1-12: 7% of premium | Months 13-24: 6%
+    Months 25-36: 5% | Months 37-48: 4%
+    Months 49-60: 3% | Months 61-72: 2%
+    Months 73-84: 1% | Months 85-120: 0.5%
+    After 120 months from each premium payment: 0%
+
+9.3 The NLG is void upon full surrender.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE EXCLUSION: Death by suicide within 24 months of 
+     issue: proceeds limited to Account Value (including 
+     any Sub-Account gains) as of date of death, without 
+     deduction for surrender charges.
+
+10.2 CONTESTABILITY: We may contest within 2 years of the 
+     issue date for material misrepresentation.
+
+10.3 RIGHT TO EXAMINE: Owner has 30 days from receipt to 
+     return this policy for a full refund of premiums paid.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - LAPSE, GRACE PERIOD & REINSTATEMENT
+═══════════════════════════════════════════════════════════════════
+11.1 If Account Value is insufficient to pay monthly charges 
+     and the NLG is not active, a 61-day grace period begins. 
+     Notice is sent to the Owner's address of record.
+
+11.2 If the NLG is active, the policy will not enter grace 
+     period solely because Account Value is insufficient, 
+     so long as cumulative NLG Premiums are current.
+
+11.3 Reinstatement within 3 years of lapse requires evidence 
+     of insurability and repayment of all outstanding charges.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Albany, New York
+
+[Signature]
+President
+Meridian Life Insurance Company of New York
+
+[Signature]
+Secretary
+
+Date: January 15, 2024
+
+Meridian Life Insurance Company of New York is licensed in all 
+50 states. Registration Statement on Form S-6 filed with the 
+Securities and Exchange Commission. Policy form MLY-VUL-2024.
+
+═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,608 @@
+[
+  {
+    "n_docs": 0,
+    "classes": 0,
+    "properties": 0,
+    "restrictions": 0
+  },
+  {
+    "n_docs": 1,
+    "classes": 577,
+    "properties": 366,
+    "restrictions": 50
+  },
+  {
+    "n_docs": 2,
+    "classes": 735,
+    "properties": 457,
+    "restrictions": 73
+  },
+  {
+    "n_docs": 3,
+    "classes": 886,
+    "properties": 579,
+    "restrictions": 92
+  },
+  {
+    "n_docs": 4,
+    "classes": 1032,
+    "properties": 658,
+    "restrictions": 114
+  },
+  {
+    "n_docs": 5,
+    "classes": 1155,
+    "properties": 735,
+    "restrictions": 125
+  },
+  {
+    "n_docs": 6,
+    "classes": 1273,
+    "properties": 811,
+    "restrictions": 136
+  },
+  {
+    "n_docs": 7,
+    "classes": 1408,
+    "properties": 891,
+    "restrictions": 155
+  },
+  {
+    "n_docs": 8,
+    "classes": 1496,
+    "properties": 948,
+    "restrictions": 181
+  },
+  {
+    "n_docs": 9,
+    "classes": 1647,
+    "properties": 1045,
+    "restrictions": 206
+  },
+  {
+    "n_docs": 10,
+    "classes": 1717,
+    "properties": 1092,
+    "restrictions": 219
+  },
+  {
+    "n_docs": 11,
+    "classes": 1785,
+    "properties": 1127,
+    "restrictions": 229
+  },
+  {
+    "n_docs": 12,
+    "classes": 1814,
+    "properties": 1150,
+    "restrictions": 240
+  },
+  {
+    "n_docs": 13,
+    "classes": 1842,
+    "properties": 1170,
+    "restrictions": 246
+  },
+  {
+    "n_docs": 14,
+    "classes": 1869,
+    "properties": 1184,
+    "restrictions": 250
+  },
+  {
+    "n_docs": 15,
+    "classes": 1903,
+    "properties": 1201,
+    "restrictions": 252
+  },
+  {
+    "n_docs": 16,
+    "classes": 1935,
+    "properties": 1231,
+    "restrictions": 257
+  },
+  {
+    "n_docs": 17,
+    "classes": 1960,
+    "properties": 1247,
+    "restrictions": 262
+  },
+  {
+    "n_docs": 18,
+    "classes": 1991,
+    "properties": 1272,
+    "restrictions": 271
+  },
+  {
+    "n_docs": 19,
+    "classes": 2029,
+    "properties": 1284,
+    "restrictions": 276
+  },
+  {
+    "n_docs": 20,
+    "classes": 2060,
+    "properties": 1298,
+    "restrictions": 279
+  },
+  {
+    "n_docs": 21,
+    "classes": 2078,
+    "properties": 1307,
+    "restrictions": 283
+  },
+  {
+    "n_docs": 22,
+    "classes": 2094,
+    "properties": 1322,
+    "restrictions": 283
+  },
+  {
+    "n_docs": 23,
+    "classes": 2107,
+    "properties": 1333,
+    "restrictions": 283
+  },
+  {
+    "n_docs": 24,
+    "classes": 2121,
+    "properties": 1341,
+    "restrictions": 286
+  },
+  {
+    "n_docs": 25,
+    "classes": 2137,
+    "properties": 1346,
+    "restrictions": 288
+  },
+  {
+    "n_docs": 26,
+    "classes": 2145,
+    "properties": 1356,
+    "restrictions": 288
+  },
+  {
+    "n_docs": 27,
+    "classes": 2152,
+    "properties": 1368,
+    "restrictions": 290
+  },
+  {
+    "n_docs": 28,
+    "classes": 2162,
+    "properties": 1375,
+    "restrictions": 291
+  },
+  {
+    "n_docs": 29,
+    "classes": 2178,
+    "properties": 1379,
+    "restrictions": 292
+  },
+  {
+    "n_docs": 30,
+    "classes": 2261,
+    "properties": 1420,
+    "restrictions": 309
+  },
+  {
+    "n_docs": 31,
+    "classes": 2314,
+    "properties": 1448,
+    "restrictions": 315
+  },
+  {
+    "n_docs": 32,
+    "classes": 2371,
+    "properties": 1492,
+    "restrictions": 319
+  },
+  {
+    "n_docs": 33,
+    "classes": 2415,
+    "properties": 1509,
+    "restrictions": 327
+  },
+  {
+    "n_docs": 34,
+    "classes": 2475,
+    "properties": 1539,
+    "restrictions": 335
+  },
+  {
+    "n_docs": 35,
+    "classes": 2526,
+    "properties": 1564,
+    "restrictions": 339
+  },
+  {
+    "n_docs": 36,
+    "classes": 2571,
+    "properties": 1578,
+    "restrictions": 342
+  },
+  {
+    "n_docs": 37,
+    "classes": 2618,
+    "properties": 1604,
+    "restrictions": 351
+  },
+  {
+    "n_docs": 38,
+    "classes": 2654,
+    "properties": 1623,
+    "restrictions": 353
+  },
+  {
+    "n_docs": 39,
+    "classes": 2699,
+    "properties": 1639,
+    "restrictions": 357
+  },
+  {
+    "n_docs": 40,
+    "classes": 2723,
+    "properties": 1648,
+    "restrictions": 359
+  },
+  {
+    "n_docs": 41,
+    "classes": 2739,
+    "properties": 1656,
+    "restrictions": 363
+  },
+  {
+    "n_docs": 42,
+    "classes": 2758,
+    "properties": 1665,
+    "restrictions": 364
+  },
+  {
+    "n_docs": 43,
+    "classes": 2775,
+    "properties": 1671,
+    "restrictions": 365
+  },
+  {
+    "n_docs": 44,
+    "classes": 2809,
+    "properties": 1695,
+    "restrictions": 369
+  },
+  {
+    "n_docs": 45,
+    "classes": 2822,
+    "properties": 1703,
+    "restrictions": 372
+  },
+  {
+    "n_docs": 46,
+    "classes": 2848,
+    "properties": 1717,
+    "restrictions": 376
+  },
+  {
+    "n_docs": 47,
+    "classes": 2860,
+    "properties": 1725,
+    "restrictions": 376
+  },
+  {
+    "n_docs": 48,
+    "classes": 2871,
+    "properties": 1733,
+    "restrictions": 376
+  },
+  {
+    "n_docs": 49,
+    "classes": 2884,
+    "properties": 1746,
+    "restrictions": 376
+  },
+  {
+    "n_docs": 50,
+    "classes": 2909,
+    "properties": 1763,
+    "restrictions": 377
+  },
+  {
+    "n_docs": 51,
+    "classes": 2938,
+    "properties": 1773,
+    "restrictions": 379
+  },
+  {
+    "n_docs": 52,
+    "classes": 2969,
+    "properties": 1789,
+    "restrictions": 387
+  },
+  {
+    "n_docs": 53,
+    "classes": 3002,
+    "properties": 1810,
+    "restrictions": 393
+  },
+  {
+    "n_docs": 54,
+    "classes": 3034,
+    "properties": 1820,
+    "restrictions": 398
+  },
+  {
+    "n_docs": 55,
+    "classes": 3057,
+    "properties": 1833,
+    "restrictions": 401
+  },
+  {
+    "n_docs": 56,
+    "classes": 3077,
+    "properties": 1845,
+    "restrictions": 401
+  },
+  {
+    "n_docs": 57,
+    "classes": 3096,
+    "properties": 1853,
+    "restrictions": 403
+  },
+  {
+    "n_docs": 58,
+    "classes": 3170,
+    "properties": 1888,
+    "restrictions": 409
+  },
+  {
+    "n_docs": 59,
+    "classes": 3182,
+    "properties": 1892,
+    "restrictions": 410
+  },
+  {
+    "n_docs": 60,
+    "classes": 3268,
+    "properties": 1939,
+    "restrictions": 420
+  },
+  {
+    "n_docs": 61,
+    "classes": 3317,
+    "properties": 1963,
+    "restrictions": 432
+  },
+  {
+    "n_docs": 62,
+    "classes": 3364,
+    "properties": 1978,
+    "restrictions": 442
+  },
+  {
+    "n_docs": 63,
+    "classes": 3394,
+    "properties": 2009,
+    "restrictions": 451
+  },
+  {
+    "n_docs": 64,
+    "classes": 3435,
+    "properties": 2027,
+    "restrictions": 453
+  },
+  {
+    "n_docs": 65,
+    "classes": 3485,
+    "properties": 2066,
+    "restrictions": 460
+  },
+  {
+    "n_docs": 66,
+    "classes": 3522,
+    "properties": 2086,
+    "restrictions": 462
+  },
+  {
+    "n_docs": 67,
+    "classes": 3548,
+    "properties": 2104,
+    "restrictions": 468
+  },
+  {
+    "n_docs": 68,
+    "classes": 3580,
+    "properties": 2125,
+    "restrictions": 468
+  },
+  {
+    "n_docs": 69,
+    "classes": 3625,
+    "properties": 2147,
+    "restrictions": 470
+  },
+  {
+    "n_docs": 70,
+    "classes": 3728,
+    "properties": 2212,
+    "restrictions": 484
+  },
+  {
+    "n_docs": 71,
+    "classes": 3763,
+    "properties": 2231,
+    "restrictions": 488
+  },
+  {
+    "n_docs": 72,
+    "classes": 3785,
+    "properties": 2244,
+    "restrictions": 489
+  },
+  {
+    "n_docs": 73,
+    "classes": 3808,
+    "properties": 2252,
+    "restrictions": 496
+  },
+  {
+    "n_docs": 74,
+    "classes": 3833,
+    "properties": 2270,
+    "restrictions": 500
+  },
+  {
+    "n_docs": 75,
+    "classes": 3862,
+    "properties": 2282,
+    "restrictions": 504
+  },
+  {
+    "n_docs": 76,
+    "classes": 3937,
+    "properties": 2313,
+    "restrictions": 519
+  },
+  {
+    "n_docs": 77,
+    "classes": 3968,
+    "properties": 2329,
+    "restrictions": 523
+  },
+  {
+    "n_docs": 78,
+    "classes": 3999,
+    "properties": 2351,
+    "restrictions": 531
+  },
+  {
+    "n_docs": 79,
+    "classes": 4026,
+    "properties": 2360,
+    "restrictions": 533
+  },
+  {
+    "n_docs": 80,
+    "classes": 4040,
+    "properties": 2369,
+    "restrictions": 534
+  },
+  {
+    "n_docs": 81,
+    "classes": 4049,
+    "properties": 2372,
+    "restrictions": 534
+  },
+  {
+    "n_docs": 82,
+    "classes": 4059,
+    "properties": 2380,
+    "restrictions": 534
+  },
+  {
+    "n_docs": 83,
+    "classes": 4069,
+    "properties": 2384,
+    "restrictions": 534
+  },
+  {
+    "n_docs": 84,
+    "classes": 4080,
+    "properties": 2386,
+    "restrictions": 537
+  },
+  {
+    "n_docs": 85,
+    "classes": 4088,
+    "properties": 2389,
+    "restrictions": 538
+  },
+  {
+    "n_docs": 86,
+    "classes": 4095,
+    "properties": 2394,
+    "restrictions": 538
+  },
+  {
+    "n_docs": 87,
+    "classes": 4116,
+    "properties": 2398,
+    "restrictions": 539
+  },
+  {
+    "n_docs": 88,
+    "classes": 4120,
+    "properties": 2401,
+    "restrictions": 542
+  },
+  {
+    "n_docs": 89,
+    "classes": 4131,
+    "properties": 2405,
+    "restrictions": 542
+  },
+  {
+    "n_docs": 90,
+    "classes": 4146,
+    "properties": 2410,
+    "restrictions": 547
+  },
+  {
+    "n_docs": 91,
+    "classes": 4163,
+    "properties": 2417,
+    "restrictions": 549
+  },
+  {
+    "n_docs": 92,
+    "classes": 4181,
+    "properties": 2427,
+    "restrictions": 550
+  },
+  {
+    "n_docs": 93,
+    "classes": 4198,
+    "properties": 2435,
+    "restrictions": 551
+  },
+  {
+    "n_docs": 94,
+    "classes": 4204,
+    "properties": 2438,
+    "restrictions": 551
+  },
+  {
+    "n_docs": 95,
+    "classes": 4212,
+    "properties": 2441,
+    "restrictions": 551
+  },
+  {
+    "n_docs": 96,
+    "classes": 4217,
+    "properties": 2445,
+    "restrictions": 552
+  },
+  {
+    "n_docs": 97,
+    "classes": 4228,
+    "properties": 2452,
+    "restrictions": 554
+  },
+  {
+    "n_docs": 98,
+    "classes": 4242,
+    "properties": 2456,
+    "restrictions": 554
+  },
+  {
+    "n_docs": 99,
+    "classes": 4250,
+    "properties": 2458,
+    "restrictions": 554
+  },
+  {
+    "n_docs": 100,
+    "classes": 4250,
+    "properties": 2458,
+    "restrictions": 554
+  }
+]

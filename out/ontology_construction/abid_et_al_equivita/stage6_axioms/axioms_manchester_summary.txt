@@ -1,0 +1,75 @@
+# Induced TBox Axioms — Manchester Syntax Summary
+
+## owl:someValuesFrom  (33 axioms)
+
+  [✓] Beneficiary hasBeneficiaryDesignationFallbackPayout some Beneficiary
+      # Fallback payout occurs if no primary beneficiary is found.
+  [✓] Beneficiary PresumptionOfPredecease some ProceedsDisposition
+      # Beneficiary presumed to predecease insured, disclaiming proceeds.
+  [✓] Benefit UnspecifiedRecipientClause some BenefitDistribution
+      # A clause permitting payment to an unspecified recipient.
+  [✓] ClaimEligibility ClaimDenialDueToMisrepresentation some ClaimValidityAuthority
+      # Claim denied due to material misrepresentation.
+  [✓] ClaimProcessing ProofOfDeathRequirement some ProofOfDeath
+      # Claim requires proof of death to be valid.
+  [✓] ContingentBeneficiary hasContingentBeneficiaryPayoutCondition some Event
+      # Contingent beneficiary receives payout under specific conditions.
+  [✓] DeathBenefit deathBenefitAmountSpecification some Event
+      # Death benefit adjusted for underpayment.
+  [✓] DeathBenefit defaultPayoutMethod some PayoutOption
+      # Specifies default payout method when no option is designated.
+  [✓] EquitableEntitlement EquitablePaymentDiscretion some PaymentAmount
+      # Payment subject to discretionary approval based on equity.
+  [✓] InsuranceContract hasSeverabilityClause some LegalFramework
+      # Invalid provisions do not affect remaining policy validity.
+  [✓] InsuranceContract hasPolicyLapseDueToNonpayment some Period
+      # Policy lapses if premiums are not paid within a period.
+  [✓] InsuranceContract deathBenefitAmountSpecification some DeathBenefit
+      # Adjusts death benefit for misstated sex.
+  [✓] InsuranceContract hasIncontestabilityPeriodDefinition some Period
+      # Policy incontestable after two years.
+  [✓] InsuranceContract hasGracePeriod some Period
+      # Coverage during grace period.
+  [✓] InsuranceContract UnpaidPremiumDeduction some PaymentAmount
+      # Deduction applied for unpaid premiums from death benefit.
+  [✓] InsuranceContract SuicideExclusionResumesAfterReinstatement some SuicideExclusion
+      # Suicide exclusion restarts after policy reinstatement.
+  [✓] InsuranceContract AgeMisstatementVoidance some VoidAbInitio
+      # Policy void from inception due to age misstatement.
+  [✓] InsuranceContract PostContestabilityValidityProtection some Period
+      # Policy remains valid after contestability period ends.
+  [✓] InsuranceContract NonparticipatingPolicyFeature some NonParticipatingPolicy
+      # Excludes participation in company earnings.
+  [✓] InsuranceContract NoFutureDividends some xsd:boolean
+      # Prevents future dividend payments under certain conditions.
+  [✓] InsuredPerson hasConversionEligibilityByAgeAndTiming some Event
+      # Policyholder must meet age and timing for conversion.
+  [✓] InterestAccrual MinimumInterestRateCompliance some Rate
+      # Interest rate must meet minimum compliance threshold.
+  [✓] PaymentAmount DischargeOfLiabilityOnPayment some LiabilityDischarge
+      # Liability is discharged upon payment.
+  [✓] PolicyEnforcement AutomaticComplianceUpdate some xsd:date
+      # Policy terms auto-update to reflect legal changes.
+  [✓] PolicyModification PolicyModificationAuthorization some AuthorizedAmendment
+      # A policy can only be modified if authorized.
+  [✓] PolicyOwner hasBeneficiaryChangeEffectivePosthumously some xsd:date
+      # Beneficiary change takes effect after policyholder's death.
+  [✓] PolicyOwner hasAuthorityLimitation some PolicySpecification
+      # Owner actions limited by policy terms.
+  [✓] PolicyReinstatement initiallyCollectsDataThatCausesUnderpaymentIfInaccurate some Period
+      # Contestability period resets post-reinstatement.
+  [✓] PremiumNonpayment OverduePremiumsWithInterest some InterestAccrual
+      # A policy remains active only if overdue premiums include interest.
+  [✓] PremiumPayment OverpaymentRefundEligibility some PremiumRefund
+      # Eligibility for refund after overpayment.
+  [✓] Right NonWaiverOfEnforcementRights some WrittenDocument
+      # Waiver of a right does not affect future enforcement rights.
+  [✓] SimultaneousDeath SimultaneousDeathAssumption some OrderOfDeath
+      # Determines beneficiary if death order is uncertain.
+  [✓] WrittenDocument ApplicationAttachmentRequirement some WrittenConsentRequirement
+      # A policy application must include required attachments.
+
+## owl:exactCardinality  (1 axioms)
+
+  [✓] Beneficiary EqualShareDistribution exactly 1 PaymentAmount
+      # Beneficiaries receive equal shares of the payout.

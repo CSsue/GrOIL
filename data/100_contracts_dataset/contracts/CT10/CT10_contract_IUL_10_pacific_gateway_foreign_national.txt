@@ -1,0 +1,390 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Pacific Gateway Life Insurance Corporation                 ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: PGLIC-FN-IUL-2024-0092
+Date of Issue: October 21, 2024
+Form: International Indexed Universal Life (IIUL-5)
+Market Position: Foreign National / Non-US Resident
+                 Life Insurance
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Wei-Lin Chen
+Insured: Wei-Lin Chen
+DOB: March 11, 1976 | Age: 48 | Gender: Male
+Country of Residence: Singapore (Permanent Resident)
+Country of Citizenship: Republic of China (Taiwan)
+US Status: Non-Resident Alien (NRA); EB-5 investor visa
+           application pending; currently on B1/B2 visa
+
+US Tax Identification: Not applicable (NRA)
+Foreign Tax Identification: Singapore NRIC S7619034F
+
+Underwriting Class: Preferred Non-Tobacco
+Exam Location: Singapore (coordinated through Pacific Gateway
+               International Underwriting Network)
+
+US Nexus Required for Issuance: Policy issued in California.
+    Insured completed medical exam in California during
+    US travel. Policy applied for and issued in California.
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $2,000,000 (USD)
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $24,000 USD per year
+Premium Currency: USD only (no foreign currency option)
+Policy Currency: USD
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Hui-Ting Chen (Spouse) - 100%
+         Resident of Singapore
+         Singapore NRIC S7928811C
+Contingent: Chen Wei-Jing (Son) - 50%
+            Chen Mei-Ling (Daughter) - 50%
+
+FOREIGN BENEFICIARY NOTICE: Payment to non-US beneficiaries
+is subject to applicable withholding tax requirements. Pacific
+Gateway will comply with all IRS FATCA and CRS reporting
+obligations. See Article 12.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Foreign National" - For purposes of this policy, a
+    non-US citizen who has obtained this policy while present
+    in the United States, with the policy issued under US
+    law and in US dollars.
+
+1.2 "Non-Resident Alien (NRA)" - A foreign national who is
+    not a US citizen and does not meet the IRS substantial
+    presence test for US residency.
+
+1.3 "US Nexus" - A connection to the United States sufficient
+    to support the issuance of a US life insurance policy,
+    including: presence for medical exam, insurable interest
+    in the US, or documented US financial assets.
+
+1.4 "FATCA" - Foreign Account Tax Compliance Act; US law
+    requiring reporting of US financial accounts held by
+    foreign nationals.
+
+1.5 "CRS" - Common Reporting Standard; OECD framework
+    for automatic exchange of tax information between
+    participating jurisdictions, including Singapore.
+
+1.6 "Repatriation Risk" - The potential difficulty of
+    remitting death benefit proceeds to foreign beneficiaries
+    due to currency controls, sanctions, or other legal
+    restrictions in the beneficiary's country of residence.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 10.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) MSCI Asia Pacific ex-Japan Index (Annual P-to-P)
+       Current Cap: 11.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Available exclusively on International IUL policies;
+       reflects the regional equity exposure preferences of
+       Asia-Pacific resident policyholders)
+
+    C) MSCI All Country World Index (Annual P-to-P)
+       Current Cap: 9.5% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    D) Fixed Account (USD)
+       Current Rate: 3.50% | Guaranteed Minimum: 2.00%
+
+2.2 CURRENT ALLOCATION:
+    MSCI Asia Pacific:   35%
+    S&P 500:             35%
+    MSCI ACWI:           20%
+    Fixed Account:       10%
+
+2.3 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 3.50%
+    • MSCI Asia Pacific cap: never below 3.50%
+    • MSCI ACWI cap: never below 3.50%
+    • Fixed account: never below 2.00%
+
+2.4 INTERNATIONAL INDEX NOTE: All index accounts reference
+    US-listed total return equivalents of the underlying
+    indices. No direct investment in foreign securities or
+    currencies occurs. All credits and values are in USD.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 Standard annual point-to-point formula applies to all
+    indexed accounts:
+    Credit = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 ASIAN MARKET INDEX NOTE: The MSCI Asia Pacific ex-Japan
+    index captures performance of large and mid-cap equities
+    across 4 developed (Australia, Hong Kong, New Zealand,
+    Singapore) and 8 emerging (China, India, Indonesia, Korea,
+    Malaysia, Philippines, Taiwan, Thailand) markets.
+    Dividends are excluded from index performance calculations.
+
+3.3 CURRENCY NOTE: All indices are measured in USD for
+    crediting purposes. The owner bears no direct currency
+    risk from index account selection; all values remain
+    in USD regardless of underlying index currency.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $24,000 USD annually.
+
+4.2 PREMIUM CURRENCY: USD only. All premiums must originate
+    from a financial institution with AML (Anti-Money
+    Laundering) compliance documentation. Premiums may NOT
+    be paid from accounts in FATF high-risk or non-cooperative
+    jurisdictions.
+
+4.3 WIRE TRANSFER: Preferred payment method. Checks accepted
+    from US-based bank accounts only. International wire
+    transfers accepted from any FATF-compliant bank with
+    source of funds documentation.
+
+4.4 PREMIUM LOAD: 4.5% of each premium, all years.
+
+4.5 SOURCE OF FUNDS DOCUMENTATION: Pacific Gateway requires
+    annual source of funds certification from Owner. Failure
+    to provide documentation within 30 days of anniversary
+    request may result in suspension of new premium
+    acceptance (but does not cause policy lapse).
+
+4.6 MAXIMUM ANNUAL PREMIUM: $100,000 USD per year.
+    Premiums above $50,000 per year require enhanced due
+    diligence documentation.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Monthly charge per $1,000 NAR.
+    Uses 2017 CSO Preferred Male tables. Approximate
+    Year 1 COI at age 48, Preferred Male: ~$2.10/month
+    per $1,000 NAR × 2,000 = ~$4,200/year.
+
+5.2 ADMINISTRATIVE FEE: $15 per month.
+
+5.3 INTERNATIONAL POLICY FEE: $25 per month, reflecting
+    enhanced compliance, reporting, and beneficiary payment
+    administration associated with foreign national policies.
+
+5.4 TOTAL ESTIMATED MONTHLY CHARGES (Year 1):
+    COI: ~$350/month | Admin: $15/month | Intl: $25/month
+    Total: ~$390/month (~$4,680/year)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 LEVEL DEATH BENEFIT: $2,000,000 USD payable upon death
+    of insured, subject to the conditions herein.
+
+6.2 PAYMENT TO FOREIGN BENEFICIARIES:
+    Pacific Gateway will remit proceeds in USD via
+    international wire to a bank account designated by
+    the beneficiary. It is the beneficiary's responsibility
+    to comply with all applicable laws in their country
+    of residence regarding receipt of insurance proceeds.
+
+6.3 SANCTIONS COMPLIANCE: No death benefit will be paid
+    if the payment would violate US Office of Foreign
+    Assets Control (OFAC) regulations, including if the
+    beneficiary or their country of residence is subject
+    to US sanctions at the time of claim.
+
+6.4 REPORTING: Death benefit payments to foreign beneficiaries
+    exceeding $10,000 will be reported per applicable US
+    federal reporting requirements.
+
+6.5 COUNTRY RISK REVIEW: If the beneficiary's country of
+    residence has been added to OFAC sanctions lists or
+    FATF high-risk lists between policy issue and claim,
+    Pacific Gateway will hold proceeds in escrow pending
+    legal clearance, for up to 5 years. If clearance is not
+    obtained within 5 years, proceeds will be interpleaded
+    in a US court of competent jurisdiction.
+
+6.6 ACCELERATED DEATH BENEFIT: Available for terminal illness
+    (life expectancy < 12 months). Maximum 75% of face
+    ($1,500,000 USD). Medical documentation may be provided
+    by a licensed physician in the insured's country of
+    residence if acceptable to Pacific Gateway's medical
+    director.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 POLICY LOANS: Available after year 1.
+    Maximum: 90% of surrender value.
+    Loan rate: 5.5% fixed annually.
+    Loaned amounts earn fixed account rate.
+    Loans disbursed in USD by wire only.
+
+7.2 LOAN DOCUMENTATION: Borrower must certify compliance with
+    applicable local laws regarding receipt of USD loans from
+    US insurance companies.
+
+7.3 PARTIAL WITHDRAWALS: Minimum $1,000 USD. First 4 per year
+    free; $50 fee thereafter. Reduces death benefit.
+    All distributions made in USD by wire.
+
+7.4 AML/KYC ON DISTRIBUTIONS: Pacific Gateway reserves the
+    right to require documentation for any single distribution
+    exceeding $25,000 to verify consistency with known
+    source of funds and purpose.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 SCHEDULE (% of premiums paid in first 10 years):
+
+    Year 1:  10%   Year 5:  6%   Year 9:  2%
+    Year 2:   9%   Year 6:  5%   Year 10: 1%
+    Year 3:   8%   Year 7:  4%   Year 11+: 0%
+    Year 4:   7%   Year 8:  3%
+
+8.2 Surrender proceeds disbursed in USD by wire transfer to
+    a FATF-compliant institution. OFAC screening performed
+    before all disbursements.
+
+8.3 FREE WITHDRAWAL: 10% of account value annually, year 2+.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - RESIDENCE AND STATUS CHANGES
+═══════════════════════════════════════════════════════════════════
+9.1 CHANGE OF RESIDENCE: Owner must notify Pacific Gateway
+    within 60 days of any change in country of residence.
+    Failure to notify constitutes a material fact for
+    ongoing compliance review.
+
+9.2 US RESIDENCY ACQUISITION: If Owner or Insured becomes
+    a US lawful permanent resident or citizen, this policy
+    may be converted to a standard domestic IUL product
+    without evidence of insurability, and the International
+    Policy Fee will be waived going forward.
+
+9.3 SANCTIONED COUNTRY RELOCATION: If Owner or Insured
+    relocates to a country subject to comprehensive US
+    sanctions (currently Cuba, Iran, North Korea, Russia,
+    Syria, and the Crimea region), Pacific Gateway will
+    suspend premium acceptance and place the policy in a
+    paid-up reduced death benefit status pending resolution.
+
+9.4 VISA STATUS: Changes in US visa or immigration status
+    do not affect the validity of the policy. However, they
+    may affect tax reporting obligations. Owner is solely
+    responsible for compliance with applicable tax law.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: Return of premiums if death by suicide within
+     2 years of issue. No geographic restriction on this
+     exclusion; applies worldwide.
+
+10.2 CONTESTABILITY: 2 years from issue. Pacific Gateway
+     may contest for misrepresentation in any language or
+     jurisdiction; translation costs borne by Pacific Gateway.
+
+10.3 WAR EXCLUSION (ACTIVE COMBAT): No death benefit is
+     payable if death results directly from the insured's
+     voluntary participation in armed combat as a member
+     of any military, paramilitary, or insurgent organization,
+     whether war is declared or not. This exclusion does NOT
+     apply to civilian casualties of war, terrorism, or
+     political violence.
+
+10.4 AVIATION EXCLUSION: Death while operating (as pilot or
+     crew) a non-commercial aircraft is EXCLUDED. Commercial
+     aviation as a passenger is fully covered worldwide.
+
+10.5 FOREIGN TRAVEL: No exclusion for foreign travel,
+     including high-risk regions, EXCEPT as modified by
+     the War Exclusion in Section 10.3.
+
+10.6 SANCTION EXCLUSION: No death benefit is payable if
+     payment would violate OFAC or other applicable US
+     or international sanctions in effect at the time
+     of claim.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - POLICY CURRENCY AND INFLATION RISK
+═══════════════════════════════════════════════════════════════════
+11.1 ALL VALUES IN USD: Account values, COI charges, death
+     benefit, loans, and all distributions are denominated
+     exclusively in USD.
+
+11.2 CURRENCY RISK: Owner and beneficiaries bear the risk
+     of exchange rate fluctuations between USD and any
+     local currency. Pacific Gateway bears no liability
+     for currency conversion losses.
+
+11.3 OPTIONAL CURRENCY HEDGE ARRANGEMENT: Pacific Gateway
+     has relationships with FX service providers. Contact
+     your agent for details on available USD/SGD hedging
+     products. These are separate arrangements not part
+     of this policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 12 - REGULATORY COMPLIANCE AND REPORTING
+═══════════════════════════════════════════════════════════════════
+12.1 FATCA: Pacific Gateway is a registered FATCA-compliant
+     Financial Institution. This policy and associated accounts
+     may be reported to the IRS under FATCA if applicable
+     thresholds are met. Passive Foreign Financial Account
+     status will be reported.
+
+12.2 CRS: As a participating jurisdiction under OECD CRS,
+     Singapore tax authorities may receive information about
+     this policy. Pacific Gateway complies with all applicable
+     CRS reporting obligations.
+
+12.3 NRA WITHHOLDING: As a Non-Resident Alien, the Owner is
+     subject to NRA withholding rules on certain US-source
+     income. Life insurance death benefits paid to a foreign
+     beneficiary are generally not subject to US income tax.
+     Surrender proceeds may be subject to NRA withholding
+     on the gain portion (above basis). Owner should consult
+     a US tax professional familiar with NRA taxation.
+
+12.4 FORM W-8BEN: Owner has provided a valid IRS Form W-8BEN
+     certifying foreign status, on file with Pacific Gateway.
+     Owner must renew W-8BEN every 3 years or upon change
+     of address.
+
+12.5 INDEX CREDIT DISCLOSURE: Index accounts are not securities.
+     Dividends are excluded. 0% floor applies.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Pacific Gateway Life Insurance Corporation
+International Policies Division
+1-800-PAC-GATE | international@pacificgatewaylife.com
+Los Angeles, California
+
+[CORPORATE SEAL]
+
+__________________________________
+President
+Pacific Gateway Life Insurance Corporation
+
+October 21, 2024
+
+═══════════════════════════════════════════════════════════════════

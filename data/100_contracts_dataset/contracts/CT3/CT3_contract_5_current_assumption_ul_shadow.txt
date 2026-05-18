@@ -1,0 +1,289 @@
+═══════════════════════════════════════════════════════════════════
+      CURRENT ASSUMPTION UNIVERSAL LIFE INSURANCE POLICY
+               WITH SECONDARY GUARANTEE PROVISION
+              Lakefront Mutual Life Insurance Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: LML-CAUL-24-08829
+Issue Date: June 3, 2024
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Santiago Emilio Reyes
+Insured: Santiago Emilio Reyes
+Gender: Male | DOB: 04/17/1967 | Age: 57
+Risk Class: Preferred Plus Nonsmoker
+Tobacco Use: Never
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $600,000
+Planned Premium: $700/month
+Minimum Premium: $185/month
+Shadow Account Guarantee Premium: $430/month
+Death Benefit Option: Level (Option A)
+
+SECONDARY GUARANTEE: This policy contains a Shadow Account 
+Secondary Guarantee Provision. See Article 11.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Rosa Elena Reyes (Spouse) - 100%
+Contingent: Isabella Reyes (Daughter) - 33.33%
+            Carlos Antonio Reyes (Son) - 33.33%
+            Miguel Fernando Reyes (Son) - 33.34%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means the actual policy accumulation 
+    value, determined by crediting interest and deducting 
+    charges each month.
+
+1.2 "Shadow Account" means a hypothetical accumulation 
+    account used solely to test whether the Secondary 
+    Guarantee is in effect. The Shadow Account has no 
+    cash value and cannot be accessed.
+
+1.3 "Shadow Account Premium" means the level monthly 
+    premium, specified on the Policy Data Page, that 
+    must be paid (on a cumulative basis) to maintain 
+    the Shadow Account in force.
+
+1.4 "Shadow Account Crediting Rate" means the fixed rate 
+    of 3.75% per annum used exclusively in Shadow Account 
+    calculations. This rate is guaranteed.
+
+1.5 "Shadow Account COI Rate" means the guaranteed maximum 
+    COI rates used in Shadow Account calculations 
+    (separate, and different from, current COI rates).
+
+1.6 "Secondary Guarantee" (SG) means the guarantee that 
+    the policy will remain in force so long as the 
+    Shadow Account has a positive value, regardless 
+    of actual Account Value.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums may be paid at any time:
+    Minimum per payment: $100
+    Annual maximum: $120,000 (IRC §7702 compliance)
+
+2.2 Premium expense load: 3.5% of each premium payment.
+
+2.3 Premiums are applied to actual Account Value. Premiums 
+    also credit the Shadow Account as follows:
+    Shadow Account Credit = Premium paid × 96.5%
+    (reflecting the same 3.5% load assumption)
+
+2.4 IMPORTANT: The Secondary Guarantee depends on the 
+    Shadow Account balance, not the actual Account Value. 
+    Paying only the planned premium does not guarantee 
+    the SG will remain active if premiums are skipped 
+    or paid late.
+
+2.5 Shadow Account Test: On each Monthly Deduction Date, 
+    we test whether the Shadow Account Value (as defined 
+    in Article 11) is ≥ $0. If yes, the SG is active. 
+    If no, the SG is inactive and the policy is subject 
+    to ordinary lapse provisions.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - MONTHLY DEDUCTIONS (ACTUAL ACCOUNT)
+═══════════════════════════════════════════════════════════════════
+3.1 On the 3rd of each month, the following are deducted 
+    from actual Account Value:
+
+    (a) Current Cost of Insurance charge
+    (b) Administrative fee: $9.00/month
+    (c) Policy service charge: $0.07 per $1,000 Specified 
+        Amount, for the first 15 policy years
+    (d) Outstanding loan interest
+
+3.2 Current COI rates are based on the 2017 CSO Table, 
+    Preferred Plus classification. We may change current 
+    COI rates prospectively upon 60 days' written notice, 
+    subject to guaranteed maximums in the COI Schedule.
+
+3.3 INTEREST RATE SENSITIVITY: This is a Current Assumption 
+    UL. Actual Account Value growth depends on the current 
+    credited interest rate, which may change. Illustrated 
+    values in the policy illustration are not guarantees.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - INTEREST CREDITING (ACTUAL ACCOUNT)
+═══════════════════════════════════════════════════════════════════
+4.1 Interest is credited monthly.
+    Guaranteed minimum rate: 2.00% per annum
+    Current rate: 5.25% per annum
+
+4.2 Current rate is declared monthly on the first 
+    business day. We target stability but may change 
+    the current rate at any time.
+
+4.3 A "persistency bonus" of +0.25% per annum is 
+    credited to policies in force for 10+ years 
+    without lapse and with Account Value > $50,000. 
+    Bonus may be discontinued prospectively.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION A (Level) — In Force
+    Death Benefit = Specified Amount, subject to 
+    IRC §7702 corridor minimum.
+
+5.2 Death benefit is payable whether or not the Secondary 
+    Guarantee is active, so long as the policy is in force.
+
+5.3 Death Benefit Changes: Owner may request an increase 
+    (requires evidence of insurability) or decrease 
+    (minimum remaining face $50,000) in Specified Amount.
+    A $75 administrative fee applies to any change.
+
+5.4 A decrease in Specified Amount triggers a new Shadow 
+    Account recalculation. The SG may be extended or 
+    shortened as a result.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+6.1 Minimum withdrawal: $500
+    Maximum: Account Value less ($500 + outstanding loans)
+
+6.2 Withdrawals in years 1-7: $30 per withdrawal
+    Withdrawals in years 8+: No charge
+
+6.3 WARNING: Withdrawals reduce actual Account Value. 
+    They do NOT reduce the Shadow Account. However, 
+    if Account Value falls to zero due to withdrawals, 
+    the policy lapses regardless of Shadow Account status.
+
+6.4 No more than one partial withdrawal per calendar month.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+7.1 Maximum loan: 90% of current Account Value
+
+7.2 Loan interest rate:
+    Years 1-10: Variable — 10-year Treasury + 1.00%, 
+                minimum 4.00%, adjusted annually
+    Years 11+: Fixed option available at 4.50% per annum
+
+7.3 Policy loans reduce actual Account Value and may 
+    cause lapse if Account Value is insufficient to 
+    cover monthly deductions, even if the SG is active.
+
+7.4 Loans do NOT affect Shadow Account calculations.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+8.1 Cash Surrender Value = Account Value - Surrender Charge - 
+    Outstanding Loans
+
+8.2 Surrender Charge Schedule (% of Initial Specified Amount):
+    Year 1: 7.0% | Year 2: 6.5% | Year 3: 6.0%
+    Year 4: 5.5% | Year 5: 5.0% | Year 6: 4.0%
+    Year 7: 3.0% | Year 8: 2.0% | Year 9: 1.0%
+    Year 10+: 0%
+
+8.3 If the policy is surrendered while the SG is active, 
+    the surrender charge still applies. The SG only 
+    prevents lapse; it does not waive surrender charges.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+9.1 SUICIDE EXCLUSION: Death by suicide within 24 months 
+    of issue date: proceeds limited to Account Value 
+    as of date of death, without surrender charge 
+    reduction but less outstanding loans.
+
+9.2 CONTESTABILITY: We may contest this policy within 
+    2 years of issue for material misrepresentation.
+
+9.3 AVIATION HAZARD EXCLUSION: If Insured dies as a result 
+    of operating or riding in any aircraft, other than 
+    as a fare-paying passenger on a scheduled commercial 
+    airline, and the Insured had such activity noted in 
+    the application, no aviation exclusion applies. 
+    If aviation activity was not disclosed, we reserve 
+    the right to apply standard rescission.
+
+9.4 TOBACCO USE: If Insured uses tobacco within 3 years 
+    of issue date and fails to disclose this, we may 
+    re-rate the policy at standard tobacco rates and 
+    collect the additional COI charge retroactively 
+    or reduce the death benefit accordingly.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - GRACE PERIOD & LAPSE
+═══════════════════════════════════════════════════════════════════
+10.1 If actual Account Value is insufficient to cover 
+     monthly deductions AND the Secondary Guarantee 
+     is NOT active, a 61-day grace period commences.
+
+10.2 If the Secondary Guarantee IS active (Shadow Account 
+     ≥ $0), no grace period is triggered, and the policy 
+     remains in force regardless of actual Account Value.
+
+10.3 Reinstatement within 3 years of lapse: requires 
+     evidence of insurability and payment of premium 
+     sufficient to restore both the actual Account Value 
+     and the Shadow Account to positive balances.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - SECONDARY GUARANTEE — SHADOW ACCOUNT PROVISION
+═══════════════════════════════════════════════════════════════════
+11.1 SHADOW ACCOUNT MECHANICS:
+     The Shadow Account is a separate hypothetical ledger. 
+     It begins at $0 on the issue date and evolves as:
+
+     Shadow AV(n) = Shadow AV(n-1)
+                  + Shadow Premium Credit
+                  - Shadow COI Charge
+                  - Shadow Admin Charge
+                  + Shadow Interest Credit
+
+11.2 Shadow Premium Credit: Each premium payment (net of 
+     3.5% load) is credited to the Shadow Account.
+
+11.3 Shadow COI: Uses guaranteed maximum COI rates 
+     from the COI Schedule — typically higher than 
+     current COI rates, making the SG conservative.
+
+11.4 Shadow Interest: Credited at the guaranteed rate 
+     of 3.75% per annum, regardless of actual current rate.
+
+11.5 Shadow Admin Charge: $6.00/month (guaranteed).
+
+11.6 If Shadow Account Value < $0 on any Monthly 
+     Deduction Date, the Secondary Guarantee is 
+     immediately inactive. It cannot be restored 
+     without a catch-up premium payment sufficient 
+     to return the Shadow Account to ≥ $0.
+
+11.7 We will provide Shadow Account balance information 
+     in the annual policy statement.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Milwaukee, Wisconsin
+
+[Signature]
+Chief Executive Officer
+Lakefront Mutual Life Insurance Company
+
+Date: June 3, 2024
+
+Lakefront Mutual Life Insurance Company is a mutual company; 
+policyholders may be eligible for annual dividends if declared 
+by the Board. Dividends are not guaranteed.
+
+═══════════════════════════════════════════════════════════════════

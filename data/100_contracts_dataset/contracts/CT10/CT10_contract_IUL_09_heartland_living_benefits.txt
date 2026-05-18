@@ -1,0 +1,333 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        Heartland Security Life Insurance, Ltd.                    ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: HSLI-IUL-2024-4480
+Date of Issue: June 18, 2024
+Form: Living Benefits Indexed Universal Life (LBIUL-8)
+Market Position: Middle Market with Enhanced Living Benefits;
+                 Chronic Illness Long-Term Care Hybrid
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Susan Patricia O'Brien-Gallo
+Insured: Susan Patricia O'Brien-Gallo
+DOB: May 4, 1973 | Age: 51 | Gender: Female
+Underwriting Class: Standard Plus Non-Tobacco
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $350,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $7,200
+Living Benefits Design: Policy includes comprehensive chronic
+illness acceleration, positioning it as a hybrid life/LTC product.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary: Patrick James Gallo (Spouse) - 100%
+Contingent: O'Brien Family Trust - 100%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Chronic Illness Acceleration" - A living benefit allowing
+    early access to a portion of the death benefit when the
+    insured qualifies as chronically ill under HIPAA §101(f).
+
+1.2 "Chronically Ill" (HIPAA definition) - An individual who:
+    (a) Cannot perform at least 2 of 6 Activities of Daily
+        Living (ADLs) due to a loss of functional capacity
+        expected to last at least 90 days, OR
+    (b) Requires substantial supervision to protect from
+        threats to health and safety due to severe cognitive
+        impairment.
+
+1.3 "Activities of Daily Living (ADLs)" - The 6 standard ADLs:
+    Bathing, Dressing, Eating, Continence, Toileting, and
+    Transferring (moving in/out of bed or chair).
+
+1.4 "Per Diem Limit" - The IRS §7702B daily limit for tax-free
+    chronic illness benefit payments ($400/day in 2024;
+    adjusted annually for inflation).
+
+1.5 "Indemnity-Style Benefit" - A chronic illness benefit paid
+    as a fixed monthly amount without requiring proof of actual
+    LTC expenses incurred, as long as qualifying criteria are met.
+
+1.6 "Reimbursement-Style Benefit" - A benefit paid based on
+    actual qualified LTC expenses submitted; this policy uses
+    INDEMNITY style (more flexible for the insured).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 10.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) S&P 500 Monthly Average Account
+       Method: Average of 12 monthly index values vs.
+       beginning-of-year value, divided by beginning value
+       Current Cap: 7.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (Monthly averaging reduces volatility in crediting;
+       tends to outperform annual P-to-P in volatile years)
+
+    C) 5-Year Balanced Index Account
+       Index: 50% S&P 500 / 50% U.S. Treasury Index
+       Crediting: Point-to-point over 5 years
+       Current 5-Year Cap: 35% | Participation: 100%
+       Floor: 0% | Early Exit: Pro-rated on withdrawal only
+
+    D) Fixed Account
+       Current Rate: 3.25% | Guaranteed Minimum: 2.00%
+
+2.2 CURRENT ALLOCATION:
+    S&P 500 Annual (A):     40%
+    Monthly Average (B):    30%
+    Fixed Account (D):      30%
+
+2.3 5-YEAR ACCOUNT NOTE: Premiums allocated to Account C
+    are locked for 5 years. No crediting until maturity.
+    Withdrawals mid-term receive 0% credit on withdrawn
+    amount for the current 5-year period only.
+
+2.4 GUARANTEED MINIMUMS:
+    • Annual cap: never below 3.50%
+    • Monthly average cap: never below 2.50%
+    • 5-year cap: never below 12.00% cumulative
+    • Fixed account: never below 2.00%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 ANNUAL POINT-TO-POINT: Standard formula.
+    Credit = MAX(0%, MIN(Cap, Index% Change))
+
+3.2 MONTHLY AVERAGE METHOD:
+    Sum of 12 monthly index values ÷ 12 = Average
+    Monthly Average Return = (Average - Start) ÷ Start
+    Credit = MAX(0%, MIN(Cap, Monthly Average Return))
+
+    Example: Index starts at 5,000. Monthly values over
+    12 months average to 5,350.
+    Return = (5,350 - 5,000) ÷ 5,000 = 7.0% → capped at 7%.
+    If market surges late in year (P-to-P would credit higher),
+    monthly average dampens the gain. If market surges early
+    but pulls back, monthly average protects some gain.
+
+3.3 FIVE-YEAR ACCOUNT: Uses point-to-point over the full
+    5-year segment. A policy anniversary every 5 years is
+    the crediting event.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $7,200 per year ($600 per month).
+
+4.2 LIVING BENEFIT RIDER PREMIUM: $0 additional charge.
+    The chronic illness rider is included and priced into
+    the base COI structure. No separate living benefit premium.
+
+4.3 FLEXIBLE PAYMENTS: Minimum $100 per payment.
+    Maximum: $40,000 per year.
+
+4.4 PREMIUM LOAD: 3.0% of each premium payment.
+
+4.5 MODAL FACTOR: Monthly: 0.088 (×12 = 1.056 of annual).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Monthly charge per $1,000 NAR. Standard Plus Female
+    Age 51 approximate COI: ~$3.50/month per $1,000 NAR.
+    At $350,000 face: ~$1,225/month before account value
+    reduces NAR.
+
+5.2 ADMINISTRATIVE FEE: $10 per month.
+
+5.3 LIVING BENEFIT LOAD: The chronic illness benefit is funded
+    within the COI structure. COI rates for this product are
+    approximately 8-12% higher than policies without enhanced
+    living benefits, reflecting the pooled LTC risk.
+
+5.4 FIVE-YEAR ACCOUNT FEE: $2.00 per $1,000 allocated to
+    Account C per month for administrative management.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - LIVING BENEFITS: CHRONIC ILLNESS RIDER
+═══════════════════════════════════════════════════════════════════
+6.1 ELIGIBILITY: The Chronic Illness Acceleration Rider (CIAR)
+    is activated when the insured:
+    (a) Is certified by a licensed health care practitioner
+        as chronically ill (HIPAA §101(f) definition), AND
+    (b) Has been chronically ill for at least 90 consecutive
+        days, AND
+    (c) The condition is expected to be permanent or last
+        at least 12 months.
+
+6.2 BENEFIT AMOUNT: Indemnity-style monthly benefit equal to
+    the LESSER of:
+    (a) 4% of the death benefit per month ($14,000/month
+        at $350,000 face), OR
+    (b) The IRS per diem limit × 30 days ($400 × 30 = $12,000
+        per month in 2024)
+    No receipts or LTC invoices required to receive payment.
+
+6.3 MAXIMUM BENEFIT: Cumulative acceleration limited to 90%
+    of death benefit ($315,000). Remaining 10% reserved
+    for death benefit at end.
+
+6.4 BENEFIT PERIOD: Benefits paid monthly as long as:
+    (a) Insured remains eligible (re-certified annually), AND
+    (b) Cumulative maximum has not been reached, AND
+    (c) Policy remains in force.
+
+6.5 EFFECT ON POLICY: Each monthly chronic illness payment
+    reduces the death benefit and account value proportionally.
+    COI charges also reduce proportionally.
+
+6.6 WAITING PERIOD: 90-day elimination period from onset of
+    qualifying chronic illness to first benefit payment.
+
+6.7 INDEPENDENT ASSESSMENT: Heartland Security may require
+    an independent medical review. Owner may contest any
+    unfavorable assessment within 30 days.
+
+6.8 TAX TREATMENT: Indemnity LTC benefits up to the IRS
+    per diem limit ($400/day in 2024) are generally income
+    tax-free per IRC §7702B. Amounts above the per diem
+    limit may be taxable. Consult a tax professional.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - ADDITIONAL LIVING BENEFIT RIDERS
+═══════════════════════════════════════════════════════════════════
+7.1 TERMINAL ILLNESS RIDER (Included, No Charge):
+    Up to 80% of death benefit accelerated if life expectancy
+    < 12 months. Minimum acceleration: $25,000.
+
+7.2 CRITICAL ILLNESS RIDER (Included, No Charge):
+    25% of death benefit ($87,500 maximum) accelerated upon
+    first diagnosis of: heart attack, stroke, coronary artery
+    bypass, major organ transplant, end-stage renal disease,
+    ALS, or blindness (both eyes). Paid as a lump sum.
+    Reduces death benefit dollar-for-dollar.
+
+7.3 DISABILITY INCOME RIDER (Optional, not elected):
+    Would provide $2,000/month disability income if insured
+    is totally disabled. Available at issue only; not elected.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+8.1 POLICY LOANS: Variable rate loan option:
+    Loan rate: Prime Rate + 0.50% (adjusted quarterly).
+    Current loan rate: 8.50% (based on Prime of 8.00%).
+    Loaned amounts earn fixed account rate.
+
+8.2 FIXED RATE LOAN OPTION: 5.00% fixed, available as
+    alternative to variable rate. Owner elects at time
+    of each loan transaction.
+
+8.3 PARTICIPATING LOAN: Available after year 10. Loaned
+    amounts continue to participate in elected index accounts.
+    Rate: 5.00% fixed. Available only on amounts in
+    annual P-to-P accounts (not 5-year or monthly average).
+
+8.4 PARTIAL WITHDRAWALS: Minimum $500. First 8 per year free;
+    $35 fee thereafter. Reduces death benefit.
+
+8.5 CHRONIC ILLNESS INTERACTION: Policy loans and withdrawals
+    do not affect chronic illness benefit eligibility. However,
+    chronic illness payments reduce the total death benefit
+    pool, which also reduces the maximum future loans
+    (limited to 90% of surrender value).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+9.1 SCHEDULE (% of account value):
+
+    Year 1:  9%    Year 5:  5%    Year 9:  1%
+    Year 2:  8%    Year 6:  4%    Year 10: 0.5%
+    Year 3:  7%    Year 7:  3%    Year 11+: 0%
+    Year 4:  6%    Year 8:  2%
+
+9.2 LIVING BENEFIT SURRENDER EXEMPTION: Surrender charges
+    are waived if the policy is being surrendered because
+    the insured is currently receiving chronic illness
+    benefits and the maximum benefit has been nearly reached
+    (remaining death benefit < 15% of original face).
+
+9.3 FREE WITHDRAWAL: 10% of account value per year, year 2+.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE: Return of premium if death by suicide within
+     2 years. Chronic illness acceleration payments made
+     prior to death are not recoverable.
+
+10.2 CONTESTABILITY: 2 years from issue.
+
+10.3 CHRONIC ILLNESS BENEFIT EXCLUSIONS:
+     Chronic illness benefits are NOT payable if the
+     qualifying condition arises from or is materially
+     caused by:
+     (a) Alcohol or drug addiction (unless actively treated)
+     (b) War or act of war (declared or undeclared)
+     (c) Intentional self-inflicted injury
+     (d) Any pre-existing condition that was not disclosed
+         on the application and that would have affected
+         the underwriting decision (within 2-year period)
+
+10.4 PRE-EXISTING CONDITION LOOK-BACK: For chronic illness
+     purposes, a pre-existing condition is one for which the
+     insured received medical treatment, consultation, or
+     diagnosis within 12 months before policy issue.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+11.1 This is a life insurance policy, not a long-term care
+     insurance policy. The chronic illness benefit is an
+     accelerated death benefit; it reduces the death benefit
+     available to heirs.
+
+11.2 The IRS per diem limit ($400/day in 2024) is subject
+     to annual adjustment. Amounts above the limit may be
+     taxable income.
+
+11.3 Index credits exclude dividends and are not guaranteed.
+     0% floor applies.
+
+11.4 Monthly average crediting may produce lower credits
+     than annual P-to-P in trending markets.
+
+11.5 5-year account values are not accessible mid-term
+     without forfeiting the period's index credit.
+
+═══════════════════════════════════════════════════════════════════
+
+Contact:
+Heartland Security Life Insurance, Ltd.
+Living Benefits Center
+1-888-HEARTLAND | living@heartlandsecurity.com
+Omaha, Nebraska
+
+[SEAL]
+
+__________________________________
+President and Chief Actuary
+Heartland Security Life Insurance, Ltd.
+
+June 18, 2024
+
+═══════════════════════════════════════════════════════════════════

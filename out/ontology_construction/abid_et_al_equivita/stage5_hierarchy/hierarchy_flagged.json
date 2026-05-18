@@ -1,0 +1,165 @@
+[
+  {
+    "owl_name": "Beneficiary",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A person or entity designated to receive insurance benefits upon the insured's death.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitRecipient subclassOf Beneficiary. Reasoning: Beneficiary is the broader category because it encompasses any person or entity designated to receive benefits under an insurance policy, which may include not only death benefits but also other types of benefits (e.g., disability benefits, maturity benefits). DeathBenefitRecipient is a more specific role, limited to receiving only the death benefit from a life insurance policy. Therefore, DeathBenefitRecipient is a type of Beneficiary, making 'Beneficiary' the superclass and 'DeathBenefitRecipient' the subclass. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Beneficiary Change",
+      "contingent beneficiary",
+      "beneficiary",
+      "irrevocable beneficiary",
+      "beneficiary subordination",
+      "beneficiary presumption",
+      "Irrevocable Beneficiary Designation",
+      "Designated Beneficiary"
+    ]
+  },
+  {
+    "owl_name": "ContractualProvision",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal clause or stipulation within a life insurance contract governing rights and obligations.",
+    "parents": [
+      "ContractualAgreement"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set ContractualProvision subclassOf ContractualAgreement. Reasoning: ContractualAgreement is the broader category because it refers to the entire legal agreement that defines the terms of an insurance contract. A ContractualProvision, on the other hand, is a specific clause or stipulation within that agreement. Therefore, a ContractualProvision is a component or type of a ContractualAgreement, making Option A the semantically sound relationship.",
+    "top_members": [
+      "CONCEPT",
+      "ORGANIZATION",
+      "DOCUMENT",
+      "PROVISION",
+      "POLICY",
+      "STATEMENT",
+      "LAW"
+    ]
+  },
+  {
+    "owl_name": "PolicyCommunication",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A communication from the insurer to the policyholder regarding policy-related information.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InformationalUpdate subclassOf PolicyCommunication. Reasoning: PolicyCommunication is the broader category because it encompasses any communication from the insurer to the policyholder regarding policy-related information, which includes both binding and non-binding content. InformationalUpdate is a specific type of PolicyCommunication that is explicitly non-binding and focused on providing informational content. Therefore, InformationalUpdate is a subtype of PolicyCommunication, making Option B the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Policy Communication",
+      "Company Communication",
+      "Communication Updates",
+      "informational notifications"
+    ]
+  },
+  {
+    "owl_name": "ContractualAgreement",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal agreement that defines the binding terms of the insurance contract.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "ContractualProvision",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set ContractualProvision subclassOf ContractualAgreement. Reasoning: ContractualAgreement is the broader category because it refers to the entire legal agreement that defines the terms of an insurance contract. A ContractualProvision, on the other hand, is a specific clause or stipulation within that agreement. Therefore, a ContractualProvision is a component or type of a ContractualAgreement, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "legal agreement encompassing entire contract",
+      "legal scope of binding agreement"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefitRecipient",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The individual or entity designated to receive the death benefit payout from a life insurance policy.",
+    "parents": [
+      "Beneficiary"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "InsuredPerson",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitRecipient subclassOf Beneficiary. Reasoning: Beneficiary is the broader category because it encompasses any person or entity designated to receive benefits under an insurance policy, which may include not only death benefits but also other types of benefits (e.g., disability benefits, maturity benefits). DeathBenefitRecipient is a more specific role, limited to receiving only the death benefit from a life insurance policy. Therefore, DeathBenefitRecipient is a type of Beneficiary, making 'Beneficiary' the superclass and 'DeathBenefitRecipient' the subclass.",
+    "top_members": [
+      "primary beneficiary of death benefit",
+      "recipient of death benefit payout",
+      "recipient of death benefit"
+    ]
+  },
+  {
+    "owl_name": "Event",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A significant occurrence that triggers a change in policy status or benefits.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "EVENT"
+    ]
+  },
+  {
+    "owl_name": "InformationalUpdate",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A communication issued by an insurer providing non-binding informational content to a policyholder.",
+    "parents": [
+      "PolicyCommunication"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "STATEMENT",
+    "resolved_gnp": "ContractualProvision",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InformationalUpdate subclassOf PolicyCommunication. Reasoning: PolicyCommunication is the broader category because it encompasses any communication from the insurer to the policyholder regarding policy-related information, which includes both binding and non-binding content. InformationalUpdate is a specific type of PolicyCommunication that is explicitly non-binding and focused on providing informational content. Therefore, InformationalUpdate is a subtype of PolicyCommunication, making Option B the semantically sound relationship.",
+    "top_members": [
+      "informational updates issued by insurer"
+    ]
+  },
+  {
+    "owl_name": "Benefit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A payment or value provided under a life insurance policy upon specified conditions.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "BENEFIT"
+    ]
+  }
+]

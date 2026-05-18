@@ -1,0 +1,324 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║        INDEXED UNIVERSAL LIFE INSURANCE POLICY                    ║
+║        FutureBright Life Insurance Company                        ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Policy Number: FBLIC-JUV-IUL-2024-5501
+Date of Issue: September 10, 2024
+Form: Juvenile Indexed Universal Life (JIUL-3)
+Market Position: Child/Juvenile Coverage with Education
+                 and Wealth Transfer Focus
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER AND INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Marcus DeShawn Williams (Father)
+Owner DOB: March 22, 1990 | Age: 34
+Owner Address: 4412 Maple Grove Drive, Atlanta, GA 30303
+
+Insured: Amara Joy Williams (Daughter, Minor)
+Insured DOB: July 5, 2020 | Age: 4 | Gender: Female
+Underwriting Class: Juvenile Standard
+(Juvenile policies do not use tobacco classifications.)
+
+Successor Owner (at Insured's Majority): Amara Joy Williams
+Ownership Transfer Date: July 5, 2038 (insured's 18th birthday)
+    unless Owner changes election before that date.
+
+═══════════════════════════════════════════════════════════════════
+POLICY SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Initial Face Amount: $150,000
+Death Benefit Option: Option 1 (Level)
+Planned Annual Premium: $2,400
+Policy is designed to fund to age 18, then self-sustain
+or generate income for higher education expenses.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+While Insured is a Minor:
+Primary: Marcus DeShawn Williams (Father/Owner) - 100%
+Contingent: Keisha Renee Williams (Mother) - 100%
+
+Upon Ownership Transfer at Age 18:
+Primary beneficiary may be changed by Insured/New Owner.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - KEY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Juvenile Policy" - A life insurance policy issued on the
+    life of a minor (under age 18) with ownership held by a
+    parent, guardian, or other adult.
+
+1.2 "Ownership Transfer" - The automatic or elected transfer
+    of policy ownership to the insured upon reaching the age
+    of majority (18) or as elected by current owner.
+
+1.3 "Education Income Phase" - Policy years 14-17 (insured
+    ages 18-21), during which the policy is designed to
+    provide supplemental income for college expenses.
+
+1.4 "Payor Benefit" - A rider feature that waives premium
+    if the owner/payor dies or becomes disabled, keeping the
+    juvenile policy in force.
+
+1.5 "Guaranteed Insurability Option (GIO)" - The insured's
+    guaranteed right to purchase additional life insurance
+    at specified future dates without evidence of insurability.
+
+1.6 "Floor Rate" - The minimum indexed interest rate of 0%,
+    protecting against market loss.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - INDEXING OPTIONS AND ALLOCATION
+═══════════════════════════════════════════════════════════════════
+2.1 AVAILABLE ACCOUNTS:
+
+    A) S&P 500 Annual Point-to-Point
+       Current Cap: 10.0% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+
+    B) Conservative Growth Account
+       Index: 70% S&P 500 / 30% U.S. Aggregate Bond
+       Current Cap: 7.50% | Participation Rate: 100%
+       Floor: 0% | Crediting Period: 1 year
+       (More stable returns; suitable for shorter time horizons)
+
+    C) Fixed Account
+       Current Rate: 3.25% | Guaranteed Minimum: 2.50%
+
+2.2 CURRENT ALLOCATION (age-based default):
+    Ages 4-12:  S&P 500: 70% | Fixed: 30%
+    Ages 13-17: S&P 500: 40% | Conservative: 30% | Fixed: 30%
+    (Owner may override these defaults at any time)
+
+2.3 AGE-BASED GLIDE PATH OPTION: Owner may elect automatic
+    annual reallocation that gradually shifts toward fixed
+    account as insured approaches college age. Election is
+    made at issue and may be revoked at any policy anniversary.
+
+2.4 GUARANTEED MINIMUMS:
+    • S&P 500 cap: never below 3.50%
+    • Conservative account cap: never below 2.50%
+    • Fixed account: never below 2.50%
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - HOW INDEX CREDITING WORKS
+═══════════════════════════════════════════════════════════════════
+3.1 Annual point-to-point crediting:
+    Credit = MAX(0%, MIN(Cap, Index% Change × Participation%))
+
+3.2 LONG-TERM COMPOUNDING BENEFIT: Juvenile policies benefit
+    uniquely from tax-deferred compound growth over 14+ years
+    before any withdrawals are anticipated. Even moderate
+    annual credits (4-7%) compound substantially over this
+    horizon.
+
+3.3 ZERO FLOOR GUARANTEE: The insured's account will never
+    lose value due to negative index performance, providing
+    principal protection during market downturns that may
+    occur before funds are needed for education.
+
+3.4 EXAMPLE (14-year growth projection at 6% average annual
+    credit): $2,400/year × 14 years with 6% avg credit
+    produces an estimated account value of approximately
+    $52,000-$58,000 (non-guaranteed; illustrated only).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - PREMIUM STRUCTURE
+═══════════════════════════════════════════════════════════════════
+4.1 PLANNED PREMIUM: $2,400 per year ($200/month), designed
+    to fund for 14 years (through insured age 18).
+
+4.2 FLEXIBLE PAYMENTS: Minimum $50 per payment.
+    Maximum: $15,000 per year (IRS §7702 limit for this
+    face amount and insured age). No MEC limit for juvenile
+    policies funded within guideline limits.
+
+4.3 PREMIUM LOAD: 3.5% of each premium payment, all years.
+
+4.4 GIFT TAX: Annual premiums paid by parent/grandparent/third
+    party are generally within annual gift tax exclusion.
+    FutureBright does not provide gift tax advice; consult
+    an estate planning attorney.
+
+4.5 GRANDPARENT-FUNDED OPTION: Grandparents or other third
+    parties may pay premiums directly. FutureBright will
+    accept premium payments from any person with an insurable
+    interest relationship to the insured minor.
+
+4.6 PAYOR: Owner (Marcus DeShawn Williams) is designated as
+    Payor. Premium waiver applies to the Payor, not the
+    insured.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - MONTHLY POLICY CHARGES
+═══════════════════════════════════════════════════════════════════
+5.1 COI: Based on juvenile mortality tables. Rates are
+    extremely low for healthy children and will remain low
+    for years 1-20. COI rates are guaranteed not to exceed
+    maximum published rates. Age 4, Standard juvenile COI
+    is less than $0.10 per $1,000 NAR per month.
+
+5.2 ADMINISTRATIVE FEE: $5.00 per month (guaranteed for life).
+
+5.3 TOTAL APPROXIMATE MONTHLY CHARGES (Age 4):
+    COI: ~$1.50/month | Admin: $5.00/month
+    Total: ~$6.50/month
+    (Extremely low charges maximize accumulation efficiency)
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 DEATH BENEFIT WHILE MINOR: $150,000 payable to Owner/
+    parent upon insured's death. Per applicable state law,
+    life insurance proceeds on minors may be subject to
+    court-supervised administration.
+
+6.2 NO CONTESTABILITY ON DEATH OF MINOR after 2-year period.
+
+6.3 ACCELERATED DEATH BENEFIT: Available for terminal illness
+    (life expectancy < 12 months). Minimum acceleration $25,000.
+
+6.4 GUARANTEED INSURABILITY OPTION (GIO RIDER - Included):
+    Insured may purchase additional life insurance at guaranteed
+    future dates without evidence of insurability. GIO dates:
+    Insured ages 22, 25, 28, 31, 34, 37, 40.
+    Maximum purchase per GIO date: $150,000 (100% of base).
+    Also triggerable upon marriage, birth/adoption of child,
+    and graduation from 4-year college (with documentation).
+    GIO monthly charge: $0.50 per month.
+
+6.5 CHILDREN'S TERM RIDER: Unavailable on juvenile policies
+    (insured is already a child).
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PAYOR BENEFIT RIDER (INCLUDED AT NO CHARGE)
+═══════════════════════════════════════════════════════════════════
+7.1 PAYOR DEATH BENEFIT: If Marcus DeShawn Williams (Payor/
+    Owner) dies before the insured reaches age 25, all future
+    planned premiums ($2,400/year) are waived until the earlier
+    of the insured's age 25 or policy surrender.
+
+7.2 PAYOR DISABILITY BENEFIT: If Payor becomes totally
+    disabled per rider definition for 6+ consecutive months,
+    planned premiums are waived for up to 3 years.
+
+7.3 PAYOR BENEFIT TERMINATES when insured reaches age 25
+    or upon ownership transfer if earlier.
+
+7.4 PAYOR BENEFIT IS FREE on juvenile policies under age 5
+    at issue.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - OWNERSHIP TRANSFER AND MAJORITY PROVISIONS
+═══════════════════════════════════════════════════════════════════
+8.1 AUTOMATIC TRANSFER: On the insured's 18th birthday
+    (July 5, 2038), policy ownership automatically transfers
+    to the insured unless Owner files a written election to
+    retain ownership at least 30 days before transfer date.
+
+8.2 RETAINED OWNERSHIP OPTION: Owner may retain ownership
+    indefinitely by filing written election. Annual elections
+    must be renewed each year after insured turns 18.
+
+8.3 COLLATERAL ASSIGNMENT OPTION: Owner may collaterally
+    assign this policy to a lender or educational institution
+    without triggering ownership transfer. Collateral
+    assignment does not transfer ownership rights.
+
+8.4 INSURED RIGHTS AFTER TRANSFER: Upon receiving ownership,
+    insured may change beneficiary, take loans, make
+    withdrawals, and change allocations without restriction.
+
+8.5 INCOME RIGHTS WHILE MINOR: Withdrawals and loans by
+    Owner while insured is a minor are Owner's funds. No
+    fiduciary obligation to the insured minor applies unless
+    required by state law.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LOANS AND WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+9.1 POLICY LOANS: Available to Owner (or insured after
+    ownership transfer). Maximum 90% of surrender value.
+    Loan rate: 4.5% annually.
+    Collateral earns: Fixed account rate.
+
+9.2 PARTIAL WITHDRAWALS: Minimum $500.
+    First 6 per year free; $25 fee per withdrawal thereafter.
+    Reduces death benefit under Option 1.
+
+9.3 EDUCATION INCOME STRATEGY: At age 18, insured (as new
+    owner) may take withdrawals up to basis tax-free, then
+    loans for remaining income needs. Suggested withdrawal
+    schedule available from FutureBright upon request.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+10.1 SCHEDULE (% of account value):
+
+    Year 1:  8%    Year 5:  4%    Year 9:  0.5%
+    Year 2:  7%    Year 6:  3%    Year 10+: 0%
+    Year 3:  6%    Year 7:  2%
+    Year 4:  5%    Year 8:  1%
+
+10.2 FREE WITHDRAWAL: 10% of account value per year, beginning
+     year 2, no surrender charge.
+
+10.3 NOTE: Shortened surrender charge period (10 years vs.
+     typical 12-15) reflects juvenile policy design philosophy
+     of providing early flexibility for education access.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - EXCLUSIONS AND LIMITATIONS
+═══════════════════════════════════════════════════════════════════
+11.1 SUICIDE: If insured dies by suicide after reaching age 18,
+     and within 2 years of issue or reinstatement, we pay only
+     premiums paid minus withdrawals. Suicide is clinically
+     inapplicable to very young children and not excluded for
+     the first 14 policy years.
+
+11.2 CONTESTABILITY: 2 years from issue date.
+
+11.3 MISREPRESENTATION: If the parent/owner made material
+     misrepresentations about the insured's health in the
+     application, we may contest. Medical history for young
+     children is typically straightforward.
+
+11.4 INSURABLE INTEREST: Parent-child insurable interest is
+     presumed under all state laws.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 12 - DISCLOSURES
+═══════════════════════════════════════════════════════════════════
+12.1 Life insurance on minors is regulated by state law.
+     Maximum face amount for juvenile coverage varies by state;
+     this policy complies with all applicable Georgia regulations.
+
+12.2 This policy is not a 529 plan or other qualified education
+     savings account. It does not provide state income tax
+     deductions and does not impact financial aid calculations
+     the same way 529 accounts do.
+
+12.3 Index participation excludes dividends. 0% floor applies.
+
+12.4 GIO rights are valuable; they should be exercised promptly
+     upon each eligible event as they are non-cumulative.
+
+═══════════════════════════════════════════════════════════════════
+
+Questions? Contact FutureBright Life Insurance Company:
+1-855-FUTURE-1 | juvenile@futurebrightlife.com
+Atlanta, Georgia
+
+[SEAL]
+
+__________________________________
+President
+FutureBright Life Insurance Company
+
+September 10, 2024
+
+═══════════════════════════════════════════════════════════════════

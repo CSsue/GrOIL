@@ -1,0 +1,1083 @@
+# Induced TBox Axioms — Manchester Syntax Summary
+
+## owl:someValuesFrom  (446 axioms)
+
+  [✓] ABRRider hasRiderAvailabilityTimelineConstraint some TimePeriod
+      # Specifies time-based conditions for availability of the ABR rider.
+  [✓] ADBTrigger hasRiderRemovalImpactOnLoanProtection some ConditionSatisfaction
+      # ADB rider removal affects loan protection.
+  [✓] AMLCompliance hasMECDistributionsIncomeFirstRule some RulesBasedTrackingIndex
+      # Income-first rule for MEC distributions.
+  [✓] AMLCompliance hasReturnOfPremiumMaturityAlignment some Premium
+      # Return of premium aligns with policy maturity conditions.
+  [✓] AWOLExclusion hasExceptionToUaAwolExclusion some DuressException
+      # A condition allowing coverage despite UA/AWOL exclusion when duress is proven.
+  [✓] AcceleratedBenefit hasAcceleratedBenefitEligibilityCondition some MedicalCriterionForAcceleration
+      # Conditions for accelerated benefit eligibility.
+  [✓] AccelerationRequestResponseTime hasAccelerationRequestCertification some CertificationRequirement
+      # Acceleration request must be certified.
+  [✓] Accident hasAccidentSoleCauseRequirement some Exclusion
+      # Accident must be sole cause for injury coverage.
+  [✓] Accident hasAccidentBenefitPayoutCondition some MonetaryAmount
+      # Accident benefit payable only if qualifying accident occurs.
+  [✓] AccidentalDeath hasClaimReviewRequirementForBaseJumping some ClaimProcessingCondition
+      # Base jumping claims require specialized review.
+  [✓] AccidentalDeathAndDismembermentInsurance ADDBenefitDefinition some Benefit
+      # AD&D benefits are supplemental to basic life.
+  [✓] AccidentalDeathAndDismembermentSchedule hasADDDPayoutForHearingLoss some xsd:decimal
+      # A policy pays out if hearing loss is a covered event under AD&D.
+  [✓] AccidentalDeathAndDismembermentSchedule ADDExclusionForIllness some Exclusion
+      # Illnesses are excluded from AD&D coverage.
+  [✓] Account hasTieredInterestRateAddition some Rate
+      # Interest rates are determined by tiered thresholds with caps, floors, and rate bands.
+  [✓] Account hasMinimumBalanceRequirement some MonetaryAmount
+      # Policy must maintain minimum balance after transactions.
+  [✓] Account hasEmbeddedFeesReducePerformance some Account
+      # Embedded fees reduce index account performance.
+  [✓] Account hasTwoYearSumCalculationMethod some CalculationFormula
+      # Specifies method for two-year sum credit calculation.
+  [✓] Account CompanyAbsorbsLossThreshold some MonetaryThreshold
+      # Company absorbs loss up to a threshold.
+  [✓] Account ThresholdRateIncreaseTrigger some Rate
+      # A rate increase is triggered when a threshold is exceeded.
+  [✓] Account hasPendingCreditsContinuePostDeath some Credit
+      # Pending credits remain active after policyholder's death.
+  [✓] AccountValue hasGrowthIncentiveTrigger some OptionAfterThreeFullPolicyYears
+      # A policy component triggers growth incentives under overfunding.
+  [✓] AccountValue hasTieredCoverageLimit some Rate
+      # Coverage limits vary by account value tiers.
+  [✓] AccountValue hasDailyMnEChargeDeduction some MnECharge
+      # A daily charge is deducted from the policy account.
+  [✓] AccountValue hasAccountValueNotificationTrigger some AccountValueDepletionAlert
+      # A notification is triggered when the account value falls below a specified threshold.
+  [✓] AccumulationPhase hasAccumulationPhaseEligibility some LimitationOnDeathClaimPayout
+      # Conditions for contributions during accumulation phase.
+  [✓] ActiveEmployee hasFullTimeEligibilityRequirement some Benefit
+      # Full-time staff are eligible for full-benefit coverage.
+  [✓] ActiveTrancheFaceAmount hasActiveTrancheDefinition some Definition
+      # Defines the conditions under which a tranche is considered active.
+  [✓] ActivitiesOfDailyLiving hasFunctionalLimitationDefinition some LimitationOnLiabilityAfterSelfInflictedDeath
+      # Defines criteria for functional limitations in policy context.
+  [✓] AdministrativeFrameworkForRateReassessment UniformAdminMethodApplication some ApplicationFormVersion
+      # Uniform application of administrative method.
+  [✓] AmountReinsuredByCoInsurers hasPostDepositPremiumResponsibility some Premium
+      # Policyholder is responsible for premiums after deposit ends.
+  [✓] AmountReinsuredByCoInsurers hasOverseasDisabilityCertificationException some Exception
+      # Policyholder qualifies for exception with overseas disability certification.
+  [✓] AmountReinsuredByCoInsurers hasDismembermentPaymentEligibility some PaymentMethod
+      # Claim qualifies for dismemberment payment upon body part loss.
+  [✓] AmountReinsuredByCoInsurers hasNoFeeForMonthlyAllotments some FormCode
+      # Monthly allotments are exempt from fees.
+  [✓] AnnualPremium hasAnnualPremiumLimitUnderIRC7702 some MonetaryAmount
+      # Annual premiums must not exceed IRC §7702 limit.
+  [✓] Application hasApplicationIncorporationAsContractComponent some ContractualRelationshipStatus
+      # An application is incorporated as a component of the insurance contract.
+  [✓] Application hasFullEoiRequiresMedicalExam some MedicalExamination
+      # Full EOI requires medical exam completion.
+  [✓] ApplicationSubmissionDate InvestigationRightsDuringContestability some ContestabilityPeriod
+      # Right to investigate claims during contestability.
+  [✓] AssetHeldByFoundation SegregatedAssetProtection some SegregatedAssetAccount
+      # Assets must be legally segregated for protection.
+  [✓] Assignment SurvivorshipPreservationThroughAssignment some SurvivorshipInsurance
+      # Assignments preserve survivorship status.
+  [✓] AvocationInjury hasAvocationInjuryHospitalization some HospitalizationClaim
+      # Hospitalization due to avocation injury is covered.
+  [✓] BasicLifeCoverage hasSalaryBasedLifeInsuranceCalculation some CalculationMethodForIncreasingDeathBenefit
+      # Life insurance amount based on salary calculation.
+  [✓] Beneficiary hasBeneficiaryVerificationRequirement some Document
+      # Beneficiaries must provide verified identity documents.
+  [✓] Beneficiary WithholdingTaxOnNonUSBeneficiaries some xsd:boolean
+      # Non-US beneficiaries face withholding tax.
+  [✓] BeneficiaryDistributionMethod hasSpousePriorityInDefaultBenefit some SpouseBeneficiary
+      # The spouse has priority over other beneficiaries in default benefit distribution.
+  [✓] BeneficiaryElection hasLumpSumElectionWindow some xsd:duration
+      # Beneficiary may elect lump sum during specified window.
+  [✓] Benefit hasDeathBenefitEligibilityCondition some AmountReinsuredByCoInsurers
+      # Death benefit eligibility depends on reinsured amount.
+  [✓] Benefit hasTerrorismBenefitRequiresRider some Rider
+      # Terrorism benefit requires a rider to be in effect.
+  [✓] Benefit hasReducedBenefitDuringEarlyYears some YearOfPolicyIssuance
+      # Benefits are reduced during early policy years.
+  [✓] Benefit hasGradedBenefitPeriod some TimePeriod
+      # Specifies time-limited benefit eligibility period.
+  [✓] Benefit hasBenefitCeaseThreshold some MonetaryThreshold
+      # Benefit ceases when threshold is met.
+  [✓] BuyoutOption BuyoutOptionTrigger some EventCausingLossOfInsurableInterest
+      # Buyout option activates upon loss of insurable interest.
+  [✓] Certificate hasCertificateValidityCondition some ConditionSatisfaction
+      # Certificate must meet validity conditions.
+  [✓] CertificationRequirement requiresCertificationForChronicIllness some Endorsement
+      # A certification must remain valid to maintain eligibility for continued endorsement.
+  [✓] ChargeAbsorption hasDeductionTypeClassification some FinancialCharge
+      # Deduction types are classified as financial charges.
+  [✓] CharitableBeneficiary hasCharitableSubstitutionEINRequirement some xsd:string
+      # Charitable substitution requires a valid EIN.
+  [✓] ChildDependentLifeCoverage hasChildCoverageTerminationAtAge26 some AgeRange
+      # Child coverage ends at age 26.
+  [✓] ChronicIllnessBenefitFundingMechanism eligibilityRestorationPreventsGuaranteedPurchaseOptionLimitation some BenefitEligible
+      # Policyholder must meet chronic illness criteria to qualify.
+  [✓] ChronicIllnessBenefitFundingMechanism hasGradedIllnessBenefitStructure some YearOfPolicyIssuance
+      # Tiered payouts based on illness duration by policy year.
+  [✓] ChronicIllnessBenefitFundingMechanism hasChronicIllnessAdlRequirement some ActivitiesOfDailyLiving
+      # Chronic illness requires ADL limitation.
+  [✓] CivilianTransition hasCivilianTransitionContinuity some CivilianTransition
+      # Coverage continues during civilian transition.
+  [✓] Claim hasTimelineConstraint some TimePeriod
+      # Time-based constraints on claim or payment events.
+  [✓] Claim hasClaimApprovalBeforePayment some ChargeAbsorption
+      # A claim must be approved before payment.
+  [✓] Claim hasClaimDocumentationRequirement some Document
+      # A claim requires specific documentation to be submitted for processing.
+  [✓] Claim ClaimDenialForUnauthorizedEscalation some ClaimDenial
+      # Claims for unapproved escalation events are denied.
+  [✓] Claim requiresDocumentationForActivationOfGioDueTo some Document
+      # AD&D claims require a police report submission.
+  [✓] Claim hasAssigneeReleaseRequirement some ClaimResolutionDeadline
+      # A claim must have a release from the assignee before processing.
+  [✓] ClinicalDiagnosis hasFirstDiagnosisPaymentTrigger some PaymentPercentageForBodyPartLoss
+      # First diagnosis triggers a payment for body part loss.
+  [✓] CoBorrower hasCoOwnerConsentForFaceAmountChange some FaceAmount
+      # Co-owner consent required for face amount change.
+  [✓] CollateralAssignment hasLiquidityLimitation some LimitationOnLiabilityAfterSelfInflictedDeath
+      # A collateral assignment cannot transfer ownership or override priority without consent.
+  [✓] CombatZoneDeathBenefit hasDeclaredCombatZoneDefinition some Definition
+      # Specifies the conditions under which a zone is classified as a declared combat zone.
+  [✓] CommonDisasterRuleIndividuals paymentMethoD some ConditionSatisfaction
+      # Claim payment requires survival of common disaster.
+  [✓] ComplianceRequirementClause ThreeYearLookbackCompliance some YearOfPolicyIssuance
+      # Policyholder must not have prior claims in three-year lookback.
+  [✓] ConditionSatisfaction hasNoWinWithdrawalPolicyForce some PolicyContract
+      # A policy remains in force without payout if no win.
+  [✓] ConditionalRequirement hasWaiverEligibilityOnTrancheExpiry some ConditionalRequirement
+      # Waiver eligibility tied to Tranche 3 expiry.
+  [✓] ConsequenceOfFailureToNotify ApprovalRequirementForChange some Rate
+      # Approval needed before policy rate changes.
+  [✓] ConsequenceOfFailureToNotify hasTaxFreePolicyLoansEligibility some PolicyContract
+      # Policy loans are tax-free if conditions on basis and status are met.
+  [✓] ConsequenceOfFailureToNotify hasRatingReviewEligibility some LimitationOnLiabilityAfterSelfInflictedDeath
+      # Rating reviews are permitted under specific eligibility conditions.
+  [✓] ContingentBeneficiary entitledToLessorOfOutstandingBalanceOrRefundedPremiums some Beneficiary
+      # A contingent beneficiary is entitled to benefits only if the primary beneficiary is deceased.
+  [✓] ContractSection hasContractScopeDefinition some Definition
+      # Defines the scope of a contract's applicability.
+  [✓] ContractualProtection hasCancellationRightByMutualAgreement some LifeInsurancePolicy
+      # Cancellation right by mutual agreement applies to policies.
+  [✓] ConversionEligibility hasConversionDeadlineConstraint some xsd:date
+      # Time limit for valid policy conversion.
+  [✓] ConversionEligibility hasConversionOverrideOnSeparation some Separation
+      # Conversion rights overridden on separation.
+  [✓] ConversionOptionDeadline hasRiderContinuityAfterConversion some Rider
+      # Riders remain active after policy conversion.
+  [✓] CostOfInsurance hasCOIChargeExceedsCreditedInterest some MonetaryAmount
+      # COI charges exceed credited interest.
+  [✓] CostOfInsurance hasCoIChargesInUsd some CurrencyUnit
+      # COI charges are denominated in US dollars.
+  [✓] Country holdsProceedsInEscrowIf some EscrowPeriod
+      # Policy must be in escrow for high-risk jurisdictions.
+  [~] CourtAppointedGuardian hasCourtGuardianOverride some PolicyProvision
+      # Court-appointed guardian may override policy conditions.
+  [✓] Coverage hasRnRCoverageInclusion some xsd:boolean
+      # Policy must include R&R coverage as a required benefit.
+  [✓] CreditingMechanism hasCreditingRateCap some Rate
+      # Credited rate is capped at a maximum value.
+  [✓] CustodialOwner CustodialOwnershipContinuity some xsd:boolean
+      # Custodial ownership must remain uninterrupted.
+  [✓] CustodialOwner hasAuthorizationRequiredBeforeMaturity some AuthorizationRequirement
+      # Requires authorization before maturity actions.
+  [✓] DateWindow hasEligibilityWindowConstraint some DateWindow
+      # Coverage eligibility must begin within a time window.
+  [✓] DateWindow hasPenaltyForNonDisclosure some DurationCeilingForMonthlyPayments
+      # Penalty applies based on duration of nondisclosure.
+  [✓] DateWindow hasSeveranceRequestDeadline some PeriodicWithdrawalSection
+      # Severance request must be submitted before deadline.
+  [✓] DateWindow hasTimeLimitForAccidentalDeathClaim some TimeLimit
+      # Accidental death claims must be filed within a time window.
+  [✓] DateWindow hasDeathBeforeDeadline some DeathBenefit
+      # Policyholder must die before deadline to trigger benefit.
+  [✓] DateWindow hasRiderElectionDuringOpenEnrollment some Rider
+      # A rider can only be elected during open enrollment.
+  [✓] DeathBenefit isDeductedFromPremiumPaymentsToCalculateShadowPremiumCredit some CurrencyUnit
+      # Death benefit must be denominated in US dollars.
+  [✓] DeathBenefit hasDeathBenefitAmount some MonetaryAmount
+      # TIA payout reduces death benefit amount.
+  [✓] DeathBenefit hasTaxFreeDeathBenefitRegardlessOfMECStatus some TaxFreeBenefit
+      # Tax-free death benefit regardless of MEC status.
+  [✓] Deduction hasPostWaiverDeductionResumption some AgeRange
+      # Deductions resume post-waiver based on age.
+  [✓] DeferralRequestCost hasNoConsecutiveDeferrals some PolicyYear
+      # No consecutive deferrals allowed after one.
+  [✓] Definition hasSubstantialActivityDefinition some Activity
+      # Specifies criteria for an activity to be substantial.
+  [✓] Definition NaturalDeathDefinition some Definition
+      # Defines the condition for natural death.
+  [✓] Dependent AgeReductionExclusionForDependents some AgeBasedBenefitReduction
+      # Dependents are excluded from age reduction benefits.
+  [✓] DependentCoverageConversion hasDependentCoverageEndCondition some ConditionSatisfaction
+      # Dependent coverage ends when specific conditions are met.
+  [✓] DeploymentGracePeriod hasReinstatementAfterDeploymentLapse some PolicyReinstatementCondition
+      # Policy reinstatement after deployment-related lapse under conditions.
+  [✓] DeploymentGracePeriod hasCoverageDurationForHardshipOrPortedAssignment some AgeRange
+      # Coverage duration tied to age-based eligibility.
+  [✓] Disability hasDisabilityTriggerForVA100Percent some DisabilityBenefit
+      # 100% VA benefit triggered by defined disability criterion.
+  [~] Disclosure hasPremiumReductionAfterReclassification some Rider
+      # Disclosure links to rider changes after reclassification.
+  [✓] Eligibility requiresPaymentOfOverduePremiums some Action
+      # A transaction is required to satisfy eligibility.
+  [✓] EligibleParticipant hasVolunteerIneligibility some EligibilityRequirement
+      # Volunteers are excluded from eligibility.
+  [✓] EligibleParticipant hasNoEoiForInitialCoverage some Coverage
+      # Initial coverage excludes EOI requirement.
+  [✓] EmployeeConversion hasConversionRightForDisabledEmployees some ConversionRight
+      # Disabled employees have a right to convert their policy.
+  [✓] EmployeeConversion restrictsGrantorFromSurrenderingPolicy some PolicyContract
+      # Employees are restricted from withdrawing benefits under certain conditions.
+  [✓] EmployeeConversion NoUnderwritingForCoverageChanges some UnderwritingExemption
+      # Coverage reductions require no underwriting.
+  [✓] EmployeeLifePremiumCost hasVestingScheduleByServiceDuration some VestingSchedule
+      # Vesting increases with years of service.
+  [✓] EmployeeOfferInquiry hasEOIRequirementAboveThreshold some AgeRange
+      # EOI required when coverage exceeds threshold.
+  [✓] EmployerInsolvency hasTerminationTriggerRollout some TerminationEventDueToZeroAccountBalance
+      # A specific event triggers the rollout of policy benefits.
+  [✓] EmployerProvidedInsurance hasTaxExclusionForEmployerShare some Exclusion
+      # Employer share is tax-excluded.
+  [✓] EmploymentStatus GroupCoverageTerminationWindow some TimePeriod
+      # Group coverage may terminate within a defined time window.
+  [✓] Endorsement hasEndorsementImpactRestriction some LimitationOnLiabilityAfterSelfInflictedDeath
+      # Endorsements are restricted in their impact.
+  [✓] EnrollmentWindow hasEnrollmentRequiresEOI some EvidenceOfInsurability
+      # Enrollment outside standard periods requires EOI.
+  [✓] EnrollmentWindow hasPost60DayEnrollmentEOIRequirement some EvidenceOfInsurability
+      # Enrollment after 60 days requires an EOI submission.
+  [✓] EstateLiquidity hasEstateLiquidityAccessTrigger some ConditionSatisfaction
+      # Access is triggered by meeting conditions.
+  [✓] EventCausingLossOfInsurableInterest hasTimingConstraintOnEvent some TimeLimit
+      # Temporal restriction applies to policy events.
+  [✓] ExcessProceedsRecipient hasExcessProceedsPayableToBeneficiary some Beneficiary
+      # Excess proceeds must be payable to a specified beneficiary.
+  [✓] Exclusion hasRiotParticipationExclusion some Exclusion
+      # Riot participation excludes coverage.
+  [✓] ExtendedTermOptionFaceAmount hasExtendedTermCoverageRestriction some PolicyTermDuration
+      # Limits extended term insurance under specified conditions.
+  [✓] FaceAmount hasInitialFaceAmountMatchesMortgageBalance some FaceAmount
+      # Initial face amount must match mortgage balance.
+  [✓] FixedAccount GuaranteedRateAppliesToFixedAccount some GuaranteedInterestRate
+      # Guaranteed rate applies to fixed accounts.
+  [✓] FlatExtraCharge hasFlatExtraExpiryCondition some ConditionSatisfaction
+      # Flat extra premium expires after year 5.
+  [✓] FraternalBenefit hasGovernanceByOrderLaws some LegalFramework
+      # Governed by order laws for administration.
+  [✓] GioRider hasGioRiderExpirationByAge some AgeRange
+      # GIO rider expires at a specified age.
+  [✓] GioRider hasDocumentationRequirementForGIO some Document
+      # GIO requires specific documentation.
+  [✓] GoldenHandcuffs hasIssuerGuaranteeAssociation some GuaranteeMechanism
+      # Guarantee associated with a specific issuer.
+  [✓] GuaranteeMechanism hasFloorRateGuarantee some InterestRate
+      # Guarantees a minimum interest rate regardless of market.
+  [✓] HazardousActivity hasHazardousActivityReviewTrigger some ClaimProcessingCondition
+      # A hazardous activity triggers a claims review process.
+  [✓] HazardousActivity hasIceClimbingExclusion some Exclusion
+      # Ice climbing is prohibited under the policy.
+  [✓] HazardousActivity hasCompetitionClimbingExclusion some Exclusion
+      # Prohibits coverage for competition climbing injuries.
+  [✓] HealthHistoryBasedDenialElimination hasSuperPreferredPlusEligibilityCriteria some xsd:boolean
+      # Medical history conditions for Super Preferred Plus eligibility.
+  [✓] HecvFeature hasUnderfundingReducesHECVBenefits some Benefit
+      # Underfunding reduces HECV benefits.
+  [✓] ImputedIncome hasImputedIncomeCalculationRule some RulesBasedBlending
+      # Imputed income calculated using rule-based blending.
+  [✓] IncomeStream hasTaxableIncomeAbovePerDiemLimit some MonetaryAmount
+      # A condition where taxable income exceeds the specified per diem threshold.
+  [✓] Index hasAllocationRuleConstraint some Account
+      # Specifies conditions for premium allocation to accounts.
+  [✓] Index hasMultiIndexWeightedAverageCalculation some xsd:decimal
+      # A weighted average is computed using multiple indices.
+  [✓] IndexAccount hasSAndP500BufferAccountCap some Rate
+      # Specifies a minimum return threshold for S&P 500 annual point-to-point participation.
+  [✓] IndexAccount hasFiveYearPointToPointCrediting some xsd:duration
+      # Crediting based on five-year point-to-point performance.
+  [✓] IndexAccount hasIndexSegmentDefinition some IndexAccountAllocationUnit
+      # Defines structural constraints of an index segment.
+  [✓] IndexCrediting hasIndexCreditFloorConstraint some CapAndFloorMechanism
+      # Index credits are bounded below by a zero floor, preventing negative values.
+  [✓] IndexRate hasDJIACapGuarantee some xsd:decimal
+      # A financial guarantee tied to the DJIA index performance.
+  [✓] IndexedAccount hasIndexedEnhancementGuaranteeCondition some xsd:boolean
+      # An indexed enhancement is not guaranteed and depends on approval.
+  [✓] IndexedAccount hasIndexedCreditFormula some CalculationFormula
+      # Indexed credits use a specified formula.
+  [✓] IndexedUniversalLifeInsuranceContract hasGuaranteedParticipationRate some Rate
+      # Guaranteed minimum participation rate in index crediting.
+  [✓] InstitutionalPremiumPayment hasBoardApprovalRequirement some ComplianceRequirementClause
+      # Policy transactions require board approval.
+  [✓] InstitutionalPremiumPayment hasW8BENRenewalRequirement some DocumentationRequirement
+      # Institutional payment requires W-8BEN renewal.
+  [✓] InstitutionalPremiumPayment PinnacleAcceptanceRequirement some RequiredDocumentation
+      # Pinnacle's acceptance requires documentation.
+  [✓] InstitutionalPremiumPayment hasGoodStandingRequirement some ComplianceRequirementClause
+      # Policyholder must be in good standing to satisfy eligibility.
+  [✓] InstitutionalPremiumPayment hasDualStatusMinisterEligibility some DualStatusMinister
+      # Dual status is required for ministerial eligibility.
+  [✓] InstitutionalPremiumPayment hasAMLComplianceRequirement some AMLCompliance
+      # AML compliance is mandatory for premium payments.
+  [✓] InstitutionalPremiumPayment hasCRSComplianceRequirement some CRSReporting
+      # A commitment to comply with CRS information exchange obligations.
+  [✓] InstitutionalPremiumPayment hasAnnualTaxCounselConsultationRequirement some MandatoryDisclosureDocument
+      # Annual tax counsel consultation required.
+  [✓] InstitutionalPremiumPayment hasCVATComplianceRequirement some ComplianceRequirementClause
+      # A policy must comply with CVAT requirements.
+  [✓] InstitutionalPremiumPayment hasAccessRequirementViaProspectus some RegulatoryDisclosure
+      # Access requires prospectus review.
+  [✓] InstitutionalPremiumPayment hasBindingArbitrationRequirement some RequiredDocumentation
+      # A claim or dispute must be resolved through binding arbitration.
+  [✓] InsuranceCompany InsurerCommunicationOfGAP some Document
+      # Insurer must communicate GAP via document.
+  [~] InsuranceCompany hasRiderWaiverOfEvidenceRequirement some InsuranceRider
+      # Riders can be added without evidence.
+  [✓] InsuredIndividual hasCOIBasedOnAges some Rate
+      # Cost of Insurance based on insured ages.
+  [✓] InsuredIndividual hasBMIRequirement some BodyMassIndex
+      # Health metric threshold for underwriting eligibility.
+  [✓] InsuredIndividual hasHbA1cStabilityEligibility some RequiredDocumentation
+      # Must meet HbA1c stability threshold to be eligible.
+  [✓] InsuredIndividual DiabetesExclusionTrigger some Exclusion
+      # Activates a diabetes-related exclusion in the policy.
+  [✓] InsuredPerson hasAgingBasedPremiumAdjustment some Premium
+      # Premiums are recalculated based on the policyholder's attained age.
+  [✓] InsuredPerson hasMedicalVerificationRequirement some RightToExamine
+      # A requirement that medical verification must be performed by the insurer.
+  [✓] InsuredPerson hasDoubleHandFootLossBenefit some BenefitPayoutAmount
+      # Benefit payable for loss of both hands or feet.
+  [✓] InsuredPerson hasMisstatementAdjustmentRule some Benefit
+      # Adjusts benefits for misstated age or sex at inception.
+  [✓] InsuredPerson OrdainedMinisterEligibility some EligibilityRequirement
+      # Ordained minister status required for eligibility.
+  [✓] InsuredPerson hasProhibitionOfPersonalBenefit some ProhibitionOfSelfDealingWithDeathBenefits
+      # Personal benefits are prohibited under self-dealing rules.
+  [✓] InsuredPerson hasAvocationReportingObligation some Activity
+      # Policyholders must report avocation changes.
+  [✓] InsuredPerson hasSeatBeltBonusBenefit some Benefit
+      # Seat belt usage qualifies for bonus benefit.
+  [✓] InsuredPerson hasCognitiveImpairmentTrigger some CognitiveImpairment
+      # A condition that activates a policy provision when cognitive impairment is present.
+  [✓] InsuredPerson hasInflationCreditLossOnConversion some Credit
+      # Conversion triggers loss of inflation credit.
+  [✓] InsuredPerson hasLineOfDutyRequirement some ConditionSatisfaction
+      # Insured must act within official duties.
+  [✓] Insurer InsurerAllocationRejectionRight some AllocationRejection
+      # Insurer may reject allocations violating rules.
+  [✓] InterestRate hasAnnualInterestRateStability some InterestRate
+      # The annual interest rate remains unchanged over the policy term.
+  [✓] InvestmentPortfolio hasTransferFeeLimitation some TransferLimit
+      # Transfer fees are limited by annual transfer caps.
+  [✓] InvestorEligibilityEvent hasInvestorEligibilityCondition some ConditionSatisfaction
+      # Specifies conditions for investor participation eligibility.
+  [✓] JointLifePolicy BothInsuredsMustBeLiving some xsd:boolean
+      # Both insureds must be alive at claim time.
+  [✓] JointOwnerWithSurvivorshipRights hasJointOwnerSharedResponsibility some RightToCancel
+      # Joint owners must jointly satisfy signature and assignment conditions.
+  [✓] JointOwnerWithSurvivorshipRights hasJointOwnerPaymentResponsibility some PremiumObligation
+      # Joint owners share responsibility for premium payments.
+  [✓] JumboPolicy JumboPolicyThresholdDefinition some PolicyValue
+      # Jumbo policy defined by coverage exceeding threshold.
+  [✓] LIRPDesign hasRequiredDeathBenefitForLIRP some DeathBenefit
+      # LIRP requires a specified death benefit.
+  [✓] LTCBenefit reducesPool some MonetaryAmount
+      # LTC benefits cease upon recovery from qualifying condition.
+  [✓] LTCBenefit LTCReductionOfNetRisk some NetAmountAtRisk
+      # Long-term care claims reduce net risk over time.
+  [✓] LabTest hasLabWorkSubmissionRequirement some DocumentationRequirement
+      # Requires lab work submission for claims or eligibility.
+  [✓] LapsePreventionMechanism hasSequentialLapsePrioritization some Lapse
+      # Lapse events are processed in a specific order based on policy sequence.
+  [✓] LateEntrant hasLateEntrantEOIRequirement some EvidenceOfInsurability
+      # A late entrant must satisfy an EOI requirement to be eligible.
+  [✓] LatePaymentWindow hasLateDocumentationConsequence some Document
+      # Late documentation triggers a consequence related to documents.
+  [✓] Layer2Rider hasLayer2ExpirationEffect some EffectiveDateOfSplitDollarAgreement
+      # Layer 2 expiration triggers an effect.
+  [✓] LegalConcept hasApostilleRequirementForHagueMembers some DocumentAuthentication
+      # Hague members require apostille for document validation.
+  [✓] LegalConcept hasTaxImplicationsOfBelowMarketTransfer some xsd:string
+      # Specifies tax consequences when a transfer occurs below market value.
+  [✓] LegalConcept hasProhibitionOnSelfDealing some ProhibitionAgainstSelfDealing
+      # A party cannot be both issuer and beneficiary.
+  [✓] LegalFramework hasAcceptedWireTransferSources some WireTransfer
+      # Only specified sources are permitted for wire transfers.
+  [✓] LifeInsurancePolicy providesCoverageAndReportsOnFormW2 some Premium
+      # Conversion is prohibited after a policy has already been converted.
+  [✓] LifeInsurancePolicy hasTransferEligibilityAfterTermination some TransferRestriction
+      # Policy cannot be transferred after termination.
+  [✓] LifeInsurancePolicy hasEndOfTermPayout some Benefit
+      # A payment made at policy end under specific conditions.
+  [✓] LifeInsurancePolicy hasLumpSumDeathBenefitPayout some MonetaryAmount
+      # Death benefit paid as a single lump sum.
+  [✓] LifeInsurancePolicy hasBenefitContinuationAfterPremiumExhaustion some xsd:integer
+      # Benefits continue after premium exhaustion under conditions.
+  [✓] LifeInsurancePolicy hasCOICalculationMethod some CalculationFormula
+      # COI calculated using a specific formula.
+  [✓] LifeInsurancePolicy hasPostFundingSelfSustainability some LifeInsurancePolicy
+      # Policy must be self-sustaining after funding ends.
+  [✓] LifeInsurancePolicy SuicideExclusionWindow some SuicideExclusion
+      # Suicide benefits are excluded within a specified time.
+  [✓] LifeInsurancePolicy DirectPayContinuityStability some DirectPayOption
+      # Maintains direct pay status during provider switch.
+  [✓] LifeInsurancePolicy hasWaitingPeriodRequirement some WaitingPeriod
+      # A policy requires a waiting period before benefits are available.
+  [✓] LifeInsurancePolicy UndeterminedDeathOrder some LifeInsurancePolicy
+      # Death order between entities is undetermined.
+  [✓] LifeInsurancePolicy PostDeathCOIAdjustmentRule some CalculationFormula
+      # COI adjusts after death using a formula.
+  [✓] LifeInsurancePolicy ZeroPremiumAfterYear11 some xsd:integer
+      # No premium payment is required after the 11th policy year.
+  [✓] LifeInsurancePolicy ModificationNoticeRequirement some NoticeRequirement
+      # Any policy modification must be preceded by a 90-day notice.
+  [✓] LivingBenefitRiderAdditionalCharge LivingBenefitRiderNoAdditionalCharge some AccountCharge
+      # Living benefit rider has no additional charge.
+  [✓] LoanFeature hasWashLoanMechanismConstraint some LoanFeature
+      # Wash loans are governed by structural constraints.
+  [✓] LoanFeature has50PercentFaceAmountAdvance some MonetaryAmount
+      # A loan advance is up to 50% of face amount.
+  [✓] LoanFeature LoanExclusionFromLTCPool some Exclusion
+      # Loans are excluded from the LTC benefit pool.
+  [✓] LoanInstrument hasNetCostWhenZeroIndexCredits some MonetaryAmount
+      # Specifies the method for calculating net loan cost within the policy's financial computations.
+  [✓] LoanInstrument LoanPurposeComplianceRequirement some ApplicableFederalRate
+      # Loan purpose must comply with AFR regulations.
+  [✓] LoanToValueThreshold hasOverloanProtectionActivationCondition some OverloanProtection
+      # Overloan protection activates at financial thresholds.
+  [✓] LoyaltyBonus hasLoyaltyBonusForfeitureOnLapse some ConditionSatisfaction
+      # Loyalty bonus forfeited upon policy lapse.
+  [✓] MECStatus hasMecLimitsApplyToAnnualMax some LimitationOnLiabilityAfterSelfInflictedDeath
+      # MEC limits constrain annual maximum benefit amount.
+  [✓] MedicalAssessment hasTerminalIllnessBenefitEligibility some DefinedMedicalCondition
+      # Policyholder qualifies for accelerated benefits with terminal illness.
+  [✓] MedicalAssessment hasContestMedicalAssessmentDeadline some xsd:date
+      # A medical assessment must be completed before a specified deadline to contest coverage.
+  [✓] MembershipExpulsion hasExpulsionConsequenceTermination some Benefit
+      # Expulsion terminates benefits.
+  [✓] MembershipTermination hasConversionRightsAfterLapse some ConversionRight
+      # Conversion rights are available after membership lapse.
+  [✓] MinorBeneficiary hasGuardianshipRequirementForMinorBeneficiary some TrustAdministrator
+      # A minor beneficiary requires a trust administrator.
+  [✓] ModifiedEndowmentContract hasMECTaxTreatment some MonetaryAmount
+      # MEC distributions and loans are taxable.
+  [✓] MonetaryAmount hasCrummeyGiftEligibility some Exclusion
+      # Gift qualifies for Crummey eligibility under timing rules.
+  [✓] MonetaryAmount hasGuaranteedCashValueAccumulation some DateWindow
+      # Guaranteed cash value accumulates over time.
+  [~] MonetaryAmount ElectricalAccidentReviewRequirement some Disclosure
+      # Electrical accident review required.
+  [✓] MonetaryThreshold hasThresholdTriggerCondition some ConditionSatisfaction
+      # Financial threshold triggers a condition.
+  [✓] MonthlyCOICalculationMethod hasMonthlyCOIBasedOnNAR some NetAmountAtRisk
+      # Monthly COI based on net amount at risk.
+  [~] MotorSportRacing UnlicensedMotorRaceReview some ClaimProcessingCondition
+      # Unlicensed motor race triggers a claims review.
+  [✓] Multiplier hasEstateMultiplierTarget some State
+      # Estate multiplier target set per state.
+  [✓] NetAmountAtRisk isDefaultBeneficiaryForDependentLifeCoverage some MonetaryAmount
+      # Defines the net amount at risk based on specified or calculated criteria.
+  [✓] NetWorthVerification hasNetWorthDocumentationRequirement some Document
+      # Net worth must be documented for eligibility.
+  [✓] NlgStructure hasCumulativeTestReset some CumulativeTest
+      # Cumulative test resets upon NLG reinstatement.
+  [✓] NoLapseGuarantee hasNLGSuspensionTriggeredByUnderpayment some ConditionSatisfaction
+      # NLG suspends due to underpayment in grace period.
+  [✓] NoLapseGuaranteePremium hasNLGActivationCondition some ChargeAbsorption
+      # NLG activates when eligibility conditions are met.
+  [✓] NonPaymentOfPremium hasPolicyLapseDueToNonPayment some PolicyInForce
+      # Policy lapses if premiums are not paid within grace period.
+  [✓] OccupationalHazardSurcharge hasTotalDisabilityDefinition some DisabilityDurationThreshold
+      # Criteria for total disability under the policy.
+  [✓] OccupationalHazardSurcharge hasOccupationalHazardDuringFlatExtra some Occupation
+      # Hazard surcharge applies during flat extra periods.
+  [✓] OptionAfterThreeFullPolicyYears hasOptionCEnrollmentWindow some xsd:duration
+      # Option C enrollment is restricted to a specific time window.
+  [✓] Organization hasEmployerRecoveryRight some PolicyContract
+      # Employer may recover benefits upon policy rollout.
+  [✓] Organization hasAssignmentLimitationScope some LimitationOnLiabilityAfterSelfInflictedDeath
+      # Assignments are limited to specific entities or conditions.
+  [✓] Organization NonVestedBenefitsRevertToEmployer some Benefit
+      # Non-vested benefits revert to employer upon termination.
+  [✓] Organization hasInsurerNonResponsibilityForDistributionCompliance some Insurer
+      # The insurer is not responsible for distribution compliance.
+  [✓] Organization hasClaimsResponsibilityAssignment some Claim
+      # Party responsible for handling claims.
+  [✓] Organization hasEmployerFundingRecommendation some FundingMechanism
+      # Specifies a recommendation for employer funding of insurance coverage.
+  [✓] Organization hasSurrenderChargesApplyRegardlessOfSG some SurrenderCharge
+      # Surrender charges are enforced even if the policyholder is a senior citizen.
+  [~] Organization hasRateLockInForSegment some Exclusion
+      # Segment rate is locked in upon initiation.
+  [✓] OverfundingRiskClassification hasLowerLoadIncentivizesOverfunding some Load
+      # Lower load incentivizes overfunding in policies.
+  [✓] OverlayProgram hasOverlayMethodologyTermination some TerminationEventDueToZeroAccountBalance
+      # Overlay methodology ceases under specific termination conditions.
+  [✓] OwnerPayout hasOwnerRightsDuringMinority some LoanFeature
+      # Owner has rights during minority for loan actions.
+  [✓] PartialWithdrawal reduces some FaceAmount
+      # Partial surrender reduces face amount.
+  [✓] PercentageBenefit hasAssetChargeAssessment some AssetCharge
+      # Asset charge assessed based on percentage.
+  [✓] PersonalBenefitFloor hasOwnershipTransferAtAgeThreshold some AgeRange
+      # Ownership transfers upon reaching age threshold.
+  [✓] PersonalBenefitFloor hasFractureSurgeryIndemnity some Benefit
+      # Fracture surgery triggers a benefit payout.
+  [✓] PersonalBenefitFloor hasOwnershipTransferCondition some LifeInsurancePolicy
+      # Ownership transfers under predefined conditions like death or dissolution.
+  [✓] PersonalBenefitFloor hasPremiumContinuationDuringLeave some MonetaryAmount
+      # Premiums are continued during specified types of leave.
+  [✓] PersonalBenefitFloor hasAgeRequirementForSpouseSubstitution some AgeRange
+      # Spouse substitution requires a specified age range.
+  [✓] PersonalBenefitFloor hasBurnsQualificationBenefit some Benefit
+      # Personal benefit floor includes burn qualification benefits.
+  [✓] PersonalBenefitFloor AgeLimitForPortCoverage some AgeRange
+      # Policyholder must be below age limit for port coverage.
+  [~] PersonalBenefitFloor hasBuySellAgreementFilingRequirement some Rate
+      # Buy-sell agreement must be filed for policy eligibility.
+  [✓] PersonalInformation hasPolicySuspensionOnSanctionedRelocation some PolicySuspension
+      # Policy suspends upon relocation to sanctioned country.
+  [✓] PersonalInformation hasRatingImprovementBasedOnHealthMetrics some Premium
+      # Rating improves based on health metrics, affecting premium.
+  [✓] PersonalInformation hasOccupationChangeProhibition some Premium
+      # Occupation change is restricted, affecting premium stability.
+  [✓] PersonalInformation hasSpouseBenefitPayoutCondition some Benefit
+      # Spouse receives payout under specified conditions.
+  [✓] PersonalInformation hasOwnerConsentRequirement some OptionAfterThreeFullPolicyYears
+      # Policy actions require owner consent.
+  [✓] PersonalInformation hasNoEvidenceOfInsurabilityRequirementForConversion some ConversionEligibility
+      # Conversion without medical proof.
+  [✓] PersonalInformation hasNoLiabilityUntilNotice some RequiredDocumentation
+      # Liability is prohibited until notice is received.
+  [✓] PersonalInformation hasDiseaseCoverageRestrictedToDeploymentPeriod some PeriodicWithdrawalSection
+      # Disease coverage is limited to deployment periods.
+  [✓] PersonalInformation hasTrustBeneficiaryPayoutOnDefault some ConditionSatisfaction
+      # Trust beneficiary receives proceeds upon default.
+  [✓] PersonalInformation hasAssignmentPreservesInsuredIdentity some InsuredPersonOrEntity
+      # Assignments preserve the insured's identity.
+  [✓] PersonalInformation hasChangeEligibilityRequirement some PolicyChange
+      # Policy changes require eligibility conditions.
+  [✓] PersonalInformation hasSurvivorshipBenefitEntitlement some SurvivorshipLifeInsurance
+      # Policyholder entitled to survivor benefit upon survivorship.
+  [✓] PersonalInformation PolicyHierarchyOverride some PolicyContract
+      # Higher policy overrides lower in conflicts.
+  [✓] PersonalInformation DocumentRequirementForConversion some Document
+      # Conversion requires ownership transfer documents.
+  [✓] PersonalInformation hasTaxFreeWithdrawalEligibility some AgeRange
+      # Withdrawals are tax-free if the policyholder is at least age 18.
+  [✓] PersonalInformation hasProofOfDeathRequirement some Document
+      # Proof of death is required for benefit payment.
+  [✓] PersonalInformation hasReunderwritingRequirement some LifeInsurancePolicy
+      # Re-underwriting is required for new or reinstated coverage.
+  [✓] PersonalInformation hasInsurableInterestRequirement some Benefit
+      # Policyholder must have insurable interest at issuance.
+  [✓] PersonalInformation hasCholesterolThresholdRequirement some MonetaryAmount
+      # Health metric threshold for preferred insurance tier.
+  [✓] PersonalInformation hasFamilyHealthHistoryRequirement some Document
+      # Policyholder must have documented family health history.
+  [✓] PersonalInformation GuaranteedIssueLimit some MonetaryAmount
+      # Guaranteed issue up to coverage limit.
+  [✓] PersonalInformation InsurrectionExclusion some Exclusion
+      # Death from insurrection excluded.
+  [✓] PersonalInformation hasBasicBenefitByIncomeBracket some BenefitAmount
+      # Basic benefits depend on income brackets.
+  [✓] PersonalInformation hasMembershipRequirementForCoverage some Coverage
+      # Membership is required for coverage eligibility.
+  [✓] PersonalInformation hasMaritalStatusChangeRequiresBeneficiaryUpdate some BeneficiaryDesignation
+      # Marital status change requires beneficiary update.
+  [✓] PersonalInformation hasPostYearFiveDivingCoverageEligibility some Exclusion
+      # Diving coverage eligibility after year 5 excludes prior restrictions.
+  [✓] PersonalInformation hasFamilyMemberCareExclusion some Exclusion
+      # Family members cannot receive care benefits.
+  [✓] PersonalInformation hasEligibilityWindowForSupplementalEnrollment some EventCausingLossOfInsurableInterest
+      # Enrollment is restricted to windows triggered by life events.
+  [✓] PersonalInformation hasFelonyExclusionRule some Exclusion
+      # Felony conviction excludes benefit eligibility.
+  [✓] PersonalInformation hasAssignmentRecordingRequirement some PolicyContract
+      # An assignment must be recorded to be valid.
+  [~] PersonalInformation hasIEDDeathCoverage some AgeRange
+      # IED death coverage depends on age eligibility.
+  [~] PersonalInformation hasLTCCoverageLimitationForeignCare some AgeRange
+      # Long-term care benefits are limited outside the insured's country.
+  [✓] PersonalTrancheBeneficiary hasRiderActivationTrigger some Rider
+      # A beneficiary triggers rider activation.
+  [✓] PersonalTrancheBeneficiary hasFullBenefitPayablePostGraduation some PercentageBenefit
+      # Full benefit payable upon graduation.
+  [✓] PersonalTrancheBeneficiary hasConsentRequirement some OptionAfterThreeFullPolicyYears
+      # A policyholder must obtain consent before certain actions can be taken.
+  [✓] PersonalTrancheBeneficiary hasCharityElectionWindow some TimePeriod
+      # A time period during which a policyholder may elect charitable redirection of benefits.
+  [✓] PhysicianCertificationDocument PhysicianPracticeLocationRequirement some PlaceOfResidence
+      # Physician must practice at specified location.
+  [✓] PolicyAccessCondition hasFreeLookRefundEligibility some xsd:boolean
+      # Policyholder is eligible for refund within free look period.
+  [✓] PolicyBenefitAdjustmentCause hasAgeBasedBenefitLimitation some AgeBasedBenefitReduction
+      # Benefits are limited by age thresholds.
+  [✓] PolicyBenefitAdjustmentCause hasCorridorExcessDeathBenefit some DeathBenefit
+      # A death benefit adjustment triggered by legal corridor thresholds.
+  [✓] PolicyBenefitAdjustmentCause hasTotalDeathBenefitDefinition some BenefitAmount
+      # Total death benefit defined by formula or value.
+  [✓] PolicyChange hasWrittenElectionRequirement some WrittenRequest
+      # Written election required for policy changes.
+  [✓] PolicyChange OptionChangeIncreasesCOICharges some CostOfInsurance
+      # Changing options increases cost of insurance charges.
+  [✓] PolicyContinuityOption hasContinuityCondition some ConditionSatisfaction
+      # Policy continuation depends on meeting conditions.
+  [✓] PolicyContract RiderInclusionInContract some Rider
+      # Riders are part of the entire insurance contract.
+  [✓] PolicyContract ContestabilityPeriodLimitation some DateWindow
+      # Contestability applies within a defined time period.
+  [✓] PolicyContract ProceedsExclusionCondition some Exclusion
+      # Death proceeds may be excluded under certain conditions.
+  [✓] PolicyContract GracePeriodCoverageContinuity some Coverage
+      # Coverage remains active during the grace period.
+  [✓] PolicyContract EstateExclusionEligibility some Exclusion
+      # Policy qualifies for estate tax exclusion via trust.
+  [✓] PolicyContract hasCoverageActivationCondition some PolicyInForce
+      # Condition for coverage to begin.
+  [✓] PolicyContract mustRemainAtOrBelowPercentageForDuration some DeathBenefitEligibility
+      # Death must occur while policy is in force.
+  [✓] PolicyContract hasCoverageContinuationAfterConversion some CoverageContinuity
+      # A policy maintains coverage continuity when a conversion right is exercised.
+  [✓] PolicyContract hasGuaranteedCOIRateSchedule some Rate
+      # COI rates are fixed per a predefined schedule.
+  [✓] PolicyContract hasSurvivalOrderCondition some ContractualPayoutStabilityAdjustment
+      # Survival order determines beneficiary payout eligibility.
+  [✓] PolicyContract hasPolicySplitOnSeverance some PolicySplit
+      # Policy splits into two upon severance.
+  [✓] PolicyContract hasSanctionsBasedPayoutProhibition some SanctionsCompliance
+      # Payouts are prohibited if insured is sanctioned.
+  [✓] PolicyContract hasLoanReducesDeathBenefit some LoanImpactOnDeathBenefit
+      # A loan reduces the death benefit amount payable upon policyholder's death.
+  [✓] PolicyContract hasNonForfeitureEligibility some NonForfeitureOption
+      # Policyholder must meet conditions to retain non-forfeiture benefits.
+  [✓] PolicyContract hasMsciWorldMinGuarantee some xsd:decimal
+      # Policy includes MSCI World minimum guarantee.
+  [~] PolicyContract hasEntireContractClause some EntityDissolution
+      # Policy contract defines complete agreement between parties.
+  [✓] PolicyControlRight hasContestabilityDueToMisrepresentation some Misrepresentation
+      # Policy may be rescinded due to misrepresentation during contestability.
+  [✓] PolicyConverter hasConvertedPolicyGradedPeriod some GradedPeriod
+      # A converted policy must satisfy a graded period condition.
+  [✓] PolicyConverter hasPolicyConversionOnResidencyOrCitizenship some ConditionSatisfaction
+      # Policy conversion upon US residency or citizenship.
+  [✓] PolicyDebt hasPostFirstDeathInterestAccrual some InterestAccrual
+      # Interest accrues after first insured death.
+  [✓] PolicyDebt hasDebtImpactOnCharitablePercentage some CharitableBeneficiary
+      # The charitable percentage is reduced if the policyholder has outstanding debt.
+  [✓] PolicyDuration hasVestedROPPercentageByDuration some xsd:decimal
+      # Vested ROP percentage based on policy duration.
+  [✓] PolicyEndorsement hasTransferRestrictionDuringEndorsement some TransferRestriction
+      # Transfer limited during endorsement periods.
+  [✓] PolicyFeature EarlySurrenderRopLimitation some PolicyYear
+      # Surrender in years 1–4 limits ROP benefits.
+  [✓] PolicyFund hasMonthlyRebalancingOption some MonthlyValuationDate
+      # A policy feature allowing periodic adjustment of asset allocation based on predefined rules.
+  [✓] PolicyInForce hasNoLapseGuaranteeCondition some ConditionSatisfaction
+      # Policy remains active if premium conditions are met.
+  [✓] PolicyInForce hasTaxComplianceRequirement some ComplianceRequirementClause
+      # Policy must meet tax compliance conditions to remain valid.
+  [✓] PolicyIssueDate hasIncontestabilityAfterTwoYears some xsd:boolean
+      # A policy cannot be contested after two years from issuance.
+  [✓] PolicyLoan hasCashSurrenderValueOnLapseProhibition some MonetaryAmount
+      # No cash surrender value on policy lapse.
+  [✓] PolicyLoan hasParticipatingLoanGrowthBenefit some ParticipatingPolicy
+      # A participating loan must have a growth benefit component.
+  [✓] PolicyMaintenance hasPremiumStrategy some ConditionalRequirement
+      # Skipping premiums is prohibited except when permitted via dividends.
+  [✓] PolicyMaturityDate hasEndowmentBenefitAtMaturity some PolicyMaturityDate
+      # Endowment benefit is payable at policy maturity.
+  [✓] PolicyMaturityDate MaturityPayoutToOwner some PolicyOwner
+      # Maturity payout goes to the policy owner.
+  [✓] PolicyOwner hasOverlaySleeveRiskAssignment some InvestmentRiskResponsibleParty
+      # Owners bear risk for overlay sleeve investments.
+  [✓] PolicyOwner InvestmentRiskOwnership some InvestmentRiskResponsibleParty
+      # Policy owner bears investment risk.
+  [✓] PolicyOwner hasPolicyLapseDespiteActiveSG some PolicyLoan
+      # Policy may lapse despite active secondary guarantee.
+  [✓] PolicyOwner hasRepatriationBenefitEligibility some RepatriationBenefit
+      # Qualifies for repatriation benefit.
+  [✓] PolicyOwnership hasAssignmentRequiresWrittenInstrument some Document
+      # Assignment requires a written instrument.
+  [✓] PolicyOwnership hasFuneralHomeClosureEffect some EffectiveDateOfSplitDollarAgreement
+      # Funeral home closure affects policy assignment.
+  [✓] PolicyPayout hasPolicyTerminationPostPayout some PolicyTermination
+      # Policy terminates after payout is made.
+  [✓] PolicyProvision hasNonCancelabilityDueToHealth some LifeInsurancePolicy
+      # Policy cannot be canceled due to health changes.
+  [✓] PolicyReinstatementCondition hasCoverageReinstatementRequiresNotification some AgeOfMajority
+      # Reinstatement requires notification tied to age.
+  [✓] PolicyStatus hasROPForfeitureOnLapse some Benefit
+      # ROP benefits forfeited on policy lapse.
+  [✓] PolicyStatus requiresMinimumDurationForCiarActivation some YearOfPolicyIssuance
+      # Policy must remain active for five years.
+  [✓] PolicyStructure hasCombinedDisbursementPolicy some PolicyStructure
+      # Policy with simultaneous benefit disbursement.
+  [✓] PolicySurrenderTimeline hasSurrenderRequestFormatRequirement some FormIdentifier
+      # Surrender requests must follow a format.
+  [✓] PolicyTenure hasZeroSurrenderChargeAfterYearThreshold some MonetaryAmount
+      # Surrender charges are zero after a specified number of years.
+  [✓] PolicyTermDuration hasMidTermAccessRestriction some MidTermIndexSegmentWithdrawalPenalty
+      # Access to certain benefits is restricted during the mid-term of the policy.
+  [✓] PolicyTermination hasTaxableLapseConsequence some TaxableEvent
+      # Policy lapse triggers taxable income.
+  [✓] PolicyTermination ContinuationOptionPreservation some ContinuationOption
+      # Policyholder retains continuation option.
+  [✓] PolicyTransferRight hasPortabilityBenefitContinuity some BenefitContinuationClause
+      # Portability benefit remains active after policy transfer.
+  [✓] PolicyValue hasPolicyLapseOnZeroAccountValue some PolicyStatus
+      # Policy lapses when account value reaches zero.
+  [✓] PolicyYear FeeExemptionAfterYear10 some MonetaryAmount
+      # Fee exemption applies after year 10 of policy duration.
+  [✓] PolicyYear hasGuaranteeExpiryAtSpecifiedYear some PolicyTermination
+      # A guarantee expires at a specified policy year.
+  [✓] Policyholder hasConversionPrivilegeEligibility some ConversionEligibility
+      # Specifies conditions for policyholder conversion rights.
+  [✓] Policyholder hasAnnualRecertificationRequirement some ClassificationContinuityRule
+      # Policyholder must undergo annual recertification to maintain eligibility.
+  [✓] Policyholder hasReturnOfPremiumOnSurvival some ReturnOfPremium
+      # Policyholder gets premium return on survival.
+  [✓] Policyholder hasPremiumWaiverOnDisability some PremiumWaiver
+      # Premiums waived upon total disability.
+  [✓] Policyholder hasResidencyChangeNotificationRequirement some Exclusion
+      # Notify insurer of residence change to maintain eligibility.
+  [✓] Policyholder requiresNoticePeriodForModeChange some PolicyStatus
+      # Policy validity depends on visa status.
+  [✓] Policyholder allowsPremiumPaymentCessationAfterYear10 some PaymentMethod
+      # No fee for monthly EFT conversion.
+  [✓] Policyholder requiresPaymentOfOverduePremiums some PaymentObligation
+      # Mandatory payment under specified conditions.
+  [✓] Policyholder hasOccupationalChangeNotificationRequirement some RequiredDocumentation
+      # Policyholder must notify insurer of occupational change.
+  [✓] Policyholder hasAnnualCertificationRequirement some EligibilityRequirement
+      # Policyholder must provide annual certification to maintain eligibility.
+  [✓] Policyholder hasRightToLitigateDeathBenefitDispute some Benefit
+      # Policyholder has right to litigate death benefit disputes.
+  [✓] Policyholder hasRateChangeNoticeRequirement some NoticeRequirement
+      # Policyholders must receive notice before rate changes.
+  [✓] Policyholder ReducedPaidUpOptionEligibility some ConditionSatisfaction
+      # Qualifies for reduced paid-up insurance.
+  [✓] Policyholder hasConversionRightUponMasterPolicyCancellation some ConversionRight
+      # Policyholder may convert after master policy cancellation.
+  [✓] Policyholder hasNonRecoverableAccelerationPayments some PaymentInterval
+      # Acceleration payments are not repayable.
+  [✓] Policyholder hasEstateAsLastResortBeneficiary some Estate
+      # Estate is default beneficiary if none designated.
+  [✓] Policyholder hasAnnualReportingRequirement some AnnualFundingCommitment
+      # Policyholder must submit annual reports to maintain coverage.
+  [✓] Policyholder FATCAComplianceRequirement some FATCACompliance
+      # Policyholder must satisfy FATCA reporting obligations.
+  [✓] Policyholder hasPolicyAcceptanceBasedOnHealthDisclosures some HealthRepresentation
+      # Policy acceptance depends on health disclosures.
+  [✓] Policyholder hasCharitableBeneficiaryContinuity some BeneficiaryEligibilityClause
+      # A charitable beneficiary must remain valid throughout the policy term.
+  [✓] Policyholder hasPortabilityElectionDeadline some TimePeriod
+      # Policyholder must elect portability by deadline.
+  [✓] Policyholder hasLifetimePremiumGuarantee some MonetaryAmount
+      # A policyholder is guaranteed to pay the same premium for life.
+  [✓] Policyholder hasAutomaticDraftFailureResponsibility some FailedCollectionNotice
+      # Policyholder responsible for draft failure consequences.
+  [✓] PreExistingCondition hasPreExistingConditionExclusion some Exclusion
+      # A pre-existing condition is excluded from coverage.
+  [✓] Premium hasPremiumAdjustmentTimingConstraint some TimePeriod
+      # Specifies when premium adjustments may occur.
+  [✓] Premium hasUnrepaidPremiumRetention some MonetaryAmount
+      # Unpaid premiums must be retained until recovery or settlement.
+  [✓] Premium PremiumAcceptanceCondition some LifeInsurancePolicy
+      # Premiums are accepted under policy conditions.
+  [✓] Premium hasPremiumRecalibrationOnNonCharityChange some MonetaryAmount
+      # Premiums are recalculated when charity status changes.
+  [✓] Premium hasPremiumLoadAdjustment some xsd:decimal
+      # Specifies premium load application or deduction.
+  [✓] Premium hasPremiumThresholdForJumps some PremiumThresholdForMECStatus
+      # A policy requires a premium exceeding 500 for jump-related coverage.
+  [✓] Premium hasHigherPremiumFlexibilityViaGPT some MonetaryAmount
+      # GPT enables higher premium flexibility.
+  [✓] Premium hasReturnOfPremiumWithCompoundedInterest some xsd:decimal
+      # A policy must return the premium plus interest that compounds annually.
+  [✓] Premium hasEnhancedDueDiligenceThreshold some xsd:decimal
+      # Triggers due diligence above threshold.
+  [✓] PremiumOffsetMechanism hasPremiumOffsetEligibilityCondition some EligibilityCriterion
+      # Specifies the conditions under which premium offset is available.
+  [✓] PremiumPayment hasGuaranteedPremiumPeriod some GuaranteedStablePremiumTerm
+      # Fixed premium amount guaranteed for a specified duration.
+  [✓] PremiumPaymentMode NoticeRequirementForPremiumModeChange some NoticeRequirement
+      # Notice required before changing premium payment mode.
+  [✓] QuestionnaireReturnDeadline hasQuestionnaireNonResponseConsequence some PolicyTermination
+      # Non-response leads to policy termination.
+  [✓] Rate hasNondisclosurePenaltyCap some LimitationOnDeathClaimPayout
+      # Penalties for nondisclosure have a cap.
+  [✓] Rate hasTimeLimitedLiabilityCap some YearOfPolicyIssuance
+      # Liability cap applies within first two years.
+  [✓] Rate hasUncappedAccountFormula some Account
+      # Specifies a formula for account values without limits.
+  [✓] Rate hasReturnCapApplication some CapAndFloorMechanism
+      # Applies a cap to the return amount under specified conditions.
+  [✓] RateAdjustment rateStabilityConditions some RateSchedule
+      # Rate increases follow a predefined schedule.
+  [✓] RefundEligibilityWindow hasRefundEligibilityWindow some Rate
+      # Refund eligibility is tied to a rate-based window.
+  [✓] RegulatoryRequirement hasESGMinimumGuarantee some GuaranteeEnhancement
+      # Policy must meet minimum ESG performance.
+  [✓] ReinstatementCondition hasReinstatementEligibilityCondition some ChargeAbsorption
+      # Policyholder must meet charge absorption to reinstate.
+  [✓] Reinsurer ReinsurerLiabilityProportionality some RightToCancel
+      # Reinsurer liability is proportional to retained risk.
+  [✓] Reserve hasReserveShortfallTriggersAssessment some AssessmentProvision
+      # A reserve shortfall triggers an assessment.
+  [✓] Rider hasRiderTerminationOnLifeEvent some Rider
+      # Rider terminates upon life events like divorce.
+  [✓] Rider hasRiderTerminationCondition some ConditionSatisfaction
+      # Rider terminates under specific conditions.
+  [✓] Rider hasSurchargeAdjustmentForNonCombatTransition some ChargeAbsorption
+      # A surcharge applies when transitioning to combat status.
+  [✓] Rider hasSurchargeCalculationRule some ChargeWaiver
+      # Surcharge rule based on Table D applies to charges.
+  [✓] Rider hasAutomaticCorridorIncreaseWithoutUnderwriting some Underwriting
+      # Rider enables corridor increase without underwriting.
+  [✓] RiderProvision hasRiderChargeNonRefundability some AdministrativeFee
+      # Rider provisions include non-refundable administrative fees.
+  [✓] SecondaryGuarantee hasSecondaryGuaranteeActivationCondition some ConditionSatisfaction
+      # A secondary guarantee becomes active when a specified condition is met.
+  [✓] SectionReference hasToleranceWindowForGuaranteeContinuity some GuaranteePeriod
+      # Time window for guarantee continuity without interruption.
+  [✓] SegmentWithdrawalAdjustment hasSegmentWithdrawalAdjustmentFormula some CalculationFormula
+      # Specifies formula for segment withdrawal adjustments.
+  [✓] SevenPayTest hasSevenPayTestFailureImpliesMEC some ModifiedEndowmentContract
+      # 7-Pay Test failure classifies policy as MEC.
+  [✓] SimplifiedIssueNotice SimplifiedIssueProcess some UnderwritingProcess
+      # Simplified issue process reduces underwriting.
+  [✓] Skydiving hasSkydivingClaimDocumentationRequirement some Document
+      # A claim for skydiving must be supported by specific documentation.
+  [✓] SpecifiedAmount hasSpecifiedAmountDecreaseExtendsSG some SecondaryGuarantee
+      # Decrease in amount extends Secondary Guarantee period.
+  [✓] SplitDollarArrangement hasSplitDollarArrangementTermination some SplitDollarArrangementTermination
+      # Policy assumption ends split-dollar arrangement.
+  [✓] SpouseBeneficiary hasSpouseEligibilityRestriction some ConditionSatisfaction
+      # Spouse eligibility is restricted by conditions.
+  [~] SupportingEvidenceDocument hasSubstantialSupervisionQualification some SubstantialSupervision
+      # Supervising entity must meet qualification threshold.
+  [✓] Surcharge hasSurchargeAdjustmentCondition some MonetaryAmount
+      # A surcharge is adjusted based on risk or status changes.
+  [✓] SurrenderCharge hasSegmentedSurrenderChargeDuration some xsd:duration
+      # Surrender charges based on segmented duration periods.
+  [✓] SurvivingInsured hasSurvivingInsuredBasisRequirement some Risk
+      # Surviving insured must meet basis criteria for COI.
+  [✓] TobaccoMisrepresentationApplicant hasTobaccoMisstatementPenalty some Exclusion
+      # Penalty applies for undisclosed tobacco use in application.
+  [✓] Tranche hasTrancheConversionContinuity some ContinuationOfCoverage
+      # A tranche conversion must maintain continuity in coverage or benefit structure.
+  [✓] TraumaticInjuryBenefit hasTBIQualificationForPayout some MonetaryAmount
+      # TBI qualifies for $100K payout if criteria met.
+  [✓] TriggerEvent hasVestingAccelerationTrigger some Disability
+      # Vesting acceleration triggered by disability event.
+  [✓] Trust hasTrustRequirement some xsd:boolean
+      # Mandatory condition for trust-related entity validity.
+  [✓] Trust hasCrummeyRightsRequirement some CrummeyNotice
+      # A beneficiary must receive a notice to be eligible for Crummey rights.
+  [✓] Trust hasLoanLimitReductionDueToTrustComplexity some LoanLimit
+      # Loan limit is reduced when trust structure is complex.
+  [✓] Trust hasNotificationTriggerForTrusteeAndOwner some NotificationObligation
+      # Triggers notification for trustee or owner involvement.
+  [✓] Trust hasTrustReformUponFelonyDeath some ConditionSatisfaction
+      # Trust reforms if death is felonious.
+  [✓] TrustOwnedPolicySeries hasTrustOwnedPolicyIncreaseWindow some xsd:duration
+      # A trust-owned policy has a window for increasing coverage.
+  [✓] Trustee requiresWrittenConsentForPercentageIncrease some Document
+      # Trustees must have authority documentation.
+  [✓] UnderwritingRestrictionWindow hasNoNewRatedConditionsAllowed some Rate
+      # Restriction window includes rate changes.
+  [✓] Withdrawal reducesAccountValue some AccountValue
+      # Withdrawals reduce the account value of the policy.
+  [✓] Withdrawal hasWithdrawalTaxationAsIncomeFirst some xsd:integer
+      # Withdrawals taxed as income first.
+
+## owl:allValuesFrom  (1 axioms)
+
+  [✓] LifeInsurancePolicy EqualDistributionConstraint all PercentageAllocation
+      # All beneficiaries receive identical shares of the cash value.
+
+## owl:exactCardinality  (3 axioms)
+
+  [✓] Beneficiary hasBeneficiaryPayoutProportionality exactly 1 PercentageAllocation
+      # Beneficiary payout shares are proportionally allocated.
+  [✓] ChronicIllnessAccelerationRider hasEliminationPeriodDuration exactly 90 xsd:integer
+      # Specifies the duration of the elimination period for benefit payouts.
+  [✓] LifeInsurancePolicy hasOneVotePerPolicy exactly 1 VotingRights
+      # Each policy grants exactly one vote.
+
+## owl:minCardinality  (5 axioms)
+
+  [✓] ActivitiesOfDailyLiving AcceleratedBenefitTriggerByADLs min 2 AcceleratedBenefit
+      # Triggered when two ADLs are impaired.
+  [✓] ChronicIllnessMinimumDuration hasConsecutiveIllnessDurationRequirement min 1 xsd:duration
+      # Must be continuously ill for 90 days to qualify.
+  [✓] EmployeeLifePremiumCost hasMinimumEmployeeBenefitShare min 40 MonetaryAmount
+      # Employees must receive at least 40% of benefits.
+  [✓] Policyholder hasMinimumWorkHoursRequirement min 25 xsd:integer
+      # Minimum 25 work hours weekly.
+  [✓] Tranche hasMinimumTrancheFaceAmountAfterReduction min 100000 MonetaryAmount
+      # Tranche face amount must not fall below $100,000 after reduction.
+
+## owl:maxCardinality  (27 axioms)
+
+  [✓] AcceleratedBenefit TerminalABMaxLimit max 1 BenefitCap
+      # Limits maximum terminal accelerated benefit to a threshold.
+  [✓] Benefit hasBenefitCap max 2 MonetaryAmount
+      # Maximum benefit amount is capped at two units.
+  [✓] Benefit hasTerminalAccelerationCap max 1 BenefitCap
+      # Terminal acceleration is capped at a maximum amount.
+  [✓] BufferAccount hasBufferAccountLossLimitation max 500 MonetaryAmount
+      # Limits maximum loss absorbed by buffer account.
+  [~] ConsequenceOfFailureToNotify hasMaximumCoverageLimit max 30 AgeRange
+      # Maximum coverage limit is 30 for age-based increments.
+  [✓] ConvertiblePolicy MaximumConvertibleAmountLimit max 1 MonetaryAmount
+      # Maximum convertible amount must not exceed a threshold.
+  [✓] EmployeeLifePremiumCost hasMaxEmployeeLifeCoverageLimit max 350000 MonetaryAmount
+      # Employee life coverage has a maximum limit.
+  [✓] EscrowPeriod hasEscrowDurationConstraint max 5 xsd:duration
+      # Time limit on escrow duration based on risk or time factors.
+  [✓] ExecutiveTermLifeBenefit FiveTimesCompensationRule max 5 RulesBasedBlending
+      # Executive benefit capped at five times annual compensation.
+  [✓] FamilySupportStipend hasMaxFamilySupportDuration max 10 xsd:integer
+      # Family support duration capped at 10 years.
+  [✓] GuaranteedIssueLimit MaxGioPurchaseLimit max 1 MonetaryAmount
+      # Maximum GIO purchase is capped at 100% of base coverage.
+  [✓] IndexRate hasIndexLinkGuaranteeLimit max 1 LimitationOnDeathClaimPayout
+      # Index-linked guarantee subject to maximum limit.
+  [✓] LTCRider hasLTCRiderChargeCap max 1 MonetaryAmount
+      # LTC rider charge capped at maximum amount.
+  [✓] LoanProvision hasMaximumLoanAmountLimit max 1 MonetaryAmount
+      # Loan amount is capped by a monetary limit.
+  [✓] LumpSumPayout hasLumpSumInjuryPayoutLimit max 1 MaximumSingleInjuryPayout
+      # One-time injury payout has a maximum limit.
+  [~] MortgageDisabilityRiderCost hasMortgagePaymentLifetimeCap max 6 AgeRange
+      # Mortgage payments capped at six age ranges.
+  [✓] OptionDate hasAnnualSwitchLimitOptionIItoI max 1 OptionDate
+      # Limits annual switches from Option II to Option I.
+  [✓] Organization BankingHoursLimit max 2 LimitationOnDeathClaimPayout
+      # Maximum limit on banking activity hours.
+  [✓] PersonalInformation hasBenefitDurationLimit max 24 Periodicity
+      # Benefit payments capped at 24 months.
+  [✓] PolicyContract MaximumWaiverEventsCount max 2 EventCausingLossOfInsurableInterest
+      # Maximum two waiver events allowed per policy.
+  [✓] PolicyContract TranchePayoutStructure max 30 TranchePreservation
+      # Payouts across tranches within 30 days.
+  [✓] PolicyContract hasMaximumFaceAmountLimit max 1000000 MonetaryAmount
+      # Face amount must not exceed $1,000,000.
+  [✓] Premium hasFlexiblePaymentLimitConstraint max 100 MonetaryThreshold
+      # Sets maximum flexible payment amount.
+  [✓] Rate SpreadAccountLimitConstraint max 6 Account
+      # Spread account value capped at 6%.
+  [✓] RateAdjustment MaximumClassWideRateIncreaseCap max 0 Rate
+      # Cap on class-wide rate increase.
+  [✓] WellnessCredit hasWellnessCreditCap max 1 MonetaryThreshold
+      # Wellness credits are capped at a maximum limit.
+  [✓] Withdrawal hasWithdrawalLimitConstraint max 1 WithdrawalLimit
+      # Withdrawals are limited by frequency or amount.
+
+## owl:disjointWith  (50 axioms)
+
+  [✓] AccidentalDeathBenefit DisjointWith Coverage
+      # Actuarial discounts are prohibited for ADB coverage.
+  [✓] AccidentalInjury DisjointWith BenefitPayoutAmount
+      # Accidental injury and payout amount are disjoint.
+  [✓] Account DisjointWith Credit
+      # Credits are prohibited before account maturity.
+  [✓] AccountValue DisjointWith ALS
+      # Account value may be reduced under specified conditions.
+  [✓] Assignee DisjointWith LifeInsurancePolicy
+      # Assignee cannot act on policy.
+  [✓] Beneficiary DisjointWith BenefitDistributionOptionInitiation
+      # Hierarchical priority for benefit distribution among relatives.
+  [✓] Beneficiary DisjointWith BeneficiaryDistributionMethod
+      # Beneficiary and distribution method are disjoint.
+  [✓] Benefit DisjointWith MonetaryAmount
+      # Excess benefits are subject to payout constraints.
+  [✓] BufferAccount DisjointWith MinimumCreditingFloor
+      # Buffer accounts lack 0% floor.
+  [✓] Claim DisjointWith IntoxicationExclusion
+      # Benefits denied due to intoxication.
+  [✓] Claim DisjointWith ConditionSatisfaction
+      # Settlement option cannot be changed once selected.
+  [✓] ConsequenceOfFailureToNotify DisjointWith Exclusion
+      # Coverage excludes friendly fire, applies only to hostile fire.
+  [✓] ConsequenceOfFailureToNotify DisjointWith Benefit
+      # Misrepresentation excludes death benefit eligibility.
+  [✓] ConversionFeature DisjointWith CoveredAvocation
+      # Conversion excludes avocation coverage.
+  [✓] CorporatePolicyOwner DisjointWith Exclusion
+      # Employer interest excluded from acceleration events.
+  [✓] CoverageAmount DisjointWith Exclusion
+      # No additional exclusions beyond listed ones apply.
+  [✓] DeathBenefit DisjointWith Exclusion
+      # Death benefits are excluded in war-related events.
+  [✓] EmployeeDesignee DisjointWith Exclusion
+      # Employees are excluded from policy participation.
+  [✓] EmploymentClass DisjointWith YearOfPolicyIssuance
+      # No mid-year salary reclassification allowed.
+  [✓] FraternalBenefit DisjointWith InsuranceProduct
+      # Fraternal benefits are not insurance products.
+  [✓] Grantor DisjointWith LoanProvision
+      # Grantor is prohibited from borrowing against the policy.
+  [✓] GroupPolicySupremacy DisjointWith LifeInsuranceContract
+      # Group policy takes precedence over certificate.
+  [✓] IllustrationSoftware DisjointWith ContractualRelationshipStatus
+      # Non-guaranteed illustrations are not contractual obligations.
+  [✓] IndexAccount DisjointWith SeparateAccount
+      # Index accounts are disjoint from separate accounts.
+  [✓] IndexBasedCreditingVehicle DisjointWith Exclusion
+      # Dividends excluded from index performance and credits.
+  [✓] InsuranceContract DisjointWith ProhibitionOfSelfDealingWithDeathBenefits
+      # Oral changes to contracts are legally invalid.
+  [✓] InsuredPerson DisjointWith Occupation
+      # Contractors are excluded from eligibility.
+  [✓] InsuredPerson DisjointWith Exclusion
+      # A person with a hazardous occupation is excluded from coverage.
+  [✓] InternationalCoverage DisjointWith Exclusion
+      # No travel-related exclusions apply under the policy.
+  [✓] LegalConcept DisjointWith Exception
+      # A person under minority has no fiduciary obligation.
+  [✓] LifeInsurancePolicy DisjointWith ShadowAccount
+      # A shadow account must be logically distinct from the primary policy account.
+  [✓] LifeInsurancePolicy DisjointWith Exclusion
+      # Self-injury claims are prohibited under the policy.
+  [✓] LifeInsurancePolicy DisjointWith Portfolio
+      # Policy excludes guarantee on investment performance.
+  [✓] LifeInsurancePolicy DisjointWith Benefit
+      # Inflation credit is prohibited upon policy termination.
+  [✓] MinorInsured DisjointWith PolicyOwner
+      # A policy cannot be owned by a juvenile individual.
+  [✓] MonetaryAmount DisjointWith FundingSource
+      # Filing fees are non-refundable under any circumstances.
+  [✓] OccupationalHazardExclusion DisjointWith WorkAtHeight
+      # Work at height is not excluded from coverage.
+  [✓] Organization DisjointWith Exclusion
+      # An index sponsor cannot be held liable under the policy terms.
+  [✓] PersonalInformation DisjointWith Index
+      # Index participation ≠ stock ownership.
+  [✓] PersonalInformation DisjointWith LimitationOnLiabilityAfterSelfInflictedDeath
+      # Personal information is disjoint from liability limitation.
+  [✓] PersonalInformation DisjointWith Account
+      # A subject is prohibited from accessing managed accounts.
+  [✓] PersonalTrancheBeneficiary DisjointWith CashValue
+      # Cash values exclusively owned by the Foundation.
+  [✓] PolicyConverter DisjointWith Benefit
+      # Full conversion forfeits future ROP benefits.
+  [✓] PolicyOwner DisjointWith Incident
+      # Policy must not have any incidents of ownership.
+  [✓] PolicyOwnership DisjointWith MonetaryAmount
+      # Policy terminates when debt exceeds limit.
+  [✓] PolicyStructure DisjointWith LimitationOnLiabilityAfterSelfInflictedDeath
+      # Prevents the addition of new tranches after policy issuance.
+  [✓] PremiumPaymentMethod DisjointWith CurrencyUnit
+      # Prohibits foreign currency in premiums.
+  [✓] RefundablePremium DisjointWith Exclusion
+      # Refund is excluded from Return of Premium.
+  [✓] SpouseRiderCoverage DisjointWith ConversionEligibility
+      # Spouse rider cannot be converted under any circumstances.
+  [✓] TrustAdministrationFee DisjointWith ReturnOfPremium
+      # Trust fees excluded from ROP calculation.

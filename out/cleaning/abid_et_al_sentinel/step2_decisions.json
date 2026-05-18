@@ -1,0 +1,5922 @@
+{
+  "_instructions": "Review each section. For semantic_clusters: set 'action' to 'normalize' (and set 'canonical') or 'keep_as_is'. For suspicious_nulls and rare_labels: set 'action' to 'remove' or 'keep'.",
+  "config": {
+    "sim_threshold": 0.9,
+    "min_count": 3
+  },
+  "semantic_clusters": [
+    {
+      "members": [
+        "depends on",
+        "depends upon"
+      ],
+      "total_freq": 612,
+      "suggested_canon": "depends on",
+      "action": "normalize",
+      "canonical": "depends on"
+    },
+    {
+      "members": [
+        "conditional",
+        "conditional on"
+      ],
+      "total_freq": 207,
+      "suggested_canon": "conditional on",
+      "action": "normalize",
+      "canonical": "conditional on"
+    },
+    {
+      "members": [
+        "precedes",
+        "precedes with"
+      ],
+      "total_freq": 191,
+      "suggested_canon": "precedes",
+      "action": "normalize",
+      "canonical": "precedes"
+    },
+    {
+      "members": [
+        "exclusion",
+        "exclusion restriction"
+      ],
+      "total_freq": 103,
+      "suggested_canon": "exclusion",
+      "action": "normalize",
+      "canonical": "exclusion"
+    },
+    {
+      "members": [
+        "conditions",
+        "conditions for",
+        "conditions on"
+      ],
+      "total_freq": 72,
+      "suggested_canon": "conditions",
+      "action": "normalize",
+      "canonical": "conditions"
+    },
+    {
+      "members": [
+        "defined by",
+        "is defined by"
+      ],
+      "total_freq": 35,
+      "suggested_canon": "defined by",
+      "action": "normalize",
+      "canonical": "defined by"
+    },
+    {
+      "members": [
+        "informs",
+        "informs on"
+      ],
+      "total_freq": 23,
+      "suggested_canon": "informs",
+      "action": "normalize",
+      "canonical": "informs"
+    },
+    {
+      "members": [
+        "precondition",
+        "precondition for",
+        "preconditions"
+      ],
+      "total_freq": 22,
+      "suggested_canon": "precondition",
+      "action": "normalize",
+      "canonical": "precondition"
+    },
+    {
+      "members": [
+        "contextual relation",
+        "contextual relationship"
+      ],
+      "total_freq": 17,
+      "suggested_canon": "contextual relation",
+      "action": "normalize",
+      "canonical": "contextual relation"
+    },
+    {
+      "members": [
+        "limits",
+        "limits right"
+      ],
+      "total_freq": 15,
+      "suggested_canon": "limits",
+      "action": "normalize",
+      "canonical": "limits"
+    },
+    {
+      "members": [
+        "prevents lapse",
+        "prevents lapsing"
+      ],
+      "total_freq": 12,
+      "suggested_canon": "prevents lapse",
+      "action": "normalize",
+      "canonical": "prevents lapse"
+    },
+    {
+      "members": [
+        "requires approval",
+        "requires approval from",
+        "requires written approval"
+      ],
+      "total_freq": 12,
+      "suggested_canon": "requires approval",
+      "action": "normalize",
+      "canonical": "requires approval"
+    },
+    {
+      "members": [
+        "subject to contract term",
+        "subject to contract terms"
+      ],
+      "total_freq": 11,
+      "suggested_canon": "subject to contract terms",
+      "action": "normalize",
+      "canonical": "subject to contract terms"
+    },
+    {
+      "members": [
+        "alternative mode",
+        "alternative modes"
+      ],
+      "total_freq": 10,
+      "suggested_canon": "alternative mode",
+      "action": "normalize",
+      "canonical": "alternative mode"
+    },
+    {
+      "members": [
+        "receives",
+        "receives from"
+      ],
+      "total_freq": 9,
+      "suggested_canon": "receives",
+      "action": "normalize",
+      "canonical": "receives"
+    },
+    {
+      "members": [
+        "qualifies",
+        "qualifies for"
+      ],
+      "total_freq": 9,
+      "suggested_canon": "qualifies for",
+      "action": "normalize",
+      "canonical": "qualifies for"
+    },
+    {
+      "members": [
+        "requires additional documentation",
+        "requires documentation"
+      ],
+      "total_freq": 8,
+      "suggested_canon": "requires documentation",
+      "action": "normalize",
+      "canonical": "requires documentation"
+    },
+    {
+      "members": [
+        "enabled by",
+        "is enabled by"
+      ],
+      "total_freq": 8,
+      "suggested_canon": "enabled by",
+      "action": "normalize",
+      "canonical": "enabled by"
+    },
+    {
+      "members": [
+        "is reduced by",
+        "reduced by"
+      ],
+      "total_freq": 7,
+      "suggested_canon": "is reduced by",
+      "action": "normalize",
+      "canonical": "is reduced by"
+    },
+    {
+      "members": [
+        "contextual support",
+        "contextual supports"
+      ],
+      "total_freq": 6,
+      "suggested_canon": "contextual support",
+      "action": "normalize",
+      "canonical": "contextual support"
+    },
+    {
+      "members": [
+        "enforces condition",
+        "enforces conditions"
+      ],
+      "total_freq": 6,
+      "suggested_canon": "enforces condition",
+      "action": "normalize",
+      "canonical": "enforces condition"
+    },
+    {
+      "members": [
+        "exempt by",
+        "exempted by"
+      ],
+      "total_freq": 6,
+      "suggested_canon": "exempted by",
+      "action": "normalize",
+      "canonical": "exempted by"
+    },
+    {
+      "members": [
+        "is the subject of",
+        "subject of"
+      ],
+      "total_freq": 5,
+      "suggested_canon": "subject of",
+      "action": "normalize",
+      "canonical": "subject of"
+    },
+    {
+      "members": [
+        "beneficiary",
+        "is beneficiary of"
+      ],
+      "total_freq": 5,
+      "suggested_canon": "is beneficiary of",
+      "action": "normalize",
+      "canonical": "is beneficiary of"
+    },
+    {
+      "members": [
+        "condition",
+        "condition for"
+      ],
+      "total_freq": 5,
+      "suggested_canon": "condition for",
+      "action": "normalize",
+      "canonical": "condition for"
+    },
+    {
+      "members": [
+        "is required",
+        "is required for"
+      ],
+      "total_freq": 4,
+      "suggested_canon": "is required for",
+      "action": "normalize",
+      "canonical": "is required for"
+    },
+    {
+      "members": [
+        "duration of grace period",
+        "has grace period duration"
+      ],
+      "total_freq": 4,
+      "suggested_canon": "duration of grace period",
+      "action": "normalize",
+      "canonical": "duration of grace period"
+    },
+    {
+      "members": [
+        "excluded",
+        "excluded from"
+      ],
+      "total_freq": 4,
+      "suggested_canon": "excluded from",
+      "action": "normalize",
+      "canonical": "excluded from"
+    },
+    {
+      "members": [
+        "involves material facts",
+        "involves material facts concerning"
+      ],
+      "total_freq": 4,
+      "suggested_canon": "involves material facts concerning",
+      "action": "normalize",
+      "canonical": "involves material facts concerning"
+    },
+    {
+      "members": [
+        "is type of",
+        "type of"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "is type of",
+      "action": "normalize",
+      "canonical": "is type of"
+    },
+    {
+      "members": [
+        "husband of",
+        "spouse of"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "spouse of",
+      "action": "normalize",
+      "canonical": "spouse of"
+    },
+    {
+      "members": [
+        "defines term duration",
+        "has term duration",
+        "term duration"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "has term duration",
+      "action": "normalize",
+      "canonical": "has term duration"
+    },
+    {
+      "members": [
+        "enforces limit",
+        "enforces limitation"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "enforces limitation",
+      "action": "normalize",
+      "canonical": "enforces limitation"
+    },
+    {
+      "members": [
+        "determined by",
+        "is determined by"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "determined by",
+      "action": "normalize",
+      "canonical": "determined by"
+    },
+    {
+      "members": [
+        "has coverage during grace period",
+        "provides coverage during grace period"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "has coverage during grace period",
+      "action": "normalize",
+      "canonical": "has coverage during grace period"
+    },
+    {
+      "members": [
+        "triggers evaluation of exclusion",
+        "triggers exclusion"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "triggers exclusion",
+      "action": "normalize",
+      "canonical": "triggers exclusion"
+    },
+    {
+      "members": [
+        "defines grace period length",
+        "defines the grace period duration",
+        "defines the length of the grace period"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "defines the grace period duration",
+      "action": "normalize",
+      "canonical": "defines the grace period duration"
+    },
+    {
+      "members": [
+        "evaluates evidence of insurability",
+        "must provide evidence of insurability"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "must provide evidence of insurability",
+      "action": "normalize",
+      "canonical": "must provide evidence of insurability"
+    },
+    {
+      "members": [
+        "is recipient of",
+        "recipient of"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "recipient of",
+      "action": "normalize",
+      "canonical": "recipient of"
+    },
+    {
+      "members": [
+        "provides proof of death to",
+        "requires proof of death"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "requires proof of death",
+      "action": "normalize",
+      "canonical": "requires proof of death"
+    },
+    {
+      "members": [
+        "subject of approval",
+        "subject to approval"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "subject to approval",
+      "action": "normalize",
+      "canonical": "subject to approval"
+    },
+    {
+      "members": [
+        "requires certification",
+        "requires certification from"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "requires certification",
+      "action": "normalize",
+      "canonical": "requires certification"
+    },
+    {
+      "members": [
+        "validates eligibility",
+        "validation of eligibility"
+      ],
+      "total_freq": 3,
+      "suggested_canon": "validates eligibility",
+      "action": "normalize",
+      "canonical": "validates eligibility"
+    },
+    {
+      "members": [
+        "effective date",
+        "has effective date"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "effective date",
+      "action": "normalize",
+      "canonical": "effective date"
+    },
+    {
+      "members": [
+        "has principal office location",
+        "principal office location"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "has principal office location",
+      "action": "normalize",
+      "canonical": "has principal office location"
+    },
+    {
+      "members": [
+        "issuer of policy",
+        "policy issuer"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "policy issuer",
+      "action": "normalize",
+      "canonical": "policy issuer"
+    },
+    {
+      "members": [
+        "covered by policy with suicide exclusion clause",
+        "issues policy with suicide exclusion clause"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "covered by policy with suicide exclusion clause",
+      "action": "normalize",
+      "canonical": "covered by policy with suicide exclusion clause"
+    },
+    {
+      "members": [
+        "issues policy",
+        "issues policy because of"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "issues policy",
+      "action": "normalize",
+      "canonical": "issues policy"
+    },
+    {
+      "members": [
+        "has primary beneficiary",
+        "primary beneficiary"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "primary beneficiary",
+      "action": "normalize",
+      "canonical": "primary beneficiary"
+    },
+    {
+      "members": [
+        "has guaranteed level premiums",
+        "has level premium guarantee"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "has level premium guarantee",
+      "action": "normalize",
+      "canonical": "has level premium guarantee"
+    },
+    {
+      "members": [
+        "has guaranteed premium stability",
+        "provides guarantee of premium stability"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "provides guarantee of premium stability",
+      "action": "normalize",
+      "canonical": "provides guarantee of premium stability"
+    },
+    {
+      "members": [
+        "issues policy with guaranteed level premiums",
+        "issues policy with level premium guarantee"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "issues policy with level premium guarantee",
+      "action": "normalize",
+      "canonical": "issues policy with level premium guarantee"
+    },
+    {
+      "members": [
+        "defines timing",
+        "defines timing of"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "defines timing of",
+      "action": "normalize",
+      "canonical": "defines timing of"
+    },
+    {
+      "members": [
+        "composed of",
+        "is composed of"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is composed of",
+      "action": "normalize",
+      "canonical": "is composed of"
+    },
+    {
+      "members": [
+        "is responsible for timely premium payment",
+        "responsible for premium payment timing"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "responsible for premium payment timing",
+      "action": "normalize",
+      "canonical": "responsible for premium payment timing"
+    },
+    {
+      "members": [
+        "is dependent on",
+        "is dependent upon"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is dependent upon",
+      "action": "normalize",
+      "canonical": "is dependent upon"
+    },
+    {
+      "members": [
+        "fallback to",
+        "fallbacks to"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "fallback to",
+      "action": "normalize",
+      "canonical": "fallback to"
+    },
+    {
+      "members": [
+        "eligible for refund",
+        "is eligible for refund"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is eligible for refund",
+      "action": "normalize",
+      "canonical": "is eligible for refund"
+    },
+    {
+      "members": [
+        "authorizes policy change",
+        "authorizes policy changes"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "authorizes policy change",
+      "action": "normalize",
+      "canonical": "authorizes policy change"
+    },
+    {
+      "members": [
+        "excluded if suicide occurs within two years",
+        "excluded when suicide occurs within two years"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "excluded if suicide occurs within two years",
+      "action": "normalize",
+      "canonical": "excluded if suicide occurs within two years"
+    },
+    {
+      "members": [
+        "defines grace period for",
+        "is grace period for"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is grace period for",
+      "action": "normalize",
+      "canonical": "is grace period for"
+    },
+    {
+      "members": [
+        "is responsible for paying",
+        "responsible for payment of"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is responsible for paying",
+      "action": "normalize",
+      "canonical": "is responsible for paying"
+    },
+    {
+      "members": [
+        "includes payment schedule",
+        "includes payment schedule details"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "includes payment schedule details",
+      "action": "normalize",
+      "canonical": "includes payment schedule details"
+    },
+    {
+      "members": [
+        "defines first premium due date",
+        "determines first premium due date"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "determines first premium due date",
+      "action": "normalize",
+      "canonical": "determines first premium due date"
+    },
+    {
+      "members": [
+        "payout method default",
+        "specifies default payout method"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "payout method default",
+      "action": "normalize",
+      "canonical": "payout method default"
+    },
+    {
+      "members": [
+        "accrues interest",
+        "has accruing interest"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "has accruing interest",
+      "action": "normalize",
+      "canonical": "has accruing interest"
+    },
+    {
+      "members": [
+        "designated by",
+        "is designated by"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is designated by",
+      "action": "normalize",
+      "canonical": "is designated by"
+    },
+    {
+      "members": [
+        "may lead to assignment with tax consequences",
+        "subject to tax consequences upon assignment"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "may lead to assignment with tax consequences",
+      "action": "normalize",
+      "canonical": "may lead to assignment with tax consequences"
+    },
+    {
+      "members": [
+        "expands on",
+        "expands upon"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "expands upon",
+      "action": "normalize",
+      "canonical": "expands upon"
+    },
+    {
+      "members": [
+        "coverage terminates when policy is cancelled",
+        "terminates coverage after policy cancellation"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "coverage terminates when policy is cancelled",
+      "action": "normalize",
+      "canonical": "coverage terminates when policy is cancelled"
+    },
+    {
+      "members": [
+        "initiates or requests settlement option change",
+        "requests change of settlement option"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "requests change of settlement option",
+      "action": "normalize",
+      "canonical": "requests change of settlement option"
+    },
+    {
+      "members": [
+        "is supported by",
+        "supported by"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "supported by",
+      "action": "normalize",
+      "canonical": "supported by"
+    },
+    {
+      "members": [
+        "has accelerated benefit payment limit",
+        "is subject to accelerated benefit payment limit"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "has accelerated benefit payment limit",
+      "action": "normalize",
+      "canonical": "has accelerated benefit payment limit"
+    },
+    {
+      "members": [
+        "is subject to revocation",
+        "subject to revocation"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is subject to revocation",
+      "action": "normalize",
+      "canonical": "is subject to revocation"
+    },
+    {
+      "members": [
+        "is a material fact potentially concealed",
+        "is a material fact potentially concealed or falsified in"
+      ],
+      "total_freq": 2,
+      "suggested_canon": "is a material fact potentially concealed",
+      "action": "normalize",
+      "canonical": "is a material fact potentially concealed"
+    }
+  ],
+  "suspicious_nulls": [],
+  "rare_labels": [
+    {
+      "label": "assigned at",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issued policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issued in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "amount of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "location of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides coverage to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "set by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has principal office location",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "principal office location",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual info",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "foundational",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "attributes to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "insured under policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "part of contract",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "owner of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "owner to beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "policy owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "effects coverage start",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "policy issuer",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has effective policy start date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "offers",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is a",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has term duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has id",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involves",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables contract",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines party",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "party to contract",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the subject of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines the effective date of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is a component of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "represents the value of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "entails",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "promises to pay",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has value of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "administers death benefit terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines conditions for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions payout of death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines scope",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contract issuer",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions benefits",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governs contract modifications",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to contract modification rule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has contestability clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affects owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "covered by policy with suicide exclusion clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy with suicide exclusion clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines eligibility window for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be excluded due to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the potential payout amount affected by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "verified by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supports contract",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "insured by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "identified in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "type of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "implies duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has policy type",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "term duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issue age",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is insured male",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has insured gender",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "assigned to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payable to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy with face amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has face amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "equals",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "charged by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payable by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "establishes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sustains",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "charges",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "monthly premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the initial monthly premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "facilitates payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "manages billing system",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "monthly payment amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "guaranteed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "covers",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has guaranteed premium period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the duration of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "activates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coincides with effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides coverage term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coverage start date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ends term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "administers coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has coverage end date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coverage term duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "husband of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "spouse of insured",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "married to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "entitled to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "primary beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has primary beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "referred to by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contingent beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "posteriors",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on compliance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "feature of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "funding",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables function",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional restriction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issued",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "attached to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "accesses",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "attached to policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines reinstatement period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has reinstatement period duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "guaranteed during",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "guarantor",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has level premium guarantee",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has fixed premium amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "covers guaranteed term period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ensures stability for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides guarantee of premium stability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has guaranteed premium stability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "guaranteed premium amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "duration of guaranteed term period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on type",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has coverage termination condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is payout conditionally during active term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines term duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "generalizes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on contract",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides benefits under contract terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "follows after",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has reinstatement window duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "precedes lapse and triggers reinstatement window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has duration of 5 years from lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines reinstatement window start",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy with level premium guarantee",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "pays level premium during guaranteed term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsible for paying level premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives death benefit ensured by level premium structure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "remains constant due to level premium guarantee",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has level rate during guaranteed term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has guaranteed level amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "starts guaranteed term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "independently supports",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy with guaranteed level premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "pays guaranteed level premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has guaranteed rate",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has guaranteed level premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls renewal of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on active coverage for receiving",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires active coverage to be payable",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines term end",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "after reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "delays termination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines rules for conversion eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may convert coverage before term end",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has authority to initiate conversion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "remains payable only if policy is active post term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines timing of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may precede eligibility for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables renewal",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces renewal conditions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to renewal requirements",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsible for compliance with renewal terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affected by renewal outcomes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "dependent on successful renewal",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains specifications for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must follow contract specifications",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "temporally dependent",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has benefits subject to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls policy subject to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives benefits subject to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "refers to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "definitional support",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines role",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "needs",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines timing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines entity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines activation time of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is composed of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "financial obligation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coverage extension mechanism",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "policy restoration procedure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "legal protection window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "binding document collection",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authority",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "establishes authority",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is identified as",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "needs premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has rights under",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "institutional framework",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsibility for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "holds ownership rights",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains context",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is received by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "linked to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influences terms of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsible for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to maintain policy in force",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is defined by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "protects insured",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is eligible for grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsible for premium payment timing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "remains payable during grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "missed payment triggers",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "follows missed premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "delayed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables continuity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is protected under",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has responsibility regarding",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may receive if policy remains in force",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on policy remaining in force",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines timeline for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "precedes policy issuance and is not directly related to grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires reinstatement action from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "initiates or supports",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines start of active status after reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "restricted by incontestability period duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to incontestability period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers incontestability period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "falls in period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may contest policy validity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "allows company to contest policy validity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is associated with",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affects payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to contest",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to contestation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governs the timeframe within which the company can contest the policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "temporal basis for contest right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "underlies",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "composed of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ensures integrity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has agent authority limitation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to change via alteration or waiver",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "foundational to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy because of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is dependent upon",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "basis for issuance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causal condition for issuance of policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is basis for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to make",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for ensuring",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires timely payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets context for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is determined by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defined in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "anchors",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy with effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "located on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timed by definition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coordinates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "result of issuance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coincides with",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has coverage start time at address",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "occurs on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains rights",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "obligates to pay",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines default",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be changed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to assign policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to cancel",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "entitles",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables control",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fallback to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "implied consequence",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "implies rights",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is default owner when no owner named",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "time limits right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables action",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to examine",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be examined",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "postcedes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables examination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies to owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to right to examine",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers start of period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "extends protection",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defaults to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is default owner of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has examination right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "start date of examination period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "duration of examination period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to return",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "accepts return from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "start date of return window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "time limit for return",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to refund",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides refund under condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines time window for refund",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is eligible for refund",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces voidance upon return",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "date from which policy is void ab initio",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timeframe within which return results in voidance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "nullifies",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "initiates return",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affected by voidance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "anchors retroactive effect",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets time limit for return",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires written form",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authorizes policy change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "consents to policy change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "approves policy change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authorizes policy changes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "possible violation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional approval",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls policy terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions refund",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines start of validity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual timeframe for actions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "posteriority",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to incontestability after two years",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces incontestability clause after two years",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "marks start of two year period for incontestability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "independently related",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has incontestability right after two years from effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers incontestability clause after two years",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excludes incontestability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provided misrepresentation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to void policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines beginning of contestable period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "specifies terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers suicide exclusion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has limited liability when",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excluded if suicide occurs within two years",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to policy requirements",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "temporal limitation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits consequence of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to suicide exclusion clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies susicide exclusion clause and refunds premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines start of two year period for suicide exclusion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excluded when suicide occurs within two years",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "dies by suicide within two years of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has liability reduced when insured dies by suicide",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reduced by suicide exclusion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "falls under policy rule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has misstated age",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "adjusts insurance amount based on corrected age",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "basis for adjustment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to adjustment based on age correction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has misstated gender",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "adjusts insurance amount based on misstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines insurance amount after adjustment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be adjusted based on corrected insurance amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is entitled to a grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides a grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is grace period for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has grace period duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides coverage during grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "trigger for grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "remains in force during grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives reduced death benefit after deduction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "dies during grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "deducts unpaid premium from death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "marks start of coverage period including grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers consequence",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for timely payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces policy lapse upon non payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines the grace period duration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines grace period for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must be paid before",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is forfeited upon policy lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "procedural requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces coverage termination for nonpayment after grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines duration of grace period before coverage terminates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines grace period length",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "terminates upon coverage lapse due to non payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on authority",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers exception",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "resulting from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for timely premium payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses benefits if premium is not paid within grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ceases benefit payments upon non payment beyond grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines the length of the grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "represents grace period length",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ceases if premium unpaid after grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "remedy for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has authority to initiate reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is eligible for reinstatement under exception",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides reinstatement provision with exceptions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines when reinstated benefits become effective",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines the time window for reinstatement eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "time limit for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "deadline for reinstatement initiation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payment requirement for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "benefit subject to reinstatement exception",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables conditional change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "follows procedure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can reinstate policy within window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces reinstatement window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "within reinstatement window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on procedure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "recovery from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "evaluates evidence of insurability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on successful reinstatement after evidence submission",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "indicates extended lapse duration necessitating evidence of insurability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes lapse leading to need for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required by policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must pay",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must be paid to reinstate policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to written approval",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has interest obligation at reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "recoverable after",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enhances stability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables payability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enhances reliability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supportees",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets reinstatement timeframe",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests reinstatement within timeframe",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject of policy affected by reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines cause of lapse and eligibility for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines time window for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables conditional coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional recovery",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "evaluates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires evidence of insurability for reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "avoids need for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires payment of past due premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for paying",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must be paid with interest",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "consequent on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional restore",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "mandated by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "necessitated by grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines interest on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has past due interest determined by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines interest on past due premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "related to premium details",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is payable in advance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "premiums must be paid before",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies after failure to pay in advance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables restoration of coverage after lapse caused by unpaid premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can satisfy advance payment requirement using policy loans",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on maintaining active status ensured by advance premium payments",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payment timing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives monthly payments for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "makes monthly payments toward",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid monthly",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggered by monthly payment failure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supports monthly premium payments",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "includes payment schedule details",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid quarterly",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies after",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "specifies payment frequency",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ensures eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "makes semi annual payments",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid semi annually",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggered by non payment of semi annual premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "includes payment schedule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "starts payment schedule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "allows late annual payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies after failure to make annual payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fulfills annual payment obligation automatically",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on maintenance of annual premium payments",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "includes payment terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "chooses",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "elects mode",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "chooses payment mode",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has payment mode selected by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables lapsing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "follows with",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "responsible for payment of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "due on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines first premium due date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines first premium due date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has due date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines timeframe for timely payment after due date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is enabled by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests change in frequency of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has changed frequency due to request by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines effective timing of change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "allowed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests change in payment method for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has payment method subject to change by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines when the new payment method begins",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be affected by timing of payment method change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "could be triggered if new payment method fails to cover premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives notification of change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides written notice for change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be affected by change in premium mode",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines when the change takes effect",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on request",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determined by approval",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets conditions for policy maintenance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fails to make premium payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses coverage due to policy lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may lose benefit entitlement due to policy lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "not paid within grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines eligibility for policy lapse due to non payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "result of noncompliance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excepts by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces termination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fails to pay",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses protection",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses entitlement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to maintain coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines start of coverage window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides temporary protection against lapse due to late payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "allows recovery of coverage after lapse, otherwise termination occurs",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "prevents lapse by covering overdue premiums automatically",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "terminates without value when policy lapses",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses applicability upon policy lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on insurability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires interest payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives payout from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is affected by absence of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excluded",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is dependent on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "added via endorsement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "avoids termination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for repayment of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "benefits from continuous coverage provided by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid automatically using",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "activates at end of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on loan value",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls loan value",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "uses policy loan to cover unpaid premiums",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be covered by policy loan if available",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "covers unpaid premiums when sufficient loan value is available",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains information about",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on active coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payment to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional on reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on reinstatement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "pays death benefit if",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers death benefit upon death",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines eligibility window for death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains policy in force temporarily post premium default",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "allows resumption of policy in force after lapse",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "prevents policy lapse by covering missed payments",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payout triggered only if policy is in force at time of death",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines condition for payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends upon",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions beneficiary",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to policy terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers death benefit under terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives payment based on policy terms",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supports policy coverage which influences benefit payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines start of eligibility for death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affects timing of death benefit payment if death occurs during grace period",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influences reinstated coverage status relevant to death benefit claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains coverage continuity, thereby preserving death benefit entitlement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is governed by the terms including effective date, grace period, reinstatement provision, and apl",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payment form",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payout method default",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "specifies default payout method",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influences approval of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides proof of death to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject of proof of death",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submits proof of death for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains requirement for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enabler",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has proof of death via",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "needs for claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires proof of death via certified copy of death certificate",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "precedes with",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "response to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preliminary to approval",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preliminary to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may require",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has authority over",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informs reasonable documentation requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "death of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid upon",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "implies term",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has accruing interest",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "specifies interest accrual terms for death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to interest requirement by law",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces legal requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "eligible recipient",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "entitles to payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supersedes",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains designation records for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is determined by most recent written designation from company record",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains supporting information for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides foundation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "death triggers",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives interest inclusive payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "manages interest accrual",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "accrues interest",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to interest accrual post death",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fallbacks to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional outcome",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "nominates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is designated by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains records of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional fallback",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "eligible for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives if no beneficiary survives",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "complementary condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contingency relation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives or not receives based on survival",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines benefit distribution path",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is paid to estates if no beneficiary and policy owner survive",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes effect",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "designated by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives request from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is used to submit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timing influence",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timing dependence",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influences status",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enhances understanding",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls record of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submits request to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to exercise change beneficiary right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informs decision",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "approves assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has assignment right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required method for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may initiate assignment without company validation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "potential receiver of assignment outcome under uncertain validity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits liability for validity of assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may exercise assignment rights without company guarantee",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to liability limitation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits right to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has no tax responsibility for assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may lead to assignment with tax consequences",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to tax consequences upon assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can result in tax implications when used post assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "associated with possible tax burden upon acceleration and assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affects outcome",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "expands upon",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has cancellation right",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coverage terminates when policy is cancelled",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses claim right if death benefit is not paid due to cancellation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "terminates coverage after policy cancellation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "initiates cancellation that leads to coverage termination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "becomes unavailable if coverage ends due to cancellation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "are refundable upon",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has benefit termination",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "loses right to future payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "ceases liability to pay benefits",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "experiences loss of coverage",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "becomes unpayable",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers policy cancellation resulting in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for refunding",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "eligible for refund",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has access right to policy copy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to exercise",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "fulfills",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to request premium history",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has requested",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "source of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informs assignment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to request by policy owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests beneficiary designation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is used to request",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to request riders or endorsements",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be requested by policy owner",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "obligates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides information to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides information according to law",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to information disclosure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines method of death benefit payment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requests change of settlement option",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives death benefit based on approved option",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "initiates or requests settlement option change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determined by approved settlement option",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required submission",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "financial consideration during processing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject of approval",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional constraint on change",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may trigger need for settlement option selection via death",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is affected by outcome of settlement option choice",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "controls terms of settlement options",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can elect or change settlement option under company rules",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is distributed based on selected settlement option",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "impacts calculation of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governs change of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may condition or restrict",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on base policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issuer of policy",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "institutional context",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governing entity",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "effective on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires first premium payment for policy effectiveness",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "pays first premium",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "becomes effective when",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must be alive on effective date",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has effective condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "issues policy form",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is identifier of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to regulation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is responsible for including",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may require modification due to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has state specific provisions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires state specific provisions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers review of state specific provisions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "included as optional rider",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exists within",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is available as",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be accessed via",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to acceleration through",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required for eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required for verification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "offered by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional preq",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "explains feature",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is partially payable via",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits the maximum accelerated payment from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required to initiate",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "qualifies for limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional verification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers process",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables exception",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "offers policy rider with qualifying condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides benefit when diagnosed with terminal illness",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governs eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required to activate benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "validated by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "eligibility condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "eligibility leads to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "condition for access",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enables access to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "evaluates eligibility for accelerated death benefit rider based on terminal illness diagnosis",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has diagnosed terminal illness with life expectancy ≤ 12 months",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires proof of terminal illness with ≤ 12 month life expectancy for payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "indicates effective date of benefit availability if terminal illness criterion is met",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required for claiming",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides evidence for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "validates condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "certifies",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers need for certification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supports certification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires certification from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supported by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets cap",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits qualification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "limits amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has max payout limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines upper limit of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "constrains eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets maximum limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to maximum limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has accelerated benefit payment limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sets maximum limit on accelerated death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to accelerated benefit payment limit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influences or limits accelerated benefit payment amount",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "precedes limitation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual warning",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces procedure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "receives written request from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submits written request for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submits written request on behalf of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires written request to activate",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authorizes requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "verifies condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is required",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exercised under",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "validation of eligibility",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains right to second medical opinion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "right to obtain",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reduces benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "permitted exception",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes reduction in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be adjusted proportionally to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required to trigger",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is affected by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "modified by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conforms to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "administers interest application",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is recipient/beneficiary impacted by reduced death benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reduces death benefit due to interest",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines effective time for interest application",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "manages loan deductions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the insured person whose death benefit is adjusted",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may authorize actions related to the claim but does not affect the deduction rule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers the condition under which loan deductions occur",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines the effective timeline for applying loan deductions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is adjusted downward due to loans",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "initiates policy acceleration resulting in deductions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affects remaining benefit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supprts",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "administers lien deduction procedure upon acceleration",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers adjustment of death benefit including lien deduction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines timing of lien deduction in adjusted death benefit calculation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preempts procedure",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excludes based on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "prevents payout",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exception to rider",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "suppressed by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional rejection",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preempts requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exclusion clause",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reinforces requirement",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to restriction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "acts within restrictions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has exclusionary condition",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determines applicability window",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes exclusion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exempt by fraud",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exclusion restriction",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be ineligible for accelerated benefit if illness stems from war related activities",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is excluded from payment when terminal illness is caused by war related activities",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers evaluation of exclusion",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "withdrawable after",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to revoke",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "acts on behalf of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to revocation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines deadline for revocation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has rule",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "revokes via",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is supported by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "not applicable to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is recipient of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submits",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to revocation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires revocation via",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "location of company receiving request",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is the ceo of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "holds position of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "headquarters location",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "overseen by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires approval from",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "executed at",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "execution location",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "detects or evaluates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to misrepresentation",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be falsely stated",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to fraud when false information is provided",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be part of fraud if materially false",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains false information leading to fraud",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involves intentional misrepresentation to justify claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "advises against",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "undermines processing",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "invalidates",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces verification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preserves conditions",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contributes to denial",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "expands on",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may have engaged in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "could be responsible for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is a material fact potentially concealed",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject of concealment",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "jurisdiction for fraudulent act",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "document in which misrepresentation occurs",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be exercised due to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is triggered by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "specifies",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "recipient of fraudulent claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "potential submitter of false statements",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "agent who may submit false information",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "benefit subject to potential falsification",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "factual detail that could be altered in fraud",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "submission of false statements",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be falsified to commit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be misrepresented to commit",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "constitutes grounds for",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "if misrepresented, contributes to",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "if misrepresented, enables",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "warns against",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "examples",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces rules against",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is a material fact potentially concealed or falsified in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains material facts",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may include falsified material facts",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contains falsified or concealed material facts",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "may be concealed to support fraudulent claim",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involves concealment of intent to defraud",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "constitutes concealment of material fact affecting liability",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "can be misrepresented to obtain undeserved benefits",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "challenges assumptions of",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depended upon by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exposes procedural risk",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "institutional implication",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "threatens compliance",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "threatens",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "committed",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "victimized by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "supervises",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "chief executive officer at",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has ceo named",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "abuses authority",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authorized by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involved in",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informative link",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "applies to role",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "authorized representative",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is organization",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "legal framework",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "influence over",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "represented by",
+      "freq": 1,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "verifies",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is type of",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has policy number",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual supports",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "insurer",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "same person",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual dependence",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "spouse of",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coexists with",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timing relationship",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "features",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "quantifies",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is part of entire contract",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "contextual dependency",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is included in",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "used in",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "timeline relation",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reflects",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has risk classification",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "underpins",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "coextensive",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "payment method",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces requirement",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "starts",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "child of insured",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "parent of",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "end date of guaranteed term period",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions reinstatement",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "governed by",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is covered by",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is defined as",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has duration",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces limitation",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "maintains",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires authorization",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires written authorization",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions coverage",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides application data for",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional precedence",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "mandates",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "possesses",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces conditions",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "considered in",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "preempts",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "postpones",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has right to examine for 20 days from receipt",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides context for",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "entitles to",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires writing",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires written approval",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has authority to modify policy",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "temporal context",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "temporal overlap",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines timeframe for suicide exclusion",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "refundable upon suicide within two years",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has coverage during grace period",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers exclusion",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has payment obligation to avoid coverage termination",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must be paid within grace period",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes reinstatement",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditional requirement",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes lapse",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on authorization",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "sequential relation",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "must provide evidence of insurability",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required for reinstatement",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "provides detail",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "informs on",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "approved payment mode",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "consequence of lapse",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "does not include",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "required for payout",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "condition",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "recipient of",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "defines terms of",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "elects",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "enforces restriction",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "consequence",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires proof of death",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "conditions payment",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires additional documentation",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "paid to",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reiterates",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "signs request for change of beneficiary",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "affected by change effective on signature date",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "triggers effectiveness",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "identical",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "does not affect effectiveness of change",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is updated immediately upon company receipt",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "processes beneficiary change",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to approval",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "bound by assignment terms",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "subject to state specific provisions",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "is subject to state specific provision",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "requires certification",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "reduced by accelerated payment",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "determined by",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "prevents fraud",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "depends on life expectancy certification",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "validates eligibility",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "suppords",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "combined with",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "complementary reduction",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "exclusionary parallel",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excluded if",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "causes exclusion of accelerated benefit",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "excludes similarly",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "identical role",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "has ceo",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "potentially subject to fraud via misrepresentation in claim",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involves material facts concerning",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "material fact subject to concealment",
+      "freq": 2,
+      "action": "keep_as_is"
+    },
+    {
+      "label": "involves material facts",
+      "freq": 2,
+      "action": "keep_as_is"
+    }
+  ]
+}

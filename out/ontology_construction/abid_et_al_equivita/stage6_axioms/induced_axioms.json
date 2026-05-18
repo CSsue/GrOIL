@@ -1,0 +1,639 @@
+[
+  {
+    "axiom_id": "AX_0000",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "ContingentBeneficiary",
+    "property_name": "ContingentBeneficiaryPayoutCondition",
+    "filler": "Event",
+    "cardinality": null,
+    "axiom_str": "ContingentBeneficiary hasContingentBeneficiaryPayoutCondition some Event",
+    "definition": "Contingent beneficiary receives payout under specific conditions.",
+    "confidence": "high",
+    "reasoning": "The property links contingent beneficiaries to eligibility conditions for payout, supported by evidence of survival and estate disbursement rules. The range 'Event' captures conditional triggers.",
+    "evidence_sentences": [
+      "If no designated Beneficiary survives the Insured, proceeds will be paid to the Contingent Beneficiary, if any.",
+      "If an irrevocable Beneficiary is named, the Policy Owner may not change the Beneficiary without the written consent of the irrevocable Beneficiary.",
+      "If an irrevocable Beneficiary is named, the Policy Owner may not assign the Policy without the written consent of the irrevocable Beneficiary.",
+      "If no Contingent Beneficiary survives the Insured, proceeds will be payable to the Policy Owner\u2019s estate.",
+      "If no Beneficiary survives the Insured, the Company may pay the proceeds to the Insured\u2019s estate."
+    ],
+    "source_cluster": "ContingentBeneficiaryPayoutCondition"
+  },
+  {
+    "axiom_id": "AX_0001",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "InsuranceContract",
+    "property_name": "SeverabilityClause",
+    "filler": "LegalFramework",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract hasSeverabilityClause some LegalFramework",
+    "definition": "Invalid provisions do not affect remaining policy validity.",
+    "confidence": "high",
+    "reasoning": "The clause ensures legal resilience of remaining terms, aligning with 'LegalFramework' as the domain of enforceability. Evidence confirms this applies to the policy as a whole.",
+    "evidence_sentences": [
+      "Periodic statements or confirmations do not modify the terms of the Policy unless they include a properly authorized amendment or rider.",
+      "If any provision of this Policy is held invalid or unenforceable under applicable law, the remaining provisions remain in full force and effect.",
+      "Remaining provisions stay effective to the extent permitted by law.",
+      "If a provision of this Policy is held invalid or unenforceable under applicable law, the remaining provisions remain in full force and effect.",
+      "The remaining provisions remain in full force and effect to the extent permitted by law."
+    ],
+    "source_cluster": "SeverabilityClause"
+  },
+  {
+    "axiom_id": "AX_0002",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "PolicyLapseDueToNonpayment",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract hasPolicyLapseDueToNonpayment some Period",
+    "definition": "Policy lapses if premiums are not paid within a period.",
+    "confidence": "high",
+    "reasoning": "The property defines a time-based lapse condition tied to nonpayment, with 'Period' as the appropriate range. Evidence confirms grace period and lapse timing.",
+    "evidence_sentences": [
+      "Lapse refers to the termination of the Policy due to nonpayment of premiums after the grace period.",
+      "If any premium is not paid before the end of the grace period, the Policy will lapse as of the due date of the unpaid premium.",
+      "Coverage terminates when the Policy lapses.",
+      "Coverage terminates when the Policy lapses due to nonpayment.",
+      "No benefits shall be payable under a lapsed Policy, except as provided in the Reinstatement provision."
+    ],
+    "source_cluster": "PolicyLapseDueToNonpayment"
+  },
+  {
+    "axiom_id": "AX_0003",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "Beneficiary",
+    "property_name": "BeneficiaryDesignationFallbackPayout",
+    "filler": "Beneficiary",
+    "cardinality": null,
+    "axiom_str": "Beneficiary hasBeneficiaryDesignationFallbackPayout some Beneficiary",
+    "definition": "Fallback payout occurs if no primary beneficiary is found.",
+    "confidence": "high",
+    "reasoning": "The property governs payout to a secondary beneficiary when primary designation fails, supported by evidence of contingent and estate payouts.",
+    "evidence_sentences": [
+      "The beneficiary is Taylor Ellis.",
+      "The beneficiary designation is Taylor Ellis (spouse).",
+      "The designation of a Beneficiary must be made in writing and filed with the Company.",
+      "If no designated Beneficiary survives the Insured, proceeds will be paid to the Contingent Beneficiary, if any.",
+      "If a Beneficiary cannot be located within 90 days of the Insured\u2019s death, the Company may pay the proceeds to the Insured\u2019s estate."
+    ],
+    "source_cluster": "BeneficiaryDesignationFallbackPayout"
+  },
+  {
+    "axiom_id": "AX_0004",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuredPerson",
+    "property_name": "ConversionEligibilityByAgeAndTiming",
+    "filler": "Event",
+    "cardinality": null,
+    "axiom_str": "InsuredPerson hasConversionEligibilityByAgeAndTiming some Event",
+    "definition": "Policyholder must meet age and timing for conversion.",
+    "confidence": "high",
+    "reasoning": "Eligibility depends on age and timing constraints, which are event-driven conditions. The range 'Event' captures these temporal eligibility triggers.",
+    "evidence_sentences": [
+      "The request to convert must be made during the conversion period specified in the Policy Specifications.",
+      "The Insured must not be older than the maximum conversion age established by the Company at the time of request.",
+      "Premiums for the new policy must be paid in accordance with the terms of the selected product."
+    ],
+    "source_cluster": "ConversionEligibilityByAgeAndTiming"
+  },
+  {
+    "axiom_id": "AX_0005",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PolicyOwner",
+    "property_name": "BeneficiaryChangeEffectivePosthumously",
+    "filler": "xsd:date",
+    "cardinality": null,
+    "axiom_str": "PolicyOwner hasBeneficiaryChangeEffectivePosthumously some xsd:date",
+    "definition": "Beneficiary change takes effect after policyholder's death.",
+    "confidence": "high",
+    "reasoning": "The change is effective posthumously, with the effective date being a temporal marker. Evidence confirms changes take effect even after death.",
+    "evidence_sentences": [
+      "The Policy Owner may change the Beneficiary while the Insured is living.",
+      "Unless an irrevocable Beneficiary has been designated, the Policy Owner may change the Beneficiary at any time during the lifetime of the Insured.",
+      "A change of Beneficiary takes effect as of the date the written request is signed.",
+      "A change of Beneficiary is effective even if the Insured is dead when the change is recorded by the Company."
+    ],
+    "source_cluster": "BeneficiaryChangeEffectivePosthumously"
+  },
+  {
+    "axiom_id": "AX_0006",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "DeathBenefit",
+    "property_name": "deathBenefitAmountSpecification",
+    "filler": "Event",
+    "cardinality": null,
+    "axiom_str": "DeathBenefit deathBenefitAmountSpecification some Event",
+    "definition": "Death benefit adjusted for underpayment.",
+    "confidence": "high",
+    "reasoning": "The evidence shows that underpayment triggers a reduction in death benefit, linking the benefit to a condition (Event). The property 'deathBenefitAmountSpecification' is the most appropriate for specifying how the benefit amount is determined based on such conditions.",
+    "evidence_sentences": [
+      "If the correction resulting from a misstatement of age results in an underpayment of premiums, the death benefit shall be reduced accordingly.",
+      "The death benefit shall be reduced if the Insured is found to be outside of an insurable age range at issue.",
+      "If the Insured dies while the Policy is in force and before the Expiry Date, the Company will pay the death benefit to the designated Beneficiary.",
+      "Payment of the death benefit shall be made promptly upon receipt and approval of all required claim documentation.",
+      "Interest accrues on the death benefit from the date of death to the date of payment."
+    ],
+    "source_cluster": "DeathBenefitAdjustmentForUnderpayment"
+  },
+  {
+    "axiom_id": "AX_0007",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PolicyReinstatement",
+    "property_name": "initiallyCollectsDataThatCausesUnderpaymentIfInaccurate",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "PolicyReinstatement initiallyCollectsDataThatCausesUnderpaymentIfInaccurate some Period",
+    "definition": "Contestability period resets post-reinstatement.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that a new contestability period begins at reinstatement, which is a defined time interval (Period). The property 'initiallyCollectsDataThatCausesUnderpaymentIfInaccurate' is used here to reflect the initiation of a new temporal condition upon reinstatement.",
+    "evidence_sentences": [
+      "A lapsed Policy may be reinstated within five years from the date of lapse.",
+      "To reinstate a lapsed Policy, a written request for reinstatement must be received.",
+      "Upon reinstatement, coverage resumes as though the Policy had remained continuously in force.",
+      "The Incontestability provision starts anew from the date of reinstatement.",
+      "If the Policy is reinstated, a new two-year contestability period shall apply from the date of reinstatement."
+    ],
+    "source_cluster": "ReinstatementContestabilityReset"
+  },
+  {
+    "axiom_id": "AX_0008",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "deathBenefitAmountSpecification",
+    "filler": "DeathBenefit",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract deathBenefitAmountSpecification some DeathBenefit",
+    "definition": "Adjusts death benefit for misstated sex.",
+    "confidence": "high",
+    "reasoning": "The policy-level adjustment for misstated sex directly affects the death benefit amount. The property 'deathBenefitAmountSpecification' appropriately captures this relationship between the contract and the adjusted benefit.",
+    "evidence_sentences": [
+      "If the sex of the Insured has been misstated, the amount of the death benefit payable under this Policy shall be the amount the premium paid would have purchased at the correct sex.",
+      "If the correction resulting from a misstatement of sex leads to an overpayment of premiums, the Company shall refund the excess to the Policy Owner without interest.",
+      "If the correction resulting from a misstatement of sex results in an underpayment of premiums, the death benefit shall be reduced accordingly."
+    ],
+    "source_cluster": "DeathBenefitAdjustmentForMisstatedSex"
+  },
+  {
+    "axiom_id": "AX_0009",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "hasIncontestabilityPeriodDefinition",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract hasIncontestabilityPeriodDefinition some Period",
+    "definition": "Policy incontestable after two years.",
+    "confidence": "high",
+    "reasoning": "The incontestability period is defined as a two-year duration from issue, making it a temporal condition. The property 'hasIncontestabilityPeriodDefinition' correctly links the contract to this period.",
+    "evidence_sentences": [
+      "This Policy shall be incontestable after it has been in force during the lifetime of the Insured for a period of two years from the Issue Date.",
+      "This Policy shall be incontestable after it has been in force during the lifetime of the Insured for a period of two years from the Issue Date, except for nonpayment of premiums.",
+      "Conversion to a permanent life insurance policy can occur without evidence of insurability."
+    ],
+    "source_cluster": "IncontestabilityPeriod"
+  },
+  {
+    "axiom_id": "AX_0010",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "PolicyOwner",
+    "property_name": "hasAuthorityLimitation",
+    "filler": "PolicySpecification",
+    "cardinality": null,
+    "axiom_str": "PolicyOwner hasAuthorityLimitation some PolicySpecification",
+    "definition": "Owner actions limited by policy terms.",
+    "confidence": "high",
+    "reasoning": "The policy owner's authority is constrained by the policy's terms, which are defined in the PolicySpecification. The property 'hasAuthorityLimitation' captures this dependency.",
+    "evidence_sentences": [
+      "No agent, producer, or field representative has authority to alter or waive any provision of this Policy.",
+      "No agent, producer, or field representative has authority to extend the time for payment of premiums.",
+      "While the Insured is living, the Policy Owner may exercise all contractual rights without the consent of any other person.",
+      "The Policy Owner's right to exercise contractual rights is unrestricted unless restricted by an assignment.",
+      "The Policy Owner's right to exercise contractual rights is unrestricted unless restricted by an irrevocable beneficiary designation."
+    ],
+    "source_cluster": "OwnerAuthorityLimitation"
+  },
+  {
+    "axiom_id": "AX_0011",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "hasGracePeriod",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract hasGracePeriod some Period",
+    "definition": "Coverage during grace period.",
+    "confidence": "high",
+    "reasoning": "The grace period is a defined time interval during which coverage remains in force. The property 'hasGracePeriod' directly links the contract to this period, consistent with the evidence.",
+    "evidence_sentences": [
+      "During the grace period, the Policy remains in force.",
+      "If the Insured dies during the grace period, any unpaid premium due will be deducted from the death benefit."
+    ],
+    "source_cluster": "GracePeriodCoverage"
+  },
+  {
+    "axiom_id": "AX_0012",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "UnpaidPremiumDeduction",
+    "filler": "PaymentAmount",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract UnpaidPremiumDeduction some PaymentAmount",
+    "definition": "Deduction applied for unpaid premiums from death benefit.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that unpaid premiums are deducted from the death benefit, and the range is PaymentAmount as it represents the financial amount deducted. The property is correctly applied to InsuranceContract as the governing entity.",
+    "evidence_sentences": [
+      "Any unpaid premiums are deducted from the death benefit.",
+      "Any indebtedness is deducted from the death benefit."
+    ],
+    "source_cluster": "UnpaidPremiumDeduction"
+  },
+  {
+    "axiom_id": "AX_0013",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "SuicideExclusionResumesAfterReinstatement",
+    "filler": "SuicideExclusion",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract SuicideExclusionResumesAfterReinstatement some SuicideExclusion",
+    "definition": "Suicide exclusion restarts after policy reinstatement.",
+    "confidence": "high",
+    "reasoning": "The sentences confirm that the suicide exclusion applies anew from the reinstatement date, indicating a resumption of the exclusion. The property is appropriately linked to InsuranceContract as the policy entity and SuicideExclusion as the relevant exclusion type.",
+    "evidence_sentences": [
+      "The Suicide Exclusion provision starts anew from the date of reinstatement.",
+      "If the Insured dies by suicide while sane or insane within two years from the Issue Date, the Company\u2019s liability shall be limited to an amount equal to the total premiums paid, without interest.",
+      "If the Insured dies by suicide while sane or insane within two years from the date of reinstatement, the Company\u2019s liability shall be limited to an amount equal to the total premiums paid, without interest.",
+      "Upon reinstatement, the suicide exclusion applies anew from the date of reinstatement.",
+      "The suicide exclusion applies again from the date of reinstatement."
+    ],
+    "source_cluster": "SuicideExclusionResumesAfterReinstatement"
+  },
+  {
+    "axiom_id": "AX_0014",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "ClaimEligibility",
+    "property_name": "ClaimDenialDueToMisrepresentation",
+    "filler": "ClaimValidityAuthority",
+    "cardinality": null,
+    "axiom_str": "ClaimEligibility ClaimDenialDueToMisrepresentation some ClaimValidityAuthority",
+    "definition": "Claim denied due to material misrepresentation.",
+    "confidence": "high",
+    "reasoning": "The evidence shows that claims may be denied during the contestability period due to misrepresentation, and ClaimValidityAuthority governs such denials. The property is correctly placed in ClaimEligibility as the domain, reflecting eligibility conditions.",
+    "evidence_sentences": [
+      "During the two-year contestability period, the Company may deny a claim if there was a material misrepresentation in the application."
+    ],
+    "source_cluster": "ClaimDenialDueToMisrepresentation"
+  },
+  {
+    "axiom_id": "AX_0015",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "InsuranceContract",
+    "property_name": "AgeMisstatementVoidance",
+    "filler": "VoidAbInitio",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract AgeMisstatementVoidance some VoidAbInitio",
+    "definition": "Policy void from inception due to age misstatement.",
+    "confidence": "high",
+    "reasoning": "The evidence states that misstated age leads to void ab initio, meaning the policy is invalid from the start. The property is correctly applied to InsuranceContract, with VoidAbInitio as the range indicating the legal status.",
+    "evidence_sentences": [
+      "If the age of the Insured has been misstated, the amount of the death benefit payable under this Policy shall be the amount the premium paid would have purchased at the correct age.",
+      "If the Insured is found to be outside of an insurable age range at issue, the Policy shall be void ab initio.",
+      "If the Insured is found to be outside of an insurable age range at issue, all premiums shall be refunded."
+    ],
+    "source_cluster": "AgeMisstatementVoidance"
+  },
+  {
+    "axiom_id": "AX_0016",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Beneficiary",
+    "property_name": "PresumptionOfPredecease",
+    "filler": "ProceedsDisposition",
+    "cardinality": null,
+    "axiom_str": "Beneficiary PresumptionOfPredecease some ProceedsDisposition",
+    "definition": "Beneficiary presumed to predecease insured, disclaiming proceeds.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that if a beneficiary is presumed to have predeceased the insured, their proceeds are disclaimed, which falls under ProceedsDisposition. The property is correctly linked to Beneficiary as the subject and ProceedsDisposition as the outcome.",
+    "evidence_sentences": [
+      "The presumption that the Beneficiary predeceased the Insured applies unless otherwise governed by state law.",
+      "If the Insured and the Beneficiary die under circumstances making the order of death uncertain, the Beneficiary shall be presumed to have predeceased the Insured.",
+      "A Beneficiary who disclaims proceeds shall be treated as having predeceased the Insured."
+    ],
+    "source_cluster": "PresumptionOfPredecease"
+  },
+  {
+    "axiom_id": "AX_0017",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InterestAccrual",
+    "property_name": "MinimumInterestRateCompliance",
+    "filler": "Rate",
+    "cardinality": null,
+    "axiom_str": "InterestAccrual MinimumInterestRateCompliance some Rate",
+    "definition": "Interest rate must meet minimum compliance threshold.",
+    "confidence": "high",
+    "reasoning": "The evidence specifies that the interest rate must not be less than required by state law, indicating a compliance condition on a Rate. The property is correctly applied to InterestAccrual as the process governing interest application.",
+    "evidence_sentences": [
+      "The interest rate is not less than required by applicable state law."
+    ],
+    "source_cluster": "MinimumInterestRateCompliance"
+  },
+  {
+    "axiom_id": "AX_0018",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "DeathBenefit",
+    "property_name": "defaultPayoutMethod",
+    "filler": "PayoutOption",
+    "cardinality": null,
+    "axiom_str": "DeathBenefit defaultPayoutMethod some PayoutOption",
+    "definition": "Specifies default payout method when no option is designated.",
+    "confidence": "high",
+    "reasoning": "The property defines how death benefits are distributed when no specific method is chosen, with the range being PayoutOption as per the evidence of lump sum and alternative options.",
+    "evidence_sentences": [
+      "Death benefit proceeds will be paid in a lump sum unless an alternative payment option is elected."
+    ],
+    "source_cluster": "DefaultPayoutMethod"
+  },
+  {
+    "axiom_id": "AX_0019",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Right",
+    "property_name": "NonWaiverOfEnforcementRights",
+    "filler": "WrittenDocument",
+    "cardinality": null,
+    "axiom_str": "Right NonWaiverOfEnforcementRights some WrittenDocument",
+    "definition": "Waiver of a right does not affect future enforcement rights.",
+    "confidence": "high",
+    "reasoning": "The evidence shows that waivers must be in writing to be valid, and the property applies to enforceable rights, making WrittenDocument the appropriate range.",
+    "evidence_sentences": [
+      "No waiver of any term or condition of this Policy is valid unless made in writing.",
+      "No waiver of any term or condition of this Policy is valid unless signed by an authorized officer of the Company.",
+      "Failure to enforce any provision of this Policy does not constitute a waiver of future enforcement of that provision.",
+      "Failure to enforce any provision of this Policy does not constitute a waiver of future enforcement of any other provision."
+    ],
+    "source_cluster": "NonWaiverOfEnforcementRights"
+  },
+  {
+    "axiom_id": "AX_0020",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "EquitableEntitlement",
+    "property_name": "EquitablePaymentDiscretion",
+    "filler": "PaymentAmount",
+    "cardinality": null,
+    "axiom_str": "EquitableEntitlement EquitablePaymentDiscretion some PaymentAmount",
+    "definition": "Payment subject to discretionary approval based on equity.",
+    "confidence": "high",
+    "reasoning": "The insurer may pay proceeds to equitably entitled persons, and the disbursement is of a payment amount, making PaymentAmount the correct range.",
+    "evidence_sentences": [
+      "If no Beneficiary survives the Insured, the Company may pay the proceeds to any person deemed by the Company to be equitably entitled.",
+      "A person deemed equitably entitled may include someone who incurred expenses related to the Insured\u2019s last illness or burial."
+    ],
+    "source_cluster": "EquitablePaymentDiscretion"
+  },
+  {
+    "axiom_id": "AX_0021",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "InsuranceContract",
+    "property_name": "PostContestabilityValidityProtection",
+    "filler": "Period",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract PostContestabilityValidityProtection some Period",
+    "definition": "Policy remains valid after contestability period ends.",
+    "confidence": "high",
+    "reasoning": "The property is tied to the duration of the contestability period, and the evidence confirms that validity extends beyond it, making Period the appropriate range.",
+    "evidence_sentences": [
+      "The Company may contest the claim if the claim falls within the contestability period.",
+      "During the two-year contestability period, the Company may rescind the Policy if there was a material misrepresentation in the application.",
+      "After the contestability period expires, the Company may not contest the validity of the Policy.",
+      "After the contestability period expires, the Company may not contest the validity of the Policy, even in the event of misstatement.",
+      "After the contestability period expires, the Company may not contest the validity of the Policy, unless such misstatement constitutes fraud as defined by applicable state law."
+    ],
+    "source_cluster": "PostContestabilityValidityProtection"
+  },
+  {
+    "axiom_id": "AX_0022",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "InsuranceContract",
+    "property_name": "NonparticipatingPolicyFeature",
+    "filler": "NonParticipatingPolicy",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract NonparticipatingPolicyFeature some NonParticipatingPolicy",
+    "definition": "Excludes participation in company earnings.",
+    "confidence": "high",
+    "reasoning": "The policy feature explicitly excludes surplus and earnings sharing, and NonParticipatingPolicy is the correct class to represent this classification.",
+    "evidence_sentences": [
+      "This Policy is nonparticipating.",
+      "This Policy shall not share in any surplus of the Company.",
+      "This Policy shall not share in any earnings of the Company."
+    ],
+    "source_cluster": "NonparticipatingPolicyFeature"
+  },
+  {
+    "axiom_id": "AX_0023",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "InsuranceContract",
+    "property_name": "NoFutureDividends",
+    "filler": "xsd:boolean",
+    "cardinality": null,
+    "axiom_str": "InsuranceContract NoFutureDividends some xsd:boolean",
+    "definition": "Prevents future dividend payments under certain conditions.",
+    "confidence": "high",
+    "reasoning": "The property expresses a binary condition (dividends payable or not), and the evidence confirms future dividends are not payable, making xsd:boolean the appropriate filler.",
+    "evidence_sentences": [
+      "No dividends are payable to the Policy Owner in the future."
+    ],
+    "source_cluster": "NoFutureDividends"
+  },
+  {
+    "axiom_id": "AX_0024",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "Benefit",
+    "property_name": "UnspecifiedRecipientClause",
+    "filler": "BenefitDistribution",
+    "cardinality": null,
+    "axiom_str": "Benefit UnspecifiedRecipientClause some BenefitDistribution",
+    "definition": "A clause permitting payment to an unspecified recipient.",
+    "confidence": "high",
+    "reasoning": "The clause governs benefit distribution when no specific recipient is designated, directly linking to the process of disbursement as described in the evidence.",
+    "evidence_sentences": [
+      "If no Contingent Beneficiary survives the Insured, proceeds will be payable to [unspecified recipient]"
+    ],
+    "source_cluster": "UnspecifiedRecipientClause"
+  },
+  {
+    "axiom_id": "AX_0025",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "PolicyEnforcement",
+    "property_name": "AutomaticComplianceUpdate",
+    "filler": "xsd:date",
+    "cardinality": null,
+    "axiom_str": "PolicyEnforcement AutomaticComplianceUpdate some xsd:date",
+    "definition": "Policy terms auto-update to reflect legal changes.",
+    "confidence": "high",
+    "reasoning": "The property triggers automatic updates tied to statutory or regulatory changes, which are time-bound events requiring a temporal reference.",
+    "evidence_sentences": [
+      "Any statutory or regulatory change mandated by governing law shall be incorporated into this Policy automatically as required.",
+      "Any statutory or regulatory change mandated by governing law shall be incorporated into this Policy automatically without notice to the Policy Owner."
+    ],
+    "source_cluster": "AutomaticComplianceUpdate"
+  },
+  {
+    "axiom_id": "AX_0026",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PaymentAmount",
+    "property_name": "DischargeOfLiabilityOnPayment",
+    "filler": "LiabilityDischarge",
+    "cardinality": null,
+    "axiom_str": "PaymentAmount DischargeOfLiabilityOnPayment some LiabilityDischarge",
+    "definition": "Liability is discharged upon payment.",
+    "confidence": "high",
+    "reasoning": "The evidence confirms that payment to an equitably entitled party releases the company\u2019s liability, establishing a direct link between payment and discharge.",
+    "evidence_sentences": [
+      "Payment to the Insured\u2019s estate or to a person deemed equitably entitled shall discharge the Company\u2019s liability to the extent of the amount paid."
+    ],
+    "source_cluster": "DischargeOfLiabilityOnPayment"
+  },
+  {
+    "axiom_id": "AX_0027",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "other",
+    "subject_class": "SimultaneousDeath",
+    "property_name": "SimultaneousDeathAssumption",
+    "filler": "OrderOfDeath",
+    "cardinality": null,
+    "axiom_str": "SimultaneousDeath SimultaneousDeathAssumption some OrderOfDeath",
+    "definition": "Determines beneficiary if death order is uncertain.",
+    "confidence": "high",
+    "reasoning": "The clause resolves uncertainty in death order by assuming a predefined sequence, directly relating to the determination of order of death.",
+    "evidence_sentences": [
+      "In the event the Insured and the Beneficiary die simultaneously or under circumstances rendering the order of death uncertain, the Company shall assume the Beneficiary predeceased the Insured."
+    ],
+    "source_cluster": "SimultaneousDeathAssumption"
+  },
+  {
+    "axiom_id": "AX_0028",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PremiumPayment",
+    "property_name": "OverpaymentRefundEligibility",
+    "filler": "PremiumRefund",
+    "cardinality": null,
+    "axiom_str": "PremiumPayment OverpaymentRefundEligibility some PremiumRefund",
+    "definition": "Eligibility for refund after overpayment.",
+    "confidence": "high",
+    "reasoning": "Overpayment triggers a refund, and the evidence confirms the company must refund excess amounts without interest, establishing eligibility.",
+    "evidence_sentences": [
+      "If the correction resulting from a misstatement of age leads to an overpayment of premiums, the Company shall refund the excess to the Policy Owner without interest."
+    ],
+    "source_cluster": "OverpaymentRefundEligibility"
+  },
+  {
+    "axiom_id": "AX_0029",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "ClaimProcessing",
+    "property_name": "ProofOfDeathRequirement",
+    "filler": "ProofOfDeath",
+    "cardinality": null,
+    "axiom_str": "ClaimProcessing ProofOfDeathRequirement some ProofOfDeath",
+    "definition": "Claim requires proof of death to be valid.",
+    "confidence": "high",
+    "reasoning": "The evidence mandates that a certified death certificate must be submitted before payment, confirming the need for proof of death as a prerequisite.",
+    "evidence_sentences": [
+      "The Company must receive due proof of the Insured\u2019s death before paying the death benefit.",
+      "Due proof includes a certified death certificate."
+    ],
+    "source_cluster": "ProofOfDeathRequirement"
+  },
+  {
+    "axiom_id": "AX_0030",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PremiumNonpayment",
+    "property_name": "OverduePremiumsWithInterest",
+    "filler": "InterestAccrual",
+    "cardinality": null,
+    "axiom_str": "PremiumNonpayment OverduePremiumsWithInterest some InterestAccrual",
+    "definition": "A policy remains active only if overdue premiums include interest.",
+    "confidence": "high",
+    "reasoning": "The evidence states that overdue premiums must include interest for reinstatement, linking PremiumNonpayment to InterestAccrual via the property OverduePremiumsWithInterest.",
+    "evidence_sentences": [
+      "All overdue premiums must be paid with interest at the rate specified by the Company at the time of reinstatement."
+    ],
+    "source_cluster": "OverduePremiumsWithInterest"
+  },
+  {
+    "axiom_id": "AX_0031",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "WrittenDocument",
+    "property_name": "ApplicationAttachmentRequirement",
+    "filler": "WrittenConsentRequirement",
+    "cardinality": null,
+    "axiom_str": "WrittenDocument ApplicationAttachmentRequirement some WrittenConsentRequirement",
+    "definition": "A policy application must include required attachments.",
+    "confidence": "high",
+    "reasoning": "The sentence specifies that a written application copy must be attached, indicating that the document must satisfy a consent-related requirement for validity.",
+    "evidence_sentences": [
+      "A copy of the written application must be attached to the Policy at issue for any statement to be admissible in defense of a claim."
+    ],
+    "source_cluster": "ApplicationAttachmentRequirement"
+  },
+  {
+    "axiom_id": "AX_0032",
+    "owl_construct": "owl:someValuesFrom",
+    "axiom_family": "eligibility_condition",
+    "subject_class": "PolicyModification",
+    "property_name": "PolicyModificationAuthorization",
+    "filler": "AuthorizedAmendment",
+    "cardinality": null,
+    "axiom_str": "PolicyModification PolicyModificationAuthorization some AuthorizedAmendment",
+    "definition": "A policy can only be modified if authorized.",
+    "confidence": "high",
+    "reasoning": "The evidence requires written approval by an executive officer for any modification, implying that only authorized amendments are valid, thus linking PolicyModification to AuthorizedAmendment.",
+    "evidence_sentences": [
+      "No change or modification to this Policy shall be valid unless approved in writing by an executive officer of the Company."
+    ],
+    "source_cluster": "PolicyModificationAuthorization"
+  },
+  {
+    "axiom_id": "AX_0033",
+    "owl_construct": "owl:exactCardinality",
+    "axiom_family": "cardinality_constraint",
+    "subject_class": "Beneficiary",
+    "property_name": "EqualShareDistribution",
+    "filler": "PaymentAmount",
+    "cardinality": 1,
+    "axiom_str": "Beneficiary EqualShareDistribution exactly 1 PaymentAmount",
+    "definition": "Beneficiaries receive equal shares of the payout.",
+    "confidence": "high",
+    "reasoning": "The evidence states that proceeds are paid in equal shares when no percentages are specified, implying each beneficiary receives one equal PaymentAmount.",
+    "evidence_sentences": [
+      "If multiple Beneficiaries are named and no distribution percentages are specified, proceeds will be paid in equal shares."
+    ],
+    "source_cluster": "EqualShareDistribution"
+  }
+]

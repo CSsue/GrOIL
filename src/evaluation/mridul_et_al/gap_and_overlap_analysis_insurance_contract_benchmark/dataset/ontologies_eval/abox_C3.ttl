@@ -1,0 +1,453 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AnnualAdjustmentDateForLoanInterest_C3_January1 a li:AnnualAdjustmentDateForLoanInterest,
+        li:RetryPaymentDate ;
+    li:dateValue "January 1"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:AnnualPremiumContributionCap_C3_Maximum a li:AnnualPremiumContributionCap,
+        li:PolicyContinuationProtection ;
+    li:hasAnnualPremiumTaxCap 50000.0 ;
+    li:labelValue "Maximum"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "premium limits, tax limitations, flexible payments"^^xsd:string .
+
+abox:AuthorizedSignatory_C3_ChiefExecutiveOfficer a li:AuthorizedSignatory,
+        li:CertificateHolder ;
+    li:partyName "Chief Executive Officer"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:BenefitOptionChangeFee_C3_PaymentOfA50ProcessingFee a li:BenefitOptionChangeFee,
+        li:MonthlyDeathBenefitCost ;
+    li:labelValue "Payment of a $50 processing fee"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:CalculationMethodForCoI_C3_CostOfInsuranceIsCalculatedAsSpe a li:CalculationMethodForCoI ;
+    li:hasDeathBenefitAmount "Level Death Benefit"^^xsd:string,
+        "increasing"^^xsd:string ;
+    li:labelValue "Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Option, Level Death Benefit, Policy Selection"^^xsd:string,
+        "Death Benefit Options, Policy Change Process, Increasing Death Benefit"^^xsd:string .
+
+abox:CashValueUponTermination_C3_CashSurrenderValue a li:CashValueUponTermination,
+        li:PolicyContinuationProtection ;
+    li:cashSurrenderValueFormula "Account Value minus Surrender Charge minus Outstanding Loans"^^xsd:string ;
+    li:definesCancellationRightTimeframe "Upon surrender"^^xsd:string ;
+    li:hasAmount "any Account Value exceeding surrender charges"^^xsd:string ;
+    li:hasAnnualPremium 0 ;
+    li:hasDeathBenefitAmount "0%"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C3_PhoenixArizona ;
+    li:labelValue "cash surrender value"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Cash Surrender Value, Account Value, Surrender Charge"^^xsd:string,
+        "Policy Lapse, Account Value Payout, Surrender Charges"^^xsd:string,
+        "partial withdrawals, withdrawal charges, year 11+"^^xsd:string,
+        "policy surrender, coverage end, termination clause"^^xsd:string,
+        "surrender charge schedule, year 15+, cash surrender value"^^xsd:string .
+
+abox:CertificateHolder_C3_RobertJamesWilson a li:CertificateHolder,
+        li:Insured,
+        li:PolicyOwner ;
+    li:hasAgeEligibility 41 ;
+    li:hasCertificateHolderName "Robert James Wilson"^^xsd:string ;
+    li:hasEffectiveDate "1982-11-15"^^xsd:date ;
+    li:partyName "Robert James Wilson"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Date of Birth, Insured Information, Personal Details"^^xsd:string,
+        "Insured Person, Policy Owner, Personal Information"^^xsd:string,
+        "insured age, policy issuance, underwriting demographics"^^xsd:string .
+
+abox:ContingentBeneficiary_C3_EmilyRoseWilson a li:CertificateHolder,
+        li:ContingentBeneficiary ;
+    li:hasContingentInterestPercentage "50%"^^xsd:string ;
+    li:partyName "Emily Rose Wilson"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiary, death benefit distribution, beneficiary percentage"^^xsd:string .
+
+abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:definesCancellationRightTimeframe "Upon surrender"^^xsd:string ;
+    li:gracePeriodDuration 61 ;
+    li:hasAnnualPremium 75.0,
+        200.0 ;
+    li:hasCertificateNumber "FPS-UL-24-03391"^^xsd:string ;
+    li:hasDeathBenefitAmount "Level"^^xsd:string ;
+    li:hasEffectiveDate "2024-03-10"^^xsd:date,
+        "two-year contestability period"^^xsd:string ;
+    li:hasFaceAmount 400000.0 ;
+    li:hasLocation abox:ClaimMailingAddress_C3_PhoenixArizona ;
+    li:insurerName "FlexProtect Insurance Solutions"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Contract Number, Universal Life Insurance, Policy Reference"^^xsd:string,
+        "Death Benefit Option, Level Benefit, Policy Coverage"^^xsd:string,
+        "Face Value, Death Benefit, Coverage Amount"^^xsd:string,
+        "Grace Period, Premium Payment Failure, Policy Lapse"^^xsd:string,
+        "Issue Date, Universal Life Insurance"^^xsd:string,
+        "Planned Premium, Monthly Payment, Policy Cost"^^xsd:string,
+        "contestability period, material misrepresentation, policy validity"^^xsd:string,
+        "minimum premium, monthly payment, policy cost"^^xsd:string,
+        "policy surrender, coverage end, termination clause"^^xsd:string,
+        "target premium, monthly payment, policy cost"^^xsd:string .
+
+abox:ContingentBeneficiary_C3_RobertWilsonJr a li:CertificateHolder,
+        li:ContingentBeneficiary ;
+    li:hasContingentInterestPercentage "50%"^^xsd:string,
+        "Emily Rose Wilson"^^xsd:string,
+        "Robert Wilson Jr."^^xsd:string ;
+    li:partyName "Robert Wilson Jr."^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "contingent beneficiaries, beneficiary designations, insurance policy terms"^^xsd:string,
+        "contingent beneficiary, death benefit distribution, beneficiary allocation"^^xsd:string .
+
+abox:CoverageContinuationWindow_C3_GracePeriod a li:CoverageContinuationWindow,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:CurrentCreditRate_C3_CurrentRate35PerAnnumSubjectToCh a li:CurrentCreditRate ;
+    li:creditingPeriodDuration "daily"^^xsd:string ;
+    li:dailyInterestCredited "based on the current credited interest rate"^^xsd:string ;
+    li:labelValue "Current rate: 3.5% per annum (subject to change monthly)"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "interest crediting, daily calculation, account value"^^xsd:string,
+        "interest crediting, daily compounding, credited interest rate"^^xsd:string .
+
+abox:CurrentCreditRate_C3_GuaranteedMinimumRate20PerAnnum a li:CurrentCreditRate,
+        li:MinimumAnnualInterestFloor ;
+    li:assumedGuaranteedInterestRate 2.0 ;
+    li:labelValue "Guaranteed minimum rate: 2.0% per annum"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "interest crediting, minimum interest rate, policy guarantees"^^xsd:string .
+
+abox:DeathBenefitOption_C3_LevelOptionA a li:DeathBenefitOption,
+        li:RequestableAlternativeBenefit ;
+    li:hasFaceAmount "male"^^xsd:string ;
+    li:labelValue "Level (Option A)"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "gender, insured information, policy details"^^xsd:string .
+
+abox:DeathBenefitOption_C3_OptionALevelDeathBenefitCurrentl a li:DeathBenefitOption,
+        li:RequestableAlternativeBenefit ;
+    li:hasDeathBenefitAmount "Specified Amount"^^xsd:string ;
+    li:labelValue "Option A (Level Death Benefit) - Currently Selected"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Death Benefit, Option A, Specified Amount"^^xsd:string .
+
+abox:DeathBenefitPayoutAmount_C3_400000 a li:DeathBenefitPayoutAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$400,000"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:DeathBenefit_C3_DeathBenefit a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:accountBalanceThreshold "the minimum required level"^^xsd:string ;
+    li:hasAmount 50.0 ;
+    li:hasDeathBenefitAmount "increasing coverage"^^xsd:string,
+        "paid minus any outstanding policy loans"^^xsd:string,
+        "reduced dollar-for-dollar by outstanding policy loans"^^xsd:string ;
+    li:labelValue "death benefit"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Account Value Threshold, Death Benefit Adjustment, Policy Maintenance Requirements"^^xsd:string,
+        "death benefit changes, processing fee, policy modifications"^^xsd:string,
+        "death benefit modification, evidence of insurability, coverage increase"^^xsd:string,
+        "death benefit, policy loans, account value"^^xsd:string,
+        "policy loans, death benefit reduction, dollar-for-dollar deduction"^^xsd:string .
+
+abox:DeathBenefit_C3_SuicideExclusion a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Suicide Exclusion"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:DebtReducingDeathBenefit_C3_OutstandingPolicyLoans a li:DebtReducingDeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:creditingPeriodDuration "annual"^^xsd:string ;
+    li:hasAnnualPremium "annually"^^xsd:string ;
+    li:hasFixedLoanInterestRate 4.0 ;
+    li:labelValue "outstanding policy loans"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Policy Loans, Interest Payment Methods, Annual Interest"^^xsd:string,
+        "loan interest rate, annual adjustment, Moody's Corporate Bond Index"^^xsd:string,
+        "loan interest rate, minimum interest floor, policy loans"^^xsd:string .
+
+abox:DeductionDate_C3_10thDayOfEachMonth a li:DeductionDate,
+        li:RetryPaymentDate ;
+    li:dateValue "10th day of each month"^^xsd:string ;
+    li:hasAnnualPremium 75.0 ;
+    li:hasEffectiveDate "10th"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Monthly Deduction Date, Policy Billing Cycle, Deduction Timing"^^xsd:string,
+        "premium payment rules, minimum payment threshold, flexible premium payments"^^xsd:string .
+
+abox:EarlyWithdrawalPenalty_C3_SurrenderCharge a li:EarlyWithdrawalPenalty,
+        li:PolicyContinuationProtection ;
+    li:hasAnnualPremium "2%"^^xsd:decimal,
+        "8%"^^xsd:decimal,
+        "5%"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C3_PhoenixArizona ;
+    li:labelValue "Surrender Charge"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Surrender Charge Schedule, Cash Surrender Value, Specified Amount"^^xsd:string,
+        "surrender charge schedule, cash surrender value calculation, year 10 penalty"^^xsd:string .
+
+abox:FixedAdministrativeFee_C3_AdministrativeExpenseCharge800Mo a li:FixedAdministrativeFee,
+        li:MonthlyDeathBenefitCost ;
+    li:hasAmount 50.0 ;
+    li:labelValue "Administrative expense charge: $8.00/month"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Death Benefit Options, Policy Modification Fees, Administrative Charges"^^xsd:string .
+
+abox:FundBalance_C3_AccountValue a li:FundBalance,
+        li:PolicyContinuationProtection ;
+    li:accountBalanceThreshold "sufficient to cover monthly deductions"^^xsd:string ;
+    li:cashSurrenderValueFormula "Account Value minus Surrender Charge minus Outstanding Loans"^^xsd:string ;
+    li:gracePeriodDuration 61 ;
+    li:hasAmount "3%"^^xsd:decimal,
+        "any time"^^xsd:string,
+        "the accumulation of premiums paid minus deductions for monthly charges and expenses plus interest credited"^^xsd:string ;
+    li:hasAnnualPremium "percentage-based fee"^^xsd:string ;
+    li:hasEffectiveDate "first 15 years"^^xsd:string ;
+    li:labelValue "Account Value"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Account Value, Monthly Charges, Grace Period"^^xsd:string,
+        "Account Value, Premium Accumulation, Monthly Charges"^^xsd:string,
+        "Cash Surrender Value, Surrender Charge, Outstanding Loans"^^xsd:string,
+        "Flexible Premium Payments, Account Value Sufficiency, Payment Flexibility"^^xsd:string,
+        "Surrender Charge, Policy Termination, Early Withdrawal Fee"^^xsd:string,
+        "partial withdrawals, account value, policy flexibility"^^xsd:string,
+        "premium allocation, expense charge, account value"^^xsd:string .
+
+abox:GracePeriod_C3_GracePeriod a li:GracePeriod,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Grace Period"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:InsuranceProductType_C3_FpsUl2403391 a li:InsuranceProductType,
+        li:UniversalLifeInsurancePolicyContract ;
+    li:hasCertificateHolderName "Robert James Wilson"^^xsd:string ;
+    li:labelValue "FPS-UL-24-03391"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Policy Owner, Robert James Wilson, Ownership Role"^^xsd:string .
+
+abox:InterestOnUnpaidLoans_C3_OutstandingPolicyLoanInterest a li:InterestOnUnpaidLoans,
+        li:MonthlyDeathBenefitCost ;
+    li:hasAnnualPremium "3.5%"^^xsd:decimal ;
+    li:hasDeathBenefitAmount "death benefit payments are made after subtracting any outstanding policy loan balances"^^xsd:string ;
+    li:labelValue "outstanding policy loan interest"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "death benefit payment, outstanding policy loans, policy loan balance deduction"^^xsd:string,
+        "interest crediting, current rate, annual interest rate"^^xsd:string .
+
+abox:MaximumLoanToSurrenderValueRatio_C3_90 a li:MaximumLoanToSurrenderValueRatio,
+        li:SurrenderCharge ;
+    li:amountRequiredToPreventTermination "Account Value minus the amount needed to keep the policy in force"^^xsd:string ;
+    li:hasAmount "90%"^^xsd:string ;
+    li:sharePercentage "90%"^^xsd:decimal ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Partial Withdrawals, Account Value, Policy In Force"^^xsd:string,
+        "Policy Loans, Account Value, Loan Limits"^^xsd:string .
+
+abox:MinimumAnnualInterestFloor_C3_4 a li:InterestRate,
+        li:MinimumAnnualInterestFloor ;
+    li:labelValue "4%"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:MinimumPremiumPayment_C3_200Month a li:MaxConversionPolicySize,
+        li:MinimumPremiumPayment,
+        li:PlannedAnnualPremium ;
+    li:labelValue "$200/month"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:MinimumPremiumPayment_C3_75Month a li:MaxConversionPolicySize,
+        li:MinimumPremiumPayment ;
+    li:labelValue "$75/month"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:MinimumProtectionLevel_C3_Minimum a li:MinimumProtectionLevel,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Minimum"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:MonthlyDeathBenefitCost_C3_CostOfInsuranceCharge a li:MonthlyDeathBenefitCost,
+        li:PremiumCharge ;
+    li:coiCalculationBasis "Specified Amount - Account Value"^^xsd:string ;
+    li:costPerMonthForTenThousandIncrement "Monthly COI Rate / 1,000"^^xsd:string ;
+    li:hasCapRate "the rates specified in the rate schedule attached to this policy"^^xsd:string ;
+    li:hasDeathBenefitAmount "Specified Amount plus the Account Value"^^xsd:string ;
+    li:labelValue "Cost of Insurance charge"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Cost of Insurance, Monthly Deductions, Account Value"^^xsd:string,
+        "Cost of Insurance, Rate Schedule Guarantee, Policy Charges"^^xsd:string,
+        "Death Benefit Option B, Account Value Integration, Benefit Calculation"^^xsd:string .
+
+abox:NetPayoutAfterDebts_C3_DeathBenefitIsPaidMinusAnyOutsta a li:BenefitStructure,
+        li:NetPayoutAfterDebts ;
+    li:labelValue "Death benefit is paid minus any outstanding policy"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PlanUpgradeRequirement_C3_EvidenceOfInsurabilityIfIncreasi a li:PlanUpgradeRequirement ;
+    li:labelValue "Evidence of insurability if increasing coverage"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_AccountValue a li:PolicyContinuationProtection,
+        li:SurrenderValue ;
+    li:effectiveDateOfNoPartialWithdrawalRule "24 months"^^xsd:integer ;
+    li:gracePeriodDuration 61 ;
+    li:hasEffectiveDate "24 months"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C3_PhoenixArizona ;
+    li:labelValue "Account Value"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Grace Period, Account Value Shortfall, Policy Continuance"^^xsd:string,
+        "suicide exclusion, account value payout, 24-month waiting period"^^xsd:string,
+        "suicide exclusion, death benefit limitation, account value payout"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_Contestability a li:PolicyContinuationProtection,
+        li:RightToChallengeValidity ;
+    li:labelValue "Contestability"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_CostOfInsurance a li:MonthlyDeathBenefitCost,
+        li:PolicyContinuationProtection ;
+    li:coiCalculationBasis "monthly charge for the death benefit based on the insured's age, sex, and risk class"^^xsd:string ;
+    li:labelValue "Cost of Insurance"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Cost of Insurance, monthly charge, death benefit"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_Lapse a li:PolicyContinuationProtection,
+        li:TerminationDueToNonPayment ;
+    li:labelValue "Lapse"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_MonthlyDeductionDate a li:PolicyContinuationProtection,
+        li:TriggerDateForDeductions ;
+    li:creditingPeriodDuration "monthly"^^xsd:string ;
+    li:earnedOn "Monthly Deduction Date"^^xsd:string ;
+    li:hasAmount 8.00,
+        "any outstanding policy loan interest"^^xsd:string ;
+    li:labelValue "Monthly Deduction Date"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Administrative Expense Charge, Monthly Deduction Date, Account Value Reduction"^^xsd:string,
+        "Monthly Deduction Date, Cost of Insurance Charge, Account Value Deductions"^^xsd:string,
+        "Monthly Deduction Date, Policy Loan Interest, Account Value Deductions"^^xsd:string,
+        "interest crediting, monthly rate changes, current credited rate"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_OutstandingLoans a li:PolicyContinuationProtection,
+        li:PolicyDebt ;
+    li:labelValue "Outstanding Loans"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_PremiumExpenseCharge a li:PolicyContinuationProtection,
+        li:PremiumRelief ;
+    li:labelValue "Premium Expense Charge"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_SurrenderCharge a li:PolicyContinuationProtection,
+        li:TerminationDueToNonPayment ;
+    li:labelValue "Surrender Charge"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyContinuationProtection_C3_SurrenderChargeSchedule a li:PolicyContinuationProtection,
+        li:TieredPercentageFeeOverTime ;
+    li:labelValue "Surrender Charge Schedule"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:PolicyEffectiveDate_C3_March102024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "March 10, 2024"^^xsd:string ;
+    li:hasEffectiveDate "2 years"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C3_PhoenixArizona ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Contestability, Material Misrepresentation, Policy Validity"^^xsd:string .
+
+abox:PrimaryBeneficiary_C3_EmilyRoseWilson a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasContingentInterestPercentage 50 ;
+    li:partyName "Emily Rose Wilson"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "contingent interest, policy ownership, beneficiary share"^^xsd:string .
+
+abox:PrimaryBeneficiary_C3_JenniferAnnWilson a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasCertificateHolderName "Jennifer Ann Wilson"^^xsd:string ;
+    li:hasDeathBenefitAmount "100%"^^xsd:string ;
+    li:partyName "Jennifer Ann Wilson"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "primary beneficiary, beneficiary designation, insurance policy"^^xsd:string,
+        "primary beneficiary, death benefit distribution, beneficiary designation"^^xsd:string .
+
+abox:PrimaryBeneficiary_C3_RobertWilsonJr a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasAmount "any amount"^^xsd:string ;
+    li:hasCertificateHolderName "Robert Wilson Jr."^^xsd:string,
+        "Robert Wilson Sr."^^xsd:string ;
+    li:hasContingentInterestPercentage 50.0 ;
+    li:partyName "Robert Wilson Jr."^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Family Structure, Contingent Beneficiary, Ownership Designation"^^xsd:string,
+        "contingent beneficiary, beneficiary distribution, policy ownership"^^xsd:string,
+        "flexible premium payments, premium limits, payment flexibility"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C3_25 a li:MinimumPartialWithdrawalAmount,
+        li:ProcessingFeeForChangingOption ;
+    li:hasAmount 25.0 ;
+    li:labelValue "$25"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Partial Withdrawals, Withdrawal Fees, Policy Duration Impact"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C3_50 a li:ProcessingFeeForChangingOption ;
+    li:hasAmount "Partial withdrawals"^^xsd:string ;
+    li:labelValue "$50"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, account value reduction, policy funding"^^xsd:string .
+
+abox:ProcessingFeeForChangingOption_C3_500 a li:MinimumPartialWithdrawalAmount,
+        li:ProcessingFeeForChangingOption ;
+    li:hasAmount 500.0 ;
+    li:hasAnnualPremium "8%"^^xsd:decimal ;
+    li:labelValue "$500"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "partial withdrawals, withdrawal limits, account value access"^^xsd:string,
+        "surrender charge, year 1 penalty, cash surrender value"^^xsd:string .
+
+abox:RateCapCondition_C3_GuaranteedNotToExceedThoseShownI a li:RateCapCondition,
+        li:VariableLoanInterestCalculationBasis ;
+    li:earnedOn "policy year"^^xsd:string ;
+    li:hasAmount "different account value amounts"^^xsd:string ;
+    li:labelValue "guaranteed not to exceed those shown in the rate schedule"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Interest crediting, Policy year rates, Credited interest rate variation"^^xsd:string,
+        "interest crediting, account value thresholds, rate differentiation"^^xsd:string .
+
+abox:RequestableAlternativeBenefit_C3_OptionBIncreasingDeathBenefitAva a li:RequestableAlternativeBenefit ;
+    li:hasEffectiveDate "when changing to a higher level of coverage"^^xsd:string ;
+    li:labelValue "Option B (Increasing Death Benefit) - Available by Request"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "evidence of insurability, coverage increase, death benefit option change"^^xsd:string .
+
+abox:SurrenderCharge_C3_8 a li:SurrenderCharge ;
+    li:hasAmount "Interest on policy loans may be added to the loan balance"^^xsd:string ;
+    li:sharePercentage 8.0 ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "Policy Loans, Interest Accrual, Loan Balance Growth"^^xsd:string .
+
+abox:VariableLoanInterestCalculationBasis_C3_MoodySCorporateBondIndex15 a li:VariableLoanInterestCalculationBasis ;
+    li:hasCapRate "1.5%"^^xsd:string ;
+    li:labelValue "Moody's Corporate Bond Index + 1.5%"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:sourceContractSection "loan interest rate, Moody's Corporate Bond Index, variable rate"^^xsd:string .
+
+abox:WithdrawalChargePeriod_C3_Years11 a li:WithdrawalChargePeriod ;
+    li:labelValue "Years 11+"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:WithdrawalChargePeriod_C3_Years110 a li:WithdrawalChargePeriod ;
+    li:labelValue "Years 1-10"^^xsd:string ;
+    li:sourceContractID "C3"^^xsd:string .
+
+abox:ClaimMailingAddress_C3_PhoenixArizona a li:ClaimMailingAddress,
+        li:ExecutionLocation ;
+    li:sourceContractID "C3"^^xsd:string ;
+    li:stateOfIssuance "Phoenix, Arizona"^^xsd:string .
+

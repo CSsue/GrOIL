@@ -1,0 +1,403 @@
+@prefix abox: <https://example.org/ontology/insurance/abox#> .
+@prefix li: <https://example.org/ontology/insurance#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+abox:AdjustedDeathBenefitError_C2_MisstatementOfAge a li:AdjustedDeathBenefitError,
+        li:DeathCauseLimitingRefund ;
+    li:labelValue "Misstatement of Age"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:CancellationWindow_C2_FreeLookPeriod a li:CancellationWindow,
+        li:PolicyContinuationProtection ;
+    li:definesCancellationRightTimeframe "30 days"^^xsd:string ;
+    li:hasEffectiveDate "2024-02-01"^^xsd:date ;
+    li:hasLocation abox:ClaimMailingAddress_C2_BostonMassachusetts ;
+    li:labelValue "FREE LOOK PERIOD"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "free look period, policy cancellation, 30-day refund"^^xsd:string,
+        "free look period, premium refund, cancellation window"^^xsd:string,
+        "policy issuance, signature date, effective date"^^xsd:string .
+
+abox:CashValueGrowthMechanism_C2_DividendCredits a li:CashValueGrowthMechanism,
+        li:PolicyContinuationProtection ;
+    li:earnedOn "Annual dividends may be declared based on the insurer's investment experience."^^xsd:string,
+        "expense experience"^^xsd:string,
+        "mortality experience"^^xsd:string ;
+    li:hasAmount "Cash Payment"^^xsd:string,
+        "not guaranteed"^^xsd:string ;
+    li:hasAnnualPremium "Premium Reduction"^^xsd:string ;
+    li:labelValue "dividend credits"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Policy Dividends, Cash Payment Option, Dividend Options"^^xsd:string,
+        "Policy Dividends, Dividend Options, Premium Reduction"^^xsd:string,
+        "Policy Dividends, Mortality Experience, Participating Policy"^^xsd:string,
+        "policy dividends, insurer expenses, dividend determination"^^xsd:string,
+        "policy dividends, investment experience, dividend declaration"^^xsd:string,
+        "policy dividends, non-guaranteed returns, participating policy"^^xsd:string .
+
+abox:CashValueGrowthMechanism_C2_TaxDeferredBasis a li:CashValueGrowthMechanism,
+        li:PolicyContinuationProtection ;
+    li:labelValue "tax-deferred basis"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:CertificateHolder_C2_MargaretRoseChen a li:CertificateHolder,
+        li:Insured ;
+    li:ageAtIssue 45 ;
+    li:cashSurrenderValueFormula "cash value minus any outstanding loans and surrender charges"^^xsd:string ;
+    li:dateOfBirth "1978-07-08"^^xsd:date ;
+    li:faceAmount 250000.0 ;
+    li:hasAgeEligibility 45 ;
+    li:hasCertificateHolderName "David Chen"^^xsd:string,
+        "Margaret Rose Chen"^^xsd:string ;
+    li:hasContingentInterestPercentage "100%"^^xsd:string ;
+    li:hasEffectiveDate "1978-07-08"^^xsd:date ;
+    li:hasFaceAmount "A Policy Loan"^^xsd:string ;
+    li:partyName "Margaret Rose Chen"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Cash Surrender Value, policy withdrawal, cash value deduction"^^xsd:string,
+        "Insured Information, Date of Birth, Policyholder Details"^^xsd:string,
+        "Insured Information, Issue Age, Underwriting Classification"^^xsd:string,
+        "Insured Information, Policyholder Name, Personal Details"^^xsd:string,
+        "Policy Loan, Cash Value Collateral, Insurance Policy Terms"^^xsd:string,
+        "contingent beneficiary, death benefit distribution, estate planning"^^xsd:string,
+        "face amount, death benefit, coverage summary"^^xsd:string,
+        "marriage, beneficiary relation, insured spouse"^^xsd:string .
+
+abox:ClaimProcessingWindow_C2_Within7Days a li:ClaimProcessingWindow,
+        li:RetryPaymentDate ;
+    li:cashSurrenderValueFormula "CASH SURRENDER"^^xsd:string ;
+    li:dateValue "within 7 days"^^xsd:string ;
+    li:definesCancellationRightTimeframe 7 ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Non-forfeiture options, Cash surrender value, Premium cessation after three years"^^xsd:string,
+        "claims payment, settlement timeframe, claim documentation"^^xsd:string .
+
+abox:ContestabilityPeriodDuration_C2_TwoYears a li:ContestabilityPeriodDuration,
+        li:RetryPaymentDate ;
+    li:dateValue "two years"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:ContingentBeneficiary_C2_ChenFamilyTrust a li:ContingentBeneficiary,
+        li:PolicyEntity ;
+    li:hasEffectiveDate "Guardian Family Protection Corp. issued a participating whole life insurance policy."^^xsd:string ;
+    li:hasPolicyNumber abox:PolicyIdentifier_C2_GfpWl20248847 ;
+    li:labelValue "Chen Family Trust"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "participating whole life, policy issuance, insurer identification"^^xsd:string .
+
+abox:CoverageContinuationWindow_C2_ExtendedTermInsurance a li:CoverageContinuationWindow,
+        li:PolicyContinuationProtection ;
+    li:explainsLackOfAutomaticProtection "If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply."^^xsd:string ;
+    li:hasAnnualPremium 0 ;
+    li:labelValue "Extended Term Insurance"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Extended Term Insurance, Non-Forfeiture Options, No Further Premiums"^^xsd:string,
+        "non-forfeiture options, policy lapse, extended term insurance"^^xsd:string .
+
+abox:DeadlineForElectiveActionPostLapse_C2_Within60DaysOfLapse a li:DeadlineForElectiveActionPostLapse,
+        li:RetryPaymentDate ;
+    li:dateValue "within 60 days of lapse"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:DeathBenefit_C2_DeathBenefitPayment a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:labelValue "death benefit payment"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:DeathBenefit_C2_FaceAmount a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:cashSurrenderValueFormula "the cash surrender value"^^xsd:string ;
+    li:deathBenefitAmount "Face Amount plus Paid-Up Additions minus Policy Loans minus Loan Interest"^^xsd:string,
+        "reduced"^^xsd:string ;
+    li:faceAmount "full"^^xsd:string,
+        "the face amount to match what the premium would have purchased at the correct age"^^xsd:string ;
+    li:hasAnnualPremium "three years"^^xsd:string ;
+    li:hasDeathBenefitAmount "REDUCED PAID-UP INSURANCE"^^xsd:string ;
+    li:labelValue "Face Amount"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Extended Term Insurance, Cash Value Usage, No Further Premiums"^^xsd:string,
+        "Misstatement of Age, Face Amount Adjustment, Policy Correction"^^xsd:string,
+        "Non-Forfeiture Options, Continued Coverage, No Further Premiums"^^xsd:string,
+        "Non-Forfeiture Options, Extended Term Insurance, Premium Lapse After Three Years"^^xsd:string,
+        "Non-Forfeiture Options, Reduced Paid-Up Insurance, Post-Premium Termination Benefits"^^xsd:string,
+        "Non-forfeiture options, Cash surrender value, Policy termination"^^xsd:string,
+        "death benefit, proof of death, policy loan deduction"^^xsd:string .
+
+abox:DeathBenefit_C2_ReducedPaidUpInsurance a li:DeathBenefit,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Reduced Paid-Up Insurance"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:DeathCauseLimitingRefund_C2_Suicide a li:DeathCauseLimitingRefund,
+        li:RestrictedPayoutTrigger ;
+    li:labelValue "Suicide"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:DividendEligibilityCondition_C2_ParticipatingPolicy a li:DividendEligibilityCondition,
+        li:PolicyContinuationProtection ;
+    li:amountRequiredToPreventTermination "the cash value"^^xsd:string ;
+    li:gracePeriodDuration 31 ;
+    li:labelValue "participating policy"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "policy termination, loan indebtedness, 31-day repayment window"^^xsd:string,
+        "policy termination, loan indebtedness, cash value threshold"^^xsd:string .
+
+abox:FreeLookPeriodDuration_C2_30Days a li:FreeLookPeriodDuration,
+        li:RetryPaymentDate ;
+    li:dateValue "30 days"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:GracePeriod_C2_31Days a li:GracePeriod,
+        li:RenewedExclusionWindowPostReinstatement ;
+    li:labelValue "31 days"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:GracePeriod_C2_FreeLookPeriod a li:GracePeriod,
+        li:RenewedExclusionWindowPostReinstatement ;
+    li:definesCancellationRightTimeframe "30 days"^^xsd:string ;
+    li:labelValue "Free Look Period"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "free look period, policy cancellation, premium refund"^^xsd:string .
+
+abox:LoanAgainstCashValue_C2_CashValue a li:LoanAgainstCashValue,
+        li:PolicyContinuationProtection ;
+    li:creditingPeriodDuration "annual"^^xsd:string ;
+    li:earnedOn "tax-deferred basis"^^xsd:string ;
+    li:hasAmount 28450.0,
+        "90%"^^xsd:string,
+        "Interest on a policy loan may be added to the loan balance"^^xsd:string,
+        "Outstanding loans and accrued interest"^^xsd:string,
+        "higher than the guaranteed amount"^^xsd:string,
+        "participating policy"^^xsd:string ;
+    li:hasAnnualPremium "Accumulate at Interest"^^xsd:string,
+        "annually"^^xsd:string,
+        "guaranteed schedule shown in the policy values table"^^xsd:string ;
+    li:hasDeathBenefitAmount 71200.0,
+        "Outstanding loans and accrued interest"^^xsd:string,
+        "Paid-Up Additions"^^xsd:string,
+        "face amount plus paid-up additions minus policy loans minus loan interest"^^xsd:string ;
+    li:hasEffectiveDate "one full year"^^xsd:string ;
+    li:hasFaceAmount "Paid-Up Additions"^^xsd:string ;
+    li:labelValue "cash value"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Cash Value Accumulation, Guaranteed Schedule, Policy Values Table"^^xsd:string,
+        "Cash Value Accumulation, Year 10 Guarantee, Policy Growth Schedule"^^xsd:string,
+        "Cash Value Accumulation, Year 20 Guarantee, Policy Values Table"^^xsd:string,
+        "Cash Value Growth, Dividend Credits, Non-Guaranteed Increases"^^xsd:string,
+        "Policy Dividends, Dividend Options, Cash Value Growth"^^xsd:string,
+        "Policy Dividends, Dividend Options, Paid-Up Additions"^^xsd:string,
+        "Policy Dividends, Paid-Up Additions, Dividend Options"^^xsd:string,
+        "Policy Loans, Cash Surrender Value, Debt Settlement"^^xsd:string,
+        "Policy Loans, Cash Surrender Value, Loan Limits"^^xsd:string,
+        "Policy Loans, Cash Value Access, Waiting Period"^^xsd:string,
+        "Policy Loans, Death Benefit Calculation, Debt Settlement"^^xsd:string,
+        "Policy Loans, Interest Compounding, Cash Value Borrowing"^^xsd:string,
+        "Policy Loans, Loan Interest, Dividend Options"^^xsd:string,
+        "death benefit payment, policy loans deduction, paid-up additions"^^xsd:string,
+        "participating policy, dividend eligibility, policy type"^^xsd:string,
+        "policy loans, interest accumulation, loan balance growth"^^xsd:string,
+        "tax-deferred growth, cash value accumulation, policy dividends"^^xsd:string .
+
+abox:LoanInterestRate_C2_5 a li:LoanInterestRate,
+        li:VariableLoanInterestCalculationBasis ;
+    li:labelValue "5%"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:NonGuaranteedIncomeStream_C2_AnnualDividends a li:NonGuaranteedIncomeStream,
+        li:PolicyContinuationProtection ;
+    li:labelValue "annual dividends"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:OverduePaymentRate_C2_InterestAt6PerAnnum a li:OverduePaymentRate,
+        li:PolicyContinuationProtection ;
+    li:hasDeathBenefitAmount "premiums paid"^^xsd:string ;
+    li:labelValue "Interest at 6% per annum"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "suicide exclusion, death benefit limitation, premium refund"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_Contestability a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:definesCancellationRightTimeframe "2 years"^^xsd:string ;
+    li:hasEffectiveDate "The insurance company can contest the policy only due to material misrepresentation made in the application."^^xsd:string,
+        "when the insured person is still living"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C2_BostonMassachusetts ;
+    li:labelValue "CONTESTABILITY"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "contestability clause, material misrepresentation, application error"^^xsd:string,
+        "contestability period, policy cancellation rules, two-year limitation"^^xsd:string,
+        "contestability, policy validity, insured living"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_LoanInterest a li:PolicyContinuationProtection,
+        li:PolicyDebt ;
+    li:amountRequiredToPreventTermination "all overdue premiums with interest at 6% per annum"^^xsd:string ;
+    li:labelValue "Loan Interest"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, overdue premiums, interest rate"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_OverduePremiums a li:PolicyContinuationProtection,
+        li:UnpaidInstallmentsDueUponReinstatement ;
+    li:labelValue "Overdue Premiums"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_PaidUpAdditions a li:PolicyContinuationProtection,
+        li:PolicyTerm ;
+    li:hasAmount "REDUCED PAID-UP INSURANCE"^^xsd:string ;
+    li:labelValue "Paid-Up Additions"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Non-Forfeiture Options, Cash Value, Attained Age"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_PolicyLoans a li:PolicyContinuationProtection,
+        li:PolicyDebt ;
+    li:hasAmount "repayment or reinstatement of any policy loans with interest"^^xsd:string ;
+    li:labelValue "Policy Loans"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "policy reinstatement, loan repayment, reinstatement conditions"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_TotalIndebtedness a li:PolicyContinuationProtection,
+        li:ThresholdTriggeringPolicyTermination ;
+    li:labelValue "total indebtedness"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyEffectiveDate_C2_Within3YearsOfLapse a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "within 3 years of lapse"^^xsd:string ;
+    li:gracePeriodDuration "3 years"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Reinstatement, Insurability Evidence, Lapse Period"^^xsd:string .
+
+abox:PolicySigningOfficer_C2_President a li:PolicySigningOfficer ;
+    li:labelValue "President"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PrimaryBeneficiary_C2_DavidChen a li:CertificateHolder,
+        li:PrimaryBeneficiary ;
+    li:hasFaceAmount "participating whole life"^^xsd:string ;
+    li:partyName "David Chen"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Participating Whole Life, Dividends, Cash Value Accumulation"^^xsd:string .
+
+abox:ReinstatementHealthProof_C2_EvidenceOfInsurability a li:PolicyContinuationProtection,
+        li:ReinstatementHealthProof ;
+    li:labelValue "Evidence of Insurability"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:RequestableAlternativeBenefit_C2_PaidUpAdditions a li:RequestableAlternativeBenefit,
+        li:SelectedDividendOption ;
+    li:labelValue "Paid-Up Additions"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:RetryPaymentDate_C2_EndOfYear10 a li:RetryPaymentDate,
+        li:TimingPointForGuaranteedCashValue ;
+    li:dateValue "end of Year 10"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:RetryPaymentDate_C2_EndOfYear20 a li:RetryPaymentDate,
+        li:TimingPointForGuaranteedCashValue ;
+    li:dateValue "end of Year 20"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:BurialExpenseCoverage_C2_WholeLifeInsurancePolicy a li:BurialExpenseCoverage,
+        li:InsuranceContract ;
+    li:effectiveCoverageStart "2024-02-01"^^xsd:date ;
+    li:hasAnnualPremium 100 ;
+    li:hasCertificateHolderName "Chen Family Trust"^^xsd:string ;
+    li:hasConcept abox:BurialExpenseCoverage_C2_WholeLifeInsurancePolicy,
+        abox:CashValueUponTermination_C2_CashSurrenderValue,
+        abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp,
+        abox:FaceAmount_C2_250000,
+        abox:LoanAgainstCashValue_C2_PolicyLoan,
+        abox:PolicyContinuationProtection_C2_Dividend,
+        abox:PolicyContinuationProtection_C2_PaidUpInsurance,
+        abox:ProjectedCashValue_C2_3240 ;
+    li:hasEffectiveDate abox:PolicyEffectiveDate_C2_February12024,
+        abox:PolicyEffectiveDate_C2_July82078,
+        "2078-07-08"^^xsd:date ;
+    li:labelValue "WHOLE LIFE INSURANCE POLICY"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Premium Payment Period, Whole Life Policy, Long-Term Coverage"^^xsd:string,
+        "contingent beneficiary, beneficiary designation, insurance policy"^^xsd:string,
+        "maturity date, policy end date, age 100"^^xsd:string,
+        "policy effective date, coverage initiation, start of term"^^xsd:string .
+
+abox:CashValueUponTermination_C2_CashSurrenderValue a li:CashValueUponTermination,
+        li:PolicyContinuationProtection ;
+    li:labelValue "Cash Surrender Value"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp a li:ContingentBeneficiary,
+        li:IssuingInsurer ;
+    li:annualPremiumAmount 3240.0 ;
+    li:cashSurrenderValueFormula "the amount available upon policy surrender"^^xsd:string ;
+    li:earnedOn "the company’s experience"^^xsd:string ;
+    li:hasAnnualPremium "annual"^^xsd:string,
+        "no further premiums required"^^xsd:string ;
+    li:hasCertificateHolderName "Guardian Family Protection Corp."^^xsd:string ;
+    li:hasDeathBenefitAmount "100%"^^xsd:string,
+        "reduced"^^xsd:string,
+        "standard non-tobacco"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C2_BostonMassachusetts ;
+    li:insurerName "Guardian Family Protection Corp."^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Cash Surrender Value, Policy Surrender, Insurance Definitions"^^xsd:string,
+        "Paid-Up Insurance, Death Benefit Reduction, No Further Premiums"^^xsd:string,
+        "Premium Payment Frequency, Annual Payments, Insurance Policy Terms"^^xsd:string,
+        "annual premium, policy cost, payment frequency"^^xsd:string,
+        "dividends, company experience, policy returns"^^xsd:string,
+        "policy issuance, insurance provider, company identity"^^xsd:string,
+        "primary beneficiary, death benefit, beneficiary designation"^^xsd:string,
+        "risk class, underwriting, standard non-tobacco"^^xsd:string .
+
+abox:FaceAmount_C2_250000 a li:FaceAmount,
+        li:MaxConversionPolicySize ;
+    li:labelValue "$250,000"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:LoanAgainstCashValue_C2_PolicyLoan a li:LoanAgainstCashValue,
+        li:PolicyContinuationProtection ;
+    li:hasFixedLoanInterestRate "5%"^^xsd:string ;
+    li:labelValue "Policy Loan"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "Policy Loans, Interest Rate, Cash Value Borrowing"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_Dividend a li:PolicyContinuationProtection,
+        li:PremiumRelief ;
+    li:labelValue "Dividend"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyContinuationProtection_C2_PaidUpInsurance a li:PolicyContinuationProtection,
+        li:PremiumRelief ;
+    li:labelValue "Paid-Up Insurance"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyEffectiveDate_C2_February12024 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "February 1, 2024"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyEffectiveDate_C2_July82078 a li:PolicyEffectiveDate,
+        li:RetryPaymentDate ;
+    li:dateValue "July 8, 2078"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:PolicyIdentifier_C2_GfpWl20248847 a li:PolicyIdentifier,
+        li:PolicyTermDuration ;
+    li:hasCertificateHolderName "David Chen"^^xsd:string ;
+    li:hasCertificateNumber "GFP-WL-2024-8847"^^xsd:string ;
+    li:labelValue "GFP-WL-2024-8847"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "policy number, insurance identification, document reference"^^xsd:string,
+        "primary beneficiary, beneficiary designation, policy payout"^^xsd:string .
+
+abox:ProjectedCashValue_C2_3240 a li:MaxConversionPolicySize,
+        li:ProjectedCashValue ;
+    li:labelValue "$3,240"^^xsd:string ;
+    li:sourceContractID "C2"^^xsd:string .
+
+abox:ClaimMailingAddress_C2_BostonMassachusetts a li:ClaimMailingAddress,
+        li:PolicyIssuanceJurisdiction ;
+    li:hasEffectiveDate "Boston, Massachusetts"^^xsd:string ;
+    li:hasLocation abox:ClaimMailingAddress_C2_BostonMassachusetts ;
+    li:sourceContractID "C2"^^xsd:string ;
+    li:sourceContractSection "policy issuance, Boston Massachusetts, issuer location"^^xsd:string ;
+    li:stateOfIssuance "Boston, Massachusetts"^^xsd:string .
+

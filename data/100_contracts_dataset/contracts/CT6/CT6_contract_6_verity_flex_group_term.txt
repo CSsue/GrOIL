@@ -1,0 +1,241 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║         FLEXIBLE GROUP TERM LIFE INSURANCE CERTIFICATE            ║
+║         Ember Insurance Technology, Inc.                          ║
+║         Underwritten by: Verity Life Insurance Company            ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Certificate No: VLC-FLX-2024-Brightwork-11028
+Master Policy No: VLC-2024-BW-FLEX
+Issue Date: August 1, 2024
+
+═══════════════════════════════════════════════════════════════════
+CERTIFICATE HOLDER
+═══════════════════════════════════════════════════════════════════
+Name: Keiran O. Murphy
+Worker ID: BW-11028
+Classification: Independent Contractor – Platform Worker
+Date of Birth: April 30, 1993
+Platform Enrollment Date: August 1, 2024
+
+═══════════════════════════════════════════════════════════════════
+PLATFORM SPONSOR (Policyholder)
+═══════════════════════════════════════════════════════════════════
+Brightwork Services, Inc.
+Headquarters: Austin, Texas
+
+NOTE: This plan covers registered Brightwork platform workers
+regardless of employment classification. Coverage is voluntary
+and entirely self-funded by the worker. Brightwork does not
+contribute to premiums and does not control benefit elections.
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SUMMARY
+═══════════════════════════════════════════════════════════════════
+Current Coverage Amount (Worker-Elected):   $200,000
+Coverage Period:                            Month-to-month
+Current Monthly Premium:                    $18.00
+Premium Payment Method:                     Deducted from
+                                            platform earnings
+
+═══════════════════════════════════════════════════════════════════
+DESIGNATED BENEFICIARY
+═══════════════════════════════════════════════════════════════════
+Primary:    Siobhan M. Murphy (Domestic Partner) – 100%
+Contingent: Connor R. Murphy (Brother) – 100%
+
+───────────────────────────────────────────────────────────────────
+SECTION 1 – ABOUT THIS PLAN
+───────────────────────────────────────────────────────────────────
+1.1 This is a group term life plan made available through
+    Brightwork's worker benefits platform, powered by Ember
+    Insurance Technology. The master policy is issued by
+    Verity Life Insurance Company to Brightwork as sponsor.
+
+1.2 Coverage is available to any Brightwork-registered worker
+    who has completed at least one platform transaction within
+    the preceding 90 days ("Active Worker").
+
+1.3 This plan is NOT an employer-sponsored benefit under IRC
+    §79. Premiums are not excludable from gross income as
+    employer-provided group term life.
+
+1.4 All coverage elections, changes, and cancellations are
+    managed through the Brightwork app or web portal.
+
+───────────────────────────────────────────────────────────────────
+SECTION 2 – ELIGIBILITY AND ENROLLMENT
+───────────────────────────────────────────────────────────────────
+2.1 ELIGIBILITY: Any registered Brightwork worker who (a) is
+    at least 18 years old, (b) has completed at least one
+    platform transaction, and (c) resides in the United States.
+
+2.2 INITIAL ENROLLMENT: Workers may enroll within 60 days of
+    first platform transaction without EOI for coverage up to
+    $300,000.
+
+2.3 OPEN ENROLLMENT: Brightwork's platform offers continuous
+    enrollment. Workers may enroll or increase coverage at any
+    time; however, increases above the GI Limit (see 3.3) or
+    outside the initial 60-day window require EOI.
+
+2.4 ACTIVE WORKER REQUIREMENT: Coverage requires at least one
+    completed platform transaction in any rolling 90-day
+    period. Workers inactive for 90 or more consecutive days
+    are placed in a "Lapse Hold" pending activity or
+    self-pay election (see Section 4.3).
+
+───────────────────────────────────────────────────────────────────
+SECTION 3 – BENEFIT AMOUNTS
+───────────────────────────────────────────────────────────────────
+3.1 Workers elect coverage in the following amounts:
+      $50,000 / $100,000 / $200,000 / $300,000 / $500,000
+
+3.2 PREMIUM SCHEDULE (per $50,000 of coverage per month):
+
+    Age Bracket     Monthly Rate per $50k
+    ─────────────────────────────────────
+    18–29           $1.80
+    30–39           $2.50
+    40–49           $4.00
+    50–59           $7.50
+    60–69           $14.00
+
+3.3 GUARANTEED ISSUE LIMIT: $300,000 within first 60 days
+    of enrollment. EOI required above $300,000 or for
+    enrollment after initial window.
+
+3.4 MAXIMUM COVERAGE: $500,000.
+
+3.5 Coverage amount may be decreased at any time with no
+    underwriting required. Decreases take effect the first
+    day of the next calendar month.
+
+───────────────────────────────────────────────────────────────────
+SECTION 4 – PREMIUM PAYMENT AND LAPSE
+───────────────────────────────────────────────────────────────────
+4.1 Premiums are deducted automatically from Brightwork
+    platform earnings on the first business day of each
+    calendar month for coverage in that month.
+
+4.2 If platform earnings in a given month are insufficient
+    to cover the premium, Verity will attempt to collect
+    via the worker's registered payment method on file.
+
+4.3 LAPSE HOLD: If a worker has no platform activity for
+    90+ consecutive days and no registered payment method,
+    coverage enters Lapse Hold. Lapse Hold continues for
+    30 days, during which:
+      (a) Coverage remains in force, and
+      (b) The worker may restore active status or switch
+          to direct-pay to prevent lapse.
+
+4.4 If Lapse Hold expires without resolution, coverage
+    terminates. Reinstatement requires re-enrollment and
+    a new 2-year contestability period.
+
+4.5 Workers may cancel coverage at any time through the
+    platform app. Cancellation takes effect immediately.
+
+───────────────────────────────────────────────────────────────────
+SECTION 5 – PORTABILITY AND CONVERSION
+───────────────────────────────────────────────────────────────────
+5.1 Because coverage is directly linked to platform
+    participation, portability operates differently from
+    employer-sponsored plans.
+
+5.2 CONTINUED DIRECT-PAY: At any time, a worker may switch
+    from earnings-deduction to direct monthly billing and
+    continue coverage regardless of platform activity.
+    Coverage amount and terms remain the same.
+
+5.3 CONVERSION: If the master policy terminates (e.g.,
+    Brightwork ceases operations), covered workers may convert
+    to an individual policy within 31 days without EOI.
+    Maximum convertible amount: the lesser of current coverage
+    or $200,000.
+
+5.4 No employer-style portability provision applies.
+
+───────────────────────────────────────────────────────────────────
+SECTION 6 – ACCELERATED DEATH BENEFIT
+───────────────────────────────────────────────────────────────────
+6.1 Workers with life expectancy of 12 months or less,
+    certified by a licensed physician, may accelerate up to
+    70% of coverage, subject to a maximum of $250,000.
+
+6.2 An actuarial discount (interest rate-based) applies.
+    No additional fees or administrative charges.
+
+6.3 Accelerated benefits reduce the death benefit paid to
+    beneficiaries. The worker receives the accelerated amount
+    directly.
+
+───────────────────────────────────────────────────────────────────
+SECTION 7 – EXCLUSIONS
+───────────────────────────────────────────────────────────────────
+7.1 SUICIDE: No benefit payable for suicide within 24 months
+    of the effective date of any enrollment or reinstatement.
+    For coverage in force more than 24 months, the full
+    benefit is payable regardless of cause of death.
+
+7.2 INCONTESTABILITY: After 24 months of continuous coverage
+    (without lapse), Verity may not contest the validity of
+    coverage based on misrepresentation in the application,
+    except for fraud.
+
+7.3 No exclusion for occupation, hazardous activities, or
+    international travel. Coverage is worldwide.
+
+7.4 No pre-existing condition exclusion.
+
+───────────────────────────────────────────────────────────────────
+SECTION 8 – WAIVER OF PREMIUM
+───────────────────────────────────────────────────────────────────
+8.1 This plan does not include a traditional waiver of premium
+    for disability. Workers who become disabled should elect
+    direct-pay billing (Section 5.2) to maintain coverage
+    independently of platform activity.
+
+───────────────────────────────────────────────────────────────────
+SECTION 9 – BENEFICIARY
+───────────────────────────────────────────────────────────────────
+9.1 Beneficiary designations are managed in the Brightwork
+    benefits portal. Changes are effective immediately upon
+    submission.
+
+9.2 Workers may designate any person, trust, or entity as
+    beneficiary. Multiple beneficiaries may be designated
+    with specified percentages.
+
+9.3 If no valid beneficiary designation exists, the benefit
+    is paid to the worker's estate.
+
+───────────────────────────────────────────────────────────────────
+SECTION 10 – CLAIMS
+───────────────────────────────────────────────────────────────────
+10.1 Claims may be initiated through the Brightwork app,
+     the Ember benefits portal, or by calling Verity directly.
+
+10.2 Required: certified death certificate, completed Verity
+     claim form, beneficiary proof of identity.
+
+10.3 Submit to:
+     Verity Life Insurance Company – Claims Center
+     4400 Tech Parkway, Austin, TX 78701
+     Phone: 1-855-555-8330
+     Portal: claims.veritylife.com
+
+10.4 Verity targets payment within 7 business days of
+     complete documentation.
+
+═══════════════════════════════════════════════════════════════════
+This certificate is governed by the laws of the State of Texas.
+
+VERITY LIFE INSURANCE COMPANY
+Austin, Texas
+
+________________________________
+Chief Insurance Officer
+
+Issued: August 1, 2024
+═══════════════════════════════════════════════════════════════════

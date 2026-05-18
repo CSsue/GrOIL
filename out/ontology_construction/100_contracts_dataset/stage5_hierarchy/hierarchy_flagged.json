@@ -1,0 +1,1069 @@
+[
+  {
+    "owl_name": "UnderwritingClass",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A classification used to determine insurance risk and premium calculation for an insured.",
+    "parents": [
+      "UnderwritingClassification"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CLASSIFICATION",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set UnderwritingClass subclassOf UnderwritingClassification. Reasoning: UnderwritingClassification is the broader category because it refers to the general process or outcome of categorizing an insured's risk based on underwriting criteria and actuarial assessment. UnderwritingClass, on the other hand, is a specific instance or type of such a classification\u2014used concretely to determine risk and premiums. Therefore, UnderwritingClass is a more specific type of UnderwritingClassification, making Option A the semantically sound relationship.",
+    "top_members": [
+      "underwriting class for COI calculation",
+      "underwriting class for first insured",
+      "underwriting class for second insured",
+      "benefit class"
+    ]
+  },
+  {
+    "owl_name": "PolicyStability",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The condition of a life insurance policy maintaining consistent terms, fees, and benefits over time.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "premium stability",
+      "benefit stability",
+      "fee stability",
+      "rate stability",
+      "Premium Stability",
+      "Policy Stability",
+      "financial stability",
+      "policy stability"
+    ]
+  },
+  {
+    "owl_name": "PolicyRider",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An optional\u9644\u52a0 coverage or benefit added to a life insurance policy.",
+    "parents": [
+      "Rider"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyRider subclassOf Rider. Reasoning: Rider is the broader category because it refers to any supplementary benefit added to a life insurance policy, which encompasses various types of riders, including PolicyRider. PolicyRider is a specific instance or type of rider\u2014specifically, an optional\u9644\u52a0 coverage or benefit added to a policy. Therefore, PolicyRider is a subtype of Rider, making Option A the semantically correct relationship.",
+    "top_members": [
+      "Rider 2",
+      "Rider 1",
+      "Policy Riders",
+      "Rider 3",
+      "rider premium",
+      "policy riders",
+      "optional riders",
+      "rider terms"
+    ]
+  },
+  {
+    "owl_name": "TaxTreatmentOfBeneficiaryPayments",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "Refers to the uncertain tax status and distinct tax treatment of payments made to beneficiaries in life insurance policies.",
+    "parents": [
+      "TaxTreatment"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set TaxTreatmentOfBeneficiaryPayments subclassOf TaxTreatment. Reasoning: TaxTreatment is the broader category because it encompasses all tax-related effects and obligations associated with a life insurance policy, including but not limited to the treatment of payments to beneficiaries. TaxTreatmentOfBeneficiaryPayments is a specific aspect or sub-type of TaxTreatment, focusing narrowly on the tax status of payments made to beneficiaries. Therefore, TaxTreatmentOfBeneficiaryPayments is a more specific instance of TaxTreatment, making Option A the semantically sound relationship.",
+    "top_members": [
+      "payment subject to uncertain tax status",
+      "tax treatment distinction from death benefits",
+      "tax treatment of beneficiary payments"
+    ]
+  },
+  {
+    "owl_name": "ExclusionClause",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause specifying conditions or circumstances excluded from coverage in a life insurance policy.",
+    "parents": [
+      "Exclusion"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "SECTION",
+    "resolved_gnp": "SectionReference",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set ExclusionClause subclassOf Exclusion. Reasoning: Exclusion is the broader category because it refers to any clause specifying causes of death not covered under a life insurance policy, which encompasses various types of exclusions. An ExclusionClause is a specific type of such clause, defined more narrowly as a clause specifying conditions or circumstances excluded from coverage. Therefore, ExclusionClause is a subtype of Exclusion, making 'Exclusion' the parent class and 'ExclusionClause' the child class. This aligns with the semantic hierarchy where a specific clause (ExclusionClause) falls under the general category of exclusions (Exclusion).",
+    "top_members": [
+      "reference point for exclusions",
+      "exclusionary clauses summary",
+      "exclusions",
+      "exclusion clause regarding unfiled agreements"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefitRecipient",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An individual designated to receive the death benefit payout upon the insured's death.",
+    "parents": [
+      "Beneficiary"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "InsuredPersonOrEntity",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitRecipient subclassOf Beneficiary. Reasoning: Beneficiary is the broader category because it encompasses any person or entity designated to receive proceeds from a life insurance policy, which may include death benefits as well as other types of payouts (e.g., cash surrender values, maturity benefits). DeathBenefitRecipient is a more specific role\u2014limited to those receiving only the death benefit upon the insured's death. Therefore, DeathBenefitRecipient is a type of Beneficiary, making Option A the semantically sound relationship.",
+    "top_members": [
+      "recipient of death benefit payout",
+      "recipient of spouse\u2019s death benefit",
+      "individual whose death triggers payout",
+      "recipients of death benefit",
+      "recipient of death benefit",
+      "insured person whose death triggers payout",
+      "recipient of death benefit",
+      "claimant for death benefit"
+    ]
+  },
+  {
+    "owl_name": "PaymentMethod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A method or structure for making insurance premium payments.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PremiumPaymentMethod subclassOf PaymentMethod. Reasoning: PaymentMethod is the broader category because it refers to any method or structure for making insurance premium payments, encompassing a wide range of possible approaches. PremiumPaymentMethod is a more specific concept, referring to a specified way or schedule for collecting premiums, which is a subset of all possible payment methods. Therefore, PremiumPaymentMethod is a type of PaymentMethod, making Option B the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "PAYMENT_METHOD",
+      "PAYMENT",
+      "PAYMENT_TERM",
+      "PAYMENT_FREQUENCY",
+      "PAYMENT_MODE",
+      "PAYMENT_STRUCTURE",
+      "MONTHLY_CHARGE",
+      "PAYMENT_OPTION"
+    ]
+  },
+  {
+    "owl_name": "RegulatoryFramework",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal structure governing insurance policy rights, obligations, and compliance within a jurisdiction.",
+    "parents": [
+      "LegalFramework"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set RegulatoryFramework subclassOf LegalFramework. Reasoning: RegulatoryFramework is a type of LegalFramework because it operates within and is a subset of the broader foundational structure defined by a LegalFramework. The LegalFramework provides the overarching foundation of legal requirements and policy rules, while the RegulatoryFramework specifically governs compliance, rights, and obligations within a jurisdiction\u2014making it a more specialized instance of the general LegalFramework. Therefore, LegalFramework is the broader category (Superclass), and RegulatoryFramework is the more specific concept (Subclass).",
+    "top_members": [
+      "legal framework governing policy change of control",
+      "Regulatory eligibility criterion",
+      "jurisdictional authority reference",
+      "legal framework governing participant rights",
+      "governing federal law",
+      "legal structure descriptor",
+      "scope of insurer obligation",
+      "US regulatory compliance framework"
+    ]
+  },
+  {
+    "owl_name": "CoverageOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A selectable type of coverage within a life insurance policy, identified by a label or number.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Option 2",
+      "Option A",
+      "Option B",
+      "Option II",
+      "Option I",
+      "Coverage Options",
+      "Option 1",
+      "Option C"
+    ]
+  },
+  {
+    "owl_name": "TriggerEvent",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An event that initiates policy actions affecting continuation or premium obligations.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "EVENT",
+    "resolved_gnp": "PaymentEvent",
+    "flagged": true,
+    "flag_reason": "Cycle resolved by LLM: removed edge TriggerEvent \u2192 TriggerCondition. New parents: ['owl:Thing'] (was: ['TriggerCondition']). Reasoning: The edge from TriggerEvent to TriggerCondition is the weakest because TriggerEvent is a broader, more general concept (an event initiating policy actions) that should not be a subclass of TriggerCondition, which is a more specific condition that triggers changes. The reverse relationship (TriggerCondition \u2192 ClaimTrigger \u2192 TriggerEvent) already establishes a valid hierarchy where conditions lead to events. Removing this edge breaks the cycle without losing semantic integrity, and since TriggerEvent is already indirectly connected through ClaimTrigger, it can remain as a top-level class under owl:Thing.",
+    "top_members": [
+      "trigger for restriction on premium",
+      "Triggers cessation of future premiums",
+      "trigger for policy split",
+      "trigger point for policy actions",
+      "trigger event affecting policy continuation"
+    ]
+  },
+  {
+    "owl_name": "CoverageRestriction",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition limiting the scope or duration of insurance coverage under a policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "LIMITATION",
+    "resolved_gnp": "LiabilityLimit",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CoverageLimitation subclassOf CoverageRestriction. Reasoning: CoverageRestriction is the broader category because it encompasses any condition that limits the scope or duration of insurance coverage, which includes a wide range of constraints such as time limits, geographic restrictions, or exclusions. CoverageLimitation, on the other hand, is a more specific type of restriction that focuses specifically on clauses limiting coverage based on particular conditions or causes of death. Therefore, CoverageLimitation is a specialized form of CoverageRestriction, making it the subclass. This hierarchical relationship ensures semantic accuracy and avoids the mutual subclass error. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "coverage restriction period",
+      "coverage exclusion clause",
+      "travel coverage exception"
+    ]
+  },
+  {
+    "owl_name": "CoverageLimitation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause restricting insurance coverage based on specific conditions or causes of death.",
+    "parents": [
+      "CoverageRestriction"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CoverageLimitation subclassOf CoverageRestriction. Reasoning: CoverageRestriction is the broader category because it encompasses any condition that limits the scope or duration of insurance coverage, which includes a wide range of constraints such as time limits, geographic restrictions, or exclusions. CoverageLimitation, on the other hand, is a more specific type of restriction that focuses specifically on clauses limiting coverage based on particular conditions or causes of death. Therefore, CoverageLimitation is a specialized form of CoverageRestriction, making it the subclass. This hierarchical relationship ensures semantic accuracy and avoids the mutual subclass error.",
+    "top_members": [
+      "liability limitation clause",
+      "death cause limitation clause",
+      "coverage limitation clause"
+    ]
+  },
+  {
+    "owl_name": "LegalFramework",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A foundational structure defining legal requirements and policy rules for insurance contracts.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "SECTION",
+    "resolved_gnp": "SectionReference",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set RegulatoryFramework subclassOf LegalFramework. Reasoning: RegulatoryFramework is a type of LegalFramework because it operates within and is a subset of the broader foundational structure defined by a LegalFramework. The LegalFramework provides the overarching foundation of legal requirements and policy rules, while the RegulatoryFramework specifically governs compliance, rights, and obligations within a jurisdiction\u2014making it a more specialized instance of the general LegalFramework. Therefore, LegalFramework is the broader category (Superclass), and RegulatoryFramework is the more specific concept (Subclass). | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "reference point for legal requirement",
+      "premium payment requirements framework",
+      "legal framework header for policy rules"
+    ]
+  },
+  {
+    "owl_name": "CoveragePeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time interval during which insurance coverage is active and benefits are available.",
+    "parents": [
+      "DateWindow"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DATE",
+    "resolved_gnp": "DateWindow",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CoveragePeriod subclassOf DateWindow. Reasoning: CoveragePeriod is a specific type of DateWindow, as it refers to a time interval with a particular purpose\u2014active insurance coverage and benefit availability. DateWindow, on the other hand, is a more general concept that describes any time period bounded by a start and end date, regardless of context. Since all CoveragePeriods are DateWindows (they have a start and end date), but not all DateWindows are CoveragePeriods (e.g., a date window for a promotion or a data query), DateWindow is the broader superclass. Therefore, Option A is semantically sound: CoveragePeriod IS A TYPE OF DateWindow.",
+    "top_members": [
+      "duration before benefit starts",
+      "coverage commencement trigger date",
+      "Start date of Year 2 coverage period",
+      "End date of Year 2 coverage period",
+      "Start date of Year 3+ coverage period",
+      "start date for eligibility",
+      "alternative start date for eligibility",
+      "coverage year period"
+    ]
+  },
+  {
+    "owl_name": "InsuredPersonOrEntity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A person or organization that is covered by a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InsuredPerson subclassOf InsuredPersonOrEntity. Reasoning: InsuredPersonOrEntity is the broader category because it encompasses both individuals (InsuredPerson) and organizations (entities). The definition of InsuredPersonOrEntity explicitly includes 'a person or organization', making it a more general concept. In contrast, InsuredPerson refers only to a person, which is a subset of the broader category. Therefore, InsuredPerson is a type of InsuredPersonOrEntity, making Option B the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "PERSON",
+      "ENTITY",
+      "PERSON_OR_ENTITY",
+      "ASSET"
+    ]
+  },
+  {
+    "owl_name": "AllocationRatio",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A percentage representing the proportion allocated to a specific purpose or component.",
+    "parents": [
+      "AllocationShare"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set AllocationRatio subclassOf AllocationShare. Reasoning: AllocationShare is the broader category because it refers to a general portion of an investment allocation tied to an index or asset class, which can be expressed in various forms (e.g., dollar amount, percentage, ratio). AllocationRatio, on the other hand, is a specific type of allocation share that is explicitly defined as a percentage. Therefore, AllocationRatio is a more specific instance of AllocationShare, making AllocationShare the superclass and AllocationRatio the subclass.",
+    "top_members": [
+      "PERCENTAGE",
+      "ALLOCATION_PERCENTAGE",
+      "RATIO"
+    ]
+  },
+  {
+    "owl_name": "InterestRate",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A rate at which interest is calculated or applied in a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "interest rate",
+      "Interest Rate",
+      "annual interest rate",
+      "Interest Rate Floor",
+      "current interest rate",
+      "interest rate changes",
+      "Indexed Interest Rate",
+      "Interest Rate Structure"
+    ]
+  },
+  {
+    "owl_name": "BeneficiaryDesignation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A process or protocol for selecting beneficiaries for employees in a life insurance policy.",
+    "parents": [
+      "BeneficiaryDesignationProcess"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "SECTION",
+    "resolved_gnp": "SectionReference",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set BeneficiaryDesignation subclassOf BeneficiaryDesignationProcess. Reasoning: BeneficiaryDesignationProcess is the broader category because it refers to the overall process by which a policy owner specifies or modifies beneficiaries, which encompasses the act of designating beneficiaries. BeneficiaryDesignation, on the other hand, is a specific instance or component of that process\u2014namely, the selection of beneficiaries. Therefore, BeneficiaryDesignation is a type of BeneficiaryDesignationProcess, making Option A the semantically sound relationship.",
+    "top_members": [
+      "designates beneficiaries for employees",
+      "beneficiary designation protocol"
+    ]
+  },
+  {
+    "owl_name": "InsuranceAgent",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A licensed professional authorized to sell and advise on life insurance policies.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "agent authority",
+      "agent consultation",
+      "Policy Sales Agent",
+      "licensed insurance agents",
+      "agent identification",
+      "Agent Restrictions"
+    ]
+  },
+  {
+    "owl_name": "InsuredPerson",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A person who is insured under a life insurance policy, regardless of order or designation.",
+    "parents": [
+      "InsuredPersonOrEntity"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERSON",
+    "resolved_gnp": "InsuredPersonOrEntity",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InsuredPerson subclassOf InsuredPersonOrEntity. Reasoning: InsuredPersonOrEntity is the broader category because it encompasses both individuals (InsuredPerson) and organizations (entities). The definition of InsuredPersonOrEntity explicitly includes 'a person or organization', making it a more general concept. In contrast, InsuredPerson refers only to a person, which is a subset of the broader category. Therefore, InsuredPerson is a type of InsuredPersonOrEntity, making Option B the semantically sound relationship.",
+    "top_members": [
+      "first insured under policy",
+      "second insured under policy",
+      "first insured person",
+      "second insured person",
+      "primary insured party",
+      "first insured to die",
+      "primary insured person",
+      "additional insured person"
+    ]
+  },
+  {
+    "owl_name": "MonetaryAmount",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A quantity of money expressed in a specific currency.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set FinancialFigure subclassOf MonetaryAmount. Reasoning: MonetaryAmount is the broader category because it refers to any quantity of money expressed in a specific currency, which is a general concept applicable across many domains. FinancialFigure, on the other hand, is a more specific concept defined as a monetary value referenced in the initial section of a life insurance contract. Since a FinancialFigure is a particular instance or use case of a MonetaryAmount within a specific contractual context, it is a subtype of MonetaryAmount. Therefore, FinancialFigure IS A TYPE OF MonetaryAmount, making Option B the semantically sound choice. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "AMOUNT",
+      "MONETARY_VALUE",
+      "FINANCIAL_AMOUNT",
+      "MONETARY_AMOUNT",
+      "FUNDS",
+      "CURRENCY",
+      "MONEY",
+      "MONETARY"
+    ]
+  },
+  {
+    "owl_name": "InsuranceProductType",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A classification of life insurance products based on their design, features, and intended duration.",
+    "parents": [
+      "InsuranceProduct"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InsuranceProductType subclassOf InsuranceProduct. Reasoning: InsuranceProductType is the broader category because it represents a classification or category of insurance products, while InsuranceProduct refers to a specific instance or realization of such a product. In other words, InsuranceProductType defines types (e.g., term life, whole life), whereas InsuranceProduct is a concrete manifestation of one of those types. Therefore, InsuranceProductType is the parent class, and InsuranceProduct is a subclass. However, the correct semantic relationship is that InsuranceProduct is a type of InsuranceProductType, meaning InsuranceProductType is the broader concept. Thus, Option A is correct: InsuranceProductType IS A TYPE OF InsuranceProduct is incorrect, but the intended relationship is actually the reverse. Wait \u2014 let's re-evaluate carefully.\n\nActually, the correct interpretation is: InsuranceProduct is a specific financial instrument, and InsuranceProductType is a classification of such instruments. So, a specific InsuranceProduct (e.g., 'Premium Term Life Policy') is an instance of a particular InsuranceProductType (e.g., 'Term Life Insurance'). Therefore, InsuranceProduct is a type of InsuranceProductType \u2014 meaning InsuranceProductType is the broader category.\n\nThus, the correct relationship is: InsuranceProduct IS A TYPE OF InsuranceProductType \u2014 Option B.\n\nCorrection: The initial reasoning was flawed. Let's fix it.\n\nInsuranceProductType is a classification (e.g., 'Term Life', 'Whole Life') \u2014 it's a category. InsuranceProduct is a specific product (e.g., 'XYZ Term Life Policy') that belongs to one of those categories. So, InsuranceProduct is an instance of InsuranceProductType. Therefore, InsuranceProduct IS A TYPE OF InsuranceProductType \u2014 meaning InsuranceProductType is the parent.\n\nHence, the correct decision is Option B: InsuranceProduct IS A TYPE OF InsuranceProductType, making InsuranceProductType the broader (parent) class.",
+    "top_members": [
+      "insurance product type",
+      "Policy Type Description",
+      "Insurance product classification",
+      "policy product classification",
+      "Policy product type",
+      "market-specific design feature",
+      "insurance product offering",
+      "insurance product class"
+    ]
+  },
+  {
+    "owl_name": "InsuranceProduct",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A financial instrument providing life insurance coverage as defined by the governing legal framework.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "POLICY",
+    "resolved_gnp": "PolicyIssueDate",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InsuranceProductType subclassOf InsuranceProduct. Reasoning: InsuranceProductType is the broader category because it represents a classification or category of insurance products, while InsuranceProduct refers to a specific instance or realization of such a product. In other words, InsuranceProductType defines types (e.g., term life, whole life), whereas InsuranceProduct is a concrete manifestation of one of those types. Therefore, InsuranceProductType is the parent class, and InsuranceProduct is a subclass. However, the correct semantic relationship is that InsuranceProduct is a type of InsuranceProductType, meaning InsuranceProductType is the broader concept. Thus, Option A is correct: InsuranceProductType IS A TYPE OF InsuranceProduct is incorrect, but the intended relationship is actually the reverse. Wait \u2014 let's re-evaluate carefully.\n\nActually, the correct interpretation is: InsuranceProduct is a specific financial instrument, and InsuranceProductType is a classification of such instruments. So, a specific InsuranceProduct (e.g., 'Premium Term Life Policy') is an instance of a particular InsuranceProductType (e.g., 'Term Life Insurance'). Therefore, InsuranceProduct is a type of InsuranceProductType \u2014 meaning InsuranceProductType is the broader category.\n\nThus, the correct relationship is: InsuranceProduct IS A TYPE OF InsuranceProductType \u2014 Option B.\n\nCorrection: The initial reasoning was flawed. Let's fix it.\n\nInsuranceProductType is a classification (e.g., 'Term Life', 'Whole Life') \u2014 it's a category. InsuranceProduct is a specific product (e.g., 'XYZ Term Life Policy') that belongs to one of those categories. So, InsuranceProduct is an instance of InsuranceProductType. Therefore, InsuranceProduct IS A TYPE OF InsuranceProductType \u2014 meaning InsuranceProductType is the parent.\n\nHence, the correct decision is Option B: InsuranceProduct IS A TYPE OF InsuranceProductType, making InsuranceProductType the broader (parent) class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "insurance product type",
+      "insurance product offering",
+      "Core Financial Instrument",
+      "Primary coverage instrument",
+      "Insurance product type",
+      "primary insurance product described",
+      "primary insurance product type",
+      "governing legal framework for coverage"
+    ]
+  },
+  {
+    "owl_name": "FormIdentifier",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A unique code or identifier assigned to a form used in a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyFormIdentifier subclassOf FormIdentifier. Reasoning: PolicyFormIdentifier is the broader category because it refers to an official identifier for a specific policy template or product form, which may encompass various types of forms used in the policy lifecycle. FormIdentifier, on the other hand, is a more general concept referring to any unique code assigned to a form used in a life insurance policy. Since a PolicyFormIdentifier is a specific kind of FormIdentifier (a specialized type used for policy templates), it makes sense that PolicyFormIdentifier is a subclass of FormIdentifier. Therefore, Option B is semantically sound: PolicyFormIdentifier IS A TYPE OF FormIdentifier. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "FORM",
+      "FORM_CODE",
+      "POLICY_FORM",
+      "DOCUMENT_FORM",
+      "FORM_IDENTIFIER"
+    ]
+  },
+  {
+    "owl_name": "BeneficiaryDesignationProcess",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A process by which the policy owner specifies or modifies the recipient of life insurance benefits.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set BeneficiaryDesignation subclassOf BeneficiaryDesignationProcess. Reasoning: BeneficiaryDesignationProcess is the broader category because it refers to the overall process by which a policy owner specifies or modifies beneficiaries, which encompasses the act of designating beneficiaries. BeneficiaryDesignation, on the other hand, is a specific instance or component of that process\u2014namely, the selection of beneficiaries. Therefore, BeneficiaryDesignation is a type of BeneficiaryDesignationProcess, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "process for naming recipient of benefits",
+      "owner action modifying recipient designation"
+    ]
+  },
+  {
+    "owl_name": "TaxTreatment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A classification of the tax-related effects and obligations associated with a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set TaxTreatmentOfBeneficiaryPayments subclassOf TaxTreatment. Reasoning: TaxTreatment is the broader category because it encompasses all tax-related effects and obligations associated with a life insurance policy, including but not limited to the treatment of payments to beneficiaries. TaxTreatmentOfBeneficiaryPayments is a specific aspect or sub-type of TaxTreatment, focusing narrowly on the tax status of payments made to beneficiaries. Therefore, TaxTreatmentOfBeneficiaryPayments is a more specific instance of TaxTreatment, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "tax treatment",
+      "tax implications",
+      "tax qualification",
+      "tax compliance",
+      "tax consequences",
+      "Tax Compliance",
+      "taxable income",
+      "tax reporting"
+    ]
+  },
+  {
+    "owl_name": "Exclusion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause specifying causes of death not covered under the life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ARTICLE",
+    "resolved_gnp": "PolicyArticle",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set ExclusionClause subclassOf Exclusion. Reasoning: Exclusion is the broader category because it refers to any clause specifying causes of death not covered under a life insurance policy, which encompasses various types of exclusions. An ExclusionClause is a specific type of such clause, defined more narrowly as a clause specifying conditions or circumstances excluded from coverage. Therefore, ExclusionClause is a subtype of Exclusion, making 'Exclusion' the parent class and 'ExclusionClause' the child class. This aligns with the semantic hierarchy where a specific clause (ExclusionClause) falls under the general category of exclusions (Exclusion). | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "conditions",
+      "section outlining excluded causes of death",
+      "lists limitations",
+      "exclusions",
+      "contains coverage restrictions"
+    ]
+  },
+  {
+    "owl_name": "PolicyMechanics",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The operational and structural elements governing how a life insurance policy functions.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "low",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "The class 'PolicyMechanics' is defined as the operational and structural elements governing how a life insurance policy functions, which aligns closely with the concept of 'PolicyMechanics' itself. However, since 'PolicyMechanics' is not in the provided vocabulary, and no other class in the list directly captures this exact meaning, the best available parent must be selected based on semantic proximity. The most relevant candidate is 'InsuranceContract', as it represents the foundational legal and operational framework of a policy, encompassing its mechanics. No other class in the vocabulary captures the systemic, structural, and operational nature of policy mechanics more accurately than 'InsuranceContract'. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "investment mechanics",
+      "policy mechanics"
+    ]
+  },
+  {
+    "owl_name": "AllocationShare",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A portion of an investment allocation corresponding to a specific index or asset class.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PERCENTAGE",
+    "resolved_gnp": "AllocationRatio",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set AllocationRatio subclassOf AllocationShare. Reasoning: AllocationShare is the broader category because it refers to a general portion of an investment allocation tied to an index or asset class, which can be expressed in various forms (e.g., dollar amount, percentage, ratio). AllocationRatio, on the other hand, is a specific type of allocation share that is explicitly defined as a percentage. Therefore, AllocationRatio is a more specific instance of AllocationShare, making AllocationShare the superclass and AllocationRatio the subclass. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "current allocation share of MSCI Asia Pacific",
+      "defines composition of MSCI Asia Pacific ex-Japan index"
+    ]
+  },
+  {
+    "owl_name": "PolicyArticle",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A section or clause within a life insurance policy document.",
+    "parents": [
+      "PolicyProvision"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyArticle subclassOf PolicyProvision. Reasoning: PolicyProvision is the broader category because it refers to any specific term or benefit within a life insurance contract, which can encompass various types of clauses or sections. PolicyArticle, on the other hand, is a more specific term referring to a section or clause within a policy document\u2014essentially a structural component. Since a PolicyArticle is a type of content that may express a PolicyProvision, but not all PolicyProvisions are necessarily called 'Articles' (they could be 'clauses', 'sections', or 'terms'), it follows that PolicyArticle is a subtype of PolicyProvision. Therefore, PolicyProvision is the more general superclass, and PolicyArticle is a specific kind of provision.",
+    "top_members": [
+      "ARTICLE",
+      "POLICY_ARTICLE"
+    ]
+  },
+  {
+    "owl_name": "IncontestabilityPeriodDuration",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The time period during which the insurer cannot contest the validity of a life insurance policy.",
+    "parents": [
+      "ContestabilityPeriod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "YEAR",
+    "resolved_gnp": "PolicyYear",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set IncontestabilityPeriodDuration subclassOf ContestabilityPeriod. Reasoning: ContestabilityPeriod is the broader category because it refers to the general concept of a time period (typically two years) after policy issuance during which an insurer can contest claims. IncontestabilityPeriodDuration is a specific instance or attribute of that period\u2014the duration during which the insurer cannot contest the policy. Thus, IncontestabilityPeriodDuration is a type of ContestabilityPeriod, as it describes a key characteristic (the duration) of the broader concept. Therefore, ContestabilityPeriod is the parent class, and IncontestabilityPeriodDuration is the child class.",
+    "top_members": [
+      "incontestability period duration"
+    ]
+  },
+  {
+    "owl_name": "InsuranceContract",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A legal agreement that establishes the terms and conditions of insurance coverage.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "DOCUMENT",
+    "resolved_gnp": "Document",
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "contractual instrument governing coverage",
+      "formal contract governing coverage",
+      "contractual instrument description",
+      "insurance contract governing coverage",
+      "legal framework governing distribution",
+      "underlying insurance agreement",
+      "contractual basis for contribution rate",
+      "legal section detailing restrictions"
+    ]
+  },
+  {
+    "owl_name": "DateWindow",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A time period defined by a start and end date, often specifying validity or eligibility duration.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CoveragePeriod subclassOf DateWindow. Reasoning: CoveragePeriod is a specific type of DateWindow, as it refers to a time interval with a particular purpose\u2014active insurance coverage and benefit availability. DateWindow, on the other hand, is a more general concept that describes any time period bounded by a start and end date, regardless of context. Since all CoveragePeriods are DateWindows (they have a start and end date), but not all DateWindows are CoveragePeriods (e.g., a date window for a promotion or a data query), DateWindow is the broader superclass. Therefore, Option A is semantically sound: CoveragePeriod IS A TYPE OF DateWindow. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "DATE",
+      "DATE_WINDOW",
+      "EXPIRATION_DATE",
+      "DATE_PERIOD"
+    ]
+  },
+  {
+    "owl_name": "PremiumPaymentMethod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A specified way or schedule for collecting insurance premiums.",
+    "parents": [
+      "PaymentMethod"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PAYMENT_METHOD",
+    "resolved_gnp": "PaymentMethod",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PremiumPaymentMethod subclassOf PaymentMethod. Reasoning: PaymentMethod is the broader category because it refers to any method or structure for making insurance premium payments, encompassing a wide range of possible approaches. PremiumPaymentMethod is a more specific concept, referring to a specified way or schedule for collecting premiums, which is a subset of all possible payment methods. Therefore, PremiumPaymentMethod is a type of PaymentMethod, making Option B the semantically sound relationship.",
+    "top_members": [
+      "payment method specification",
+      "premium payment method",
+      "payment mode for premium",
+      "payment mechanism for premiums",
+      "method of premium collection",
+      "preferred payment mode",
+      "alternative payment plan",
+      "payment mode specification"
+    ]
+  },
+  {
+    "owl_name": "Rider",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A supplementary benefit added to a life insurance policy, providing additional coverage under specified conditions.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyRider subclassOf Rider. Reasoning: Rider is the broader category because it refers to any supplementary benefit added to a life insurance policy, which encompasses various types of riders, including PolicyRider. PolicyRider is a specific instance or type of rider\u2014specifically, an optional\u9644\u52a0 coverage or benefit added to a policy. Therefore, PolicyRider is a subtype of Rider, making Option A the semantically correct relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "rider costs",
+      "riders",
+      "qualifying condition for Rider 2",
+      "identifier for extended rider coverage",
+      "requirement for rider claim",
+      "rider available during active policy term",
+      "all riders",
+      "rider enabling increased benefits"
+    ]
+  },
+  {
+    "owl_name": "PolicyFormIdentifier",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An official identifier for a specific policy template or product form.",
+    "parents": [
+      "FormIdentifier"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "POLICY_FORM",
+    "resolved_gnp": "FormIdentifier",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyFormIdentifier subclassOf FormIdentifier. Reasoning: PolicyFormIdentifier is the broader category because it refers to an official identifier for a specific policy template or product form, which may encompass various types of forms used in the policy lifecycle. FormIdentifier, on the other hand, is a more general concept referring to any unique code assigned to a form used in a life insurance policy. Since a PolicyFormIdentifier is a specific kind of FormIdentifier (a specialized type used for policy templates), it makes sense that PolicyFormIdentifier is a subclass of FormIdentifier. Therefore, Option B is semantically sound: PolicyFormIdentifier IS A TYPE OF FormIdentifier.",
+    "top_members": [
+      "official version identifier for the policy",
+      "specific policy form identifier",
+      "official identifier for policy template",
+      "official identifier of product"
+    ]
+  },
+  {
+    "owl_name": "ContactInformation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A piece of information used to contact an individual, such as a phone number or identifier.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "NUMBER",
+      "PHONE_NUMBER"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefitPayout",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A payout made upon proof of death, triggered by non-payment during initial policy years.",
+    "parents": [
+      "DeathBenefit"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitPayout subclassOf DeathBenefit. Reasoning: DeathBenefit is the broader category because it encompasses all benefits paid upon the insured's death, including various forms such as standard payouts, accelerated benefits, or enhanced payments. DeathBenefitPayout is a specific type of death benefit that refers specifically to a payout triggered by non-payment during initial policy years, which is a narrower, more specific scenario. Therefore, DeathBenefitPayout is a type of DeathBenefit, making DeathBenefit the appropriate superclass.",
+    "top_members": [
+      "non-payment trigger for initial death",
+      "payout option for non-accidental death in early years",
+      "payout process upon proof of death"
+    ]
+  },
+  {
+    "owl_name": "PlatformEnrollment",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The process of registering or enrolling a policyholder on a digital platform for life insurance services.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "platform enrollment",
+      "Platform Enrollment"
+    ]
+  },
+  {
+    "owl_name": "PolicyProvision",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A section in a life insurance contract that outlines specific terms or benefits related to policy coverage.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ARTICLE",
+    "resolved_gnp": "PolicyArticle",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyArticle subclassOf PolicyProvision. Reasoning: PolicyProvision is the broader category because it refers to any specific term or benefit within a life insurance contract, which can encompass various types of clauses or sections. PolicyArticle, on the other hand, is a more specific term referring to a section or clause within a policy document\u2014essentially a structural component. Since a PolicyArticle is a type of content that may express a PolicyProvision, but not all PolicyProvisions are necessarily called 'Articles' (they could be 'clauses', 'sections', or 'terms'), it follows that PolicyArticle is a subtype of PolicyProvision. Therefore, PolicyProvision is the more general superclass, and PolicyArticle is a specific kind of provision. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "section governing premium payments",
+      "section detailing death benefit options",
+      "section detailing policy disclosures",
+      "section referencing future benefits provision"
+    ]
+  },
+  {
+    "owl_name": "DeathBenefit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A benefit paid upon the insured's death, potentially including accelerations or enhancements.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "RIDER",
+    "resolved_gnp": "Rider",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitPayout subclassOf DeathBenefit. Reasoning: DeathBenefit is the broader category because it encompasses all benefits paid upon the insured's death, including various forms such as standard payouts, accelerated benefits, or enhanced payments. DeathBenefitPayout is a specific type of death benefit that refers specifically to a payout triggered by non-payment during initial policy years, which is a narrower, more specific scenario. Therefore, DeathBenefitPayout is a type of DeathBenefit, making DeathBenefit the appropriate superclass. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "provides pre-death benefit access",
+      "death",
+      "Attached rider waiving premiums after first death",
+      "allows partial death benefit acceleration",
+      "lump-sum benefit on first death",
+      "advance of portion of death benefit post-first death",
+      "provides benefit upon payor's death",
+      "provides extra payout for accidental death"
+    ]
+  },
+  {
+    "owl_name": "FinancialFigure",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A monetary value referenced in the initial section of a life insurance contract.",
+    "parents": [
+      "MonetaryAmount"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "MONETARY_VALUE",
+    "resolved_gnp": "MonetaryAmount",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set FinancialFigure subclassOf MonetaryAmount. Reasoning: MonetaryAmount is the broader category because it refers to any quantity of money expressed in a specific currency, which is a general concept applicable across many domains. FinancialFigure, on the other hand, is a more specific concept defined as a monetary value referenced in the initial section of a life insurance contract. Since a FinancialFigure is a particular instance or use case of a MonetaryAmount within a specific contractual context, it is a subtype of MonetaryAmount. Therefore, FinancialFigure IS A TYPE OF MonetaryAmount, making Option B the semantically sound choice.",
+    "top_members": [
+      "financial figure referenced in initial line"
+    ]
+  },
+  {
+    "owl_name": "InvestmentOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A configurable investment choice within a life insurance policy allowing allocation across asset classes.",
+    "parents": [
+      "InvestmentVehicle"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "PORTFOLIO",
+    "resolved_gnp": "Portfolio",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InvestmentOption subclassOf InvestmentVehicle. Reasoning: InvestmentVehicle is the broader category because it refers to any financial instrument used for investment purposes, such as stocks, bonds, mutual funds, or ETFs. InvestmentOption, on the other hand, is a specific type of investment vehicle that is configurable within the context of a life insurance policy. Therefore, an InvestmentOption is a specialized instance of an InvestmentVehicle, making InvestmentVehicle the parent class and InvestmentOption the child class.",
+    "top_members": [
+      "equity investment choice",
+      "investment vehicle for small-to-mid cap stocks",
+      "diversified allocation across asset classes"
+    ]
+  },
+  {
+    "owl_name": "ContestabilityPeriod",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A two-year period after policy issuance during which the insurer may contest claims based on misrepresentation.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "EXCLUSION",
+    "resolved_gnp": "Exclusion",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set IncontestabilityPeriodDuration subclassOf ContestabilityPeriod. Reasoning: ContestabilityPeriod is the broader category because it refers to the general concept of a time period (typically two years) after policy issuance during which an insurer can contest claims. IncontestabilityPeriodDuration is a specific instance or attribute of that period\u2014the duration during which the insurer cannot contest the policy. Thus, IncontestabilityPeriodDuration is a type of ContestabilityPeriod, as it describes a key characteristic (the duration) of the broader concept. Therefore, ContestabilityPeriod is the parent class, and IncontestabilityPeriodDuration is the child class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "period during which policy can be contested",
+      "limits liability within two years of issue",
+      "ends after two years of continuous existence",
+      "limitation on claims within two years",
+      "eligibility restriction after two years",
+      "limitation period for claim disputes",
+      "exclusion clause applicable within first two years",
+      "eligibility restriction within first 24 months"
+    ]
+  },
+  {
+    "owl_name": "UnderwritingClassification",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A categorization of an insured's risk based on underwriting criteria and actuarial assessment.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "CONCEPT",
+    "resolved_gnp": "PolicyContract",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set UnderwritingClass subclassOf UnderwritingClassification. Reasoning: UnderwritingClassification is the broader category because it refers to the general process or outcome of categorizing an insured's risk based on underwriting criteria and actuarial assessment. UnderwritingClass, on the other hand, is a specific instance or type of such a classification\u2014used concretely to determine risk and premiums. Therefore, UnderwritingClass is a more specific type of UnderwritingClassification, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Underwriting classification of insured",
+      "Underwriting Classification",
+      "underwriting method used",
+      "highest underwriting classification",
+      "substandard risk classification",
+      "underwriting class classification",
+      "Underwriting basis descriptor",
+      "underwriting classification for risk assessment"
+    ]
+  },
+  {
+    "owl_name": "InvestmentVehicle",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A financial instrument used to grow premiums over time through market-linked or diversified investment strategies.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ACCOUNT",
+    "resolved_gnp": "Account",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InvestmentOption subclassOf InvestmentVehicle. Reasoning: InvestmentVehicle is the broader category because it refers to any financial instrument used for investment purposes, such as stocks, bonds, mutual funds, or ETFs. InvestmentOption, on the other hand, is a specific type of investment vehicle that is configurable within the context of a life insurance policy. Therefore, an InvestmentOption is a specialized instance of an InvestmentVehicle, making InvestmentVehicle the parent class and InvestmentOption the child class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "funding mechanism for future premiums",
+      "uncapped growth opportunity",
+      "global diversified income generator",
+      "index-linked growth vehicle",
+      "long-term diversified growth vehicle",
+      "balanced market-linked investment vehicle",
+      "maximizes long-term growth potential",
+      "investment vehicle for allocated premiums"
+    ]
+  },
+  {
+    "owl_name": "SpousalIncomeBenefit",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A benefit that provides income to a spouse after the insured's death.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "RIDER",
+    "resolved_gnp": "Rider",
+    "flagged": true,
+    "flag_reason": "No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "provides post-death spousal income"
+    ]
+  },
+  {
+    "owl_name": "Beneficiary",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A person or entity designated to receive death benefit proceeds from a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "ORGANIZATION",
+    "resolved_gnp": "Organization",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set DeathBenefitRecipient subclassOf Beneficiary. Reasoning: Beneficiary is the broader category because it encompasses any person or entity designated to receive proceeds from a life insurance policy, which may include death benefits as well as other types of payouts (e.g., cash surrender values, maturity benefits). DeathBenefitRecipient is a more specific role\u2014limited to those receiving only the death benefit upon the insured's death. Therefore, DeathBenefitRecipient is a type of Beneficiary, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "primary beneficiary",
+      "contingent beneficiary",
+      "beneficiary of death benefit",
+      "Contingent Beneficiary",
+      "recipient of benefits",
+      "receives portion of death benefit",
+      "primary beneficiary if exists at second death",
+      "primary beneficiary spouse"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "total_documents": 10,
+  "candidates_before_filter": 6974,
+  "candidates_after_filter": 6974,
+  "by_origin": {
+    "chunk_topic": {
+      "before": 1712,
+      "after": 1712,
+      "threshold_used": 1
+    },
+    "edge_label": {
+      "before": 3665,
+      "after": 3665,
+      "threshold_used": 1
+    },
+    "entity_role": {
+      "before": 612,
+      "after": 612,
+      "threshold_used": 1
+    },
+    "entity_type": {
+      "before": 98,
+      "after": 98,
+      "threshold_used": 1
+    },
+    "fact_name": {
+      "before": 887,
+      "after": 887,
+      "threshold_used": 1
+    }
+  }
+}

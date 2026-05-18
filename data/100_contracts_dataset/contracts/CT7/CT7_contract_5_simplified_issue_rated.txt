@@ -1,0 +1,201 @@
+═══════════════════════════════════════════════════════════════════
+       SIMPLIFIED ISSUE LEVEL TERM LIFE INSURANCE POLICY
+       QuickCover Life Insurance Company
+═══════════════════════════════════════════════════════════════════
+
+Policy Number: QC-SI-2024-7721
+Policy Date: May 20, 2024
+Policy Type: 10-Year Simplified Issue Level Term
+Issue Basis: Non-medical; Application and MIB report only
+             No paramedical exam; No blood or urine specimen
+
+═══════════════════════════════════════════════════════════════════
+INSURED INFORMATION
+═══════════════════════════════════════════════════════════════════
+Name: Frederick Anthony Calloway
+Sex: Male
+Date of Birth: August 8, 1966
+Issue Age: 57
+Underwriting Class: Standard – Table B (Rated)
+Rating Reason: Controlled Type 2 Diabetes; BMI 31.4
+Health Rating Surcharge: 50% of standard premium
+
+═══════════════════════════════════════════════════════════════════
+OWNERSHIP
+═══════════════════════════════════════════════════════════════════
+Owner: Frederick Anthony Calloway (Self)
+
+═══════════════════════════════════════════════════════════════════
+BASE POLICY
+═══════════════════════════════════════════════════════════════════
+Face Amount: $150,000
+Policy Period: 10 years (expires May 20, 2034)
+Standard Base Premium: $1,782.00/year
+Table B Surcharge (50%): $891.00/year
+Total Base Annual Premium: $2,673.00
+Total Annual Premium (including riders): $2,998.00
+
+SIMPLIFIED ISSUE NOTICE: This policy was issued without a medical
+examination on the basis of answers to health questions provided
+in the application. Accordingly, the following underwriting
+conditions apply:
+  • 2-year contestability period applies to full face amount
+  • Pre-existing condition limitation applies (see Section 1.4)
+  • Face amount limited to $150,000 maximum for this issue class
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARIES
+═══════════════════════════════════════════════════════════════════
+Primary:    Patricia Ann Calloway (Wife) – 100%
+Contingent: Frederick Calloway III (Son) – 50%
+            Dominique Calloway (Daughter) – 50%
+
+═══════════════════════════════════════════════════════════════════
+POLICY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+"Pre-Existing Condition" means any condition for which the insured
+received medical advice, diagnosis, or treatment within 24 months
+prior to the policy date.
+
+"Accidental Bodily Injury" means bodily injury caused directly and
+exclusively by accidental means, independent of illness or disease.
+
+"Natural Death" for purposes of this policy means death from any
+cause other than accidental bodily injury.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 1: BASE POLICY COVERAGE
+═══════════════════════════════════════════════════════════════════
+1.1 We will pay $150,000 upon the insured's death during the policy
+    period, subject to the exclusions and limitations below.
+
+1.2 Payment will be made to the beneficiary within 30 days of
+    receiving satisfactory proof of death and a completed claim form.
+
+1.3 EXCLUSION – SUICIDE: Death by suicide within 2 years of the
+    policy date is limited to a return of premiums paid without
+    interest.
+
+1.4 PRE-EXISTING CONDITION LIMITATION (Years 1–2 Only):
+    If death occurs within the first 2 policy years and results
+    from a Pre-Existing Condition, the benefit is limited to a
+    return of all premiums paid plus 10% interest, compounded
+    annually. This limitation does not apply after the end of the
+    second policy year (May 20, 2026), at which point the full face
+    amount is payable for any cause.
+
+    The following conditions are expressly acknowledged as Pre-Existing:
+      • Type 2 Diabetes Mellitus (diagnosed 2019)
+      • Hypertension (diagnosed 2021, currently medicated)
+      • Elevated triglycerides (managed with diet and medication)
+
+1.5 EXCLUSION – ILLEGAL ACTIVITY: No benefit is payable if death
+    results directly from the insured's commission of or attempt
+    to commit an illegal act classified as a felony under applicable
+    state or federal law.
+
+1.6 EXCLUSION – NARCOTICS: No benefit is payable if death results
+    from the use of non-prescribed narcotics or controlled substances,
+    except in cases of accidental overdose of prescribed medication
+    taken as directed.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 2: ATTACHED RIDERS
+═══════════════════════════════════════════════════════════════════
+
+RIDER 1: ACCIDENTAL DEATH BENEFIT RIDER
+Premium: $180/year
+
+Pays an additional $150,000 (doubling the total benefit to $300,000)
+if death results directly from Accidental Bodily Injury:
+• Accident must be the sole cause; death must occur within 180 days
+• Excludes: suicide, self-inflicted injury, drug or alcohol influence,
+  piloting non-commercial aircraft, war, professional athletics
+• NOT subject to the pre-existing condition limitation in Section 1.4;
+  accidental death benefit is payable from policy date forward
+• Rider terminates at the insured's age 65 (in Year 8)
+  After age 65, the rider premium ceases and no ADB is payable
+
+RIDER 2: TERMINAL ILLNESS BENEFIT RIDER
+Premium: $145/year
+
+If the insured is diagnosed by a licensed physician as having a
+terminal illness with life expectancy of 12 months or fewer:
+• Up to 60% of the in-force face amount may be advanced ($90,000 max)
+• Subject to the pre-existing condition limitation in Year 1 only
+  (not Year 2, as the rider has its own 12-month waiting period)
+• Minimum advance: $15,000
+• No actuarial discount applied; full requested amount disbursed
+• Death benefit reduced dollar-for-dollar; remaining benefit paid
+  to beneficiary at death
+
+═══════════════════════════════════════════════════════════════════
+SECTION 3: TABLE RATING REVIEW PROVISION
+═══════════════════════════════════════════════════════════════════
+3.1 After this policy has been in force for 3 years, Frederick
+    Anthony Calloway may request a rating review. To qualify:
+    • Must submit a new health questionnaire and physician statement
+    • HbA1c must be ≤ 7.5% (well-controlled) for 12+ months
+    • Must have maintained stable BMI within 2 points of issue BMI
+    • No new rated conditions may have developed
+
+3.2 If approved, the Table B surcharge will be removed and premium
+    will be recalculated at Standard non-rated rates for attained age.
+    One review request per policy is permitted.
+
+3.3 Rating upgrade is prospective only; no retroactive premium
+    adjustment will be made.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 4: PREMIUM PAYMENT
+═══════════════════════════════════════════════════════════════════
+4.1 Total Annual Premium: $2,998.00
+    Due Date: May 20 of each year
+    Payment Mode: Annual; monthly option: $264.90/month
+
+4.2 GRACE PERIOD: 31 days from due date.
+
+4.3 LAPSE AND REINSTATEMENT: Policy may be reinstated within 2
+    years of lapse upon payment of all back premiums plus interest
+    at 8% per annum. Due to simplified issue basis, reinstatement
+    does not require a medical examination but does require a new
+    health questionnaire. Reinstatement is subject to underwriting
+    approval and may be declined if significant health changes
+    have occurred.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 5: CONVERSION PRIVILEGE
+═══════════════════════════════════════════════════════════════════
+5.1 This simplified issue policy may be converted to a permanent
+    policy within the first 5 policy years only, and only to
+    QuickCover's Simplified Issue Whole Life product.
+    Full-underwriting permanent products are not available under
+    the conversion privilege of this policy.
+
+5.2 Conversion is not subject to evidence of insurability, but the
+    permanent policy's face amount shall not exceed $150,000.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 6: INCONTESTABILITY
+═══════════════════════════════════════════════════════════════════
+After this policy has been in force for 2 years during the
+insured's lifetime, we will not contest it except for non-payment
+of premiums. The pre-existing condition limitation in Section 1.4
+terminates simultaneously at the end of policy year 2.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 7: GOVERNING LAW
+═══════════════════════════════════════════════════════════════════
+This policy is governed by the laws of the State of Georgia.
+
+═══════════════════════════════════════════════════════════════════
+
+Issued in Atlanta, Georgia
+
+[SIGNATURE]
+________________________
+President, QuickCover Life Insurance Company
+
+Date: May 20, 2024
+
+═══════════════════════════════════════════════════════════════════

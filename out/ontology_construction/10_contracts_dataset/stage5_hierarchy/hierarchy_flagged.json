@@ -1,0 +1,396 @@
+[
+  {
+    "owl_name": "OngoingCharge",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A recurring fee or charge applied during the life of a policy.",
+    "parents": [
+      "Charge"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set OngoingCharge subclassOf Charge. Reasoning: Charge is the broader category because it encompasses all financial costs within a life insurance contract, including recurring fees (OngoingCharge), one-time fees, premiums, and penalties. OngoingCharge is a specific type of Charge that refers only to recurring fees applied during the life of a policy. Therefore, OngoingCharge is a subtype of Charge, making Option A the semantically sound relationship.",
+    "top_members": [
+      "Ongoing Charges",
+      "back charges"
+    ]
+  },
+  {
+    "owl_name": "Charge",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A financial cost imposed within a life insurance contract, including fees, penalties, or premiums.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set OngoingCharge subclassOf Charge. Reasoning: Charge is the broader category because it encompasses all financial costs within a life insurance contract, including recurring fees (OngoingCharge), one-time fees, premiums, and penalties. OngoingCharge is a specific type of Charge that refers only to recurring fees applied during the life of a policy. Therefore, OngoingCharge is a subtype of Charge, making Option A the semantically sound relationship. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "CHARGE",
+      "FEE",
+      "FEES",
+      "PENALTY",
+      "PREMIUM"
+    ]
+  },
+  {
+    "owl_name": "PolicyEntity",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "An entity associated with a life insurance policy, including persons or legal entities holding rights or obligations.",
+    "parents": [
+      "InsuranceContract"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyEntity subclassOf InsuranceContract. Reasoning: InsuranceContract is the broader category because it represents a formal agreement that can encompass various types of entities and relationships, including PolicyEntity. A PolicyEntity is a specific type of entity (such as a policyholder, beneficiary, or insurer) that is associated with an InsuranceContract, but not all InsuranceContracts are PolicyEntities. Therefore, PolicyEntity is a specialized concept that exists within the context of an InsuranceContract, making it a subclass of InsuranceContract. This aligns with the semantic hierarchy where the contract (InsuranceContract) is the overarching legal framework, and the entities involved (PolicyEntity) are participants within that framework.",
+    "top_members": [
+      "PERSON",
+      "POLICY",
+      "POLICY_TERM",
+      "ENTITY",
+      "LEGAL_ENTITY",
+      "IDENTIFIER",
+      "POLICY_FEATURE",
+      "TITLE"
+    ]
+  },
+  {
+    "owl_name": "Exclusion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition or circumstance that is excluded from coverage under a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyExclusion subclassOf Exclusion. Reasoning: Exclusion is the broader category because it refers to any condition or circumstance excluded from coverage under a life insurance policy, which encompasses a wide range of possible exclusions. PolicyExclusion is a more specific type of exclusion that emphasizes the explicit, formal exclusion stated in the policy document. Therefore, PolicyExclusion is a subtype of Exclusion, making Exclusion the parent class and PolicyExclusion the child class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "EXCLUSION",
+      "EXCEPTION"
+    ]
+  },
+  {
+    "owl_name": "InsuranceContract",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A formal agreement providing coverage under specified terms and conditions.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": "POLICY",
+    "resolved_gnp": "PolicyEntity",
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyEntity subclassOf InsuranceContract. Reasoning: InsuranceContract is the broader category because it represents a formal agreement that can encompass various types of entities and relationships, including PolicyEntity. A PolicyEntity is a specific type of entity (such as a policyholder, beneficiary, or insurer) that is associated with an InsuranceContract, but not all InsuranceContracts are PolicyEntities. Therefore, PolicyEntity is a specialized concept that exists within the context of an InsuranceContract, making it a subclass of InsuranceContract. This aligns with the semantic hierarchy where the contract (InsuranceContract) is the overarching legal framework, and the entities involved (PolicyEntity) are participants within that framework. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "insurance product offered",
+      "insurance contract issued under policy number",
+      "insured coverage subject to terms",
+      "insurance contract subject to rules"
+    ]
+  },
+  {
+    "owl_name": "InvestmentAllocation",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The distribution of funds across investment options within a life insurance policy.",
+    "parents": [
+      "InvestmentOption"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InvestmentAllocation subclassOf InvestmentOption. Reasoning: InvestmentOption is the broader category because it represents a general choice or available option for fund allocation within a life insurance policy. InvestmentAllocation, on the other hand, refers to the actual distribution or assignment of funds across one or more such options. Therefore, an InvestmentAllocation is a specific instance or application of selecting and distributing funds among InvestmentOptions, making it a type of InvestmentOption in a broader sense. However, this is not accurate semantically\u2014actually, InvestmentAllocation is not a type of InvestmentOption; rather, InvestmentOption is a type of choice that can be included in an InvestmentAllocation. The correct relationship is that InvestmentAllocation is a composite concept that involves one or more InvestmentOptions. Thus, the correct hierarchy is: InvestmentOption is the broader category (parent), and InvestmentAllocation is the more specific concept (child), as it is a structured allocation that uses InvestmentOptions. Hence, Option A is the most semantically sound: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still problematic. Wait \u2014 reconsider: if InvestmentAllocation is the distribution across options, then it is not a type of InvestmentOption. Rather, InvestmentOption is a component of InvestmentAllocation. Therefore, the correct relationship is that InvestmentAllocation is a container or aggregate of InvestmentOptions. So neither is a subclass of the other. But since we must choose one as parent, the broader concept is InvestmentOption \u2014 because it is a fundamental choice, while InvestmentAllocation is a higher-level construct that includes multiple options. Thus, the correct decision is: InvestmentOption is the parent, and InvestmentAllocation is the child. So Option A is correct: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still not accurate. Actually, InvestmentAllocation is not a type of InvestmentOption. The correct logical relationship is that InvestmentAllocation *contains* InvestmentOptions. Therefore, the only way to resolve the mutual subclass error is to recognize that InvestmentOption is the broader, more fundamental concept. InvestmentAllocation is a specific kind of financial arrangement that involves InvestmentOptions. So, InvestmentAllocation is a type of financial strategy or structure, while InvestmentOption is a choice. But since we must pick one as parent, and InvestmentOption is a prerequisite for InvestmentAllocation, the broader category is InvestmentOption. Therefore, the correct decision is: InvestmentOption is the parent, and InvestmentAllocation is the child. So Option A is correct: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still not accurate. The correct answer is that InvestmentAllocation is not a type of InvestmentOption. However, in the context of the mutual subclass error, we must choose the broader concept. InvestmentOption is the broader concept because it represents a category of choices, while InvestmentAllocation is a specific instance of how funds are distributed among those choices. Therefore, InvestmentOption is the parent. So the correct decision is Option A.",
+    "top_members": [
+      "investment allocation",
+      "Investment Allocation",
+      "allocation changes",
+      "premium allocation",
+      "policy distribution",
+      "Portfolio Allocation",
+      "Investment Distribution",
+      "current allocation"
+    ]
+  },
+  {
+    "owl_name": "RiskClassification",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A categorization of an individual's insurability based on health, lifestyle, and other risk factors.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set UnderwritingClass subclassOf RiskClassification. Reasoning: RiskClassification is the broader category because it encompasses the general process of categorizing insurability based on various risk factors, including health, lifestyle, and other attributes. UnderwritingClass is a specific application of risk classification within the context of life insurance underwriting. Therefore, UnderwritingClass is a type of RiskClassification, making RiskClassification the parent class and UnderwritingClass the child class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Risk Classification",
+      "Risk Class",
+      "risk classification",
+      "Risk Protection",
+      "insurance classification",
+      "risk protection",
+      "Underwriting Classification",
+      "risk class"
+    ]
+  },
+  {
+    "owl_name": "PolicyExclusion",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition or circumstance explicitly excluded from coverage in a life insurance policy.",
+    "parents": [
+      "Exclusion"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyExclusion subclassOf Exclusion. Reasoning: Exclusion is the broader category because it refers to any condition or circumstance excluded from coverage under a life insurance policy, which encompasses a wide range of possible exclusions. PolicyExclusion is a more specific type of exclusion that emphasizes the explicit, formal exclusion stated in the policy document. Therefore, PolicyExclusion is a subtype of Exclusion, making Exclusion the parent class and PolicyExclusion the child class.",
+    "top_members": [
+      "policy exclusions",
+      "exclusions",
+      "Exclusions",
+      "two-year exclusion",
+      "liability exclusion",
+      "time-limited exclusions",
+      "policy exclusion clause",
+      "two-year exclusion period"
+    ]
+  },
+  {
+    "owl_name": "PolicyOwnership",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The legal right to own and control a life insurance policy.",
+    "parents": [
+      "OwnershipRight"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyOwnership subclassOf OwnershipRight. Reasoning: OwnershipRight is the broader category because it refers to the general legal concept of owning and controlling any asset, including life insurance policies. PolicyOwnership is a specific instance of this broader concept, referring specifically to ownership rights related to life insurance policies. Therefore, PolicyOwnership is a type of OwnershipRight, making Option A the semantically sound choice.",
+    "top_members": [
+      "policy ownership",
+      "Policy Owner",
+      "ownership rights",
+      "Ownership Percentage",
+      "Policy Ownership",
+      "owner rights",
+      "Ownership Details",
+      "Policy Owner Details"
+    ]
+  },
+  {
+    "owl_name": "UnderwritingClass",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A classification of an applicant based on health and risk factors for life insurance.",
+    "parents": [
+      "RiskClassification"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set UnderwritingClass subclassOf RiskClassification. Reasoning: RiskClassification is the broader category because it encompasses the general process of categorizing insurability based on various risk factors, including health, lifestyle, and other attributes. UnderwritingClass is a specific application of risk classification within the context of life insurance underwriting. Therefore, UnderwritingClass is a type of RiskClassification, making RiskClassification the parent class and UnderwritingClass the child class.",
+    "top_members": [
+      "underwriting class",
+      "Policy Underwriting",
+      "underwriting",
+      "Underwriting Class",
+      "Underwriting Status",
+      "Underwriting Information",
+      "underwriting terms",
+      "Health-Based Underwriting"
+    ]
+  },
+  {
+    "owl_name": "OnlinePortal",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A web-based platform accessed via a website address for managing insurance services.",
+    "parents": [
+      "Website"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set OnlinePortal subclassOf Website. Reasoning: OnlinePortal is a specific type of Website, as it is a web-based platform with a defined purpose (managing insurance services). A Website is a broader category that encompasses any digital platform providing information or services, including OnlinePortals. Therefore, OnlinePortal is a specialized form of Website, making Website the broader superclass and OnlinePortal the subclass.",
+    "top_members": [
+      "website address",
+      "website",
+      "online portal"
+    ]
+  },
+  {
+    "owl_name": "InvestmentOption",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A choice available to the policyholder for allocating funds within a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set InvestmentAllocation subclassOf InvestmentOption. Reasoning: InvestmentOption is the broader category because it represents a general choice or available option for fund allocation within a life insurance policy. InvestmentAllocation, on the other hand, refers to the actual distribution or assignment of funds across one or more such options. Therefore, an InvestmentAllocation is a specific instance or application of selecting and distributing funds among InvestmentOptions, making it a type of InvestmentOption in a broader sense. However, this is not accurate semantically\u2014actually, InvestmentAllocation is not a type of InvestmentOption; rather, InvestmentOption is a type of choice that can be included in an InvestmentAllocation. The correct relationship is that InvestmentAllocation is a composite concept that involves one or more InvestmentOptions. Thus, the correct hierarchy is: InvestmentOption is the broader category (parent), and InvestmentAllocation is the more specific concept (child), as it is a structured allocation that uses InvestmentOptions. Hence, Option A is the most semantically sound: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still problematic. Wait \u2014 reconsider: if InvestmentAllocation is the distribution across options, then it is not a type of InvestmentOption. Rather, InvestmentOption is a component of InvestmentAllocation. Therefore, the correct relationship is that InvestmentAllocation is a container or aggregate of InvestmentOptions. So neither is a subclass of the other. But since we must choose one as parent, the broader concept is InvestmentOption \u2014 because it is a fundamental choice, while InvestmentAllocation is a higher-level construct that includes multiple options. Thus, the correct decision is: InvestmentOption is the parent, and InvestmentAllocation is the child. So Option A is correct: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still not accurate. Actually, InvestmentAllocation is not a type of InvestmentOption. The correct logical relationship is that InvestmentAllocation *contains* InvestmentOptions. Therefore, the only way to resolve the mutual subclass error is to recognize that InvestmentOption is the broader, more fundamental concept. InvestmentAllocation is a specific kind of financial arrangement that involves InvestmentOptions. So, InvestmentAllocation is a type of financial strategy or structure, while InvestmentOption is a choice. But since we must pick one as parent, and InvestmentOption is a prerequisite for InvestmentAllocation, the broader category is InvestmentOption. Therefore, the correct decision is: InvestmentOption is the parent, and InvestmentAllocation is the child. So Option A is correct: InvestmentAllocation IS A TYPE OF InvestmentOption \u2014 but this is still not accurate. The correct answer is that InvestmentAllocation is not a type of InvestmentOption. However, in the context of the mutual subclass error, we must choose the broader concept. InvestmentOption is the broader concept because it represents a category of choices, while InvestmentAllocation is a specific instance of how funds are distributed among those choices. Therefore, InvestmentOption is the parent. So the correct decision is Option A. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "Investment Options",
+      "investment risk",
+      "investment warning",
+      "investment instruction",
+      "investment instructions",
+      "investment options"
+    ]
+  },
+  {
+    "owl_name": "PolicyFinancialGrowth",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The increase in a life insurance policy's cash value or financial worth over time.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CashValueGrowth subclassOf PolicyFinancialGrowth. Reasoning: PolicyFinancialGrowth is the broader category because it encompasses not only cash value growth but also other forms of financial increase in a life insurance policy, such as dividend growth, loan value appreciation, or investment gains within the policy. CashValueGrowth is a specific type of PolicyFinancialGrowth, focusing exclusively on the increase in the policy's cash value. Therefore, CashValueGrowth is a subtype of PolicyFinancialGrowth, making Option B the semantically sound choice. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "policy growth",
+      "Policy Growth Schedule",
+      "Investment Growth",
+      "Policy Financial Growth"
+    ]
+  },
+  {
+    "owl_name": "CashValueGrowth",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The increase in the cash value of a life insurance policy over time.",
+    "parents": [
+      "PolicyFinancialGrowth"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set CashValueGrowth subclassOf PolicyFinancialGrowth. Reasoning: PolicyFinancialGrowth is the broader category because it encompasses not only cash value growth but also other forms of financial increase in a life insurance policy, such as dividend growth, loan value appreciation, or investment gains within the policy. CashValueGrowth is a specific type of PolicyFinancialGrowth, focusing exclusively on the increase in the policy's cash value. Therefore, CashValueGrowth is a subtype of PolicyFinancialGrowth, making Option B the semantically sound choice.",
+    "top_members": [
+      "Cash Value Growth",
+      "Account Value Growth"
+    ]
+  },
+  {
+    "owl_name": "OwnershipRight",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "The legal right to own and control a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set PolicyOwnership subclassOf OwnershipRight. Reasoning: OwnershipRight is the broader category because it refers to the general legal concept of owning and controlling any asset, including life insurance policies. PolicyOwnership is a specific instance of this broader concept, referring specifically to ownership rights related to life insurance policies. Therefore, PolicyOwnership is a type of OwnershipRight, making Option A the semantically sound choice. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "OWNER_RIGHT",
+      "RIGHT"
+    ]
+  },
+  {
+    "owl_name": "TerminationCondition",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A condition that must be met for a life insurance policy to terminate.",
+    "parents": [
+      "PolicyTermination"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set TerminationCondition subclassOf PolicyTermination. Reasoning: TerminationCondition is the broader category because it refers to any condition that can lead to the termination of a life insurance policy, which encompasses various types of events or clauses. PolicyTermination, on the other hand, specifically refers to a clause or event that ends the policy's active status\u2014making it a more specific instance of a termination condition. Therefore, PolicyTermination is a type of TerminationCondition, meaning TerminationCondition is the parent class and PolicyTermination is the child class.",
+    "top_members": [
+      "TERMINATION_CONDITION"
+    ]
+  },
+  {
+    "owl_name": "Website",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A digital platform used for providing information or services related to a life insurance policy.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set OnlinePortal subclassOf Website. Reasoning: OnlinePortal is a specific type of Website, as it is a web-based platform with a defined purpose (managing insurance services). A Website is a broader category that encompasses any digital platform providing information or services, including OnlinePortals. Therefore, OnlinePortal is a specialized form of Website, making Website the broader superclass and OnlinePortal the subclass. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "WEBSITE"
+    ]
+  },
+  {
+    "owl_name": "PolicyTermination",
+    "is_abstract": false,
+    "inferred_top_level": false,
+    "definition": "A clause or event that ends a life insurance policy's active status.",
+    "parents": [
+      "owl:Thing"
+    ],
+    "placement_confidence": "high",
+    "placement_source": "llm",
+    "graph_native_parent": null,
+    "resolved_gnp": null,
+    "flagged": true,
+    "flag_reason": "Two-node cycle resolved: Set TerminationCondition subclassOf PolicyTermination. Reasoning: TerminationCondition is the broader category because it refers to any condition that can lead to the termination of a life insurance policy, which encompasses various types of events or clauses. PolicyTermination, on the other hand, specifically refers to a clause or event that ends the policy's active status\u2014making it a more specific instance of a termination condition. Therefore, PolicyTermination is a type of TerminationCondition, meaning TerminationCondition is the parent class and PolicyTermination is the child class. | No parent assigned after cycle resolution \u2014 defaulted to owl:Thing for review.",
+    "top_members": [
+      "policy termination",
+      "Policy Termination",
+      "termination clause",
+      "timing of termination",
+      "Policy termination",
+      "Post-Premium Termination Benefits",
+      "non-premium-related termination",
+      "employment termination"
+    ]
+  }
+]

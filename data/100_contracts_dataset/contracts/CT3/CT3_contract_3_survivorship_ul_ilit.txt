@@ -1,0 +1,271 @@
+═══════════════════════════════════════════════════════════════════
+       SURVIVORSHIP UNIVERSAL LIFE INSURANCE POLICY
+                    (Second-to-Die)
+              Heartland Heritage Life Insurance
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: HHL-SUL-24-05514
+Issue Date: April 1, 2024
+
+NOTICE: This policy insures two lives and pays the death benefit 
+upon the death of the LAST surviving Insured. No benefit is paid 
+upon the death of the first Insured to die.
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSUREDS
+═══════════════════════════════════════════════════════════════════
+Owner: The Beaumont Irrevocable Life Insurance Trust
+        Dated March 15, 2024
+        EIN: 92-0041873
+        Trustee: First Citizens Bank & Trust Co.
+
+Insured 1: George William Beaumont
+           Gender: Male | DOB: 09/03/1952 | Age: 71
+           Risk Class: Standard Nonsmoker
+
+Insured 2: Elaine Marie Beaumont
+           Gender: Female | DOB: 01/28/1955 | Age: 69
+           Risk Class: Preferred Nonsmoker
+
+Joint Issue Age (Actuarial Equivalent): 68
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $3,000,000
+Planned Premium: $8,500/month
+Minimum Premium: $4,100/month
+Target Premium: $8,500/month
+Death Benefit Option: Level (Option A)
+Estate Tax Planning Purpose: Proceeds designated to fund 
+federal estate tax liability on death of survivor.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: The Beaumont Irrevocable Life Insurance Trust - 100%
+         (Same entity as Policy Owner)
+
+Contingent: The Beaumont Children's Trust - 100%
+
+NOTE: Because the Owner is an ILIT, proceeds received by the 
+Trust are designed to be excluded from the gross estates of 
+both Insureds, subject to applicable IRS rules regarding 
+incidents of ownership and the three-year lookback rule 
+under IRC §2035.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Last Surviving Insured" means the Insured who dies after 
+    the other Insured.
+
+1.2 "First Death" means the death of the first Insured to die.
+
+1.3 "Account Value" means the total of accumulated premiums, 
+    plus credited interest, less monthly charges since issue.
+
+1.4 "Waiver Period" means the period following First Death 
+    during which certain charges are modified (see Article 3).
+
+1.5 "COI" means the joint Cost of Insurance charge, 
+    calculated on the basis of both Insureds' ages and 
+    mortality rates.
+
+1.6 "Surrender Charge" means the charge applicable if the 
+    policy is surrendered within 20 years of issue.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums may be paid at any frequency and amount, subject 
+    to:
+    Minimum per payment: $500
+    Annual maximum: $750,000 (MEC limits apply — see §2.5)
+    Additional premium may require evidence of insurability.
+
+2.2 A premium expense load of 2.5% applies to each premium.
+
+2.3 Crummey withdrawal rights: This policy is designed to be 
+    owned by an ILIT. Premium payments by the Grantors may 
+    qualify for the gift tax annual exclusion only if the 
+    Trust instrument contains valid Crummey withdrawal 
+    powers. We make no representation as to the tax 
+    treatment of contributions. Consult an estate planning 
+    attorney.
+
+2.4 After First Death, the premium payment obligation may 
+    be modified as described in Article 3.
+
+2.5 MODIFIED ENDOWMENT CONTRACT (MEC): If premiums exceed 
+    the 7-pay limit under IRC §7702A, this policy becomes 
+    a MEC. MEC status does not affect the death benefit 
+    but subjects loans and withdrawals to income tax and 
+    possible 10% penalty. We will notify you if a premium 
+    would cause MEC status.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - POST-FIRST-DEATH PROVISIONS
+═══════════════════════════════════════════════════════════════════
+3.1 Upon First Death, the surviving Insured's name, DOB, 
+    and risk class become the sole basis for ongoing COI 
+    calculations.
+
+3.2 PREMIUM WAIVER ON FIRST DEATH (included at no 
+    additional charge): All monthly COI charges are waived 
+    for 12 months following First Death, providing the 
+    Owner premium relief during estate settlement.
+
+3.3 After the 12-month waiver period, regular monthly 
+    deductions resume based on the surviving Insured's 
+    attained age and current COI rates.
+
+3.4 The Owner retains full rights to make premium payments, 
+    take loans, and make withdrawals after First Death.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+4.1 On the 1st of each month, we deduct from Account Value:
+    (a) Joint COI charge (pre-First Death):
+        Calculated using last-survivor mortality table for 
+        both Insureds' ages simultaneously
+    (b) Administrative fee: $15.00/month
+    (c) Outstanding loan interest
+
+4.2 Post-First Death COI (single life basis):
+    COI = (Specified Amount - Account Value) × Monthly 
+    COI Rate for surviving Insured / 1,000
+
+4.3 COI rates are guaranteed not to exceed the maximum rates 
+    in the attached Joint Last-Survivor COI Schedule.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - INTEREST CREDITING
+═══════════════════════════════════════════════════════════════════
+5.1 Interest is credited daily.
+    Guaranteed minimum rate: 2.25% per annum
+    Current credited rate: 4.00% per annum
+
+5.2 We may declare different rates for different account 
+    value tiers:
+    Tier 1 (up to $500,000 AV): Current rate
+    Tier 2 ($500,001 - $2,000,000): Current rate + 0.25%
+    Tier 3 (above $2,000,000): Current rate + 0.50%
+
+5.3 Tiered rates are subject to change, but the guaranteed 
+    minimums apply to all tiers.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+6.1 The death benefit is payable only upon the death of the 
+    Last Surviving Insured.
+
+6.2 No benefit is paid upon First Death. The policy 
+    continues in force following First Death.
+
+6.3 Death Benefit = Specified Amount (Level Option A)
+    Minimum: greater of Specified Amount or 101% of 
+    Account Value at time of Last Surviving Insured's death.
+
+6.4 Death benefit is reduced by outstanding policy loans.
+
+6.5 In the event both Insureds die in a common accident or 
+    within 24 hours of each other, the Last Surviving 
+    Insured is deemed to be the Insured with the greater 
+    Account Value allocation.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 Minimum withdrawal: $1,000
+    Maximum per year: 10% of Account Value (greater of 
+    greater than any applicable surrender charge)
+
+7.2 No withdrawal fee in any policy year.
+
+7.3 Withdrawals reduce Account Value. If Account Value 
+    falls below total of 12 months of projected monthly 
+    deductions, we will notify the Trustee.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+8.1 Maximum loan: 80% of Account Value
+    (Reduced from 90% given estate planning context and 
+    complexity of Trustee borrowing authority)
+
+8.2 Loan interest: Fixed 5.00% per annum
+
+8.3 Loan interest credited on collateral: 4.00% per annum
+    Net cost of borrowing: 1.00% per annum
+
+8.4 TRUSTEE CERTIFICATION: Any loan request must be 
+    accompanied by a certification from the Trustee that 
+    the loan is authorized under the Trust instrument and 
+    applicable state law. We are not responsible for the 
+    validity of Trustee borrowing authority.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER
+═══════════════════════════════════════════════════════════════════
+9.1 Cash Surrender Value = Account Value - Surrender Charge - 
+    Outstanding Loans
+
+9.2 Surrender Charge Schedule (% of Specified Amount):
+    Year 1-2:  9% | Year 3-4:  7% | Year 5-6:  5%
+    Year 7-8:  4% | Year 9-10: 3% | Year 11-15: 2%
+    Year 16-20: 1% | Year 21+: 0%
+
+9.3 The extended 20-year schedule reflects the long-term 
+    estate planning nature of this product.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE EXCLUSION: If either Insured dies by suicide 
+     within 24 months of issue, the death benefit is 
+     replaced by a return of Account Value only if that 
+     Insured is the Last Surviving Insured. First Death 
+     by suicide has no effect on policy terms.
+
+10.2 CONTESTABILITY: Each Insured's application may be 
+     contested separately within 2 years of issue.
+
+10.3 COMMUNITY PROPERTY: If the Insureds reside in a 
+     community property state, community property rights 
+     may affect policy ownership and beneficiary 
+     designations. We recommend consultation with 
+     an estate attorney.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - GRACE PERIOD & LAPSE
+═══════════════════════════════════════════════════════════════════
+11.1 If Account Value is insufficient to cover monthly 
+     deductions, we notify the Trustee and the policy 
+     enters a 61-day grace period.
+
+11.2 Lapse of a survivorship policy may have unintended 
+     estate planning consequences. We strongly encourage 
+     the Trustee to notify the Grantors immediately 
+     of any grace period notice.
+
+11.3 Reinstatement: within 5 years of lapse with evidence 
+     of insurability of the surviving Insured (if 
+     applicable) and payment of overdue charges.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Omaha, Nebraska
+
+[Signature]
+President
+Heartland Heritage Life Insurance
+
+Date: April 1, 2024
+
+Policy Form No. HHL-SUL-24. This policy is issued on a 
+survivorship basis. State variations may apply.
+
+═══════════════════════════════════════════════════════════════════

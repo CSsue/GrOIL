@@ -1,0 +1,225 @@
+═══════════════════════════════════════════════════════════════════
+     SURVIVORSHIP TERM LIFE INSURANCE POLICY (SECOND-TO-DIE)
+     TwinPeak Life Insurance Corporation
+═══════════════════════════════════════════════════════════════════
+
+Policy Number: TP-STD-2024-2288
+Policy Date: September 9, 2024
+Policy Type: 20-Year Survivorship Level Term (Second-to-Die)
+
+═══════════════════════════════════════════════════════════════════
+INSURED INFORMATION
+═══════════════════════════════════════════════════════════════════
+First Insured:
+  Name: Robert Allen Pemberton
+  Sex: Male
+  Date of Birth: March 12, 1955
+  Issue Age: 69
+  Underwriting Class: Standard Non-Smoker – Rated Table C
+  Medical History: History of prostate cancer (2019, in remission);
+    mild coronary artery disease (stable, medicated)
+
+Second Insured:
+  Name: Margaret Louise Pemberton
+  Sex: Female
+  Date of Birth: July 3, 1957
+  Issue Age: 66
+  Underwriting Class: Preferred Non-Smoker
+  Medical History: Osteoporosis (managed); no cardiovascular history
+
+SURVIVORSHIP STRUCTURE: This policy pays the death benefit only
+upon the death of the SECOND insured to die. No benefit is paid
+upon the death of the first insured. Coverage continues in force
+following the death of the first insured; premiums continue until
+the second insured's death or policy expiration.
+
+UNDERWRITING ADVANTAGE: The rated classification of Robert Pemberton
+(Table C) has a substantially lower impact on this survivorship
+policy's premium than it would on an individual policy, because
+the benefit is not paid until both insureds have died.
+
+═══════════════════════════════════════════════════════════════════
+OWNERSHIP
+═══════════════════════════════════════════════════════════════════
+Owner: The Pemberton Dynasty Trust
+       Established: August 1, 2024
+       Trustee: William James Pemberton (Son)
+       Taxpayer ID: 92-7734119
+       Beneficiary of Trust: Issue of Robert and Margaret Pemberton,
+         per stirpes
+
+═══════════════════════════════════════════════════════════════════
+BASE POLICY
+═══════════════════════════════════════════════════════════════════
+Face Amount: $1,500,000
+Policy Period: 20 years (expires September 9, 2044)
+Annual Premium: $19,440.00
+Total Annual Premium (including riders): $20,620.00
+
+═══════════════════════════════════════════════════════════════════
+POLICY DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+"Second Insured to Die" means the surviving insured at the time of
+the later death of the two insureds.
+
+"Joint Life Expectancy" means the actuarially estimated period
+until the death of the second surviving insured.
+
+"Survivor Paid-Up Provision" means the feature described in
+Section 1.3 below.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 1: BASE POLICY COVERAGE
+═══════════════════════════════════════════════════════════════════
+1.1 We will pay $1,500,000 to the Pemberton Dynasty Trust (the
+    named beneficiary) upon satisfactory proof of the death of the
+    second insured to die during the 20-year policy period.
+
+1.2 No benefit is paid upon the death of the first insured to die.
+    This policy remains in force following such death.
+
+1.3 SURVIVOR PAID-UP PROVISION: If Robert Allen Pemberton dies
+    first, Margaret Louise Pemberton (the surviving insured) may
+    elect, within 90 days of Robert's death, to stop paying premiums
+    and accept a paid-up reduced death benefit. The reduced paid-up
+    benefit is calculated actuarially based on the reserve at the
+    time of election relative to the premiums otherwise due. This
+    election is irrevocable.
+
+    Alternatively, Margaret may continue paying premiums and maintain
+    the full $1,500,000 benefit. The choice is hers; the company
+    will provide a written illustration of both options within 30
+    days of the first death.
+
+1.4 EXCLUSION – SUICIDE: If either insured's death is by suicide
+    within 2 years of the policy date, the policy remains in force
+    for the surviving insured's benefit, but upon the eventual second
+    death (when the benefit would otherwise be paid), the benefit
+    is reduced by the premiums that were paid after the suicide of
+    the first insured. If both insureds die by suicide within 2 years,
+    only premiums paid are returned.
+
+1.5 EXCLUSION – SIMULTANEOUS DEATH: If both insureds die in the
+    same event and it cannot be determined who survived longer, the
+    benefit is paid as if the Second Insured named herein (Margaret
+    Louise Pemberton) survived the First Insured (Robert Allen
+    Pemberton). This is a contractually stipulated order of survival.
+
+1.6 EXCLUSION – FELONY: No benefit is payable if the death of the
+    surviving insured is caused feloniously by a beneficiary of the
+    trust. In such case the trust distribution must be reformed
+    to exclude that beneficiary, and the benefit is paid to the
+    trust for distribution to remaining trust beneficiaries.
+
+1.7 NO WAR EXCLUSION: This policy does not contain a war exclusion.
+    Death from any cause, including acts of war, is covered.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 2: ATTACHED RIDERS
+═══════════════════════════════════════════════════════════════════
+
+RIDER 1: FIRST DEATH NOTIFICATION BENEFIT
+Premium: $480/year
+
+Upon the death of the first insured to die, a lump-sum payment of
+$50,000 is made to the policy owner (the trust) as a first-death
+benefit to assist with estate settlement, funeral, and transition
+costs associated with the first death:
+• This does NOT reduce the $1,500,000 survivorship death benefit
+• Payment made upon proof of first death, within 21 days
+• This rider represents the only benefit payable on the first death
+• Rider terminates once the first-death payment is made
+
+RIDER 2: ACCELERATED BENEFIT – TERMINAL ILLNESS (SURVIVING INSURED)
+Premium: $380/year (applies after first insured's death)
+
+After the death of the first insured, if the surviving insured
+is diagnosed with a terminal illness (life expectancy ≤ 12 months):
+• Up to 70% of the remaining death benefit may be advanced
+• Subject to 8% per annum actuarial discount
+• Trustee authorization required
+• Remaining benefit paid to trust upon surviving insured's death
+
+RIDER 3: PREMIUM CONTINUATION – FIRST DEATH WAIVER
+Premium: $320/year
+
+Upon the death of the first insured to die (here, if Robert dies
+first), all remaining premiums are waived and coverage continues
+at the full $1,500,000 until the second insured dies or the
+policy expires. This rider ensures that the surviving spouse (or
+trust) is not burdened with ongoing premiums after the first loss.
+
+Note: This rider applies regardless of which insured dies first.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 3: CHANGE OF INSURED PROVISION
+═══════════════════════════════════════════════════════════════════
+3.1 If either insured remarries after the death of the other
+    insured, the owner (trustee) may request substitution of the
+    new spouse as the surviving insured, subject to:
+    • New spouse is between ages 45 and 80
+    • New spouse submits to full underwriting
+    • Premium adjustment reflects new underwriting class
+    This provision is available only in Year 1 following the
+    first insured's death and only if Premium Continuation Rider
+    (Rider 3) has not yet been triggered.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 4: PREMIUM PAYMENT
+═══════════════════════════════════════════════════════════════════
+4.1 Total Annual Premium: $20,620.00
+    Due Date: September 9 each year
+    Payment Mode: Annual (from trust checking account via ACH)
+
+4.2 GRACE PERIOD: 62 days from due date (extended grace to allow
+    trust administration time to arrange payment).
+
+4.3 If Rider 3 (Premium Continuation) is triggered following first
+    death, no further premiums are due and this section becomes
+    moot. The company will issue a written confirmation of
+    premium waiver to the trustee within 30 days of first death.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 5: POLICY CONVERSION
+═══════════════════════════════════════════════════════════════════
+5.1 The owner may convert this survivorship term policy to a
+    survivorship permanent policy (whole life or universal life)
+    without evidence of insurability before the earlier of the
+    policy's 15th anniversary or the younger insured's 80th birthday.
+
+5.2 After the death of the first insured, the surviving insured
+    may convert the remaining coverage to an individual permanent
+    life policy on his or her own life, without evidence of
+    insurability, within 1 year of the first insured's death.
+    The conversion amount may not exceed the original face amount.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 6: INCONTESTABILITY
+═══════════════════════════════════════════════════════════════════
+This policy becomes incontestable, except for non-payment of
+premiums, after 2 years from the policy date during the joint
+lifetime of both insureds. After the first insured's death, a
+separate 2-year contestability period runs with respect to the
+surviving insured's participation in the application.
+
+═══════════════════════════════════════════════════════════════════
+SECTION 7: GOVERNING LAW
+═══════════════════════════════════════════════════════════════════
+This policy is governed by the laws of the State of Florida.
+
+═══════════════════════════════════════════════════════════════════
+
+Issued in Tampa, Florida
+
+[SIGNATURE]
+________________________
+President, TwinPeak Life Insurance Corporation
+
+[TRUSTEE SIGNATURE]
+________________________
+William James Pemberton, Trustee
+The Pemberton Dynasty Trust
+
+Date: September 9, 2024
+
+═══════════════════════════════════════════════════════════════════

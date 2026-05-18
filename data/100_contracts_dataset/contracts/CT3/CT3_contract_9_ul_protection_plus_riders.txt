@@ -1,0 +1,285 @@
+═══════════════════════════════════════════════════════════════════
+        UNIVERSAL LIFE INSURANCE POLICY — PROTECTION PLUS
+              Evergreen Shield Life Insurance Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: ESL-PP-24-44021
+Issue Date: July 7, 2024
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Marcus DeShawn Williams
+Insured: Marcus DeShawn Williams
+Gender: Male | DOB: 02/11/1985 | Age: 39
+Risk Class: Standard Nonsmoker
+Occupation: Electrician, Commercial
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $300,000
+Planned Premium: $175/month
+Minimum Premium: $60/month
+Target Premium: $175/month
+Death Benefit Option: Increasing (Option B)
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Keisha Marie Williams (Wife) - 100%
+Contingent: Jaylen Marcus Williams (Son, minor) - 50%
+            Amara Denise Williams (Daughter, minor) - 50%
+            (Proceeds for minor beneficiaries held in 
+            trust per Uniform Transfers to Minors Act)
+
+═══════════════════════════════════════════════════════════════════
+ATTACHED RIDERS (INCLUDED AT NO ADDITIONAL PREMIUM 
+UNLESS NOTED)
+═══════════════════════════════════════════════════════════════════
+RIDER 1 — TERMINAL ILLNESS ACCELERATION RIDER (Form ESL-TIA):
+  Benefit: Up to 50% of Specified Amount (max $150,000)
+  Trigger: Insured diagnosed with terminal illness with 
+           life expectancy of 24 months or less, 
+           certified by two independent licensed physicians
+  Payment: Lump sum; reduces death benefit dollar-for-dollar
+  Charge: Included in base policy at no separate premium
+
+RIDER 2 — ACCIDENTAL DEATH BENEFIT RIDER (Form ESL-ADB):
+  Additional Benefit: $300,000 (equal to Specified Amount)
+  Total death benefit if accident: $600,000
+  "Accident" defined as: bodily injury caused solely 
+    by external, violent, accidental means, occurring 
+    within 90 days of the accident
+  Exclusions: self-inflicted injury, drugs/alcohol, 
+    war, felony, aviation (other than as commercial 
+    fare-paying passenger)
+  Benefit ceases at Insured's age 70
+  Rider premium: $18.00/month
+
+RIDER 3 — DISABILITY WAIVER OF MONTHLY DEDUCTIONS 
+           (Form ESL-DWD):
+  Benefit: All monthly deductions waived if Insured 
+           is totally disabled for more than 6 months
+  "Total Disability" (years 1-24 of disability): 
+    Unable to perform all material duties of own 
+    occupation as a commercial electrician
+  "Total Disability" (after 24 months): 
+    Unable to perform any gainful occupation 
+    for which qualified by education, training, experience
+  Elimination Period: 6 consecutive months
+  Maximum waiver period: To Insured's age 65
+  Rider premium: $22.50/month
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means accumulated premiums plus 
+    interest minus monthly deductions.
+
+1.2 "Terminal Illness" means a medically confirmed 
+    condition that is expected to result in death 
+    within 24 months from the date of certification, 
+    with no reasonable prospect of recovery.
+
+1.3 "Accident" has the meaning ascribed in the 
+    Accidental Death Benefit Rider (Form ESL-ADB).
+
+1.4 "Total Disability" has the meaning ascribed in 
+    the Disability Waiver of Monthly Deductions 
+    Rider (Form ESL-DWD), varying by duration.
+
+1.5 "Increasing Death Benefit" (Option B) means the 
+    death benefit equals the Specified Amount plus 
+    the Account Value at the time of death.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - PREMIUM PAYMENTS
+═══════════════════════════════════════════════════════════════════
+2.1 Premiums may be paid at any time:
+    Minimum: $60/payment
+    Annual maximum: $75,000
+
+2.2 Premium expense load: 4.0% of each premium.
+
+2.3 If the Disability Waiver Rider is active, the 
+    monthly deductions are waived — meaning no 
+    deduction is taken from Account Value — but 
+    the Owner is not required to pay premiums. 
+    The policy remains in force even without premium 
+    payments during a valid disability period.
+
+2.4 Premiums may be skipped; policy stays in force 
+    so long as Account Value covers deductions.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+3.1 On the 7th of each month, we deduct from Account Value:
+    (a) Cost of Insurance charge
+    (b) Administrative fee: $8.00/month
+    (c) Accidental Death Benefit Rider charge: $18.00/month
+    (d) Disability Waiver Rider charge: $22.50/month
+    (e) Outstanding loan interest
+
+3.2 If Disability Waiver is active, items (a), (b), 
+    (c), (d), and (e) are all waived — NO deduction 
+    is taken from Account Value during the disability.
+
+3.3 COI is calculated on:
+    Option B Net Amount at Risk = Specified Amount 
+    (Account Value is separately included in death 
+    benefit, so net amount at risk = Specified Amount)
+
+3.4 COI rates are based on the 2017 CSO Standard 
+    Nonsmoker table; guaranteed maximum rates are 
+    in the attached COI Schedule.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - INTEREST CREDITING
+═══════════════════════════════════════════════════════════════════
+4.1 Interest is credited monthly.
+    Guaranteed minimum: 2.00% per annum
+    Current rate: 3.75% per annum
+
+4.2 Rate declared quarterly; subject to change 
+    but never below guaranteed minimum.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION B (Increasing) — In Force
+    Base Death Benefit = Specified Amount + Account Value
+
+5.2 ACCIDENTAL DEATH: If death is due to a qualifying 
+    accident per Rider ESL-ADB, an additional $300,000 
+    is paid from the ADB Rider, for a total of:
+    $300,000 + Account Value + $300,000 (ADB) 
+    = $600,000 + Account Value
+
+5.3 TERMINAL ILLNESS ACCELERATION: If the TIA Rider 
+    has been triggered and benefits paid, the death 
+    benefit is reduced by the amount of TIA benefits paid.
+
+5.4 Death benefit is reduced by outstanding policy loans.
+
+5.5 All death benefits are paid within 30 days of 
+    receipt of a certified death certificate and 
+    completed claimant's statement.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - TERMINAL ILLNESS CLAIM PROCEDURE
+═══════════════════════════════════════════════════════════════════
+6.1 To file a terminal illness claim:
+    (a) Submit Form ESL-TIA-C
+    (b) Certification from two licensed, board-certified 
+        physicians (one may be the Insured's attending 
+        physician; one must be a specialist)
+    (c) Current medical records (last 12 months)
+
+6.2 We will adjudicate a complete claim within 15 
+    business days.
+
+6.3 TIA benefit may be taken as:
+    (a) Lump sum up to 50% of Specified Amount
+    (b) Monthly installments over 12-24 months
+
+6.4 Any TIA benefit paid is an advance on the death 
+    benefit, not an additional benefit. Remaining 
+    death benefit is reduced accordingly.
+
+6.5 Tax Treatment: TIA benefits may be excludable 
+    from income under IRC §101(g). Consult a tax advisor.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 Minimum withdrawal: $500
+    Maximum: Account Value less $500 minimum reserve
+
+7.2 Withdrawal fee:
+    Years 1-5: $20/withdrawal
+    Years 6+: No charge
+
+7.3 Under Option B, withdrawals reduce Account Value 
+    (and therefore reduce the death benefit). Owner 
+    should understand this linkage before withdrawing.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+8.1 Maximum loan: 90% of Account Value
+
+8.2 Loan interest rate: Prime Rate + 1.50%, 
+    minimum 4.50%, adjusted annually each January 1.
+
+8.3 Outstanding loan reduces death benefit dollar-for-dollar 
+    under both base policy and ADB Rider.
+
+8.4 Policy loans are not available during an active 
+    disability waiver period unless the Owner 
+    submits a written waiver of the disability benefit 
+    for the period of the loan.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - SURRENDER CHARGES
+═══════════════════════════════════════════════════════════════════
+9.1 Cash Surrender Value = Account Value - Surrender Charge 
+    - Outstanding Loans
+
+9.2 Surrender Charge Schedule (% of Specified Amount):
+    Year 1: 8% | Year 2: 7% | Year 3: 6% | Year 4: 5%
+    Year 5: 4% | Year 6: 3% | Year 7: 2% | Year 8: 1%
+    Year 9+: 0%
+
+9.3 Riders terminate upon full surrender.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+10.1 SUICIDE EXCLUSION: Within 24 months of issue: 
+     Account Value only, without interest.
+
+10.2 CONTESTABILITY: 2 years from issue date.
+
+10.3 HAZARDOUS OCCUPATION REVIEW: Because the Insured 
+     is a commercial electrician (Occupational Class B), 
+     any future claim involving electrical accident 
+     will be reviewed to confirm the risk was 
+     disclosed at application. No additional exclusion 
+     applies; disclosure was provided.
+
+10.4 ADB RIDER EXCLUSIONS: See Rider Form ESL-ADB 
+     for complete list. Key exclusions include: 
+     war, self-inflicted injury, felony commission, 
+     non-commercial aviation.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 11 - GRACE PERIOD & LAPSE
+═══════════════════════════════════════════════════════════════════
+11.1 If Account Value is insufficient to cover monthly 
+     deductions (and Disability Waiver is NOT active), 
+     a 61-day grace period commences.
+
+11.2 Reinstatement: Within 3 years of lapse, with 
+     evidence of insurability and payment of 
+     overdue charges plus 6% interest.
+
+11.3 Riders may or may not be reinstatable at our 
+     discretion; disability rider reinstatement 
+     requires proof of current good health.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Columbus, Ohio
+
+[Signature]
+President & Chief Operating Officer
+Evergreen Shield Life Insurance Company
+
+Date: July 7, 2024
+
+Policy Form ESL-PP-2024. Riders ESL-TIA, ESL-ADB, ESL-DWD 
+are incorporated into and form part of this contract.
+
+═══════════════════════════════════════════════════════════════════

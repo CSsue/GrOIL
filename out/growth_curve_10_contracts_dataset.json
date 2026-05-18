@@ -1,0 +1,68 @@
+[
+  {
+    "n_docs": 0,
+    "classes": 0,
+    "properties": 0,
+    "restrictions": 0
+  },
+  {
+    "n_docs": 1,
+    "classes": 291,
+    "properties": 183,
+    "restrictions": 30
+  },
+  {
+    "n_docs": 2,
+    "classes": 340,
+    "properties": 212,
+    "restrictions": 38
+  },
+  {
+    "n_docs": 3,
+    "classes": 374,
+    "properties": 227,
+    "restrictions": 39
+  },
+  {
+    "n_docs": 4,
+    "classes": 431,
+    "properties": 263,
+    "restrictions": 46
+  },
+  {
+    "n_docs": 5,
+    "classes": 480,
+    "properties": 287,
+    "restrictions": 53
+  },
+  {
+    "n_docs": 6,
+    "classes": 550,
+    "properties": 318,
+    "restrictions": 67
+  },
+  {
+    "n_docs": 7,
+    "classes": 593,
+    "properties": 346,
+    "restrictions": 73
+  },
+  {
+    "n_docs": 8,
+    "classes": 630,
+    "properties": 368,
+    "restrictions": 78
+  },
+  {
+    "n_docs": 9,
+    "classes": 685,
+    "properties": 389,
+    "restrictions": 81
+  },
+  {
+    "n_docs": 10,
+    "classes": 685,
+    "properties": 389,
+    "restrictions": 81
+  }
+]

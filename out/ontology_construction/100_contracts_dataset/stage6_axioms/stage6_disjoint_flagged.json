@@ -1,0 +1,23 @@
+[
+  {
+    "axiom_id": "AX_0303",
+    "owl_construct": "owl:disjointWith",
+    "axiom_family": "prohibition_or_exclusion",
+    "subject_class": "Exclusion",
+    "property_name": null,
+    "filler": "HazardousActivity",
+    "cardinality": null,
+    "axiom_str": "Exclusion DisjointWith HazardousActivity",
+    "definition": "Prohibits aviation activities from triggering coverage.",
+    "confidence": "high",
+    "reasoning": "The exclusion applies specifically to aviation-related activities. The classes are disjoint as aviation activities are not a subset of exclusions, and no shared subclass exists in the hierarchy. | FLAGGED: Hierarchy conflict: Exclusion and HazardousActivity are in a subClassOf relationship (ancestors of Exclusion: {owl:Thing}; ancestors of HazardousActivity: {ExcludedCauseOfDeath, Exclusion, owl:Thing}) \u2014 asserting disjointWith would make one or both classes unsatisfiable.",
+    "evidence_sentences": [
+      "There is no aviation exclusion in this policy.",
+      "No aviation exclusions apply to this policy.",
+      "Aviation exclusion applies if the insured is a pilot or crew member of a non-commercial aircraft.",
+      "Passenger travel on commercial scheduled airlines is fully covered under aviation exclusion.",
+      "There are no aviation exclusions in this policy."
+    ],
+    "source_cluster": "AviationExclusionProhibition"
+  }
+]

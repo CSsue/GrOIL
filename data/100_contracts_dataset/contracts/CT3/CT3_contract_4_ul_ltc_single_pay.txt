@@ -1,0 +1,269 @@
+═══════════════════════════════════════════════════════════════════
+       UNIVERSAL LIFE INSURANCE POLICY WITH LONG-TERM CARE
+                ACCELERATION BENEFIT RIDER
+              Sequoia Benefits & Life Company
+═══════════════════════════════════════════════════════════════════
+
+Contract Number: SBL-UL-LTC-24-00341
+Issue Date: May 20, 2024
+
+═══════════════════════════════════════════════════════════════════
+POLICY OWNER & INSURED
+═══════════════════════════════════════════════════════════════════
+Owner: Patricia Noreen Halverson
+Insured: Patricia Noreen Halverson
+Gender: Female | DOB: 05/12/1958 | Age: 66
+Risk Class: Standard Plus Nonsmoker
+
+═══════════════════════════════════════════════════════════════════
+COVERAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════
+Specified Amount (Face Value): $250,000
+Premium Design: Single Premium
+Single Premium Paid: $95,000
+Death Benefit Option: Return of Premium Enhanced (Option C)
+MEC Status: This policy IS a Modified Endowment Contract (MEC)
+            as defined under IRC §7702A. Policy loans and 
+            withdrawals are subject to ordinary income tax 
+            and may be subject to a 10% federal penalty 
+            tax if taken before age 59½.
+
+═══════════════════════════════════════════════════════════════════
+BENEFICIARY INFORMATION
+═══════════════════════════════════════════════════════════════════
+Primary: Harold J. Halverson (Husband) - 60%
+         Halverson Family Revocable Trust - 40%
+Contingent: Cynthia L. Park (Daughter) - 50%
+            Brett A. Halverson (Son) - 50%
+
+═══════════════════════════════════════════════════════════════════
+ATTACHED RIDER (INCORPORATED BY REFERENCE)
+═══════════════════════════════════════════════════════════════════
+LONG-TERM CARE ACCELERATION BENEFIT RIDER (Form SBL-LTC-R)
+This rider is governed by NAIC Long-Term Care Model Act 
+provisions as adopted in the state of issue.
+
+LTC Benefit Pool: $250,000 (equal to Specified Amount)
+Monthly LTC Benefit Maximum: 2% of original Specified Amount 
+                              = $5,000/month
+Elimination Period: 90 days of qualifying care services
+Inflation Protection: 3% Simple on monthly maximum
+
+QUALIFYING TRIGGERS (any 2 of 6 ADLs or severe cognitive 
+impairment, as certified by a licensed healthcare practitioner):
+ADLs: Bathing, Dressing, Eating, Continence, 
+      Toileting, Transferring
+
+Qualifying Care Settings:
+  - Licensed nursing facility
+  - Assisted living facility (state licensed)
+  - Home health care (minimum 3 visits per week)
+  - Adult day care center
+
+Tax Treatment: LTC benefits paid under this rider are intended 
+to qualify as tax-free under IRC §7702B(a). Insured should 
+consult a tax advisor.
+
+Benefit Reduction: Each dollar of LTC benefit paid reduces 
+the Specified Amount and LTC Benefit Pool dollar-for-dollar. 
+When the LTC Benefit Pool is exhausted, the policy terminates.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 1 - DEFINITIONS
+═══════════════════════════════════════════════════════════════════
+1.1 "Account Value" means the single premium paid, plus 
+    credited interest, less all charges and distributions.
+
+1.2 "Option C (Return of Premium Enhanced) Death Benefit" 
+    means the greater of: (a) the Specified Amount, or 
+    (b) the greater of the total premiums paid or 
+    Account Value × 1.10.
+
+1.3 "LTC Benefit Pool" means the total amount available for 
+    long-term care acceleration, equal to the original 
+    Specified Amount reduced by prior LTC claims paid.
+
+1.4 "Elimination Period" means the waiting period of 
+    continuous qualifying care before LTC benefits begin.
+
+1.5 "ADL" means Activity of Daily Living.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 2 - SINGLE PREMIUM DESIGN
+═══════════════════════════════════════════════════════════════════
+2.1 This policy is funded by a single lump-sum premium. 
+    No further premiums are required or expected.
+
+2.2 Additional premiums are not accepted after the issue date 
+    without prior underwriting approval and may not be 
+    accepted if they would alter MEC status undesirably.
+
+2.3 The entire single premium is allocated to the general 
+    account upon receipt. A premium expense load of 1.0% 
+    is deducted before crediting.
+
+2.4 Because no ongoing premiums are required, there is 
+    no planned premium, target premium, or minimum 
+    monthly premium applicable to this policy.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 3 - MONTHLY DEDUCTIONS
+═══════════════════════════════════════════════════════════════════
+3.1 On the 20th of each month, we deduct from Account Value:
+    (a) Cost of Insurance charge
+    (b) LTC Rider charge: $18.50/month (guaranteed 
+        not to exceed $31.00/month through age 85)
+    (c) Administrative fee: $7.00/month
+
+3.2 COI is calculated as:
+    (Specified Amount Remaining - Account Value) × 
+    COI Rate / 1,000
+
+3.3 As Specified Amount is reduced by LTC claims, the 
+    net amount at risk — and therefore the COI — 
+    decreases accordingly.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 4 - INTEREST CREDITING
+═══════════════════════════════════════════════════════════════════
+4.1 Interest is credited monthly.
+    Guaranteed minimum rate: 3.00% per annum
+    Current credited rate: 4.50% per annum
+
+4.2 The single-premium design allows us to offer a higher 
+    guaranteed minimum than multi-pay products.
+
+4.3 Current rate is declared annually each January 1 
+    and applies to all Account Value throughout that year.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 5 - DEATH BENEFIT
+═══════════════════════════════════════════════════════════════════
+5.1 OPTION C (Return of Premium Enhanced) — In Force
+    Death Benefit = greatest of:
+    (a) Current Specified Amount (reduced by LTC claims)
+    (b) Total single premium paid: $95,000
+    (c) Account Value × 1.10
+
+5.2 If LTC benefits have been paid, the death benefit is 
+    reduced by total LTC benefits paid. The minimum 
+    death benefit is 10% of original Specified Amount 
+    ($25,000) so long as the LTC Benefit Pool is not 
+    fully exhausted.
+
+5.3 Death benefit proceeds are paid within 14 business days 
+    of receipt of certified death certificate and completed 
+    claim form.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 6 - LONG-TERM CARE CLAIM PROCEDURES
+═══════════════════════════════════════════════════════════════════
+6.1 To initiate LTC benefits, the Owner must submit:
+    (a) Written claim form (Form SBL-LTC-C1)
+    (b) Attending physician statement certifying ADL 
+        impairments or cognitive impairment
+    (c) Plan of care from licensed healthcare practitioner
+    (d) Proof of qualifying care setting
+
+6.2 We will respond to a complete claim within 10 business 
+    days with a benefit determination.
+
+6.3 Monthly LTC benefits are paid directly to Owner or 
+    to the licensed care provider at Owner's election.
+
+6.4 Concurrent Care Review: We may require re-certification 
+    of qualifying status every 12 months.
+
+6.5 If the Insured recovers and no longer meets qualifying 
+    criteria, LTC benefits cease. Remaining LTC Benefit 
+    Pool is preserved for future qualifying periods.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 7 - PARTIAL WITHDRAWALS
+═══════════════════════════════════════════════════════════════════
+7.1 Minimum withdrawal: $1,000
+
+7.2 TAX WARNING (MEC): All withdrawals are treated as 
+    income first under IRC §72(e). Withdrawals before 
+    age 59½ may incur a 10% federal penalty tax.
+
+7.3 Withdrawal charges: None (single-pay policy, 
+    no surrender charge applies after year 5).
+
+7.4 Surrender Charge Schedule:
+    Year 1: 5% | Year 2: 4% | Year 3: 3%
+    Year 4: 2% | Year 5: 1% | Year 6+: 0%
+
+7.5 Withdrawals reduce Account Value and may reduce 
+    the death benefit under Option C.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 8 - POLICY LOANS
+═══════════════════════════════════════════════════════════════════
+8.1 Maximum loan: 90% of Account Value
+
+8.2 Loan interest rate: 4.00% per annum, fixed.
+
+8.3 TAX WARNING (MEC): Policy loans from a MEC are 
+    treated as distributions and are taxable as 
+    ordinary income to the extent of gain in the policy, 
+    and may be subject to a 10% federal penalty tax 
+    before age 59½.
+
+8.4 Outstanding loan reduces death benefit dollar-for-dollar 
+    and is also excluded from the LTC Benefit Pool balance.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 9 - LIMITATIONS & EXCLUSIONS
+═══════════════════════════════════════════════════════════════════
+9.1 SUICIDE EXCLUSION: Death by suicide within 24 months: 
+    proceeds limited to premiums paid, without interest.
+
+9.2 CONTESTABILITY: We may contest within 2 years of issue.
+
+9.3 LTC EXCLUSIONS: No LTC benefits are payable for care:
+    (a) Resulting from intentionally self-inflicted injury
+    (b) Caused by alcoholism or drug addiction
+    (c) Provided by an immediate family member 
+        (unless a licensed care provider)
+    (d) Outside the United States or its territories 
+        (except emergency care up to 30 days per year)
+    (e) Resulting from an act of war (declared or undeclared)
+
+9.4 PRE-EXISTING CONDITIONS: LTC benefits for conditions 
+    that were diagnosed or treated in the 12 months before 
+    issue are subject to a 6-month waiting period from 
+    the issue date.
+
+═══════════════════════════════════════════════════════════════════
+ARTICLE 10 - CONTINUATION & LAPSE
+═══════════════════════════════════════════════════════════════════
+10.1 Given the single-premium design, lapse due to 
+     nonpayment is unlikely. However, if Account Value 
+     is reduced (by charges, LTC benefits, or withdrawals) 
+     to an amount insufficient to cover 2 months of 
+     monthly deductions, we notify the Owner.
+
+10.2 Owner has 61 days from notice to submit a premium 
+     payment. No additional premiums are guaranteed 
+     to be accepted without evidence of insurability.
+
+10.3 Upon full exhaustion of the LTC Benefit Pool, 
+     the LTC Rider terminates. The base policy 
+     remains in force on the residual death benefit 
+     of 10% of the original Specified Amount.
+
+═══════════════════════════════════════════════════════════════════
+
+Executed at Hartford, Connecticut
+
+[Signature]
+President & Chief Underwriting Officer
+Sequoia Benefits & Life Company
+
+Date: May 20, 2024
+
+State Approval: This policy and LTC Rider are approved for 
+sale in the state of issue. Not available in all states.
+
+═══════════════════════════════════════════════════════════════════

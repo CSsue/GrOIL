@@ -1,0 +1,2800 @@
+{
+  "timestamp": "2026-05-17T04:23:56.850986+00:00",
+  "tbox_path": "out/ontology_construction/10_contracts_dataset/stage7_serialized_ontology/tbox.ttl",
+  "abox_path": "out/ontology_construction/10_contracts_dataset/abox/abox_C1_combined.ttl",
+  "base_iri": "https://example.org/ontology/insurance#",
+  "tbox_triples": 6952,
+  "abox_triples": 7206,
+  "merged_tbox_abox_triples": 7523,
+  "overall_status": "FAIL",
+  "checks": {
+    "tbox_abox_consistency": {
+      "status": "FAIL",
+      "detail": "Consistent: No\nReason: Literal value \"50%\"^^string does not belong to datatype decimal",
+      "stderr": ""
+    },
+    "tbox_satisfiability": {
+      "status": "FAIL",
+      "satisfiable_classes": 610,
+      "unsatisfiable_classes": [
+        "ins:AccountValue",
+        "ins:AccountValueVolatility",
+        "ins:ActivitiesOfDailyLiving",
+        "ins:ActuarialAssumption",
+        "ins:ActuarialDiscount",
+        "ins:AddressInformation",
+        "ins:AllianceGroupBenefits",
+        "ins:AnnualExclusionGiftPlanning",
+        "ins:AuthorizedSignatory",
+        "ins:Beneficiary",
+        "ins:BeneficiaryDesignation",
+        "ins:Benefit",
+        "ins:BenefitStructure",
+        "ins:BurialExpenseCoverage",
+        "ins:CaliforniaJurisdiction",
+        "ins:CapitalPreservation",
+        "ins:CashValue",
+        "ins:CertificateHolder",
+        "ins:ChronicIllness",
+        "ins:ClaimMailingAddress",
+        "ins:ClaimSubmissionChannel",
+        "ins:ClaimsDepartment",
+        "ins:ClaimsHotline",
+        "ins:CompanyHierarchy",
+        "ins:ContactInformation",
+        "ins:ContactNumber",
+        "ins:ContingentBeneficiary",
+        "ins:ContingentBeneficiaryTrust",
+        "ins:CorporateHeadquartersLocation",
+        "ins:Coverage",
+        "ins:CriticalCondition",
+        "ins:CurrentPortfolioMix",
+        "ins:CustomerService",
+        "ins:CustomerServiceHotline",
+        "ins:DaughterBeneficiary",
+        "ins:DeathBenefit",
+        "ins:DeathBenefitRecipient",
+        "ins:DeathBenefitTiming",
+        "ins:DebtReducingDeathBenefit",
+        "ins:DisabilityCoverage",
+        "ins:DualPayout",
+        "ins:EffectOfPartialWithdrawal",
+        "ins:Eligibility",
+        "ins:EligibilityRequirementWarning",
+        "ins:EligibilityThreshold",
+        "ins:EligibleInsuredChildUnderRider",
+        "ins:EmployeeInformation",
+        "ins:EndOfTermPayout",
+        "ins:EquityIndexedUniversalLife",
+        "ins:EstatePlanning",
+        "ins:EstimatedCashValueAfterTenYears",
+        "ins:ExecutionLocation",
+        "ins:ExecutiveApproval",
+        "ins:ExecutiveLeadershipPosition",
+        "ins:ExecutiveOfficer",
+        "ins:FaceAmount",
+        "ins:FamilyRelationship",
+        "ins:FinancialCommitment",
+        "ins:FirstDeathBenefit",
+        "ins:FirstToDie",
+        "ins:FosterChildrensTrust",
+        "ins:FullRefundRequirement",
+        "ins:FuneralExpense",
+        "ins:FutureResults",
+        "ins:Gender",
+        "ins:GeographicScope",
+        "ins:GradedDeathBenefit",
+        "ins:GroupCoverage",
+        "ins:GroupOperationsLeadership",
+        "ins:GuaranteedIssue",
+        "ins:IncreasedCostTerm",
+        "ins:InsuranceCompany",
+        "ins:InsuranceCompanyLocation",
+        "ins:InsuranceContract",
+        "ins:InsurancePolicy",
+        "ins:Insured",
+        "ins:InsuredEntity",
+        "ins:InsuredPerson",
+        "ins:InvestmentAllocation",
+        "ins:InvestmentExperience",
+        "ins:IssuerLocation",
+        "ins:IssuingInsurer",
+        "ins:JointInsured",
+        "ins:JointLifePolicy",
+        "ins:JointSurvivorshipLifeInsurance",
+        "ins:LegalJurisdiction",
+        "ins:LevelDeathBenefit",
+        "ins:LifeInsuranceBenefit",
+        "ins:Location",
+        "ins:LumpSumPayout",
+        "ins:MailingAddress",
+        "ins:MasterPolicy",
+        "ins:MaterialMisrepresentation",
+        "ins:MedicalUncertainty",
+        "ins:MidTermDeathBenefit",
+        "ins:MilitaryServiceDeath",
+        "ins:MisstatementOfSex",
+        "ins:MortalityExperience",
+        "ins:NamedInsured",
+        "ins:NaturalChild",
+        "ins:NetPayoutAfterDebts",
+        "ins:OfficialEmailForInquiries",
+        "ins:ParticipatingPolicy",
+        "ins:PastPerformance",
+        "ins:Payout",
+        "ins:PayoutRecipient",
+        "ins:PilotCrewDeathCoverage",
+        "ins:PlaceOfResidence",
+        "ins:PlazaAddress",
+        "ins:PolicyAuthorization",
+        "ins:PolicyEntity",
+        "ins:PolicyFunding",
+        "ins:PolicyIssuanceJurisdiction",
+        "ins:PolicyLapse",
+        "ins:PolicyOwner",
+        "ins:PolicyOwnership",
+        "ins:PolicyPortability",
+        "ins:PolicySigningOfficer",
+        "ins:PolicyStructure",
+        "ins:PolicyTerm",
+        "ins:PolicyTermDuration",
+        "ins:PolicyTransfer",
+        "ins:PortfolioRebalancing",
+        "ins:PrimaryBeneficiary",
+        "ins:PrivatePilotActivity",
+        "ins:ProjectedCashValue",
+        "ins:ReducedAccessToFunds",
+        "ins:ReducedPayoutDueToGuaranteedIssue",
+        "ins:Reduction",
+        "ins:RegularOccupation",
+        "ins:Role",
+        "ins:SignatoryPosition",
+        "ins:SimultaneousDeath",
+        "ins:SpecifiedAmount",
+        "ins:Spouse",
+        "ins:SubmissionLocation",
+        "ins:TermInsurance",
+        "ins:TerminalIllness",
+        "ins:TerminationPointForDeathBenefit",
+        "ins:Trust",
+        "ins:TrusteeAuthority",
+        "ins:TrusteeOfIrrevocableTrust",
+        "ins:UniversalLifeInsurancePolicyContract",
+        "ins:VisualLayout",
+        "ins:Withdrawal",
+        "ins:WithdrawalRule"
+      ],
+      "inferred_hierarchy_snippet": [
+        "http://org.semanticweb.owlapi/error#Error1",
+        "http://org.semanticweb.owlapi/error#Error2",
+        "ins:ClaimProcess",
+        "ins:ApplicationError",
+        "ins:ClaimSettlement",
+        "ins:ClaimsProcessingTime",
+        "ins:ConflictResolution",
+        "http://org.semanticweb.owlapi/error#Error3",
+        "ins:EnrollmentPeriod",
+        "ins:NotificationTimeline",
+        "ins:PolicyLoan",
+        "ins:TimePeriod",
+        "ins:AnnualAdjustmentDateForLoanInterest",
+        "ins:AnnualRecalculationTrigger",
+        "ins:ClaimProcessingWindow",
+        "ins:ConsecutiveMonths",
+        "ins:ContestabilityPeriodDuration",
+        "ins:ContestabilityPeriod",
+        "ins:ConversionApplicationWindow",
+        "ins:ConversionDeadline"
+      ],
+      "stderr": "Classifying 663 elements\n\nClassifying:  0% complete in 00:00\nClassifying:  1% complete in 00:00\nClassifying:  2% complete in 00:00\nClassifying:  3% complete in 00:00\nClassifying:  4% complete in 00:00\nClassifying:  5% complete in 00:00\nClassifying:  6% complete in 00:00\nClassifying:  7% complete in 00:00\nClassifying:  8% complete in 00:00\nClassifying:  9% complete in 00:00\nClassifying:  10% complete in 00:00\nClassifying:  11% complete in 00:00\nClassifying:  12% complete in 00:00\nClassifying:  13% complete in 00:00\nClassifying:  14% complete in 00:00\nClassifying:  15% complete in 00:00\nClassifying:  16% complete in 00:00\nClassifying:  17% complete in 00:00\nClassifying:  18% complete in 00:00\nClassifying:  19% complete in 00:00\nClassifying:  20% complete in 00:00\nClassifying:  21% complete in 00:00\nClassifying:  22% complete in 00:00\nClassifying:  23% complete in 00:00\nClassifying:  24% complete in 00:00\nClassifying:  25% complete in 00:00\nClassifying:  26% complete in 00:00\nClassifying:  27% complete in 00:00\nClassifying:  28% complete in 00:00\nClassifying:  29% complete in 00:00\nClassifying:  30% complete in 00:00\nClassifying:  31% complete in 00:00\nClassifying:  32% complete in 00:00\nClassifying:  33% complete in 00:00\nClassifying:  34% complete in 00:00\nClassifying:  35% complete in 00:00\nClassifying:  36% complete in 00:00\nClassifying:  37% complete in 00:00\nClassifying:  38% complete in 00:00\nClassifying:  39% complete in 00:00\nClassifying:  40% complete in 00:00\nClassifying:  41% complete in 00:00\nClassifying:  42% complete in 00:00\nClassifying:  43% complete in 00:00\nClassifying:  44% complete in 00:00\nClassifying:  45% complete in 00:00\nClassifying:  46% complete in 00:00\nClassifying:  47% complete in 00:00\nClassifying:  48% complete in 00:00\nClassifying:  49% complete in 00:00\nClassifying:  50% complete in 00:00\nClassifying:  51% complete in 00:00\nClassifying:  52% complete in 00:00\nClassifying:  53% complete in 00:00\nClassifying:  54% complete in 00:00\nClassifying:  55% complete in 00:00\nClassifying:  56% complete in 00:00\nClassifying:  57% complete in 00:00\nClassifying:  58% complete in 00:00\nClassifying:  59% complete in 00:00\nClassifying:  60% complete in 00:00\nClassifying:  61% complete in 00:00\nClassifying:  62% complete in 00:00\nClassifying:  63% complete in 00:00\nClassifying:  64% complete in 00:00\nClassifying:  65% complete in 00:00\nClassifying:  66% complete in 00:00\nClassifying:  67% complete in 00:00\nClassifying:  68% complete in 00:00\nClassifying:  69% complete in 00:00\nClassifying:  70% complete in 00:00\nClassifying:  71% complete in 00:00\nClassifying:  72% complete in 00:00\nClassifying:  73% complete in 00:00\nClassifying:  74% complete in 00:00\nClassifying:  75% complete in 00:00\nClassifying:  76% complete in 00:00\nClassifying:  77% complete in 00:00\nClassifying:  78% complete in 00:00\nClassifying:  79% complete in 00:00\nClassifying:  80% complete in 00:00\nClassifying:  81% complete in 00:00\nClassifying:  82% complete in 00:00\nClassifying:  83% complete in 00:00\nClassifying:  84% complete in 00:00\nClassifying:  85% complete in 00:00\nClassifying:  86% complete in 00:00\nClassifying:  87% complete in 00:00\nClassifying:  88% complete in 00:00\nClassifying:  89% complete in 00:00\nClassifying:  90% complete in 00:00\nClassifying:  91% complete in 00:00\nClassifying:  92% complete in 00:00\nClassifying:  93% complete in 00:00\nClassifying:  94% complete in 00:00\nClassifying:  95% complete in 00:00\nClassifying:  96% complete in 00:00\nClassifying:  97% complete in 00:00\nClassifying:  98% complete in 00:00\nClassifying:  99% complete in 00:00\nClassifying:  100% complete in 00:00\nClassifying finished in 00:00"
+    },
+    "domain_range_coherence": {
+      "status": "WARN",
+      "issues": [
+        {
+          "property": "ins:administersMisstatementProvisionAffectingDeathBenefit",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceCompany"
+        },
+        {
+          "property": "ins:affectsResidualPremiumAvailableForAllocation",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyFunding"
+        },
+        {
+          "property": "ins:affectsResidualPremiumAvailableForAllocation",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InvestmentAllocation"
+        },
+        {
+          "property": "ins:allocationChangeFlexibility",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InvestmentAllocation"
+        },
+        {
+          "property": "ins:allocationChangeFlexibility",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PortfolioRebalancing"
+        },
+        {
+          "property": "ins:appliesIfSurrenderedWithinFirst12Years",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyLapse"
+        },
+        {
+          "property": "ins:appliesToInterestRateOrDividendRate",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:ActuarialAssumption"
+        },
+        {
+          "property": "ins:appliesToInterestRateOrDividendRate",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:automates",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:borneBy",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:canBePledged",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:ceoRepresents",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:ExecutiveOfficer"
+        },
+        {
+          "property": "ins:ceoRepresents",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuranceCompany"
+        },
+        {
+          "property": "ins:containsExceptionToIncontestabilityClause",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:continuesAfterNoPayout",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyEntity"
+        },
+        {
+          "property": "ins:continuesAfterNoPayout",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:deduction",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AccountValue"
+        },
+        {
+          "property": "ins:dependsOnSurvival",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:determinesInitialBasisForReducedPaidUpInsurance",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:determinesInitialBasisForReducedPaidUpInsurance",
+          "problem": "range_unsatisfiable",
+          "class": "ins:CashValue"
+        },
+        {
+          "property": "ins:electionIncrements",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:enablesComplianceWithAnnualGiftExclusion",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:enablesComplianceWithAnnualGiftExclusion",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AnnualExclusionGiftPlanning"
+        },
+        {
+          "property": "ins:enablesPortability",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyPortability"
+        },
+        {
+          "property": "ins:enablesPortability",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:enablesWaiver",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:enablesWaiver",
+          "problem": "range_unsatisfiable",
+          "class": "ins:DisabilityCoverage"
+        },
+        {
+          "property": "ins:excludedFromDeathBenefitWhenOccurringInAviation",
+          "problem": "range_unsatisfiable",
+          "class": "ins:DeathBenefit"
+        },
+        {
+          "property": "ins:executedByPresident",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:executedByPresident",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ExecutiveOfficer"
+        },
+        {
+          "property": "ins:forfeitsBenefit",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:governingLawJurisdiction",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:governingLawJurisdiction",
+          "problem": "range_unsatisfiable",
+          "class": "ins:LegalJurisdiction"
+        },
+        {
+          "property": "ins:governsOrRegulates",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:grantsRightToChangeBeneficiary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:grantsRightToPortCoverage",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwnership"
+        },
+        {
+          "property": "ins:growsWithAccount",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:growsWithAccount",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AccountValue"
+        },
+        {
+          "property": "ins:hasAccidentalDeathDefinition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasAccount",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasAccountValueDefinition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasAccountValueDefinition",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AccountValue"
+        },
+        {
+          "property": "ins:hasAccumulationUnitsDefinition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasActivitiesOfDailyLivingDefinition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasActivitiesOfDailyLivingDefinition",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ActivitiesOfDailyLiving"
+        },
+        {
+          "property": "ins:hasActuarialDiscountAdjustment",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasActuarialDiscountAdjustment",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ActuarialDiscount"
+        },
+        {
+          "property": "ins:hasAgeEligibilityRange",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasAllocation",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InvestmentAllocation"
+        },
+        {
+          "property": "ins:hasAnnualExclusionGiftPlanning",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasAnnualExclusionGiftPlanning",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AnnualExclusionGiftPlanning"
+        },
+        {
+          "property": "ins:hasAssignmentRight",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwnership"
+        },
+        {
+          "property": "ins:hasAssignmentRight",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyTransfer"
+        },
+        {
+          "property": "ins:hasAviationExclusion",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasAviationExclusionWaiver",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasBackup",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasBackup",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasBalancedAllocationFundShare",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasBeneficiary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasBeneficiary",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:hasBeneficiaryRole",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasBeneficiaryRole",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Trust"
+        },
+        {
+          "property": "ins:hasBorrowableCashValue",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasCashAccessMethod",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:CashValue"
+        },
+        {
+          "property": "ins:hasCeoSignatory",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasCeoSignatory",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AuthorizedSignatory"
+        },
+        {
+          "property": "ins:hasCeoSignatureConfirmation",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasChargesOption",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasChiefExecutiveOfficerRole",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:ExecutiveOfficer"
+        },
+        {
+          "property": "ins:hasChiefExecutiveOfficerRole",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Role"
+        },
+        {
+          "property": "ins:hasChunkFact",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasCoBeneficiary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasCoBeneficiary",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:hasConcept",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasContactInformation",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasContactInformation",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ContactInformation"
+        },
+        {
+          "property": "ins:hasContestabilityPeriod",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasCoverageLimit",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:hasCoverageShare",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:hasCrummeyPowerRequirements",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Trust"
+        },
+        {
+          "property": "ins:hasDaughterOfInsured",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasDaughterOfInsured",
+          "problem": "range_unsatisfiable",
+          "class": "ins:DaughterBeneficiary"
+        },
+        {
+          "property": "ins:hasDeathBenefitShare",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasDeathBenefitShare",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:hasDeductionImpactOnReturns",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InvestmentExperience"
+        },
+        {
+          "property": "ins:hasDefinitionOfDisability",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:DisabilityCoverage"
+        },
+        {
+          "property": "ins:hasDefinitionOfDisability",
+          "problem": "range_unsatisfiable",
+          "class": "ins:BenefitStructure"
+        },
+        {
+          "property": "ins:hasDepartment",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasDividendOption",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasEarningsContinuity",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasEarningsContinuity",
+          "problem": "range_unsatisfiable",
+          "class": "ins:EligibilityRequirementWarning"
+        },
+        {
+          "property": "ins:hasEmployeeIdVerification",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasEmployeeIdVerification",
+          "problem": "range_unsatisfiable",
+          "class": "ins:EmployeeInformation"
+        },
+        {
+          "property": "ins:hasEquityIndexedFormType",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasExclusion",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasFamilyRelationship",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasFamilyRelationship",
+          "problem": "range_unsatisfiable",
+          "class": "ins:FamilyRelationship"
+        },
+        {
+          "property": "ins:hasFixedAccountGuarantee",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasFlexiblePremiumPayment",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasFloorProtectionLevel",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasFreeLookPeriod",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasFuturePerformanceDisclaimer",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasGracePeriod",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasGradedBenefitSchedule",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:hasGradedDeathBenefit",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasGradedDeathBenefit",
+          "problem": "range_unsatisfiable",
+          "class": "ins:GradedDeathBenefit"
+        },
+        {
+          "property": "ins:hasGuaranteedCashValueGrowth",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasGuaranteedInsurabilityOption",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasHazardousActivityExclusion",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasInsured",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasInsured",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasInsuredGender",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasInsuredGender",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Gender"
+        },
+        {
+          "property": "ins:hasInterestCalculationMethod",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasJointLifeCoverage",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasJointLifeCoverage",
+          "problem": "range_unsatisfiable",
+          "class": "ins:JointLifePolicy"
+        },
+        {
+          "property": "ins:hasLegalJurisdiction",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasLegalJurisdiction",
+          "problem": "range_unsatisfiable",
+          "class": "ins:LegalJurisdiction"
+        },
+        {
+          "property": "ins:hasLevelPremium",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasLineSeparator",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:VisualLayout"
+        },
+        {
+          "property": "ins:hasMonthlyChargesComposition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasMortalityExpenseRiskCharge",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasNoLapseGuarantee",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasNoLapseGuarantee",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyLapse"
+        },
+        {
+          "property": "ins:hasNoWarExclusion",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:hasNotificationRequirement",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPartialWithdrawalAccess",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyFunding"
+        },
+        {
+          "property": "ins:hasPartialWithdrawalAccess",
+          "problem": "range_unsatisfiable",
+          "class": "ins:WithdrawalRule"
+        },
+        {
+          "property": "ins:hasPaymentFlexibility",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasPaymentMode",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPolicyExecutionLocation",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPolicyExecutionLocation",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Location"
+        },
+        {
+          "property": "ins:hasPolicyType",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPolicyholder",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasPolicyholder",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:hasPreferredPlusClassification",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasPremiumLoadApplied",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyFunding"
+        },
+        {
+          "property": "ins:hasPremiumPaymentCycle",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPrimaryBeneficiary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasPrimaryBeneficiary",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PrimaryBeneficiary"
+        },
+        {
+          "property": "ins:hasProtectionLevel",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasRegisteredUnitInvestmentTrust",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasRegulatoryOversight",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasReturnOfPremiumFeature",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasRider",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasRiskClassification",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Insured"
+        },
+        {
+          "property": "ins:hasRopFeature",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasSecondToDieStructure",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasSecondToDieStructure",
+          "problem": "range_unsatisfiable",
+          "class": "ins:JointSurvivorshipLifeInsurance"
+        },
+        {
+          "property": "ins:hasSelectedDividendOption",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:hasShareOfEstate",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:hasSigningAuthority",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyEntity"
+        },
+        {
+          "property": "ins:hasSigningAuthority",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AuthorizedSignatory"
+        },
+        {
+          "property": "ins:hasSmokerStatus",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasSpouseBeneficiary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:hasSpouseBeneficiary",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:hasSubAccount",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasSubmissionAddress",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasSubmissionAddress",
+          "problem": "range_unsatisfiable",
+          "class": "ins:MailingAddress"
+        },
+        {
+          "property": "ins:hasTaxExclusionViaIrrevocableTrust",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasTaxImplication",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasTollFreeNumberCorrespondenceWith",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:ContactInformation"
+        },
+        {
+          "property": "ins:hasTollFreeNumberCorrespondenceWith",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ContactInformation"
+        },
+        {
+          "property": "ins:hasTrust",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:hasTrust",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Trust"
+        },
+        {
+          "property": "ins:hasTrusteeOrFiduciary",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:hasTrusteeOrFiduciary",
+          "problem": "range_unsatisfiable",
+          "class": "ins:TrusteeAuthority"
+        },
+        {
+          "property": "ins:hasZeroDayNoticeRequirement",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceCompany"
+        },
+        {
+          "property": "ins:hasZeroDayNoticeRequirement",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:holdsContingentInterest",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:holdsContingentInterest",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyOwnership"
+        },
+        {
+          "property": "ins:holdsPosition",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Role"
+        },
+        {
+          "property": "ins:holdsPosition",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:incurredBy",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:investmentRiskBearer",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceCompany"
+        },
+        {
+          "property": "ins:isAffectedByMnECharge",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:isBeneficiaryOfPolicyTransfer",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:isBeneficiaryOfPolicyTransfer",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyTransfer"
+        },
+        {
+          "property": "ins:isCoinsured",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:isCoinsured",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:isCollateralForPolicyLoan",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:CashValue"
+        },
+        {
+          "property": "ins:isExemptFrom",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:isExercisableWithoutMedicalProof",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:isGuaranteedRenewableTo",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:isIndependentOfRopStabilityImpactFromAgeMisstatement",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceCompany"
+        },
+        {
+          "property": "ins:isIndependentOfRopStabilityImpactFromAgeMisstatement",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:isInstanceOfWholeLifeInsurancePolicy",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:isInstanceOfWholeLifeInsurancePolicy",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:isNotSecuritiesProduct",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:isPartOfDistribution",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:isPartOfDistribution",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:isPortableAcrossStates",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:isPortableAcrossStates",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyPortability"
+        },
+        {
+          "property": "ins:isSecondInsured",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:isSecondInsured",
+          "problem": "range_unsatisfiable",
+          "class": "ins:JointSurvivorshipLifeInsurance"
+        },
+        {
+          "property": "ins:isSubjectToConsultationByEstatePlanningAttorney",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:isSubjectToConsultationByEstatePlanningAttorney",
+          "problem": "range_unsatisfiable",
+          "class": "ins:EstatePlanning"
+        },
+        {
+          "property": "ins:isSubjectToSuicideExclusionClause",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:isValidCoverageIncrement",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:isValidCoverageIncrement",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Coverage"
+        },
+        {
+          "property": "ins:issuedWithoutMedicalExam",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:manages",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:manages",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:noMedicalExamRequired",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:noMedicalExamRequired",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Eligibility"
+        },
+        {
+          "property": "ins:offersGroupCoverageWithoutPreExistingConditionExclusions",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:GroupCoverage"
+        },
+        {
+          "property": "ins:overseesPolicyLapse",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyLapse"
+        },
+        {
+          "property": "ins:paysClaimsWithinTimeline",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:paysMonthlyAdministrativeFee",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyOwner"
+        },
+        {
+          "property": "ins:premiumBasedOnPolicyClass",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:providesCoverageUntilAge25",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:providesLiquidityForEstateTaxes",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:providesLiquidityForEstateTaxes",
+          "problem": "range_unsatisfiable",
+          "class": "ins:LifeInsuranceBenefit"
+        },
+        {
+          "property": "ins:providesMarketDeclineProtection",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:receives",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Beneficiary"
+        },
+        {
+          "property": "ins:receives",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Payout"
+        },
+        {
+          "property": "ins:replaces",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:replaces",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsuranceContract"
+        },
+        {
+          "property": "ins:requiresAnnualProofOfDisability",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsuredPerson"
+        },
+        {
+          "property": "ins:requiresAssessmentOfActivitiesOfDailyLiving",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:ActivitiesOfDailyLiving"
+        },
+        {
+          "property": "ins:requiresAssessmentOfActivitiesOfDailyLiving",
+          "problem": "range_unsatisfiable",
+          "class": "ins:ActivitiesOfDailyLiving"
+        },
+        {
+          "property": "ins:requiresCertification",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:requiresChangeNotice",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:AccountValue"
+        },
+        {
+          "property": "ins:requiresReinstatementWithInterest",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:PolicyTerm"
+        },
+        {
+          "property": "ins:requiresTrusteeAuthorization",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:Trust"
+        },
+        {
+          "property": "ins:requiresTrusteeAuthorization",
+          "problem": "range_unsatisfiable",
+          "class": "ins:PolicyTransfer"
+        },
+        {
+          "property": "ins:supportsAccountValueStabilityDuringOptionSwitches",
+          "problem": "range_unsatisfiable",
+          "class": "ins:AccountValue"
+        },
+        {
+          "property": "ins:survivorshipBasisTrigger",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:JointLifePolicy"
+        },
+        {
+          "property": "ins:survivorshipBasisTrigger",
+          "problem": "range_unsatisfiable",
+          "class": "ins:Benefit"
+        },
+        {
+          "property": "ins:transitionToSingleLife",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:transitionToSingleLife",
+          "problem": "range_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        },
+        {
+          "property": "ins:waiverOfPremium",
+          "problem": "domain_unsatisfiable",
+          "class": "ins:InsurancePolicy"
+        }
+      ],
+      "issue_count": 232
+    },
+    "subclass_cycles": {
+      "status": "PASS",
+      "cycles": [],
+      "issue_count": 0
+    },
+    "abox_structural_validation": {
+      "status": "WARN",
+      "enabled": true,
+      "total_issue_count": 2260,
+      "summary": {
+        "datatype_range_violations": 32,
+        "object_property_literal_violations": 0,
+        "datatype_property_resource_violations": 0,
+        "undeclared_class_references": 0,
+        "undeclared_predicate_references": 2184,
+        "functional_property_violations": 0,
+        "direct_disjoint_class_violations": 0,
+        "domain_assertion_warnings": 44,
+        "range_assertion_warnings": 0
+      },
+      "issues": {
+        "datatype_range_violations": [
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PrimaryBeneficiary_C1_SarahElizabethAnderson",
+            "predicate": "ins:hasEstateShareAllocation",
+            "value": "100%",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "the amount payable to the beneficiary upon the death of the insured during the policy term",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "the same day and month as the issue date in each subsequent year",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasAmount",
+            "value": "The amount of coverage converted",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "until they receive written notice at their home office",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:dateOfConfirmationOrDeathEvent",
+            "value": "before the policy expiry date",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "50%",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "value": "the end of the grace period",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "two years from the issue date",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasAnnualPremium",
+            "value": "monthly automatic deduction",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PremiumDueDate_C1_The15thOfEachMonth",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "15",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#InsurerChallengePeriodLimit_C1_Incontestability",
+            "predicate": "ins:conversionAgeImpact",
+            "value": "The insured's attained age at conversion affects the conversion outcome.",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ClaimSubmissionProcess_C1_Section9ClaimsProcedure",
+            "predicate": "ins:definesCancellationRightTimeframe",
+            "value": "30",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#duration",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "lump sum",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#AuthorizedSignatory_C1_ChiefUnderwritingOfficer",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "the death benefit to reflect what the premiums paid would have purchased at the correct sex",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasAmount",
+            "value": "the amount of coverage converted",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "the earlier of the policy expiry date or the insured's 65th birthday",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "two years from the issue date",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "value": "during the grace period when a premium is unpaid",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:conversionAgeImpact",
+            "value": "The class of permanent policy selected affects the conversion outcome.",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson",
+            "predicate": "ins:hasContingentInterestPercentage",
+            "value": "50%",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "15",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "value": "during the grace period",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "adjust the death benefit to reflect what the premiums paid would have purchased at the correct age",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:conversionAgeImpact",
+            "value": "The premium for the new policy will be based on the insured's attained age at conversion.",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasFaceAmount",
+            "value": "20-Year Level Term Life Insurance",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "value": "The grace period allows continued coverage even if the premium is not paid by the due date.",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasAnnualPremium",
+            "value": "20",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "value": "the death benefit",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:conversionAgeImpact",
+            "value": "without evidence of insurability",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasAmount",
+            "value": "Proof of death acceptable to us must be received in order for the death benefit to be paid.",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyEffectiveDate_C1_January152024",
+            "predicate": "ins:hasEffectiveDate",
+            "value": "the insured’s age at the time of misstatement",
+            "actual_datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "expected_datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "problem": "literal_does_not_match_declared_datatype_range"
+          }
+        ],
+        "object_property_literal_violations": [],
+        "datatype_property_resource_violations": [],
+        "undeclared_class_references": [],
+        "undeclared_predicate_references": [
+          {
+            "subject": "ins:FinalPaymentCondition",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A condition that must be met for the final payment to be made under a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:WithdrawalRule",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "policy withdrawal fees",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasPreferredPlusClassification",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Preferred Plus Rating",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TransferOfPolicyRightsPermit",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A permission allowing the transfer of rights associated with a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:PlaceOfResidence",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A location where an individual resides, such as a city or state.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasFixedLoanInterestRate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Loan Interest Payment Option",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasExpenseRatioDetailsInProspectus",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Relates an insurance contract to its expense ratio details as specified in the prospectus.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:CancellationGroundsAfterTwoYears",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Conditions under which a policy may be canceled after the initial two-year period.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:increasesDebt",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "contributes to total indebtedness",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ChildCoverage",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "insured's child",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:coiCalculationBasis",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Monthly COI Calculation Formula",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:InsurerChallengePeriodLimit",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A restriction on the duration during which an insurer may challenge a claim or policy validity.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:EarlyWithdrawalPenalty",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "penalty deducted during early withdrawal",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:EligibilityTrigger",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A condition that activates the eligibility for waiver or reinstatement in a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:SurrenderChargePeriod",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A period during which surrender charges apply, with varying levels based on policy duration.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:EligibilityTrigger",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "trigger for reinstatement eligibility",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasOptionDate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Relates an insurance contract to the specific date at which the policyholder may exercise an option, such as for additional coverage or policy changes.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:NonTaxablePayout",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A payment made upon policy termination that is not subject to income tax.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:EnrollmentPeriod",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "enrollment period",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:InsurancePolicy",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "policy term",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:isPeriodicPremiumComponentPreservedUnderLevelPremiumGuarantee",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates that a specific periodic (e.g., quarterly) premium component is preserved under the terms of a level premium guarantee in an insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:Payout",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "payout calculation",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:RenewalTerm",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "RENEWAL_TERM",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasMinimumAccelerationThreshold",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "minimum acceleration amount",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:sourceContractID",
+            "object": "C1",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:InvestmentExperience",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A measure of the insurer's historical investment performance used in pricing and reserving.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:requiresTrusteeAuthorization",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "requires trustee authorization for assignment",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasCapRate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "subject to cap rate",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:LoanLimit",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A maximum amount permitted for a policy loan under a life insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasEmployeeId",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Relates an employee to their unique employee identifier as specified in the insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:LifeInsurancePolicy",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The root concept of this ontology. Represents a life insurance policy as a whole; all domain classes are subsumed under this concept.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:MinimumPremiumPayment",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The lowest amount of premium payment required to maintain policy validity.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ZeroInterestFloor",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A minimum interest rate guarantee of zero percent applied to policy values.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ExcludedAviationScenario",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A scenario excluded from coverage under an aviation waiver in a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:DeathBenefitRecipient",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The individual or entity designated to receive the death benefit payment upon the insured's death.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:issuedWithoutMedicalExam",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "time condition for no medical exam",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TimingPointForGuaranteedCashValue",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A specific point in time used to determine the guaranteed cash value of a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:MonetaryValue",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "MONETARY_VALUE",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:RefundablePremiumsAtTermEnd",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The total amount of premiums that are refundable when the policy term ends.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TerminalDiagnosisBenefit",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A benefit payable upon diagnosis of a terminal illness as defined in the policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasMinimumAccelerationThreshold",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Specifies the minimum acceleration threshold value that triggers a condition or event in the insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasRopFeature",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "End of Term ROP Date",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:LegalJurisdiction",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "LEGAL_JURISDICTION",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TerminationCondition",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A condition that must be met for a life insurance policy to terminate.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasPolicyExpirationDate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Specifies the date on which the insurance policy ceases to be valid.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:PolicyComponent",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A structural or functional element of a life insurance policy that contributes to its operation, value, or benefit structure.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:SecuritiesGoverningAuthority",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The entity with authority over the securities aspect of a life insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:reinstatementRequiresRepayment",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "required for reinstatement",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ActuarialDiscount",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "No Actuarial Discount",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:MonthlyDeathBenefitCost",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "monthly death benefit cost",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:IndexCreditRate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The percentage of index gain credited to the policy account.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ClaimMailingAddress_C1_POBox5000HartfordCt06102",
+            "predicate": "ins:sourceContractID",
+            "object": "C1",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasAviationExclusion",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates whether an insurance policy includes or excludes coverage for aviation risks, with specific rules governing such exclusions or waivers.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:Charge",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "FEES",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:totalPremiumWithRiders",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Represents the total premium amount including all applicable riders in an insurance policy.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:includedUnderRiderWithNoMedicalExamForChildren",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates that a covered individual is included under a specific rider (rider 4) that waives the medical exam requirement for children.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:multipliedWithAccumulationUnitsToComputeAccountValue",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates the relationship where accumulation units are multiplied by a factor to compute the account value in an insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:conversionAgeImpact",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Conversion Eligibility Age Limit",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:grantsRightToPortCoverage",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates that a policy or clause grants the right to port coverage to a specified party or entity.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ClaimProcessingWindow",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "processing timeline for claims",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:allocationChangeFlexibility",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Allocation Change Methods",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ClaimsProcessingAuthority",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "An entity authorized to receive and process insurance claim submissions.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TemporalReference",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A reference to a specific point or period in time within a life insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:timesConversion",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Represents the multiplier or factor applied in the conversion of units within an insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasGracePeriod",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "grace period duration",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasTrusteeOrFiduciary",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Relates an insurance contract to the trustee or fiduciary responsible for the Hartford Family Irrevocable Life Insurance Trust.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:receives",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Indicates that one entity receives a benefit, payment, or communication from another entity as specified in an insurance contract.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasGuaranteedCashValueGrowth",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "is the guaranteed growth rate",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasPolicyExecutionLocation",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Policy Issuance Location",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:availableInvestmentFunds",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Money Market Fund Guarantee",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasContestabilityPeriod",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "prevents contestation due to",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:requiresReinstatementWithInterest",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "insufficient payments lead to policy lapse causing rop forfeiture",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasDaughterOfInsured",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Father-Son Relationship",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:isAffectedByMnECharge",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "is reduced by m&e charge",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:FundBalance",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The accumulated amount in a life insurance policy available for withdrawals or loans.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:CashValueGrowth",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The increase in the cash value of a life insurance policy over time.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ProofOfDeath_C1_CertifiedCopyOfTheDeathCertifica",
+            "predicate": "ins:sourceContractID",
+            "object": "C1",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:RightToSwitchToPermanentPolicy",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The right to convert a temporary policy into a permanent policy under specified conditions.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:lapseNoticeTiming",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Claim Processing Timeline",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:GuaranteedRenewable",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A policy feature allowing renewal without evidence of insurability.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:AutomaticCoverageUponHire",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A type of life insurance coverage that becomes effective immediately upon employment.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:doesNotRequire",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "is required despite no benefit",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:CorporateHeadquartersLocation",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Corporate Headquarters Location",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:HorizonWealthProtection",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A life insurance product offering protection and wealth preservation benefits.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TermInsurance",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "Extended Term Insurance",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:SalaryBasedCalculation",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "salary-based calculation",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ClaimSubmissionProcess_C1_Section9ClaimsProcedure",
+            "predicate": "ins:sourceContractSection",
+            "object": "claims procedure, submission address, policy claims",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasContactInformation",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Relates an insurance contract to its associated contact information, including details such as phone numbers, websites, and service availability.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:NoMedicalExam",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A life insurance policy that does not require a medical exam or health questions during underwriting.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:enablesPortability",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "independent of portability without medical exam",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:FloorRate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "floor protection",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:ThresholdTriggeringPolicyTermination",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A condition that terminates a life insurance policy when a specified threshold is met.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#InsuredBirthDate_C1_March221985",
+            "predicate": "ins:dateValue",
+            "object": "March 22, 1985",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:hasSubmissionAddress",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "provides address",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:paymentDueDate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "Specifies the date by which a payment is required to be made, typically associated with insurance premiums.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:PremiumNonPayment",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "no payout",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:PremiumDueDate",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "due date for annual premium payment",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:isPartOfDistribution",
+            "predicate": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "object": "is distributed based on policy performance",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:TrusteeAuthority",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "The legal authorization granted to a trustee to act on behalf of a trust in life insurance contexts.",
+            "problem": "predicate_not_declared_in_tbox"
+          },
+          {
+            "subject": "ins:GradedDeathBenefit",
+            "predicate": "http://www.w3.org/2004/02/skos/core#definition",
+            "object": "A death benefit that increases gradually over time, typically during an initial waiting period.",
+            "problem": "predicate_not_declared_in_tbox"
+          }
+        ],
+        "functional_property_violations": [],
+        "direct_disjoint_class_violations": [],
+        "domain_assertion_warnings": [
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PrimaryBeneficiary_C1_SarahElizabethAnderson",
+            "predicate": "ins:hasEstateShareAllocation",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:PrimaryBeneficiary"
+            ],
+            "expected_domain_classes": [
+              "ins:Beneficiary"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ProofOfCoverageRequirement_C1_OriginalPolicyDocument",
+            "predicate": "ins:claimSubmissionAddress",
+            "actual_subject_types": [
+              "ins:ProofOfCoverageRequirement",
+              "ins:RegulatoryDisclosure"
+            ],
+            "expected_domain_classes": [
+              "ins:ClaimSubmissionProcess"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:ContingentBeneficiary"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasCertificateNumber",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:Certificate"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:dateOfConfirmationOrDeathEvent",
+            "actual_subject_types": [
+              "ins:LumpSumPayout",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:ClaimValidationDocument"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_EmmaGraceAnderson",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:ContingentBeneficiary"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:LatePaymentWindow",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasCertificateNumber",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:Certificate"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:LumpSumPayout",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasAnnualPremium",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:Insured",
+              "ins:PolicyOwner"
+            ],
+            "expected_domain_classes": [
+              "ins:InsurancePolicy"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:claimSubmissionAddress",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:ClaimSubmissionProcess"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:claimSubmissionAddress",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:ClaimSubmissionProcess"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PremiumDueDate_C1_The15thOfEachMonth",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:PremiumDueDate",
+              "ins:RetryPaymentDate"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#InsurerChallengePeriodLimit_C1_Incontestability",
+            "predicate": "ins:conversionAgeImpact",
+            "actual_subject_types": [
+              "ins:InsurerChallengePeriodLimit"
+            ],
+            "expected_domain_classes": [
+              "ins:ConversionPrivilege"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ClaimSubmissionProcess_C1_Section9ClaimsProcedure",
+            "predicate": "ins:definesCancellationRightTimeframe",
+            "actual_subject_types": [
+              "ins:ClaimSubmissionProcess",
+              "ins:RopRulesSection"
+            ],
+            "expected_domain_classes": [
+              "ins:FreeLookPeriod"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:LumpSumPayout",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#AuthorizedSignatory_C1_ChiefUnderwritingOfficer",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:AuthorizedSignatory",
+              "ins:CertificateHolder"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ClaimSubmissionDocument_C1_CompletedClaimForm",
+            "predicate": "ins:claimSubmissionAddress",
+            "actual_subject_types": [
+              "ins:ClaimSubmissionDocument",
+              "ins:RegulatoryDisclosure"
+            ],
+            "expected_domain_classes": [
+              "ins:ClaimSubmissionProcess"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:LatePaymentWindow",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:Insured",
+              "ins:PolicyOwner"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:PolicyContinuationProtection",
+              "ins:RightToSwitchToPermanentPolicy"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:LatePaymentWindow",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:conversionAgeImpact",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:ConversionPrivilege"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_LucasJamesAnderson",
+            "predicate": "ins:hasContingentInterestPercentage",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:ContingentBeneficiary"
+            ],
+            "expected_domain_classes": [
+              "ins:Beneficiary"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:LatePaymentWindow",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:conversionAgeImpact",
+            "actual_subject_types": [
+              "ins:PolicyContinuationProtection",
+              "ins:RightToSwitchToPermanentPolicy"
+            ],
+            "expected_domain_classes": [
+              "ins:ConversionPrivilege"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasCertificateHolderName",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:CertificateHolder"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasAgeEligibility",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:Insured",
+              "ins:PolicyOwner"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasFaceAmount",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsurancePolicy"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasAnnualPremium",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:Insured",
+              "ins:PolicyOwner"
+            ],
+            "expected_domain_classes": [
+              "ins:InsurancePolicy"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#CertificateHolder_C1_JohnMichaelAnderson",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:CertificateHolder",
+              "ins:Insured",
+              "ins:PolicyOwner"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LatePaymentWindow_C1_GracePeriod",
+            "predicate": "ins:gracePeriodDuration",
+            "actual_subject_types": [
+              "ins:LatePaymentWindow",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#ContingentBeneficiary_C1_SecurelifeInsuranceCompany",
+            "predicate": "ins:hasAnnualPremium",
+            "actual_subject_types": [
+              "ins:ClaimsProcessingAuthority",
+              "ins:ContingentBeneficiary",
+              "ins:IssuingInsurer"
+            ],
+            "expected_domain_classes": [
+              "ins:InsurancePolicy"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#LumpSumPayout_C1_DeathBenefit",
+            "predicate": "ins:hasDeathBenefitAmount",
+            "actual_subject_types": [
+              "ins:LumpSumPayout",
+              "ins:PolicyContinuationProtection"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyContinuationProtection_C1_ConversionPrivilege",
+            "predicate": "ins:conversionAgeImpact",
+            "actual_subject_types": [
+              "ins:PolicyContinuationProtection",
+              "ins:RightToSwitchToPermanentPolicy"
+            ],
+            "expected_domain_classes": [
+              "ins:ConversionPrivilege"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          },
+          {
+            "subject": "https://example.org/ontology/insurance/abox#PolicyEffectiveDate_C1_January152024",
+            "predicate": "ins:hasEffectiveDate",
+            "actual_subject_types": [
+              "ins:PolicyEffectiveDate",
+              "ins:RetryPaymentDate"
+            ],
+            "expected_domain_classes": [
+              "ins:InsuranceContract"
+            ],
+            "problem": "subject_has_no_declared_domain_type"
+          }
+        ],
+        "range_assertion_warnings": []
+      },
+      "note": "The issue count is a validation count, not a mathematically complete count of all OWL logical inconsistencies."
+    }
+  },
+  "raw_pellet_consistency": "Consistent: No\nReason: Literal value \"50%\"^^string does not belong to datatype decimal\n",
+  "raw_pellet_classify": "\n http://www.w3.org/2002/07/owl#Thing\n    http://org.semanticweb.owlapi/error#Error1\n    http://org.semanticweb.owlapi/error#Error2\n       https://example.org/ontology/insurance#ClaimProcess\n          https://example.org/ontology/insurance#ApplicationError\n          https://example.org/ontology/insurance#ClaimSettlement\n          https://example.org/ontology/insurance#ClaimsProcessingTime\n          https://example.org/ontology/insurance#ConflictResolution\n    http://org.semanticweb.owlapi/error#Error3\n       https://example.org/ontology/insurance#EnrollmentPeriod\n       https://example.org/ontology/insurance#NotificationTimeline\n       https://example.org/ontology/insurance#PolicyLoan\n          https://example.org/ontology/insurance#TimePeriod\n             https://example.org/ontology/insurance#AnnualAdjustmentDateForLoanInterest\n             https://example.org/ontology/insurance#AnnualRecalculationTrigger\n             https://example.org/ontology/insurance#ClaimProcessingWindow\n             https://example.org/ontology/insurance#ConsecutiveMonths\n             https://example.org/ontology/insurance#ContestabilityPeriodDuration\n             https://example.org/ontology/insurance#ContestabilityPeriod\n             https://example.org/ontology/insurance#ConversionApplicationWindow\n             https://example.org/ontology/insurance#ConversionDeadline\n             https://example.org/ontology/insurance#CoverageDuration\n             https://example.org/ontology/insurance#CreditingCycleDuration\n             https://example.org/ontology/insurance#DeadlineForElectiveActionPostLapse\n             https://example.org/ontology/insurance#DeductionDate\n             https://example.org/ontology/insurance#DeductionPeriod\n             https://example.org/ontology/insurance#DocumentEffectiveDate\n             https://example.org/ontology/insurance#EnrollmentPeriod\n             https://example.org/ontology/insurance#FreeLookPeriodDuration\n             https://example.org/ontology/insurance#IncontestabilityPeriodDuration\n             https://example.org/ontology/insurance#InsuredBirthDate\n             https://example.org/ontology/insurance#MaximumAgeForGuarantee\n             https://example.org/ontology/insurance#NoticePeriod\n             https://example.org/ontology/insurance#NotificationTimeline\n             https://example.org/ontology/insurance#PaymentProcessingTimeframe\n             https://example.org/ontology/insurance#PolicyEffectiveDate\n                https://example.org/ontology/insurance#CoverageStart\n             https://example.org/ontology/insurance#PolicyYear\n             https://example.org/ontology/insurance#PortCoverageDeadline\n             https://example.org/ontology/insurance#PremiumDueDate\n             https://example.org/ontology/insurance#RenewedExclusionWindowPostReinstatement\n             https://example.org/ontology/insurance#RetryPaymentDate\n             https://example.org/ontology/insurance#SecondYearBenefitTierDate\n             https://example.org/ontology/insurance#SurrenderChargePeriod\n                https://example.org/ontology/insurance#SurrenderPeriodReturn\n             https://example.org/ontology/insurance#SurrenderPenaltyPoint\n             https://example.org/ontology/insurance#TimeThresholdForTerminalIllnessEligibility\n             https://example.org/ontology/insurance#TimingPointForGuaranteedCashValue\n             https://example.org/ontology/insurance#TimingWindowForChangingOptions\n             https://example.org/ontology/insurance#TrustEstablishmentDate\n             https://example.org/ontology/insurance#TwoYearWindow\n             https://example.org/ontology/insurance#WithdrawalChargePeriod\n    https://example.org/ontology/insurance#BenefitMechanism\n       https://example.org/ontology/insurance#ContingentInterest\n       https://example.org/ontology/insurance#EqualDistribution\n       https://example.org/ontology/insurance#EventBasedDisbursement\n       https://example.org/ontology/insurance#Formula\n          https://example.org/ontology/insurance#CalculationMethodForCoI\n             https://example.org/ontology/insurance#PointToPointMethod\n             https://example.org/ontology/insurance#SalaryBasedCalculation\n    https://example.org/ontology/insurance#Charge\n       https://example.org/ontology/insurance#AdditionalWaiverCost\n       https://example.org/ontology/insurance#AdministrativeExpense\n          https://example.org/ontology/insurance#OperationalCost\n          https://example.org/ontology/insurance#PolicyMaintenanceCost\n       https://example.org/ontology/insurance#BenefitOptionChangeFee\n       https://example.org/ontology/insurance#ChargeSchedule\n          https://example.org/ontology/insurance#DecliningSurrenderPenalty\n       https://example.org/ontology/insurance#ChargeStructure\n          https://example.org/ontology/insurance#AnnualFeeStructure\n       https://example.org/ontology/insurance#DailyCharging\n       https://example.org/ontology/insurance#DailyRiskCharge\n       https://example.org/ontology/insurance#Deduction\n          https://example.org/ontology/insurance#AccountValueDeduction\n          https://example.org/ontology/insurance#GracePeriodAdjustment\n          https://example.org/ontology/insurance#MonthlyDeduction\n          https://example.org/ontology/insurance#PolicyLoanDeduction\n       https://example.org/ontology/insurance#EarlyTerminationPenalty\n       https://example.org/ontology/insurance#ExpenseCharge\n       https://example.org/ontology/insurance#FixedAdministrativeFee\n       https://example.org/ontology/insurance#InterestOnUnpaidLoans\n       https://example.org/ontology/insurance#InvestmentFee\n       https://example.org/ontology/insurance#MonthlyDeathBenefitCost\n       https://example.org/ontology/insurance#OngoingCharge\n          https://example.org/ontology/insurance#AdministrativeCharge\n             https://example.org/ontology/insurance#ProcessingFee\n                https://example.org/ontology/insurance#ProcessingFeeForChangingOption\n          https://example.org/ontology/insurance#ExpenseRatio\n          https://example.org/ontology/insurance#OngoingChargesComparison\n       https://example.org/ontology/insurance#PenaltyAfterFreeReallocation\n       https://example.org/ontology/insurance#PolicyCost\n          https://example.org/ontology/insurance#PolicyCostComparison\n          https://example.org/ontology/insurance#PolicyCostPredictability\n       https://example.org/ontology/insurance#PremiumCharge\n          https://example.org/ontology/insurance#MortalityAndExpenseRiskCharge\n          https://example.org/ontology/insurance#PostYearTenPremiumAdjustment\n          https://example.org/ontology/insurance#PremiumLoad\n          https://example.org/ontology/insurance#PremiumPaymentPenalty\n             https://example.org/ontology/insurance#InterestOnDelinquentPayments\n       https://example.org/ontology/insurance#ReallocationFee\n       https://example.org/ontology/insurance#SurrenderCharge\n       https://example.org/ontology/insurance#WithdrawalCharge\n       https://example.org/ontology/insurance#WithdrawalCost\n    https://example.org/ontology/insurance#ComfortCareService\n    https://example.org/ontology/insurance#ContractualTerm\n       https://example.org/ontology/insurance#ContractualProvision\n          https://example.org/ontology/insurance#AccountAccess\n          https://example.org/ontology/insurance#AccumulatedMonetaryBenefit\n          https://example.org/ontology/insurance#AdjustmentAfterReinstatement\n          https://example.org/ontology/insurance#AgeBasedDeathBenefitAdjustment\n          https://example.org/ontology/insurance#AlternativeRopPaymentMethod\n          https://example.org/ontology/insurance#AnnualBenefitRecalculationTrigger\n          https://example.org/ontology/insurance#AnnualInterestRate\n          https://example.org/ontology/insurance#AnnualPremiumContributionCap\n          https://example.org/ontology/insurance#AnnualRenewalReferencePoint\n          https://example.org/ontology/insurance#Article\n          https://example.org/ontology/insurance#AutomaticCoverageUponHire\n          https://example.org/ontology/insurance#BenefitAdjustment\n             https://example.org/ontology/insurance#AnnualAdjustment\n             https://example.org/ontology/insurance#BenefitReduction\n          https://example.org/ontology/insurance#BenefitSwitching\n          https://example.org/ontology/insurance#BorrowingFeature\n             https://example.org/ontology/insurance#CashValueBorrowing\n             https://example.org/ontology/insurance#PolicyLoan\n                https://example.org/ontology/insurance#TimePeriod\n                   https://example.org/ontology/insurance#AnnualAdjustmentDateForLoanInterest\n                   https://example.org/ontology/insurance#AnnualRecalculationTrigger\n                   https://example.org/ontology/insurance#ClaimProcessingWindow\n                   https://example.org/ontology/insurance#ConsecutiveMonths\n                   https://example.org/ontology/insurance#ContestabilityPeriodDuration\n                   https://example.org/ontology/insurance#ContestabilityPeriod\n                   https://example.org/ontology/insurance#ConversionApplicationWindow\n                   https://example.org/ontology/insurance#ConversionDeadline\n                   https://example.org/ontology/insurance#CoverageDuration\n                   https://example.org/ontology/insurance#CreditingCycleDuration\n                   https://example.org/ontology/insurance#DeadlineForElectiveActionPostLapse\n                   https://example.org/ontology/insurance#DeductionDate\n                   https://example.org/ontology/insurance#DeductionPeriod\n                   https://example.org/ontology/insurance#DocumentEffectiveDate\n                   https://example.org/ontology/insurance#EnrollmentPeriod\n                   https://example.org/ontology/insurance#FreeLookPeriodDuration\n                   https://example.org/ontology/insurance#IncontestabilityPeriodDuration\n                   https://example.org/ontology/insurance#InsuredBirthDate\n                   https://example.org/ontology/insurance#MaximumAgeForGuarantee\n                   https://example.org/ontology/insurance#NoticePeriod\n                   https://example.org/ontology/insurance#NotificationTimeline\n                   https://example.org/ontology/insurance#PaymentProcessingTimeframe\n                   https://example.org/ontology/insurance#PolicyEffectiveDate\n                      https://example.org/ontology/insurance#CoverageStart\n                   https://example.org/ontology/insurance#PolicyYear\n                   https://example.org/ontology/insurance#PortCoverageDeadline\n                   https://example.org/ontology/insurance#PremiumDueDate\n                   https://example.org/ontology/insurance#RenewedExclusionWindowPostReinstatement\n                   https://example.org/ontology/insurance#RetryPaymentDate\n                   https://example.org/ontology/insurance#SecondYearBenefitTierDate\n                   https://example.org/ontology/insurance#SurrenderChargePeriod\n                      https://example.org/ontology/insurance#SurrenderPeriodReturn\n                   https://example.org/ontology/insurance#SurrenderPenaltyPoint\n                   https://example.org/ontology/insurance#TimeThresholdForTerminalIllnessEligibility\n                   https://example.org/ontology/insurance#TimingPointForGuaranteedCashValue\n                   https://example.org/ontology/insurance#TimingWindowForChangingOptions\n                   https://example.org/ontology/insurance#TrustEstablishmentDate\n                   https://example.org/ontology/insurance#TwoYearWindow\n                   https://example.org/ontology/insurance#WithdrawalChargePeriod\n          https://example.org/ontology/insurance#BorrowingRestriction\n          https://example.org/ontology/insurance#CancellationWindow\n          https://example.org/ontology/insurance#CashValueAccessRestriction\n          https://example.org/ontology/insurance#CashValueGrowthMechanism\n             https://example.org/ontology/insurance#AccumulationUnit\n             https://example.org/ontology/insurance#CreditingPeriod\n             https://example.org/ontology/insurance#DailyCompounding\n             https://example.org/ontology/insurance#Dividend\n             https://example.org/ontology/insurance#FixedAccount\n             https://example.org/ontology/insurance#FloorRate\n             https://example.org/ontology/insurance#FullIndexParticipation\n             https://example.org/ontology/insurance#GuaranteedInterestRate\n             https://example.org/ontology/insurance#GuaranteedReturnComponent\n             https://example.org/ontology/insurance#IndexCrediting\n                https://example.org/ontology/insurance#IndexPercentageChange\n             https://example.org/ontology/insurance#InterestCrediting\n             https://example.org/ontology/insurance#InterestRate\n                https://example.org/ontology/insurance#AnnualEarningsRateOnLoanedFunds\n                https://example.org/ontology/insurance#CurrentCreditRate\n                https://example.org/ontology/insurance#CurrentCreditedRate\n                https://example.org/ontology/insurance#LoanInterestRate\n                https://example.org/ontology/insurance#MinimumAnnualInterestFloor\n                https://example.org/ontology/insurance#RateCapCondition\n                https://example.org/ontology/insurance#VariableLoanInterestCalculationBasis\n             https://example.org/ontology/insurance#TaxDeferredGrowth\n             https://example.org/ontology/insurance#ZeroInterestFloor\n          https://example.org/ontology/insurance#CashValueUponTermination\n          https://example.org/ontology/insurance#ChargeFreeAnnualWithdrawalAllowance\n          https://example.org/ontology/insurance#ChargeShortfallConsequence\n          https://example.org/ontology/insurance#CombinedInsuredValue\n          https://example.org/ontology/insurance#ContinuationAfterLeavingEmployment\n          https://example.org/ontology/insurance#ContractSection\n             https://example.org/ontology/insurance#Section\n                https://example.org/ontology/insurance#AnnualPaymentRule\n                https://example.org/ontology/insurance#ClaimSubmissionProcess\n                   https://example.org/ontology/insurance#ClaimProcess\n                      https://example.org/ontology/insurance#ApplicationError\n                      https://example.org/ontology/insurance#ClaimSettlement\n                      https://example.org/ontology/insurance#ClaimsProcessingTime\n                      https://example.org/ontology/insurance#ConflictResolution\n                   https://example.org/ontology/insurance#NameVerification\n                https://example.org/ontology/insurance#CoreBenefitsSection\n                https://example.org/ontology/insurance#DueDate\n                https://example.org/ontology/insurance#MaturityReturnCondition\n                https://example.org/ontology/insurance#PaymentObligationSection\n                https://example.org/ontology/insurance#RopRulesSection\n                   https://example.org/ontology/insurance#DisbursementTimingRule\n                https://example.org/ontology/insurance#StabilityClause\n          https://example.org/ontology/insurance#ConversionTimingCondition\n          https://example.org/ontology/insurance#CostOfInsuranceChargeFormula\n          https://example.org/ontology/insurance#CoverageContinuationWindow\n             https://example.org/ontology/insurance#CoverageContinuationRule\n                https://example.org/ontology/insurance#ClaimSubmissionProcess\n                   https://example.org/ontology/insurance#ClaimProcess\n                      https://example.org/ontology/insurance#ApplicationError\n                      https://example.org/ontology/insurance#ClaimSettlement\n                      https://example.org/ontology/insurance#ClaimsProcessingTime\n                      https://example.org/ontology/insurance#ConflictResolution\n                   https://example.org/ontology/insurance#NameVerification\n                https://example.org/ontology/insurance#ContinuationBenefit\n                https://example.org/ontology/insurance#CoverageContinuity\n                   https://example.org/ontology/insurance#GeographicMobility\n                   https://example.org/ontology/insurance#PortableCoverage\n                https://example.org/ontology/insurance#ReturnToWork\n             https://example.org/ontology/insurance#GracePeriod\n             https://example.org/ontology/insurance#RecoveryWindow\n             https://example.org/ontology/insurance#RepaymentWindow\n          https://example.org/ontology/insurance#CoverageExtension\n             https://example.org/ontology/insurance#ChildCoverage\n             https://example.org/ontology/insurance#ElectiveBenefit\n             https://example.org/ontology/insurance#PaidUpAddition\n             https://example.org/ontology/insurance#RenewalTerm\n                https://example.org/ontology/insurance#MaximumRenewabilityDuration\n             https://example.org/ontology/insurance#SupplementaryEmployeeElectedCoverage\n             https://example.org/ontology/insurance#VoluntarySupplementalLifeInsurance\n          https://example.org/ontology/insurance#CoverageLimit\n             https://example.org/ontology/insurance#AdvanceLimit\n             https://example.org/ontology/insurance#ConversionLimit\n             https://example.org/ontology/insurance#MaximumCreditableGainLimit\n             https://example.org/ontology/insurance#PaymentCap\n          https://example.org/ontology/insurance#CoveredEvent\n             https://example.org/ontology/insurance#SuddenUnexpectedEvent\n          https://example.org/ontology/insurance#DeathBenefitLimitation\n          https://example.org/ontology/insurance#DeathBenefitOption\n             https://example.org/ontology/insurance#FixedPayoutOption\n             https://example.org/ontology/insurance#SplitBenefit\n          https://example.org/ontology/insurance#DefaultOption\n          https://example.org/ontology/insurance#DisqualifyingConditionForPayout\n          https://example.org/ontology/insurance#DividendEligibilityCondition\n          https://example.org/ontology/insurance#EarlyWithdrawalPenalty\n          https://example.org/ontology/insurance#ElectiveSupplementaryCoverage\n          https://example.org/ontology/insurance#EligibilityTrigger\n          https://example.org/ontology/insurance#EstateTaxMinimizationStrategy\n          https://example.org/ontology/insurance#ExcludedEventWithinTwoYears\n          https://example.org/ontology/insurance#ExclusionTriggerForEarlyDeath\n          https://example.org/ontology/insurance#FlightRelatedDeathExclusion\n          https://example.org/ontology/insurance#FloorActivationTrigger\n          https://example.org/ontology/insurance#FloorProtection\n          https://example.org/ontology/insurance#FullRefundFeature\n          https://example.org/ontology/insurance#FundBalance\n          https://example.org/ontology/insurance#GiftTaxExemptionCondition\n          https://example.org/ontology/insurance#GoverningLawClause\n          https://example.org/ontology/insurance#GoverningLaw\n          https://example.org/ontology/insurance#GradedBenefitTrigger\n          https://example.org/ontology/insurance#GroupCoverageWithoutRestrictions\n          https://example.org/ontology/insurance#GrowthLinkedPayout\n          https://example.org/ontology/insurance#GuaranteedFixedInterestAccount\n          https://example.org/ontology/insurance#GuaranteedInsurability\n          https://example.org/ontology/insurance#HomeOfficeProcedure\n          https://example.org/ontology/insurance#IncomeExcludedFromIndexCalculation\n          https://example.org/ontology/insurance#IncontestabilityClause\n          https://example.org/ontology/insurance#IncrementalIncreaseOption\n          https://example.org/ontology/insurance#IndexCreditRate\n          https://example.org/ontology/insurance#InsuranceProductType\n             https://example.org/ontology/insurance#HorizonWealthProtection\n             https://example.org/ontology/insurance#NoMedicalExam\n             https://example.org/ontology/insurance#SoftwareEngineering\n          https://example.org/ontology/insurance#InsurerChallengePeriodLimit\n          https://example.org/ontology/insurance#InterestRateOnCashComponent\n          https://example.org/ontology/insurance#JointDeathPayoutTiming\n          https://example.org/ontology/insurance#LateEntrantProvision\n          https://example.org/ontology/insurance#LatePaymentWindow\n          https://example.org/ontology/insurance#LatePremiumPenalty\n          https://example.org/ontology/insurance#LevelPremium\n          https://example.org/ontology/insurance#LoanAgainstCashValue\n             https://example.org/ontology/insurance#CashValueCollateral\n          https://example.org/ontology/insurance#LoanLimit\n          https://example.org/ontology/insurance#LossOfReturnUponConversion\n          https://example.org/ontology/insurance#MarketDeclineProtection\n          https://example.org/ontology/insurance#MaximumInterestRateCreditablePerPeriod\n          https://example.org/ontology/insurance#MinimumInterestRateProtection\n          https://example.org/ontology/insurance#MinimumProtectionLevel\n          https://example.org/ontology/insurance#MinimumSharingRatioInGains\n          https://example.org/ontology/insurance#MinimumYieldAssurance\n          https://example.org/ontology/insurance#NoRetroactiveCorrectionAllowed\n          https://example.org/ontology/insurance#NonAccumulatingBenefit\n          https://example.org/ontology/insurance#NonForfeitureOption\n             https://example.org/ontology/insurance#CashSurrenderValue\n          https://example.org/ontology/insurance#NonGuaranteedIncomeStream\n          https://example.org/ontology/insurance#NonTaxablePayout\n          https://example.org/ontology/insurance#OngoingObligations\n          https://example.org/ontology/insurance#OverduePaymentRate\n          https://example.org/ontology/insurance#PaymentTerms\n          https://example.org/ontology/insurance#PayoutPercentageDetermination\n          https://example.org/ontology/insurance#PayoutTriggerCondition\n             https://example.org/ontology/insurance#FinalPaymentCondition\n          https://example.org/ontology/insurance#PlanUpgradeRequirement\n          https://example.org/ontology/insurance#PolicyContinuationProtection\n          https://example.org/ontology/insurance#PolicyDebt\n          https://example.org/ontology/insurance#PolicyGuarantee\n             https://example.org/ontology/insurance#MinimumGuarantee\n          https://example.org/ontology/insurance#PolicyReinstatementPeriod\n             https://example.org/ontology/insurance#PolicyReinstatement\n          https://example.org/ontology/insurance#PolicyTransferAcrossStates\n          https://example.org/ontology/insurance#PostConversionPolicy\n          https://example.org/ontology/insurance#PostFirstDeathPolicyDivision\n          https://example.org/ontology/insurance#PreDistributionHoldingUnits\n          https://example.org/ontology/insurance#PremiumCollectionMethod\n          https://example.org/ontology/insurance#PremiumPayment\n             https://example.org/ontology/insurance#AgeBandedRate\n             https://example.org/ontology/insurance#BasePremium\n             https://example.org/ontology/insurance#MinimumPremiumPayment\n             https://example.org/ontology/insurance#MonthlyRateChange\n             https://example.org/ontology/insurance#NoFurtherPremiums\n             https://example.org/ontology/insurance#NoPremiumIncrease\n             https://example.org/ontology/insurance#NonRefundableCost\n                https://example.org/ontology/insurance#NonRefundableUponConversion\n             https://example.org/ontology/insurance#OverduePremium\n             https://example.org/ontology/insurance#PaymentTerm\n                https://example.org/ontology/insurance#PaymentFrequency\n                   https://example.org/ontology/insurance#PolicyBillingCycle\n                https://example.org/ontology/insurance#ReinstatementCondition\n                   https://example.org/ontology/insurance#ReinstatementEligibilityCriterion\n             https://example.org/ontology/insurance#PremiumCessation\n             https://example.org/ontology/insurance#PremiumPaymentMethod\n             https://example.org/ontology/insurance#PremiumPaymentSchedule\n                https://example.org/ontology/insurance#GuaranteedSchedule\n             https://example.org/ontology/insurance#PremiumRefund\n                https://example.org/ontology/insurance#PremiumReimbursement\n                https://example.org/ontology/insurance#PremiumReturnRate\n                https://example.org/ontology/insurance#RopPayment\n             https://example.org/ontology/insurance#PremiumStability\n             https://example.org/ontology/insurance#RetryDate\n          https://example.org/ontology/insurance#PremiumRelief\n             https://example.org/ontology/insurance#PremiumPaymentRelief\n             https://example.org/ontology/insurance#PremiumReliefAfterLongTermDisability\n             https://example.org/ontology/insurance#PremiumWaiver\n          https://example.org/ontology/insurance#PremiumReturn\n          https://example.org/ontology/insurance#PremiumWaiverAvailabilityCondition\n          https://example.org/ontology/insurance#ProofRequiredForReinstatement\n          https://example.org/ontology/insurance#ProofRequirementDuringWaiver\n          https://example.org/ontology/insurance#RareExercise\n          https://example.org/ontology/insurance#RequestableAlternativeBenefit\n          https://example.org/ontology/insurance#RightToChallengeValidity\n          https://example.org/ontology/insurance#RightToSwitchToPermanentPolicy\n          https://example.org/ontology/insurance#RiskProtectionFeature\n             https://example.org/ontology/insurance#PrincipalProtection\n          https://example.org/ontology/insurance#RoundingRule\n          https://example.org/ontology/insurance#SelectedDividendOption\n          https://example.org/ontology/insurance#SubAccountValuationMetric\n          https://example.org/ontology/insurance#SuicideBenefitLimit\n          https://example.org/ontology/insurance#SuicideClauseRefundLimitation\n          https://example.org/ontology/insurance#SurrenderValue\n          https://example.org/ontology/insurance#TaxComplianceRequirementAfterTransfer\n          https://example.org/ontology/insurance#TerminalDiagnosisBenefit\n          https://example.org/ontology/insurance#TerminationConditionSet\n             https://example.org/ontology/insurance#PolicyCancellation\n                https://example.org/ontology/insurance#CancellationGroundsAfterTwoYears\n          https://example.org/ontology/insurance#TerminationDueToNonPayment\n             https://example.org/ontology/insurance#PremiumNonPayment\n          https://example.org/ontology/insurance#ThreeYearLookbackRule\n          https://example.org/ontology/insurance#ThresholdTriggeringPolicyTermination\n             https://example.org/ontology/insurance#AccountValueThreshold\n             https://example.org/ontology/insurance#LifeExpectancyThreshold\n          https://example.org/ontology/insurance#TieredPercentageFeeOverTime\n          https://example.org/ontology/insurance#TimeLimitForReinstatingLapse\n          https://example.org/ontology/insurance#TimeThresholdForAutomaticContinuation\n          https://example.org/ontology/insurance#TransferOfPolicyRightsPermit\n          https://example.org/ontology/insurance#TransferabilityRestriction\n          https://example.org/ontology/insurance#TriggerDateForDeductions\n          https://example.org/ontology/insurance#TrustRights\n          https://example.org/ontology/insurance#UnpaidInstallmentsDueUponReinstatement\n          https://example.org/ontology/insurance#VariableComponent\n          https://example.org/ontology/insurance#WarExclusion\n          https://example.org/ontology/insurance#WithdrawalMechanismReducingDeathBenefit\n             https://example.org/ontology/insurance#CashAccessMethod\n                https://example.org/ontology/insurance#EarlyCashAccess\n             https://example.org/ontology/insurance#TaxLiquidity\n          https://example.org/ontology/insurance#WithdrawalRestrictionClause\n             https://example.org/ontology/insurance#CrummeyPower\n          https://example.org/ontology/insurance#ZeroLossProtection\n    https://example.org/ontology/insurance#CoverageEvent\n       https://example.org/ontology/insurance#Event\n          https://example.org/ontology/insurance#Action\n             https://example.org/ontology/insurance#AvailableUseOfAccumulatedFunds\n             https://example.org/ontology/insurance#BeneficiaryModificationProcedure\n             https://example.org/ontology/insurance#TerminationOption\n          https://example.org/ontology/insurance#BirthOrAdoptionEvent\n          https://example.org/ontology/insurance#RecalculationTimingPoint\n    https://example.org/ontology/insurance#DocumentArtifact\n       https://example.org/ontology/insurance#ChangeForm\n       https://example.org/ontology/insurance#DecorativeDivider\n       https://example.org/ontology/insurance#DocumentTimestamp\n       https://example.org/ontology/insurance#GovernmentIssuedId\n       https://example.org/ontology/insurance#InsuranceDocumentation\n          https://example.org/ontology/insurance#BoardOfDirectorsDeclaration\n          https://example.org/ontology/insurance#Certificate\n          https://example.org/ontology/insurance#ClaimSubmissionDocument\n             https://example.org/ontology/insurance#DeathCertificate\n             https://example.org/ontology/insurance#ProofOfCoverageRequirement\n                https://example.org/ontology/insurance#AnnualProof\n                https://example.org/ontology/insurance#ReinstatementHealthProof\n             https://example.org/ontology/insurance#ProofOfDeath\n          https://example.org/ontology/insurance#ClaimValidationDocument\n          https://example.org/ontology/insurance#DocumentAccessControl\n          https://example.org/ontology/insurance#DocumentExecution\n          https://example.org/ontology/insurance#DocumentFormatting\n          https://example.org/ontology/insurance#DocumentIdentifier\n             https://example.org/ontology/insurance#AuthenticationSymbol\n             https://example.org/ontology/insurance#PolicyNumber\n                https://example.org/ontology/insurance#PolicyIdentifier\n                   https://example.org/ontology/insurance#InsuranceContractIdentifier\n          https://example.org/ontology/insurance#DocumentOrigin\n          https://example.org/ontology/insurance#EvidenceOfCoverage\n          https://example.org/ontology/insurance#HealthcarePractitionerCertification\n          https://example.org/ontology/insurance#RegulatoryDisclosure\n             https://example.org/ontology/insurance#InvestmentTransparency\n             https://example.org/ontology/insurance#TaxImplication\n          https://example.org/ontology/insurance#SecuritiesProductProspectus\n          https://example.org/ontology/insurance#Signature\n          https://example.org/ontology/insurance#WrittenConfirmation\n       https://example.org/ontology/insurance#Seal\n    https://example.org/ontology/insurance#Exclusion\n       https://example.org/ontology/insurance#AdjustedDeathBenefitError\n       https://example.org/ontology/insurance#AviationExclusionWaiver\n       https://example.org/ontology/insurance#ContestablePeriodExclusion\n       https://example.org/ontology/insurance#DeathBenefitLimitationForEarlySuicide\n       https://example.org/ontology/insurance#DeathCauseLimitingRefund\n       https://example.org/ontology/insurance#ExcludedAviationScenario\n       https://example.org/ontology/insurance#ExcludedCauseOfDeath\n       https://example.org/ontology/insurance#HazardousActivityExclusion\n       https://example.org/ontology/insurance#PolicyExclusion\n       https://example.org/ontology/insurance#PreExistingConditionExclusion\n       https://example.org/ontology/insurance#ProceedsExclusion\n       https://example.org/ontology/insurance#RestrictedPayoutTrigger\n       https://example.org/ontology/insurance#SubstanceUseExclusion\n       https://example.org/ontology/insurance#SuicideExclusion\n       https://example.org/ontology/insurance#TravelExclusion\n    https://example.org/ontology/insurance#FinancialInstrument\n       https://example.org/ontology/insurance#BankDraft\n       https://example.org/ontology/insurance#GrowthVehicle\n          https://example.org/ontology/insurance#GuaranteedRateHoldingVehicle\n          https://example.org/ontology/insurance#StableValueInvestment\n       https://example.org/ontology/insurance#Index\n          https://example.org/ontology/insurance#BenchmarkForGains\n          https://example.org/ontology/insurance#MoodyCorporateBondIndex\n    https://example.org/ontology/insurance#InvestmentOption\n       https://example.org/ontology/insurance#GlobalStockMarketExposureOption\n       https://example.org/ontology/insurance#IndexAccount\n          https://example.org/ontology/insurance#MarketIndexedAccount\n          https://example.org/ontology/insurance#Nasdaq100IndexAccount\n          https://example.org/ontology/insurance#SP500IndexAccount\n       https://example.org/ontology/insurance#IndexBasedInvestmentOption\n          https://example.org/ontology/insurance#IndexPerformance\n             https://example.org/ontology/insurance#StockMarketPerformance\n       https://example.org/ontology/insurance#InvestmentFund\n          https://example.org/ontology/insurance#BalancedAllocationFund\n          https://example.org/ontology/insurance#EquityGrowthFund\n          https://example.org/ontology/insurance#GovernmentBondFund\n          https://example.org/ontology/insurance#RealEstateBackedEquityInvestment\n          https://example.org/ontology/insurance#RealEstateSecuritiesFund\n          https://example.org/ontology/insurance#RegisteredUnitInvestmentTrust\n       https://example.org/ontology/insurance#SubAccount\n          https://example.org/ontology/insurance#ModerateRiskDiversifiedPortfolio\n          https://example.org/ontology/insurance#MoneyMarketSubAccount\n    https://example.org/ontology/insurance#MonetaryValue\n       https://example.org/ontology/insurance#AccelerationLimit\n       https://example.org/ontology/insurance#BasicLifeBenefitAmount\n       https://example.org/ontology/insurance#DeathBenefitPayoutAmount\n          https://example.org/ontology/insurance#SecondToDieBenefitTrigger\n       https://example.org/ontology/insurance#FixedAdministrativeCost\n       https://example.org/ontology/insurance#FullPremiumReturnAmount\n       https://example.org/ontology/insurance#GuaranteedAnnualPremium\n       https://example.org/ontology/insurance#MaxConversionPolicySize\n       https://example.org/ontology/insurance#MaximumAnnualContributionLimit\n       https://example.org/ontology/insurance#MinimumPartialWithdrawalAmount\n       https://example.org/ontology/insurance#MinimumWithdrawalAmount\n       https://example.org/ontology/insurance#MonthlyPremium\n       https://example.org/ontology/insurance#Percentage\n          https://example.org/ontology/insurance#ExpenseRatioRange\n          https://example.org/ontology/insurance#MaximumLoanToSurrenderValueRatio\n          https://example.org/ontology/insurance#MinimumGuaranteedReturnLevel\n          https://example.org/ontology/insurance#ParticipationRate\n          https://example.org/ontology/insurance#PremiumLoadPercentage\n       https://example.org/ontology/insurance#PlannedAnnualPremium\n          https://example.org/ontology/insurance#TargetPremium\n       https://example.org/ontology/insurance#PremiumLoadingDeductionRate\n       https://example.org/ontology/insurance#PremiumPurchasingPower\n       https://example.org/ontology/insurance#RefundablePremiumsAtTermEnd\n       https://example.org/ontology/insurance#ReinstatementFinancialObligation\n       https://example.org/ontology/insurance#TotalAnnualPremiumWithRiders\n       https://example.org/ontology/insurance#TotalCombinedCoverageAmount\n       https://example.org/ontology/insurance#UnitValue\n    https://example.org/ontology/insurance#OwnershipRight\n       https://example.org/ontology/insurance#CancellationRightWithFullRefund\n       https://example.org/ontology/insurance#StockOwnership\n    https://example.org/ontology/insurance#Party\n    https://example.org/ontology/insurance#PolicyComponent\n       https://example.org/ontology/insurance#PolicyAnniversary\n       https://example.org/ontology/insurance#PolicyFeature\n          https://example.org/ontology/insurance#ConversionPrivilege\n             https://example.org/ontology/insurance#ConversionWindow\n             https://example.org/ontology/insurance#GroupToIndividualTransition\n          https://example.org/ontology/insurance#EconomicFactor\n             https://example.org/ontology/insurance#CostImplicationDueToRopFeature\n          https://example.org/ontology/insurance#FeeFreeTransfers\n          https://example.org/ontology/insurance#FinalYearReturn\n          https://example.org/ontology/insurance#FlexiblePremiumPayment\n          https://example.org/ontology/insurance#FreeLookPeriod\n          https://example.org/ontology/insurance#GuaranteedRenewable\n          https://example.org/ontology/insurance#InsuranceOption\n             https://example.org/ontology/insurance#ElectionOption\n             https://example.org/ontology/insurance#OptionDate\n          https://example.org/ontology/insurance#NoMarketVariability\n          https://example.org/ontology/insurance#NoNegativeReturns\n          https://example.org/ontology/insurance#PolicyModification\n             https://example.org/ontology/insurance#AdministrativeTransition\n          https://example.org/ontology/insurance#PolicyRenewal\n          https://example.org/ontology/insurance#Rider\n             https://example.org/ontology/insurance#AccidentalDeathBenefit\n             https://example.org/ontology/insurance#AdditionalCoverageAccessRight\n             https://example.org/ontology/insurance#ChronicCareAdvance\n             https://example.org/ontology/insurance#DependentChildCoverage\n             https://example.org/ontology/insurance#PremiumReliefRider\n             https://example.org/ontology/insurance#TerminalIllnessBenefit\n          https://example.org/ontology/insurance#UnderwritingExemption\n       https://example.org/ontology/insurance#PolicySplit\n       https://example.org/ontology/insurance#PolicyValueAdjustment\n       https://example.org/ontology/insurance#Restriction\n       https://example.org/ontology/insurance#Status\n    https://example.org/ontology/insurance#PolicyFinancialGrowth\n       https://example.org/ontology/insurance#CashValueGrowth\n    https://example.org/ontology/insurance#PolicyTermination\n       https://example.org/ontology/insurance#TerminationCondition\n          https://example.org/ontology/insurance#AgeBasedTermination\n          https://example.org/ontology/insurance#WaiverTerminationCriteria\n    https://example.org/ontology/insurance#RegulatoryAndComplianceEntity\n       https://example.org/ontology/insurance#DocumentAuthority\n       https://example.org/ontology/insurance#RegulatoryBody\n          https://example.org/ontology/insurance#ClaimsProcessingAuthority\n             https://example.org/ontology/insurance#ClaimHandler\n          https://example.org/ontology/insurance#SecuritiesGoverningAuthority\n       https://example.org/ontology/insurance#RegulatoryFramework\n    https://example.org/ontology/insurance#RiskClassification\n       https://example.org/ontology/insurance#PreferredPlusClassification\n       https://example.org/ontology/insurance#UnderwritingClass\n          https://example.org/ontology/insurance#SimplifiedIssue\n          https://example.org/ontology/insurance#SmokerStatus\n          https://example.org/ontology/insurance#UnderwritingDemographics\n    https://example.org/ontology/insurance#TemporalConcept\n       https://example.org/ontology/insurance#AgeAtIssue\n       https://example.org/ontology/insurance#Age\n       https://example.org/ontology/insurance#DateOfHire\n       https://example.org/ontology/insurance#TemporalReference\n       https://example.org/ontology/insurance#TimePeriod\n          https://example.org/ontology/insurance#AnnualAdjustmentDateForLoanInterest\n          https://example.org/ontology/insurance#AnnualRecalculationTrigger\n          https://example.org/ontology/insurance#ClaimProcessingWindow\n          https://example.org/ontology/insurance#ConsecutiveMonths\n          https://example.org/ontology/insurance#ContestabilityPeriodDuration\n          https://example.org/ontology/insurance#ContestabilityPeriod\n          https://example.org/ontology/insurance#ConversionApplicationWindow\n          https://example.org/ontology/insurance#ConversionDeadline\n          https://example.org/ontology/insurance#CoverageDuration\n          https://example.org/ontology/insurance#CreditingCycleDuration\n          https://example.org/ontology/insurance#DeadlineForElectiveActionPostLapse\n          https://example.org/ontology/insurance#DeductionDate\n          https://example.org/ontology/insurance#DeductionPeriod\n          https://example.org/ontology/insurance#DocumentEffectiveDate\n          https://example.org/ontology/insurance#EnrollmentPeriod\n          https://example.org/ontology/insurance#FreeLookPeriodDuration\n          https://example.org/ontology/insurance#IncontestabilityPeriodDuration\n          https://example.org/ontology/insurance#InsuredBirthDate\n          https://example.org/ontology/insurance#MaximumAgeForGuarantee\n          https://example.org/ontology/insurance#NoticePeriod\n          https://example.org/ontology/insurance#NotificationTimeline\n          https://example.org/ontology/insurance#PaymentProcessingTimeframe\n          https://example.org/ontology/insurance#PolicyEffectiveDate\n             https://example.org/ontology/insurance#CoverageStart\n          https://example.org/ontology/insurance#PolicyYear\n          https://example.org/ontology/insurance#PortCoverageDeadline\n          https://example.org/ontology/insurance#PremiumDueDate\n          https://example.org/ontology/insurance#RenewedExclusionWindowPostReinstatement\n          https://example.org/ontology/insurance#RetryPaymentDate\n          https://example.org/ontology/insurance#SecondYearBenefitTierDate\n          https://example.org/ontology/insurance#SurrenderChargePeriod\n             https://example.org/ontology/insurance#SurrenderPeriodReturn\n          https://example.org/ontology/insurance#SurrenderPenaltyPoint\n          https://example.org/ontology/insurance#TimeThresholdForTerminalIllnessEligibility\n          https://example.org/ontology/insurance#TimingPointForGuaranteedCashValue\n          https://example.org/ontology/insurance#TimingWindowForChangingOptions\n          https://example.org/ontology/insurance#TrustEstablishmentDate\n          https://example.org/ontology/insurance#TwoYearWindow\n          https://example.org/ontology/insurance#WithdrawalChargePeriod\n    https://example.org/ontology/insurance#Website\n       https://example.org/ontology/insurance#CorporatePortal\n       https://example.org/ontology/insurance#OnlinePortal\n https://example.org/ontology/insurance#AccountValue = https://example.org/ontology/insurance#AccountValueVolatility = https://example.org/ontology/insurance#ActivitiesOfDailyLiving = https://example.org/ontology/insurance#ActuarialAssumption = https://example.org/ontology/insurance#ActuarialDiscount = https://example.org/ontology/insurance#AddressInformation = https://example.org/ontology/insurance#AllianceGroupBenefits = https://example.org/ontology/insurance#AnnualExclusionGiftPlanning = https://example.org/ontology/insurance#AuthorizedSignatory = https://example.org/ontology/insurance#Beneficiary = https://example.org/ontology/insurance#BeneficiaryDesignation = https://example.org/ontology/insurance#Benefit = https://example.org/ontology/insurance#BenefitStructure = https://example.org/ontology/insurance#BurialExpenseCoverage = https://example.org/ontology/insurance#CaliforniaJurisdiction = https://example.org/ontology/insurance#CapitalPreservation = https://example.org/ontology/insurance#CashValue = https://example.org/ontology/insurance#CertificateHolder = https://example.org/ontology/insurance#ChronicIllness = https://example.org/ontology/insurance#ClaimMailingAddress = https://example.org/ontology/insurance#ClaimSubmissionChannel = https://example.org/ontology/insurance#ClaimsDepartment = https://example.org/ontology/insurance#ClaimsHotline = https://example.org/ontology/insurance#CompanyHierarchy = https://example.org/ontology/insurance#ContactInformation = https://example.org/ontology/insurance#ContactNumber = https://example.org/ontology/insurance#ContingentBeneficiary = https://example.org/ontology/insurance#ContingentBeneficiaryTrust = https://example.org/ontology/insurance#CorporateHeadquartersLocation = https://example.org/ontology/insurance#Coverage = https://example.org/ontology/insurance#CriticalCondition = https://example.org/ontology/insurance#CurrentPortfolioMix = https://example.org/ontology/insurance#CustomerService = https://example.org/ontology/insurance#CustomerServiceHotline = https://example.org/ontology/insurance#DaughterBeneficiary = https://example.org/ontology/insurance#DeathBenefit = https://example.org/ontology/insurance#DeathBenefitRecipient = https://example.org/ontology/insurance#DeathBenefitTiming = https://example.org/ontology/insurance#DebtReducingDeathBenefit = https://example.org/ontology/insurance#DisabilityCoverage = https://example.org/ontology/insurance#DualPayout = https://example.org/ontology/insurance#EffectOfPartialWithdrawal = https://example.org/ontology/insurance#Eligibility = https://example.org/ontology/insurance#EligibilityRequirementWarning = https://example.org/ontology/insurance#EligibilityThreshold = https://example.org/ontology/insurance#EligibleInsuredChildUnderRider = https://example.org/ontology/insurance#EmployeeInformation = https://example.org/ontology/insurance#EndOfTermPayout = https://example.org/ontology/insurance#EquityIndexedUniversalLife = https://example.org/ontology/insurance#EstatePlanning = https://example.org/ontology/insurance#EstimatedCashValueAfterTenYears = https://example.org/ontology/insurance#ExecutionLocation = https://example.org/ontology/insurance#ExecutiveApproval = https://example.org/ontology/insurance#ExecutiveLeadershipPosition = https://example.org/ontology/insurance#ExecutiveOfficer = https://example.org/ontology/insurance#FaceAmount = https://example.org/ontology/insurance#FamilyRelationship = https://example.org/ontology/insurance#FinancialCommitment = https://example.org/ontology/insurance#FirstDeathBenefit = https://example.org/ontology/insurance#FirstToDie = https://example.org/ontology/insurance#FosterChildrensTrust = https://example.org/ontology/insurance#FullRefundRequirement = https://example.org/ontology/insurance#FuneralExpense = https://example.org/ontology/insurance#FutureResults = https://example.org/ontology/insurance#Gender = https://example.org/ontology/insurance#GeographicScope = https://example.org/ontology/insurance#GradedDeathBenefit = https://example.org/ontology/insurance#GroupCoverage = https://example.org/ontology/insurance#GroupOperationsLeadership = https://example.org/ontology/insurance#GuaranteedIssue = https://example.org/ontology/insurance#IncreasedCostTerm = https://example.org/ontology/insurance#InsuranceCompany = https://example.org/ontology/insurance#InsuranceCompanyLocation = https://example.org/ontology/insurance#InsuranceContract = https://example.org/ontology/insurance#InsurancePolicy = https://example.org/ontology/insurance#Insured = https://example.org/ontology/insurance#InsuredEntity = https://example.org/ontology/insurance#InsuredPerson = https://example.org/ontology/insurance#InvestmentAllocation = https://example.org/ontology/insurance#InvestmentExperience = https://example.org/ontology/insurance#IssuerLocation = https://example.org/ontology/insurance#IssuingInsurer = https://example.org/ontology/insurance#JointInsured = https://example.org/ontology/insurance#JointLifePolicy = https://example.org/ontology/insurance#JointSurvivorshipLifeInsurance = https://example.org/ontology/insurance#LegalJurisdiction = https://example.org/ontology/insurance#LevelDeathBenefit = https://example.org/ontology/insurance#LifeInsuranceBenefit = https://example.org/ontology/insurance#Location = https://example.org/ontology/insurance#LumpSumPayout = https://example.org/ontology/insurance#MailingAddress = https://example.org/ontology/insurance#MasterPolicy = https://example.org/ontology/insurance#MaterialMisrepresentation = https://example.org/ontology/insurance#MedicalUncertainty = https://example.org/ontology/insurance#MidTermDeathBenefit = https://example.org/ontology/insurance#MilitaryServiceDeath = https://example.org/ontology/insurance#MisstatementOfSex = https://example.org/ontology/insurance#MortalityExperience = https://example.org/ontology/insurance#NamedInsured = https://example.org/ontology/insurance#NaturalChild = https://example.org/ontology/insurance#NetPayoutAfterDebts = https://example.org/ontology/insurance#OfficialEmailForInquiries = https://example.org/ontology/insurance#ParticipatingPolicy = https://example.org/ontology/insurance#PastPerformance = https://example.org/ontology/insurance#Payout = https://example.org/ontology/insurance#PayoutRecipient = https://example.org/ontology/insurance#PilotCrewDeathCoverage = https://example.org/ontology/insurance#PlaceOfResidence = https://example.org/ontology/insurance#PlazaAddress = https://example.org/ontology/insurance#PolicyAuthorization = https://example.org/ontology/insurance#PolicyEntity = https://example.org/ontology/insurance#PolicyFunding = https://example.org/ontology/insurance#PolicyIssuanceJurisdiction = https://example.org/ontology/insurance#PolicyLapse = https://example.org/ontology/insurance#PolicyOwner = https://example.org/ontology/insurance#PolicyOwnership = https://example.org/ontology/insurance#PolicyPortability = https://example.org/ontology/insurance#PolicySigningOfficer = https://example.org/ontology/insurance#PolicyStructure = https://example.org/ontology/insurance#PolicyTerm = https://example.org/ontology/insurance#PolicyTermDuration = https://example.org/ontology/insurance#PolicyTransfer = https://example.org/ontology/insurance#PortfolioRebalancing = https://example.org/ontology/insurance#PrimaryBeneficiary = https://example.org/ontology/insurance#PrivatePilotActivity = https://example.org/ontology/insurance#ProjectedCashValue = https://example.org/ontology/insurance#ReducedAccessToFunds = https://example.org/ontology/insurance#ReducedPayoutDueToGuaranteedIssue = https://example.org/ontology/insurance#Reduction = https://example.org/ontology/insurance#RegularOccupation = https://example.org/ontology/insurance#Role = https://example.org/ontology/insurance#SignatoryPosition = https://example.org/ontology/insurance#SimultaneousDeath = https://example.org/ontology/insurance#SpecifiedAmount = https://example.org/ontology/insurance#Spouse = https://example.org/ontology/insurance#SubmissionLocation = https://example.org/ontology/insurance#TermInsurance = https://example.org/ontology/insurance#TerminalIllness = https://example.org/ontology/insurance#TerminationPointForDeathBenefit = https://example.org/ontology/insurance#Trust = https://example.org/ontology/insurance#TrusteeAuthority = https://example.org/ontology/insurance#TrusteeOfIrrevocableTrust = https://example.org/ontology/insurance#UniversalLifeInsurancePolicyContract = https://example.org/ontology/insurance#VisualLayout = https://example.org/ontology/insurance#Withdrawal = https://example.org/ontology/insurance#WithdrawalRule = http://www.w3.org/2002/07/owl#Nothing\n\n"
+}

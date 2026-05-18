@@ -1,0 +1,1880 @@
+{
+  "description": "Competency Question-Answer pairs with corrected SPARQL queries for all 10 life insurance contracts.",
+  "prefixes": {
+    "abox": "https://example.org/ontology/insurance/abox#",
+    "li": "https://example.org/ontology/insurance#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "contracts": [
+    {
+      "file_name": "contract_1_term_life.txt",
+      "policy_type": "20-Year Level Term Life Insurance",
+      "insurer": "SecureLife Insurance Company",
+      "cq_pairs": [
+        {
+          "id": "C1_CQ01",
+          "question": "What is the policy number?",
+          "answer": "SL-2024-TRM-00123",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?policyNumber\nWHERE {\n  abox:PolicyIdentifier_C1_Sl2024Trm00123 li:labelValue ?policyNumber .\n}"
+        },
+        {
+          "id": "C1_CQ02",
+          "question": "What is the policy type?",
+          "answer": "20-Year Level Term Life Insurance",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany li:hasFaceAmount ?policyType .\n}"
+        },
+        {
+          "id": "C1_CQ03",
+          "question": "Who is the insured person?",
+          "answer": "John Michael Anderson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?name\nWHERE {\n  ?person a li:Insured ;\n          li:sourceContractID \"C1\"^^xsd:string ;\n          li:partyName ?name .\n}"
+        },
+        {
+          "id": "C1_CQ04",
+          "question": "What is the death benefit amount?",
+          "answer": "$500,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?amount\nWHERE {\n  abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany li:hasDeathBenefitAmount ?amount .\n  FILTER(DATATYPE(?amount) = xsd:double || DATATYPE(?amount) = xsd:decimal || DATATYPE(?amount) = xsd:float)\n}"
+        },
+        {
+          "id": "C1_CQ05",
+          "question": "What is the policy term in years?",
+          "answer": "20 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?term\nWHERE {\n  abox:PolicyTermDuration_C1_20Years li:labelValue ?term .\n}"
+        },
+        {
+          "id": "C1_CQ06",
+          "question": "When does the policy expire?",
+          "answer": "January 15, 2044",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?expiryDate\nWHERE {\n  abox:PolicyEffectiveDate_C1_January152044 li:dateValue ?expiryDate .\n}"
+        },
+        {
+          "id": "C1_CQ07",
+          "question": "What is the monthly premium amount?",
+          "answer": "$45.00",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:PolicyTermDuration_C1_4500 li:labelValue ?premium .\n}"
+        },
+        {
+          "id": "C1_CQ08",
+          "question": "What is the premium payment mode?",
+          "answer": "Monthly automatic deduction",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?mode\nWHERE {\n  abox:CertificateHolder_C1_JohnMichaelAnderson li:hasAnnualPremium ?mode .\n  FILTER(DATATYPE(?mode) = xsd:string && CONTAINS(LCASE(STR(?mode)), \"deduction\"))\n}"
+        },
+        {
+          "id": "C1_CQ09",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Sarah Elizabeth Anderson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C1_SarahElizabethAnderson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C1_CQ10",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Spouse",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?relationship\nWHERE {\n  abox:CertificateHolder_C1_JohnMichaelAnderson li:sourceContractSection ?relationship .\n  FILTER(CONTAINS(LCASE(STR(?relationship)), \"spouse\"))\n}"
+        },
+        {
+          "id": "C1_CQ11",
+          "question": "What percentage does the primary beneficiary receive?",
+          "answer": "100%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:PrimaryBeneficiary_C1_SarahElizabethAnderson li:hasEstateShareAllocation ?pct .\n}"
+        },
+        {
+          "id": "C1_CQ12",
+          "question": "Who are the contingent beneficiaries?",
+          "answer": "Emma Grace Anderson and Lucas James Anderson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?name\nWHERE {\n  ?bene a li:ContingentBeneficiary ;\n        li:sourceContractID \"C1\"^^xsd:string ;\n        li:partyName ?name .\n  FILTER(?name != \"SecureLife Insurance Company\"^^xsd:string)\n}"
+        },
+        {
+          "id": "C1_CQ13",
+          "question": "What percentage does Emma Grace Anderson receive as a contingent beneficiary?",
+          "answer": "50%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:ContingentBeneficiary_C1_EmmaGraceAnderson li:hasDeathBenefitAmount ?pct .\n}"
+        },
+        {
+          "id": "C1_CQ14",
+          "question": "What is the grace period duration?",
+          "answer": "31 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?gp\nWHERE {\n  abox:LatePaymentWindow_C1_GracePeriod li:gracePeriodDuration ?gp .\n  FILTER(DATATYPE(?gp) = xsd:integer || DATATYPE(?gp) = xsd:int)\n}"
+        },
+        {
+          "id": "C1_CQ15",
+          "question": "On which day of the month is the premium due?",
+          "answer": "15th of each month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?dueDay\nWHERE {\n  abox:PremiumDueDate_C1_The15thOfEachMonth li:dateValue ?dueDay .\n}"
+        },
+        {
+          "id": "C1_CQ16",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany li:hasEffectiveDate ?period .\n  FILTER(CONTAINS(STR(?period), \"two years\"))\n}"
+        },
+        {
+          "id": "C1_CQ17",
+          "question": "What is paid if the insured commits suicide within the suicide clause period?",
+          "answer": "A refund of premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?payout\nWHERE {\n  abox:LumpSumPayout_C1_DeathBenefit li:hasEffectiveDate ?payout .\n  FILTER(CONTAINS(STR(?payout), \"two years\"))\n}"
+        },
+        {
+          "id": "C1_CQ18",
+          "question": "Before what age must conversion to permanent insurance occur?",
+          "answer": "Age 65",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?deadline\nWHERE {\n  abox:ConversionDeadline_C1_InsuredS65thBirthday li:dateValue ?deadline .\n}"
+        },
+        {
+          "id": "C1_CQ19",
+          "question": "What is the incontestability period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany li:hasEffectiveDate ?period .\n  FILTER(CONTAINS(STR(?period), \"two years\"))\n}"
+        },
+        {
+          "id": "C1_CQ20",
+          "question": "Within how many days will valid claims be paid?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?timeline\nWHERE {\n  abox:ClaimProcessingWindow_C1_Within30Days li:labelValue ?timeline .\n}"
+        },
+        {
+          "id": "C1_CQ21",
+          "question": "What is the policy issue date?",
+          "answer": "January 15, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:PolicyEffectiveDate_C1_January152024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C1_CQ22",
+          "question": "What is the insured's date of birth?",
+          "answer": "March 22, 1985",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?dob\nWHERE {\n  abox:InsuredBirthDate_C1_March221985 li:dateValue ?dob .\n}"
+        },
+        {
+          "id": "C1_CQ23",
+          "question": "What is the insured's age at issue?",
+          "answer": "38 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C1_JohnMichaelAnderson li:hasAgeEligibility ?age .\n}"
+        },
+        {
+          "id": "C1_CQ24",
+          "question": "What is the name of the issuing company?",
+          "answer": "SecureLife Insurance Company",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiary_C1_SecurelifeInsuranceCompany li:insurerName ?name .\n}"
+        },
+        {
+          "id": "C1_CQ25",
+          "question": "Can this policy be assigned?",
+          "answer": "Yes",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nASK {\n  abox:InsurerChallengePeriodLimit_C1_Assignment a li:TransferOfPolicyRightsPermit .\n}"
+        },
+        {
+          "id": "C1_CQ26",
+          "question": "What happens if the premium is not paid by the end of the grace period?",
+          "answer": "The policy will lapse and coverage will terminate",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?consequence\nWHERE {\n  abox:LatePaymentWindow_C1_GracePeriod li:gracePeriodDuration ?consequence .\n  FILTER(DATATYPE(?consequence) = xsd:string && CONTAINS(LCASE(STR(?consequence)), \"end of the grace period\"))\n}"
+        },
+        {
+          "id": "C1_CQ27",
+          "question": "Who is the policy owner?",
+          "answer": "John Michael Anderson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?name\nWHERE {\n  ?owner a li:PolicyOwner ;\n         li:sourceContractID \"C1\"^^xsd:string ;\n         li:partyName ?name .\n}"
+        },
+        {
+          "id": "C1_CQ28",
+          "question": "What documents must the beneficiary submit to file a claim?",
+          "answer": "Completed claim form, certified copy of the death certificate, and original policy document (if available)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?doc\nWHERE {\n  { abox:ClaimSubmissionDocument_C1_CompletedClaimForm li:labelValue ?doc . }\n  UNION\n  { abox:ProofOfDeath_C1_CertifiedCopyOfTheDeathCertifica li:labelValue ?doc . }\n  UNION\n  { abox:ProofOfCoverageRequirement_C1_OriginalPolicyDocument li:labelValue ?doc . }\n}"
+        },
+        {
+          "id": "C1_CQ29",
+          "question": "What is the mailing address for claims?",
+          "answer": "P.O. Box 5000, Hartford, CT 06102",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?address\nWHERE {\n  abox:ClaimMailingAddress_C1_POBox5000HartfordCt06102 li:stateOfIssuance ?address .\n}"
+        },
+        {
+          "id": "C1_CQ30",
+          "question": "Is conversion to permanent insurance available without evidence of insurability?",
+          "answer": "Yes",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:PolicyContinuationProtection_C1_ConversionPrivilege li:conversionAgeImpact \"without evidence of insurability\"^^xsd:string .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_2_whole_life.txt",
+      "policy_type": "Participating Whole Life Insurance",
+      "insurer": "Guardian Family Protection Corp.",
+      "cq_pairs": [
+        {
+          "id": "C2_CQ01",
+          "question": "What is the policy number?",
+          "answer": "GFP-WL-2024-8847",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:PolicyIdentifier_C2_GfpWl20248847 li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C2_CQ02",
+          "question": "What is the policy type?",
+          "answer": "Participating Whole Life",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:PrimaryBeneficiary_C2_DavidChen li:hasFaceAmount ?policyType .\n}"
+        },
+        {
+          "id": "C2_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Margaret Rose Chen",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C2_MargaretRoseChen li:partyName ?name .\n}"
+        },
+        {
+          "id": "C2_CQ04",
+          "question": "What is the face amount?",
+          "answer": "$250,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:FaceAmount_C2_250000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C2_CQ05",
+          "question": "What is the annual premium?",
+          "answer": "$3,240",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C2_CQ06",
+          "question": "What is the payment frequency?",
+          "answer": "Annual",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?freq\nWHERE {\n  abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp li:hasAnnualPremium ?freq .\n  FILTER(LCASE(STR(?freq)) = \"annual\")\n}"
+        },
+        {
+          "id": "C2_CQ07",
+          "question": "What is the insured's date of birth?",
+          "answer": "July 8, 1978",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C2_MargaretRoseChen li:dateOfBirth ?dob .\n}"
+        },
+        {
+          "id": "C2_CQ08",
+          "question": "What is the insured's age at issue?",
+          "answer": "45",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C2_MargaretRoseChen li:ageAtIssue ?age .\n}"
+        },
+        {
+          "id": "C2_CQ09",
+          "question": "What is the insured's risk class?",
+          "answer": "Standard Non-Tobacco",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?riskClass\nWHERE {\n  abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp li:hasDeathBenefitAmount ?riskClass .\n  FILTER(CONTAINS(LCASE(STR(?riskClass)), \"tobacco\"))\n}"
+        },
+        {
+          "id": "C2_CQ10",
+          "question": "Who is the primary beneficiary?",
+          "answer": "David Chen",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C2_DavidChen li:partyName ?name .\n}"
+        },
+        {
+          "id": "C2_CQ11",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Husband",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?rel\nWHERE {\n  abox:CertificateHolder_C2_MargaretRoseChen li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"marriage\"))\n}"
+        },
+        {
+          "id": "C2_CQ12",
+          "question": "Who is the contingent beneficiary?",
+          "answer": "Chen Family Trust",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiary_C2_ChenFamilyTrust li:labelValue ?name .\n}"
+        },
+        {
+          "id": "C2_CQ13",
+          "question": "What is the guaranteed cash value at end of Year 10?",
+          "answer": "$28,450",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?cashValue\nWHERE {\n  abox:LoanAgainstCashValue_C2_CashValue li:hasAmount ?cashValue .\n  FILTER(DATATYPE(?cashValue) = xsd:decimal || DATATYPE(?cashValue) = xsd:double)\n}"
+        },
+        {
+          "id": "C2_CQ14",
+          "question": "What is the guaranteed cash value at end of Year 20?",
+          "answer": "$71,200",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?cashValue\nWHERE {\n  abox:LoanAgainstCashValue_C2_CashValue li:hasDeathBenefitAmount ?cashValue .\n  FILTER(DATATYPE(?cashValue) = xsd:decimal || DATATYPE(?cashValue) = xsd:double)\n}"
+        },
+        {
+          "id": "C2_CQ15",
+          "question": "What is the policy loan interest rate?",
+          "answer": "5% per annum, compounded annually",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:LoanAgainstCashValue_C2_PolicyLoan li:hasFixedLoanInterestRate ?rate .\n}"
+        },
+        {
+          "id": "C2_CQ16",
+          "question": "What is the maximum loan amount as a percentage of cash surrender value?",
+          "answer": "90%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:LoanAgainstCashValue_C2_CashValue li:hasAmount ?pct .\n  FILTER(STR(?pct) = \"90%\")\n}"
+        },
+        {
+          "id": "C2_CQ17",
+          "question": "What is the currently selected dividend option?",
+          "answer": "Paid-Up Additions",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?option\nWHERE {\n  abox:RequestableAlternativeBenefit_C2_PaidUpAdditions li:labelValue ?option .\n}"
+        },
+        {
+          "id": "C2_CQ18",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:DeathCauseLimitingRefund_C2_Suicide li:labelValue ?period .\n}"
+        },
+        {
+          "id": "C2_CQ19",
+          "question": "What is the free look period?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:FreeLookPeriodDuration_C2_30Days li:dateValue ?period .\n}"
+        },
+        {
+          "id": "C2_CQ20",
+          "question": "What is the policy maturity date?",
+          "answer": "Age 100 (July 8, 2078)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?matDate\nWHERE {\n  abox:PolicyEffectiveDate_C2_July82078 li:dateValue ?matDate .\n}"
+        },
+        {
+          "id": "C2_CQ21",
+          "question": "What is the policy effective date?",
+          "answer": "February 1, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?effDate\nWHERE {\n  abox:PolicyEffectiveDate_C2_February12024 li:dateValue ?effDate .\n}"
+        },
+        {
+          "id": "C2_CQ22",
+          "question": "Within how many years of lapse can this policy be reinstated?",
+          "answer": "3 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:PolicyEffectiveDate_C2_Within3YearsOfLapse li:gracePeriodDuration ?period .\n}"
+        },
+        {
+          "id": "C2_CQ23",
+          "question": "What interest rate applies to overdue premiums at reinstatement?",
+          "answer": "6% per annum",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:OverduePaymentRate_C2_InterestAt6PerAnnum li:labelValue ?rate .\n}"
+        },
+        {
+          "id": "C2_CQ24",
+          "question": "What non-forfeiture option applies automatically if no election is made?",
+          "answer": "Extended Term Insurance",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?option\nWHERE {\n  abox:CoverageContinuationWindow_C2_ExtendedTermInsurance li:labelValue ?option .\n}"
+        },
+        {
+          "id": "C2_CQ25",
+          "question": "After how many years in force can non-forfeiture options be elected?",
+          "answer": "3 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?years\nWHERE {\n  abox:DeathBenefit_C2_FaceAmount li:hasAnnualPremium ?years .\n  FILTER(CONTAINS(STR(?years), \"three\"))\n}"
+        },
+        {
+          "id": "C2_CQ26",
+          "question": "What is the contestability period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContestabilityPeriodDuration_C2_TwoYears li:dateValue ?period .\n}"
+        },
+        {
+          "id": "C2_CQ27",
+          "question": "What is the name of the issuing company?",
+          "answer": "Guardian Family Protection Corp.",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiary_C2_GuardianFamilyProtectionCorp li:insurerName ?name .\n}"
+        },
+        {
+          "id": "C2_CQ28",
+          "question": "Within how many days will the death benefit be paid?",
+          "answer": "7 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?timeline\nWHERE {\n  abox:ClaimProcessingWindow_C2_Within7Days li:dateValue ?timeline .\n}"
+        },
+        {
+          "id": "C2_CQ29",
+          "question": "What is the premium payment period?",
+          "answer": "To age 100",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?payPeriod\nWHERE {\n  abox:BurialExpenseCoverage_C2_WholeLifeInsurancePolicy li:sourceContractSection ?payPeriod .\n  FILTER(CONTAINS(STR(?payPeriod), \"Premium Payment Period\"))\n}"
+        },
+        {
+          "id": "C2_CQ30",
+          "question": "Where was the policy issued?",
+          "answer": "Boston, Massachusetts",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C2_BostonMassachusetts li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_3_universal_life.txt",
+      "policy_type": "Universal Life Insurance",
+      "insurer": "FlexProtect Insurance Solutions",
+      "cq_pairs": [
+        {
+          "id": "C3_CQ01",
+          "question": "What is the contract number?",
+          "answer": "FPS-UL-24-03391",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?contractNum\nWHERE {\n  abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions li:hasCertificateNumber ?contractNum .\n}"
+        },
+        {
+          "id": "C3_CQ02",
+          "question": "What is the policy type?",
+          "answer": "Universal Life Insurance",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:InsuranceProductType_C3_FpsUl2403391 a ?policyType .\n  FILTER(CONTAINS(STR(?policyType), \"UniversalLife\"))\n}"
+        },
+        {
+          "id": "C3_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Robert James Wilson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C3_RobertJamesWilson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C3_CQ04",
+          "question": "What is the specified face amount?",
+          "answer": "$400,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions li:hasFaceAmount ?amount .\n}"
+        },
+        {
+          "id": "C3_CQ05",
+          "question": "What is the planned monthly premium?",
+          "answer": "$200",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions li:hasAnnualPremium ?premium .\n  FILTER(?premium = 200.0)\n}"
+        },
+        {
+          "id": "C3_CQ06",
+          "question": "What is the minimum premium per payment?",
+          "answer": "$75",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minPremium\nWHERE {\n  abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions li:hasAnnualPremium ?minPremium .\n  FILTER(?minPremium = 75.0)\n}"
+        },
+        {
+          "id": "C3_CQ07",
+          "question": "What is the currently selected death benefit option?",
+          "answer": "Level (Option A)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?option\nWHERE {\n  abox:DeathBenefitOption_C3_LevelOptionA li:labelValue ?option .\n}"
+        },
+        {
+          "id": "C3_CQ08",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Jennifer Ann Wilson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C3_JenniferAnnWilson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C3_CQ09",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Wife",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?rel\nWHERE {\n  abox:PrimaryBeneficiary_C3_JenniferAnnWilson li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"primary beneficiary\"))\n}"
+        },
+        {
+          "id": "C3_CQ10",
+          "question": "What is the guaranteed minimum interest rate?",
+          "answer": "2.0% per annum",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:CurrentCreditRate_C3_GuaranteedMinimumRate20PerAnnum li:assumedGuaranteedInterestRate ?rate .\n}"
+        },
+        {
+          "id": "C3_CQ11",
+          "question": "What is the current credited interest rate?",
+          "answer": "3.5% per annum",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:CurrentCreditRate_C3_CurrentRate35PerAnnumSubjectToCh li:labelValue ?rate .\n}"
+        },
+        {
+          "id": "C3_CQ12",
+          "question": "What is the monthly administrative expense charge?",
+          "answer": "$8.00 per month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?charge\nWHERE {\n  abox:PolicyContinuationProtection_C3_MonthlyDeductionDate li:hasAmount ?charge .\n  FILTER(DATATYPE(?charge) = xsd:decimal || DATATYPE(?charge) = xsd:double)\n}"
+        },
+        {
+          "id": "C3_CQ13",
+          "question": "What is the premium expense charge percentage?",
+          "answer": "3%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:PolicyContinuationProtection_C3_PremiumExpenseCharge li:labelValue ?pct .\n}"
+        },
+        {
+          "id": "C3_CQ14",
+          "question": "What is the grace period if account value is insufficient?",
+          "answer": "61 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?gp\nWHERE {\n  abox:ContingentBeneficiary_C3_FlexprotectInsuranceSolutions li:gracePeriodDuration ?gp .\n  FILTER(DATATYPE(?gp) = xsd:integer)\n}"
+        },
+        {
+          "id": "C3_CQ15",
+          "question": "What is the surrender charge in Year 1?",
+          "answer": "8% of Specified Amount",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:SurrenderCharge_C3_8 li:sharePercentage ?rate .\n}"
+        },
+        {
+          "id": "C3_CQ16",
+          "question": "What is the surrender charge from Year 15 onwards?",
+          "answer": "0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:CashValueUponTermination_C3_CashSurrenderValue li:hasDeathBenefitAmount ?rate .\n  FILTER(STR(?rate) = \"0%\")\n}"
+        },
+        {
+          "id": "C3_CQ17",
+          "question": "What is the surrender charge in Year 5?",
+          "answer": "5% of Specified Amount",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?schedule\nWHERE {\n  abox:EarlyWithdrawalPenalty_C3_SurrenderCharge li:hasAnnualPremium ?schedule .\n  FILTER(STR(?schedule) = \"5%\")\n}"
+        },
+        {
+          "id": "C3_CQ18",
+          "question": "What is the maximum loan amount?",
+          "answer": "90% of current Account Value",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxLoan\nWHERE {\n  abox:MaximumLoanToSurrenderValueRatio_C3_90 li:hasAmount ?maxLoan .\n}"
+        },
+        {
+          "id": "C3_CQ19",
+          "question": "What is the minimum partial withdrawal amount?",
+          "answer": "$500",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minWd\nWHERE {\n  abox:ProcessingFeeForChangingOption_C3_500 li:labelValue ?minWd .\n}"
+        },
+        {
+          "id": "C3_CQ20",
+          "question": "What is the withdrawal fee in Years 1 through 10?",
+          "answer": "$25 per withdrawal",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?fee\nWHERE {\n  abox:ProcessingFeeForChangingOption_C3_25 li:labelValue ?fee .\n}"
+        },
+        {
+          "id": "C3_CQ21",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "24 months",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:PolicyContinuationProtection_C3_AccountValue li:hasEffectiveDate ?period .\n  FILTER(STR(?period) = \"24 months\")\n}"
+        },
+        {
+          "id": "C3_CQ22",
+          "question": "What is paid if the insured dies by suicide within the waiting period?",
+          "answer": "Only the Account Value, without interest",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?payout\nWHERE {\n  abox:PolicyContinuationProtection_C3_AccountValue li:labelValue ?payout .\n}"
+        },
+        {
+          "id": "C3_CQ23",
+          "question": "What is the insured's date of birth?",
+          "answer": "November 15, 1982",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C3_RobertJamesWilson li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date)\n}"
+        },
+        {
+          "id": "C3_CQ24",
+          "question": "What is the insured's age at issue?",
+          "answer": "41",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C3_RobertJamesWilson li:hasAgeEligibility ?age .\n}"
+        },
+        {
+          "id": "C3_CQ25",
+          "question": "What is the policy issue date?",
+          "answer": "March 10, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:PolicyEffectiveDate_C3_March102024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C3_CQ26",
+          "question": "What is the death benefit under Option B?",
+          "answer": "Specified Amount plus Account Value",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?benefit\nWHERE {\n  abox:RequestableAlternativeBenefit_C3_OptionBIncreasingDeathBenefitAva li:labelValue ?benefit .\n}"
+        },
+        {
+          "id": "C3_CQ27",
+          "question": "What is the fee to change death benefit options?",
+          "answer": "$50",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?fee\nWHERE {\n  abox:BenefitOptionChangeFee_C3_PaymentOfA50ProcessingFee li:labelValue ?fee .\n}"
+        },
+        {
+          "id": "C3_CQ28",
+          "question": "What is the maximum annual premium subject to tax limitations?",
+          "answer": "$50,000 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?cap\nWHERE {\n  abox:AnnualPremiumContributionCap_C3_Maximum li:hasAnnualPremiumTaxCap ?cap .\n}"
+        },
+        {
+          "id": "C3_CQ29",
+          "question": "Who are the contingent beneficiaries?",
+          "answer": "Robert Wilson Jr. and Emily Rose Wilson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?name\nWHERE {\n  ?cb a li:ContingentBeneficiary ;\n      li:sourceContractID \"C3\"^^xsd:string ;\n      li:partyName ?name .\n  FILTER(?name != \"FlexProtect Insurance Solutions\"^^xsd:string)\n}"
+        },
+        {
+          "id": "C3_CQ30",
+          "question": "Where was the policy executed?",
+          "answer": "Phoenix, Arizona",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C3_PhoenixArizona li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_4_variable_universal.txt",
+      "policy_type": "Variable Universal Life Insurance",
+      "insurer": "Pinnacle Investment Life Corp.",
+      "cq_pairs": [
+        {
+          "id": "C4_CQ01",
+          "question": "What is the policy number?",
+          "answer": "PIL-VUL-2024-5521",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C4_CQ02",
+          "question": "What is the policy type?",
+          "answer": "Variable Universal Life Insurance",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:BurialExpenseCoverage_C4_VariableUniversalLifeInsurancePo li:labelValue ?policyType .\n}"
+        },
+        {
+          "id": "C4_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Dr. Amanda Katherine Foster",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C4_DrAmandaKatherineFoster li:partyName ?name .\n}"
+        },
+        {
+          "id": "C4_CQ04",
+          "question": "What is the initial face amount?",
+          "answer": "$1,000,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:CertificateHolder_C4_DrAmandaKatherineFoster li:hasFaceAmount ?amount .\n}"
+        },
+        {
+          "id": "C4_CQ05",
+          "question": "What is the currently selected death benefit option?",
+          "answer": "Option II (Face Amount plus Account Value)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?option\nWHERE {\n  abox:BurialExpenseCoverage_C4_VariableUniversalLifeInsurancePo li:hasDeathBenefitAmount ?option .\n  FILTER(CONTAINS(STR(?option), \"Option II\"))\n}"
+        },
+        {
+          "id": "C4_CQ06",
+          "question": "What is the planned annual premium?",
+          "answer": "$12,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp li:hasAnnualPremium ?premium .\n}"
+        },
+        {
+          "id": "C4_CQ07",
+          "question": "What is the insured's age at issue?",
+          "answer": "48",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C4_DrAmandaKatherineFoster li:ageAtIssue ?age .\n}"
+        },
+        {
+          "id": "C4_CQ08",
+          "question": "What is the insured's underwriting risk class?",
+          "answer": "Preferred Plus",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?riskClass\nWHERE {\n  abox:ContingentBeneficiaryTrust_C4_FosterChildrenSTrust li:hasFaceAmount ?riskClass .\n  FILTER(STR(?riskClass) = \"Preferred Plus\")\n}"
+        },
+        {
+          "id": "C4_CQ09",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Michael Thomas Foster",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C4_MichaelThomasFoster li:partyName ?name .\n}"
+        },
+        {
+          "id": "C4_CQ10",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Spouse",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rel\nWHERE {\n  abox:CertificateHolder_C4_DrAmandaKatherineFoster li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"spouse\"))\n}"
+        },
+        {
+          "id": "C4_CQ11",
+          "question": "What is the premium load percentage?",
+          "answer": "5.0% of each premium payment",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?load\nWHERE {\n  abox:GlobalStockMarketExposureOption_C4_EquityGrowthFund li:hasAnnualPremium ?load .\n  FILTER(STR(?load) = \"5%\")\n}"
+        },
+        {
+          "id": "C4_CQ12",
+          "question": "What is the annual Mortality and Expense Risk Charge?",
+          "answer": "0.90% per annum of account value",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?charge\nWHERE {\n  abox:VariableLoanInterestCalculationBasis_C4_090PerAnnum li:labelValue ?charge .\n}"
+        },
+        {
+          "id": "C4_CQ13",
+          "question": "What is the monthly administrative charge?",
+          "answer": "$15 per month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?charge\nWHERE {\n  abox:FixedAdministrativeCost_C4_15PerMonth li:labelValue ?charge .\n}"
+        },
+        {
+          "id": "C4_CQ14",
+          "question": "What is the surrender charge in Years 1 and 2?",
+          "answer": "7% of premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:DecliningSurrenderPenalty_C4_Year127Year345Year563Year70 li:hasAnnualPremium ?rate .\n}"
+        },
+        {
+          "id": "C4_CQ15",
+          "question": "What is the surrender charge from Year 7 onwards?",
+          "answer": "0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?schedule\nWHERE {\n  abox:DecliningSurrenderPenalty_C4_Year127Year345Year563Year70 li:labelValue ?schedule .\n}"
+        },
+        {
+          "id": "C4_CQ16",
+          "question": "What is the guaranteed minimum interest rate for the Money Market sub-account?",
+          "answer": "1.5%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:StableValueInvestment_C4_MoneyMarketFund li:assumedGuaranteedInterestRate ?rate .\n}"
+        },
+        {
+          "id": "C4_CQ17",
+          "question": "What is the policy loan interest rate?",
+          "answer": "5.5% per annum (fixed)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:LoanInterestRate_C4_55PerAnnum li:hasFixedLoanInterestRate ?rate .\n}"
+        },
+        {
+          "id": "C4_CQ18",
+          "question": "What is the maximum loan amount?",
+          "answer": "90% of surrender value",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxLoan\nWHERE {\n  abox:LoanLimit_C4_Maximum90OfSurrenderValue li:labelValue ?maxLoan .\n}"
+        },
+        {
+          "id": "C4_CQ19",
+          "question": "What is the minimum partial withdrawal amount?",
+          "answer": "$1,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minWd\nWHERE {\n  abox:GuaranteedRateHoldingVehicle_C4_MoneyMarketSubAccount li:accountBalanceThreshold ?minWd .\n}"
+        },
+        {
+          "id": "C4_CQ20",
+          "question": "What is the partial withdrawal processing fee?",
+          "answer": "$50",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?fee\nWHERE {\n  abox:WithdrawalCharge_C4_50ProcessingFee li:labelValue ?fee .\n}"
+        },
+        {
+          "id": "C4_CQ21",
+          "question": "What is the grace period if account value is insufficient?",
+          "answer": "61 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?gp\nWHERE {\n  abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp li:amountRequiredToPreventTermination ?gp .\n}"
+        },
+        {
+          "id": "C4_CQ22",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:DeathBenefitLimitation_C4_SuicideExclusion li:labelValue ?period .\n}"
+        },
+        {
+          "id": "C4_CQ23",
+          "question": "What is the war exclusion period from the issue date?",
+          "answer": "24 months",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContingentBeneficiary_C4_PinnacleInvestmentLifeCorp li:hasEffectiveDate ?period .\n  FILTER(STR(?period) = \"24 months\")\n}"
+        },
+        {
+          "id": "C4_CQ24",
+          "question": "Is aviation (as pilot or crew member) excluded?",
+          "answer": "Yes, unless declared and approved with extra premium",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nASK {\n  abox:FlightRelatedDeathExclusion_C4_AviationExclusion a li:FlightRelatedDeathExclusion .\n}"
+        },
+        {
+          "id": "C4_CQ25",
+          "question": "What is the policy date?",
+          "answer": "April 5, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyDate\nWHERE {\n  abox:PolicyEffectiveDate_C4_April52024 li:dateValue ?policyDate .\n}"
+        },
+        {
+          "id": "C4_CQ26",
+          "question": "How many free investment allocation changes are allowed per year?",
+          "answer": "12",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?freeChanges\nWHERE {\n  abox:StableValueInvestment_C4_MoneyMarketFund li:hasFreeReallocationLimit ?freeChanges .\n}"
+        },
+        {
+          "id": "C4_CQ27",
+          "question": "What is the reinstatement period after lapse?",
+          "answer": "Within 3 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:PolicyContinuationProtection_C4_PolicyLapse li:gracePeriodDuration ?period .\n}"
+        },
+        {
+          "id": "C4_CQ28",
+          "question": "What is the current allocation percentage to the Equity Growth Fund?",
+          "answer": "40%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:GlobalStockMarketExposureOption_C4_EquityGrowthFund li:hasAllocationPercentage ?pct .\n  FILTER(DATATYPE(?pct) = xsd:decimal || DATATYPE(?pct) = xsd:double)\n}"
+        },
+        {
+          "id": "C4_CQ29",
+          "question": "Who is the secondary beneficiary?",
+          "answer": "Foster Children's Trust",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiaryTrust_C4_FosterChildrenSTrust li:labelValue ?name .\n}"
+        },
+        {
+          "id": "C4_CQ30",
+          "question": "Where was the policy issued?",
+          "answer": "New York, New York",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C4_NewYorkNewYork li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_5_final_expense.txt",
+      "policy_type": "Guaranteed Issue Whole Life (Final Expense)",
+      "insurer": "ComfortCare Senior Insurance",
+      "cq_pairs": [
+        {
+          "id": "C5_CQ01",
+          "question": "What is the policy number?",
+          "answer": "CC-FE-2024-9903",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:PolicyIdentifier_C5_CcFe20249903 li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C5_CQ02",
+          "question": "What is the policy type?",
+          "answer": "Guaranteed Issue Whole Life",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:PolicyIdentifier_C5_CcFe20249903 li:hasFaceAmount ?policyType .\n}"
+        },
+        {
+          "id": "C5_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Dorothy Mae Johnson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C5_DorothyMaeJohnson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C5_CQ04",
+          "question": "What is the benefit amount?",
+          "answer": "$10,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:BurialExpenseCoverage_C5_WholeLifeInsurancePolicy li:faceAmount ?amount .\n}"
+        },
+        {
+          "id": "C5_CQ05",
+          "question": "What is the monthly premium?",
+          "answer": "$87.50",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:MaxConversionPolicySize_C5_8750 li:labelValue ?premium .\n}"
+        },
+        {
+          "id": "C5_CQ06",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Linda Sue Johnson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C5_LindaSueJohnson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C5_CQ07",
+          "question": "What is the beneficiary's relationship to the insured?",
+          "answer": "Daughter",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?rel\nWHERE {\n  abox:CertificateHolder_C5_DorothyMaeJohnson li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"daughter\"))\n}"
+        },
+        {
+          "id": "C5_CQ08",
+          "question": "What percentage of the face amount is paid for natural death during Year 1?",
+          "answer": "30% ($3,000) plus all premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:BurialExpenseCoverage_C5_WholeLifeInsurancePolicy li:hasDeathBenefitAmount ?pct .\n  FILTER(STR(?pct) = \"30%\")\n}"
+        },
+        {
+          "id": "C5_CQ09",
+          "question": "What percentage of the face amount is paid for natural death during Year 2?",
+          "answer": "70% ($7,000) plus all premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:BurialExpenseCoverage_C5_WholeLifeInsurancePolicy li:hasDeathBenefitAmount ?pct .\n  FILTER(STR(?pct) = \"70%\")\n}"
+        },
+        {
+          "id": "C5_CQ10",
+          "question": "When is the full benefit amount paid for natural death?",
+          "answer": "After Year 2 (on or after May 1, 2026)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?date\nWHERE {\n  abox:PolicyEffectiveDate_C5_May12026 li:dateValue ?date .\n}"
+        },
+        {
+          "id": "C5_CQ11",
+          "question": "What is paid in the event of accidental death at any time?",
+          "answer": "Full benefit amount ($10,000) plus all premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?payout\nWHERE {\n  abox:BurialExpenseCoverage_C5_WholeLifeInsurancePolicy li:hasDeathBenefitAmount ?payout .\n  FILTER(STR(?payout) = \"full benefit amount\")\n}"
+        },
+        {
+          "id": "C5_CQ12",
+          "question": "What is the grace period for missed payments?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?gp\nWHERE {\n  abox:GracePeriod_C5_30Days li:labelValue ?gp .\n}"
+        },
+        {
+          "id": "C5_CQ13",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:LatePaymentWindow_C5_GracePeriod li:hasEffectiveDate ?period .\n}"
+        },
+        {
+          "id": "C5_CQ14",
+          "question": "What is the free look period?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:BurialExpenseCoverage_C5_ThisPolicy li:definesCancellationRightTimeframe ?period .\n  FILTER(STR(?period) = \"30-day\")\n}"
+        },
+        {
+          "id": "C5_CQ15",
+          "question": "What is the insured's date of birth?",
+          "answer": "June 12, 1951",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C5_DorothyMaeJohnson li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date)\n}"
+        },
+        {
+          "id": "C5_CQ16",
+          "question": "What is the insured's age at issue?",
+          "answer": "72 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C5_DorothyMaeJohnson li:hasAgeEligibility ?age .\n  FILTER(DATATYPE(?age) = xsd:integer && ?age = 72)\n}"
+        },
+        {
+          "id": "C5_CQ17",
+          "question": "What is the policy effective date?",
+          "answer": "May 1, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?effDate\nWHERE {\n  abox:PolicyEffectiveDate_C5_May12024 li:dateValue ?effDate .\n}"
+        },
+        {
+          "id": "C5_CQ18",
+          "question": "What is the approximate cash value after 10 years?",
+          "answer": "$3,200",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?cv\nWHERE {\n  abox:EstimatedCashValueAfterTenYears_C5_3200 li:labelValue ?cv .\n}"
+        },
+        {
+          "id": "C5_CQ19",
+          "question": "Does this policy require a medical exam or health questions?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:GradedBenefitTrigger_C5_WithoutMedicalQuestionsOrExams\n    li:labelValue \"without medical questions or exams\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C5_CQ20",
+          "question": "What are the eligible age limits for coverage?",
+          "answer": "Ages 50 to 85",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?ageRange\nWHERE {\n  abox:EligibilityThreshold_C5_Ages5085 li:labelValue ?ageRange .\n}"
+        },
+        {
+          "id": "C5_CQ21",
+          "question": "What is the name of the issuing company?",
+          "answer": "ComfortCare Senior Insurance",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiary_C5_ComfortcareSeniorInsurance li:insurerName ?name .\n}"
+        },
+        {
+          "id": "C5_CQ22",
+          "question": "What is the claims mailing address?",
+          "answer": "P.O. Box 777, Tampa, FL 33601",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?address\nWHERE {\n  abox:ClaimMailingAddress_C5_TampaFl33601 li:stateOfIssuance ?address .\n}"
+        },
+        {
+          "id": "C5_CQ23",
+          "question": "Within how many business days will valid claims be paid?",
+          "answer": "5 business days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?timeline\nWHERE {\n  abox:ClaimProcessingWindow_C5_5BusinessDays li:labelValue ?timeline .\n}"
+        },
+        {
+          "id": "C5_CQ24",
+          "question": "Is there a war exclusion in this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:PolicyContinuationProtection_C5_NoOtherExclusions\n    li:labelValue \"NO OTHER EXCLUSIONS\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C5_CQ25",
+          "question": "Is there an aviation exclusion in this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:PaymentFrequency_C5_AnnualOrQuarterlyPayments\n    li:hasAnnualPremium \"no aviation exclusion\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C5_CQ26",
+          "question": "How long after lapse can the policy be restarted?",
+          "answer": "Within 2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:BurialExpenseCoverage_C5_ThisPolicy li:definesCancellationRightTimeframe ?period .\n  FILTER(STR(?period) = \"two years\")\n}"
+        },
+        {
+          "id": "C5_CQ27",
+          "question": "What automatic benefit applies if premiums stop after 2 years?",
+          "answer": "Reduced paid-up insurance with no further premiums required",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?benefit\nWHERE {\n  abox:BurialExpenseCoverage_C5_ThisPolicy li:definesCancellationRightTimeframe ?benefit .\n  FILTER(STR(?benefit) = \"After two years\")\n}"
+        },
+        {
+          "id": "C5_CQ28",
+          "question": "What is the premium payment method?",
+          "answer": "Bank draft on the 1st of each month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?method\nWHERE {\n  abox:MaxConversionPolicySize_C5_8750 li:hasAnnualPremium ?method .\n  FILTER(STR(?method) = \"bank draft\")\n}"
+        },
+        {
+          "id": "C5_CQ29",
+          "question": "Where was the policy issued?",
+          "answer": "Tampa, Florida",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C5_TampaFlorida li:stateOfIssuance ?location .\n}"
+        },
+        {
+          "id": "C5_CQ30",
+          "question": "After how many years in force can the policy not be contested or cancelled except for non-payment?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:BurialExpenseCoverage_C5_ThisPolicy li:definesCancellationRightTimeframe ?period .\n  FILTER(STR(?period) = \"After two years from issue\")\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_6_group_term.txt",
+      "policy_type": "Group Term Life Insurance",
+      "insurer": "Alliance Group Benefits",
+      "cq_pairs": [
+        {
+          "id": "C6_CQ01",
+          "question": "What is the certificate number?",
+          "answer": "AGB-GT-2024-TechCorp-00842",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?certNum\nWHERE {\n  abox:ClaimSubmissionDocument_C6_GroupTermLifeInsuranceCertificat li:hasCertificateNumber ?certNum .\n}"
+        },
+        {
+          "id": "C6_CQ02",
+          "question": "What is the master policy number?",
+          "answer": "AGB-2024-TC-GROUP",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?masterNum\nWHERE {\n  abox:ContingentBeneficiary_C6_TechcorpIndustriesInc li:hasCertificateNumber ?masterNum .\n}"
+        },
+        {
+          "id": "C6_CQ03",
+          "question": "Who is the certificate holder (insured employee)?",
+          "answer": "Alex Morgan Taylor",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C6_AlexMorganTaylor li:partyName ?name .\n}"
+        },
+        {
+          "id": "C6_CQ04",
+          "question": "Who is the employer (policyholder)?",
+          "answer": "TechCorp Industries, Inc.",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?employer\nWHERE {\n  abox:ContingentBeneficiary_C6_TechcorpIndustriesInc li:hasCertificateHolderName ?employer .\n}"
+        },
+        {
+          "id": "C6_CQ05",
+          "question": "What is the basic life insurance benefit amount?",
+          "answer": "$180,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:BasicLifeBenefitAmount_C6_180000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C6_CQ06",
+          "question": "What is the voluntary additional coverage amount?",
+          "answer": "$100,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:SupplementaryEmployeeElectedCoverage_C6_100000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C6_CQ07",
+          "question": "What is the total coverage amount?",
+          "answer": "$280,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?total\nWHERE {\n  abox:MaxConversionPolicySize_C6_280000 li:labelValue ?total .\n}"
+        },
+        {
+          "id": "C6_CQ08",
+          "question": "What is the basic life benefit formula?",
+          "answer": "2 times the employee's annual base salary",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?formula\nWHERE {\n  abox:CertificateHolder_C6_AlexMorganTaylor li:hasBasicLifeInsuranceAmount ?formula .\n}"
+        },
+        {
+          "id": "C6_CQ09",
+          "question": "What is the employee's monthly premium for voluntary coverage?",
+          "answer": "$12 per month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:MaxConversionPolicySize_C6_12Month li:labelValue ?premium .\n}"
+        },
+        {
+          "id": "C6_CQ10",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Jordan Casey Taylor",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C6_JordanCaseyTaylor li:partyName ?name .\n}"
+        },
+        {
+          "id": "C6_CQ11",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Spouse",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rel\nWHERE {\n  abox:PrimaryBeneficiary_C6_JordanCaseyTaylor li:hasEffectiveDate ?rel .\n}"
+        },
+        {
+          "id": "C6_CQ12",
+          "question": "Who is the contingent beneficiary?",
+          "answer": "Taylor Family Revocable Trust",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:ContingentBeneficiary_C6_TaylorFamilyRevocableTrust li:hasCertificateHolderName ?name .\n}"
+        },
+        {
+          "id": "C6_CQ13",
+          "question": "What is the coverage effective date?",
+          "answer": "June 1, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?effDate\nWHERE {\n  abox:PolicyEffectiveDate_C6_June12024 li:dateValue ?effDate .\n}"
+        },
+        {
+          "id": "C6_CQ14",
+          "question": "How many days after termination of employment does the employee have to convert to an individual policy?",
+          "answer": "31 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?days\nWHERE {\n  abox:PortCoverageDeadline_C6_Within31DaysOfTerminationOfEmplo li:dateValue ?days .\n}"
+        },
+        {
+          "id": "C6_CQ15",
+          "question": "What is the maximum conversion coverage amount?",
+          "answer": "Lesser of group coverage or $200,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxConv\nWHERE {\n  abox:MaxConversionPolicySize_C6_200000 li:labelValue ?maxConv .\n}"
+        },
+        {
+          "id": "C6_CQ16",
+          "question": "What maximum percentage of the death benefit can be accelerated for terminal illness?",
+          "answer": "75%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:ContingentBeneficiary_C6_AllianceGroupBenefits li:hasAmount ?pct .\n  FILTER(STR(?pct) = \"75%\")\n}"
+        },
+        {
+          "id": "C6_CQ17",
+          "question": "What is the minimum accelerated death benefit amount for terminal illness?",
+          "answer": "$5,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:AccelerationLimit_C6_5000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C6_CQ18",
+          "question": "What is the maximum accelerated death benefit amount for terminal illness?",
+          "answer": "$250,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:AccelerationLimit_C6_250000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C6_CQ19",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "12 months",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:RetryPaymentDate_C6_12Months li:dateValue ?period .\n}"
+        },
+        {
+          "id": "C6_CQ20",
+          "question": "Are there pre-existing condition exclusions?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nASK {\n  abox:ContingentBeneficiary_C6_AllianceGroupBenefits li:doesNotInvolveDirectStockOwnership true .\n}"
+        },
+        {
+          "id": "C6_CQ21",
+          "question": "What is the insured's date of birth?",
+          "answer": "February 14, 1990",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C6_AlexMorganTaylor li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date && STR(?dob) = \"1990-02-14\")\n}"
+        },
+        {
+          "id": "C6_CQ22",
+          "question": "What is the maximum total benefit amount?",
+          "answer": "$1,000,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxBenefit\nWHERE {\n  abox:MaxConversionPolicySize_C6_200000 li:hasAmount ?maxBenefit .\n}"
+        },
+        {
+          "id": "C6_CQ23",
+          "question": "What is the disability waiting period before premium waiver applies?",
+          "answer": "6 consecutive months",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:PolicyContinuationProtection_C6_WaiverOfPremium li:hasAmount ?period .\n  FILTER(DATATYPE(?period) = xsd:integer && ?period = 6)\n}"
+        },
+        {
+          "id": "C6_CQ24",
+          "question": "Before what age must disability occur for the waiver of premium to apply?",
+          "answer": "Age 60",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:WaiverTerminationCriteria_C6_WaiverEndsWhenYouReturnToWorkRec li:labelValue ?age .\n}"
+        },
+        {
+          "id": "C6_CQ25",
+          "question": "At what age does the waiver of premium end?",
+          "answer": "Age 65",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:PolicyContinuationProtection_C6_WaiverOfPremium li:hasAgeEligibility ?age .\n}"
+        },
+        {
+          "id": "C6_CQ26",
+          "question": "Within how many business days will claims be paid?",
+          "answer": "10 business days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?days\nWHERE {\n  abox:ContingentBeneficiary_C6_AllianceGroupBenefits li:definesCancellationRightTimeframe ?days .\n  FILTER(DATATYPE(?days) = xsd:integer && ?days = 10)\n}"
+        },
+        {
+          "id": "C6_CQ27",
+          "question": "What is the claims submission address?",
+          "answer": "1200 Insurance Plaza, Dallas, TX 75201",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?address\nWHERE {\n  abox:ClaimMailingAddress_C6_1200InsurancePlazaDallasTx75201 li:stateOfIssuance ?address .\n}"
+        },
+        {
+          "id": "C6_CQ28",
+          "question": "What is the maximum voluntary supplemental coverage as a multiple of salary?",
+          "answer": "5 times salary",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?multiple\nWHERE {\n  abox:IncrementalIncreaseOption_C6_AdditionalCoverage li:hasAnnualBaseSalaryForLifeBenefit ?multiple .\n}"
+        },
+        {
+          "id": "C6_CQ29",
+          "question": "What is the insured's date of hire?",
+          "answer": "March 1, 2022",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?hireDate\nWHERE {\n  abox:CertificateHolder_C6_AlexMorganTaylor li:hasEffectiveDate ?hireDate .\n  FILTER(DATATYPE(?hireDate) = xsd:date && STR(?hireDate) = \"2022-03-01\")\n}"
+        },
+        {
+          "id": "C6_CQ30",
+          "question": "Is evidence of insurability required to port coverage after leaving employment?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:ContingentBeneficiary_C6_AllianceGroupBenefits\n    li:explainsLackOfAutomaticProtection \"Evidence of insurability is not required for portability.\"^^xsd:string .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_7_term_with_riders.txt",
+      "policy_type": "30-Year Level Premium Term Life with Riders",
+      "insurer": "ProtectPlus Family Insurance Co.",
+      "cq_pairs": [
+        {
+          "id": "C7_CQ01",
+          "question": "What is the policy number?",
+          "answer": "PP-TL-2024-6729R",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:PrimaryBeneficiary_C7_OliviaGraceBennett li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C7_CQ02",
+          "question": "What is the policy type?",
+          "answer": "30-Year Level Premium Term",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:PolicyIdentifier_C7_PpTl20246729r li:hasFaceAmount ?policyType .\n  FILTER(DATATYPE(?policyType) = xsd:string)\n}"
+        },
+        {
+          "id": "C7_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Christopher David Bennett",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C7_ChristopherDavidBennett li:partyName ?name .\n}"
+        },
+        {
+          "id": "C7_CQ04",
+          "question": "What is the base policy face amount?",
+          "answer": "$750,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?amount\nWHERE {\n  abox:PolicyIdentifier_C7_PpTl20246729r li:hasFaceAmount ?amount .\n  FILTER(DATATYPE(?amount) = xsd:decimal || DATATYPE(?amount) = xsd:double)\n}"
+        },
+        {
+          "id": "C7_CQ05",
+          "question": "When does the policy expire?",
+          "answer": "July 12, 2054",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?expiryDate\nWHERE {\n  abox:PolicyEffectiveDate_C7_July122054 li:dateValue ?expiryDate .\n}"
+        },
+        {
+          "id": "C7_CQ06",
+          "question": "What is the base annual premium?",
+          "answer": "$612.00",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?premium\nWHERE {\n  abox:CertificateHolder_C7_ChristopherDavidBennett li:hasAnnualPremium ?premium .\n  FILTER(DATATYPE(?premium) = xsd:decimal && ?premium = 612.00)\n}"
+        },
+        {
+          "id": "C7_CQ07",
+          "question": "What is the total annual premium including all riders?",
+          "answer": "$1,089.00",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?totalPremium\nWHERE {\n  abox:PrimaryBeneficiary_C7_OliviaGraceBennett li:hasAnnualPremium ?totalPremium .\n}"
+        },
+        {
+          "id": "C7_CQ08",
+          "question": "What is the insured's underwriting class?",
+          "answer": "Preferred Non-Smoker",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?class\nWHERE {\n  abox:CertificateHolder_C7_ChristopherDavidBennett li:underwritingClass ?class .\n}"
+        },
+        {
+          "id": "C7_CQ09",
+          "question": "What percentage of the death benefit does Rachel Marie Bennett receive?",
+          "answer": "60%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:PrimaryBeneficiary_C7_RachelMarieBennett li:hasEstateShareAllocation ?pct .\n}"
+        },
+        {
+          "id": "C7_CQ10",
+          "question": "What is the annual premium for the Waiver of Premium rider?",
+          "answer": "$102 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:CoreBenefitsSection_C7_Section1BasePolicyCoverage li:hasAnnualPremium ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ11",
+          "question": "What additional amount does the Accidental Death Benefit rider pay?",
+          "answer": "$750,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:DeathBenefitPayoutAmount_C7_750000 li:hasDeathBenefitAmount ?amount .\n}"
+        },
+        {
+          "id": "C7_CQ12",
+          "question": "What is the annual premium for the Accidental Death Benefit rider?",
+          "answer": "$94 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:AccidentalDeathBenefit_C7_AccidentalDeathBenefit li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ13",
+          "question": "What coverage amount does the Children's Term Insurance Rider provide per child?",
+          "answer": "$15,000 per eligible child",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:DependentChildCoverage_C7_ChildrenSTermInsuranceRider li:childCoverageAmount ?amount .\n}"
+        },
+        {
+          "id": "C7_CQ14",
+          "question": "What is the annual premium for the Children's Term Insurance Rider?",
+          "answer": "$156 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:DependentChildCoverage_C7_ChildrenSTermInsuranceRider li:premiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ15",
+          "question": "What is the annual premium for the Guaranteed Insurability Option rider?",
+          "answer": "$89 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:AdditionalCoverageAccessRight_C7_Rider6GuaranteedInsurabilityOpti li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ16",
+          "question": "What is the annual premium for the Chronic Illness Accelerated Death Benefit rider?",
+          "answer": "$48 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:ChronicCareAdvance_C7_AcceleratedDeathBenefitChronicIl li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ17",
+          "question": "What is the maximum percentage of death benefit accessible for terminal illness?",
+          "answer": "95%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:PremiumReliefAfterLongTermDisability_C7_AcceleratedDeathBenefitTerminalI li:hasDeathBenefitAmount ?pct .\n  FILTER(STR(?pct) = \"95%\")\n}"
+        },
+        {
+          "id": "C7_CQ18",
+          "question": "What is the maximum total advance under the Chronic Illness rider?",
+          "answer": "50% of face amount",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxAdv\nWHERE {\n  abox:ChronicCareAdvance_C7_AcceleratedDeathBenefitChronicIl li:hasAmount ?maxAdv .\n  FILTER(STR(?maxAdv) = \"50%\")\n}"
+        },
+        {
+          "id": "C7_CQ19",
+          "question": "What is the maximum additional coverage per exercise under the Guaranteed Insurability Option?",
+          "answer": "$100,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxCov\nWHERE {\n  abox:AdditionalCoverageAccessRight_C7_Rider6GuaranteedInsurabilityOpti li:hasAmount ?maxCov .\n  FILTER(DATATYPE(?maxCov) = xsd:integer && ?maxCov = 100000)\n}"
+        },
+        {
+          "id": "C7_CQ20",
+          "question": "At what ages can the Guaranteed Insurability Option be exercised?",
+          "answer": "Ages 40, 43, 46, 49 and at birth or adoption of a child",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?optionAge\nWHERE {\n  abox:AdditionalCoverageAccessRight_C7_Rider6GuaranteedInsurabilityOpti li:hasEffectiveDate ?optionAge .\n}"
+        },
+        {
+          "id": "C7_CQ21",
+          "question": "At what age does the Accidental Death Benefit rider terminate?",
+          "answer": "Age 70",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:TerminationPointForDeathBenefit_C7_Age70 li:hasDeathBenefitAmount ?age .\n}"
+        },
+        {
+          "id": "C7_CQ22",
+          "question": "At what age do all Guaranteed Insurability Options terminate?",
+          "answer": "Age 50",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:AdditionalCoverageAccessRight_C7_Rider6GuaranteedInsurabilityOpti li:hasAgeEligibility ?age .\n}"
+        },
+        {
+          "id": "C7_CQ23",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContestabilityPeriodDuration_C7_2Years li:dateValue ?period .\n}"
+        },
+        {
+          "id": "C7_CQ24",
+          "question": "What is the grace period?",
+          "answer": "31 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?gp\nWHERE {\n  abox:GracePeriod_C7_31DaysFromDueDate li:labelValue ?gp .\n}"
+        },
+        {
+          "id": "C7_CQ25",
+          "question": "What is the maximum age for conversion to permanent insurance?",
+          "answer": "Age 70",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?maxAge\nWHERE {\n  abox:BurialExpenseCoverage_C7_ThisPolicy li:hasAgeEligibility ?maxAge .\n  FILTER(DATATYPE(?maxAge) = xsd:integer && ?maxAge = 70)\n}"
+        },
+        {
+          "id": "C7_CQ26",
+          "question": "What is the minimum conversion amount?",
+          "answer": "$50,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minConv\nWHERE {\n  abox:ConversionLimit_C7_50000 li:labelValue ?minConv .\n}"
+        },
+        {
+          "id": "C7_CQ27",
+          "question": "Has the aviation exclusion been waived for this policy?",
+          "answer": "Yes",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:RopRulesSection_C7_Section6AviationExclusionWaiver\n    li:labelValue \"Section 6: Aviation Exclusion Waiver\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C7_CQ28",
+          "question": "What is the additional annual premium for the aviation exclusion waiver?",
+          "answer": "$175 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:AdditionalWaiverCost_C7_175Year li:labelValue ?premium .\n}"
+        },
+        {
+          "id": "C7_CQ29",
+          "question": "What is the policy issue date?",
+          "answer": "July 12, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:PolicyEffectiveDate_C7_July122024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C7_CQ30",
+          "question": "Where was the policy issued?",
+          "answer": "Denver, Colorado",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C7_DenverColorado li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_8_joint_survivorship.txt",
+      "policy_type": "Joint Survivorship (Second-to-Die) Whole Life Insurance",
+      "insurer": "Estate Planning Life Assurance Ltd.",
+      "cq_pairs": [
+        {
+          "id": "C8_CQ01",
+          "question": "What is the policy number?",
+          "answer": "EPL-JSL-2024-1156",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:ClaimSubmissionDocument_C8_JointSurvivorshipLifeInsurance li:policyNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C8_CQ02",
+          "question": "What is the policy form?",
+          "answer": "Second-to-Die Whole Life",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?form\nWHERE {\n  abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd li:hasFaceAmount ?form .\n  FILTER(CONTAINS(STR(?form), \"Second-to-Die\"))\n}"
+        },
+        {
+          "id": "C8_CQ03",
+          "question": "Who is the first insured?",
+          "answer": "William Alexander Hartford",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C8_WilliamAlexanderHartford li:partyName ?name .\n}"
+        },
+        {
+          "id": "C8_CQ04",
+          "question": "Who is the second insured?",
+          "answer": "Elizabeth Anne Hartford",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C8_ElizabethAnneHartford li:partyName ?name .\n}"
+        },
+        {
+          "id": "C8_CQ05",
+          "question": "What is the death benefit amount?",
+          "answer": "$2,500,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?amount\nWHERE {\n  abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd li:hasDeathBenefitAmount ?amount .\n  FILTER(DATATYPE(?amount) = xsd:decimal && ?amount = 2500000.0)\n}"
+        },
+        {
+          "id": "C8_CQ06",
+          "question": "What is the annual premium?",
+          "answer": "$32,400",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C8_CQ07",
+          "question": "Upon whose death is the death benefit paid?",
+          "answer": "Upon the death of the second insured to die",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?trigger\nWHERE {\n  abox:BurialExpenseCoverage_C8_JointLifeInsurancePolicy li:hasDeathBenefitAmount ?trigger .\n  FILTER(CONTAINS(STR(?trigger), \"second insured\"))\n}"
+        },
+        {
+          "id": "C8_CQ08",
+          "question": "Who is the policy owner?",
+          "answer": "The Hartford Family Irrevocable Life Insurance Trust",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?owner\nWHERE {\n  abox:PolicyOwner_C8_TheHartfordFamilyIrrevocableLife li:labelValue ?owner .\n}"
+        },
+        {
+          "id": "C8_CQ09",
+          "question": "Who is the trustee of the policy owner trust?",
+          "answer": "First National Bank of Connecticut",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?trustee\nWHERE {\n  abox:ContingentBeneficiary_C8_FirstNationalBankOfConnecticut li:hasCertificateHolderName ?trustee .\n}"
+        },
+        {
+          "id": "C8_CQ10",
+          "question": "Who is the beneficiary?",
+          "answer": "Hartford Family Irrevocable Life Insurance Trust",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?bene\nWHERE {\n  abox:PolicyOwner_C8_TheHartfordFamilyIrrevocableLife li:labelValue ?bene .\n}"
+        },
+        {
+          "id": "C8_CQ11",
+          "question": "For how many years is the annual premium guaranteed level?",
+          "answer": "10 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?years\nWHERE {\n  abox:ContingentBeneficiary_C8_EstatePlanningLifeAssuranceLtd li:hasAnnualPremium ?years .\n  FILTER(STR(?years) = \"10 years\")\n}"
+        },
+        {
+          "id": "C8_CQ12",
+          "question": "What is the maximum guaranteed premium after Year 10?",
+          "answer": "$48,600 per year",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxPremium\nWHERE {\n  abox:ProcessingFeeForChangingOption_C8_48600PerYear li:labelValue ?maxPremium .\n}"
+        },
+        {
+          "id": "C8_CQ13",
+          "question": "What is the grace period for premium payment?",
+          "answer": "60 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?gp\nWHERE {\n  abox:LatePaymentWindow_C8_GracePeriod li:gracePeriodDuration ?gp .\n}"
+        },
+        {
+          "id": "C8_CQ14",
+          "question": "What is the projected cash value at end of Year 10?",
+          "answer": "$285,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?cv\nWHERE {\n  abox:ProcessingFeeForChangingOption_C8_285000 li:labelValue ?cv .\n}"
+        },
+        {
+          "id": "C8_CQ15",
+          "question": "What is the projected cash value at end of Year 20?",
+          "answer": "$712,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?cv\nWHERE {\n  abox:ProcessingFeeForChangingOption_C8_712000 li:labelValue ?cv .\n}"
+        },
+        {
+          "id": "C8_CQ16",
+          "question": "What is the maximum loan amount as a percentage of cash surrender value?",
+          "answer": "90%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:GrowthLinkedPayout_C8_CashValueAccumulation li:hasAmount ?pct .\n  FILTER(STR(?pct) = \"90%\")\n}"
+        },
+        {
+          "id": "C8_CQ17",
+          "question": "What is the current loan interest rate?",
+          "answer": "5.5% per annum (variable)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:LoanAgainstCashValue_C8_PolicyLoans li:hasCapRate ?rate .\n}"
+        },
+        {
+          "id": "C8_CQ18",
+          "question": "Are partial withdrawals permitted under this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:BurialExpenseCoverage_C8_JointLifeInsurancePolicy\n    li:effectiveDateOfNoPartialWithdrawalRule \"After the first insured's death\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C8_CQ19",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:CertificateHolder_C8_Insured li:definesCancellationRightTimeframe ?period .\n}"
+        },
+        {
+          "id": "C8_CQ20",
+          "question": "What is the free look period?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:FreeLookPeriodDuration_C8_30Days li:labelValue ?period .\n}"
+        },
+        {
+          "id": "C8_CQ21",
+          "question": "What is the first insured's date of birth?",
+          "answer": "December 5, 1956",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C8_WilliamAlexanderHartford li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date)\n}"
+        },
+        {
+          "id": "C8_CQ22",
+          "question": "What is the first insured's risk class?",
+          "answer": "Standard",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?riskClass\nWHERE {\n  abox:CertificateHolder_C8_WilliamAlexanderHartford li:hasDeathBenefitAmount ?riskClass .\n  FILTER(STR(?riskClass) = \"Standard\")\n}"
+        },
+        {
+          "id": "C8_CQ23",
+          "question": "What is the second insured's date of birth?",
+          "answer": "March 18, 1958",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C8_ElizabethAnneHartford li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date)\n}"
+        },
+        {
+          "id": "C8_CQ24",
+          "question": "What is the second insured's risk class?",
+          "answer": "Preferred",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?riskClass\nWHERE {\n  abox:CertificateHolder_C8_ElizabethAnneHartford li:hasDeathBenefitAmount ?riskClass .\n  FILTER(STR(?riskClass) = \"Preferred\")\n}"
+        },
+        {
+          "id": "C8_CQ25",
+          "question": "What is the policy issue date?",
+          "answer": "August 20, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:DocumentEffectiveDate_C8_August202024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C8_CQ26",
+          "question": "Are there war or aviation exclusions in this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:CertificateHolder_C8_Insured\n    li:explainsLackOfAutomaticProtection \"No war exclusions apply to this policy.\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C8_CQ27",
+          "question": "What happens to the death benefit if both insureds die simultaneously?",
+          "answer": "The death benefit is paid immediately",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?payout\nWHERE {\n  abox:CertificateHolder_C8_Insured li:hasDeathBenefitAmount ?payout .\n  FILTER(STR(?payout) = \"immediately\")\n}"
+        },
+        {
+          "id": "C8_CQ28",
+          "question": "Within how many days of each other must two deaths occur to be treated as simultaneous?",
+          "answer": "30 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?days\nWHERE {\n  abox:BurialExpenseCoverage_C8_Policy li:definesCancellationRightTimeframe ?days .\n  FILTER(STR(?days) = \"30 days\")\n}"
+        },
+        {
+          "id": "C8_CQ29",
+          "question": "Is a premium waiver option available on this joint survivorship policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:PolicyContinuationProtection_C8_WaiverOption\n    li:explainsLackOfAutomaticProtection \"Premium waiver is not available on joint survivorship policies.\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C8_CQ30",
+          "question": "Where was the policy issued?",
+          "answer": "Hartford, Connecticut",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C8_HartfordConnecticut li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_9_return_of_premium.txt",
+      "policy_type": "20-Year Return of Premium Term Life Insurance",
+      "insurer": "ValueGuard Life Insurance Company",
+      "cq_pairs": [
+        {
+          "id": "C9_CQ01",
+          "question": "What is the policy number?",
+          "answer": "VG-ROP-2024-4183",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:PolicyIdentifier_C9_VgRop20244183 li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C9_CQ02",
+          "question": "What is the policy type?",
+          "answer": "20-Year Return of Premium Term Life",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyType\nWHERE {\n  abox:BurialExpenseCoverage_C9_ReturnOfPremiumTermLifeInsurance li:hasFaceAmount ?policyType .\n}"
+        },
+        {
+          "id": "C9_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Nicole Christine Martinez",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:partyName ?name .\n}"
+        },
+        {
+          "id": "C9_CQ04",
+          "question": "What is the death benefit amount?",
+          "answer": "$300,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:deathBenefitAmount ?amount .\n}"
+        },
+        {
+          "id": "C9_CQ05",
+          "question": "What is the policy term in years?",
+          "answer": "20 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?term\nWHERE {\n  abox:BurialExpenseCoverage_C9_ReturnOfPremiumTermLifeInsurance li:hasAnnualPremium ?term .\n  FILTER(DATATYPE(?term) = xsd:integer && ?term = 20)\n}"
+        },
+        {
+          "id": "C9_CQ06",
+          "question": "When does the policy end?",
+          "answer": "September 15, 2044",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?endDate\nWHERE {\n  abox:PolicyEffectiveDate_C9_September152044 li:dateValue ?endDate .\n}"
+        },
+        {
+          "id": "C9_CQ07",
+          "question": "What is the annual premium?",
+          "answer": "$1,620",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:BurialExpenseCoverage_C9_ReturnOfPremiumTermLifeInsurance li:annualPremiumAmount ?premium .\n}"
+        },
+        {
+          "id": "C9_CQ08",
+          "question": "What is the total return of premium amount if the policy is maintained for the full term?",
+          "answer": "$32,400",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:MaxConversionPolicySize_C9_32400 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C9_CQ09",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Carlos Roberto Martinez",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C9_CarlosRobertoMartinez li:partyName ?name .\n}"
+        },
+        {
+          "id": "C9_CQ10",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Husband",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rel\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"spouse\") || CONTAINS(LCASE(STR(?rel)), \"husband\"))\n}"
+        },
+        {
+          "id": "C9_CQ11",
+          "question": "What is the early surrender return of premium percentage in Years 1 through 5?",
+          "answer": "0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:SurrenderPeriodReturn_C9_Years15 li:labelValue ?pct .\n}"
+        },
+        {
+          "id": "C9_CQ12",
+          "question": "What is the early surrender return of premium percentage in Years 6 through 10?",
+          "answer": "30% of premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:SurrenderPeriodReturn_C9_Years610 li:labelValue ?pct .\n}"
+        },
+        {
+          "id": "C9_CQ13",
+          "question": "What is the early surrender return of premium percentage in Years 11 through 15?",
+          "answer": "60% of premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:SurrenderPeriodReturn_C9_Years1115 li:labelValue ?pct .\n}"
+        },
+        {
+          "id": "C9_CQ14",
+          "question": "What is the early surrender return of premium percentage in Years 16 through 19?",
+          "answer": "90% of premiums paid",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:SurrenderPeriodReturn_C9_Years1619 li:labelValue ?pct .\n}"
+        },
+        {
+          "id": "C9_CQ15",
+          "question": "Are policy loans available under this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:BorrowingRestriction_C9_PolicyLoansNotAvailable\n    li:labelValue \"Policy loans not available\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C9_CQ16",
+          "question": "Are partial withdrawals permitted under this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:BorrowingRestriction_C9_PartialWithdrawalsNotPermitted\n    li:labelValue \"Partial withdrawals not permitted\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C9_CQ17",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "24 months",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ContestablePeriodExclusion_C9_Suicide li:hasEffectiveDate ?period .\n}"
+        },
+        {
+          "id": "C9_CQ18",
+          "question": "Within how many years of lapse can this policy be reinstated?",
+          "answer": "5 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?years\nWHERE {\n  abox:CashValueGrowthMechanism_C9_FullSurrender li:definesCancellationRightTimeframe ?years .\n}"
+        },
+        {
+          "id": "C9_CQ19",
+          "question": "What interest rate applies to overdue premiums at reinstatement?",
+          "answer": "6% per annum",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:ReinstatementFinancialObligation_C9_PastDuePremiumsWithInterestAt6Pe li:labelValue ?rate .\n}"
+        },
+        {
+          "id": "C9_CQ20",
+          "question": "What is the insured's date of birth?",
+          "answer": "April 7, 1988",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:hasEffectiveDate ?dob .\n  FILTER(DATATYPE(?dob) = xsd:date)\n}"
+        },
+        {
+          "id": "C9_CQ21",
+          "question": "What is the insured's age at issue?",
+          "answer": "36",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:hasAgeEligibility ?age .\n}"
+        },
+        {
+          "id": "C9_CQ22",
+          "question": "What is the insured's smoker status?",
+          "answer": "Non-Smoker",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?status\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:hasDeathBenefitAmount ?status .\n  FILTER(CONTAINS(LCASE(STR(?status)), \"female\") || CONTAINS(LCASE(STR(?status)), \"smoker\"))\n}"
+        },
+        {
+          "id": "C9_CQ23",
+          "question": "What is the insured's underwriting rating?",
+          "answer": "Preferred Plus",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rating\nWHERE {\n  abox:CertificateHolder_C9_NicoleChristineMartinez li:hasFaceAmount ?rating .\n}"
+        },
+        {
+          "id": "C9_CQ24",
+          "question": "What is the policy issue date?",
+          "answer": "September 15, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:PolicyEffectiveDate_C9_September152024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C9_CQ25",
+          "question": "What is the grace period?",
+          "answer": "31 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?gp\nWHERE {\n  abox:PolicyContinuationProtection_C9_AnnualPremium li:gracePeriodDuration ?gp .\n  FILTER(DATATYPE(?gp) = xsd:integer)\n}"
+        },
+        {
+          "id": "C9_CQ26",
+          "question": "What happens to the return of premium benefit if the policy is converted to permanent insurance?",
+          "answer": "The ROP benefit is forfeited",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?consequence\nWHERE {\n  abox:FullRefundRequirement_C9_FullReturnOfPremium li:conversionAgeImpact ?consequence .\n}"
+        },
+        {
+          "id": "C9_CQ27",
+          "question": "What is the minimum conversion coverage amount?",
+          "answer": "$50,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minConv\nWHERE {\n  abox:ConversionLimit_C9_MinimumConversionAmount li:labelValue ?minConv .\n}"
+        },
+        {
+          "id": "C9_CQ28",
+          "question": "What is the maximum conversion coverage amount?",
+          "answer": "$300,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?maxConv\nWHERE {\n  abox:ConversionLimit_C9_MaximumConversionAmount li:labelValue ?maxConv .\n}"
+        },
+        {
+          "id": "C9_CQ29",
+          "question": "Are there war or aviation exclusions in this policy?",
+          "answer": "No",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nASK {\n  abox:DeathCauseLimitingRefund_C9_NoWarAviationTravelHazardousActi\n    li:labelValue \"NO WAR, AVIATION, TRAVEL, HAZARDOUS ACTIVITY EXCLUSIONS\"^^xsd:string .\n}"
+        },
+        {
+          "id": "C9_CQ30",
+          "question": "Where was the policy executed?",
+          "answer": "Minneapolis, Minnesota",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?location\nWHERE {\n  abox:ClaimMailingAddress_C9_MinneapolisMinnesota li:stateOfIssuance ?location .\n}"
+        }
+      ]
+    },
+    {
+      "file_name": "contract_10_indexed_universal.txt",
+      "policy_type": "Indexed Universal Life Insurance",
+      "insurer": "Horizon Wealth Protection Insurance",
+      "cq_pairs": [
+        {
+          "id": "C10_CQ01",
+          "question": "What is the policy number?",
+          "answer": "HWP-IUL-2024-7290",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?policyNumber\nWHERE {\n  abox:PolicyNumber_C10_HwpIul20247290 li:hasCertificateNumber ?policyNumber .\n}"
+        },
+        {
+          "id": "C10_CQ02",
+          "question": "What is the policy form?",
+          "answer": "Equity-Indexed Universal Life",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?form\nWHERE {\n  abox:InsuranceProductType_C10_IndexedUniversalLifeInsurancePol li:labelValue ?form .\n}"
+        },
+        {
+          "id": "C10_CQ03",
+          "question": "Who is the insured?",
+          "answer": "Jessica Lynn Thompson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:CertificateHolder_C10_JessicaLynnThompson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C10_CQ04",
+          "question": "What is the initial face amount?",
+          "answer": "$500,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?amount\nWHERE {\n  abox:FaceAmount_C10_500000 li:labelValue ?amount .\n}"
+        },
+        {
+          "id": "C10_CQ05",
+          "question": "What is the currently selected death benefit option?",
+          "answer": "Option 1 (Level)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?option\nWHERE {\n  abox:DeathBenefitOption_C10_Option1Level li:labelValue ?option .\n}"
+        },
+        {
+          "id": "C10_CQ06",
+          "question": "What is the planned annual premium?",
+          "answer": "$6,000",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?premium\nWHERE {\n  abox:CertificateHolder_C10_JessicaLynnThompson li:hasAnnualPremium ?premium .\n}"
+        },
+        {
+          "id": "C10_CQ07",
+          "question": "Who is the primary beneficiary?",
+          "answer": "Matthew Scott Thompson",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?name\nWHERE {\n  abox:PrimaryBeneficiary_C10_MatthewScottThompson li:partyName ?name .\n}"
+        },
+        {
+          "id": "C10_CQ08",
+          "question": "What is the primary beneficiary's relationship to the insured?",
+          "answer": "Spouse",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rel\nWHERE {\n  abox:CertificateHolder_C10_JessicaLynnThompson li:sourceContractSection ?rel .\n  FILTER(CONTAINS(LCASE(STR(?rel)), \"spouse\"))\n}"
+        },
+        {
+          "id": "C10_CQ09",
+          "question": "What is the current cap rate for the S&P 500 Index Account?",
+          "answer": "10.5%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?capRate\nWHERE {\n  abox:MarketIndexedAccount_C10_IndexAccount li:hasCapRate ?capRate .\n  FILTER(STR(?capRate) = \"10.5%\")\n}"
+        },
+        {
+          "id": "C10_CQ10",
+          "question": "What is the floor rate for index accounts?",
+          "answer": "0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?floor\nWHERE {\n  abox:MinimumGuaranteedReturnLevel_C10_0 li:sharePercentage ?floor .\n}"
+        },
+        {
+          "id": "C10_CQ11",
+          "question": "What is the guaranteed minimum cap rate?",
+          "answer": "4%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minCap\nWHERE {\n  abox:FloorProtection_C10_CapsWillNeverBeLessThan4 li:labelValue ?minCap .\n}"
+        },
+        {
+          "id": "C10_CQ12",
+          "question": "What is the guaranteed minimum participation rate?",
+          "answer": "25%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minPR\nWHERE {\n  abox:MinimumSharingRatioInGains_C10_ParticipationRatesWillNeverBeLes li:labelValue ?minPR .\n}"
+        },
+        {
+          "id": "C10_CQ13",
+          "question": "What is the fixed account guaranteed interest rate?",
+          "answer": "3.0% annually",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?rate\nWHERE {\n  abox:GuaranteedReturnComponent_C10_FixedAccount li:assumedGuaranteedInterestRate ?rate .\n  FILTER(DATATYPE(?rate) = xsd:decimal || DATATYPE(?rate) = xsd:double)\n  FILTER(?rate = 3.0)\n}"
+        },
+        {
+          "id": "C10_CQ14",
+          "question": "What is the guaranteed minimum fixed account interest rate?",
+          "answer": "2%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minRate\nWHERE {\n  abox:MinimumYieldAssurance_C10_FixedAccountWillNeverBeLessThan2 li:labelValue ?minRate .\n}"
+        },
+        {
+          "id": "C10_CQ15",
+          "question": "What is the premium load percentage?",
+          "answer": "3.5% of each premium payment",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?load\nWHERE {\n  abox:PremiumLoadPercentage_C10_35 li:sharePercentage ?load .\n}"
+        },
+        {
+          "id": "C10_CQ16",
+          "question": "What is the monthly administrative charge?",
+          "answer": "$12 per month",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?charge\nWHERE {\n  abox:FixedAdministrativeFee_C10_AdministrativeCharge li:labelValue ?charge .\n}"
+        },
+        {
+          "id": "C10_CQ17",
+          "question": "What is the surrender charge in Year 1?",
+          "answer": "10% of premiums paid in the first 10 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:ChargeFreeAnnualWithdrawalAllowance_C10_FreePartialWithdrawal li:hasAnnualPremium ?rate .\n  FILTER(STR(?rate) = \"10%\")\n}"
+        },
+        {
+          "id": "C10_CQ18",
+          "question": "What is the surrender charge from Year 12 onwards?",
+          "answer": "0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?yearLabel\nWHERE {\n  abox:RetryPaymentDate_C10_Year12 li:dateValue ?yearLabel .\n}"
+        },
+        {
+          "id": "C10_CQ19",
+          "question": "What is the policy loan interest rate?",
+          "answer": "4% annually (fixed)",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?rate\nWHERE {\n  abox:LoanInterestRate_C10_4Annually li:labelValue ?rate .\n}"
+        },
+        {
+          "id": "C10_CQ20",
+          "question": "What is the maximum loan amount as a percentage of surrender value?",
+          "answer": "90%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:MaximumLoanToSurrenderValueRatio_C10_90 li:sharePercentage ?pct .\n}"
+        },
+        {
+          "id": "C10_CQ21",
+          "question": "What is the minimum partial withdrawal amount?",
+          "answer": "$500",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?minWd\nWHERE {\n  abox:MaxConversionPolicySize_C10_500 li:labelValue ?minWd .\n}"
+        },
+        {
+          "id": "C10_CQ22",
+          "question": "What is the current cap rate for the NASDAQ-100 Index Account?",
+          "answer": "9.0%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?capRate\nWHERE {\n  abox:MarketIndexedAccount_C10_IndexAccount li:hasCapRate ?capRate .\n  FILTER(STR(?capRate) = \"9.0%\")\n}"
+        },
+        {
+          "id": "C10_CQ23",
+          "question": "What is the current cap rate for the Global Diversified Index Account?",
+          "answer": "8.5%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?capRate\nWHERE {\n  abox:GrowthVehicle_C10_GlobalDiversifiedIndexAccount li:hasCapRate ?capRate .\n  FILTER(?capRate = 8.5)\n}"
+        },
+        {
+          "id": "C10_CQ24",
+          "question": "What is the grace period if account value is insufficient to cover charges?",
+          "answer": "61 days",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?gp\nWHERE {\n  abox:RetryPaymentDate_C10_Year12 li:gracePeriodDuration ?gp .\n  FILTER(DATATYPE(?gp) = xsd:integer && ?gp = 61)\n}"
+        },
+        {
+          "id": "C10_CQ25",
+          "question": "What is the suicide clause waiting period?",
+          "answer": "2 years",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?period\nWHERE {\n  abox:ExcludedEventWithinTwoYears_C10_Suicide li:labelValue ?period .\n}"
+        },
+        {
+          "id": "C10_CQ26",
+          "question": "What is the insured's date of birth?",
+          "answer": "January 25, 1980",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?dob\nWHERE {\n  abox:CertificateHolder_C10_JessicaLynnThompson li:dateOfBirth ?dob .\n}"
+        },
+        {
+          "id": "C10_CQ27",
+          "question": "What is the insured's age at issue?",
+          "answer": "44",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?age\nWHERE {\n  abox:CertificateHolder_C10_JessicaLynnThompson li:ageAtIssue ?age .\n}"
+        },
+        {
+          "id": "C10_CQ28",
+          "question": "What is the policy issue date?",
+          "answer": "October 3, 2024",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?issueDate\nWHERE {\n  abox:DocumentEffectiveDate_C10_October32024 li:dateValue ?issueDate .\n}"
+        },
+        {
+          "id": "C10_CQ29",
+          "question": "What is the current allocation percentage to the S&P 500 Index Account?",
+          "answer": "50%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:BenchmarkForGains_C10_SP500Index li:hasAllocationPercentage ?pct .\n}"
+        },
+        {
+          "id": "C10_CQ30",
+          "question": "What is the current allocation percentage to the NASDAQ-100 Index Account?",
+          "answer": "30%",
+          "sparql": "PREFIX abox: <https://example.org/ontology/insurance/abox#>\nPREFIX li: <https://example.org/ontology/insurance#>\nSELECT ?pct\nWHERE {\n  abox:BenchmarkForGains_C10_Nasdaq100Index li:hasAllocationPercentage ?pct .\n}"
+        }
+      ]
+    }
+  ]
+}

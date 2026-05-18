@@ -1,0 +1,72 @@
+# Induced TBox Axioms — Manchester Syntax Summary
+
+## owl:someValuesFrom  (28 axioms)
+
+  [✓] Action requiresProofOfDeath some Policy
+      # Policy changes require written authorization from the policyholder.
+  [✓] Action PhysicianCertificationRequirement some MedicalVerification
+      # Physician certification is required for benefit eligibility.
+  [✓] Action requiresProofOfDeath some DocumentAccess
+      # Documentation is required before acceleration.
+  [✓] AdministrativeCharge administersDeathBenefitTerms some DeathBenefit
+      # Administrative charges reduce the death benefit.
+  [✓] AuthorizedRepresentative hasAgentAuthorityLimitation some Right
+      # Agent's authority is restricted to specific actions or scopes.
+  [✓] BeneficiaryChangeInstrument hasBeneficiaryChangeEffectiveImmediately some EffectiveDate
+      # Beneficiary change takes effect immediately upon submission.
+  [✓] GracePeriod GracePeriodBenefitAdjustment some DeathBenefit
+      # Death benefit may be adjusted during the grace period.
+  [✓] InsuredPerson hasTerminalIllnessEligibility some BenefitEligibilityCondition
+      # Policyholder must meet medical criteria for terminal illness benefits.
+  [✓] LifeInsuranceCoverage triggersExclusion some Exclusion
+      # Policyholder excluded from coverage for war-related claims.
+  [✓] LifeInsuranceCoverage SuicideExclusion some Exclusion
+      # Death by suicide within two years excludes claim eligibility.
+  [✓] Person defaultPayoutMethod some Right
+      # Default owner is designated when no explicit owner is named.
+  [✓] Person isSubjectToFraudulentInsuranceAct some Fraud
+      # Policyholder is prohibited from concealing material facts.
+  [✓] Person isSubjectToFraudulentInsuranceAct some Exclusion
+      # A person is excluded if they participated in a felony.
+  [✓] Policy reinstatementWindow some Action
+      # Policy must meet conditions to be reinstated after lapse.
+  [✓] Policy policyOwnerChoosesPaymentMode some PolicyLapse
+      # Policy lapses if premium is not paid by due date.
+  [✓] Policy adjustsInsuranceAmountBasedOnCorrectedAge some Amount
+      # Adjustments apply for inaccurate age or gender reporting.
+  [✓] Policy BenefitsConditionalOnContractTerms some BenefitEligibilityCondition
+      # Benefits are only available if contractual terms are met.
+  [✓] Policy triggersIncontestabilityPeriodAfterTwoYears some Clause
+      # Policy cannot be contested after two years from issuance.
+  [✓] Policy hasLevelPremiumGuarantee some PremiumStability
+      # Premium remains fixed at a guaranteed level throughout the term.
+  [✓] Policy NoAutomaticPremiumLoan some Right
+      # Prevents automatic premium loan activation under any circumstances.
+  [✓] Policy TermEndCoverageTermination some CoverageTermination
+      # Coverage ends at term expiration unless conversion is elected.
+  [✓] Policy RefundEligibilityAfterReturn some RefundEligibility
+      # Policyholder is eligible for refund upon return within 20 days.
+  [✓] Policy triggersLienDeductionAdjustment some PolicyLoanDeduction
+      # Loans are deducted only after acceleration.
+  [✓] Policy terminates some CoverageTermination
+      # Policy cancellation triggers coverage termination.
+  [~] Policy EndorsementOnlyAccess some PolicyEndorsement
+      # Access to APL is permitted only via endorsement.
+  [~] Policy hasPolicyDefinition some Policy
+      # Policy issuance requires a formal application.
+  [~] Policy hasPolicyComponentsDefinition some Policy
+      # Defines the components that constitute a policy.
+  [✓] Right hasRightToExamineDuration some Period
+      # Policyholder has right to examine policy for specified duration.
+
+## owl:maxCardinality  (2 axioms)
+
+  [✓] LifeInsuranceCoverage hasAcceleratedDeathBenefitRider max 1 Amount
+      # Accelerated benefit payment is constrained by a specified limit.
+  [✓] Policy hasMaxPayoutLimit max 1 Amount
+      # Maximum amount payable under a policy is constrained.
+
+## owl:disjointWith  (1 axioms)
+
+  [✓] Policy DisjointWith Beneficiary
+      # Death benefit payout priority is determined by rules.

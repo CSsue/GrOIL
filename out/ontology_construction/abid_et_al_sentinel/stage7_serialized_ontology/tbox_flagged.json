@@ -1,0 +1,12 @@
+{
+  "flagged_classes": [
+    {
+      "owl_name": "Location",
+      "confidence": "low",
+      "reason": "low placement confidence",
+      "definition": "A geographical place relevant to the life insurance contract."
+    }
+  ],
+  "flagged_properties": [],
+  "flagged_axioms": []
+}
