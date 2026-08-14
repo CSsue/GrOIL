@@ -79,7 +79,7 @@ data/{DATASET}/
 
 ---
 
-## Running the Pipeline
+## Reproducibility
 
 ### Graph Cleaning (`stage0_clean_graphs.py`)
 
@@ -94,6 +94,8 @@ If starting from the provided `step2_cleaned/` graphs, you can skip `stage0` and
 ### ABox Population (`abox_population.py`)
 
 Run after stage 7. Takes a source GraphML file and contract ID as arguments — run with `--help` for usage details.
+
+#### The scripts are sufficiently documented. That should help if you want to change certain parameters (i.e., threshold for cosine similarity, etc) or do ablations for experimental purposes.
 
 ---
 
@@ -116,6 +118,22 @@ All evaluation scripts are in `src/evaluation/`.
 ## Switching Datasets
 
 Change the `DATASET` variable in `.env` and re-run. All paths are derived from it automatically.
+
+
+## Citation
+
+If you use GrOIL in your research, please cite our paper:
+
+```bibtex
+@inproceedings{mridul2026groil,
+  title     = {GrOIL: Graph-Grounded Domain Ontology Induction with Constrained LLM Mediation},
+  author    = {Mridul, Maruf Ahmed and Talukder, Abid and Seneviratne, Oshani},
+  year      = {2026},
+  publisher = {ACM},
+  booktitle = {Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM '26)}
+}
+```
+
 
 
 ---
