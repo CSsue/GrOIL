@@ -1,3 +1,24 @@
+# 复现流程
+
+## 预备工作
+- 仓库地址：https://github.com/brains-group/GrOIL
+- 确认python,git环境，Linux系统可以完成复现任务
+- 拉取git clone https://github.com/brains-group/GrOIL.git
+- “We ran all experiments using vLLM to serve the model locally and LiteLLM as a proxy.”流水线需要一个正在运行的 LLM 服务，地址是 .env 里的 API_BASE="http://localhost:8000/v1"，模型是 Qwen/Qwen3-30B-A3B-Instruct-2507-FP8。
+- 需要确认GPU能力
+- 禁用Secury Boot选项，NVIDIA 驱动接管独显
+- 显卡不符合条件
+- 暂停进度
+
+## 分析README文件
+1. 创建 conda 环境
+2. 创建 .env 配置文件
+3. 准备数据（图数据）
+4. 运行图清洗（stage0）
+5. 运行本体诱导（stage1 到 stage7）
+6. 运行 ABox 填充
+7. 运行评估
+
 # GrOIL
 Graph-Grounded Domain Ontology Induction with Constrained LLM Mediation
 
